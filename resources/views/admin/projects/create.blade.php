@@ -41,10 +41,18 @@
                                         </div>
 
                                         <div class="col-md-12">
+                                            <label class="form-label" for="image">Slug</label>
+                                            <input name="slug" class="form-control" id="slug" type="text"
+                                                />
+                                        </div>
+
+                                        <div class="col-md-12">
                                             <label class="form-label" for="image">Image</label>
                                             <input name="image" class="form-control" id="url" type="file"
                                                 />
                                         </div>
+
+                                      
 
                                       
                                         <div class="col-12 mt-5">

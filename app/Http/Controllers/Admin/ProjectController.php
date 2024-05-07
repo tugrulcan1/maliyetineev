@@ -54,6 +54,7 @@ class ProjectController extends Controller
          $request->validate([
             'project_title' => 'required',
             'description' => 'required',
+            'slug' => 'required',
             'image' => 'required',
         ]);
 
@@ -73,6 +74,7 @@ class ProjectController extends Controller
         Project::create([
             'project_title' => $request->input('project_title'),
             'description' => $request->input('description'),
+            'slug' => $request->input('slug'),
             'image' => $dosyaAdi,
         ]);
 
@@ -103,7 +105,9 @@ class ProjectController extends Controller
     {
         $validator = Validator::make($request->all(), [
             'project_title' => 'required',
-            'description' => 'required'
+            'description' => 'required',
+            'slug' => 'required'
+
             
         ]);
 
@@ -130,6 +134,7 @@ class ProjectController extends Controller
         $project->update([
             'project_title' => $request->input('project_title'),
             'description' => $request->input('description'),
+            'slug' => $request->input('slug'),
             'image' => $dosyaAdi
         ]);
 

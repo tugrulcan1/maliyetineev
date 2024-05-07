@@ -1,192 +1,98 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js">
-<!--<![endif]-->
+<!doctype html>
+<html class="no-js" lang="en">
 
+<!-- Mirrored from craftohtml.themezaa.com/demo-accounting.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 May 2024 11:47:16 GMT -->
 
-<!-- Mirrored from html.modernwebtemplates.com/psychologist/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 09 Mar 2024 20:11:53 GMT -->
 <head>
-	<title>Psikolog Kübra Coşkun</title>
-	<meta charset="utf-8">
-	<!--[if IE]>
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<![endif]-->
-	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Crafto - The Multipurpose HTML5 Template</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="ThemeZaa">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="description"
+        content="Elevate your online presence with Crafto - a modern, versatile, multipurpose Bootstrap 5 responsive HTML5, SCSS template using highly creative 48+ ready demos.">
 
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 
-	<link rel="stylesheet" href="{{ URL::to('/') }}/css/bootstrap.min.css">
-	<link rel="stylesheet" href="{{ URL::to('/') }}/css/animations.css">
-	<link rel="stylesheet" href="{{ URL::to('/') }}/css/fonts.css">
-	<link rel="stylesheet" href="{{ URL::to('/') }}/css/main.css" class="color-switcher-link">
-	<script src="{{ URL::to('/') }}/js/vendor/modernizr-2.6.2.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
 
-	<!--[if lt IE 9]>
-		<script src="js/vendor/html5shiv.min.js"></script>
-		<script src="js/vendor/respond.min.js"></script>
-		<script src="js/vendor/jquery-1.12.4.min.js"></script>
-	<![endif]-->
-
+    <link rel="stylesheet" href="{{ URL::to('/') }}/css/vendors.min.css" />
+    <link rel="stylesheet" href="{{ URL::to('/') }}/css/icon.min.css" />
+    <link rel="stylesheet" href="{{ URL::to('/') }}/css/style.min.css" />
+    <link rel="stylesheet" href="{{ URL::to('/') }}/css/responsive.min.css" />
+    <link rel="stylesheet" href="{{ URL::to('/') }}/demos/accounting/accounting.css" />
 </head>
 
-<body>
-	<!--[if lt IE 9]>
-		<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="highlight">upgrade your browser</a> to improve your experience.</div>
-	<![endif]-->
+<body data-mobile-nav-style="classic" class="custom-cursor">
 
-
-	<!-- search modal -->
-	<div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal">
-		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-			<span aria-hidden="true">
-				<i class="rt-icon2-cross2"></i>
-			</span>
-		</button>
-		<div class="widget widget_search">
-			<form method="get" class="searchform search-form form-inline" action="">
-				<div class="form-group">
-					<input type="text" value="" name="search" class="form-control" placeholder="Search keyword" id="modal-search-input">
-				</div>
-				<button type="submit" class="theme_button">Search</button>
-			</form>
-		</div>
-	</div>
-
-	<!-- Unyson messages modal -->
-	<div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
-		<div class="fw-messages-wrap ls with_padding">
-			<!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
-			<!--
-		<ul class="list-unstyled">
-			<li>Message To User</li>
-		</ul>
-		-->
-
-		</div>
-	</div>
-	<!-- eof .modal -->
-
-	<!-- wrappers for visual page editor and boxed version of template -->
-	<div id="canvas">
-		<div id="box_wrapper">
-
-			<!-- template sections -->
-
-			<section class="page_topline cs table_section table_section_md columns_padding_0">
-				<div class="container-fluid">
-					<div class="row">
-						<div class="col-md-3 text-center text-md-left">
-							
-
-						</div>
-
-						<div class="col-md-6 text-center divided_content">
-
-							<div>
-								<div class="media small-teaser">
-									<div class="media-left">
-										<i class="fa fa-user highlight fontsize_16"></i>
-									</div>
-									<div class="media-body">
-                                    <i class="icofont-stock-mobile"></i>
-                                    <a href="tel:{{$settings['phone']}}">Telefon: {{$settings['phone']}}</a>
-
-									</div>
-								</div>
-							</div>
-
-							<div>
-								<div class="media small-teaser">
-									<div class="media-left">
-										<i class="fa fa-map-marker highlight fontsize_16"></i>
-									</div>
-									<div class="media-body">
-                                    {{$settings['adress']}}
-									</div>
-								</div>
-							</div>
-
-							<div>
-								<div class="media small-teaser">
-									<div class="media-left">
-										<i class="fa fa-envelope highlight fontsize_16"></i>
-									</div>
-									<div class="media-body">
-                                    <i class="icofont-ui-message"></i>
-                                    <a href="mailto:{{$settings['e-mail']}}">{{$settings['e-mail']}}</a>
-									</div>
-								</div>
-							</div>
-
-						</div>
-
-						<div class="col-md-3 text-center text-md-right bottommargin_0">
-							<a href="#appointment" class="theme_button color1 margin_0">İletişime Geç</a>
-						</div>
-
-					</div>
-				</div>
-			</section>
-
-			<header class="page_header header_white table_section columns_padding_0 toggler-xs-right">
-				<div class="container-fluid">
-					<div class="row">
-						<div class="col-md-4 col-sm-5">
-							<a href"" class="logo">
-							Psk. Kübra Coşkun
-							</a>
-							<!-- header toggler -->
-							<span class="toggle_menu visible-xs">
-								<span></span>
-							</span>
-						</div>
-						<div class="col-md-5 col-sm-2 text-center">
-							<!-- main nav start -->
-							<nav class="mainmenu_wrapper">
-								<ul class="mainmenu nav sf-menu">
-                                @foreach ($menu as $key => $menuItem)
-
-									<li class="active">
-                                    <a href="{{ $menuItem['href'] }}" class="nav-link @if (isset($menuItem['children']) && count($menuItem['children']) > 0) dropdown-toggle  @endif active"> {{ $menuItem['text'] }}</a>
-
-									
-									</li>
-                                @endforeach
-						
-								</ul>
-							</nav>
-							<!-- eof main nav -->
-							<span class="toggle_menu hidden-xs">
-								<span></span>
-							</span>
-						</div>
-						<div class="col-md-3 col-sm-5 text-right hidden-xs lightgreylinks">
-							<div class="page_social_icons divided_content">
-								 @foreach ($socialMediaIcons as $social_media_icon)
-								<span>
-									<a class="social-icon soc-{{$social_media_icon['name']}}" href="{{$social_media_icon['url']}}" title="{{$social_media_icon['name']}}"></a>
-								</span>
-								@endforeach
-								
-							</div>
-						</div>
-					</div>
-				</div>
-			</header>
+    <div class="cursor-page-inner">
+        <div class="circle-cursor circle-cursor-inner"></div>
+        <div class="circle-cursor circle-cursor-outer"></div>
+    </div>
 
 
 
-		</div>
-		<!-- eof #box_wrapper -->
-	</div>
-	<!-- eof #canvas -->
+    <header class="header-with-topbar">
 
-</body>
+        <div class="header-top-bar top-bar-dark bg-very-light-gray">
+            <div class="container-fluid">
+                <div class="row h-45px xs-h-auto align-items-center m-0 xs-pt-5px xs-pb-5px">
+                    <div class="col-lg-6 col-md-7 text-center text-md-start xs-px-0">
+                        <!-- <div class="fs-15 text-dark-gray fw-500">Our accounting experts waiting for you! <a
+                                href="demo-accounting-contact.html"
+                                class="text-dark-gray text-decoration-line-bottom fw-600">Contact now</a></div> -->
+                    </div>
+                    <div class="col-lg-6 col-md-5 text-end d-none d-md-flex">
+                        <div class="widget fs-15 fw-500 me-35px lg-me-25px md-me-0 text-dark-gray"><a
+                                href="tel:4443284"><i class="feather icon-feather-phone-call"></i>{{$settings['phone']}}</a>
+                        </div>
+                        <div class="widget fs-15 fw-500 text-dark-gray d-none d-lg-inline-block"><i
+                                class="feather icon-feather-map-pin"></i>{{$settings['adress']}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
-<!-- Mirrored from html.modernwebtemplates.com/psychologist/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 09 Mar 2024 20:11:53 GMT -->
-</html>
+        <nav class="navbar navbar-expand-lg header-light bg-white responsive-sticky">
+            <div class="container-fluid">
+                <div class="col-auto col-lg-2 me-lg-0 me-auto">
+                    <a class="navbar-brand" href="demo-accounting.html">
+                        <img src="images/logomev.png" data-at2x="images/demo-accounting-logo-black@2x.png" alt
+                            class="default-logo">
+                        <img src="images/logomev.png" data-at2x="images/logomev.png" alt class="alt-logo">
+                        <img src="images/logomev.png" data-at2x="images/logomev.png" alt class="mobile-logo">
+                    </a>
+                </div>
+                <div class="col-auto menu-order position-static">
+                    <button class="navbar-toggler float-start" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-line"></span>
+                        <span class="navbar-toggler-line"></span>
+                        <span class="navbar-toggler-line"></span>
+                        <span class="navbar-toggler-line"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav fw-600">
+							@foreach ($menu as $menus)
+                            <li class="nav-item"><a href="{{$menus->href}}" class="nav-link">{{$menus->text}}</a></li>
+                   @endforeach
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-auto col-lg-2 text-end d-none d-sm-flex">
+                    <!-- <div class="header-icon">
+                        <div class="header-button">
+                            <a href="demo-accounting-contact.html"
+                                class="btn btn-small btn-rounded btn-base-color btn-box-shadow">Let's discuss</a>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </nav>
+
+    </header>

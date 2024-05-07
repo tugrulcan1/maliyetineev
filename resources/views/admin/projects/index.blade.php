@@ -42,9 +42,12 @@
                                             <th class="sort white-space-nowrap align-middle ps-0" scope="col"
                                             data-sort="projectName" style="width:20%;">PROJE İÇERİK</th>
                                             <th class="sort white-space-nowrap align-middle ps-0" scope="col"
-                                            data-sort="projectName" style="width:20%;">PROJE RESİM</th>
+                                            data-sort="projectName" style="width:20%;">PROJE HREF</th>
                                         <th>İŞLEMLER</th>
                                      
+                                            <th class="sort white-space-nowrap align-middle ps-0" scope="col"
+                                            data-sort="projectName" style="width:20%;">PROJE RESİM</th>
+                                         
                                     </tr>
                                 </thead>
                                 <tbody class="list" id="project-list-table-body">
@@ -53,6 +56,7 @@
                                             <td>{{ $key + 1 }}</td>
                                             <td>{{ $project->project_title }}</td>
                                             <td>{{ $project->description }}</td>
+                                            <td>{{ $project->slug }}</td>
                                             <td><img src="{{ url('uploads/' . $project->image) }}" alt="" style="" width="200px" height="100px"></td>
                                             <td>
                                                     <a href="{{ route('admin.projects.edit', $project->id) }}"

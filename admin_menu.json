@@ -170,6 +170,54 @@
         ]
     },
     {
+        "id": "sliders",
+        "label": "Yönetim",
+        "icon": "globe",
+        "text": "Slider",
+        "key": "Sliders",
+        "url": "#nv-projects",
+        "activePath": "admin/sliders*",
+        "subMenu": [
+            {
+                "text": "Oluştur",
+                "key": "CreateSlider",
+                "url": "admin.sliders.create",
+                "activePath": "admin/sliders/create"
+            },
+            {
+                "text": "Listele",
+                "key": "GetSliders",
+                "url": "admin.sliders.index",
+                "activePath": "admin/sliders"
+            }
+        ]
+    },
+    {
+        "id": "comments",
+        "label": "Yönetim",
+        "icon": "globe",
+        "text": "Yorumlar",
+        "key": "Comments",
+        "url": "#nv-projects",
+        "activePath": "admin/comments*",
+        "subMenu": [
+            {
+                "text": "Oluştur",
+                "key": "CreateComment",
+                "url": "admin.comments.create",
+                "activePath": "admin/comments/create"
+            },
+            {
+                "text": "Listele",
+                "key": "GetComments",
+                "url": "admin.comments.index",
+                "activePath": "admin/comments"
+            }
+        ]
+    },
+
+
+    {
         "id": "projects",
         "label": "Yönetim",
         "icon": "globe",

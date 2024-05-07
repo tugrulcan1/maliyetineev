@@ -26,10 +26,15 @@
                                 <textarea id="editor" name="description">{{ $project->description }}</textarea>
                             </div>
                             <div class="mb-3">
+                                <label class="form-label" for="description">project Slug</label>
+                                <textarea id="editor" name="slug">{{ $project->slug }}</textarea>
+                            </div>
+                            <div class="mb-3">
                                 <label class="form-label" for="image">İmage</label>
                                 <img src="{{ url('uploads/'.$project->image) }}" alt="">
                                 <input type="file" name="image" id="">
                             </div>
+                         
 
                             <button type="submit" class="btn btn-primary">Update project</button>
                         </form>

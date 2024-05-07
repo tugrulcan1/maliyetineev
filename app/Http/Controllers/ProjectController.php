@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use App\Models\Project;
 use Illuminate\Http\Request;
+use Darryldecode\Cart\Validators\Validator;
+
 
 class ProjectController extends Controller
 {
@@ -34,6 +36,7 @@ public function store(Request $request)
      $request->validate([
         'project_title' => 'required',
         'description' => 'required',
+        'slug' => 'slug',
         'image' => 'required',
     ]);
 
@@ -53,6 +56,7 @@ public function store(Request $request)
     project::create([
         'project_title' => $request->input('project_title'),
         'description' => $request->input('description'),
+        'slug' => $request->input('slug'),
         'image' => $dosyaAdi,
     ]);
 
@@ -68,9 +72,9 @@ public function edit(Project $project)
 public function update(Request $request, Project $project)
 {
     $validator = Validator::make($request->all(), [
-        'title' => 'required',
-        'content' => 'required',
-        'short_content' => 'required'
+        'project_title' => 'required',
+        'description' => 'required',
+        'slug' => 'required'
         
     ]);
 
@@ -97,6 +101,7 @@ public function update(Request $request, Project $project)
     $project->update([
         'project_title' => $request->input('project_title'),
         'description' => $request->input('description'),
+        'slug' => $request->input('slug'),
         'image' => $dosyaAdi
     ]);
 

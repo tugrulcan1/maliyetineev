@@ -1,83 +1,102 @@
 @extends('client.layouts.master')
 @section('content')
-<section class="ls ">
-				<div class="container">
-					<div class="row">
-						
-						<div class="col-md-12">
-							<h2 class="section_header " >{{ $pageInfo->meta_title }}</h2>
-							<hr class="divider_30_1">
-							<p>
-                            {!! $pageInfo->content !!}
-								</p>
-							
-						</div>
-					</div>
-				</div>
-			</section>
-            
-            <section id="appointment" class="ls section_padding_top_130 section_padding_bottom_100">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
-							<h2 class="section_header with_icon highlight">İletişime Geç</h2>
-							<div class="fontsize_16">
-								Formu doldurarak bize ulaşabilirsiniz.
-							</div>
+   <section class="top-space-margin page-title-big-typography cover-background magic-cursor round-cursor"
+        style="background-image: url(images/demo-accounting-company-title-bg.jpg)">
+        <div class="container">
+            <div class="row extra-very-small-screen align-items-center">
+                <div class="col-lg-5 col-sm-8 position-relative page-title-extra-small"
+                    data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;opacity&quot;: [0, 1], &quot;translateX&quot;: [-30, 0], &quot;duration&quot;: 800, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
+                    <!-- <h1 class="mb-20px text-white text-shadow-medium"><span
+                            class="w-30px h-2px bg-yellow d-inline-block align-middle position-relative top-minus-2px me-10px"></span>Our
+                        company</h1>
+                    <h2 class="text-white text-shadow-medium fw-500 ls-minus-2px mb-0">About crafto accounto</h2> -->
+                </div>
+            </div>
+        </div>
+    </section>
 
-							<form class="contact-form row columns_margin_bottom_40 topmargin_60" method="POST" action="{{ route('test.form.show') }}">
-                            @csrf
-								<div class="col-sm-6">
-									<div class="contact-form-name">
-										<label for="name">Your Name
-											<span class="required">*</span>
-										</label>
-										<input type="text" aria-required="true" size="30" value="" name="name" id="name" class="form-control" placeholder="İsim Soyisim">
-									</div>
-								</div>
-								<div class="col-sm-6">
-									<div class="contact-form-email">
-										<label for="email">Email 
-											<span class="required">*</span>
-										</label>
-										<input type="email" aria-required="true" size="30" value="" name="email" id="email" class="form-control" placeholder="Email">
-									</div>
-								</div>
-								<div class="col-sm-6">
-									<div class="contact-form-subject">
-										<label for="subject">Subject
-											<span class="required">*</span>
-										</label>
-										<input type="text" aria-required="true" size="30" value="" name="subject" id="subject" class="form-control" placeholder="Konu Başlığı">
-									</div>
-								</div>
-								<div class="col-sm-6">
-									<div class="contact-form-phone">
-										<label for="phone">Phone
-											<span class="required">*</span>
-										</label>
-										<input type="text" aria-required="true" size="30" value="" name="phone" id="phone" class="form-control" placeholder="Telefon">
-									</div>
-								</div>
-								
-							
-								<div class="col-sm-12">
-									<div class="contact-form-message">
-										<label for="message">Message</label>
-										<textarea aria-required="true" rows="1" cols="45" name="message" id="message" class="form-control" placeholder="Mesaj"></textarea>
-									</div>
-								</div>
 
-								<div class="col-sm-12">
+    <section>
+        <div class="container">
+            <div class="row justify-content-center mb-3">
+                <div class="col-lg-7 col-md-8 col-sm-9 text-center"
+                    data-anime="{ &quot;translateY&quot;: [50, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1200, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
+                    <h3 class="text-dark-gray fw-700 ls-minus-2px">{{ $pageInfo->meta_title }}</h3>
+                </div>
+            </div>
+            <div class="row row-cols-12 row-cols-lg-12 row-cols-md-12 mb-5"
+                data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateX&quot;: [-30, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1200, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
 
-									<div class="contact-form-submit topmargin_20">
-									<button type="submit"  class="theme_button color1 with_shadow">Mesaj Gönder</button>
-									</div>
-								</div>
 
-							</form>
-						</div>
-					</div>
-				</div>
-			</section>
+                <p>{!! $pageInfo->content !!}</p>
+                <!-- <div class="col icon-with-text-style-07 transition-inner-all md-mb-30px">
+                    <div
+                        class="bg-very-light-gray h-100 justify-content-end feature-box flex-column-reverse p-15 md-p-13 border-radius-8px">
+                        <div class="feature-box-icon">
+                            <a href="demo-accounting-services-details.html"><img
+                                    src="images/demo-accounting-company-icon01.svg" class="h-95px" alt></a>
+                        </div>
+                        <div class="feature-box-content">
+                            <a href="demo-accounting-services-details.html"
+                                class="d-inline-block fw-600 text-dark-gray mb-5px fs-20 ls-minus-05px">Business
+                                process</a>
+                            <p class="mb-30px">An activity or set of activities that can accomplish a specific
+                                organizational goal.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col icon-with-text-style-07 transition-inner-all md-mb-30px">
+                    <div
+                        class="bg-very-light-gray h-100 justify-content-end feature-box flex-column-reverse p-15 md-p-13 border-radius-8px">
+                        <div class="feature-box-icon">
+                            <a href="demo-accounting-services-details.html"><img
+                                    src="images/demo-accounting-company-icon02.svg" class="h-95px" alt></a>
+                        </div>
+                        <div class="feature-box-content">
+                            <a href="demo-accounting-services-details.html"
+                                class="d-inline-block fw-600 text-dark-gray mb-5px fs-20 ls-minus-05px">Corporate
+                                finance</a>
+                            <p class="mb-30px">We combine deep financial expertise with exclusive tools to help the
+                                maximize value.</p>
+                        </div>
+                        <span
+                            class="position-absolute box-shadow-large top-25px lg-top-15px right-25px lg-right-15px bg-white border-radius-18px text-dark-gray fs-11 fw-700 text-uppercase ps-15px pe-15px lh-26 ls-minus-05px">New</span>
+                    </div>
+                </div>
+
+
+                <div class="col icon-with-text-style-07 transition-inner-all">
+                    <div
+                        class="bg-very-light-gray h-100 justify-content-end feature-box flex-column-reverse p-15 md-p-13 border-radius-8px">
+                        <div class="feature-box-icon">
+                            <a href="demo-accounting-services-details.html"><img
+                                    src="images/demo-accounting-company-icon03.svg" class="h-95px" alt></a>
+                        </div>
+                        <div class="feature-box-content">
+                            <a href="demo-accounting-services-details.html"
+                                class="d-inline-block fw-600 text-dark-gray mb-5px fs-20 ls-minus-05px">Financial
+                                services</a>
+                            <p class="mb-30px">Financial services are the economic services provided by the finance
+                                industry.</p>
+                        </div>
+                    </div>
+                </div> -->
+
+            </div>
+            <!-- <div class="row"
+                data-anime="{ &quot;translateY&quot;: [50, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1200, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
+                <div class="col-12 text-center">
+                    <div
+                        class="d-inline-block align-middle bg-yellow fw-600 text-white text-uppercase border-radius-30px ps-20px pe-20px fs-12 me-10px lh-30 sm-m-5px">
+                        Trust</div>
+                    <div class="d-inline-block align-middle text-dark-gray fs-19 fw-600 ls-minus-05px">Join the <span
+                            class="text-decoration-line-bottom text-dark-gray">10000+ companies</span> trusting crafto
+                        accounting.</div>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
 @endsection

@@ -32,6 +32,7 @@ use App\Http\Controllers\Client\ProjectController as ClientProjectController;
 use App\Http\Controllers\Client\PageController as ClientPageController;
 use App\Http\Controllers\Client\RegisterController;
 use App\Http\Controllers\Client\FormController;
+use App\Http\Controllers\CommentController;
 use App\Http\Controllers\Institutional\BrandController;
 use App\Http\Controllers\Institutional\BuyController;
 use App\Http\Controllers\Institutional\ChangePasswordController as InstitutionalChangePasswordController;
@@ -39,6 +40,7 @@ use App\Http\Controllers\Institutional\DashboardController;
 use App\Http\Controllers\Institutional\LoginController;
 use App\Http\Controllers\Institutional\ProfileController as InstitutionalProfileController;
 use App\Http\Controllers\Institutional\ProjectController as InstitutionalProjectController;
+use App\Http\Controllers\SliderController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -157,20 +159,63 @@ Route::group(['prefix' => 'admin', "as" => "admin.", 'middleware' => ['admin']],
         Route::post('/projects', [ProjectController::class, 'store'])->name('projects.store');
     });
 
+    Route::middleware(['checkPermission:CreateSlider'])->group(function () {
+        Route::get('/sliders/create', [SliderController::class, 'create'])->name('sliders.create');
+        Route::post('/sliders', [SliderController::class, 'store'])->name('sliders.store');
+    });
+
+    Route::middleware(['checkPermission:CreateComment'])->group(function () {
+        Route::get('/comments/create', [CommentController::class, 'create'])->name('comments.create');
+        Route::post('/comments', [CommentController::class, 'store'])->name('comments.store');
+    });
+
+
     Route::middleware(['checkPermission:GetProjectById'])->group(function () {
         Route::get('/projects/{project}/edit', [ProjectController::class, 'edit'])->name('projects.edit');
+    });
+
+    Route::middleware(['checkPermission:GetSliderById'])->group(function () {
+        Route::get('/sliders/{slider}/edit', [SliderController::class, 'edit'])->name('sliders.edit');
+    });
+
+    Route::middleware(['checkPermission:GetCommentById'])->group(function () {
+        Route::get('/comments/{comment}/edit', [CommentController::class, 'edit'])->name('comments.edit');
     });
 
     Route::middleware(['checkPermission:UpdateProject'])->group(function () {
         Route::put('/projects/{project}', [ProjectController::class, 'update'])->name('projects.update');
     });
 
+    Route::middleware(['checkPermission:UpdateSlider'])->group(function () {
+        Route::put('/sliders/{slider}', [SliderController::class, 'update'])->name('sliders.update');
+    });
+
+    Route::middleware(['checkPermission:UpdateComment'])->group(function () {
+        Route::put('/comments/{comment}', [CommentController::class, 'update'])->name('comments.update');
+    });
+
     Route::middleware(['checkPermission:GetProjects'])->group(function () {
         Route::get('/projects', [ProjectController::class, 'index'])->name('projects.index');
     });
 
+    Route::middleware(['checkPermission:GetSliders'])->group(function () {
+        Route::get('/sliders', [SliderController::class, 'index'])->name('sliders.index');
+    });
+
+    Route::middleware(['checkPermission:GetComments'])->group(function () {
+        Route::get('/comments', [CommentController::class, 'index'])->name('comments.index');
+    });
+
     Route::middleware(['checkPermission:DeleteProject'])->group(function () {
         Route::delete('/projects/{project}', [ProjectController::class, 'destroy'])->name('projects.destroy');
+    });
+
+    Route::middleware(['checkPermission:DeleteSlider'])->group(function () {
+        Route::delete('/sliders/{slider}', [SliderController::class, 'destroy'])->name('sliders.destroy');
+    });
+
+    Route::middleware(['checkPermission:DeleteComment'])->group(function () {
+        Route::delete('/comments/{comment}', [CommentController::class, 'destroy'])->name('comments.destroy');
     });
 
     // User Controller İzin Kontrolleri
