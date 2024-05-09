@@ -12,12 +12,12 @@
 
 
                     <div class="col-xl-6 text-center text-xl-end">
-                        <a href="demo-accounting-contact.html"
+                        <a href="demo-accounting-contact.html" style="background: #0f75bc !important; color: white !important;"
                             class="btn btn-extra-large btn-yellow left-icon btn-box-shadow btn-rounded text-transform-none d-inline-block align-middle me-15px xs-m-10px"><i
-                                class="feather icon-feather-mail"></i>{{$settings['e-mail']}}</a>
+                                class="fa fa-envelope"></i>{{$settings['e-mail']}}</a>
                         <a href="tel:12345678910"
                             class="btn btn-extra-large btn-base-color left-icon btn-box-shadow btn-rounded d-inline-block align-middle xs-m-10px"><i
-                                class="feather icon-feather-phone-call"></i>{{$settings['phone']}}</a>
+                                class="fa fa-phone"></i>{{$settings['phone']}}</a>
                     </div>
 
                 </div>
@@ -28,30 +28,28 @@
 
                 <div class="col-6 col-lg-3 order-sm-1 md-mb-40px xs-mb-30px last-paragraph-no-margin">
                     <a href="demo-accounting.html" class="footer-logo mb-15px d-inline-block"><img
-                            src="images/logomev.png" data-at2x="images/demo-accounting-logo-white@2x.png" alt></a>
-                    <p class="w-85 xl-w-95 sm-w-100">Lorem ipsum amet adipiscing elit to eiusmod ad tempor.</p>
+                            src="{{ asset('images/logomev.png') }}"  alt></a>
+                    <p class="w-85 xl-w-95 sm-w-100">Maliyetine Ev Sahibi Olmak Herkesin Hakkı</p>
                     <div class="elements-social social-icon-style-02 mt-20px lg-mt-20px">
                         <ul class="small-icon light">
+                            @foreach($socialMediaIcons as $SocialMediaIcon)
                             <li><a class="facebook" href="https://www.facebook.com/" target="_blank"><i
-                                        class="fa-brands fa-facebook-f"></i></a></li>
-                            <li><a class="dribbble" href="http://www.dribbble.com/" target="_blank"><i
-                                        class="fa-brands fa-linkedin"></i></a></li>
-                            <li><a class="twitter" href="https://www.twitter.com/" target="_blank"><i
-                                        class="fa-brands fa-twitter"></i></a></li>
-                            <li><a class="instagram" href="https://www.instagram.com/" target="_blank"><i
-                                        class="fa-brands fa-instagram"></i></a></li>
+                                        class="fa-brands {{$SocialMediaIcon->icon_class}}"></i></a></li>
+                                        @endforeach
+                           
                         </ul>
                     </div>
                 </div>
 
 
                 <div class="col-12 col-lg-2 col-sm-4 xs-mb-30px order-sm-3 order-lg-2">
-                    <span class="fs-18 fw-400 d-block text-white mb-5px">Hakkımızda</span>
+                    <span class="fs-18 fw-400 d-block text-white mb-5px">Hızlı Link</span>
                     <ul>
-                        <li><a href="demo-accounting-company.html">Projelerimiz</a></li>
-                        <li><a href="demo-accounting-services.html">Ekibimiz</a></li>
-                        <li><a href="demo-accounting-process.html">Şubelerimiz</a></li>
-                        <li><a href="demo-accounting-contact.html">İletişim</a></li>
+                        @foreach ($menu as $menus)
+                        
+                      
+                        <li><a href="{{$menus->href}}">{{$menus->text}}</a></li>
+                        @endforeach
                     </ul>
                 </div>
 
@@ -60,11 +58,9 @@
 
 
                 <div class="col-6 col-lg-2 col-sm-4 xs-mb-30px order-sm-5 order-lg-4">
-                    <span class="fs-18 fw-400 d-block text-white mb-5px">Get in touch</span>
-                    <p class="mb-5px">Need support?</p>
+                <span class="fs-18 fw-400 d-block text-white mb-5px">İletişim</span>
                     <a href="mailto:info@maliyetineev.com" style="color: white;">{{$settings['phone']}}</a>
-                    <p class="mb-5px">Customer care?</p>
-                    <a href="tel:4443284" class="text-white lh-16 d-block">{{$settings['phone']}}</a>
+                    <a href="tel:4443284" class="text-white lh-16 d-block">{{$settings['e-mail']}}</a>
                 </div>
 
 
@@ -72,14 +68,24 @@
                     <span class="fs-18 fw-400 d-block text-white mb-5px">Mail gönderin</span>
                     <p class="mb-20px">En kısa sürede dönüş yapacağız.</p>
                     <div class="d-inline-block w-100 newsletter-style-02 position-relative">
-                        <form action="https://craftohtml.themezaa.com/email-templates/subscribe-newsletter.php"
-                            method="post" class="position-relative">
+                    @if ($errors->any())
+                        <div class="alert alert-danger">
+                            <ul class="mb-0">
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
+                        <form method="POST" action="{{ route('footer.form.show') }}"
+                         class="position-relative">
+                         @csrf
                             <input
                                 class="border-color-transparent-white-light bg-transparent border-radius-4px w-100 form-control lg-ps-15px required fs-16"
                                 type="email" name="email" placeholder="Email adresiniz" />
                             <input type="hidden" name="redirect" value>
-                            <button class="btn pe-20px submit" aria-label="submit"><i
-                                    class="bi bi-envelope icon-small text-white"></i></button>
+                            <button class="btn pe-20px" aria-label="submit"><i
+                                    class="fa fa-envelope icon-small text-white"></i></button>
                             <div
                                 class="form-results border-radius-4px pt-5px pb-5px ps-15px pe-15px fs-14 lh-22 mt-10px w-100 text-center position-absolute d-none">
                             </div>
@@ -106,6 +112,23 @@
     <script type="text/javascript" src="{{ URL::to('/') }}/js/jquery.js"></script>
     <script type="text/javascript" src="{{ URL::to('/') }}/js/vendors.min.js"></script>
     <script type="text/javascript" src="{{ URL::to('/') }}/js/main.js"></script>
+  
+<script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script>
+var successMessage = "{{ session('success') }}";
+console.log(successMessage);
+if (successMessage) {
+    Toastify({
+        text: successMessage,
+        duration: 5000,
+        gravity: 'bottom',
+        position: 'center',
+        backgroundColor: 'green',
+        stopOnFocus: true,
+    }).showToast();
+}
+</script>
+
 
 </body>
 

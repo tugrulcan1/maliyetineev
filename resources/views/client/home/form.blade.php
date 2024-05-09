@@ -8,8 +8,6 @@
 <body>
 {{ $name }}
 {{ $email }}
-{{ $subject }}
 {{ $phone }}
-{{ $message }}
 </body>
 </html>

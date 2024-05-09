@@ -21,6 +21,7 @@ use App\Http\Controllers\Admin\SmtpSettingController;
 use App\Http\Controllers\Admin\SocialMediaIconController;
 use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\BranchController;
 use App\Http\Controllers\Client\CartController;
 use App\Http\Controllers\ClientPanel\ChangePasswordController as ClientPanelChangePasswordController;
 use App\Http\Controllers\ClientPanel\DashboardController as ClientPanelDashboardController;
@@ -33,6 +34,7 @@ use App\Http\Controllers\Client\PageController as ClientPageController;
 use App\Http\Controllers\Client\RegisterController;
 use App\Http\Controllers\Client\FormController;
 use App\Http\Controllers\CommentController;
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\Institutional\BrandController;
 use App\Http\Controllers\Institutional\BuyController;
 use App\Http\Controllers\Institutional\ChangePasswordController as InstitutionalChangePasswordController;
@@ -40,6 +42,7 @@ use App\Http\Controllers\Institutional\DashboardController;
 use App\Http\Controllers\Institutional\LoginController;
 use App\Http\Controllers\Institutional\ProfileController as InstitutionalProfileController;
 use App\Http\Controllers\Institutional\ProjectController as InstitutionalProjectController;
+use App\Http\Controllers\MektupController;
 use App\Http\Controllers\SliderController;
 use Illuminate\Support\Facades\Route;
 
@@ -57,17 +60,22 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, "index"])->name('index');
 Route::get('/admin', [AdminHomeController::class, "index"]);
+Route::get('/contact', [ContactController::class, "index"]);
 Route::get('/housing/{id}', [ClientHousingController::class, "show"])->name('housing.show');
 Route::get('/admin', [AdminHomeController::class, "index"]);
 Route::get('/project/{slug}', [ClientProjectController::class, "index"])->name('project.detail');
 Route::get('/marka_projeleri/{id}', [ClientProjectController::class, "brandProjects"])->name('brand.projects');
-Route::get('/projeler', [ClientProjectController::class, "projectList"])->name('project.list');
+Route::get('/projelerimiz', [ClientProjectController::class, "projectList"])->name('client.projects.list');
 Route::get('/proje_konut_detayi/{projectSlug}/{id}', [ClientProjectController::class, "projectHousingDetail"])->name('project.housings.detail');
 Route::get('/konutlar', [ClientHousingController::class, "list"])->name('housing.list');
 Route::get('page/{slug}', [ClientPageController::class, 'index'])->name('page.show');
 Route::post('add_to_cart', [CartController::class, 'addProjectToCart'])->name('add.to.cart');
 Route::get('cart', [CartController::class, 'index'])->name('cart');
-Route::post('/form', [FormController::class, 'submitForm'])->name('test.form.show');
+Route::post('/home-form', [FormController::class, 'submitForm'])->name('home.form.show');
+Route::post('/contact-form', [FormController::class, 'submitContactForm'])->name('contact.form.show');
+Route::post('/footer-form', [FormController::class, 'submitFooterForm'])->name('footer.form.show');
+
+
 
 Route::get('/admin/login', [AdminLoginController::class, "showLoginForm"])->name('admin.login');
 Route::post('/admin/login', [AdminLoginController::class, "login"])->name('admin.submit.login');
@@ -78,7 +86,8 @@ Route::get('/sss', [ClientLoginController::class, "sss"])->name('client.sss');
 Route::post('/login', [ClientLoginController::class, "login"])->name('client.submit.login');
 Route::post('/register', [RegisterController::class, "register"])->name('client.submit.register');
 Route::get('/logout', [ClientLoginController::class, "logout"])->name('client.logout');
-Route::get('/blogs/{blog}', [BlogController::class, 'show'])->name('blogs.show');
+
+
 
 Route::group(['prefix' => 'admin', "as" => "admin.", 'middleware' => ['admin']], function () {
     Route::delete('/blogs/{blog}', [BlogController::class, 'destroy'])->name('blogs.destroy');
@@ -169,6 +178,11 @@ Route::group(['prefix' => 'admin', "as" => "admin.", 'middleware' => ['admin']],
         Route::post('/comments', [CommentController::class, 'store'])->name('comments.store');
     });
 
+    Route::middleware(['checkPermission:CreateBranch'])->group(function () {
+        Route::get('/branchs/create', [BranchController::class, 'create'])->name('branchs.create');
+        Route::post('/branchs', [BranchController::class, 'store'])->name('branchs.store');
+    });
+
 
     Route::middleware(['checkPermission:GetProjectById'])->group(function () {
         Route::get('/projects/{project}/edit', [ProjectController::class, 'edit'])->name('projects.edit');
@@ -180,6 +194,10 @@ Route::group(['prefix' => 'admin', "as" => "admin.", 'middleware' => ['admin']],
 
     Route::middleware(['checkPermission:GetCommentById'])->group(function () {
         Route::get('/comments/{comment}/edit', [CommentController::class, 'edit'])->name('comments.edit');
+    });
+
+    Route::middleware(['checkPermission:GetBranchById'])->group(function () {
+        Route::get('/branchs/{branch}/edit', [BranchController::class, 'edit'])->name('branchs.edit');
     });
 
     Route::middleware(['checkPermission:UpdateProject'])->group(function () {
@@ -194,6 +212,10 @@ Route::group(['prefix' => 'admin', "as" => "admin.", 'middleware' => ['admin']],
         Route::put('/comments/{comment}', [CommentController::class, 'update'])->name('comments.update');
     });
 
+    Route::middleware(['checkPermission:UpdateBranch'])->group(function () {
+        Route::put('/branchs/{branch}', [BranchController::class, 'update'])->name('branchs.update');
+    });
+
     Route::middleware(['checkPermission:GetProjects'])->group(function () {
         Route::get('/projects', [ProjectController::class, 'index'])->name('projects.index');
     });
@@ -206,6 +228,10 @@ Route::group(['prefix' => 'admin', "as" => "admin.", 'middleware' => ['admin']],
         Route::get('/comments', [CommentController::class, 'index'])->name('comments.index');
     });
 
+    Route::middleware(['checkPermission:GetBranchs'])->group(function () {
+        Route::get('/branchs', [BranchController::class, 'index'])->name('branchs.index');
+    });
+
     Route::middleware(['checkPermission:DeleteProject'])->group(function () {
         Route::delete('/projects/{project}', [ProjectController::class, 'destroy'])->name('projects.destroy');
     });
@@ -216,6 +242,10 @@ Route::group(['prefix' => 'admin', "as" => "admin.", 'middleware' => ['admin']],
 
     Route::middleware(['checkPermission:DeleteComment'])->group(function () {
         Route::delete('/comments/{comment}', [CommentController::class, 'destroy'])->name('comments.destroy');
+    });
+
+    Route::middleware(['checkPermission:DeleteBranch'])->group(function () {
+        Route::delete('/branchs/{branch}', [BranchController::class, 'destroy'])->name('branchs.destroy');
     });
 
     // User Controller İzin Kontrolleri
@@ -485,6 +515,8 @@ Route::group(['prefix' => 'client', "as" => "client.", 'middleware' => ['client'
         Route::post('/users', [UserController::class, 'store'])->name('users.store');
     });
 });
-Route::get('/blogs' ,[BlogController::class, 'asd'] );
+Route::get('/ekibimiz' ,[BlogController::class, 'asd'] );
+Route::get('/subelerimiz' ,[BranchController::class, 'asd'] );
+
 
     

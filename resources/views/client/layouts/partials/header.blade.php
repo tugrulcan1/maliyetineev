@@ -20,11 +20,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
 
+    <link rel="stylesheet" href="{{ URL::to('/') }}/css/icon.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="stylesheet" href="{{ URL::to('/') }}/css/vendors.min.css" />
     <link rel="stylesheet" href="{{ URL::to('/') }}/css/icon.min.css" />
     <link rel="stylesheet" href="{{ URL::to('/') }}/css/style.min.css" />
     <link rel="stylesheet" href="{{ URL::to('/') }}/css/responsive.min.css" />
     <link rel="stylesheet" href="{{ URL::to('/') }}/demos/accounting/accounting.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body data-mobile-nav-style="classic" class="custom-cursor">
@@ -48,10 +51,10 @@
                     </div>
                     <div class="col-lg-6 col-md-5 text-end d-none d-md-flex">
                         <div class="widget fs-15 fw-500 me-35px lg-me-25px md-me-0 text-dark-gray"><a
-                                href="tel:4443284"><i class="feather icon-feather-phone-call"></i>{{$settings['phone']}}</a>
+                                href="tel:{{$settings['phone']}}"><i class="fa fa-phone"></i>{{$settings['phone']}}</a>
                         </div>
                         <div class="widget fs-15 fw-500 text-dark-gray d-none d-lg-inline-block"><i
-                                class="feather icon-feather-map-pin"></i>{{$settings['adress']}}</div>
+                                class=" fa fa-location"></i>{{$settings['adress']}}</div>
                     </div>
                 </div>
             </div>
@@ -62,7 +65,7 @@
             <div class="container-fluid">
                 <div class="col-auto col-lg-2 me-lg-0 me-auto">
                     <a class="navbar-brand" href="demo-accounting.html">
-                        <img src="images/logomev.png" data-at2x="images/demo-accounting-logo-black@2x.png" alt
+                        <img src="{{asset('images/logomev.png')}}"  alt
                             class="default-logo">
                         <img src="images/logomev.png" data-at2x="images/logomev.png" alt class="alt-logo">
                         <img src="images/logomev.png" data-at2x="images/logomev.png" alt class="mobile-logo">

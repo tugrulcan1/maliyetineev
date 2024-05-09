@@ -216,6 +216,31 @@
         ]
     },
 
+    {
+        "id": "branchs",
+        "label": "Yönetim",
+        "icon": "globe",
+        "text": "Şubeler",
+        "key": "Branchs",
+        "url": "#nv-projects",
+        "activePath": "admin/branchs*",
+        "subMenu": [
+            {
+                "text": "Oluştur",
+                "key": "CreateBranch",
+                "url": "admin.branchs.create",
+                "activePath": "admin/branchs/create"
+            },
+            {
+                "text": "Listele",
+                "key": "GetBranchs",
+                "url": "admin.branchs.index",
+                "activePath": "admin/branchs"
+            }
+        ]
+    },
+
+
 
     {
         "id": "projects",
@@ -343,7 +368,7 @@
         "id": "blogs",
         "label": "Yönetim",
         "icon": "instagram",
-        "text": "Bloglar",
+        "text": "Ekibimiz",
         "key": "Blogs",
         "url": "#nv-blogs",
         "activePath": "admin/blogs*",

@@ -37,16 +37,15 @@
             </div>
         </div>
         <div class="row bg-very-light-gray m-0 align-items-center justify-content-center text-center text-lg-start position-absolute "
-            style="bottom: 0; width: 100%; padding: 40px 0; background-color: rgba(1, 51, 85, 0.3); align-items: center;">
+            style="bottom: 0; width: 100%; padding: 20px 0; background-color: rgba(1, 51, 85, 0.3); align-items: center;">
 
 
-            <div class="col-md-2">
+            <div class="col-12 col-md-3 jnm">
                 <h4
                     style="color: white; display: flex; justify-content: center; margin: 0; padding: 0; font-weight: 900;">
-                    Maliyetine
-                    Ev'de </h4>
+                    Maliyetine Ev'de </h4>
             </div>
-            <div class="col-md-2">
+            <div class="col-6 col-md-2 jnm">
                 <div style="">
                     <div style="display: flex;">
                         <div style="background-color: green; padding: 10px; border-radius: 20px 0px 0px 0px; "> <i
@@ -58,7 +57,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-2">
+            <div class="col-6 col-md-2 jnm">
                 <div style=" ">
                     <div style="display: flex;">
                         <div style="background-color: green; padding: 10px; border-radius: 20px 0px 0px 0px;"> <i
@@ -70,7 +69,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-2">
+            <div class="col-6 col-md-2 jnm">
                 <div style="">
                     <div style="display: flex; ">
                         <div style="background-color: green; padding: 10px; border-radius: 20px 0px 0px 0px"> <i
@@ -82,7 +81,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-2">
+            <div class="col-6 col-md-2 jnm">
                 <div style=" ">
                     <div style="display: flex;">
                         <div style="background-color: green; padding: 10px; border-radius: 20px 0px 0px 0px"> <i
@@ -117,19 +116,29 @@
                         <h6 class="d-inline-block fw-600 text-dark-gray ls-minus-1px mb-35px sm-mb-25px"
                             data-anime="{ &quot;translateY&quot;: [15, 0], &quot;translateX&quot;: [-15, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 600, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
                             Formu doldurun sizi arayalım</h6>
-                        <form action="https://craftohtml.themezaa.com/email-templates/contact-form.php" method="post"
+                            @if ($errors->any())
+                        <div class="alert alert-danger">
+                            <ul class="mb-0">
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
+                        <form  method="POST" action="{{ route('home.form.show') }}"
                             data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateY&quot;: [15, 0], &quot;translateX&quot;: [-15, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 600, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
+                            @csrf
                             <div class="position-relative form-group mb-15px">
-                                <span class="form-icon"><i class="bi bi-emoji-smile"></i></span>
+                                <span class="form-icon"><i class="fas fa-user"></i></span>
                                 <input type="text" name="name" class="form-control required" placeholder="Ad soyad" />
                             </div>
                             <div class="position-relative form-group mb-15px">
-                                <span class="form-icon"><i class="bi bi-envelope"></i></span>
+                                <span class="form-icon"><i class="fa fa-envelope"></i></span>
                                 <input type="email" name="email" class="form-control required"
                                     placeholder="E-posta adresiniz" />
                             </div>
                             <div class="position-relative form-group mb-20px">
-                                <span class="form-icon"><i class="bi bi-telephone-outbound"></i></span>
+                                <span class="form-icon"><i class="fa fa-phone"></i></span>
                                 <input type="tel" name="phone" class="form-control" placeholder="Telefon Numaranız" />
                             </div>
                             <div class="position-relative terms-condition-box text-start d-inline-block">
@@ -141,9 +150,8 @@
                                 </label>
                             </div>
                             <div class="position-relative mt-20px">
-                                <button class="btn btn-large btn-round-edge btn-base-color btn-box-shadow submit w-100"
+                                <button class="btn btn-large btn-round-edge btn-base-color btn-box-shadow w-100"
                                     type="submit">Gönder</button>
-                                <div class="form-results mt-20px text-center lh-24 d-none"></div>
                             </div>
                         </form>
                     </div>
@@ -288,13 +296,7 @@
                                 <div class="col-md-6 sm-mb-30px position-relative overflow-hidden"
                                     data-anime="{ &quot;effect&quot;: &quot;slide&quot;, &quot;color&quot;: &quot;#005153&quot;, &quot;direction&quot;:&quot;lr&quot;, &quot;easing&quot;: &quot;easeOutQuad&quot;, &quot;delay&quot;:50}">
                                     <img src="images/demo-accounting-img-06.jpg" alt class="w-100 border-radius-6px">
-                                    <div class="bg-very-light-gray w-250px position-absolute pt-20px pb-20px ps-25px pe-25px border-radius-4px bottom-30px left-35px box-shadow-large d-flex align-items-center"
-                                        data-anime="{ &quot;translateY&quot;: [0, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1200, &quot;delay&quot;: 800, &quot;staggervalue&quot;: 500, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
-                                        <h2 class="vertical-counter d-inline-flex text-dark-gray fw-700 ls-minus-2px md-ls-minus-1px mb-0 text-nowrap border-end border-1 border-color-transparent-dark-very-light pe-20px me-20px"
-                                            data-to="85"></h2>
-                                        <span class="text-dark-gray ls-minus-05px d-inline-block lh-22">Project
-                                            completed</span>
-                                    </div>
+                                   
                                 </div>
                                 <div class="col-xl-4 col-lg-5 offset-lg-1 col-md-6 text-center text-md-start"
                                     data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateX&quot;: [50, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1200, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
@@ -455,15 +457,14 @@
 									@foreach($blogs as $blog)
                                     <div class="swiper-slide mra" style="">
                                         <div class="interactive-banner-style-08" style="">
-                                            <figure class="mb-0 hover-box box-hover position-relative">
+                                            <figure class="mb-0 hover-box box-hover position-relative" style="text-align: center;">
                                                 <img src="images/{{$blog->image}}" alt class="border-radius-6px"
                                                     style="width: 210px; height: 270px; object-fit: cover;" />
                                                 <figcaption class="w-100 p-30px lg-p-25px bg-white">
                                                     <div class="position-relative z-index-1 overflow-hidden lg-pb-5px ">
                                                         <span
-                                                            class="fs-19 d-block fw-600 text-dark-gray lh-26 ls-minus-05px">Peri
-                                                            Taş</span>
-                                                        <p class="m-0" style="font-size: 13px;">Muhasebe</p>
+                                                            class="fs-19 d-block fw-600 text-dark-gray lh-26 ls-minus-05px">{{$blog->title}}</span>
+                                                        <p class="m-0" style="font-size: 13px;">{{$blog->short_content}}</p>
 
                                                     </div>
                                                     <div
@@ -601,45 +602,58 @@
 
     <section>
         <div class="container">
-            <div class="row justify-content-center mb-7 md-mb-4">
-                <div class="col  ">
-                    <div>
-                        <img src="/images/mustafa.jpg" alt="" style="height: 100px; border-radius: 50px;">
-                        <p style="font-size: 20px; margin: 0; padding: 0;">Başlık</p>
-                        <p>asd</p>
-                    </div>
-                </div>
-                <div class="col  ">
-                    <div>
-                        <img src="/images/mustafa.jpg" alt="" style="height: 100px; border-radius: 50px;">
-                        <p style="font-size: 20px; margin: 0; padding: 0;">Başlık</p>
-                        <p>asd</p>
-                    </div>
-                </div>
-                <div class="col  ">
-                    <div>
-                        <img src="/images/mustafa.jpg" alt="" style="height: 100px; border-radius: 50px;">
-                        <p style="font-size: 20px; margin: 0; padding: 0;">Başlık</p>
-                        <p>asd</p>
-                    </div>
-                </div>
-                <div class="col  ">
-                    <div>
-                        <img src="/images/mustafa.jpg" alt="" style="height: 100px; border-radius: 50px;">
-                        <p style="font-size: 20px; margin: 0; padding: 0;">Başlık</p>
-                        <p>asd</p>
-                    </div>
-                </div>
-                <div class="col  ">
-                    <div>
-                        <img src="/images/mustafa.jpg" alt="" style="height: 100px; border-radius: 50px;">
-                        <p style="font-size: 20px; margin: 0; padding: 0;">Başlık</p>
-                        <p>asd</p>
-                    </div>
-                </div>
+
+        <h3 class="text-dark-gray fw-700" style="text-align: center;">{{$settings['section_8_title']}}</h3>
+            <p>{{$settings['section_8_small_title']}}</p>
+        <div class="row">
 
 
-            </div>
+<div class="col-sm  mb-4" style="text-align: center;">
+    <div>
+        <img src="/images/trust.png" alt="" style="height: 100px;">
+        <p class="text-dark-gray fw-700"
+            style="font-size: 20px; margin: 0; padding: 0;  font-size: 16px; ">
+            {{$settings['section_8_1']}}</p>
+        <p style="font-size: 12px; line-height: 12px; font-weight: 400;">Her adımda şeffaflık ve
+        {{$settings['section_8_1.1']}}</p>
+    </div>
+</div>
+<div class="col-sm  mb-4" style="text-align: center;">
+    <div>
+        <img src="/images/budget.png" alt="" style="height: 100px; ">
+        <p class="text-dark-gray fw-700"
+            style="font-size: 20px; margin: 0; padding: 0; color: #333; font-size: 16px;">{{$settings['section_8_2']}}
+        </p>
+        <p style="font-size: 12px; line-height: 12px; font-weight: 400;">{{$settings['section_8_2.1']}}</p>
+    </div>
+</div>
+<div class="col-sm  mb-4" style="text-align: center;">
+    <div>
+        <img src="/images/bank.png" alt="" style="height: 100px; ">
+        <p class="text-dark-gray fw-700"
+            style="font-size: 20px; margin: 0; padding: 0; color: #333; font-size: 16px;">{{$settings['section_8_3']}}
+        </p>
+        <p style="font-size: 12px; line-height: 12px; font-weight: 400;">{{$settings['section_8_3.1']}}</p>
+    </div>
+</div>
+<div class="col-sm  mb-4" style="text-align: center;">
+    <div>
+        <img src="/images/timing.png" alt="" style="height: 100px;">
+        <p class="text-dark-gray fw-700"
+            style="font-size: 20px; margin: 0; padding: 0; color: #333; font-size: 16px;">{{$settings['section_8_4']}}
+        </p>
+        <p style="font-size: 12px; line-height: 12px; font-weight: 400;">{{$settings['section_8_4.1']}}</p>
+    </div>
+</div>
+<div class="col-sm  mb-4" style="text-align: center;">
+    <div>
+        <img src="/images/smartphone.png" alt="" style="height: 100px; ">
+        <p class="text-dark-gray fw-700"
+            style="font-size: 20px; margin: 0; padding: 0; color: #333; font-size: 16px;">{{$settings['section_8_5']}}</p>
+        <p style="font-size: 12px; line-height: 12px; font-weight: 400;">{{$settings['section_8_5.1']}}</p>
+    </div>
+</div>
+</div>
             <div class="row m-0 align-items-center justify-content-center border border-color-extra-medium-gray border-radius-100px md-border-radius-6px ps-10px pe-10px box-shadow-quadruple-large"
                 data-anime="{ &quot;scale&quot;: [1.1, 1], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 800, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
                 <div class="col-lg-10">
@@ -695,235 +709,11 @@
         </div>
     </section>
 
-    <!-- <section>
+    <section style="padding: 0 !important; margin-bottom: 50px; ">
         <div class="container">
-            <div class="row justify-content-center mb-7 md-mb-4">
-                <div class="col-xl-5 col-lg-6 col-md-12 md-mb-50px sm-mb-40px text-center text-lg-start">
-                    <h4 class="fw-700 mb-0 text-dark-gray ls-minus-1px"
-                        data-anime="{ &quot;el&quot;: &quot;lines&quot;, &quot;translateY&quot;: [30, 0], &quot;opacity&quot;: [0,1], &quot;delay&quot;: 0, &quot;staggervalue&quot;: 250, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
-                        Amazing accounting statistics showing the power of numbers.</h4>
-                </div>
-                <div class="col-lg-6 offset-xl-1 text-center text-lg-start">
-                    <div class="row align-items-center justify-content-center justify-content-lg-start">
-
-                        <div class="col-sm-6 last-paragraph-no-margin counter-style-04 md-mb-35px">
-                            <h2 class="vertical-counter d-inline-flex alt-font text-dark-gray fw-700 ls-minus-2px mb-5px"
-                                data-text="%" data-to="96"><sup class="text-emerald-green top-minus-5px"><i
-                                        class="bi bi-arrow-up icon-medium"></i></sup></h2>
-                            <span class="fs-19 fw-600 ls-minus-05px mb-5px d-block text-dark-gray"
-                                data-anime="{ &quot;el&quot;: &quot;lines&quot;, &quot;translateY&quot;: [30, 0], &quot;opacity&quot;: [0,1], &quot;delay&quot;: 0, &quot;staggervalue&quot;: 250, &quot;easing&quot;: &quot;easeOutQuad&quot; }">Prefer
-                                cloud accounting</span>
-                            <p class="w-90 sm-w-100 md-mx-auto"
-                                data-anime="{ &quot;el&quot;: &quot;lines&quot;, &quot;translateY&quot;: [30, 0], &quot;opacity&quot;: [0,1], &quot;delay&quot;: 0, &quot;staggervalue&quot;: 250, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
-                                Lorem ipsum simply dummy text printing typesetting.</p>
-                        </div>
-
-
-                        <div class="col-sm-6 last-paragraph-no-margin counter-style-04 md-mb-35px">
-                            <h2 class="vertical-counter d-inline-flex alt-font text-dark-gray fw-700 ls-minus-2px mb-5px"
-                                data-text="%" data-to="98"><sup class="text-emerald-green top-minus-5px"><i
-                                        class="bi bi-arrow-up icon-medium"></i></sup></h2>
-                            <span class="fs-19 fw-600 ls-minus-05px mb-5px d-block text-dark-gray"
-                                data-anime="{ &quot;el&quot;: &quot;lines&quot;, &quot;translateY&quot;: [30, 0], &quot;opacity&quot;: [0,1], &quot;delay&quot;: 0, &quot;staggervalue&quot;: 250, &quot;easing&quot;: &quot;easeOutQuad&quot; }">Most
-                                outsourced tasks</span>
-                            <p class="w-90 sm-w-100 md-mx-auto"
-                                data-anime="{ &quot;el&quot;: &quot;lines&quot;, &quot;translateY&quot;: [30, 0], &quot;opacity&quot;: [0,1], &quot;delay&quot;: 0, &quot;staggervalue&quot;: 250, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
-                                Lorem ipsum simply dummy text printing typesetting.</p>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="row m-0 align-items-center justify-content-center border border-color-extra-medium-gray border-radius-100px md-border-radius-6px ps-10px pe-10px box-shadow-quadruple-large"
-                data-anime="{ &quot;scale&quot;: [1.1, 1], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 800, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
-                <div class="col-lg-10">
-                    <div class="swiper slider-one-slide testimonials-style-09"
-                        data-slider-options="{ &quot;slidesPerView&quot;: 1, &quot;loop&quot;: true, &quot;autoplay&quot;: { &quot;delay&quot;: 4000, &quot;disableOnInteraction&quot;: false }, &quot;navigation&quot;: { &quot;nextEl&quot;: &quot;.slider-one-slide-next-1&quot;, &quot;prevEl&quot;: &quot;.slider-one-slide-prev-1&quot; }, &quot;keyboard&quot;: { &quot;enabled&quot;: true, &quot;onlyInViewport&quot;: true }, &quot;effect&quot;: &quot;slide&quot; }">
-                        <div class="swiper-wrapper">
-
-                            <div class="swiper-slide">
-                                <div class="row align-items-center pt-25px pb-25px">
-                                    <div class="col-lg-8 d-lg-flex align-items-center text-center text-lg-start">
-                                        <img src="images/avtar-28.jpg" class="rounded-circle w-100px h-100px md-mb-35px"
-                                            alt>
-                                        <span style="" class="d-block ps-40px md-ps-0 md-mx-auto position-relative"><img
-                                                src="images/demo-accounting-home-quote-img.png"
-                                                class="position-absolute left-minus-25px top-minus-15px lg-top-minus-5px md-top-minus-50px w-40px md-left-0px md-right-0px md-mx-auto"
-                                                alt>Maliyetine Ev Kocaeli Bahçecik organizasyonundan 2 adet villamıza
-                                            ait arsa tapularımızı satın aldık, şimdi proje başlangıcını bekliyoruz. ŞU
-                                            ANA kadar ki süreçte ilgili arkadaşlar hem şeffaf hemde her konuda
-                                            yardımseverlerdi. Umarım sürecin sonuna kadar memnuniyetimiz katlanarak
-                                            devam eder. Sizlerin de Başarılarınız daim olsun.</span>
-                                    </div>
-                                    <div class="col-lg-1 d-none d-lg-inline-block">
-                                        <div
-                                            class="separator-line w-1px md-w-100 h-60px md-h-1px bg-extra-medium-gray mx-auto">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 text-center text-lg-start md-mt-15px">
-                                        <span class="fs-19 ls-minus-05px fw-600 text-dark-gray d-block lh-28">Murat
-                                            Asal</span>
-                                        <div>Master Kandıra Köy Evleri</div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="swiper-slide">
-                                <div class="row align-items-center pt-25px pb-25px">
-                                    <div class="col-lg-8 d-lg-flex align-items-center text-center text-lg-start">
-                                        <img src="images/avtar-29.jpg" class="rounded-circle w-100px h-100px md-mb-35px"
-                                            alt>
-                                        <span class="d-block ps-40px md-ps-0 md-mx-auto position-relative"><img
-                                                src="images/demo-accounting-home-quote-img.png"
-                                                class="position-absolute left-minus-25px top-minus-15px lg-top-minus-5px md-top-minus-50px w-40px md-left-0px md-right-0px md-mx-auto"
-                                                alt>This is one of the best templates I've came across. Very organized,
-                                            great design style and easy around.</span>
-                                    </div>
-                                    <div class="col-lg-1 d-none d-lg-inline-block">
-                                        <div
-                                            class="separator-line w-1px md-w-100 h-60px md-h-1px bg-extra-medium-gray mx-auto">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 text-center text-lg-start md-mt-15px">
-                                        <span class="fs-19 ls-minus-05px fw-600 text-dark-gray d-block lh-28">Matthew
-                                            taylor</span>
-                                        <div>Financial manager</div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="swiper-slide">
-                                <div class="row align-items-center pt-25px pb-25px">
-                                    <div class="col-lg-8 d-lg-flex align-items-center text-center text-lg-start">
-                                        <img src="images/avtar-27.jpg" class="rounded-circle w-100px h-100px md-mb-35px"
-                                            alt>
-                                        <span class="d-block ps-40px md-ps-0 md-mx-auto position-relative"><img
-                                                src="images/demo-accounting-home-quote-img.png"
-                                                class="position-absolute left-minus-25px top-minus-15px lg-top-minus-5px md-top-minus-50px w-40px md-left-0px md-right-0px md-mx-auto"
-                                                alt>This is one of the best templates I've came across. Very organized,
-                                            great design style and easy around.</span>
-                                    </div>
-                                    <div class="col-lg-1 d-none d-lg-inline-block">
-                                        <div
-                                            class="separator-line w-1px md-w-100 h-60px md-h-1px bg-extra-medium-gray mx-auto">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 text-center text-lg-start md-mt-15px">
-                                        <span class="fs-19 ls-minus-05px fw-600 text-dark-gray d-block lh-28">Herman
-                                            miller</span>
-                                        <div>Chief financial</div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 md-mb-25px">
-                    <div class="d-flex justify-content-center">
-
-                        <div
-                            class="slider-one-slide-prev-1 swiper-button-prev slider-navigation-style-04 bg-very-light-gray">
-                            <i class="fa-solid fa-arrow-left icon-small text-dark-gray"></i>
-                        </div>
-                        <div
-                            class="slider-one-slide-next-1 swiper-button-next slider-navigation-style-04 bg-very-light-gray">
-                            <i class="fa-solid fa-arrow-right icon-small text-dark-gray"></i>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
+            <img src="{{ asset('images/asdasd.jpg') }}" alt="" style="width: 1220px; height: 350px; object-fit: contain;">
         </div>
-    </section> -->
-
-
-    <!-- <section class="pt-0">
-        <div class="container">
-            <div class="row justify-content-center mb-2">
-                <div class="col-xxl-5 col-lg-7 col-md-8 text-center"
-                    data-anime="{ &quot;translateY&quot;: [50, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1200, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
-                    <h4 class="text-dark-gray fw-700 ls-minus-1px">Attractive accounting articles updated daily basis
-                    </h4>
-                </div>
-            </div>
-            <div class="row g-0">
-                <div class="col-12">
-                    <ul class="blog-classic blog-wrapper grid-loading grid grid-4col xl-grid-4col lg-grid-3col md-grid-2col sm-grid-2col xs-grid-1col gutter-extra-large"
-                        data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateY&quot;: [50, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1200, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
-                        <li class="grid-sizer"></li>
-
-                        <li class="grid-item">
-                            <div class="card bg-transparent border-0 h-100">
-                                <div class="blog-image position-relative overflow-hidden border-radius-4px">
-                                    <a href="demo-accounting-blog-single-creative.html"><img
-                                            src="images/demo-accounting-blog-01.jpg" alt /></a>
-                                </div>
-                                <div class="card-body px-0 pt-30px pb-30px xs-pb-15px last-paragraph-no-margin">
-                                    <a href="demo-accounting-blog-single-creative.html"
-                                        class="card-title mb-5px fw-600 text-dark-gray d-block">High returns on
-                                        investment</a>
-                                    <p>Lorem ipsum simply dummy printing setting industry...</p>
-                                </div>
-                            </div>
-                        </li>
-
-
-                        <li class="grid-item">
-                            <div class="card bg-transparent border-0 h-100">
-                                <div class="blog-image position-relative overflow-hidden border-radius-4px">
-                                    <a href="demo-accounting-blog-single-creative.html"><img
-                                            src="images/demo-accounting-blog-02.jpg" alt /></a>
-                                </div>
-                                <div class="card-body px-0 pt-30px pb-30px xs-pb-15px last-paragraph-no-margin">
-                                    <a href="demo-accounting-blog-single-creative.html"
-                                        class="card-title mb-5px fw-600 text-dark-gray d-block">Made businesses
-                                        efficient</a>
-                                    <p>Lorem ipsum simply dummy printing setting industry...</p>
-                                </div>
-                            </div>
-                        </li>
-
-
-                        <li class="grid-item">
-                            <div class="card bg-transparent border-0 h-100">
-                                <div class="blog-image position-relative overflow-hidden border-radius-4px">
-                                    <a href="demo-accounting-blog-single-creative.html"><img
-                                            src="images/demo-accounting-blog-03.jpg" alt /></a>
-                                </div>
-                                <div class="card-body px-0 pt-30px pb-30px xs-pb-15px last-paragraph-no-margin">
-                                    <a href="demo-accounting-blog-single-creative.html"
-                                        class="card-title mb-5px fw-600 text-dark-gray d-block">Business meeting
-                                        2021</a>
-                                    <p>Lorem ipsum simply dummy printing setting industry...</p>
-                                </div>
-                            </div>
-                        </li>
-
-
-                        <li class="grid-item">
-                            <div class="card bg-transparent border-0 h-100">
-                                <div class="blog-image position-relative overflow-hidden border-radius-4px">
-                                    <a href="demo-accounting-blog-single-creative.html"><img
-                                            src="images/demo-accounting-blog-04.jpg" alt /></a>
-                                </div>
-                                <div class="card-body px-0 pt-30px pb-30px xs-pb-15px last-paragraph-no-margin">
-                                    <a href="demo-accounting-blog-single-creative.html"
-                                        class="card-title mb-5px fw-600 text-dark-gray d-block">Corporate workplace
-                                        ethics</a>
-                                    <p>Lorem ipsum simply dummy printing setting industry...</p>
-                                </div>
-                            </div>
-                        </li>
-
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
+    </section>
 
   
 

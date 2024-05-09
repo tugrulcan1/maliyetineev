@@ -28,7 +28,7 @@ class ProjectController extends Controller
     }
 
     public function projectList(Request $request){
-        $projects = Project::orderBy('view_count');
+        $projects = Project::orderBy('id');
         if($request->input("search")){
             $projects = $projects->where('project_title','LIKE','%'.$request->input('search').'%');
         }
@@ -46,7 +46,7 @@ class ProjectController extends Controller
         $cities = City::get();
         $projects = $projects->get();
         $menu = Menu::getMenuItems();
-        return view('client.projects.list',compact('menu','projects','housingTypes','housingStatus','cities'));
+        return view('client.projects',compact('menu','projects','housingTypes','housingStatus','cities'));
     }
     
     public function projectHousingDetail($projectSlug,$housingOrder){

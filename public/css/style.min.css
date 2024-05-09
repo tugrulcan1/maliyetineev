@@ -3213,7 +3213,7 @@ textarea:focus {
 .bg-base-color,
 .down-section-line .section-line:before,
 .header-cart-icon .cart-count {
-  background-color: var(--base-color);
+  background-color: #0f75bc;
 }
 .theme-demos .buy-theme .theme-wrapper {
   padding: 0;
@@ -3313,7 +3313,7 @@ textarea:focus {
 }
 .bg-dark-gray,
 .bg-dark-gray:focus {
-  background-color: var(--dark-gray);
+  background-color: #224b67;
 }
 .bg-black {
   background-color: var(--black);
@@ -3347,7 +3347,7 @@ header .left-nav .navbar-nav:before {
   background-color: var(--crusoe-green);
 }
 .bg-yellow {
-  background-color: var(--yellow);
+  background-color: #0f75bc;
 }
 .bg-charcoal-blue {
   background-color: var(--charcoal-blue);
@@ -13003,6 +13003,7 @@ blockquote footer {
   -webkit-transition: all 0.5s cubic-bezier(0.61, 1, 0.88, 1.5);
   transition: all 0.5s cubic-bezier(0.61, 1, 0.88, 1.5);
 }
+
 .interactive-banner-style-09 img {
   -webkit-transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
   transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);

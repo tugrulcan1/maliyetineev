@@ -230,8 +230,8 @@ header .navbar-brand img {
   top: 11px;
 }
 .contact-form-style-01 {
-  margin-top: -75%;
-  margin-right: -95%;
+  margin-top: -55%;
+  margin-right: -74%;
 }
 .page-title-extra-small h1 {
   font-size: 18px;
@@ -417,7 +417,13 @@ footer ul li {
 }
 @media (max-width: 991px) {
   .contact-form-style-01 {
-    margin-top: 0;
+    margin: 0;
+  }
+  .eo {
+    text-align: center !important;
+  }
+  .jnm {
+    margin-bottom: 10px;
   }
   .tab-style-08 ul .nav-item .nav-link {
     padding: 18px 20px;

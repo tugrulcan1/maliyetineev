@@ -13,6 +13,7 @@ use App\Models\Slider;
 use App\Models\StandOutUser;
 use Illuminate\Http\Request;
 use App\Models\Blog;
+use Mail;
 
 
 
@@ -29,4 +30,5 @@ class HomeController extends Controller
        
         return view('client.home.index', compact('blogs','sliders','comments'));
     }
+    
 }
