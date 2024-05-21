@@ -47,9 +47,15 @@
                                         </div>
 
                                         <div class="col-md-12">
-                                            <label class="form-label" for="image">Image</label>
+                                            <label class="form-label" for="image">Image (Anasayfa'da Görünecek Resim)</label>
                                             <input name="image" class="form-control" id="url" type="file"
                                                 />
+                                        </div>
+
+                                        <div class="col-md-12">
+                                            <label class="form-label" for="image">Galery</label>
+                                            <input name="galery" class="form-control" id="url" type="file"
+                                               multiple />
                                         </div>
 
                                       

@@ -43,10 +43,11 @@
                                             data-sort="projectName" style="width:20%;">PROJE İÇERİK</th>
                                             <th class="sort white-space-nowrap align-middle ps-0" scope="col"
                                             data-sort="projectName" style="width:20%;">PROJE HREF</th>
-                                        <th>İŞLEMLER</th>
-                                     
                                             <th class="sort white-space-nowrap align-middle ps-0" scope="col"
                                             data-sort="projectName" style="width:20%;">PROJE RESİM</th>
+                                        <th>İŞLEMLER</th>
+                                     
+                                            
                                          
                                     </tr>
                                 </thead>

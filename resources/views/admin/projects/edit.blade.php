@@ -34,6 +34,11 @@
                                 <img src="{{ url('uploads/'.$project->image) }}" alt="">
                                 <input type="file" name="image" id="">
                             </div>
+                            <div class="mb-3">
+                                <label class="form-label" for="image">İmage</label>
+                                <img src="{{ url('uploads/'.$project->galery) }}" alt="">
+                                <input type="file" name="image" id="">
+                            </div>
                          
 
                             <button type="submit" class="btn btn-primary">Update project</button>

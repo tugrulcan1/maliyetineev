@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Galery;
 use App\Models\HousingStatus;
 use App\Models\HousingType;
 use App\Models\Project;
@@ -18,6 +19,7 @@ class ProjectController extends Controller
     public function index()
     {
         $projects=Project::orderBy("created_at","desc")->get();
+        $galery=Galery::all();
         return view('admin.projects.index' , compact('projects'));
     }
 
@@ -55,6 +57,7 @@ class ProjectController extends Controller
             'project_title' => 'required',
             'description' => 'required',
             'slug' => 'required',
+            'galery' => 'required',
             'image' => 'required',
         ]);
 
@@ -76,6 +79,7 @@ class ProjectController extends Controller
             'description' => $request->input('description'),
             'slug' => $request->input('slug'),
             'image' => $dosyaAdi,
+            'galery'=>$request->input('galery'),
         ]);
 
         return redirect()->route('admin.projects.index')

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use App\Models\Galery;
 use App\Models\Project;
 use Illuminate\Http\Request;
 use Darryldecode\Cart\Validators\Validator;
@@ -17,7 +18,7 @@ public function index()
 }
 public function show(Project $project)
 {
-    return view('client.projectsdetail', compact('project'));
+    return view('client.projects.detail', compact('project'));
 }
 public function asd()
 {
@@ -36,8 +37,9 @@ public function store(Request $request)
      $request->validate([
         'project_title' => 'required',
         'description' => 'required',
-        'slug' => 'slug',
+        'slug' => 'required',
         'image' => 'required',
+
     ]);
 
     $dosya = $request->file('image');

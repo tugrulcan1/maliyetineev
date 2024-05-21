@@ -66,6 +66,7 @@ Route::get('/admin', [AdminHomeController::class, "index"]);
 Route::get('/project/{slug}', [ClientProjectController::class, "index"])->name('project.detail');
 Route::get('/marka_projeleri/{id}', [ClientProjectController::class, "brandProjects"])->name('brand.projects');
 Route::get('/projelerimiz', [ClientProjectController::class, "projectList"])->name('client.projects.list');
+Route::get('/projelerimiz/{id}', [ProjectController::class, "show"])->name('projelerimiz.show');
 Route::get('/proje_konut_detayi/{projectSlug}/{id}', [ClientProjectController::class, "projectHousingDetail"])->name('project.housings.detail');
 Route::get('/konutlar', [ClientHousingController::class, "list"])->name('housing.list');
 Route::get('page/{slug}', [ClientPageController::class, 'index'])->name('page.show');
