@@ -109,40 +109,40 @@
                                 </div>
                             </div>
 
-                            <form action="https://craftohtml.themezaa.com/email-templates/contact-form.php"
-                                method="post" class="row contact-form-style-02">
-                                <div class="col-md-6 mb-30px">
-                                    <input class="input-name form-control required" type="text" name="name"
-                                        placeholder="Ad soyad" />
-                                </div>
-                                <div class="col-md-6 mb-30px">
-                                    <input class="form-control required" type="email" name="email"
-                                        placeholder="E-mail adresiniz" />
-                                </div>
-                                <div class="col-md-6 mb-30px">
-                                    <input class="form-control" type="tel" name="phone" placeholder="Telefon" />
-                                </div>
-                                <div class="col-md-6 mb-30px">
-                                    <input class="form-control" type="text" name="subject" placeholder="Mesleğiniz" />
-                                </div>
-                                <div class="col-md-12 mb-30px">
-                                    <textarea class="form-control" cols="40" rows="4" name="message"
-                                        placeholder="Mesajınız"></textarea>
-                                </div>
-                                <div class="col-xl-7 col-md-7 last-paragraph-no-margin">
-                                    <p class="text-center text-md-start fs-15 lh-26">24 saat içerisinde dönüş
-                                        sağlayacağız.
-                                    </p>
-                                </div>
-                                <div class="col-xl-5 col-md-5 text-center text-md-end sm-mt-20px">
-                                    <input type="hidden" name="redirect" value>
-                                    <button class="btn btn-base-color btn-medium btn-rounded btn-box-shadow submit"
-                                        type="submit" style="background: #0f75bc;">Gönder</button>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-results mt-20px d-none"></div>
-                                </div>
-                            </form>
+                            <form action="{{ route('contact.form.show') }}" method="POST"
+                            class="row contact-form-style-02">
+                            @csrf
+                            <div class="col-md-6 mb-30px">
+                                <input class="input-name form-control required" type="text" name="name"
+                                    placeholder="Ad soyad" />
+                            </div>
+                            <div class="col-md-6 mb-30px">
+                                <input class="form-control required" type="email" name="email"
+                                    placeholder="E-mail adresiniz" />
+                            </div>
+                            <div class="col-md-6 mb-30px">
+                                <input class="form-control" type="tel" name="phone" placeholder="Telefon" />
+                            </div>
+                            <div class="col-md-6 mb-30px">
+                                <input class="form-control" type="text" name="job" placeholder="Mesleğiniz" />
+                            </div>
+                            <div class="col-md-12 mb-30px">
+                                <textarea class="form-control" cols="40" rows="4" name="message"
+                                    placeholder="Mesajınız"></textarea>
+                            </div>
+                            <div class="col-xl-7 col-md-7 last-paragraph-no-margin">
+                                <p class="text-center text-md-start fs-15 lh-26">24 saat içerisinde dönüş sağlayacağız.
+                                </p>
+                            </div>
+                            <div class="col-xl-5 col-md-5 text-center text-md-end sm-mt-20px">
+                                <input type="hidden" name="redirect" value>
+                                <button class="btn btn-base-color btn-medium btn-rounded btn-box-shadow"style="background: #0f75bc !important"
+                                    type="submit">Gönder</button>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-results mt-20px d-none"></div>
+                            </div>
+                        </form>
 
                         </div>
                     </div>
@@ -206,7 +206,7 @@
         </div>
     </div>
 </div> -->
-
+@if(count($project->galleries) > 0)
 <div class="section">
         <div class="container">
             <h3 style="text-align: center; font-weight: 700; color: #333; margin-top: 100px; ">Proje Görselleri</h3>
@@ -222,6 +222,7 @@
             </swiper-container>
         </div>
     </div>
+    @endif
 
 <section style=" padding-bottom: 80px; ">
     <div class="container">
