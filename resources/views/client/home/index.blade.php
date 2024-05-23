@@ -161,7 +161,7 @@
     </section>
 
 
-    <section class="bg-very-light-gray overflow-hidden">
+    <section class="bg-very-light-gray overflow-hidden" style="padding-top: 40px !important; padding-bottom: 40px !important;">
         <div class="container-fluid">
             <div class="row align-items-center justify-content-center mb-6 text-center text-lg-start column-form">
                 <div class="col-xl-5 col-lg-5 md-mb-20px"
@@ -193,7 +193,7 @@
                     <div class="outside-box-right-40 xs-outside-box-right-0"
                         data-anime="{ &quot;translateX&quot;: [100, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1200, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
                         <div class="swiper magic-cursor"
-                            data-slider-options="{ &quot;slidesPerView&quot;: 1, &quot;spaceBetween&quot;: 28, &quot;loop&quot;: true, &quot;autoplay&quot;: { &quot;delay&quot;: 2000, &quot;disableOnInteraction&quot;: false }, &quot;pagination&quot;: { &quot;el&quot;: &quot;.slider-four-slide-pagination-1&quot;, &quot;clickable&quot;: true }, &quot;navigation&quot;: { &quot;nextEl&quot;: &quot;.slider-one-slide-next-1&quot;, &quot;prevEl&quot;: &quot;.slider-one-slide-prev-1&quot; }, &quot;keyboard&quot;: { &quot;enabled&quot;: true, &quot;onlyInViewport&quot;: true }, &quot;breakpoints&quot;: { &quot;1200&quot;: { &quot;slidesPerView&quot;: 5 }, &quot;992&quot;: { &quot;slidesPerView&quot;: 4 }, &quot;768&quot;: { &quot;slidesPerView&quot;: 4 }, &quot;576&quot;: { &quot;slidesPerView&quot;: 2 } }, &quot;effect&quot;: &quot;slide&quot; }">
+                        data-slider-options="{ &quot;slidesPerView&quot;: 1, &quot;spaceBetween&quot;: 28, &quot;loop&quot;: true, &quot;autoplay&quot;: { &quot;delay&quot;: 2000, &quot;disableOnInteraction&quot;: false }, &quot;pagination&quot;: { &quot;el&quot;: &quot;.slider-four-slide-pagination-1&quot;, &quot;clickable&quot;: true }, &quot;navigation&quot;: { &quot;nextEl&quot;: &quot;.slider-one-slide-next-1&quot;, &quot;prevEl&quot;: &quot;.slider-one-slide-prev-1&quot; }, &quot;keyboard&quot;: { &quot;enabled&quot;: true, &quot;onlyInViewport&quot;: true }, &quot;breakpoints&quot;: { &quot;1200&quot;: { &quot;slidesPerView&quot;: 5 }, &quot;992&quot;: { &quot;slidesPerView&quot;: 4 }, &quot;768&quot;: { &quot;slidesPerView&quot;: 4 }, &quot;576&quot;: { &quot;slidesPerView&quot;: 2 } }, &quot;effect&quot;: &quot;slide&quot; }">
                             <div class="swiper-wrapper">
 								@foreach($projects as $project)
                                 <div class="swiper-slide">
@@ -250,15 +250,15 @@
     </section>
 
 
-    <section class="p-0 bg-base-color">
+    <section class="p-0 bg-base-color" style="background: #b7d8ff; ">
         <div class="container">
             <div class="row align-items-center justify-content-center g-0">
                 <div class="col-auto d-flex align-items-center"
                     data-anime="{ &quot;translateY&quot;: [0, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1200, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
-                    <img src="images/logomev.png" style="width: 150px; margin-right: 20px;" alt />
+                    <!-- <img src="images/logomev.png" style="width: 150px; margin-right: 20px;" alt /> -->
                     <div class="fs-19 lh-28 last-paragraph-no-margin text-white pt-15px pb-15px">
-                        <p><a href="https://www.emlaksepette.com"
-                                class="text-decoration-line-bottom fw-500 text-white">{{$settings['section_4']}}</a> 
+                        <p style="color: red; font-weight: 900; font-size: 30px;">MALİYETİNE EV SİZLERE %100 GÜVEN VE
+                            GARANTİ SUNUYOR!
                         </p>
                     </div>
                 </div>
@@ -266,7 +266,8 @@
         </div>
     </section>
 
-    <section class="bg-very-light-gray pb-0" id="services">
+    <section class="bg-very-light-gray pb-0" id="services"
+    style="padding-bottom: 0px !important; padding-top: 40px !important;">
         <div class="tab-style-08 border-bottom border-color-extra-medium-gray bg-white box-shadow-quadruple-large">
             <div class="container">
 
@@ -428,7 +429,7 @@
         <div class="container" style="overflow: hidden;">
             <div class="row justify-content-center mb-6">
                 <div class="col-xl-6 col-md-8 col-sm-10 text-center"
-                    data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateY&quot;: [50, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1200, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
+                data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateY&quot;: [50, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1200, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
                     <h4 class="mb-0 text-dark-gray fw-700 ls-minus-1px w-85 xl-w-100 mx-auto">Uzman Kadromuzla
                         Hizmetinizdeyiz.</h4>
                 </div>

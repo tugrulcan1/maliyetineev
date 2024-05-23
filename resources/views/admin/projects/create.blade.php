@@ -37,7 +37,7 @@
                                         </div>
                                         <div class="col-md-12">
                                             <label class="form-label" for="description">description</label>
-                                            <textarea class="form-control" id="description" name="description" rows="3"> </textarea>
+                                            <textarea class="form-control" id="editor" name="description" rows="3"> </textarea>
                                         </div>
 
                                         <div class="col-md-12">
@@ -54,7 +54,7 @@
 
                                         <div class="col-md-12">
                                             <label class="form-label" for="image">Galery</label>
-                                            <input name="galery" class="form-control" id="url" type="file"
+                                            <input name="gallery[]" class="form-control" id="url" type="file"
                                                multiple />
                                         </div>
 
@@ -222,5 +222,29 @@
 
         });
     </script>
+    <script src="//cdn.ckeditor.com/4.21.0/standard/ckeditor.js"></script>
+<script>
+    CKEDITOR.replace('editor', {
+        filebrowserUploadUrl: "{{ route('admin.ckeditor.upload', ['_token' => csrf_token() ]) }}",
+        filebrowserUploadMethod: 'form',
+        extraPlugins: 'image',
+        toolbar: [
+            { name: 'document', items: ['Source', '-', 'NewPage', 'Preview', '-', 'Templates'] },
+            { name: 'clipboard', items: ['Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord', '-', 'Undo', 'Redo'] },
+            { name: 'editing', items: ['Find', 'Replace', '-', 'SelectAll', '-', 'Scayt'] },
+            { name: 'tools', items: ['Maximize', 'ShowBlocks'] },
+            '/',
+            { name: 'basicstyles', items: ['Bold', 'Italic', 'Underline', 'Strike', 'Subscript', 'Superscript', '-', 'RemoveFormat'] },
+            { name: 'paragraph', items: ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'Blockquote', 'CreateDiv', '-'] },
+            { name: 'links', items: ['Link', 'Unlink', 'Anchor'] },
+            { name: 'insert', items: ['Image', 'Table', 'HorizontalRule', 'SpecialChar', 'PageBreak'] },
+            '/',
+            { name: 'styles', items: ['Styles', 'Format', 'Font', 'FontSize'] },
+            { name: 'colors', items: ['TextColor', 'BGColor'] },
+            { name: 'about', items: ['About'] }
+        ],
+        height: 300
+    });
+</script>
     @stack('scripts')
 @endsection

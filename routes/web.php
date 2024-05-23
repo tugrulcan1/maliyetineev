@@ -22,6 +22,7 @@ use App\Http\Controllers\Admin\SocialMediaIconController;
 use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\BranchController;
+use App\Http\Controllers\CKEditorController;
 use App\Http\Controllers\Client\CartController;
 use App\Http\Controllers\ClientPanel\ChangePasswordController as ClientPanelChangePasswordController;
 use App\Http\Controllers\ClientPanel\DashboardController as ClientPanelDashboardController;
@@ -66,7 +67,7 @@ Route::get('/admin', [AdminHomeController::class, "index"]);
 Route::get('/project/{slug}', [ClientProjectController::class, "index"])->name('project.detail');
 Route::get('/marka_projeleri/{id}', [ClientProjectController::class, "brandProjects"])->name('brand.projects');
 Route::get('/projelerimiz', [ClientProjectController::class, "projectList"])->name('client.projects.list');
-Route::get('/projelerimiz/{id}', [ProjectController::class, "show"])->name('projelerimiz.show');
+Route::get('/projelerimiz/{project}', [ProjectController::class, "show"])->name('projelerimiz.show');
 Route::get('/proje_konut_detayi/{projectSlug}/{id}', [ClientProjectController::class, "projectHousingDetail"])->name('project.housings.detail');
 Route::get('/konutlar', [ClientHousingController::class, "list"])->name('housing.list');
 Route::get('page/{slug}', [ClientPageController::class, 'index'])->name('page.show');
@@ -92,6 +93,8 @@ Route::get('/logout', [ClientLoginController::class, "logout"])->name('client.lo
 
 Route::group(['prefix' => 'admin', "as" => "admin.", 'middleware' => ['admin']], function () {
     Route::delete('/blogs/{blog}', [BlogController::class, 'destroy'])->name('blogs.destroy');
+    Route::delete('/delete-gallery/{id}', [ProjectController::class, 'deleteGallery'])->name('gallery.delete');
+    Route::post('/ckeditor/upload', [CKEditorController::class, "upload"])->name('ckeditor.upload');
 
     Route::get('/blogs/create', [BlogController::class, 'create'])->name('blogs.create');
     Route::post('/blogs', [BlogController::class, 'store'])->name('blogs.store');

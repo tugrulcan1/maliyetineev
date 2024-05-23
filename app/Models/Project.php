@@ -21,6 +21,11 @@ class Project extends Model
         return $this->hasMany(ProjectImage::class, "project_id", "id");
     }
 
+    public function galleries()
+    {
+        return $this->hasMany(Galery::class, "project_id", "id");
+    }
+
     public function brand()
     {
         return $this->hasOne(Brand::class, "id", "brand_id");
