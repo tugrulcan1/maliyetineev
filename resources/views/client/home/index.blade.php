@@ -171,7 +171,7 @@
                 </div>
                 <div class="col-xl-5 col-lg-5 last-paragraph-no-margin md-mb-30px"
                     data-anime="{ &quot;translateX&quot;: [-50, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1200, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
-                    <p class="w-90 xl-w-100 md-w-80 sm-w-100 md-mx-auto">Maliyetin ev güvencesiyle projelerimize göz
+                    <p class="w-90 xl-w-100 md-w-80 sm-w-100 md-mx-auto">Maliyetine ev güvencesiyle projelerimize göz
                         atın!</p>
                 </div>
                 <div class="col-xl-2 col-lg-2 d-flex justify-content-center justify-content-lg-end"
@@ -200,20 +200,20 @@
                                     <div class="interactive-banner-style-08">
                                         <figure
                                             class="m-0 hover-box overflow-hidden position-relative border-radius-6px">
-                                            <a href="{{$project->slug}}"
+                                            <a href="{{route('projelerimiz.show',$project->id)}}"
                                                 target="_blank">
-                                                <img src="images/{{$project->image}}" alt="Resim bulunamadı"
+                                                <img src="uploads/{{$project->image}}" alt="Resim bulunamadı"
                                                     style="height: 400px; object-fit: cover;" />
                                             </a>
                                             <figcaption
                                                 class="d-flex flex-column align-items-start justify-content-center position-absolute left-0px top-0px w-100 h-100 z-index-1 p-14 lg-p-12">
-                                                <a href="{{$project->slug}}"
+                                                <a href="{{route('projelerimiz.show',$project->id)}}"
                                                     target="_blank">
                                                     <!-- <i class="line-icon-Medal-2 text-white icon-extra-large"></i> -->
                                                 </a>
                                                 <div class="mt-auto d-flex w-100 align-items-center">
                                                     <div class="col last-paragraph-no-margin">
-                                                        <a href="{{$project->slug}}"
+                                                        <a href="{{route('projelerimiz.show',$project->id)}}"
                                                             target="_blank"
                                                             class="text-white fs-24 lh-28  xl-w-75 d-block"
                                                             style="color: white;">{{$project->project_title}}</a>
@@ -223,7 +223,7 @@
                                                             {!!$project->description!!}</p>
 
                                                     </div>
-                                                    <a href="{{$project->slug}}"
+                                                    <a href="{{route('projelerimiz.show',$project->id)}}"
                                                         target="_blank"
                                                         class="circle-box bg-yellow w-50px h-50px rounded-circle ms-auto position-relative rounded-box">
                                                         <i
@@ -324,13 +324,7 @@
                             <div class="row align-items-center justify-content-center g-lg-0">
                                 <div class="col-md-6 sm-mb-30px position-relative overflow-hidden">
                                     <img src="images/demo-accounting-img-07.jpg" alt class="w-100 border-radius-4px">
-                                    <div
-                                        class="bg-very-light-gray w-250px position-absolute pt-20px pb-20px ps-25px pe-25px border-radius-4px bottom-30px left-35px box-shadow-large d-flex align-items-center">
-                                        <h2 class="vertical-counter d-inline-flex text-dark-gray fw-700 ls-minus-2px md-ls-minus-1px mb-0 text-nowrap border-end border-1 border-color-transparent-dark-very-light pe-20px me-20px"
-                                            data-to="80"></h2>
-                                        <span class="text-dark-gray ls-minus-05px d-inline-block lh-22">Project
-                                            completed</span>
-                                    </div>
+                                    
                                 </div>
                                 <div class="col-xl-4 col-lg-5 offset-lg-1 col-md-6 text-center text-md-start">
                                     <!-- <div class="mb-20px">
@@ -357,13 +351,7 @@
                             <div class="row align-items-center justify-content-center g-lg-0">
                                 <div class="col-md-6 sm-mb-30px position-relative overflow-hidden">
                                     <img src="images/demo-accounting-img-08.jpg" alt class="w-100 border-radius-4px">
-                                    <div
-                                        class="bg-very-light-gray w-250px position-absolute pt-20px pb-20px ps-25px pe-25px border-radius-4px bottom-30px left-35px box-shadow-large d-flex align-items-center">
-                                        <h2 class="vertical-counter d-inline-flex text-dark-gray fw-700 ls-minus-2px md-ls-minus-1px mb-0 text-nowrap border-end border-1 border-color-transparent-dark-very-light pe-20px me-20px"
-                                            data-to="85"></h2>
-                                        <span class="text-dark-gray ls-minus-05px d-inline-block lh-22">Project
-                                            completed</span>
-                                    </div>
+                                   
                                 </div>
                                 <div class="col-xl-4 col-lg-5 offset-lg-1 col-md-6 text-center text-md-start">
                                     <!-- <div class="mb-20px">
@@ -391,13 +379,7 @@
                             <div class="row align-items-center justify-content-center g-lg-0">
                                 <div class="col-md-6 sm-mb-30px position-relative overflow-hidden">
                                     <img src="images/demo-accounting-img-09.jpg" alt class="w-100 border-radius-4px">
-                                    <div
-                                        class="bg-very-light-gray w-250px position-absolute pt-20px pb-20px ps-25px pe-25px border-radius-4px bottom-30px left-35px box-shadow-large d-flex align-items-center">
-                                        <h2 class="vertical-counter d-inline-flex text-dark-gray fw-700 ls-minus-2px md-ls-minus-1px mb-0 text-nowrap border-end border-1 border-color-transparent-dark-very-light pe-20px me-20px"
-                                            data-to="80"></h2>
-                                        <span class="text-dark-gray ls-minus-05px d-inline-block lh-22">Project
-                                            completed</span>
-                                    </div>
+                                  
                                 </div>
                                 <div class="col-xl-4 col-lg-5 offset-lg-1 col-md-6 text-center text-md-start">
                                     <!-- <div class="mb-20px">
@@ -430,8 +412,7 @@
             <div class="row justify-content-center mb-6">
                 <div class="col-xl-6 col-md-8 col-sm-10 text-center"
                 data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateY&quot;: [50, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1200, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
-                    <h4 class="mb-0 text-dark-gray fw-700 ls-minus-1px w-85 xl-w-100 mx-auto">Uzman Kadromuzla
-                        Hizmetinizdeyiz.</h4>
+                Uzman Kadromuzla Hizmetinizdeyiz.</h4>
                 </div>
                 <div class="col-xl-2 col-lg-2 d-flex justify-content-center justify-content-lg-end"
                     data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateX&quot;: [30, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 800, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
@@ -667,8 +648,8 @@
                             <div class="swiper-slide">
                                 <div class="row align-items-center pt-25px pb-25px">
                                     <div class="col-lg-8 d-lg-flex align-items-center text-center text-lg-start">
-                                        <img src="images/{{$comment->image}}" class="rounded-circle w-100px h-100px md-mb-35px"
-                                            alt>
+                                        <img src="uploads/{{$comment->image}}" class="rounded-circle w-100px h-100px md-mb-35px"
+                                            alt style="object-fit: cover !important;">
                                         <span style="" class="d-block ps-40px md-ps-0 md-mx-auto position-relative"><img
                                                 src="images/demo-accounting-home-quote-img.png"
                                                 class="position-absolute left-minus-25px top-minus-15px lg-top-minus-5px md-top-minus-50px w-40px md-left-0px md-right-0px md-mx-auto"

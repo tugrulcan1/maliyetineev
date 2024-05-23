@@ -11,7 +11,7 @@
 
 
                 <div class="col-xl-6 text-center text-xl-end">
-                    <a href="demo-accounting-contact.html"
+                    <a href="mailto:{{$settings['e-mail']}}"
                         style="background: #0f75bc !important; color: white !important;"
                         class="btn btn-extra-large btn-yellow left-icon btn-box-shadow btn-rounded text-transform-none d-inline-block align-middle me-15px xs-m-10px"><i
                             class="fa fa-envelope"></i>{{$settings['e-mail']}}</a>
@@ -50,6 +50,9 @@
 
                         <li><a href="{{$menus->href}}">{{$menus->text}}</a></li>
                     @endforeach
+                    <li><a href="/page/mektup">Müşterilerimize Mektup</a></li>
+                    <li><a href="/page/hakkimizda">Hakkımızda</a></li>
+
                 </ul>
             </div>
 
@@ -59,8 +62,8 @@
 
             <div class="col-6 col-lg-2 col-sm-4 xs-mb-30px order-sm-5 order-lg-4">
                 <span class="fs-18 fw-400 d-block text-white mb-5px">İletişim</span>
-                <a href="mailto:info@maliyetineev.com" style="color: white;">{{$settings['phone']}}</a>
-                <a href="tel:4443284" class="text-white lh-16 d-block">{{$settings['e-mail']}}</a>
+                <a href="tel:{{$settings['phone']}}" style="color: white;">{{$settings['phone']}}</a>
+                <a href="mailto:{{$settings['e-mail']}}" class="text-white lh-16 d-block">{{$settings['e-mail']}}</a>
             </div>
 
 
@@ -81,7 +84,7 @@
                         @csrf
                         <input
                             class="border-color-transparent-white-light bg-transparent border-radius-4px w-100 form-control lg-ps-15px required fs-16"
-                            type="email" name="email" placeholder="Email adresiniz" />
+                            type="email" name="email" placeholder="Email Adresiniz" />
                         <input type="hidden" name="redirect" value>
                         <button class="btn pe-20px" aria-label="submit"><i
                                 class="fa fa-envelope icon-small text-white"></i></button>

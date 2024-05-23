@@ -108,6 +108,7 @@ class ProjectController extends Controller
      */
     public function show(Project $project)
     {
+$project=Project::with('galleries')->where('id',$project->id)->first();     
         return view('client.projectsdetail', compact('project'));
     }
 

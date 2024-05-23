@@ -41,7 +41,7 @@
                                         </div>
 
                                         <div class="col-md-12">
-                                            <label class="form-label" for="image">Slug</label>
+                                            <label class="form-label" for="image">Konum</label>
                                             <input name="slug" class="form-control" id="slug" type="text"
                                                 />
                                         </div>

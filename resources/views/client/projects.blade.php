@@ -23,18 +23,18 @@
                         <div class="col-md-3 mt-5">
                             <div class="interactive-banner-style-08">
                                 <figure class="m-0 hover-box overflow-hidden position-relative border-radius-6px">
-                                    <a href="{{route('project.detail',$project->id)}}"
+                                    <a href="{{route('projelerimiz.show',$project->id)}}"
                                         target="_blank">
-                                        <img src="images/{{$project->image}}" alt="Resim bulunamadı"
+                                        <img src="uploads/{{$project->image}}" alt="Resim bulunamadı"
                                             style="height: 400px; object-fit: cover;" />
                                     </a>
                                     <figcaption
                                         class="d-flex flex-column align-items-start justify-content-center position-absolute left-0px top-0px w-100 h-100 z-index-1 p-14 lg-p-12">
-                                        <a href="{{route('project.detail',$project->id)}}"
+                                        <a href="{{route('projelerimiz.show',$project->id)}}"
                                             target="_blank"></a>
                                         <div class="mt-auto d-flex w-100 align-items-center">
                                             <div class="col last-paragraph-no-margin">
-                                                <a href="{{route('project.detail',$project->id)}}"
+                                                <a href="{{route('projelerimiz.show',$project->id)}}"
                                                     target="_blank" class="text-white fs-24 lh-28  xl-w-75 d-block"
                                                     style="color: white;">{{$project->project_title}}</a>
 
@@ -42,7 +42,7 @@
                                                 {!!$project->description!!}</p>
 
                                             </div>
-                                            <a href="{{route('project.detail',$project->id)}}" class="circle-box bg-yellow w-50px h-50px rounded-circle ms-auto position-relative rounded-box">
+                                            <a href="{{route('projelerimiz.show',$project->id)}}" class="circle-box bg-yellow w-50px h-50px rounded-circle ms-auto position-relative rounded-box">
                                                 <i class="bi bi-arrow-right-short absolute-middle-center icon-very-medium lh-0px text-dark-gray"
                                                     style="color: white !important;"></i>
                                             </a>

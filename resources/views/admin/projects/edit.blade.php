@@ -27,7 +27,7 @@
                             <textarea id="editor" name="description">{{ $project->description }}</textarea>
                         </div>
                         <div class="mb-3">
-                            <label class="form-label" for="description">project Slug</label> <br>
+                            <label class="form-label" for="description">project Konum</label> <br>
                             <input type="text" class="mt-3 form-control" name="slug" value="{{ $project->slug }}">
                         </div>
                         <div class="mb-3">

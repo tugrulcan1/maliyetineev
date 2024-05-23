@@ -1394,6 +1394,7 @@ textarea {
 .form-select {
   color: var(--medium-gray);
 }
+
 .form-select:focus {
   border-color: #dfdfdf;
 }
@@ -14758,7 +14759,7 @@ canvas {
 .elements-social .digg:hover {
   color: #262626;
 }
-.elements-social .dribbble:hover {
+.elements-social .linkedin:hover {
   color: #ea4c89;
 }
 .elements-social .delicious:hover {
@@ -19394,6 +19395,47 @@ footer .footer-navbar .nav-item:last-child a {
 }
 .footer-demo img {
   max-height: 55px !important;
+}
+.feature-box {
+  padding: 40px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 8px 16px 0px rgba(205, 190, 255, 0.2);
+}
+.feature-small-content h3 {
+  font-size: 21px;
+  margin-bottom: 15px;
+  font-family: "Poppins", sans-serif;
+  color: #223645;
+  margin-top: 0px;
+  font-weight: 600;
+  text-transform: normal;
+  line-height: 1.1;
+}
+.about-area p{
+  
+}
+p {
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 26px;
+  color: #647589;
+  margin-bottom: 15px;
+}
+.about-right-side {
+  padding-left: 23px;
+}
+.pt-25 {
+  padding-top: 25px;
+}
+.mb-30 {
+  margin-bottom: 30px;
+}
+.mb-40 {
+  margin-bottom: 40px;
+}
+.about-title h1 {
+  font-size: 48px;
+  padding-right: 15px;
 }
 /*# sourceMappingURL=style.min.css.map */
 

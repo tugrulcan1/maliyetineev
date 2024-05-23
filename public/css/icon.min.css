@@ -15360,11 +15360,9 @@
 }
 .bi-arrow-right-short::before {
   content: "\f135";
+  color: #5fbafa;
 }
-.bi-arrow-right-short::before:hover {
-  content: "\f135";
-  color: black;
-}
+
 .bi-arrow-right-square-fill::before {
   content: "\f136";
 }

@@ -156,15 +156,13 @@
 
                         <div class="col-md-auto elements-social social-icon-style-04 text-center text-md-start ps-lg-0">
                             <ul class="large-icon dark">
-                                <li class="m-0"><a class="facebook" href="https://www.facebook.com/" target="_blank"><i
-                                            class="fa-brands fa-facebook-f"></i><span></span></a>
+                                @foreach ($socialMediaIcons as $socialMediaIcon)
+                                
+                               
+                                <li class="m-0"><a class="facebook" href="{{$socialMediaIcon->url}}" target="_blank"><i
+                                            class="fa-brands {{$socialMediaIcon->icon_class}}"></i><span></span></a>
                                 </li>
-                                <li class="m-0"><a class="dribbble" href="http://www.dribbble.com/" target="_blank"><i
-                                            class="fa-brands fa-linkedin"></i><span></span></a></li>
-                                <li class="m-0"><a class="twitter" href="https://www.twitter.com/" target="_blank"><i
-                                            class="fa-brands fa-twitter"></i><span></span></a></li>
-                                <li class="m-0"><a class="instagram" href="https://www.instagram.com/"
-                                        target="_blank"><i class="fa-brands fa-instagram"></i><span></span></a></li>
+                                @endforeach
                             </ul>
                         </div>
 
@@ -186,7 +184,7 @@
         </div>
     </div>
 </section>
-<div class="section">
+<!-- <div class="section">
     <div class="container">
         <h3 style="text-align: center; font-weight: 700; color: #333;">Kat Planları</h3>
         <div class="tab">
@@ -207,7 +205,23 @@
             <img src="images/duvarcerceve.png" alt="" style="width: 1220px; height: 350px;">
         </div>
     </div>
-</div>
+</div> -->
+
+<div class="section">
+        <div class="container">
+            <h3 style="text-align: center; font-weight: 700; color: #333; margin-top: 100px; ">Proje Görselleri</h3>
+            <swiper-container class="mySwiper" navigation="true">
+                @foreach ($project->galleries as $galery)
+                
+              
+                <swiper-slide> <img src="{{ url('uploads/' . $galery->image) }}" alt=""
+                        style="width: 1220px; height: 350px;"></swiper-slide>
+
+                        @endforeach
+
+            </swiper-container>
+        </div>
+    </div>
 
 <section style=" padding-bottom: 80px; ">
     <div class="container">
@@ -300,5 +314,7 @@
             object-fit: cover;
         }
     </style>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 
 @endsection
