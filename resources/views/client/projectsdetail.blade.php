@@ -1,4 +1,4 @@
-@extends('client.layouts.master')
+@extends('client.layouts.masterProjectDetail')
 
 @section('content')
 
@@ -171,7 +171,7 @@
 
                         </div>
                     </div>
-                    <div class="row align-items-center justify-content-center mt-8">
+                    {{-- <div class="row align-items-center justify-content-center mt-8">
                         <div class="col-md-auto text-center text-md-end sm-mb-20px">
                             <h6 class="text-dark-gray fw-600 mb-0 ls-minus-1px">Sosyal medya hesaplarımız </h6>
                         </div>
@@ -191,7 +191,7 @@
                             </ul>
                         </div>
 
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </div>
@@ -203,7 +203,8 @@
     <div class="container">
         <div class="row">
          <div class="col-md-12">
-            {!! $project->description !!}
+            <h4 style="font-weight: 700; margin:0" >Kandıra Projesi Nerede?</h3>
+           <p>{!! $project->description !!}</p> 
          </div>
 
         </div>
