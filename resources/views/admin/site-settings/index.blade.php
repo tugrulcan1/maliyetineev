@@ -75,45 +75,48 @@
             });
 
             $("#newSetting").click(function() {
-                var data = "<tr>\n" +
-                    "<td> <input class=\"form-control\" type=\"text\" name=\"key\" id='newSettingKey'></td>" +
-                    "<td> <input class=\"form-control\" type=\"text\" name=\"key\" id='newSettingValue'></td>" +
-                    "</tr>";
+        var data = "<tr>\n" +
+            "<td> <input class=\"form-control\" type=\"text\" name=\"key\" id='newSettingKey'></td>" +
+            "<td> <input class=\"form-control\" type=\"text\" name=\"value\" id='newSettingValue'></td>" +
+            "<td> <input class=\"form-control\" type=\"file\" name=\"file\" id='newSettingFile'></td>" +
+            "</tr>";
 
-                $("#settingTableHeader").after(data);
-            });
+        $("#settingTableHeader").after(data);
+    });
 
             var key = false;
             var value = false;
-
-            $(document).on("change", "#newSettingKey", function() {
-                if ($(this).val().length > 0 && $("#newSettingValue").val().length > 0) {
-                    newSetting()
-                }
-            });
-            $(document).on("change", "#newSettingValue", function() {
-                if ($(this).val().length > 0 && $("#newSettingKey").val().length > 0) {
-                    newSetting()
-                }
-            });
+            $(document).on("change", "#newSettingKey, #newSettingValue, #newSettingFile", function() {
+        if ($("#newSettingKey").val().length > 0 && ($("#newSettingValue").val().length > 0 || $("#newSettingFile").val().length > 0)) {
+            newSetting();
+        }
+    });
 
 
-            function newSetting() {
-                var key = $("#newSettingKey").val();
-                var value = $("#newSettingValue").val();
-                $.ajax({
-                    type: "post",
-                    url: "{{ url('admin/site-settings/create') }}",
-                    data: {
-                        _token: "{{ csrf_token() }}",
-                        key: key,
-                        value: value
-                    },
-                    success: function(response) {
-                        location.reload();
-                    }
-                })
-            };
+    function newSetting() {
+        var key = $("#newSettingKey").val();
+        var value = $("#newSettingValue").val();
+        var file = $("#newSettingFile")[0].files[0];
+
+        var formData = new FormData();
+        formData.append("_token", "{{ csrf_token() }}");
+        formData.append("key", key);
+        formData.append("value", value);
+        if (file) {
+            formData.append("file", file);
+        }
+
+        $.ajax({
+            type: "post",
+            url: "{{ url('admin/site-settings/create') }}",
+            data: formData,
+            processData: false,
+            contentType: false,
+            success: function(response) {
+                location.reload();
+            }
+        });
+    }
 
             $(".settingDelete").click(function() {
                 var button = $(this);

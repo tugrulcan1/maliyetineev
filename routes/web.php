@@ -77,7 +77,7 @@ Route::post('/home-form', [FormController::class, 'submitForm'])->name('home.for
 Route::post('/contact-form', [FormController::class, 'submitContactForm'])->name('contact.form.show');
 Route::post('/footer-form', [FormController::class, 'submitFooterForm'])->name('footer.form.show');
 
-
+Route::get('/aydinlatma/metni',[FormController::class,'aydinlatmaMetni'])->name('aydinlatma.metni');
 
 Route::get('/admin/login', [AdminLoginController::class, "showLoginForm"])->name('admin.login');
 Route::post('/admin/login', [AdminLoginController::class, "login"])->name('admin.submit.login');

@@ -133,11 +133,12 @@
                                 <input type="tel" name="phone" class="form-control" placeholder="Telefon Numaranız" />
                             </div>
                             <div class="position-relative terms-condition-box text-start d-inline-block">
-                                <label>
                                     <input type="checkbox" name="terms_condition" id="terms_condition" value="1"
                                         class="terms-condition check-box align-middle required">
-                                    <span class="box fs-16">Kişisel Verilerin Korunması Hakkında Aydınlatma Yazısını
-                                        okudum, kabul ediyorum.</span>
+                                <label>
+
+                                    <span class="box fs-16">Kişisel Verilerin Korunması Hakkında <a href="{{route('aydinlatma.metni')}}" target="_blank">Aydınlatma Yazısını
+                                        okudum</a> , kabul ediyorum.</span>
                                 </label>
                             </div>
                             <div class="position-relative mt-20px">
@@ -193,11 +194,12 @@
                                 <input type="tel" name="phone" class="form-control" placeholder="Telefon Numaranız" />
                             </div>
                             <div class="position-relative terms-condition-box text-start d-inline-block">
-                                <label>
                                     <input type="checkbox" name="terms_condition" id="terms_condition" value="1"
                                         class="terms-condition check-box align-middle required">
-                                    <span class="box fs-16">Kişisel Verilerin Korunması Hakkında Aydınlatma Yazısını
-                                        okudum, kabul ediyorum.</span>
+                                <label>
+
+                                    <span class="box fs-16">Kişisel Verilerin Korunması Hakkında <a href="{{route('aydinlatma.metni')}}" target="_blank">Aydınlatma Yazısını
+                                        okudum</a>,  kabul ediyorum.</span>
                                 </label>
                             </div>
                             <div class="position-relative mt-20px">
@@ -350,7 +352,7 @@
                             <div class="row align-items-center justify-content-center g-lg-0">
                                 <div class="col-md-6 sm-mb-30px position-relative overflow-hidden"
                                     data-anime="{ &quot;effect&quot;: &quot;slide&quot;, &quot;color&quot;: &quot;#005153&quot;, &quot;direction&quot;:&quot;lr&quot;, &quot;easing&quot;: &quot;easeOutQuad&quot;, &quot;delay&quot;:50}">
-                                    <img src="images/demo-accounting-img-06.jpg" alt class="w-100 border-radius-6px">
+                                    <img src="{{$settings['section_5_1_img']}}"  class="w-100 border-radius-6px">
                                    
                                 </div>
                                 <div class="col-xl-4 col-lg-5 offset-lg-1 col-md-6 text-center text-md-start"
@@ -632,64 +634,57 @@
         </div>
     </section>
 
-
-
-
-
-    <section>
         <div class="container">
 
         <h3 class="text-dark-gray fw-700" style="text-align: center;">{{$settings['section_8_title']}}</h3>
-            <p>{{$settings['section_8_small_title']}}</p>
-        <div class="row">
+            <span style="margin-left:130px ">{{$settings['section_8_small_title']}}</span>
+        <div class="row mt-3">
 
-
-<div class="col-sm  mb-4" style="text-align: center;">
-    <div>
-        <img src="/images/trust.png" alt="" style="height: 100px;">
-        <p class="text-dark-gray fw-700"
-            style="font-size: 20px; margin: 0; padding: 0;  font-size: 16px; ">
-            {{$settings['section_8_1']}}</p>
-        <p style="font-size: 12px; line-height: 12px; font-weight: 400;">Her adımda şeffaflık ve
-        {{$settings['section_8_1.1']}}</p>
-    </div>
-</div>
-<div class="col-sm  mb-4" style="text-align: center;">
-    <div>
-        <img src="/images/budget.png" alt="" style="height: 100px; ">
-        <p class="text-dark-gray fw-700"
-            style="font-size: 20px; margin: 0; padding: 0; color: #333; font-size: 16px;">{{$settings['section_8_2']}}
-        </p>
-        <p style="font-size: 12px; line-height: 12px; font-weight: 400;">{{$settings['section_8_2.1']}}</p>
-    </div>
-</div>
-<div class="col-sm  mb-4" style="text-align: center;">
-    <div>
-        <img src="/images/bank.png" alt="" style="height: 100px; ">
-        <p class="text-dark-gray fw-700"
-            style="font-size: 20px; margin: 0; padding: 0; color: #333; font-size: 16px;">{{$settings['section_8_3']}}
-        </p>
-        <p style="font-size: 12px; line-height: 12px; font-weight: 400;">{{$settings['section_8_3.1']}}</p>
-    </div>
-</div>
-<div class="col-sm  mb-4" style="text-align: center;">
-    <div>
-        <img src="/images/timing.png" alt="" style="height: 100px;">
-        <p class="text-dark-gray fw-700"
-            style="font-size: 20px; margin: 0; padding: 0; color: #333; font-size: 16px;">{{$settings['section_8_4']}}
-        </p>
-        <p style="font-size: 12px; line-height: 12px; font-weight: 400;">{{$settings['section_8_4.1']}}</p>
-    </div>
-</div>
-<div class="col-sm  mb-4" style="text-align: center;">
-    <div>
-        <img src="/images/smartphone.png" alt="" style="height: 100px; ">
-        <p class="text-dark-gray fw-700"
-            style="font-size: 20px; margin: 0; padding: 0; color: #333; font-size: 16px;">{{$settings['section_8_5']}}</p>
-        <p style="font-size: 12px; line-height: 12px; font-weight: 400;">{{$settings['section_8_5.1']}}</p>
-    </div>
-</div>
-</div>
+        <div class="col-sm  mb-4" style="text-align: center;margin-top:30px;">
+            <div>
+                <img src="/images/trust.png" alt="" style="height: 100px;">
+                <p class="text-dark-gray fw-700 baslikP">
+                    {{$settings['section_8_1']}}</p>
+                <p style="font-size: 12px; line-height: 12px; font-weight: 400;">
+                {{$settings['section_8_1.1']}}</p>
+            </div>
+        </div>
+        <div class="col-sm  mb-4" style="text-align: center;">
+            <div>
+                <img src="/images/budget.png" alt="" style="height: 100px; ">
+                <p class="text-dark-gray fw-700"
+                    style="font-size: 20px; margin: 0; padding: 0; color: #333; font-size: 16px;">{{$settings['section_8_2']}}
+                </p>
+                <p style="font-size: 12px; line-height: 12px; font-weight: 400;">{{$settings['section_8_2.1']}}</p>
+            </div>
+        </div>
+        <div class="col-sm  mb-4" style="text-align: center;">
+            <div>
+                <img src="/images/bank.png" alt="" style="height: 100px; ">
+                <p class="text-dark-gray fw-700"
+                    style="font-size: 20px; margin: 0; padding: 0; color: #333; font-size: 16px;">{{$settings['section_8_3']}}
+                </p>
+                <p style="font-size: 12px; line-height: 12px; font-weight: 400;">{{$settings['section_8_3.1']}}</p>
+            </div>
+        </div>
+        <div class="col-sm  mb-4" style="text-align: center;">
+            <div>
+                <img src="/images/timing.png" alt="" style="height: 100px;">
+                <p class="text-dark-gray fw-700"
+                    style="font-size: 20px; margin: 0; padding: 0; color: #333; font-size: 16px;">{{$settings['section_8_4']}}
+                </p>
+                <p style="font-size: 12px; line-height: 12px; font-weight: 400;">{{$settings['section_8_4.1']}}</p>
+            </div>
+        </div>
+        <div class="col-sm  mb-4" style="text-align: center;">
+            <div>
+                <img src="/images/smartphone.png" alt="" style="height: 100px; ">
+                <p class="text-dark-gray fw-700"
+                    style="font-size: 20px; margin: 0; padding: 0; color: #333; font-size: 16px;">{{$settings['section_8_5']}}</p>
+                <p style="font-size: 12px; line-height: 12px; font-weight: 400;">{{$settings['section_8_5.1']}}</p>
+            </div>
+        </div>
+        </div>
             <div class="row m-0 align-items-center justify-content-center border border-color-extra-medium-gray border-radius-100px md-border-radius-6px ps-10px pe-10px box-shadow-quadruple-large"
                 data-anime="{ &quot;scale&quot;: [1.1, 1], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 800, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
                 <div class="col-lg-10">
@@ -743,20 +738,10 @@
                 </div>
             </div>
         </div>
-    </section>
 
-    <section style="padding: 0 !important; margin-bottom: 50px; ">
+    <section style="padding: 0 !important; margin-bottom: 50px;margin-top:50px; ">
         <div class="container">
             <img src="{{ asset('images/asdasd.jpg') }}" alt="" style="width: 1220px; height: 350px; object-fit: contain;">
         </div>
     </section>
-
-  
-
-
-
-		
-
-		
-
 @endsection 
