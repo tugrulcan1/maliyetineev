@@ -107,7 +107,7 @@
         <nav class="navbar navbar-expand-lg header-light bg-white responsive-sticky">
             <div class="container-fluid">
                 <div class="col-auto col-lg-2 me-lg-0 me-auto">
-                    <a class="navbar-brand" href="demo-accounting.html">
+                    <a class="navbar-brand" href="{{route('index')}}">
                         <img src="{{asset('images/logomev.png')}}" alt class="default-logo">
                         <img src="images/logomev.png" data-at2x="images/logomev.png" alt class="alt-logo">
                         <img src="images/logomev.png" data-at2x="images/logomev.png" alt class="mobile-logo">

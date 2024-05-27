@@ -51,11 +51,18 @@ class FormController extends Controller
     {
 
         $request->validate([
-            'name' => 'required',
-            'email' => 'required',
-            'phone' => 'required',
-            'job' => 'required',
+            'name'    => 'required',
+            'email'   => 'required',
+            'phone'   => 'required',
+            'job'     => 'required',
             'message' => 'required',
+        ],[
+            'name.required'    => 'Ad alanı gereklidir.',
+            'email.required'   => 'E-posta alanı gereklidir.',
+            'email.email'      => 'Geçerli bir e-posta adresi girin.',
+            'phone.required'   => 'Telefon alanı gereklidir.',
+            'job.required'     => 'Meslek seçimi yapınız.',
+            'message.required' => 'Lütfen mesajınızı yazınız.'
         ]);
 
         $name = $request->input('name');
