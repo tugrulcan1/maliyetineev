@@ -37,10 +37,11 @@
 
     </div>
 </section>
+
 <section id="form" class="about-area about-area-mid pt-120 pb-90" style="padding-top: 40px; padding-bottom: 40px;">
     <div class="container">
         <div class="row">
-            <div class="col-xl-6 col-lg-12 col-md-12"
+            {{-- <div class="col-xl-6 col-lg-12 col-md-12"
                 style="display: flex; align-items: center; justify-content: center;">
                 <div class="row">
                     <div class="col-xl-6 col-lg-6 col-md-6">
@@ -92,7 +93,31 @@
                         </div>
                     </div>
                 </div>
+            </div> --}}
+            <div class="col-xl-6 col-lg-12 col-md-12" style="display: flex; align-items: center; justify-content: center;">
+                <div class="row">
+                 {{-- {{dd($project->details)}} --}}
+                 @foreach(json_decode($project->details) as $detail)
+        <div class="col-xl-6 col-lg-6 col-md-6">
+            <div class="feature-box mb-40">
+                <div class="feature-small-icon mb-35">
+                    <!-- Add your dynamic icon rendering logic here -->
+                    <!-- For now, let's assume there's no dynamic icon -->
+                </div>
+                <div class="feature-small-content">
+                    <!-- Render the project detail title dynamically -->
+                    <h3>{{ $detail->title }}</h3>
+                    <!-- Render the project detail description dynamically -->
+                    <!-- Be careful, you might need to decode HTML entities if you have encoded them -->
+                    <p>{!! $detail->description !!}</p>
+                </div>
             </div>
+        </div>
+        @endforeach
+                
+                </div>
+            </div>
+            
             <div class="col-xl-6 col-lg-12 col-md-11">
                 <div class="row row-cols-md-1 justify-content-center">
                     <div class="col-xl-10">
@@ -184,28 +209,6 @@
         </div>
     </div>
 </section>
-<!-- <div class="section">
-    <div class="container">
-        <h3 style="text-align: center; font-weight: 700; color: #333;">Kat Planları</h3>
-        <div class="tab">
-            <button class="tablinks" onclick="openCity(event, 'London')">1+1</button>
-            <button class="tablinks" onclick="openCity(event, 'Paris')">2+2</button>
-            <button class="tablinks" onclick="openCity(event, 'Tokyo')">3+1</button>
-        </div>
-
-        <div id="London" class="tabcontent">
-            <img src="images/duvarcerceve.png" alt="" style="width: 1220px; height: 350px;">
-        </div>
-
-        <div id="Paris" class="tabcontent">
-            <img src="images/duvarcerceve.png" alt="" style="width: 1220px; height: 350px;">
-        </div>
-
-        <div id="Tokyo" class="tabcontent">
-            <img src="images/duvarcerceve.png" alt="" style="width: 1220px; height: 350px;">
-        </div>
-    </div>
-</div> -->
 @if(count($project->galleries) > 0)
 <div class="section">
         <div class="container">
@@ -223,6 +226,24 @@
         </div>
     </div>
     @endif
+
+
+    <div class="section">
+        <div class="container mt-5">
+            <h3 style="text-align: center; font-weight: 700; color: #333;">{{ $project->name }} Kat Planları</h3>
+            <div class="tab">
+                @foreach ($floorPlans as $index => $floorPlan)
+                    <button class="tablinks" data-tab="tab{{ $index }}">{{ $floorPlan->floor_plan }}</button>
+                @endforeach
+            </div>
+    
+            @foreach ($floorPlans as $index => $floorPlan)
+                <div id="tab{{ $index }}" class="tabcontent">
+                    <img src="{{ asset('kat_plani/' . $floorPlan->image_path) }}" alt="{{ $floorPlan->floor_plan }}" style="width: 1220px; height: 350px;">
+                </div>
+            @endforeach
+        </div>
+    </div>
 
 <section style=" padding-bottom: 80px; ">
     <div class="container">

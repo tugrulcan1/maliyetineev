@@ -10,6 +10,7 @@ use App\Models\Project;
 use App\Models\ProjectHousings;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\DB;
 
 use Darryldecode\Cart\Validators\Validator;
 
@@ -75,11 +76,24 @@ class ProjectController extends Controller
         $dosyaAdi = $dosya->getClientOriginalName(); // Dosya adını alın
         $dosya->move(public_path('uploads'), $dosyaAdi); // Dosyayı uploads klasörüne kaydet
 
+        $details = [];
+        for ($i = 1; $i <= 4; $i++) {
+            $detailTitle = $request->input("project_detail_title$i");
+            $detailDescription = $request->input("detail_description$i");
+            $details[] = [
+                'title' => $detailTitle,
+                'description' => $detailDescription
+            ];
+        }
+        
+        $detailsJson = json_encode($details);
+
         $project = Project::create([
             'project_title' => $request->input('project_title'),
             'description' => $request->input('description'),
             'slug' => $request->input('slug'),
-            'image' => $dosyaAdi
+            'image' => $dosyaAdi,
+            'details' => $detailsJson
         ]);
 
         $galleries = $request->file('gallery');
@@ -108,8 +122,11 @@ class ProjectController extends Controller
      */
     public function show(Project $project)
     {
-$project=Project::with('galleries')->where('id',$project->id)->first();     
-        return view('client.projectsdetail', compact('project'));
+        $project=Project::with('galleries')->where('id',$project->id)->first(); 
+        $floorPlans = DB::table('floor_plans')
+            ->where('project_id', $project->id)
+            ->get();    
+        return view('client.projectsdetail', compact('project','floorPlans'));
     }
 
     /**
@@ -209,6 +226,36 @@ $project=Project::with('galleries')->where('id',$project->id)->first();
     return response()->json(['message' => 'Gallery deleted successfully'], 200);
 }
 
+    public function addProjectFloorPlan(Request $request){
+        // print_r($request->all());die;
 
+        $request->validate([
+            'project_id' => 'required|integer',
+            'floor_plan' => 'required|string',
+            'file' => 'required|file|mimes:jpg,jpeg,png|max:2048',
+        ]);
+
+        // $fileName = null;
+
+          if ($request->hasFile('file')) {
+            $file = $request->file('file');
+            $fileName = time() . '_' . $file->getClientOriginalName();
+            $file->move(public_path('kat_plani'), $fileName);
+        }    
+
+        $addedProjectFloorPlan = DB::table('floor_plans')->insert([
+            'project_id' => $request->input('project_id'),
+            'floor_plan' => $request->input('floor_plan'),
+            'image_path' => $fileName
+        ]);
+
+        if($addedProjectFloorPlan){
+            return redirect()->back()->with('success','Kat planı başarıyla eklendi.');
+        }else{
+            return redirect()->back()->with('danger','Kat planı eklenirken hata!');
+        }
+
+
+    }//End
 
 }

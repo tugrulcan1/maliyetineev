@@ -109,7 +109,21 @@
 
 
 
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".tablinks").click(function(){
+                var tabId = $(this).data("tab");
+                console.log('adfsa'+tabId)
+                $(".tabcontent").hide();
+                $("#" + tabId).show();
+                $(".tablinks").removeClass("active");
+                $(this).addClass("active");
+            });
+            // Automatically click the first tab button on page load
+            $(".tab button:first").click();
+        });
+    </script>
 <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
 <script type="text/javascript" src="{{ URL::to('/') }}/js/jquery.js"></script>
 <script type="text/javascript" src="{{ URL::to('/') }}/js/vendors.min.js"></script>
@@ -117,6 +131,9 @@
 
 @stack('scripts')
 <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+
+
 <script>
     var successMessage = "{{ session('success') }}";
     console.log(successMessage);

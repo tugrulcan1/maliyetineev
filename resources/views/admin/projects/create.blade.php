@@ -41,6 +41,30 @@
                                         </div>
 
                                         <div class="col-md-12">
+                                            <label class="form-label" for="project_title">Proje 1.Detay Başlığı</label>
+                                            <input name="project_detail_title1" class="form-control mb-2" type="text"  required>
+                                            <textarea class="form-control" id="editor2" name="detail_description1" rows="3"> </textarea>
+                                        </div>
+
+                                        <div class="col-md-12">
+                                            <label class="form-label" for="project_title">Proje 2.Detay Başlığı</label>
+                                            <input name="project_detail_title2" class="form-control mb-2" type="text"  required>
+                                            <textarea class="form-control" id="editor3" name="detail_description2" rows="3"> </textarea>
+                                        </div>
+
+                                        <div class="col-md-12">
+                                            <label class="form-label" for="project_title">Proje 3.Detay Başlığı</label>
+                                            <input name="project_detail_title3" class="form-control mb-2" type="text"  required>
+                                            <textarea class="form-control" id="editor4" name="detail_description3" rows="3"> </textarea>
+                                        </div>
+
+                                        <div class="col-md-12">
+                                            <label class="form-label" for="project_title">Proje 4.Detay Başlığı</label>
+                                            <input name="project_detail_title4" class="form-control mb-2" type="text"  required>
+                                            <textarea class="form-control" id="editor5" name="detail_description4" rows="3"> </textarea>
+                                        </div>
+
+                                        <div class="col-md-12">
                                             <label class="form-label" for="image">Konum</label>
                                             <input name="slug" class="form-control" id="slug" type="text"
                                                 />
@@ -225,6 +249,94 @@
     <script src="//cdn.ckeditor.com/4.21.0/standard/ckeditor.js"></script>
 <script>
     CKEDITOR.replace('editor', {
+        filebrowserUploadUrl: "{{ route('admin.ckeditor.upload', ['_token' => csrf_token() ]) }}",
+        filebrowserUploadMethod: 'form',
+        extraPlugins: 'image',
+        toolbar: [
+            { name: 'document', items: ['Source', '-', 'NewPage', 'Preview', '-', 'Templates'] },
+            { name: 'clipboard', items: ['Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord', '-', 'Undo', 'Redo'] },
+            { name: 'editing', items: ['Find', 'Replace', '-', 'SelectAll', '-', 'Scayt'] },
+            { name: 'tools', items: ['Maximize', 'ShowBlocks'] },
+            '/',
+            { name: 'basicstyles', items: ['Bold', 'Italic', 'Underline', 'Strike', 'Subscript', 'Superscript', '-', 'RemoveFormat'] },
+            { name: 'paragraph', items: ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'Blockquote', 'CreateDiv', '-'] },
+            { name: 'links', items: ['Link', 'Unlink', 'Anchor'] },
+            { name: 'insert', items: ['Image', 'Table', 'HorizontalRule', 'SpecialChar', 'PageBreak'] },
+            '/',
+            { name: 'styles', items: ['Styles', 'Format', 'Font', 'FontSize'] },
+            { name: 'colors', items: ['TextColor', 'BGColor'] },
+            { name: 'about', items: ['About'] }
+        ],
+        height: 300
+    });
+
+    CKEDITOR.replace('editor2', {
+        filebrowserUploadUrl: "{{ route('admin.ckeditor.upload', ['_token' => csrf_token() ]) }}",
+        filebrowserUploadMethod: 'form',
+        extraPlugins: 'image',
+        toolbar: [
+            { name: 'document', items: ['Source', '-', 'NewPage', 'Preview', '-', 'Templates'] },
+            { name: 'clipboard', items: ['Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord', '-', 'Undo', 'Redo'] },
+            { name: 'editing', items: ['Find', 'Replace', '-', 'SelectAll', '-', 'Scayt'] },
+            { name: 'tools', items: ['Maximize', 'ShowBlocks'] },
+            '/',
+            { name: 'basicstyles', items: ['Bold', 'Italic', 'Underline', 'Strike', 'Subscript', 'Superscript', '-', 'RemoveFormat'] },
+            { name: 'paragraph', items: ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'Blockquote', 'CreateDiv', '-'] },
+            { name: 'links', items: ['Link', 'Unlink', 'Anchor'] },
+            { name: 'insert', items: ['Image', 'Table', 'HorizontalRule', 'SpecialChar', 'PageBreak'] },
+            '/',
+            { name: 'styles', items: ['Styles', 'Format', 'Font', 'FontSize'] },
+            { name: 'colors', items: ['TextColor', 'BGColor'] },
+            { name: 'about', items: ['About'] }
+        ],
+        height: 300
+    });
+
+    CKEDITOR.replace('editor3', {
+        filebrowserUploadUrl: "{{ route('admin.ckeditor.upload', ['_token' => csrf_token() ]) }}",
+        filebrowserUploadMethod: 'form',
+        extraPlugins: 'image',
+        toolbar: [
+            { name: 'document', items: ['Source', '-', 'NewPage', 'Preview', '-', 'Templates'] },
+            { name: 'clipboard', items: ['Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord', '-', 'Undo', 'Redo'] },
+            { name: 'editing', items: ['Find', 'Replace', '-', 'SelectAll', '-', 'Scayt'] },
+            { name: 'tools', items: ['Maximize', 'ShowBlocks'] },
+            '/',
+            { name: 'basicstyles', items: ['Bold', 'Italic', 'Underline', 'Strike', 'Subscript', 'Superscript', '-', 'RemoveFormat'] },
+            { name: 'paragraph', items: ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'Blockquote', 'CreateDiv', '-'] },
+            { name: 'links', items: ['Link', 'Unlink', 'Anchor'] },
+            { name: 'insert', items: ['Image', 'Table', 'HorizontalRule', 'SpecialChar', 'PageBreak'] },
+            '/',
+            { name: 'styles', items: ['Styles', 'Format', 'Font', 'FontSize'] },
+            { name: 'colors', items: ['TextColor', 'BGColor'] },
+            { name: 'about', items: ['About'] }
+        ],
+        height: 300
+    });
+
+    CKEDITOR.replace('editor4', {
+        filebrowserUploadUrl: "{{ route('admin.ckeditor.upload', ['_token' => csrf_token() ]) }}",
+        filebrowserUploadMethod: 'form',
+        extraPlugins: 'image',
+        toolbar: [
+            { name: 'document', items: ['Source', '-', 'NewPage', 'Preview', '-', 'Templates'] },
+            { name: 'clipboard', items: ['Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord', '-', 'Undo', 'Redo'] },
+            { name: 'editing', items: ['Find', 'Replace', '-', 'SelectAll', '-', 'Scayt'] },
+            { name: 'tools', items: ['Maximize', 'ShowBlocks'] },
+            '/',
+            { name: 'basicstyles', items: ['Bold', 'Italic', 'Underline', 'Strike', 'Subscript', 'Superscript', '-', 'RemoveFormat'] },
+            { name: 'paragraph', items: ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'Blockquote', 'CreateDiv', '-'] },
+            { name: 'links', items: ['Link', 'Unlink', 'Anchor'] },
+            { name: 'insert', items: ['Image', 'Table', 'HorizontalRule', 'SpecialChar', 'PageBreak'] },
+            '/',
+            { name: 'styles', items: ['Styles', 'Format', 'Font', 'FontSize'] },
+            { name: 'colors', items: ['TextColor', 'BGColor'] },
+            { name: 'about', items: ['About'] }
+        ],
+        height: 300
+    });
+
+    CKEDITOR.replace('editor5', {
         filebrowserUploadUrl: "{{ route('admin.ckeditor.upload', ['_token' => csrf_token() ]) }}",
         filebrowserUploadMethod: 'form',
         extraPlugins: 'image',

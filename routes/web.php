@@ -171,6 +171,7 @@ Route::group(['prefix' => 'admin', "as" => "admin.", 'middleware' => ['admin']],
         Route::get('/projects/create', [ProjectController::class, 'create'])->name('projects.create');
         Route::post('/projects', [ProjectController::class, 'store'])->name('projects.store');
     });
+    Route::post('/add/project/floor/plan',[ProjectController::class,'addProjectFloorPlan'])->name('add.project.floor.plan');
 
     Route::middleware(['checkPermission:CreateSlider'])->group(function () {
         Route::get('/sliders/create', [SliderController::class, 'create'])->name('sliders.create');
