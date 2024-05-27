@@ -352,7 +352,7 @@
                             <div class="row align-items-center justify-content-center g-lg-0">
                                 <div class="col-md-6 sm-mb-30px position-relative overflow-hidden"
                                     data-anime="{ &quot;effect&quot;: &quot;slide&quot;, &quot;color&quot;: &quot;#005153&quot;, &quot;direction&quot;:&quot;lr&quot;, &quot;easing&quot;: &quot;easeOutQuad&quot;, &quot;delay&quot;:50}">
-                                    <img src="{{$settings['section_5_1_img']}}"  class="w-100 border-radius-6px">
+                                    <img src="{{ $settings['section_5_1_img'] ?? '#' }}"  class="w-100 border-radius-6px">
                                    
                                 </div>
                                 <div class="col-xl-4 col-lg-5 offset-lg-1 col-md-6 text-center text-md-start"
@@ -379,7 +379,7 @@
                         <div class="tab-pane fade in" id="tab_eight2">
                             <div class="row align-items-center justify-content-center g-lg-0">
                                 <div class="col-md-6 sm-mb-30px position-relative overflow-hidden">
-                                    <img src="images/demo-accounting-img-07.jpg" alt class="w-100 border-radius-4px">
+                                    <img src="{{ $settings['section_5_2_img'] ?? '#' }}" alt class="w-100 border-radius-4px">
                                     
                                 </div>
                                 <div class="col-xl-4 col-lg-5 offset-lg-1 col-md-6 text-center text-md-start">
@@ -406,7 +406,7 @@
                         <div class="tab-pane fade in" id="tab_eight3">
                             <div class="row align-items-center justify-content-center g-lg-0">
                                 <div class="col-md-6 sm-mb-30px position-relative overflow-hidden">
-                                    <img src="images/demo-accounting-img-08.jpg" alt class="w-100 border-radius-4px">
+                                    <img src="{{ $settings['section_5_3_img'] ?? '#' }}" alt class="w-100 border-radius-4px">
                                    
                                 </div>
                                 <div class="col-xl-4 col-lg-5 offset-lg-1 col-md-6 text-center text-md-start">
@@ -434,7 +434,7 @@
                         <div class="tab-pane fade in" id="tab_eight4">
                             <div class="row align-items-center justify-content-center g-lg-0">
                                 <div class="col-md-6 sm-mb-30px position-relative overflow-hidden">
-                                    <img src="images/demo-accounting-img-09.jpg" alt class="w-100 border-radius-4px">
+                                    <img src="{{ $settings['section_5_4_img'] ?? '#' }}" alt class="w-100 border-radius-4px">
                                   
                                 </div>
                                 <div class="col-xl-4 col-lg-5 offset-lg-1 col-md-6 text-center text-md-start">
