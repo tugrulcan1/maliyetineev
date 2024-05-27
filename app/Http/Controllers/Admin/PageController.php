@@ -24,6 +24,14 @@ class PageController extends Controller
     public function store(CreatePageRequest $request)
     {
         $validatedData = $request->validated();
+        if ($request->hasFile('file')) {
+            $file = $request->file('file');
+            $fileName = time() . '_' . $file->getClientOriginalName();
+            $filePath = $file->storeAs('sayfa_gorselleri', $fileName, 'public');
+          
+            $filePathUrl = asset('storage/' . $filePath);
+            $validatedData['file'] = $filePathUrl;
+        } 
 
         $slug = Str::slug($validatedData['title']);
         $originalSlug = $slug;
@@ -55,6 +63,16 @@ class PageController extends Controller
     {
         $validatedData = $request->validated();
 
+        if ($request->hasFile('file')) {
+            $file = $request->file('file');
+            $fileName = time() . '_' . $file->getClientOriginalName();
+            $filePath = $file->storeAs('sayfa_gorselleri', $fileName, 'public');
+          
+            $filePathUrl = asset('storage/' . $filePath);
+            $validatedData['file'] = $filePathUrl;
+        } 
+        // print_r($request->all());die;
+        
         $slug = Str::slug($validatedData['title']);
         $originalSlug = $slug;
         $counter = 1;

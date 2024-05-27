@@ -22,7 +22,7 @@
                         </div>
                     @endif
                     <div class="p-4 code-to-copy">
-                        <form action="{{ route('admin.pages.store') }}" method="POST">
+                        <form action="{{ route('admin.pages.store') }}" method="POST"  enctype="multipart/form-data">
                             @csrf
                             <div class="mb-3">
                                 <label class="form-label" for="title">Page Title</label>
@@ -52,6 +52,10 @@
                                 <label class="form-label" for="meta_author">Meta Author</label>
                                 <input class="form-control" id="meta_author" name="meta_author" type="text"
                                     placeholder="Meta Author">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label" for="meta_author">Sayfa Görseli</label>
+                                <input type="file" class="form-control" name="file">
                             </div>
                             <button type="submit" class="btn btn-primary">Create Page</button>
                         </form>
