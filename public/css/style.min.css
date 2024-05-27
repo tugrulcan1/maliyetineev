@@ -19443,3 +19443,12 @@ p {
     flex-direction: column;
   }
 } */
+
+@media only screen and (max-width: 600px) {
+  .mgy {
+display: none;
+  }
+  .mgyy{
+    display: block !important;
+  }
+}
