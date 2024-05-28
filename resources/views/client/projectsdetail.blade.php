@@ -94,12 +94,12 @@
                     </div>
                 </div>
             </div> --}}
-            <div class="container col-xl-6 col-lg-6 col-md-6 mb-4">
+            <div class="container col-xl-7 col-lg-6 col-md-6 mb-4">
                 <div class="row card-container">
                     @foreach(json_decode($project->details) as $detail)
                         <div class="col-xl-6 col-lg-6 col-md-6 mb-4">
                             <div class="feature-box">
-                                <div class="feature-small-icon mb-3">
+                                <div class="feature-small-icon">
                                     <i class="fas fa-star"></i> <!-- İkonu buraya yerleştirebilirsiniz -->
                                 </div>
                                 <div class="feature-small-content">
@@ -113,15 +113,13 @@
                 </div>
             </div>
             
-            <div class="col-xl-6 col-lg-12 col-md-11">
+            <div class="col-xl-5 col-lg-12 col-md-11">
                 <div class="row row-cols-md-1 justify-content-center">
                     <div class="col-xl-10">
                         <div class="bg-white p-8 border-radius-6px box-shadow-double-large">
                             <div class="row">
                                 <div class="col-9">
-                                    <h3 class="alt-font text-dark-gray fw-700 ls-minus-2px mb-50px xs-mb-35px">Size
-                                        nasıl
-                                        yardımcı olabiliriz?</h3>
+                                    <h3 class="alt-font text-dark-gray fw-700 ls-minus-2px mb-50px xs-mb-35px">Size nasıl yardımcı olabiliriz?</h3>
                                 </div>
                                 <div class="col-3 text-end"
                                     data-anime="{ &quot;translateY&quot;: [30, 0], &quot;translateX&quot;: [-30, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 600, &quot;delay&quot;: 300, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
@@ -194,54 +192,48 @@
 
 </section>
 
-<section style="padding: 0 !important; ">
-    <div class="container">
-        <div class="row">
-         <div class="col-md-12">
-            <div class="card">
-                <div class="card-header">
-                    <h4 style="font-weight: 700; margin:0;color:#333;" >{{$project->project_title}}</h3>
+    <section style="padding: 0 !important; ">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">       
+                    <h4 style="margin:0;color:#333;" >{{$project->project_title}}</h3>
+                    <p style="font-size:12px;">{!! $project->description !!}</p>          
                 </div>
-                <div class="card-body">
-                    <p class="font-size:12px;">{!! $project->description !!}</p> 
-                </div>    
             </div>
-         </div>
-
         </div>
-    </div>
-</section>
-@if(count($project->galleries) > 0)
-    <div class="section" style="background-color: #5ba9e0">
-        <div class="container-fluid">
-            <h3 style="text-align: center; font-weight: 700; color: #333; margin-top: 100px; ">Proje Görselleri</h3>
-            <swiper-container class="mySwiper" navigation="true">
-                @foreach ($project->galleries as $galery)   
-                    <swiper-slide> <img src="{{ url('uploads/' . $galery->image) }}" alt="" style="width: 100%; height: 350px;"></swiper-slide>
-                @endforeach
-            </swiper-container>
-        </div>
-    </div>
-    @endif
-
-    @if (!empty($floorPlans) && count($floorPlans) > 0)
-        <div class="section p-5" style="background-color: #5ba9e0">
-            <div class="container mt-5">
-                <h3 style="text-align: center; font-weight: 700; color: #333;">{{ $project->name }} Kat Planları</h3>
-                <div class="tab">
-                    @foreach ($floorPlans as $index => $floorPlan)
-                        <button class="tablinks" data-tab="tab{{ $index }}">{{ $floorPlan->floor_plan }}</button>
-                    @endforeach
-                </div>
-        
-                @foreach ($floorPlans as $index => $floorPlan)
-                    <div id="tab{{ $index }}" class="tabcontent">
-                        <img src="{{ asset('kat_plani/' . $floorPlan->image_path) }}" alt="{{ $floorPlan->floor_plan }}" style="width: 1220px; height: 350px;">
+    </section>
+    
+            @if(count($project->galleries) > 0)
+                <div class="section">
+                    <div class="container-fluid">
+                        <h3 style="text-align: center; font-weight: 700; color: #333; margin-top: 100px; ">Proje Görselleri</h3>
+                        <swiper-container class="mySwiper" navigation="true">
+                            @foreach ($project->galleries as $galery)   
+                                <swiper-slide> <img src="{{ url('uploads/' . $galery->image) }}" alt="" style="width: 100%; height: 350px;"></swiper-slide>
+                            @endforeach
+                        </swiper-container>
                     </div>
-                @endforeach
-            </div>
-        </div>
-    @endif
+                </div>
+                @endif
+
+                @if (!empty($floorPlans) && count($floorPlans) > 0)
+                    <div class="section p-5">
+                        <div class="container mt-5">
+                            <h3 style="text-align: center; font-weight: 700; color: #333;">{{ $project->name }} Kat Planları</h3>
+                            <div class="tab">
+                                @foreach ($floorPlans as $index => $floorPlan)
+                                    <button class="tablinks" data-tab="tab{{ $index }}">{{ $floorPlan->floor_plan }}</button>
+                                @endforeach
+                            </div>
+                    
+                            @foreach ($floorPlans as $index => $floorPlan)
+                                <div id="tab{{ $index }}" class="tabcontent">
+                                    <img src="{{ asset('kat_plani/' . $floorPlan->image_path) }}" alt="{{ $floorPlan->floor_plan }}" style="width: 1220px; height: 350px;">
+                                </div>
+                            @endforeach
+                        </div>
+                    </div>
+            @endif
 <section style=" padding-bottom: 80px; ">
       <!-- Konum -->
       <div class="container">
@@ -301,7 +293,7 @@
         font-size: 24px;
         font-weight: 700;
         color: #333;
-        margin-bottom: 10px;
+        /* margin-bottom: 10px; */
     }
     .feature-small-content p {
         font-size: 16px;

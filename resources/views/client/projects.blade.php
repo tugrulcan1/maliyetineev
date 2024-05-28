@@ -38,8 +38,10 @@
                                                         target="_blank" class="text-white fs-24 lh-28  xl-w-75 d-block"
                                                         style="color: white;">{{$project->project_title}}</a>
 
-                                                    <p class="custom-description"  style="color: white !important;">
-                                                    {!!$project->description!!}</p>
+                                                    {{-- <p class="custom-description"  style="color: white !important;">
+                                                    {!!$project->description!!}</p> --}}
+                                                    <p class="custom-description">{{ \Illuminate\Support\Str::limit(strip_tags($project->description), 80, '...') }}</p>
+
 
                                                 </div>
                                                 <a href="{{route('projelerimiz.show',$project->id)}}" class="circle-box bg-yellow w-50px h-50px rounded-circle ms-auto position-relative rounded-box">
