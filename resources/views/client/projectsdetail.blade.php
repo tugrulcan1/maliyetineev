@@ -203,7 +203,7 @@
     <div class="container">
         <div class="row">
          <div class="col-md-12">
-            <h4 style="font-weight: 700; margin:0" >Kandıra Projesi Nerede?</h3>
+            <h4 style="font-weight: 700; margin:0" >{{$project->project_title}}</h3>
            <p>{!! $project->description !!}</p> 
          </div>
 
