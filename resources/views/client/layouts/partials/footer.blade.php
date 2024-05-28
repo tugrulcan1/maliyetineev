@@ -169,6 +169,27 @@
             document.querySelector(".tablinks").click();
         });
 </script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.tablinks').click(function() {
+            console.log('asdasds')
+            var katIndex = $(this).data('kat-index');
+            var katGorselleriDiv = $('#katGorselleri');
+            katGorselleriDiv.empty(); // Her tıklamada içeriği temizle
+
+            var katGorselleri = @json($kat_gorselleri);
+
+            console.log('katGorselleri')
+
+            $.each(katGorselleri[katIndex], function(index, gorsel) {
+                var img = $('<img>');
+                img.attr('src', '{{ asset("storage/") }}/' + gorsel);
+                katGorselleriDiv.append(img);
+            });
+        });
+    });
+</script>
 
 
 </body>

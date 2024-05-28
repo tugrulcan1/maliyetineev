@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\FloorPlan;
 use App\Models\Galery;
 use App\Models\HousingStatus;
 use App\Models\HousingType;
