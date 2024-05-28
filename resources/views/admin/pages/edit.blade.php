@@ -13,7 +13,7 @@
                 </div>
                 <div class="card-body p-0">
                     <div class="p-4 code-to-copy">
-                        <form action="{{ route('admin.pages.update', $page->id) }}" method="POST">
+                        <form action="{{ route('admin.pages.update', $page->id) }}" method="POST"  enctype="multipart/form-data">
                             @csrf
                             @method('PUT')
                             <div class="mb-3">
@@ -44,6 +44,11 @@
                                 <label class="form-label" for="meta_author">Meta Author</label>
                                 <input class="form-control" id="meta_author" name="meta_author" type="text"
                                     placeholder="Meta Author" value="{{ $page->meta_author }}">
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label" for="meta_author">Sayfa Görseli</label>
+                                <input type="file" class="form-control" name="file">
                             </div>
                             <button type="submit" class="btn btn-primary">Update Page</button>
                         </form>

@@ -19411,15 +19411,16 @@ footer .footer-navbar .nav-item:last-child a {
   text-transform: normal;
   line-height: 1.1;
 }
-.about-area p{
-  
-}
+
 p {
   font-size: 15px;
   font-weight: normal;
   line-height: 26px;
-  color: #647589;
   margin-bottom: 15px;
+  
+}
+.baslikP{
+  text-align: center !important;
 }
 .about-right-side {
   padding-left: 23px;
@@ -19445,6 +19446,11 @@ p {
   }
 } */
 
-.project-tt p{
-  color:#fff !important;
+@media only screen and (max-width: 600px) {
+  .mgy {
+display: none;
+  }
+  .mgyy{
+    display: block !important;
+  }
 }

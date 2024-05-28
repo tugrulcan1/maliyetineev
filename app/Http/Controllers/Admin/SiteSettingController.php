@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\SiteSetting;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Storage;
 
 class SiteSettingController extends Controller
 {
@@ -38,14 +39,33 @@ class SiteSettingController extends Controller
      * @return \Illuminate\Http\Response
      */
 
-    public function store(Request $request)
-    {
-        $setting = new SiteSetting();
-        $setting->key = $request->key;
-        $setting->value = $request->value;
-        $setting->save();
-        Session::flash('alertSuccessMessage', 'Ayar Kaydı Başarılı!');
-    }
+     public function store(Request $request)
+     {
+         $request->validate([
+             'key' => 'required|string|max:255',
+             'value' => 'nullable|string',
+             'file' => 'nullable|file|mimes:jpg,png,jpeg,gif,svg|max:2048',
+         ]);
+     
+         $setting = new SiteSetting();
+         $setting->key = $request->key;
+     
+         if ($request->hasFile('file')) {
+             $file = $request->file('file');
+             $fileName = time() . '_' . $file->getClientOriginalName();
+             $filePath = $file->storeAs('gorseller', $fileName, 'public');
+             // Dosyanın genel erişim yolunu al ve veritabanına kaydet
+             $setting->value = asset('storage/' . $filePath);
+         } else {
+             $setting->value = $request->value;
+         }
+     
+         $setting->save();
+         Session::flash('alertSuccessMessage', 'Ayar Kaydı Başarılı!');
+     
+         return redirect()->back();
+     }
+     
     /**
      * Display the specified resource.
      *

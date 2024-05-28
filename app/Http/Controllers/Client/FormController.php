@@ -12,9 +12,15 @@ class FormController extends Controller
     {
         $request->validate([
             'name' => 'required',
-            'email' => 'required',
+            'email' => 'required|email',
             'phone' => 'required',
             'terms_condition' => 'required',
+        ], [
+            'name.required' => 'Ad alanı gereklidir.',
+            'email.required' => 'E-posta alanı gereklidir.',
+            'email.email' => 'Geçerli bir e-posta adresi girin.',
+            'phone.required' => 'Telefon alanı gereklidir.',
+            'terms_condition.required' => 'Kişisel Verilerin Korunması Hakkında Aydınlatma Yazısını kabul etmelisiniz.',
         ]);
 
 
@@ -45,11 +51,18 @@ class FormController extends Controller
     {
 
         $request->validate([
-            'name' => 'required',
-            'email' => 'required',
-            'phone' => 'required',
-            'job' => 'required',
+            'name'    => 'required',
+            'email'   => 'required',
+            'phone'   => 'required',
+            'job'     => 'required',
             'message' => 'required',
+        ],[
+            'name.required'    => 'Ad alanı gereklidir.',
+            'email.required'   => 'E-posta alanı gereklidir.',
+            'email.email'      => 'Geçerli bir e-posta adresi girin.',
+            'phone.required'   => 'Telefon alanı gereklidir.',
+            'job.required'     => 'Meslek seçimi yapınız.',
+            'message.required' => 'Lütfen mesajınızı yazınız.'
         ]);
 
         $name = $request->input('name');
@@ -84,7 +97,11 @@ class FormController extends Controller
 
         $request->validate([
             'email' => 'required',
+        ], [
+           'email.required' => 'E-posta alanı gereklidir.',            
         ]);
+
+    
         $email = $request->input('email');
 
         Mail::raw(
@@ -101,5 +118,9 @@ class FormController extends Controller
 
 
         return redirect()->back()->with('success', 'Mesajınız İletildi');
+    }
+
+    public function aydinlatmaMetni(){
+        return view('client.aydinlatma_metni');
     }
 }

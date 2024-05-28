@@ -107,10 +107,10 @@
         <nav class="navbar navbar-expand-lg header-light bg-white responsive-sticky">
             <div class="container-fluid">
                 <div class="col-auto col-lg-2 me-lg-0 me-auto">
-                    <a class="navbar-brand" href="{{route('index')}}">
+                    <a class="navbar-brand" href="demo-accounting.html">
                         <img src="{{asset('images/logomev.png')}}" alt class="default-logo">
-                        <img src="images/logomev.png" data-at2x="images/logomev.png" alt class="alt-logo">
-                        <img src="images/logomev.png" data-at2x="images/logomev.png" alt class="mobile-logo">
+                        <img src="{{asset('images/logomev.png')}}" data-at2x="images/logomev.png" alt class="alt-logo">
+                        <img src="{{asset('images/logomev.png')}}" data-at2x="images/logomev.png" alt class="mobile-logo">
                     </a>
                 </div>
                 <div class="col-auto menu-order position-static">
@@ -121,21 +121,22 @@
                         <span class="navbar-toggler-line"></span>
                         <span class="navbar-toggler-line"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
+                    {{-- <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav fw-600">
                             @foreach ($menu as $menus)
                                 <li class="nav-item"><a href="{{$menus->href}}" class="nav-link">{{$menus->text}}</a></li>
                             @endforeach
                         </ul>
-                    </div>
+                    </div> --}}
+                    
                 </div>
                 <div class="col-auto col-lg-2 text-end d-none d-sm-flex">
-                    <!-- <div class="header-icon">
+                  <div class="header-icon">
                         <div class="header-button">
-                            <a href="demo-accounting-contact.html"
-                                class="btn btn-small btn-rounded btn-base-color btn-box-shadow">Let's discuss</a>
+                            <a href="https://emlaksepette.com/" target="_blank"
+                                class="btn btn-small btn-rounded btn-box-shadow" style="background-color: #0f75bc;color:white">Satın Al</a>
                         </div>
-                    </div> -->
+                    </div>
                 </div>
             </div>
         </nav>
