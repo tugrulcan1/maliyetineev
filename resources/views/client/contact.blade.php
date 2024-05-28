@@ -6,7 +6,7 @@
 
 
 <section class="top-space-margin page-title-big-typography cover-background magic-cursor round-cursor"
-        style="background-image: url(images/demo-accounting-contact-title-bg.jpg)">
+style="background-image: url({{ $contact->file ?? asset('images/demo-accounting-company-title-bg.jpg') }})">
         <div class="container">
             <div class="row extra-very-small-screen align-items-center">
                 <!-- <div class="col-lg-5 col-sm-8 position-relative page-title-extra-small"
