@@ -11,6 +11,7 @@ class PageController extends Controller
     public function index($slug)
     {
         $pageInfo = Page::where('slug', $slug)->first();
+    
         return view('client.blank', compact('pageInfo'));
     }
 }

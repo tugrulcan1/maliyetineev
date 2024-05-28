@@ -50,7 +50,7 @@
 
                         <li><a href="{{$menus->href}}">{{$menus->text}}</a></li>
                     @endforeach
-                    <li><a href="/page/mektup">Müşterilerimize Mektup</a></li>
+                    <li><a href="/page/musterilerimize-mektup">Müşterilerimize Mektup</a></li>
                     <li><a href="/page/hakkimizda">Hakkımızda</a></li>
 
                 </ul>
