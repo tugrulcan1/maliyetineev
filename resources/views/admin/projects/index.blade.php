@@ -69,7 +69,11 @@
                                                         Sil
                                                     </button>
 
-
+                                                    <button type="button" class="btn btn-sm btn-success"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#floorPlanModal{{ $project->id }}">
+                                                        Kat Planı Ekle
+                                                    </button>
 
 
                                                 <!-- Silme işlemi için modal -->
@@ -114,7 +118,48 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <!-- Silme işlemi için modal -->
+                                                <!-- kat planı işlemi için modal -->
+                                                <div class="modal fade" id="floorPlanModal{{ $project->id }}" tabindex="-1"
+                                                    aria-labelledby="floorPlanModalLabel{{ $project->id }}"
+                                                    aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title"
+                                                                    id="floorPlanModalLabel{{ $project->id }}">Ekle
+                                                                </h5>
+                                                           
+                                                            </div>
+                                                            <div class="modal-body">
+                                                            <form
+                                                                    action="{{ route('admin.add.floor.plan', $project->id) }}"
+                                                                    method="POST" enctype="multipart/form-data" class="d-inline">
+                                                                    @csrf
+                                                                    <input type="hidden" name="project_id"  value="{{$project->id}}">
+                                                                    <label for="exampleInputPassword1" class="form-label mb-1">Kat Planı Ekle</label>
+
+                                                                    <input type="text" name="floor_plan" class="form-control mb-1">
+
+                                                                    <div class="mb-3 col-md-9">
+                                                                    <label for="exampleInputPassword1" class="form-label">Görsel Ekle</label>
+                                                                    <div class="mb-3">
+                                                                        <!-- <label for="formFile" class="form-label">Görsel Ekle</label> -->
+                                                                        <input class="form-control" type="file" id="formFile" name="file">
+                                                                    </div>
+                                                                </div>
+
+                                                                    <div class="modal-footer">
+                                                                    <button type="submit" class="btn btn-danger">Ekle</button>
+                                                              
+                                                                        <button type="button" class="btn btn-secondary"
+                                                                            data-bs-dismiss="modal">İptal</button>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                          
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </td>
                                         </tr>
                                     @endforeach

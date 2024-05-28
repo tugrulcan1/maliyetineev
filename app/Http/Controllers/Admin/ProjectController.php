@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\FloorPlan;
 use App\Models\Galery;
 use App\Models\HousingStatus;
 use App\Models\HousingType;
@@ -108,8 +109,16 @@ class ProjectController extends Controller
      */
     public function show(Project $project)
     {
-$project=Project::with('galleries')->where('id',$project->id)->first();     
-        return view('client.projectsdetail', compact('project'));
+        $floor_plans = FloorPlan::where('project_id',$project->id)->get();
+        $kat_planlari = [];
+        $kat_gorselleri = [];
+            foreach($floor_plans as $floor_plan){
+                $kat_planlari[] = $floor_plan->floor_plan;
+                $kat_gorselleri[] = $floor_plan->image;
+            }
+        $project=Project::with('galleries')->where('id',$project->id)->first();     
+
+        return view('client.projectsdetail', compact('project','kat_planlari','kat_gorselleri'));
     }
 
     /**

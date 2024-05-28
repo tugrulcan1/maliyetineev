@@ -212,14 +212,13 @@
                                                     <!-- <i class="line-icon-Medal-2 text-white icon-extra-large"></i> -->
                                                 </a>
                                                 <div class="mt-auto d-flex w-100 align-items-center">
-                                                    <div class="col last-paragraph-no-margin">
+                                                    <div class="col project-tt last-paragraph-no-margin">
                                                         <a href="{{route('projelerimiz.show',$project->id)}}"
                                                             target="_blank"
                                                             class="text-white fs-24 lh-28  xl-w-75 d-block"
                                                             style="color: white;">{{$project->project_title}}</a>
 
-                                                        <p
-                                                            style="color: white; margin: 0; padding: 0; font-size: 14px;">
+                                                        <p style="color: white; margin: 0; padding: 0; font-size: 14px;">
                                                             {!!$project->description!!}</p>
 
                                                     </div>
@@ -412,7 +411,7 @@
             <div class="row justify-content-center mb-6">
                 <div class="col-xl-6 col-md-8 col-sm-10 text-center"
                 data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateY&quot;: [50, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1200, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
-                Uzman Kadromuzla Hizmetinizdeyiz.</h4>
+                <h4 class="mb-0 text-dark-gray fw-700 ls-minus-1px w-85 xl-w-100 mx-auto"> Uzman Kadromuzla Hizmetinizdeyiz.</h4>
                 </div>
                 <div class="col-xl-2 col-lg-2 d-flex justify-content-center justify-content-lg-end"
                     data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateX&quot;: [30, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 800, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">

@@ -224,6 +224,47 @@
     </div>
     @endif
 
+    
+    <div class="section">
+        <div class="container">
+            <h3 style="text-align: center; font-weight: 700; color: #333;">Kat Planları</h3>
+            <!-- <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'London')">1+1</button>
+                <button class="tablinks" onclick="openCity(event, 'Paris')">2+2</button>
+                <button class="tablinks" onclick="openCity(event, 'Tokyo')">3+1</button>
+            </div> -->
+            <!-- <div class="tab">
+                @foreach($kat_planlari as $kat_plan)
+                    <button class="tablinks" onclick="openCity(event, '{{ $kat_plan }}')">{{ $kat_plan }}</button>
+                @endforeach
+            </div> -->
+
+            <!-- <div id="London" class="tabcontent">
+                <img src="images/duvarcerceve.png" alt="" style="width: 1220px; height: 350px;">
+            </div>
+
+            <div id="Paris" class="tabcontent">
+                <img src="images/duvarcerceve.png" alt="" style="width: 1220px; height: 350px;">
+            </div>
+
+            <div id="Tokyo" class="tabcontent">
+                <img src="images/duvarcerceve.png" alt="" style="width: 1220px; height: 350px;">
+            </div> -->
+
+
+            <div class="tab">
+                @foreach($kat_planlari as $key => $kat_plan)
+                    <button class="tablinks" data-kat-index="{{ $key }}">{{ $kat_plan }}</button>
+                @endforeach
+            </div>
+
+        <div id="katGorselleri" class="kat-gorselleri">
+            <!-- Görseller buraya eklenecek -->
+        </div>
+
+        </div>
+    </div>
+
 <section style=" padding-bottom: 80px; ">
     <div class="container">
         <h3 style="text-align: center; font-weight: 700; color: #333;">Konum</h3>

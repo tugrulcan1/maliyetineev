@@ -19444,3 +19444,7 @@ p {
     flex-direction: column;
   }
 } */
+
+.project-tt p{
+  color:#fff !important;
+}

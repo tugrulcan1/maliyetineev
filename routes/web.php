@@ -36,6 +36,7 @@ use App\Http\Controllers\Client\RegisterController;
 use App\Http\Controllers\Client\FormController;
 use App\Http\Controllers\CommentController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\FloorPlansController;
 use App\Http\Controllers\Institutional\BrandController;
 use App\Http\Controllers\Institutional\BuyController;
 use App\Http\Controllers\Institutional\ChangePasswordController as InstitutionalChangePasswordController;
@@ -92,6 +93,10 @@ Route::get('/logout', [ClientLoginController::class, "logout"])->name('client.lo
 
 
 Route::group(['prefix' => 'admin', "as" => "admin.", 'middleware' => ['admin']], function () {
+
+    Route::get('/floor_plans',[FloorPlansController::class,'index'])->name('floor.plans.index');
+    Route::post('/add_floor_plan',[FloorPlansController::class,'addFloorPlan'])->name('add.floor.plan');
+    
     Route::delete('/blogs/{blog}', [BlogController::class, 'destroy'])->name('blogs.destroy');
     Route::delete('/delete-gallery/{id}', [ProjectController::class, 'deleteGallery'])->name('gallery.delete');
     Route::post('/ckeditor/upload', [CKEditorController::class, "upload"])->name('ckeditor.upload');
