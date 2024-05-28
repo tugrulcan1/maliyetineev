@@ -63,7 +63,7 @@ class SiteSettingController extends Controller
          $setting->save();
          Session::flash('alertSuccessMessage', 'Ayar Kaydı Başarılı!');
      
-         return redirect()->back();
+         return redirect()->back()->with('success','Başarıyla eklendi');
      }
      
     /**

@@ -33,7 +33,7 @@
                 <div class="elements-social social-icon-style-02 mt-20px lg-mt-20px">
                     <ul class="small-icon light">
                         @foreach($socialMediaIcons as $SocialMediaIcon)
-                            <li><a class="facebook" href="https://www.facebook.com/" target="_blank"><i
+                            <li><a class="facebook" href="{{$SocialMediaIcon->url}}" target="_blank"><i
                                         class="fa-brands {{$SocialMediaIcon->icon_class}}"></i></a></li>
                         @endforeach
 
