@@ -178,7 +178,7 @@
             var katGorselleriDiv = $('#katGorselleri');
             katGorselleriDiv.empty(); // Her tıklamada içeriği temizle
 
-            var katGorselleri = @json($kat_gorselleri);
+            var katGorselleri = ;
 
             console.log('katGorselleri')
 
