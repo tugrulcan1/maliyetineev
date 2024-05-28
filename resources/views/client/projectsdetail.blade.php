@@ -104,8 +104,8 @@
                                 </div>
                                 <div class="feature-small-content">
                                     <h3>{{ $detail->title }}</h3>
-                                    {{-- <p class="card-text">{{ \Illuminate\Support\Str::limit(strip_tags($detail->description), 100, '...') }}</p> --}}
-                                    <p style="overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;">{!! $detail->description !!}</p>
+                                    <p class="card-text">{{ \Illuminate\Support\Str::limit(strip_tags($detail->description), 250, '...') }}</p>
+                                    {{-- <p style="overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;">{!! $detail->description !!}</p> --}}
                                 </div>
                             </div>
                         </div>
@@ -198,8 +198,14 @@
     <div class="container">
         <div class="row">
          <div class="col-md-12">
-            <h4 style="font-weight: 700; margin:0;color:#333;" >{{$project->project_title}}</h3>
-           <p class="font-size:12px;">{!! $project->description !!}</p> 
+            <div class="card">
+                <div class="card-header">
+                    <h4 style="font-weight: 700; margin:0;color:#333;" >{{$project->project_title}}</h3>
+                </div>
+                <div class="card-body">
+                    <p class="font-size:12px;">{!! $project->description !!}</p> 
+                </div>    
+            </div>
          </div>
 
         </div>
@@ -271,7 +277,7 @@
     .feature-box {
             background: #fff;
             border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 14px 28px rgba(0, 0, 0.3, 0.3);
             transition: transform 0.3s, box-shadow 0.3s;
             text-align: center;
             padding: 30px;
@@ -285,7 +291,7 @@
         }
     .feature-box:hover {
         transform: translateY(-10px);
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
     }
     .feature-small-icon {
         font-size: 40px;
