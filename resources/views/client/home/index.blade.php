@@ -639,7 +639,7 @@
             <span style="margin-left:130px ">{{$settings['section_8_small_title']}}</span>
         <div class="row mt-3">
 
-        <div class="col-sm  mb-4" style="text-align: center;margin-top:30px;">
+        <div class="col-sm  mb-4" style="text-align: center;">
             <div>
                 <img src="/images/trust.png" alt="" style="height: 100px;">
                 <p class="text-dark-gray fw-700 baslikP">
