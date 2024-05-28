@@ -51,7 +51,7 @@
                                          
                                     </tr>
                                 </thead>
-                                <tbody class="list" id="project-list-table-body">
+                                <tbody class="" id="project-list-table-body">
                                     @foreach ($projects as $key => $project)
                                         <tr class="position-static">
                                             <td>{{ $key + 1 }}</td>

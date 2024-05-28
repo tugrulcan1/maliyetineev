@@ -71,7 +71,7 @@ class PageController extends Controller
             $filePathUrl = asset('storage/' . $filePath);
             $validatedData['file'] = $filePathUrl;
         } 
-        // print_r($request->all());die;
+        // print_r($validatedData);die;
         
         $slug = Str::slug($validatedData['title']);
         $originalSlug = $slug;

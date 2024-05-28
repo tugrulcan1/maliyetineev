@@ -36,7 +36,7 @@
                 </div>
             </div>
         </div>
-        <div class="row bg-very-light-gray m-0 align-items-center justify-content-center text-center text-lg-start position-absolute "
+        {{-- <div class="row bg-very-light-gray m-0 align-items-center justify-content-center text-center text-lg-start position-absolute "
             style="bottom: 0; width: 100%; padding: 20px 0; background-color: rgba(1, 51, 85, 0.3); align-items: center;">
 
 
@@ -93,7 +93,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
         
     <section class="pt-0 mgy  " style=" position: absolute; width:100%; right:-110px !important; bottom:-30px !important; " >
         <div class="container">
@@ -268,13 +268,13 @@
                                                     <!-- <i class="line-icon-Medal-2 text-white icon-extra-large"></i> -->
                                                 </a>
                                                 <div class="mt-auto d-flex w-100 align-items-center">
-                                                    <div class="col project-tt last-paragraph-no-margin">
+                                                    <div class="col project-tt last-paragraph-no-margin truncate-text">
                                                         <a href="{{route('projelerimiz.show',$project->id)}}"
                                                             target="_blank"
                                                             class="text-white fs-24 lh-28  xl-w-75 d-block"
                                                             style="color: white;">{{$project->project_title}}</a>
 
-                                                        <p style="color: white; margin: 0; padding: 0; font-size: 14px;">
+                                                        <p class="" style="color: white; margin: 0; padding: 0; font-size: 14px;">
                                                             {!!$project->description!!}</p>
 
                                                     </div>

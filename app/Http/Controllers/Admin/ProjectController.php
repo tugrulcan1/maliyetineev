@@ -94,7 +94,8 @@ class ProjectController extends Controller
             'description' => $request->input('description'),
             'slug' => $request->input('slug'),
             'image' => $dosyaAdi,
-            'details' => $detailsJson
+            'details' => $detailsJson,
+            'konum'   =>$request->input('konum')
         ]);
 
         $galleries = $request->file('gallery');

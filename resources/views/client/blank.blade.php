@@ -1,5 +1,6 @@
 @extends('client.layouts.master')
 @section('content')
+
 <section class="top-space-margin page-title-big-typography cover-background magic-cursor round-cursor"
 style="background-image: url({{ $pageInfo->file ? $pageInfo->file : asset('images/demo-accounting-company-title-bg.jpg') }})">
         <div class="container">

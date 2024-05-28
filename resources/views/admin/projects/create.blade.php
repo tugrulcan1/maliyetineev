@@ -65,16 +65,14 @@
                                         </div>
 
                                         <div class="col-md-12">
-                                            <label class="form-label" for="image">Konum (Slug)</label>
-                                            <input name="slug" class="form-control" id="slug" type="text"
-                                                />
+                                            <label class="form-label" for="image">Slug</label>
+                                            <input name="slug" class="form-control" id="slug" type="text"/>
                                         </div>
 
-                                        {{-- <div class="col-md-12">
-                                            <label class="form-label" for="image">Kat Planı</label>
-                                            <input name="floor_plan" class="form-control" id="floor_plan" type="text"
-                                                />
-                                        </div> --}}
+                                        <div class="col-md-12">
+                                            <label class="form-label" for="image">Konum</label>
+                                            <input name="konum" class="form-control" id="slug" type="text"/>
+                                        </div>
 
                                         <div class="col-md-12">
                                             <label class="form-label" for="image">Image (Anasayfa'da Görünecek Resim)</label>
@@ -93,7 +91,7 @@
                                       
                                         <div class="col-12 mt-5">
                                         <button class="btn btn-primary" id="saveFormsButton" type="submit">Kaydet</button>
-                                    </div>
+                                     </div>
                                      
 
 

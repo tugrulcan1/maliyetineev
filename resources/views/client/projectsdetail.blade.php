@@ -39,7 +39,7 @@
 </section>
 
 <section id="form" class="about-area about-area-mid pt-120 pb-90" style="padding-top: 40px; padding-bottom: 40px;">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             {{-- <div class="col-xl-6 col-lg-12 col-md-12"
                 style="display: flex; align-items: center; justify-content: center;">
@@ -94,27 +94,22 @@
                     </div>
                 </div>
             </div> --}}
-            <div class="col-xl-6 col-lg-12 col-md-12" style="display: flex; align-items: center; justify-content: center;">
-                <div class="row">
-                 {{-- {{dd($project->details)}} --}}
-                 @foreach(json_decode($project->details) as $detail)
-        <div class="col-xl-6 col-lg-6 col-md-6">
-            <div class="feature-box mb-40">
-                <div class="feature-small-icon mb-35">
-                    <!-- Add your dynamic icon rendering logic here -->
-                    <!-- For now, let's assume there's no dynamic icon -->
-                </div>
-                <div class="feature-small-content">
-                    <!-- Render the project detail title dynamically -->
-                    <h3>{{ $detail->title }}</h3>
-                    <!-- Render the project detail description dynamically -->
-                    <!-- Be careful, you might need to decode HTML entities if you have encoded them -->
-                    <p>{!! $detail->description !!}</p>
-                </div>
-            </div>
-        </div>
-        @endforeach
-                
+            <div class="container col-xl-6 col-lg-6 col-md-6 mb-4">
+                <div class="row card-container">
+                    @foreach(json_decode($project->details) as $detail)
+                        <div class="col-xl-6 col-lg-6 col-md-6 mb-4">
+                            <div class="feature-box">
+                                <div class="feature-small-icon mb-3">
+                                    <i class="fas fa-star"></i> <!-- İkonu buraya yerleştirebilirsiniz -->
+                                </div>
+                                <div class="feature-small-content">
+                                    <h3>{{ $detail->title }}</h3>
+                                    {{-- <p class="card-text">{{ \Illuminate\Support\Str::limit(strip_tags($detail->description), 100, '...') }}</p> --}}
+                                    <p style="overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;">{!! $detail->description !!}</p>
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
                 </div>
             </div>
             
@@ -203,56 +198,49 @@
     <div class="container">
         <div class="row">
          <div class="col-md-12">
-            <h4 style="font-weight: 700; margin:0" >{{$project->project_title}}</h3>
-           <p>{!! $project->description !!}</p> 
+            <h4 style="font-weight: 700; margin:0;color:#333;" >{{$project->project_title}}</h3>
+           <p class="font-size:12px;">{!! $project->description !!}</p> 
          </div>
 
         </div>
     </div>
 </section>
 @if(count($project->galleries) > 0)
-<div class="section">
-        <div class="container">
+    <div class="section" style="background-color: #5ba9e0">
+        <div class="container-fluid">
             <h3 style="text-align: center; font-weight: 700; color: #333; margin-top: 100px; ">Proje Görselleri</h3>
             <swiper-container class="mySwiper" navigation="true">
-                @foreach ($project->galleries as $galery)
-                
-              
-                <swiper-slide> <img src="{{ url('uploads/' . $galery->image) }}" alt=""
-                        style="width: 1220px; height: 350px;"></swiper-slide>
-
-                        @endforeach
-
+                @foreach ($project->galleries as $galery)   
+                    <swiper-slide> <img src="{{ url('uploads/' . $galery->image) }}" alt="" style="width: 100%; height: 350px;"></swiper-slide>
+                @endforeach
             </swiper-container>
         </div>
     </div>
     @endif
 
-
-    <div class="section">
-        <div class="container mt-5">
-            <h3 style="text-align: center; font-weight: 700; color: #333;">{{ $project->name }} Kat Planları</h3>
-            <div class="tab">
+    @if (!empty($floorPlans) && count($floorPlans) > 0)
+        <div class="section p-5" style="background-color: #5ba9e0">
+            <div class="container mt-5">
+                <h3 style="text-align: center; font-weight: 700; color: #333;">{{ $project->name }} Kat Planları</h3>
+                <div class="tab">
+                    @foreach ($floorPlans as $index => $floorPlan)
+                        <button class="tablinks" data-tab="tab{{ $index }}">{{ $floorPlan->floor_plan }}</button>
+                    @endforeach
+                </div>
+        
                 @foreach ($floorPlans as $index => $floorPlan)
-                    <button class="tablinks" data-tab="tab{{ $index }}">{{ $floorPlan->floor_plan }}</button>
+                    <div id="tab{{ $index }}" class="tabcontent">
+                        <img src="{{ asset('kat_plani/' . $floorPlan->image_path) }}" alt="{{ $floorPlan->floor_plan }}" style="width: 1220px; height: 350px;">
+                    </div>
                 @endforeach
             </div>
-    
-            @foreach ($floorPlans as $index => $floorPlan)
-                <div id="tab{{ $index }}" class="tabcontent">
-                    <img src="{{ asset('kat_plani/' . $floorPlan->image_path) }}" alt="{{ $floorPlan->floor_plan }}" style="width: 1220px; height: 350px;">
-                </div>
-            @endforeach
         </div>
-    </div>
-
+    @endif
 <section style=" padding-bottom: 80px; ">
-    <div class="container">
+      <!-- Konum -->
+      <div class="container">
         <h3 style="text-align: center; font-weight: 700; color: #333;">Konum</h3>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3015.295945164073!2d29.17712307603554!3d40.909256521364604!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac554b56486c5%3A0x19df79713477599e!2sMaliyetine%20Ev!5e0!3m2!1str!2str!4v1715759633630!5m2!1str!2str"
-            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="{{$project->konum}}" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 </section>
 <section style="padding: 0 !important; position: sticky; bottom: 0; z-index: 999;">
@@ -273,6 +261,47 @@
 
 @section("css")
 
+<style>
+    .card-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+    }
+    .feature-box {
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
+            padding: 30px;
+            margin-right: 50px;
+            height: 315px;
+            width: 95%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            overflow: hidden; /* Taşmayı gizlemek için eklendi */
+        }
+    .feature-box:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    .feature-small-icon {
+        font-size: 40px;
+        color: #007bff;
+    }
+    .feature-small-content h3 {
+        font-size: 24px;
+        font-weight: 700;
+        color: #333;
+        margin-bottom: 10px;
+    }
+    .feature-small-content p {
+        font-size: 16px;
+        color: #666;
+    }
+</style>    
 
 <style>
         /* Style the tab */

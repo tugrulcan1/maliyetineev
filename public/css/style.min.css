@@ -19454,3 +19454,14 @@ display: none;
     display: block !important;
   }
 }
+
+
+
+.truncate-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 5; /* Görünecek satır sayısını ayarlayın */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 7.5em; /* Satır yüksekliğine bağlı olarak ayarlayın (5 satır * 1.5em satır yüksekliği) */
+}
