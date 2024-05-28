@@ -30,13 +30,13 @@
                                         action="{{ route('admin.projects.store') }}" enctype="multipart/form-data">
                                         @csrf
                                         <div class="col-md-12">
-                                            <label class="form-label" for="project_title">Project Title</label>
+                                            <label class="form-label" for="project_title">Projec Başlığı</label>
                                             <input name="project_title" class="form-control" id="project_title"
                                                 type="text" value="" required="">
                                             <div class="valid-feedback">Looks good!</div>
                                         </div>
                                         <div class="col-md-12">
-                                            <label class="form-label" for="description">description</label>
+                                            <label class="form-label" for="description">Proje Açıklaması</label>
                                             <textarea class="form-control" id="editor" name="description" rows="3"> </textarea>
                                         </div>
 
@@ -65,16 +65,16 @@
                                         </div>
 
                                         <div class="col-md-12">
-                                            <label class="form-label" for="image">Konum</label>
+                                            <label class="form-label" for="image">Konum (Slug)</label>
                                             <input name="slug" class="form-control" id="slug" type="text"
                                                 />
                                         </div>
 
-                                        <div class="col-md-12">
+                                        {{-- <div class="col-md-12">
                                             <label class="form-label" for="image">Kat Planı</label>
                                             <input name="floor_plan" class="form-control" id="floor_plan" type="text"
                                                 />
-                                        </div>
+                                        </div> --}}
 
                                         <div class="col-md-12">
                                             <label class="form-label" for="image">Image (Anasayfa'da Görünecek Resim)</label>
@@ -83,7 +83,7 @@
                                         </div>
 
                                         <div class="col-md-12">
-                                            <label class="form-label" for="image">Galery</label>
+                                            <label class="form-label" for="image">Galeri</label>
                                             <input name="gallery[]" class="form-control" id="url" type="file"
                                                multiple />
                                         </div>
