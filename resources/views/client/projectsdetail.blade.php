@@ -264,16 +264,18 @@
 <div class="sorularDiv">
     <div>
         <i class="fa-solid fa-chevron-right icon"></i>
-        <span class="questionHeader">MALİYETİNE EV İLE NASIL EV SAHİBİ OLUNUR ?</span>
-        <p class="answerP">Maliyetine Ev ile plan ve projesi belirlenmiş konut , daire veya villalardan dilediğinize önce toprak sonra daire tapunuzu anında alırsınız.</p>
+        <span class="questionHeader">MALİYETİNE EV İLE NASIL MALİYETİNE EV SAHİBİ OLURUM ? </span>
+        <p class="answerP">Maliyetine Ev Tarafından imarlı arsa üzerine projesi belirlenmiş mülklerimizden peşinatınızı ödeyerek arsa tapunuzu alırsınız. İnşaat başlangıcında taksitlerinizi ödemeye başlarsınız.
+        </p>
     </div>
 </div>
 
 <div class="sorularDiv">
     <div>
         <i class="fa-solid fa-chevron-right icon"></i>
-        <span class="questionHeader">Maliyeti Ev Sahibi Olma Sistemi Avantajları Nelerdir ?</span>
-        <p class="answerP">Maliyetine Ev şirketi sizleri %100 güvenli ve garantili bir sistem sunarak sizleri maliyetine ev sahibi yapar. Maliyetine Ev sahibi olmak herkesin hakkı.</p>
+        <span class="questionHeader">PEŞİNATIMI ÖDEDİKTEN SONRA SÜREÇ NASIL İŞLİYOR ?</span>
+        <p class="answerP">Arsa tapunuzu alır peşinatınızı ödersiniz. Noter onaylı sözleşme imzalarsınız. Sözleşme içerisinde yer alan ödeme planına göre ödemelerinizi yaparsınız. İnşaatınız teslim edildikten sonra da ödemeleriniz devam eder.
+        </p>
     </div>
 </div>
 
@@ -281,17 +283,49 @@
 <div class="sorularDiv">
     <div>
         <i class="fa-solid fa-chevron-right icon"></i>
-        <span class="questionHeader">İNŞAATLAR NE ZAMAN BAŞLAR ?</span>
-        <p class="answerP">İnşaat, imzalar atıldıktan 3 ay sonra başlanıp 12 ay bitirme garantilidir.</p>
+        <span class="questionHeader">İNŞAAT BAŞLANGICI NE ZAMAN ? </span>
+        <p class="answerP">Projelerimizin her birinde inşaat başlangıç ve bitiş tarihleri bellidir. Noter onaylı sözleşme içerisinde belirlenen tarihler arasında yapılmaktadır. </p>
     </div>
 </div>
 
+<div class="sorularDiv">
+    <div>
+        <i class="fa-solid fa-chevron-right icon"></i>
+        <span class="questionHeader">ÖDEME PLANIMDA BELİRTİLEN TAKSİTLERİMİ NE ZAMAN ÖDEMEYE BAŞLAYACAĞIM ? </span>
+        <p class="answerP">İnşaat başlangıcıyla birlikte taksit ödemeleriniz başlayacaktır.</p>
+    </div>
+</div>
+
+<div class="sorularDiv">
+    <div>
+        <i class="fa-solid fa-chevron-right icon"></i>
+        <span class="questionHeader">TOPLAM EV MALİYETİ NASIL HESAPLANIR ?</span>
+        <p class="answerP">Evinizin maliyeti m2 birim fiyatına göre hesaplanır ve maksimum maliyet noter sözleşmenizde yazılmaktadır. </p>
+    </div>
+</div>
+
+<div class="sorularDiv">
+    <div>
+        <i class="fa-solid fa-chevron-right icon"></i>
+        <span class="questionHeader">MALİYETİNE EV İLE ALDIĞIM MÜLKÜMDEN NE ZAMAN KAR ETMEYE BAŞLAYACAĞIM ? </span>
+        <p class="answerP">Maliyetine Ev ile ilk müşterilerimiz hemen kazanır. Maliyetine Ev ile alırken kazanırsınız. Her projemiz aynı zamanda yatırım projesidir. Maliyetine satışlarımızda maliyetine mülk sahibi olursunuz. 
+        </p>
+    </div>
+</div>
+
+<div class="sorularDiv">
+    <div>
+        <i class="fa-solid fa-chevron-right icon"></i>
+        <span class="questionHeader">ENFLASYONDAN ETKİLENİR MİYİM? BAŞTA BELİRLENEN FİYAT DEĞİŞİKLİK GÖSTERİR Mİ ? </span>
+        <p class="answerP">Noter onaylı sözleşmenizde ödemeniz belirtilir. Belirtilen ödeme haricinde bir ödeme yapmazsınız.</p>
+    </div>
+</div>
 
 <div class="sorularDiv" style="margin-bottom: 30px;">
     <div>
         <i class="fa-solid fa-chevron-right icon"></i>
-        <span class="questionHeader">MALİYETİNE EV İLE NASIL EV SAHİBİ OLUNUR ?</span>
-        <p class="answerP">Maliyetine Ev ile plan ve projesi belirlenmiş konut , daire veya villalardan dilediğinize önce toprak sonra daire tapunuzu anında alırsınız.</p>
+        <span class="questionHeader">TAPUMU DEVİR ETME HAKKINA SAHİP MİYİM ?</span>
+        <p class="answerP">Tapunuzu istediğiniz zaman sözleşme ile birlikte başkasına devredebilirsiniz / satabilirsiniz.</p>
     </div>
 </div>
 
