@@ -285,7 +285,7 @@
                                                         <a href="{{route('projelerimiz.show',$project->id)}}"
                                                             target="_blank"
                                                             class="text-white fs-24 lh-28  xl-w-75 d-block"
-                                                            style="color: white;cursor: pointer;">{{$project->project_title}}</a>
+                                                            style="color: white;cursor: pointer;">{{$project->project_sub_title}}</a>
 
                                                         <p class="" style="color: white; margin: 0; padding: 0; font-size: 14px;">
                                                             {{$project->project_sub_title}}</p>
