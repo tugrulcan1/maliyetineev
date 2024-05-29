@@ -40,9 +40,9 @@
                                                         target="_blank" class="text-white fs-24 lh-28  xl-w-75 d-block"
                                                         style="color: white;">{{$project->project_title}}</a>
 
-                                                    {{-- <p class="custom-description"  style="color: white !important;">
-                                                    {!!$project->description!!}</p> --}}
-                                                    <p class="custom-description">{{ \Illuminate\Support\Str::limit(strip_tags($project->description), 80, '...') }}</p>
+                                                    <p class="custom-description"  style="color: white !important;">
+                                                    {{$project->project_sub_title}}</p>
+                                                    {{-- <p class="custom-description">{{ \Illuminate\Support\Str::limit(strip_tags($project->description), 80, '...') }}</p> --}}
 
 
                                                 </div>
