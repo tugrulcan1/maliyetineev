@@ -198,6 +198,7 @@ class ProjectController extends Controller
 
         $project->update([
             'project_title' => $request->input('project_title'),
+            'project_sub_title' => $request->input('project_sub_title'),
             'description' => $request->input('description'),
             'slug' => $request->input('slug'),
             'image' => $dosyaAdi,
