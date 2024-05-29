@@ -1,6 +1,6 @@
-<footer class="footer-dark bg-dark-gray pt-0 pb-2 lg-pb-35px">
+<footer class="footer-dark bg-dark-gray pt-0 lg-pb-35px"  style="padding-bottom: 10px !important; padding-top:10px !important;" >
     <div
-        class="footer-top pt-50px pb-50px sm-pt-35px sm-pb-35px border-bottom border-1 border-color-transparent-white-light">
+        class="footer-top  sm-pt-35px sm-pb-35px border-bottom border-1 border-color-transparent-white-light" style="margin-top:20px; padding-bottom:10px !important; padding-top:0px !important;">
         <div class="container">
             <div class="row align-items-center justify-content-center">
 
@@ -15,7 +15,7 @@
                         style="background: #0f75bc !important; color: white !important;"
                         class="btn btn-extra-large btn-yellow left-icon btn-box-shadow btn-rounded text-transform-none d-inline-block align-middle me-15px xs-m-10px"><i
                             class="fa fa-envelope"></i>{{$settings['e-mail']}}</a>
-                    <a href="tel:12345678910"
+                    <a href="tel:12345678910" style="background-color:rgb(230, 71, 71)"
                         class="btn btn-extra-large btn-base-color left-icon btn-box-shadow btn-rounded d-inline-block align-middle xs-m-10px"><i
                             class="fa fa-phone"></i>{{$settings['phone']}}</a>
                 </div>
@@ -24,7 +24,7 @@
         </div>
     </div>
     <div class="container">
-        <div class="row justify-content-center fs-17 fw-300 mt-5 mb-4 md-mt-45px md-mb-45px xs-mt-35px xs-mb-35px">
+        <div class="row justify-content-center fs-17 fw-300 md-mt-45px md-mb-45px xs-mt-35px xs-mb-35px" style="margin-top: 10px !important;" >
 
             <div class="col-6 col-lg-3 order-sm-1 md-mb-40px xs-mb-30px last-paragraph-no-margin">
                 <a href="demo-accounting.html" class="footer-logo mb-15px d-inline-block"><img

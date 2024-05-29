@@ -217,7 +217,7 @@
     
             @if(count($project->galleries) > 0)
                 <div class="section">
-                    <div class="container-fluid">
+                    <div class="container-fluid" style="padding: 0px 50px">
                         <h3 style="text-align: center; font-weight: 700; color: #333; margin-top: 100px; ">Proje Görselleri</h3>
                         <swiper-container class="mySwiper" navigation="true">
                             @foreach ($project->galleries as $galery)   
@@ -363,7 +363,7 @@
 
 <style>
     .answerP{
-        color: #000;
+        color: #333;
         font-size: 18px;
         font-weight: bold;
         font-family: cerebri-sans-semibold;
@@ -416,7 +416,7 @@
     }
     .ptag{
         text-align: center;
-        color: #000;
+        color: #333;
         font-size: 18px;
         font-weight: bold;
         font-family: 'Roboto', sans-serif;
@@ -438,7 +438,7 @@
     .feature-box {
             background: #fff;
             border-radius: 15px;
-            box-shadow: 0 14px 28px rgba(0, 0, 0.3, 0.3);
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
             transition: transform 0.3s, box-shadow 0.3s;
             text-align: center;
             padding: 30px;
@@ -447,8 +447,7 @@
             width: 95%;
             display: flex;
             flex-direction: column;
-            /* justify-content: space-between; */
-            overflow: hidden; /* Taşmayı gizlemek için eklendi */
+            overflow: hidden; 
         }
     .feature-box:hover {
         transform: translateY(-10px);
