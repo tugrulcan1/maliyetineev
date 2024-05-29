@@ -7,7 +7,7 @@
             <div class="card-header border-bottom border-300 bg-soft">
                 <div class="row g-3 justify-content-between align-items-center">
                     <div class="col-12 col-md">
-                        <h4 class="text-900 mb-0" data-anchor="data-anchor" id="soft-buttons">Edit project</h4>
+                        <h4 class="text-900 mb-0" data-anchor="data-anchor" id="soft-buttons">Projeyi Düzenle</h4>
                     </div>
                 </div>
             </div>
@@ -18,18 +18,66 @@
                         @csrf
                         @method('PUT')
                         <div class="mb-3">
-                            <label class="form-label" for="project_title">project Title</label>
+                            <label class="form-label" for="project_title">Proje Başlığı</label>
                             <input class="form-control" id="project_title" name="project_title" type="text"
                                 value="{{ $project->project_title }}">
                         </div>
                         <div class="mb-3">
-                            <label class="form-label" for="description">project Content</label>
+                            <label class="form-label" for="description">Proje Açıklaması</label>
                             <textarea id="editor" name="description">{{ $project->description }}</textarea>
                         </div>
+                            <?php
+                                $details = json_decode($project->details, true); 
+                            ?>  
+
+                        <div class="col-md-12 mb-3">
+                            <label class="form-label" for="project_title">Proje 1.Detay Başlığı</label>
+                            <input name="project_detail_title1" class="form-control mb-2" type="text"  value="{{ $details[0]['title'] ?? '' }}">
+                            <textarea class="form-control" id="editor2" name="detail_description1" rows="3">{{ $details[0]['description'] ?? '' }} </textarea>
+                        </div>
+
+                        <div class="col-md-12 mb-3">
+                            <label class="form-label" for="project_title">Proje 2.Detay Başlığı</label>
+                            <input name="project_detail_title2" class="form-control mb-2" type="text"  value="{{ $details[1]['title'] ?? '' }}">
+                            <textarea class="form-control" id="editor3" name="detail_description2" rows="3">{{ $details[1]['description'] ?? '' }} </textarea>
+                        </div>
+
+                        <div class="col-md-12 mb-3">
+                            <label class="form-label" for="project_title">Proje 3.Detay Başlığı</label>
+                            <input name="project_detail_title3" class="form-control mb-2" type="text"  value="{{ $details[2]['title'] ?? '' }}">
+                            <textarea class="form-control" id="editor4" name="detail_description3" rows="3">{{ $details[2]['description'] ?? '' }} </textarea>
+                        </div>
+
+                        <div class="col-md-12 mb-3">
+                            <label class="form-label" for="project_title">Proje 4.Detay Başlığı</label>
+                            <input name="project_detail_title4" class="form-control mb-2" type="text"  value="{{ $details[3]['title'] ?? '' }}">
+                            <textarea class="form-control" id="editor5" name="detail_description4" rows="3">{{ $details[3]['description'] ?? '' }} </textarea>
+                        </div>
+
+
                         <div class="mb-3">
-                            <label class="form-label" for="description">project Konum</label> <br>
+                            <label class="form-label" for="description">Slug</label> <br>
                             <input type="text" class="mt-3 form-control" name="slug" value="{{ $project->slug }}">
                         </div>
+
+                        <div class="col-md-12 mb-3">
+                            <label class="form-label" for="image">Konum</label>
+                            <textarea class="form-control"  name="konum" rows="3">{{ $project->konum ?? '' }} </textarea>
+                        </div>
+
+                        @php 
+                            $floorPlans = DB::table('floor_plans')->where('project_id',$project->id)->get();
+                        @endphp
+                        
+                        @if($floorPlans->count() > 0)
+                            <div class="col-md-2 mb-3">
+                                <label class="form-label" for="image">Kat Planları</label>   
+                                    @foreach($floorPlans as $floorPlan)
+                                            <input type="text" class="form-control mb-2" name="floor_plans[{{ $floorPlan->id }}]" value="{{ $floorPlan->floor_plan ?? '' }}">
+                                    @endforeach            
+                            </div>
+                        @endif
+
                         <div class="mb-3">
                             <label class="form-label" for="image">İmage</label><br>
                             <img src="{{ url('uploads/' . $project->image) }}" alt=""
@@ -92,7 +140,95 @@
 <script src="//cdn.ckeditor.com/4.21.0/standard/ckeditor.js"></script>
 <script>
     CKEDITOR.replace('editor');
-    CKEDITOR.replace('editor2');
+    // CKEDITOR.replace('editor2');
+
+    CKEDITOR.replace('editor2', {
+        filebrowserUploadUrl: "{{ route('admin.ckeditor.upload', ['_token' => csrf_token() ]) }}",
+        filebrowserUploadMethod: 'form',
+        extraPlugins: 'image',
+        toolbar: [
+            { name: 'document', items: ['Source', '-', 'NewPage', 'Preview', '-', 'Templates'] },
+            { name: 'clipboard', items: ['Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord', '-', 'Undo', 'Redo'] },
+            { name: 'editing', items: ['Find', 'Replace', '-', 'SelectAll', '-', 'Scayt'] },
+            { name: 'tools', items: ['Maximize', 'ShowBlocks'] },
+            '/',
+            { name: 'basicstyles', items: ['Bold', 'Italic', 'Underline', 'Strike', 'Subscript', 'Superscript', '-', 'RemoveFormat'] },
+            { name: 'paragraph', items: ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'Blockquote', 'CreateDiv', '-'] },
+            { name: 'links', items: ['Link', 'Unlink', 'Anchor'] },
+            { name: 'insert', items: ['Image', 'Table', 'HorizontalRule', 'SpecialChar', 'PageBreak'] },
+            '/',
+            { name: 'styles', items: ['Styles', 'Format', 'Font', 'FontSize'] },
+            { name: 'colors', items: ['TextColor', 'BGColor'] },
+            { name: 'about', items: ['About'] }
+        ],
+        height: 300
+    });
+
+    CKEDITOR.replace('editor3', {
+        filebrowserUploadUrl: "{{ route('admin.ckeditor.upload', ['_token' => csrf_token() ]) }}",
+        filebrowserUploadMethod: 'form',
+        extraPlugins: 'image',
+        toolbar: [
+            { name: 'document', items: ['Source', '-', 'NewPage', 'Preview', '-', 'Templates'] },
+            { name: 'clipboard', items: ['Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord', '-', 'Undo', 'Redo'] },
+            { name: 'editing', items: ['Find', 'Replace', '-', 'SelectAll', '-', 'Scayt'] },
+            { name: 'tools', items: ['Maximize', 'ShowBlocks'] },
+            '/',
+            { name: 'basicstyles', items: ['Bold', 'Italic', 'Underline', 'Strike', 'Subscript', 'Superscript', '-', 'RemoveFormat'] },
+            { name: 'paragraph', items: ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'Blockquote', 'CreateDiv', '-'] },
+            { name: 'links', items: ['Link', 'Unlink', 'Anchor'] },
+            { name: 'insert', items: ['Image', 'Table', 'HorizontalRule', 'SpecialChar', 'PageBreak'] },
+            '/',
+            { name: 'styles', items: ['Styles', 'Format', 'Font', 'FontSize'] },
+            { name: 'colors', items: ['TextColor', 'BGColor'] },
+            { name: 'about', items: ['About'] }
+        ],
+        height: 300
+    });
+
+    CKEDITOR.replace('editor4', {
+        filebrowserUploadUrl: "{{ route('admin.ckeditor.upload', ['_token' => csrf_token() ]) }}",
+        filebrowserUploadMethod: 'form',
+        extraPlugins: 'image',
+        toolbar: [
+            { name: 'document', items: ['Source', '-', 'NewPage', 'Preview', '-', 'Templates'] },
+            { name: 'clipboard', items: ['Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord', '-', 'Undo', 'Redo'] },
+            { name: 'editing', items: ['Find', 'Replace', '-', 'SelectAll', '-', 'Scayt'] },
+            { name: 'tools', items: ['Maximize', 'ShowBlocks'] },
+            '/',
+            { name: 'basicstyles', items: ['Bold', 'Italic', 'Underline', 'Strike', 'Subscript', 'Superscript', '-', 'RemoveFormat'] },
+            { name: 'paragraph', items: ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'Blockquote', 'CreateDiv', '-'] },
+            { name: 'links', items: ['Link', 'Unlink', 'Anchor'] },
+            { name: 'insert', items: ['Image', 'Table', 'HorizontalRule', 'SpecialChar', 'PageBreak'] },
+            '/',
+            { name: 'styles', items: ['Styles', 'Format', 'Font', 'FontSize'] },
+            { name: 'colors', items: ['TextColor', 'BGColor'] },
+            { name: 'about', items: ['About'] }
+        ],
+        height: 300
+    });
+
+    CKEDITOR.replace('editor5', {
+        filebrowserUploadUrl: "{{ route('admin.ckeditor.upload', ['_token' => csrf_token() ]) }}",
+        filebrowserUploadMethod: 'form',
+        extraPlugins: 'image',
+        toolbar: [
+            { name: 'document', items: ['Source', '-', 'NewPage', 'Preview', '-', 'Templates'] },
+            { name: 'clipboard', items: ['Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord', '-', 'Undo', 'Redo'] },
+            { name: 'editing', items: ['Find', 'Replace', '-', 'SelectAll', '-', 'Scayt'] },
+            { name: 'tools', items: ['Maximize', 'ShowBlocks'] },
+            '/',
+            { name: 'basicstyles', items: ['Bold', 'Italic', 'Underline', 'Strike', 'Subscript', 'Superscript', '-', 'RemoveFormat'] },
+            { name: 'paragraph', items: ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'Blockquote', 'CreateDiv', '-'] },
+            { name: 'links', items: ['Link', 'Unlink', 'Anchor'] },
+            { name: 'insert', items: ['Image', 'Table', 'HorizontalRule', 'SpecialChar', 'PageBreak'] },
+            '/',
+            { name: 'styles', items: ['Styles', 'Format', 'Font', 'FontSize'] },
+            { name: 'colors', items: ['TextColor', 'BGColor'] },
+            { name: 'about', items: ['About'] }
+        ],
+        height: 300
+    });
 
 </script>
 @stack('scripts')

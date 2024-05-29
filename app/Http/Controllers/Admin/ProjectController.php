@@ -109,9 +109,6 @@ class ProjectController extends Controller
                     "image" => $galleryAdi,
                     "project_id" => $project->id
                 ]);
-
-
-
             }
         }
 
@@ -143,8 +140,7 @@ class ProjectController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Project $project)
-    {
+    public function update(Request $request, Project $project){
         $validator = Validator::make($request->all(), [
             'project_title' => 'required',
             'description' => 'required',
@@ -157,7 +153,6 @@ class ProjectController extends Controller
                 ->withInput();
         }
 
-
         $dosya = $request->file('image');
         $dosyaAdi = $project->image;
 
@@ -166,9 +161,19 @@ class ProjectController extends Controller
             // Dosyayı yükleme klasörüne kaydetme
             $dosyaAdi = $dosya->getClientOriginalName(); // Dosya adını alın
             $dosya->move(public_path('uploads'), $dosyaAdi); // Dosyayı uploads klasörüne kaydet
-
         }
 
+        $details = [];
+        for ($i = 1; $i <= 4; $i++) {
+            $detailTitle = $request->input("project_detail_title$i");
+            $detailDescription = $request->input("detail_description$i");
+            $details[] = [
+                'title' => $detailTitle,
+                'description' => $detailDescription
+            ];
+        }
+
+        $detailsJson = json_encode($details);
 
         $galleries = $request->file('gallery');
         if ($galleries && count($galleries) > 0) {
@@ -180,9 +185,6 @@ class ProjectController extends Controller
                     "image" => $galleryAdi,
                     "project_id" => $project->id
                 ]);
-
-
-
             }
         }
 
@@ -190,8 +192,19 @@ class ProjectController extends Controller
             'project_title' => $request->input('project_title'),
             'description' => $request->input('description'),
             'slug' => $request->input('slug'),
-            'image' => $dosyaAdi
+            'image' => $dosyaAdi,
+            'details' => $detailsJson,
+            'konum'   =>$request->input('konum')
         ]);
+
+        // Floor Plans güncelleme işlemi
+        $floorPlansData = $request->input('floor_plans');
+        if ($floorPlansData) {
+            foreach ($floorPlansData as $floorPlanId => $floorPlanValue) {
+                $floorPlan = FloorPlan::findOrFail($floorPlanId);
+                $floorPlan->update(['floor_plan' => $floorPlanValue]);
+            }
+        }
 
         return redirect()->route('admin.projects.index')
             ->with('success', 'Proje başarıyla güncellendi.');

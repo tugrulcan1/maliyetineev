@@ -71,7 +71,7 @@
 
                                         <div class="col-md-12">
                                             <label class="form-label" for="image">Konum</label>
-                                            <input name="konum" class="form-control" id="slug" type="text"/>
+                                            <textarea class="form-control"  name="konum" rows="3">{{ $project->konum ?? '' }} </textarea>
                                         </div>
 
                                         <div class="col-md-12">
