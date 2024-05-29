@@ -26,7 +26,7 @@
     <div class="container">
         <div class="row justify-content-center fs-17 fw-300 md-mt-45px md-mb-45px xs-mt-35px xs-mb-35px" style="margin-top: 10px !important;" >
 
-            <div class="col-6 col-lg-3 order-sm-1 md-mb-40px xs-mb-30px last-paragraph-no-margin">
+            <div class="col-12 col-lg-3 order-sm-1 md-mb-40px xs-mb-30px last-paragraph-no-margin">
                 <a href="demo-accounting.html" class="footer-logo mb-15px d-inline-block"><img
                         src="{{ asset('images/logomev.png') }}" alt></a>
                 <p class="w-85 xl-w-95 sm-w-100">Maliyetine Ev Sahibi Olmak Herkesin Hakkı</p>
@@ -42,32 +42,26 @@
             </div>
 
 
-            <div class="col-12 col-lg-2 col-sm-4 xs-mb-30px order-sm-3 order-lg-2">
+            <div class="col-12 col-lg-2 col-sm-4 xs-mb-30px order-sm-3 order-lg-2" style="width: 390px !important">
                 <span class="fs-18 fw-400 d-block text-white mb-5px">Hızlı Link</span>
-                <ul>
+                <ul class="menu-list">
                     @foreach ($menu as $menus)
-
-
                         <li><a href="{{$menus->href}}">{{$menus->text}}</a></li>
                     @endforeach
-                    <li><a href="/page/musterilerimize-mektup">Müşterilerimize Mektup</a></li>
                     <li><a href="/page/hakkimizda">Hakkımızda</a></li>
-
+                    <li><a href="/comments/index">Yorumlar</a></li>
                 </ul>
             </div>
 
 
-
-
-
-            <div class="col-6 col-lg-2 col-sm-4 xs-mb-30px order-sm-5 order-lg-4">
+            <div class="col-12 col-lg-2 col-sm-4 xs-mb-30px order-sm-5 order-lg-4">
                 <span class="fs-18 fw-400 d-block text-white mb-5px">İletişim</span>
                 <a href="tel:{{$settings['phone']}}" style="color: white;">{{$settings['phone']}}</a>
                 <a href="mailto:{{$settings['e-mail']}}" class="text-white lh-16 d-block">{{$settings['e-mail']}}</a>
             </div>
 
 
-            <div class="col-lg-3 col-sm-6 md-mb-40px xs-mb-0 order-sm-2 order-lg-5">
+            <div class="col-lg-3 col-sm-12 md-mb-40px xs-mb-0 order-sm-2 order-lg-5">
                 <span class="fs-18 fw-400 d-block text-white mb-5px">Mail gönderin</span>
                 <p class="mb-20px">En kısa sürede dönüş yapacağız.</p>
                 <div class="d-inline-block w-100 newsletter-style-02 position-relative">
@@ -107,6 +101,30 @@
                 class="text-decoration-line-bottom fw-500">Send a message</a></span>
     </div> -->
 
+    <style>
+        .menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-list li {
+    flex: 0 0 50%; /* Her bir öğenin genişliği %50 olacak şekilde ayarlıyoruz */
+    margin-bottom: 10px; /* Öğeler arasına biraz boşluk ekliyoruz */
+}
+
+.menu-list li a {
+    color: white; /* Bağlantı metin rengini beyaz yapıyoruz */
+    text-decoration: none; /* Bağlantı alt çizgilerini kaldırıyoruz */
+}
+
+.menu-list li a:hover {
+    text-decoration: underline; /* Bağlantıların üzerine gelindiğinde alt çizgi ekliyoruz */
+}
+
+    </style>
 
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

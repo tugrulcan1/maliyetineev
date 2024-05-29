@@ -99,10 +99,7 @@
         <div class="container">
             <div class="row align-items-center justify-content-center">
 
-                <div class="col-lg-5 offset-lg-1 col-md-11 contact-form-style-01 position-relative" style="">
-                    <!-- <div class="position-absolute left-minus-25px md-left-minus-5px xs-left-0 top-100px md-top-0px">
-                        <img src="images/demo-accounting-home-left-img.jpg" class="w-40px" alt>
-                    </div> -->
+                <div class="col-lg-5 offset-lg-1 col-md-11 contact-form-style-01 position-relative" style="right:">
                     <div class="ps-8 pe-8 pt-8 pb-8 lg-p-8 bg-white box-shadow-quadruple-large border-radius-6px">
                         <h6 class="d-inline-block fw-600 text-dark-gray ls-minus-1px mb-35px sm-mb-25px"
                             data-anime="{ &quot;translateY&quot;: [15, 0], &quot;translateX&quot;: [-15, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 600, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
@@ -161,9 +158,6 @@
             <div class="row align-items-center justify-content-center">
 
                 <div class="col-lg-5 offset-lg-1 col-md-11 contact-form-style-01 position-relative" style="">
-                    <!-- <div class="position-absolute left-minus-25px md-left-minus-5px xs-left-0 top-100px md-top-0px">
-                        <img src="images/demo-accounting-home-left-img.jpg" class="w-40px" alt>
-                    </div> -->
                     <div class="ps-8 pe-8 pt-8 pb-8 lg-p-8 bg-white box-shadow-quadruple-large border-radius-6px">
                         <h6 class="d-inline-block fw-600 text-dark-gray ls-minus-1px mb-35px sm-mb-25px"
                             data-anime="{ &quot;translateY&quot;: [15, 0], &quot;translateX&quot;: [-15, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 600, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }">

@@ -114,4 +114,9 @@ class CommentController extends Controller
         return redirect()->route('admin.comments.index')
             ->with('success', 'comment başarıyla silindi.');
     }
+
+    public function commentGet(){
+        $comments = Comment::all();
+        return view('client.comments.comments',compact('comments'));
+    }//End
 }

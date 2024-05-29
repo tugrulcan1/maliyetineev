@@ -39,6 +39,17 @@
                                             <label for="form-label" for="project__sub_title">Alt Başlık</label>
                                             <input type="text" class="form-control" name="project_sub_title" required>
                                         </div>
+
+                                        <div class="col-md-12">
+                                            <label for="form-label" for="project__sub_title">Proje Türü</label>
+                                            <select name="project_type" class="form-cntrol">
+                                                <option value="">Seçiniz</option>
+                                                <option value="Topraktan Projeler">Topraktan Projeler</option>
+                                                <option value="Devam Eden Projeler">Devam Eden Projeler</option>
+                                                <option value="Bitmiş Projeler">Bitmiş Projeler</option>
+                                            </select>
+                                        </div>
+                                        
                                         <div class="col-md-12">
                                             <label class="form-label" for="description">Proje Açıklaması</label>
                                             <textarea class="form-control" id="editor" name="description" rows="3"> </textarea>
