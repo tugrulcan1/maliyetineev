@@ -214,10 +214,23 @@
     </section>
 
 
+    <section class="p-0 bg-base-color" style="background: #b7d8ff; ">
+        <div class="container">
+            <div class="row align-items-center justify-content-center g-0">
+                <div class="col-auto d-flex align-items-center"
+                    data-anime="{ &quot;translateY&quot;: [0, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1200, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
+                    <!-- <img src="images/logomev.png" style="width: 150px; margin-right: 20px;" alt /> -->
+                    <div class="fs-19 lh-28 last-paragraph-no-margin text-white pt-15px pb-15px">
+                        <p style="color: red; font-weight: 900; font-size: 30px;">MALİYETİNE EV SİZLERE %100 GÜVEN VE
+                            GARANTİ SUNUYOR!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-
-
-    <section class="bg-very-light-gray overflow-hidden" style="padding-top: 40px !important; padding-bottom: 40px !important;">
+    <section class="bg-very-light-gray overflow-hidden" style="padding:0px 40px !important;">
         <div class="container-fluid">
             <div class="row align-items-center justify-content-center mb-6 text-center text-lg-start column-form">
                 <div class="col-xl-5 col-lg-5 md-mb-20px"
@@ -227,8 +240,8 @@
                 </div>
                 <div class="col-xl-5 col-lg-5 last-paragraph-no-margin md-mb-30px"
                     data-anime="{ &quot;translateX&quot;: [-50, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1200, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
-                    <p class="w-90 xl-w-100 md-w-80 sm-w-100 md-mx-auto">Maliyetine ev güvencesiyle projelerimize göz
-                        atın!</p>
+                    {{-- <p class="w-90 xl-w-100 md-w-80 sm-w-100 md-mx-auto">Maliyetine ev güvencesiyle projelerimize göz
+                        atın!</p> --}}
                 </div>
                 <div class="col-xl-2 col-lg-2 d-flex justify-content-center justify-content-lg-end"
                     data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateX&quot;: [30, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 800, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
@@ -257,14 +270,14 @@
                                         <figure
                                             class="m-0 hover-box overflow-hidden position-relative border-radius-6px">
                                             <a href="{{route('projelerimiz.show',$project->id)}}"
-                                                target="_blank">
-                                                <img src="uploads/{{$project->image}}" alt="Resim bulunamadı"
+                                                target="_blank" style="cursor: pointer">
+                                                <img src="{{ asset('projects_cover_image/' . $project->cover_image) }}" alt="Resim bulunamadı"
                                                     style="height: 400px; object-fit: cover;" />
                                             </a>
                                             <figcaption
                                                 class="d-flex flex-column align-items-start justify-content-center position-absolute left-0px top-0px w-100 h-100 z-index-1 p-14 lg-p-12">
                                                 <a href="{{route('projelerimiz.show',$project->id)}}"
-                                                    target="_blank">
+                                                    target="_blank" style="cursor: pointer">
                                                     <!-- <i class="line-icon-Medal-2 text-white icon-extra-large"></i> -->
                                                 </a>
                                                 <div class="mt-auto d-flex w-100 align-items-center">
@@ -272,10 +285,10 @@
                                                         <a href="{{route('projelerimiz.show',$project->id)}}"
                                                             target="_blank"
                                                             class="text-white fs-24 lh-28  xl-w-75 d-block"
-                                                            style="color: white;">{{$project->project_title}}</a>
+                                                            style="color: white;cursor: pointer;">{{$project->project_title}}</a>
 
                                                         <p class="" style="color: white; margin: 0; padding: 0; font-size: 14px;">
-                                                            {!!$project->description!!}</p>
+                                                            {{$project->project_sub_title}}</p>
 
                                                     </div>
                                                     <a href="{{route('projelerimiz.show',$project->id)}}"
@@ -293,33 +306,16 @@
                                     </div>
                                 </div>
 								@endforeach
-
-
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 
 
-    <section class="p-0 bg-base-color" style="background: #b7d8ff; ">
-        <div class="container">
-            <div class="row align-items-center justify-content-center g-0">
-                <div class="col-auto d-flex align-items-center"
-                    data-anime="{ &quot;translateY&quot;: [0, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1200, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
-                    <!-- <img src="images/logomev.png" style="width: 150px; margin-right: 20px;" alt /> -->
-                    <div class="fs-19 lh-28 last-paragraph-no-margin text-white pt-15px pb-15px">
-                        <p style="color: red; font-weight: 900; font-size: 30px;">MALİYETİNE EV SİZLERE %100 GÜVEN VE
-                            GARANTİ SUNUYOR!
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+
 
     <section class="bg-very-light-gray pb-0" id="services"
     style="padding-bottom: 0px !important; padding-top: 40px !important;">

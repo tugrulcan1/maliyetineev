@@ -89,13 +89,21 @@ class ProjectController extends Controller
         
         $detailsJson = json_encode($details);
 
+        if($request->hasFile('cover_image')){
+            $file = $request->file('cover_image');
+            $coverImagefileName = time() . '_' . $file->getClientOriginalName(); // Benzersiz dosya adı oluştur
+            $file->move(public_path('projects_cover_image'), $coverImagefileName);
+        }
+
         $project = Project::create([
             'project_title' => $request->input('project_title'),
+            'project_sub_title' => $request->input('project_sub_title'),
             'description' => $request->input('description'),
             'slug' => $request->input('slug'),
             'image' => $dosyaAdi,
             'details' => $detailsJson,
-            'konum'   =>$request->input('konum')
+            'konum'   =>$request->input('konum'),
+            'cover_image' => $coverImagefileName
         ]);
 
         $galleries = $request->file('gallery');

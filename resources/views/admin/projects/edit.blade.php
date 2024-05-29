@@ -22,6 +22,10 @@
                             <input class="form-control" id="project_title" name="project_title" type="text"
                                 value="{{ $project->project_title }}">
                         </div>
+                        <div class="col-md-12">
+                            <label for="form-label" for="project__sub_title">Alt Başlık</label>
+                            <input type="text" class="form-control" name="project_sub_title" value="{{$project->project_sub_title}}" required>
+                        </div>
                         <div class="mb-3">
                             <label class="form-label" for="description">Proje Açıklaması</label>
                             <textarea id="editor" name="description">{{ $project->description }}</textarea>

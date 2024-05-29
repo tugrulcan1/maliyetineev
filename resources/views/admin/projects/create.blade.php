@@ -36,6 +36,10 @@
                                             <div class="valid-feedback">Looks good!</div>
                                         </div>
                                         <div class="col-md-12">
+                                            <label for="form-label" for="project__sub_title">Alt Başlık</label>
+                                            <input type="text" class="form-control" name="project_sub_title" required>
+                                        </div>
+                                        <div class="col-md-12">
                                             <label class="form-label" for="description">Proje Açıklaması</label>
                                             <textarea class="form-control" id="editor" name="description" rows="3"> </textarea>
                                         </div>
@@ -75,7 +79,12 @@
                                         </div>
 
                                         <div class="col-md-12">
-                                            <label class="form-label" for="image">Image (Anasayfa'da Görünecek Resim)</label>
+                                            <label class="form-label" for="image">Kapak Görseli (Anasayfa'da Görünecek Resim)</label>
+                                            <input name="cover_image" class="form-control" id="cover_image" type="file">
+                                        </div>
+
+                                        <div class="col-md-12">
+                                            <label class="form-label" for="image">Anasayfa Görseli</label>
                                             <input name="image" class="form-control" id="url" type="file"
                                                 />
                                         </div>

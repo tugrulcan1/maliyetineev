@@ -192,7 +192,7 @@
 
 </section>
 
-    <section style="padding: 0 !important; ">
+    {{-- <section style="padding: 0 !important; ">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">       
@@ -201,7 +201,17 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
+
+    {{-- <section> --}}
+        {{-- <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h4 class="baslikh4">Yatırım dediğin topraktan olur</h4>
+                </div>
+            </div>   
+        </div> --}}
+    {{-- </section> --}}
     
             @if(count($project->galleries) > 0)
                 <div class="section">
@@ -258,6 +268,16 @@
 
 
 @section("css")
+
+<style>
+    .baslikh4{
+        color: #007bff;
+        text-align: center;
+        font-size: 20px;
+  font-family: "Poppins", sans-serif;
+
+    }
+</style>
 
 <style>
     .card-container {
