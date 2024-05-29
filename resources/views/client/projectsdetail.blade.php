@@ -99,10 +99,10 @@
                     @foreach(json_decode($project->details) as $detail)
                         <div class="col-xl-6 col-lg-6 col-md-6 mb-4">
                             <div class="feature-box">
-                                <div class="feature-small-icon">
+                                <div class="feature-small-icon mb-5">
                                     <i class="fas fa-star"></i> <!-- İkonu buraya yerleştirebilirsiniz -->
                                 </div>
-                                <div class="feature-small-content">
+                                <div class="feature-small-content mt-5">
                                     <h3>{{ $detail->title }}</h3>
                                     <p class="card-text">{{ \Illuminate\Support\Str::limit(strip_tags($detail->description), 250, '...') }}</p>
                                     {{-- <p style="overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;">{!! $detail->description !!}</p> --}}
@@ -447,7 +447,7 @@
             width: 95%;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            /* justify-content: space-between; */
             overflow: hidden; /* Taşmayı gizlemek için eklendi */
         }
     .feature-box:hover {
