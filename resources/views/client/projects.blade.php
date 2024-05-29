@@ -25,7 +25,9 @@
                                     <figure class="m-0 hover-box overflow-hidden position-relative border-radius-6px">
                                         <a href="{{route('projelerimiz.show',$project->id)}}"
                                             target="_blank">
-                                            <img src="uploads/{{$project->image}}" alt="Resim bulunamadı"
+                                            {{-- <img src="uploads/{{$project->image}}" alt="Resim bulunamadı"
+                                                style="height: 400px; object-fit: cover;" /> --}}
+                                                <img src="{{ asset('projects_cover_image/' . $project->cover_image) }}" alt="Resim bulunamadı"
                                                 style="height: 400px; object-fit: cover;" />
                                         </a>
                                         <figcaption

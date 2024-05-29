@@ -104,7 +104,7 @@
                                 </div>
                                 <div class="feature-small-content mt-5">
                                     <h3>{{ $detail->title }}</h3>
-                                    <p class="card-text">{{ \Illuminate\Support\Str::limit(strip_tags($detail->description), 250, '...') }}</p>
+                                    <p class="card-text">{!! \Illuminate\Support\Str::limit(strip_tags($detail->description), 250, '...') !!}</p>
                                     {{-- <p style="overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;">{!! $detail->description !!}</p> --}}
                                 </div>
                             </div>
@@ -207,9 +207,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h4 class="baslikh4">Maliyetine ev sahibi olma sistemi</h4>
+                    <h4 class="baslikh4">Maliyetine Ev sahibi olma sistemi</h4>
                     <h5 class="baslikh5">Bu gün arsa tapunuzu alın yarın maliyetine eviniz olsun</h5>
-                    <p class="ptag">Maliyetine ev,Türkiye’de ilk hemen tapu teslim %100 güvenli ve garantili maliyetine ev sahibi olmanızı sağlayan tek şirkettir.</p>
+                    <p class="ptag">Maliyetine Ev,Türkiye’de ilk hemen tapu teslim %100 güvenli ve garantili maliyetine ev sahibi olmanızı sağlayan tek şirkettir.</p>
                 </div>
             </div>   
         </div>
@@ -221,7 +221,7 @@
                         <h3 style="text-align: center; font-weight: 700; color: #333; margin-top: 100px; ">Proje Görselleri</h3>
                         <swiper-container class="mySwiper" navigation="true">
                             @foreach ($project->galleries as $galery)   
-                                <swiper-slide> <img src="{{ url('uploads/' . $galery->image) }}" alt="" style="width: 100%; height: 350px;"></swiper-slide>
+                                <swiper-slide> <img src="{{ url('uploads/' . $galery->image) }}" alt="" style="width: 100%; height: 600px;"></swiper-slide>
                             @endforeach
                         </swiper-container>
                     </div>
