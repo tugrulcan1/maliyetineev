@@ -204,13 +204,15 @@
     </section> --}}
 
     {{-- <section> --}}
-        {{-- <div class="container">
+        <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h4 class="baslikh4">Yatırım dediğin topraktan olur</h4>
+                    <h4 class="baslikh4">Maliyetine ev sahibi olma sistemi</h4>
+                    <h5 class="baslikh5">Bu gün arsa tapunuzu alın yarın maliyetine eviniz olsun</h5>
+                    <p class="ptag">Maliyetine ev,Türkiye’de ilk hemen tapu teslim %100 güvenli ve garantili maliyetine ev sahibi olmanızı sağlayan tek şirkettir.</p>
                 </div>
             </div>   
-        </div> --}}
+        </div>
     {{-- </section> --}}
     
             @if(count($project->galleries) > 0)
@@ -251,6 +253,51 @@
         <iframe src="{{$project->konum}}" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 </section>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h4 class="baslikh4">Sıkça Sorulan Sorular</h4>
+        </div>  
+    </div>
+</div>
+<div class="sorularDiv">
+    <div>
+        <i class="fa-solid fa-chevron-right icon"></i>
+        <span class="questionHeader">MALİYETİNE EV İLE NASIL EV SAHİBİ OLUNUR ?</span>
+        <p class="answerP">Maliyetine Ev ile plan ve projesi belirlenmiş konut , daire veya villalardan dilediğinize önce toprak sonra daire tapunuzu anında alırsınız.</p>
+    </div>
+</div>
+
+<div class="sorularDiv">
+    <div>
+        <i class="fa-solid fa-chevron-right icon"></i>
+        <span class="questionHeader">Maliyeti Ev Sahibi Olma Sistemi Avantajları Nelerdir ?</span>
+        <p class="answerP">Maliyetine Ev şirketi sizleri %100 güvenli ve garantili bir sistem sunarak sizleri maliyetine ev sahibi yapar. Maliyetine Ev sahibi olmak herkesin hakkı.</p>
+    </div>
+</div>
+
+
+<div class="sorularDiv">
+    <div>
+        <i class="fa-solid fa-chevron-right icon"></i>
+        <span class="questionHeader">İNŞAATLAR NE ZAMAN BAŞLAR ?</span>
+        <p class="answerP">İnşaat, imzalar atıldıktan 3 ay sonra başlanıp 12 ay bitirme garantilidir.</p>
+    </div>
+</div>
+
+
+<div class="sorularDiv" style="margin-bottom: 30px;">
+    <div>
+        <i class="fa-solid fa-chevron-right icon"></i>
+        <span class="questionHeader">MALİYETİNE EV İLE NASIL EV SAHİBİ OLUNUR ?</span>
+        <p class="answerP">Maliyetine Ev ile plan ve projesi belirlenmiş konut , daire veya villalardan dilediğinize önce toprak sonra daire tapunuzu anında alırsınız.</p>
+    </div>
+</div>
+
+
+
+
 <section style="padding: 0 !important; position: sticky; bottom: 0; z-index: 999;">
     <div style="background-color: #0f75bc; position: sticky; bottom: 0; padding: 20px 0px;">
         <div class="container">
@@ -264,18 +311,67 @@
     </div>
 </section>
 
+
 @endsection
 
 
 @section("css")
 
 <style>
-    .baslikh4{
-        color: #007bff;
-        text-align: center;
-        font-size: 20px;
-  font-family: "Poppins", sans-serif;
+    .answerP{
+        color: #000;
+        font-size: 18px;
+        font-weight: bold;
+        font-family: cerebri-sans-semibold;
+        /* letter-spacing: 1.3px; */
+        line-height: 1.5;
+        margin: 5px 34px;
+    }
+    .questionHeader{
+        color: #043a74;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        font-size: 24px;
+    }
 
+    .icon{
+        font-size: 24px;
+        margin-right: 15px;
+    }
+
+    .sorularDiv{
+        margin: 5px 90px;
+        padding: 26px 40px;
+    }
+
+    .baslikh4{
+        color: #043a74;
+        text-align: center;
+        font-size: 50px;
+        font-family: 'Roboto', sans-serif;
+        /* letter-spacing: 1px; */
+        font-weight: bold;
+    }
+    .baslikh5{
+        color: #56adcf;
+        text-align: center;
+        font-size: 65px;
+        font-family: 'Roboto', sans-serif;
+        letter-spacing: 1px;
+        font-weight: bold;
+        line-height: 4.7rem !important;
+    }
+    .ptag{
+        text-align: center;
+        color: #000;
+        font-size: 18px;
+        font-weight: bold;
+        font-family: 'Roboto', sans-serif;
+        /* letter-spacing: 1.3px; */
+        max-width: 700px; /* Metnin iki satıra sığmasını sağlamak için genişlik ayarlaması */
+        line-height: 1.5;
+        margin: 0 auto;
+    
     }
 </style>
 
