@@ -246,6 +246,16 @@
                         </div>
                     </div>
             @endif
+
+            <div class="container mt-4">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4 class="baslikh4">Sizi Maliyetine Ev Sahibi Yapan Projeler </h4>
+                        <h4 class="baslikh6">Maliyetine Ev’de </h4>
+                    </div>
+                </div>   
+            </div>
+
 <section style=" padding-bottom: 80px; ">
       <!-- Konum -->
       <div class="container">
@@ -386,6 +396,15 @@
         /* letter-spacing: 1px; */
         font-weight: bold;
     }
+    .baslikh6{
+        color: #56adcf;
+        text-align: center;
+        font-size: 50px;
+        font-family: 'Roboto', sans-serif;
+        /* letter-spacing: 1px; */
+        font-weight: bold;
+    }
+
     .baslikh5{
         color: #56adcf;
         text-align: center;
