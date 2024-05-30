@@ -6,154 +6,153 @@
 
 
 @foreach($sliders as $slider)
-<section class="top-space-margin p-0 full-screen md-h-600px sm-h-500px section-dark position-relative"
-        data-parallax-background-ratio="0.8" style="background-image: url('images/{{$slider->image}}')">
-        <div class=" h-100 position-relative">
-            <div class="container h-100">
-                <div class="row align-items-center h-100">
-                    <div class="col-xl-7 col-md-9 col-sm-9 position-relative text-white"
-                        data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;opacity&quot;: [0, 1], &quot;translateY&quot;: [30, 0], &quot;staggervalue&quot;: 200, &quot;easing&quot;: &quot;easeInOutSine&quot; }">
-                        <!-- <div class="fs-80 lh-75 sm-fs-65 fw-600 mb-20px text-shadow-large ls-minus-2px">Crafto expand
-                            business values.</div>
-                        <div>
-                            <span class="opacity-5 fs-20 w-70 md-w-85 mb-25px fw-300 d-inline-block">We are dedicated to
-                                providing amazing business accounting services and client service.</span>
-                        </div> -->
-                        <!-- <div class="icon-with-text-style-08">
-                                <div class="feature-box feature-box-left-icon-middle">
-                                    <div
-                                        class="feature-box-icon feature-box-icon-rounded w-65px h-65px rounded-circle bg-yellow me-15px rounded-box">
-                                        <i class="feather icon-feather-arrow-right text-dark-gray icon-extra-medium"></i>
-                                    </div>
-                                    <div class="feature-box-content">
-                                        <a href="#services"
-                                            class="d-inline-block fs-19 text-white text-shadow-double-large">Explore
-                                            services</a>
-                                    </div>
-                                </div> -->
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        {{-- <div class="row bg-very-light-gray m-0 align-items-center justify-content-center text-center text-lg-start position-absolute "
-            style="bottom: 0; width: 100%; padding: 20px 0; background-color: rgba(1, 51, 85, 0.3); align-items: center;">
-
-
-            <div class="col-12 col-md-3 jnm">
-                <h4
-                    style="color: white; display: flex; justify-content: center; margin: 0; padding: 0; font-weight: 900;">
-                    Maliyetine Ev'de </h4>
-            </div>
-            <div class="col-6 col-md-2 jnm">
-                <div style="">
-                    <div style="display: flex;">
-                        <div style="background-color: green; padding: 10px; border-radius: 20px 0px 0px 0px; "> <i
-                                class="fa-solid fa-check" style="color: white;"></i>
+    <section class="top-space-margin p-0 full-screen md-h-600px sm-h-500px section-dark position-relative"
+            data-parallax-background-ratio="0.8" style="background-image: url('images/{{$slider->image}}')">
+            <div class=" h-100 position-relative">
+                <div class="container h-100">
+                    <div class="row align-items-center h-100">
+                        <div class="col-xl-7 col-md-9 col-sm-9 position-relative text-white"
+                            data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;opacity&quot;: [0, 1], &quot;translateY&quot;: [30, 0], &quot;staggervalue&quot;: 200, &quot;easing&quot;: &quot;easeInOutSine&quot; }">
+                            <!-- <div class="fs-80 lh-75 sm-fs-65 fw-600 mb-20px text-shadow-large ls-minus-2px">Crafto expand
+                                business values.</div>
+                            <div>
+                                <span class="opacity-5 fs-20 w-70 md-w-85 mb-25px fw-300 d-inline-block">We are dedicated to
+                                    providing amazing business accounting services and client service.</span>
+                            </div> -->
+                            <!-- <div class="icon-with-text-style-08">
+                                    <div class="feature-box feature-box-left-icon-middle">
+                                        <div
+                                            class="feature-box-icon feature-box-icon-rounded w-65px h-65px rounded-circle bg-yellow me-15px rounded-box">
+                                            <i class="feather icon-feather-arrow-right text-dark-gray icon-extra-medium"></i>
+                                        </div>
+                                        <div class="feature-box-content">
+                                            <a href="#services"
+                                                class="d-inline-block fs-19 text-white text-shadow-double-large">Explore
+                                                services</a>
+                                        </div>
+                                    </div> -->
                         </div>
-                        <div
-                            style="background-color: white; padding: 10px; flex-grow: 1; border-radius: 0px 0px 20px 0px; color: #333;">
-                           {{$settings['section_2.1']}}</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 col-md-2 jnm">
-                <div style=" ">
-                    <div style="display: flex;">
-                        <div style="background-color: green; padding: 10px; border-radius: 20px 0px 0px 0px;"> <i
-                                class="fa-solid fa-check" style="color: white;"></i>
-                        </div>
-                        <div
-                            style="background-color: white; padding: 10px; flex-grow: 1; border-radius: 0px 0px 20px 0px; color: #333;">
-                            {{$settings['section_2.2']}}</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 col-md-2 jnm">
-                <div style="">
-                    <div style="display: flex; ">
-                        <div style="background-color: green; padding: 10px; border-radius: 20px 0px 0px 0px"> <i
-                                class="fa-solid fa-check" style="color: white;"></i>
-                        </div>
-                        <div
-                            style="background-color: white; padding: 10px; flex-grow: 1; border-radius: 0px 0px 20px 0px; color: #333;">
-                            {{$settings['section_2.3']}}</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 col-md-2 jnm">
-                <div style=" ">
-                    <div style="display: flex;">
-                        <div style="background-color: green; padding: 10px; border-radius: 20px 0px 0px 0px"> <i
-                                class="fa-solid fa-check" style="color: white;"></i>
-                        </div>
-                        <div
-                            style="background-color: white; padding: 10px; flex-grow: 1; border-radius: 0px 0px 20px 0px; color: #333; white-space: nowrap;">
-                            {{$settings['section_2.4']}}</div>
-                    </div>
-                </div>
-            </div>
-        </div> --}}
-        
-    <section class="pt-0 mgy  " style=" position: absolute; width:100%; right:-110px !important; bottom:-30px !important; " >
-        <div class="container">
-            <div class="row align-items-center justify-content-center">
 
-                <div class="col-lg-5 offset-lg-1 col-md-11 contact-form-style-01 position-relative" style="right:">
-                    <div class="ps-8 pe-8 pt-8 pb-8 lg-p-8 bg-white box-shadow-quadruple-large border-radius-6px">
-                        <h6 class="d-inline-block fw-600 text-dark-gray ls-minus-1px mb-35px sm-mb-25px"
-                            data-anime="{ &quot;translateY&quot;: [15, 0], &quot;translateX&quot;: [-15, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 600, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
-                            Formu doldurun sizi arayalım</h6>
-                            @if ($errors->any())
-                        <div class="alert alert-danger">
-                            <ul class="mb-0">
-                                @foreach ($errors->all() as $error)
-                                    <li>{{ $error }}</li>
-                                @endforeach
-                            </ul>
-                        </div>
-                    @endif
-                        <form  method="POST" action="{{ route('home.form.show') }}"
-                            data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateY&quot;: [15, 0], &quot;translateX&quot;: [-15, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 600, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
-                            @csrf
-                            <div class="position-relative form-group mb-15px">
-                                <span class="form-icon"><i class="fas fa-user"></i></span>
-                                <input type="text" name="name" class="form-control required" placeholder="Ad soyad" />
-                            </div>
-                            <div class="position-relative form-group mb-15px">
-                                <span class="form-icon"><i class="fa fa-envelope"></i></span>
-                                <input type="email" name="email" class="form-control required"
-                                    placeholder="E-posta adresiniz" />
-                            </div>
-                            <div class="position-relative form-group mb-20px">
-                                <span class="form-icon"><i class="fa fa-phone"></i></span>
-                                <input type="tel" name="phone" class="form-control" placeholder="Telefon Numaranız" />
-                            </div>
-                            <div class="position-relative terms-condition-box text-start d-inline-block">
-                                    <input type="checkbox" name="terms_condition" id="terms_condition" value="1"
-                                        class="terms-condition check-box align-middle required">
-                                <label>
-
-                                    <span class="box fs-16">Kişisel Verilerin Korunması Hakkında <a href="{{route('aydinlatma.metni')}}" target="_blank">Aydınlatma Yazısını
-                                        okudum</a> , kabul ediyorum.</span>
-                                </label>
-                            </div>
-                            <div class="position-relative mt-20px">
-                                <button class="btn btn-large btn-round-edge btn-base-color btn-box-shadow w-100"
-                                    type="submit">Gönder</button>
-                            </div>
-                        </form>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+            {{-- <div class="row bg-very-light-gray m-0 align-items-center justify-content-center text-center text-lg-start position-absolute "
+                style="bottom: 0; width: 100%; padding: 20px 0; background-color: rgba(1, 51, 85, 0.3); align-items: center;">
+
+
+                <div class="col-12 col-md-3 jnm">
+                    <h4
+                        style="color: white; display: flex; justify-content: center; margin: 0; padding: 0; font-weight: 900;">
+                        Maliyetine Ev'de </h4>
+                </div>
+                <div class="col-6 col-md-2 jnm">
+                    <div style="">
+                        <div style="display: flex;">
+                            <div style="background-color: green; padding: 10px; border-radius: 20px 0px 0px 0px; "> <i
+                                    class="fa-solid fa-check" style="color: white;"></i>
+                            </div>
+                            <div
+                                style="background-color: white; padding: 10px; flex-grow: 1; border-radius: 0px 0px 20px 0px; color: #333;">
+                            {{$settings['section_2.1']}}</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-2 jnm">
+                    <div style=" ">
+                        <div style="display: flex;">
+                            <div style="background-color: green; padding: 10px; border-radius: 20px 0px 0px 0px;"> <i
+                                    class="fa-solid fa-check" style="color: white;"></i>
+                            </div>
+                            <div
+                                style="background-color: white; padding: 10px; flex-grow: 1; border-radius: 0px 0px 20px 0px; color: #333;">
+                                {{$settings['section_2.2']}}</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-2 jnm">
+                    <div style="">
+                        <div style="display: flex; ">
+                            <div style="background-color: green; padding: 10px; border-radius: 20px 0px 0px 0px"> <i
+                                    class="fa-solid fa-check" style="color: white;"></i>
+                            </div>
+                            <div
+                                style="background-color: white; padding: 10px; flex-grow: 1; border-radius: 0px 0px 20px 0px; color: #333;">
+                                {{$settings['section_2.3']}}</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-2 jnm">
+                    <div style=" ">
+                        <div style="display: flex;">
+                            <div style="background-color: green; padding: 10px; border-radius: 20px 0px 0px 0px"> <i
+                                    class="fa-solid fa-check" style="color: white;"></i>
+                            </div>
+                            <div
+                                style="background-color: white; padding: 10px; flex-grow: 1; border-radius: 0px 0px 20px 0px; color: #333; white-space: nowrap;">
+                                {{$settings['section_2.4']}}</div>
+                        </div>
+                    </div>
+                </div>
+            </div> --}}
+            
+        <section class="pt-0 mgy  " style=" position: absolute; width:100%; right:-110px !important; bottom:-30px !important; " >
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+
+                    <div class="col-lg-5 offset-lg-1 col-md-11 contact-form-style-01 position-relative" style="right:">
+                        <div class="ps-8 pe-8 pt-8 pb-8 lg-p-8 bg-white box-shadow-quadruple-large border-radius-6px">
+                            <h6 class="d-inline-block fw-600 text-dark-gray ls-minus-1px mb-35px sm-mb-25px"
+                                data-anime="{ &quot;translateY&quot;: [15, 0], &quot;translateX&quot;: [-15, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 600, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
+                                Formu doldurun sizi arayalım</h6>
+                                @if ($errors->any())
+                            <div class="alert alert-danger">
+                                <ul class="mb-0">
+                                    @foreach ($errors->all() as $error)
+                                        <li>{{ $error }}</li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                        @endif
+                            <form  method="POST" action="{{ route('home.form.show') }}"
+                                data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateY&quot;: [15, 0], &quot;translateX&quot;: [-15, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 600, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
+                                @csrf
+                                <div class="position-relative form-group mb-15px">
+                                    <span class="form-icon"><i class="fas fa-user"></i></span>
+                                    <input type="text" name="name" class="form-control required" placeholder="Ad soyad" />
+                                </div>
+                                <div class="position-relative form-group mb-15px">
+                                    <span class="form-icon"><i class="fa fa-envelope"></i></span>
+                                    <input type="email" name="email" class="form-control required"
+                                        placeholder="E-posta adresiniz" />
+                                </div>
+                                <div class="position-relative form-group mb-20px">
+                                    <span class="form-icon"><i class="fa fa-phone"></i></span>
+                                    <input type="tel" name="phone" class="form-control" placeholder="Telefon Numaranız" />
+                                </div>
+                                <div class="position-relative terms-condition-box text-start d-inline-block">
+                                        <input type="checkbox" name="terms_condition" id="terms_condition" value="1"
+                                            class="terms-condition check-box align-middle required">
+                                    <label>
+
+                                        <span class="box fs-16">Kişisel Verilerin Korunması Hakkında <a href="{{route('aydinlatma.metni')}}" target="_blank">Aydınlatma Yazısını
+                                            okudum</a> , kabul ediyorum.</span>
+                                    </label>
+                                </div>
+                                <div class="position-relative mt-20px">
+                                    <button class="btn btn-large btn-round-edge btn-base-color btn-box-shadow w-100"
+                                        type="submit">Gönder</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </section>
 	@endforeach
 
 
-
-    <section class="pt-0 mgyy  " style="display: none" >
+    <section class="pt-0 mgyy  " style="display:none" >
         <div class="container">
             <div class="row align-items-center justify-content-center">
 

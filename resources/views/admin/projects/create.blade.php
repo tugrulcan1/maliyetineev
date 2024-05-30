@@ -42,7 +42,7 @@
 
                                         <div class="col-md-12">
                                             <label for="form-label" for="project__sub_title">Proje Türü</label>
-                                            <select name="project_type" class="form-cntrol">
+                                            <select name="project_type" class="form-control">
                                                 <option value="">Seçiniz</option>
                                                 <option value="Topraktan Projeler">Topraktan Projeler</option>
                                                 <option value="Devam Eden Projeler">Devam Eden Projeler</option>

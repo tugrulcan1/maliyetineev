@@ -192,17 +192,6 @@
 
 </section>
 
-    {{-- <section style="padding: 0 !important; ">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">       
-                    <h4 style="margin:0;color:#333;" >{{$project->project_title}}</h3>
-                    <p style="font-size:12px;">{!! $project->description !!}</p>          
-                </div>
-            </div>
-        </div>
-    </section> --}}
-
     {{-- <section> --}}
         <div class="container">
             <div class="row">
@@ -340,8 +329,6 @@
 </div>
 
 
-
-
 <section style="padding: 0 !important; position: sticky; bottom: 0; z-index: 999;">
     <div style="background-color: #0f75bc; position: sticky; bottom: 0; padding: 20px 0px;">
         <div class="container">
@@ -355,7 +342,6 @@
     </div>
 </section>
 
-
 @endsection
 
 
@@ -367,7 +353,6 @@
         font-size: 18px;
         font-weight: bold;
         font-family: cerebri-sans-semibold;
-        /* letter-spacing: 1.3px; */
         line-height: 1.5;
         margin: 5px 34px;
     }
@@ -393,7 +378,6 @@
         text-align: center;
         font-size: 50px;
         font-family: 'Roboto', sans-serif;
-        /* letter-spacing: 1px; */
         font-weight: bold;
     }
     .baslikh6{
@@ -401,7 +385,6 @@
         text-align: center;
         font-size: 50px;
         font-family: 'Roboto', sans-serif;
-        /* letter-spacing: 1px; */
         font-weight: bold;
     }
 
@@ -412,7 +395,7 @@
         font-family: 'Roboto', sans-serif;
         letter-spacing: 1px;
         font-weight: bold;
-        line-height: 4.7rem !important;
+        line-height: 4.7rem;
     }
     .ptag{
         text-align: center;
@@ -420,11 +403,30 @@
         font-size: 18px;
         font-weight: bold;
         font-family: 'Roboto', sans-serif;
-        /* letter-spacing: 1.3px; */
-        max-width: 700px; /* Metnin iki satıra sığmasını sağlamak için genişlik ayarlaması */
+        max-width: 700px;
         line-height: 1.5;
         margin: 0 auto;
     
+    }
+    @media (max-width: 768px) {
+        .sorularDiv{
+            margin: 22px;
+            padding: 30px;
+        }
+        .sorularDiv div {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        
+        .answerP {
+            padding: 10px 0 0 0;
+        }
+        .baslikh4{
+            line-height: 5rem;
+        }
+        .baslikh5{
+            line-height: 5.5rem;
+        }
     }
 </style>
 
@@ -470,14 +472,12 @@
 </style>    
 
 <style>
-        /* Style the tab */
         .tab {
             overflow: hidden;
             border: 1px solid #ccc;
             background-color: #f7f7f7;
         }
 
-        /* Style the buttons inside the tab */
         .tab button {
             background-color: inherit;
             float: left;
@@ -489,21 +489,16 @@
             font-size: 17px;
         }
 
-        /* Change background color of buttons on hover */
         .tab button:hover {
             background-color: red;
             color: white;
         }
 
-        /* Create an active/current tablink class */
         .tab button.active {
             background-color: red;
-            /* Arka plan rengini kırmızı yap */
             color: white;
-            /* Yazı rengini beyaz yap */
         }
 
-        /* Style the tab content */
         .tabcontent {
             display: none;
             padding: 6px 12px;

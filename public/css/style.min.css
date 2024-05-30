@@ -19452,6 +19452,11 @@ display: none;
   }
   .mgyy{
     display: block !important;
+ margin-top: 30px;
+  }
+  .contact-form-style-01{
+top: 0 !important;
+right: 0 !important;
   }
 }
 
