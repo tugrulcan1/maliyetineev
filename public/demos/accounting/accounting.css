@@ -230,10 +230,8 @@ header .navbar-brand img {
   top: 11px;
 }
 .contact-form-style-01 {
-  /* margin-top: -55%;
-  margin-right: -74%; */
-  right: -280px;
-  top: -50px;
+right: 30px;
+top: 120px;
 }
 .page-title-extra-small h1 {
   font-size: 18px;

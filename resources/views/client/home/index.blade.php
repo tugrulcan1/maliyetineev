@@ -94,60 +94,54 @@
                     </div>
                 </div>
             </div> --}}
-            
-        <section class="pt-0 mgy  " style=" position: absolute; width:100%; right:-110px !important; bottom:-30px !important; " >
-            <div class="container">
-                <div class="row align-items-center justify-content-center">
 
-                    <div class="col-lg-5 offset-lg-1 col-md-11 contact-form-style-01 position-relative" style="right:">
-                        <div class="ps-8 pe-8 pt-8 pb-8 lg-p-8 bg-white box-shadow-quadruple-large border-radius-6px">
-                            <h6 class="d-inline-block fw-600 text-dark-gray ls-minus-1px mb-35px sm-mb-25px"
-                                data-anime="{ &quot;translateY&quot;: [15, 0], &quot;translateX&quot;: [-15, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 600, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
-                                Formu doldurun sizi arayalım</h6>
-                                @if ($errors->any())
-                            <div class="alert alert-danger">
-                                <ul class="mb-0">
-                                    @foreach ($errors->all() as $error)
-                                        <li>{{ $error }}</li>
-                                    @endforeach
-                                </ul>
-                            </div>
-                        @endif
-                            <form  method="POST" action="{{ route('home.form.show') }}"
-                                data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateY&quot;: [15, 0], &quot;translateX&quot;: [-15, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 600, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
-                                @csrf
-                                <div class="position-relative form-group mb-15px">
-                                    <span class="form-icon"><i class="fas fa-user"></i></span>
-                                    <input type="text" name="name" class="form-control required" placeholder="Ad soyad" />
-                                </div>
-                                <div class="position-relative form-group mb-15px">
-                                    <span class="form-icon"><i class="fa fa-envelope"></i></span>
-                                    <input type="email" name="email" class="form-control required"
-                                        placeholder="E-posta adresiniz" />
-                                </div>
-                                <div class="position-relative form-group mb-20px">
-                                    <span class="form-icon"><i class="fa fa-phone"></i></span>
-                                    <input type="tel" name="phone" class="form-control" placeholder="Telefon Numaranız" />
-                                </div>
-                                <div class="position-relative terms-condition-box text-start d-inline-block">
-                                        <input type="checkbox" name="terms_condition" id="terms_condition" value="1"
-                                            class="terms-condition check-box align-middle required">
-                                    <label>
 
-                                        <span class="box fs-16">Kişisel Verilerin Korunması Hakkında <a href="{{route('aydinlatma.metni')}}" target="_blank">Aydınlatma Yazısını
-                                            okudum</a> , kabul ediyorum.</span>
-                                    </label>
-                                </div>
-                                <div class="position-relative mt-20px">
-                                    <button class="btn btn-large btn-round-edge btn-base-color btn-box-shadow w-100"
-                                        type="submit">Gönder</button>
-                                </div>
-                            </form>
+                <div class="contact-form-style-01" style="position: absolute;width:400px">
+                    <div class="ps-8 pe-8 pt-8 pb-8 lg-p-8 bg-white box-shadow-quadruple-large border-radius-6px">
+                        <h6 class="d-inline-block fw-600 text-dark-gray ls-minus-1px mb-35px sm-mb-25px"
+                            data-anime="{ &quot;translateY&quot;: [15, 0], &quot;translateX&quot;: [-15, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 600, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
+                            Formu doldurun sizi arayalım</h6>
+                            @if ($errors->any())
+                        <div class="alert alert-danger">
+                            <ul class="mb-0">
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
                         </div>
+                    @endif
+                        <form  method="POST" action="{{ route('home.form.show') }}"
+                            data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateY&quot;: [15, 0], &quot;translateX&quot;: [-15, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 600, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
+                            @csrf
+                            <div class="position-relative form-group mb-15px">
+                                <span class="form-icon"><i class="fas fa-user"></i></span>
+                                <input type="text" name="name" class="form-control required" placeholder="Ad soyad" />
+                            </div>
+                            <div class="position-relative form-group mb-15px">
+                                <span class="form-icon"><i class="fa fa-envelope"></i></span>
+                                <input type="email" name="email" class="form-control required"
+                                    placeholder="E-posta adresiniz" />
+                            </div>
+                            <div class="position-relative form-group mb-20px">
+                                <span class="form-icon"><i class="fa fa-phone"></i></span>
+                                <input type="tel" name="phone" class="form-control" placeholder="Telefon Numaranız" />
+                            </div>
+                            <div class="position-relative terms-condition-box text-start d-inline-block">
+                                    <input type="checkbox" name="terms_condition" id="terms_condition" value="1"
+                                        class="terms-condition check-box align-middle required">
+                                <label>
+
+                                    <span class="box fs-16">Kişisel Verilerin Korunması Hakkında <a href="{{route('aydinlatma.metni')}}" target="_blank">Aydınlatma Yazısını
+                                        okudum</a> , kabul ediyorum.</span>
+                                </label>
+                            </div>
+                            <div class="position-relative mt-20px">
+                                <button class="btn btn-large btn-round-edge btn-base-color btn-box-shadow w-100"
+                                    type="submit">Gönder</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
-            </div>
-        </section>
     </section>
 	@endforeach
 
