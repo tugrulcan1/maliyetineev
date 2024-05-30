@@ -465,6 +465,10 @@ Route::group(['prefix' => 'admin', "as" => "admin.", 'middleware' => ['admin']],
     Route::middleware(['checkPermission:GetSocialMediaIcons'])->group(function () {
         Route::get('/social_media_icons', [SocialMediaIconController::class, 'index'])->name('social_media_icons.index');
     });
+
+    Route::get('/all/comments',[CommentController::class,'adminAllComments'])->name('all.comments');
+    Route::get('/approve/comment/{id}',[CommentController::class,'approveComment'])->name('approve.comment');
+    Route::get('/reject/comment/{id}',[CommentController::class,'rejectComment'])->name('reject.comment');
 });
 
 
@@ -529,6 +533,7 @@ Route::get('/ekibimiz' ,[BlogController::class, 'asd'] );
 Route::get('/subelerimiz' ,[BranchController::class, 'asd'] );
 
 Route::get('/comments/index',[CommentController::class,'commentGet'])->name('comments.index');
+Route::post('/yorum/ekle',[CommentController::class,'addComment'])->name('add.comment');
 
 
     

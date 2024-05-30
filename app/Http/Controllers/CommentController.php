@@ -69,12 +69,10 @@ class CommentController extends Controller
         return view('admin.comments.edit', compact('comment'));
     }
 
-    public function update(Request $request, Comment $comment)
-    {
+    public function update(Request $request, Comment $comment) {
         $validator = Validator::make($request->all(), [
             'title' => 'required',
-            'content' => 'required'
-            
+            'content' => 'required'            
         ]);
 
         if ($validator->fails()) {
@@ -87,15 +85,11 @@ class CommentController extends Controller
         $dosya = $request->file('image');
         $dosyaAdi=$comment->image;
 
-        // Eğer dosya seçilmediyse veya geçerli bir dosya değilse hata döndür
         if ($dosya) {
-             // Dosyayı yükleme klasörüne kaydetme
         $dosyaAdi = $dosya->getClientOriginalName(); // Dosya adını alın
         $dosya->move(public_path('uploads'), $dosyaAdi); // Dosyayı uploads klasörüne kaydet
 
         }
-
-
 
         $comment->update([
             'title' => $request->input('title'),
@@ -116,7 +110,46 @@ class CommentController extends Controller
     }
 
     public function commentGet(){
-        $comments = Comment::all();
+        $comments = Comment::where('approval_status',1)->get();
         return view('client.comments.comments',compact('comments'));
+    }//End
+
+    public function addComment(Request $request){
+        // print_r($request->all());die;
+
+        $comment = new Comment();
+        $comment->full_name = $request->input('name');
+        $comment->email = $request->input('email');
+        $comment->phone = $request->input('phone');
+        $comment->title = $request->input('title');
+        $comment->content = $request->input('comment');
+        $comment->image = 'avtar-04.jpg';
+        $comment->approval_status = 0;
+
+        $comment->save();
+
+        return redirect()->back()->with('success','Yorumunuz teşekkür ederiz. En kısa sürede incelenip yayına alınacaktır.');
+     
+    }//End
+
+    public function adminAllComments(){
+        $comments = Comment::all();
+        return view('admin.comments.all_comments',compact('comments'));
+    }//End
+
+    public function approveComment($id){
+        $comment = Comment::find($id);
+        $comment->approval_status = 1;
+        $comment->save();
+
+        return redirect()->back()->with('success','Yorum başarıyla onaylandı.');
+    }//End
+
+    public function rejectComment($id){
+        $comment = Comment::find($id);
+        $comment->approval_status = 2;
+        $comment->save();
+
+        return redirect()->back()->with('warning','Yorum reddedildi.');
     }//End
 }

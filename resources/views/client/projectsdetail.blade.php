@@ -197,7 +197,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <h4 class="baslikh4">Maliyetine Ev sahibi olma sistemi</h4>
-                    <h5 class="baslikh5">Bu gün arsa tapunuzu alın yarın maliyetine eviniz olsun</h5>
+                    <h5 class="baslikh5">Bu gün projeden tapunuzu alın yarın maliyetine eviniz olsun</h5>
                     <p class="ptag">Maliyetine Ev,Türkiye’de ilk hemen tapu teslim %100 güvenli ve garantili maliyetine ev sahibi olmanızı sağlayan tek şirkettir.</p>
                 </div>
             </div>   

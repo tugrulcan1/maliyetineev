@@ -220,7 +220,7 @@
     <section class="bg-very-light-gray overflow-hidden" style="padding:0px 40px !important;">
         <div class="container-fluid">
             <div class="row align-items-center justify-content-center mb-6 text-center text-lg-start column-form">
-                <div class="col-xl-5 col-lg-5 md-mb-20px"
+                <div class="col-xl-5 col-lg-5 md-mb-20px mt-2"
                     data-anime="{ &quot;translateX&quot;: [50, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1200, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
                     <h4 class="text-dark-gray fw-700 mb-0 ls-minus-1px">Projelerimiz
                     </h4>
@@ -305,7 +305,7 @@
 
 
     <section class="bg-very-light-gray pb-0" id="services"
-    style="padding-bottom: 0px !important; padding-top: 40px !important;">
+        style="padding-bottom: 0px !important; padding-top: 40px !important;">
         <div class="tab-style-08 border-bottom border-color-extra-medium-gray bg-white box-shadow-quadruple-large">
             <div class="container">
 
@@ -625,17 +625,14 @@
         <div class="col-sm  mb-4" style="text-align: center;">
             <div>
                 <img src="/images/trust.png" alt="" style="height: 100px;">
-                <p class="text-dark-gray fw-700 baslikP">
-                    {{$settings['section_8_1']}}</p>
-                <p style="font-size: 12px; line-height: 12px; font-weight: 400;">
-                {{$settings['section_8_1.1']}}</p>
+                <p class="text-dark-gray fw-700 baslikP" style="font-size: 20px; margin: 0; padding: 0; color: #333; font-size: 16px;">{{$settings['section_8_1']}}</p>
+                <p style="font-size: 12px; line-height: 12px; font-weight: 400;">{{$settings['section_8_1.1']}}</p>
             </div>
         </div>
         <div class="col-sm  mb-4" style="text-align: center;">
             <div>
                 <img src="/images/budget.png" alt="" style="height: 100px; ">
-                <p class="text-dark-gray fw-700"
-                    style="font-size: 20px; margin: 0; padding: 0; color: #333; font-size: 16px;">{{$settings['section_8_2']}}
+                <p class="text-dark-gray fw-700" style="font-size: 20px; margin: 0; padding: 0; color: #333; font-size: 16px;">{{$settings['section_8_2']}}
                 </p>
                 <p style="font-size: 12px; line-height: 12px; font-weight: 400;">{{$settings['section_8_2.1']}}</p>
             </div>
@@ -643,8 +640,7 @@
         <div class="col-sm  mb-4" style="text-align: center;">
             <div>
                 <img src="/images/bank.png" alt="" style="height: 100px; ">
-                <p class="text-dark-gray fw-700"
-                    style="font-size: 20px; margin: 0; padding: 0; color: #333; font-size: 16px;">{{$settings['section_8_3']}}
+                <p class="text-dark-gray fw-700" style="font-size: 20px; margin: 0; padding: 0; color: #333; font-size: 16px;">{{$settings['section_8_3']}}
                 </p>
                 <p style="font-size: 12px; line-height: 12px; font-weight: 400;">{{$settings['section_8_3.1']}}</p>
             </div>
