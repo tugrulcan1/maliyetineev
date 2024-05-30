@@ -201,7 +201,7 @@
     </section>
 
 
-    <section class="p-0 bg-base-color" style="background: #b7d8ff; ">
+    <section class="p-0 bg-base-color" style="background: #b7d8ff;margin-top:30px; ">
         <div class="container">
             <div class="row align-items-center justify-content-center g-0">
                 <div class="col-auto d-flex align-items-center"

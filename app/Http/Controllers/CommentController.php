@@ -117,13 +117,21 @@ class CommentController extends Controller
     public function addComment(Request $request){
         // print_r($request->all());die;
 
+        
+        if ($request->hasFile('file')) {
+            $file = $request->file('file');
+            $fileName = time() . '_' . $file->getClientOriginalName();
+            $file->move(public_path('kullanici_gorselleri'), $fileName);
+        }    
+
+
         $comment = new Comment();
         $comment->full_name = $request->input('name');
         $comment->email = $request->input('email');
         $comment->phone = $request->input('phone');
         $comment->title = $request->input('title');
         $comment->content = $request->input('comment');
-        $comment->image = 'avtar-04.jpg';
+        $comment->image = $fileName ?? '';
         $comment->approval_status = 0;
 
         $comment->save();
