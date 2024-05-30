@@ -3,7 +3,7 @@
 
 @section('content')
 
-<div class="container" style="margin-top: 200px;" >
+<div class="container" style="margin-top: 200px; margin-bottom:110px;" >
 
     <div class="row mt-4 mb-4">
 
@@ -35,7 +35,7 @@
         </div>
         
         <div class="col-md-4">
-            <div class="contact-form-style-01" style="position: absolute;width:550px;height:500px;top:0px;">
+            <div class="contact-form-style-01" style="width:550px;height:500px;margin-left:100px;top:0px;">
                 <div class="ps-8 pe-8 pt-8 pb-8 lg-p-8 bg-white box-shadow-quadruple-large border-radius-6px">
                     <h6 class="d-inline-block fw-600 text-dark-gray ls-minus-1px mb-35px sm-mb-25px"
                         data-anime="{ &quot;translateY&quot;: [15, 0], &quot;translateX&quot;: [-15, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 600, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
