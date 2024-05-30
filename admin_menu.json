@@ -9,6 +9,15 @@
         "activePath": "admin/menus*"
     },
     {
+        "id": "yorumlar",
+        "label": "Yönetim",
+        "icon": "menu",
+        "text": "Yorumlar",
+        "key": "GetComments",
+        "url": "admin.all.comments",
+        "activePath": "admin/all/comments*"
+    },
+    {
         "id": "role",
         "label": "Yönetim",
         "icon": "user",
