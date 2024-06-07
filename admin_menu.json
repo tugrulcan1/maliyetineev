@@ -219,8 +219,8 @@
             {
                 "text": "Listele",
                 "key": "GetComments",
-                "url": "admin.comments.index",
-                "activePath": "admin/comments"
+                "url": "admin.all.comments",
+                "activePath": "admin/all/comments"
             }
         ]
     },
