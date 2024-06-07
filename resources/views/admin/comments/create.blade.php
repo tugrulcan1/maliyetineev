@@ -2,6 +2,17 @@
 
 @section('content')
     <div class="content">
+        @if (session('success'))
+        <div class="alert alert-success text-white">
+            {{ session('success') }}
+        </div>
+    @endif
+
+    @if (session('error'))
+        <div class="alert alert-danger text-white">
+            {{ session('error') }}
+        </div>
+    @endif
         <div class="row">
             <div class="card shadow-none border border-300  p-0" data-component-card="data-component-card">
                 <div class="card-header border-bottom border-300 bg-soft">
@@ -22,27 +33,6 @@
                         </div>
                     @endif
                     <div class="p-4 code-to-copy">
-                        {{-- <form action="{{ route('admin.comments.store') }}" method="POST" enctype="multipart/form-data">
-                            @csrf
-                            <div class="mb-3">
-                                <label class="form-label" for="title">comment Başlık</label>
-                                <input class="form-control" id="name" name="title" type="text"
-                                    placeholder="comment Başlık">
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label" for="image">comment Resim</label>
-                                <input class="form-control" id="url" name="image" type="file"
-                                    placeholder="Resim URL">
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label" for="content">comment</label>
-                                <textarea id="editor" name="content"></textarea>
-                            </div>
-                           
-
-                            <button type="submit" class="btn btn-primary">Create comment</button>
-                           
-                        </form> --}}
                         <form  method="POST" action="{{ route('add.comment') }}" enctype="multipart/form-data"
                         data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateY&quot;: [15, 0], &quot;translateX&quot;: [-15, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 600, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
                         @csrf
