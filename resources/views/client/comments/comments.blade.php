@@ -15,7 +15,7 @@
                         <div class="row align-items-center pt-25px pb-25px commentDiv" style="">
                             <div class="col-lg-8 d-lg-flex align-items-center text-center text-lg-start">
                                 @if ($comment->image)
-                                        <img src="{{ asset('kullanici_gorselleri/' . $comment->image) }}" alt="User Image" style="width: 40px; height: 40px; border-radius: 50%; margin-right: 10px;">
+                                        <img src="{{ asset('kullanici_gorselleri/' . $comment->image) }}" alt="User Image" style="width: 60px; height: 70px; border-radius: 50%; margin-right: 10px;">
                                     @else
                                     <i class="fa-solid fa-star" style="font-size:24px;margin-left:10px;"></i>
                                     @endif
