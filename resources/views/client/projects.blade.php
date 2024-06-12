@@ -21,7 +21,8 @@
                        
                             <div class="row mb-3">
                                 <span class="baslikSpan">Topraktan Projeler</span>
-                                @if(isset($topraktanProjeler))
+                                
+                                @if(count($topraktanProjeler) > 0 )
                                 @foreach($topraktanProjeler as $project)
 
                                 <div class="col-md-3 mt-5">
@@ -53,13 +54,15 @@
                                 </div>
                                 @endforeach
                                 @else
-                                <p class="projectEmptyMessage">Henüz topraktan projelerimiz bulunmamaktadır.</p>
+                                <div class="col-md-10">
+                                    <p class="projectEmptyMessage">Henüz topraktan projelerimiz bulunmamaktadır.</p>
+                                    </div>
                                 @endif
                             </div>  
 
                             <div class="row mb-3">
                                 <span class="baslikSpan">Devam Eden Projeler</span>
-                                @if(isset($devamEdenProjeler))
+                                @if(count($devamEdenProjeler) > 0 )
                                 @foreach($devamEdenProjeler as $project)
 
                                 <div class="col-md-3 mt-5">
@@ -91,13 +94,15 @@
                                 </div>
                                 @endforeach
                                 @else
-                                <p class="projectEmptyMessage">Henüz topraktan projelerimiz bulunmamaktadır.</p>
+                                <div class="col-md-10">
+                                    <p class="projectEmptyMessage">Henüz topraktan projelerimiz bulunmamaktadır.</p>
+                                    </div>
                                 @endif
                             </div> 
 
                             <div class="row mb-3">
                                 <span class="baslikSpan">Bitmiş Projeler</span>
-                                @if(isset($topraktanProjeler))
+                                @if(count($bitmisProjeler) > 0 )
                                 @foreach($bitmisProjeler as $project)
 
                                 <div class="col-md-3 mt-5">
@@ -129,7 +134,9 @@
                                 </div>
                                 @endforeach
                                 @else
-                                <p class="projectEmptyMessage">Henüz topraktan projelerimiz bulunmamaktadır.</p>
+                                <div class="col-md-10">
+                                    <p class="projectEmptyMessage">Henüz topraktan projelerimiz bulunmamaktadır.</p>
+                                    </div>
                                 @endif
                             </div> 
                          
