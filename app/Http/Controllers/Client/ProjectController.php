@@ -46,7 +46,11 @@ class ProjectController extends Controller
         $cities = City::get();
         $projects = $projects->get();
         $menu = Menu::getMenuItems();
-        return view('client.projects',compact('menu','projects','housingTypes','housingStatus','cities'));
+
+        $topraktanProjeler = Project::where('project_type','Topraktan Projeler')->get();
+        $devamEdenProjeler = Project::where('project_type','Devam Eden Projeler')->get();
+        $bitmisProjeler    = Project::where('project_type','Bitmiş Projeler')->get();
+        return view('client.projects',compact('menu','projects','housingTypes','housingStatus','cities','topraktanProjeler','devamEdenProjeler','bitmisProjeler'));
     }
     
     public function projectHousingDetail($projectSlug,$housingOrder){

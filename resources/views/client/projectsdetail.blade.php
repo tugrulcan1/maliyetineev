@@ -9,91 +9,17 @@
         <div class="container h-100">
             <div class="row align-items-center h-100">
                 <div class="col-xl-7 col-md-9 col-sm-9 position-relative text-white"
-                    data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;opacity&quot;: [0, 1], &quot;translateY&quot;: [30, 0], &quot;staggervalue&quot;: 200, &quot;easing&quot;: &quot;easeInOutSine&quot; }">
-                    <!-- <div class="fs-80 lh-75 sm-fs-65 fw-600 mb-20px text-shadow-large ls-minus-2px">Crafto expand
-                        business values.</div>
-                    <div>
-                        <span class="opacity-5 fs-20 w-70 md-w-85 mb-25px fw-300 d-inline-block">We are dedicated to
-                            providing amazing business accounting services and client service.</span>
-                    </div> -->
-                    <!-- <div class="icon-with-text-style-08">
-                            <div class="feature-box feature-box-left-icon-middle">
-                                <div
-                                    class="feature-box-icon feature-box-icon-rounded w-65px h-65px rounded-circle bg-yellow me-15px rounded-box">
-                                    <i class="feather icon-feather-arrow-right text-dark-gray icon-extra-medium"></i>
-                                </div>
-                                <div class="feature-box-content">
-                                    <a href="#services"
-                                        class="d-inline-block fs-19 text-white text-shadow-double-large">Explore
-                                        services</a>
-                                </div>
-                            </div> -->
+                    data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;opacity&quot;: [0, 1], 
+                    &quot;translateY&quot;: [30, 0], &quot;staggervalue&quot;: 200, &quot;easing&quot;: &quot;easeInOutSine&quot; }">
                 </div>
-
             </div>
         </div>
-    </div>
-
-
     </div>
 </section>
 
 <section id="form" class="about-area about-area-mid pt-120 pb-90" style="padding-top: 40px; padding-bottom: 40px;">
     <div class="container-fluid">
         <div class="row">
-            {{-- <div class="col-xl-6 col-lg-12 col-md-12"
-                style="display: flex; align-items: center; justify-content: center;">
-                <div class="row">
-                    <div class="col-xl-6 col-lg-6 col-md-6">
-                        <div class="feature-box mb-40">
-                            <div class="feature-small-icon mb-35">
-                                <i class="fa fa-phone"></i>
-                            </div>
-                            <div class="feature-small-content">
-                                <h3>On time Services</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-6 col-md-6">
-                        <div class="feature-box mt-40">
-                            <div class="feature-small-icon mb-35">
-                                <img src="img/icon/s-fea-icon-2.png" alt="">
-                            </div>
-                            <div class="feature-small-content">
-                                <h3>Creative Solutions</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-6 col-md-6">
-                        <div class="feature-box mb-30">
-                            <div class="feature-small-icon mb-35">
-                                <img src="img/icon/s-fea-icon-3.png" alt="">
-                            </div>
-                            <div class="feature-small-content">
-                                <h3>Strong Contacts</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-6 col-md-6">
-                        <div class="feature-box mt-40 mb-30">
-                            <div class="feature-small-icon mb-35">
-                                <img src="img/icon/s-fea-icon-4.png" alt="">
-                            </div>
-                            <div class="feature-small-content">
-                                <h3>Expert Members</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> --}}
             <div class="container col-xl-7 col-lg-6 col-md-6 mb-4">
                 <div class="row card-container">
                     @foreach(json_decode($project->details) as $detail)
@@ -104,6 +30,7 @@
                                 </div>
                                 <div class="feature-small-content mt-5">
                                     <h3>{{ $detail->title }}</h3>
+                                    <h5>{{ $detail->sub_title ?? '' }}</h5>
                                     <p class="card-text">{!! \Illuminate\Support\Str::limit(strip_tags($detail->description), 250, '...') !!}</p>
                                     {{-- <p style="overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;">{!! $detail->description !!}</p> --}}
                                 </div>
@@ -192,7 +119,6 @@
 
 </section>
 
-    {{-- <section> --}}
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -202,7 +128,6 @@
                 </div>
             </div>   
         </div>
-    {{-- </section> --}}
     
             @if(count($project->galleries) > 0)
                 <div class="section">
@@ -229,7 +154,7 @@
                     
                             @foreach ($floorPlans as $index => $floorPlan)
                                 <div id="tab{{ $index }}" class="tabcontent">
-                                    <img src="{{ asset('kat_plani/' . $floorPlan->image_path) }}" alt="{{ $floorPlan->floor_plan }}" style="width: 1220px; height: 350px;">
+                                    <img src="{{ asset('kat_plani/' . $floorPlan->image_path) }}" alt="{{ $floorPlan->floor_plan }}" style="width: 1220px; height: 470px;">
                                 </div>
                             @endforeach
                         </div>
@@ -463,6 +388,13 @@
         font-size: 24px;
         font-weight: 700;
         color: #333;
+        /* margin-bottom: 10px; */
+    }
+    .feature-small-content h5 {
+        font-size: 20px;
+        font-weight: 600;
+        color: #333;
+        /* letter-spacing: 1px; */
         /* margin-bottom: 10px; */
     }
     .feature-small-content p {

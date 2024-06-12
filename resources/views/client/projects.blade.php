@@ -18,73 +18,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <div class="row">
-                            @foreach($projects as $project)
-                                @if($project->project_type == 'Topraktan Projeler')
-                                <div class="row mb-3">
-                                    <span class="baslikSpan">Topraktan Projeler</span>
-                                    <div class="col-md-3 mt-5">
-                                        <div class="interactive-banner-style-08">
-                                            <figure class="m-0 hover-box overflow-hidden position-relative border-radius-6px">
-                                                <a href="{{route('projelerimiz.show',$project->id)}}" target="_blank">
-                                                        <img src="{{ asset('projects_cover_image/' . $project->cover_image) }}" alt="Resim bulunamadı" style="height: 400px; object-fit: cover;" />
-                                                </a>
-                                                <figcaption
-                                                    class="d-flex flex-column align-items-start justify-content-center position-absolute left-0px top-0px w-100 h-100 z-index-1 p-14 lg-p-12">
-                                                    <a href="{{route('projelerimiz.show',$project->id)}}" target="_blank"></a>
-                                                    <div class="mt-auto d-flex w-100 align-items-center">
-                                                        <div class="col last-paragraph-no-margin">
-                                                            <a href="{{route('projelerimiz.show',$project->id)}}" target="_blank" class="text-white fs-24 lh-28  xl-w-75 d-block"
-                                                                style="color: white;">{{$project->project_title}}</a>
-                                                            <p class="custom-description"  style="color: white !important;"> {{$project->project_sub_title}}</p>
-                                                        </div>
-                                                        <a href="{{route('projelerimiz.show',$project->id)}}" class="circle-box bg-yellow w-50px h-50px rounded-circle ms-auto position-relative rounded-box">
-                                                            <i class="bi bi-arrow-right-short absolute-middle-center icon-very-medium lh-0px text-dark-gray" style="color: white !important;"></i>
-                                                        </a>
-                                                    </div>
-                                                    <div
-                                                        class="position-absolute left-0px top-0px w-100 h-100 bg-gradient-gray-light-dark-transparent z-index-minus-1 opacity-9">
-                                                    </div>
-                                                </figcaption>
-                                            </figure>
-                                        </div>
-                                    </div>
-                                </div>
-                                @elseif($project->project_type == 'Devam Eden Projeler')   
-                                <div class="row mb-3">
-                                    <span class="baslikSpan">Devam Eden Projeler</span>
-                                    <div class="col-md-3 mt-5">
-                                        <div class="interactive-banner-style-08">
-                                            <figure class="m-0 hover-box overflow-hidden position-relative border-radius-6px">
-                                                <a href="{{route('projelerimiz.show',$project->id)}}" target="_blank">
-                                                        <img src="{{ asset('projects_cover_image/' . $project->cover_image) }}" alt="Resim bulunamadı" style="height: 400px; object-fit: cover;" />
-                                                </a>
-                                                <figcaption
-                                                    class="d-flex flex-column align-items-start justify-content-center position-absolute left-0px top-0px w-100 h-100 z-index-1 p-14 lg-p-12">
-                                                    <a href="{{route('projelerimiz.show',$project->id)}}" target="_blank"></a>
-                                                    <div class="mt-auto d-flex w-100 align-items-center">
-                                                        <div class="col last-paragraph-no-margin">
-                                                            <a href="{{route('projelerimiz.show',$project->id)}}" target="_blank" class="text-white fs-24 lh-28  xl-w-75 d-block"
-                                                                style="color: white;">{{$project->project_title}}</a>
-                                                            <p class="custom-description"  style="color: white !important;"> {{$project->project_sub_title}}</p>
-                                                        </div>
-                                                        <a href="{{route('projelerimiz.show',$project->id)}}" class="circle-box bg-yellow w-50px h-50px rounded-circle ms-auto position-relative rounded-box">
-                                                            <i class="bi bi-arrow-right-short absolute-middle-center icon-very-medium lh-0px text-dark-gray" style="color: white !important;"></i>
-                                                        </a>
-                                                    </div>
-                                                    <div
-                                                        class="position-absolute left-0px top-0px w-100 h-100 bg-gradient-gray-light-dark-transparent z-index-minus-1 opacity-9">
-                                                    </div>
-                                                </figcaption>
-                                            </figure>
-                                        </div>
-                                    </div>
-                                </div>
-                                @elseif($project->project_type == 'Bitmiş Projeler')
-                                <div class="row mb-3">
-                                    <span class="baslikSpan">Bitmiş Projeler</span>
+                       
+                            <div class="row mb-3">
+                                <span class="baslikSpan">Topraktan Projeler</span>
+                                @foreach($topraktanProjeler as $project)
 
                                 <div class="col-md-3 mt-5">
+                                    
                                     <div class="interactive-banner-style-08">
                                         <figure class="m-0 hover-box overflow-hidden position-relative border-radius-6px">
                                             <a href="{{route('projelerimiz.show',$project->id)}}" target="_blank">
@@ -109,12 +49,78 @@
                                             </figcaption>
                                         </figure>
                                     </div>
-                                </div>   
-                            </div> 
-                            @endif
-                            @endforeach
+                                </div>
+                                @endforeach
+                            </div>  
 
-                        </div>
+                            <div class="row mb-3">
+                                <span class="baslikSpan">Devam Eden Projeler</span>
+                                @foreach($devamEdenProjeler as $project)
+
+                                <div class="col-md-3 mt-5">
+                                    
+                                    <div class="interactive-banner-style-08">
+                                        <figure class="m-0 hover-box overflow-hidden position-relative border-radius-6px">
+                                            <a href="{{route('projelerimiz.show',$project->id)}}" target="_blank">
+                                                    <img src="{{ asset('projects_cover_image/' . $project->cover_image) }}" alt="Resim bulunamadı" style="height: 400px; object-fit: cover;" />
+                                            </a>
+                                            <figcaption
+                                                class="d-flex flex-column align-items-start justify-content-center position-absolute left-0px top-0px w-100 h-100 z-index-1 p-14 lg-p-12">
+                                                <a href="{{route('projelerimiz.show',$project->id)}}" target="_blank"></a>
+                                                <div class="mt-auto d-flex w-100 align-items-center">
+                                                    <div class="col last-paragraph-no-margin">
+                                                        <a href="{{route('projelerimiz.show',$project->id)}}" target="_blank" class="text-white fs-24 lh-28  xl-w-75 d-block"
+                                                            style="color: white;">{{$project->project_title}}</a>
+                                                        <p class="custom-description"  style="color: white !important;"> {{$project->project_sub_title}}</p>
+                                                    </div>
+                                                    <a href="{{route('projelerimiz.show',$project->id)}}" class="circle-box bg-yellow w-50px h-50px rounded-circle ms-auto position-relative rounded-box">
+                                                        <i class="bi bi-arrow-right-short absolute-middle-center icon-very-medium lh-0px text-dark-gray" style="color: white !important;"></i>
+                                                    </a>
+                                                </div>
+                                                <div
+                                                    class="position-absolute left-0px top-0px w-100 h-100 bg-gradient-gray-light-dark-transparent z-index-minus-1 opacity-9">
+                                                </div>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+                                @endforeach
+                            </div> 
+
+                            <div class="row mb-3">
+                                <span class="baslikSpan">Bitmiş Projeler</span>
+                                @foreach($bitmisProjeler as $project)
+
+                                <div class="col-md-3 mt-5">
+                                    
+                                    <div class="interactive-banner-style-08">
+                                        <figure class="m-0 hover-box overflow-hidden position-relative border-radius-6px">
+                                            <a href="{{route('projelerimiz.show',$project->id)}}" target="_blank">
+                                                    <img src="{{ asset('projects_cover_image/' . $project->cover_image) }}" alt="Resim bulunamadı" style="height: 400px; object-fit: cover;" />
+                                            </a>
+                                            <figcaption
+                                                class="d-flex flex-column align-items-start justify-content-center position-absolute left-0px top-0px w-100 h-100 z-index-1 p-14 lg-p-12">
+                                                <a href="{{route('projelerimiz.show',$project->id)}}" target="_blank"></a>
+                                                <div class="mt-auto d-flex w-100 align-items-center">
+                                                    <div class="col last-paragraph-no-margin">
+                                                        <a href="{{route('projelerimiz.show',$project->id)}}" target="_blank" class="text-white fs-24 lh-28  xl-w-75 d-block"
+                                                            style="color: white;">{{$project->project_title}}</a>
+                                                        <p class="custom-description"  style="color: white !important;"> {{$project->project_sub_title}}</p>
+                                                    </div>
+                                                    <a href="{{route('projelerimiz.show',$project->id)}}" class="circle-box bg-yellow w-50px h-50px rounded-circle ms-auto position-relative rounded-box">
+                                                        <i class="bi bi-arrow-right-short absolute-middle-center icon-very-medium lh-0px text-dark-gray" style="color: white !important;"></i>
+                                                    </a>
+                                                </div>
+                                                <div
+                                                    class="position-absolute left-0px top-0px w-100 h-100 bg-gradient-gray-light-dark-transparent z-index-minus-1 opacity-9">
+                                                </div>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+                                @endforeach
+                            </div> 
+                         
                     </div>
                 </div>
             </div>

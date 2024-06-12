@@ -80,9 +80,11 @@ class ProjectController extends Controller
         $details = [];
         for ($i = 1; $i <= 4; $i++) {
             $detailTitle = $request->input("project_detail_title$i");
+            $detailTitle2 = $i . '. ADIM';
             $detailDescription = $request->input("detail_description$i");
             $details[] = [
-                'title' => $detailTitle,
+                'title' => $detailTitle2,
+                'sub_title' => $detailTitle,
                 'description' => $detailDescription
             ];
         }
@@ -120,6 +122,7 @@ class ProjectController extends Controller
                 ]);
             }
         }
+
 
         return redirect()->route('admin.projects.index')
             ->with('success', 'Proje başarıyla oluşturuldu.');
