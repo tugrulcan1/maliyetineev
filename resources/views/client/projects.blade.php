@@ -21,6 +21,7 @@
                        
                             <div class="row mb-3">
                                 <span class="baslikSpan">Topraktan Projeler</span>
+                                @if(isset($topraktanProjeler))
                                 @foreach($topraktanProjeler as $project)
 
                                 <div class="col-md-3 mt-5">
@@ -51,10 +52,14 @@
                                     </div>
                                 </div>
                                 @endforeach
+                                @else
+                                <p class="projectEmptyMessage">Henüz topraktan projelerimiz bulunmamaktadır.</p>
+                                @endif
                             </div>  
 
                             <div class="row mb-3">
                                 <span class="baslikSpan">Devam Eden Projeler</span>
+                                @if(isset($devamEdenProjeler))
                                 @foreach($devamEdenProjeler as $project)
 
                                 <div class="col-md-3 mt-5">
@@ -85,10 +90,14 @@
                                     </div>
                                 </div>
                                 @endforeach
+                                @else
+                                <p class="projectEmptyMessage">Henüz topraktan projelerimiz bulunmamaktadır.</p>
+                                @endif
                             </div> 
 
                             <div class="row mb-3">
                                 <span class="baslikSpan">Bitmiş Projeler</span>
+                                @if(isset($topraktanProjeler))
                                 @foreach($bitmisProjeler as $project)
 
                                 <div class="col-md-3 mt-5">
@@ -119,6 +128,9 @@
                                     </div>
                                 </div>
                                 @endforeach
+                                @else
+                                <p class="projectEmptyMessage">Henüz topraktan projelerimiz bulunmamaktadır.</p>
+                                @endif
                             </div> 
                          
                     </div>
@@ -497,5 +509,12 @@
         font-family: 'Roboto', sans-serif;
         /* letter-spacing: 1px; */
         font-weight: bold;
+    }
+    .projectEmptyMessage{
+        font-size: 18px;
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 20px;
+        margin-top: 20px;
     }
    </style>
