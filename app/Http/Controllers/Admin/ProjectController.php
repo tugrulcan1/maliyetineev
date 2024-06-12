@@ -99,6 +99,7 @@ class ProjectController extends Controller
             'project_title' => $request->input('project_title'),
             'project_sub_title' => $request->input('project_sub_title'),
             'description' => $request->input('description'),
+            'project_type' => $request->input('project_type'),
             'slug' => $request->input('slug'),
             'image' => $dosyaAdi,
             'details' => $detailsJson,
