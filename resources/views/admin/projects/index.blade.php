@@ -42,6 +42,8 @@
                                             <th class="sort white-space-nowrap align-middle ps-0" scope="col"
                                             data-sort="projectName" style="width:20%;">PROJE İÇERİK</th>
                                             <th class="sort white-space-nowrap align-middle ps-0" scope="col"
+                                            data-sort="projectName" style="width:20%;">PROJE Tipi</th>
+                                            <th class="sort white-space-nowrap align-middle ps-0" scope="col"
                                             data-sort="projectName" style="width:20%;">PROJE KONUM</th>
                                             <th class="sort white-space-nowrap align-middle ps-0" scope="col"
                                             data-sort="projectName" style="width:20%;">PROJE RESİM</th>
@@ -57,6 +59,7 @@
                                             <td>{{ $key + 1 }}</td>
                                             <td>{{ $project->project_title }}</td>
                                             <td>{{ $project->description }}</td>
+                                            <td>{{ $project->project_type }}</td>
                                             <td>{{ $project->slug }}</td>
                                             <td><img src="{{ url('uploads/' . $project->image) }}" alt="" style="" width="200px" height="100px"></td>
                                             <td>
