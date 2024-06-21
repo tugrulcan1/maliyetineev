@@ -531,6 +531,7 @@ Route::group(['prefix' => 'client', "as" => "client.", 'middleware' => ['client'
 });
 Route::get('/ekibimiz' ,[BlogController::class, 'asd'] );
 Route::get('/subelerimiz' ,[BranchController::class, 'asd'] );
+Route::get('/musterilerimize_mektup' ,[BranchController::class, 'musterilerimize_mektup'] );
 
 Route::get('/comments/index',[CommentController::class,'commentGet'])->name('comments.index');
 Route::post('/yorum/ekle',[CommentController::class,'addComment'])->name('add.comment');

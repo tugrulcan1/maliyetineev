@@ -26,6 +26,10 @@ class BranchController extends Controller
        return view('client.branchs',compact('branchs'));
     }
 
+    public function musterilerimize_mektup(){
+        return view('client.musterilerimize_mektup');
+    }//End
+
 
     public function create()
     {

@@ -45,7 +45,7 @@
                         <li><a href="{{$menus->href}}" style="color: #333">{{$menus->text}}</a></li>
                     @endforeach
                     <li><a href="/page/hakkimizda" style="color: #333">Hakkımızda</a></li>
-                    <li><a href="/comments/index" style="color: #333">Yorumlar</a></li>
+                    <li><a href="/musterilerimize_mektup" style="color: #333">Müşterilerimze Mektup</a></li>
                 </ul>
             </div>
 
@@ -72,7 +72,7 @@
                     @endif
                     <form method="POST" action="{{ route('footer.form.show') }}" class="position-relative">
                         @csrf
-                        <label for="">E-Mail Adresiniz</label>
+                        <label for="">E-Mail Adresinizi Giriniz</label>
 
                         <input
                             class="border-color-transparent-white-light  border-radius-4px w-100 form-control lg-ps-15px required fs-16  input-placeholder-black"
