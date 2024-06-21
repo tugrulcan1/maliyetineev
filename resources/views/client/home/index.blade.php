@@ -593,7 +593,7 @@
                                             </div>
                                         </div>
                                         <div class="col-lg-3 text-center text-lg-start md-mt-15px">
-                                            <span class="fs-19 ls-minus-05px fw-600 text-dark-gray d-block lh-28">{{$comment->title}}</span>
+                                            <span class="fs-19 ls-minus-05px fw-600 text-dark-gray d-block lh-28">{{$comment->full_name}}</span>
                                             <div></div>
                                         </div>
                                     </div>
