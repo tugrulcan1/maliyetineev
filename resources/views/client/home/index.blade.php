@@ -580,7 +580,7 @@
                                 <div class="swiper-slide">
                                     <div class="row align-items-center pt-25px pb-25px">
                                         <div class="col-lg-8 d-lg-flex align-items-center text-center text-lg-start">
-                                            <img src="uploads/{{$comment->image}}" class="rounded-circle w-100px h-100px md-mb-35px"
+                                            <img src="images/yildiz.png" class="rounded-circle w-100px h-100px md-mb-35px"
                                                 alt style="object-fit: cover !important;">
                                             <span style="" class="d-block ps-40px md-ps-0 md-mx-auto position-relative"><img
                                                     src="images/demo-accounting-home-quote-img.png"
