@@ -79,7 +79,7 @@
                             type="email" name="email" placeholder="Email Adresiniz" />
                         <input type="hidden" name="redirect" value>
                         <button class="btn pe-20px" aria-label="submit"><i
-                                class="fa fa-envelope icon-small "></i></button>
+                                class="fa fa-envelope icon-small " style="padding: 6px 5px 9px;"></i></button>
                         <div
                             class="form-results border-radius-4px pt-5px pb-5px ps-15px pe-15px fs-14 lh-22 mt-10px w-100 text-center position-absolute d-none">
                         </div>
