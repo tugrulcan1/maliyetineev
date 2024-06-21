@@ -356,7 +356,7 @@ footer .footer-logo img {
 .footer-dark p,
 .footer-dark .widget-text {
   color: var(--white);
-  opacity: 0.4;
+  /* opacity: 0.4; */
 }
 .footer-dark .elements-social .light li a {
   opacity: 1;
@@ -367,8 +367,8 @@ footer .footer-logo img {
 }
 .footer-dark ul li a,
 .footer-dark .widget-link {
-  color: var(--white);
-  opacity: 0.4;
+  /* color: var(--white); */
+  /* opacity: 0.4; */
 }
 .footer-dark ul li a:hover,
 .footer-dark .widget-link:hover,

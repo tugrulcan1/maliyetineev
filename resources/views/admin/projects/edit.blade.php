@@ -102,6 +102,12 @@
                                     @endforeach            
                             </div>
                         @endif
+                        <div class="mb-3">
+                            <label class="form-label" for="image">Kapak Görseli</label><br>
+                            <img src="{{ url('projects_cover_image/' . $project->cover_image) }}" alt=""
+                                style="width:150px;height:150px;"><br>
+                            <input type="file" class="mt-3" name="cover_image" id="">
+                        </div>
 
                         <div class="mb-3">
                             <label class="form-label" for="image">İmage</label><br>

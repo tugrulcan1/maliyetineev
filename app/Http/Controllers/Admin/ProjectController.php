@@ -175,6 +175,13 @@ class ProjectController extends Controller
             $dosya->move(public_path('uploads'), $dosyaAdi); // Dosyayı uploads klasörüne kaydet
         }
 
+        $kapak_gorseli = $request->file('cover_image');
+        
+        if($kapak_gorseli){
+            $kapak_gorseliAdi = $kapak_gorseli->getClientOriginalName();
+            $kapak_gorseli->move(public_path('projects_cover_image'), $kapak_gorseliAdi);
+        }
+
         $details = [];
         for ($i = 1; $i <= 4; $i++) {
             $detailTitle = $request->input("project_detail_title$i");
@@ -201,14 +208,15 @@ class ProjectController extends Controller
         }
 
         $project->update([
-            'project_title' => $request->input('project_title'),
+            'project_title'     => $request->input('project_title'),
             'project_sub_title' => $request->input('project_sub_title'),
-            'project_type' => $request->input('project_type'),
-            'description' => $request->input('description'),
-            'slug' => $request->input('slug'),
-            'image' => $dosyaAdi,
-            'details' => $detailsJson,
-            'konum'   =>$request->input('konum')
+            'project_type'      => $request->input('project_type'),
+            'description'       => $request->input('description'),
+            'slug'              => $request->input('slug'),
+            'image'             => $dosyaAdi,
+            'details'           => $detailsJson,
+            'konum'             =>$request->input('konum'),
+            'cover_image'       => $kapak_gorseliAdi
         ]);
 
         // Floor Plans güncelleme işlemi

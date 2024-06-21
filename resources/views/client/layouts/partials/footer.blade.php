@@ -4,7 +4,7 @@
             <div class="row align-items-center justify-content-center">
                 <div class="col-xl-6 text-center text-xl-start lg-mb-30px sm-mb-20px">
                     <h3 class="mb-5px fw-500 ls-minus-1px" style="color:#333 !important">Aklınıza takılan soru mu var?</h3>
-                    <span class="fs-20 widget-text fw-300">Bizimle iletişime geçebilirsiniz.</span>
+                    <span class="fs-20 fw-300" style="color:#333 !important">Bizimle iletişime geçebilirsiniz.</span>
                 </div>
                 <div class="col-xl-6 text-center text-xl-end">
                     <a href="mailto:{{$settings['e-mail']}}"
@@ -26,7 +26,7 @@
                 <a href="demo-accounting.html" class="footer-logo mb-5px d-inline-block">
                     <img src="{{ asset('images/maliyetineevlogo.png') }}" >
                 </a>
-                <p class="w-85 xl-w-95 sm-w-100" style="color:#333">Maliyetine Ev Sahibi Olmak Herkesin Hakkı</p>
+                <span class="w-85 xl-w-95 sm-w-100" style="color:#333 !important;display:block">Maliyetine Ev Sahibi Olmak Herkesin Hakkı</span>
                 <div class="elements-social social-icon-style-02 mt-20px lg-mt-20px">
                     <ul class="small-icon light">
                         @foreach($socialMediaIcons as $SocialMediaIcon)
@@ -39,27 +39,27 @@
 
 
             <div class="col-12 col-lg-2 col-sm-4 xs-mb-30px order-sm-3 order-lg-2" style="width: 390px !important">
-                <span class="fs-18 fw-400 d-block text-white mb-5px">Hızlı Link</span>
+                <span class="fs-18 fw-400 d-block mb-5px" style="color: #333">Hızlı Link</span>
                 <ul class="menu-list">
                     @foreach ($menu as $menus)
-                        <li><a href="{{$menus->href}}">{{$menus->text}}</a></li>
+                        <li><a href="{{$menus->href}}" style="color: #333">{{$menus->text}}</a></li>
                     @endforeach
-                    <li><a href="/page/hakkimizda">Hakkımızda</a></li>
-                    <li><a href="/comments/index">Yorumlar</a></li>
+                    <li><a href="/page/hakkimizda" style="color: #333">Hakkımızda</a></li>
+                    <li><a href="/comments/index" style="color: #333">Yorumlar</a></li>
                 </ul>
             </div>
 
 
             <div class="col-12 col-lg-2 col-sm-4 xs-mb-30px order-sm-5 order-lg-4">
-                <span class="fs-18 fw-400 d-block text-white mb-5px">İletişim</span>
-                <a href="tel:{{$settings['phone']}}" style="color: white;">{{$settings['phone']}}</a>
-                <a href="mailto:{{$settings['e-mail']}}" class="text-white lh-16 d-block">{{$settings['e-mail']}}</a>
+                <span class="fs-18 fw-400 d-block mb-5px" style="color: #333">İletişim</span>
+                <a href="tel:{{$settings['phone']}}" style="color: #333;">{{$settings['phone']}}</a>
+                <a href="mailto:{{$settings['e-mail']}}" class="lh-16 d-block" style="color: #333">{{$settings['e-mail']}}</a>
             </div>
 
 
             <div class="col-lg-3 col-sm-12 md-mb-40px xs-mb-0 order-sm-2 order-lg-5">
-                <span class="fs-18 fw-400 d-block text-white mb-5px">Mail gönderin</span>
-                <p class="mb-20px">En kısa sürede dönüş yapacağız.</p>
+                <span class="fs-18 fw-400 d-block mb-5px" style="color: #333">Mail gönderin</span>
+                <p class="mb-20px" style="color: #333">En kısa sürede dönüş yapacağız.</p>
                 <div class="d-inline-block w-100 newsletter-style-02 position-relative">
                     @if ($errors->any())
                         <div class="alert alert-danger">
@@ -72,12 +72,14 @@
                     @endif
                     <form method="POST" action="{{ route('footer.form.show') }}" class="position-relative">
                         @csrf
+                        <label for="">E-Mail Adresiniz</label>
+
                         <input
-                            class="border-color-transparent-white-light bg-transparent border-radius-4px w-100 form-control lg-ps-15px required fs-16"
+                            class="border-color-transparent-white-light  border-radius-4px w-100 form-control lg-ps-15px required fs-16  input-placeholder-black"
                             type="email" name="email" placeholder="Email Adresiniz" />
                         <input type="hidden" name="redirect" value>
                         <button class="btn pe-20px" aria-label="submit"><i
-                                class="fa fa-envelope icon-small text-white"></i></button>
+                                class="fa fa-envelope icon-small "></i></button>
                         <div
                             class="form-results border-radius-4px pt-5px pb-5px ps-15px pe-15px fs-14 lh-22 mt-10px w-100 text-center position-absolute d-none">
                         </div>
