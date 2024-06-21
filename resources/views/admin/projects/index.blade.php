@@ -135,18 +135,25 @@
                                                                     @php 
                                                                         $floorPlans = DB::table('floor_plans')->where('project_id',$project->id)->get();
                                                                     @endphp
-                                                                    @foreach ($floorPlans as $floorPlan)
-                                                                    <div class="col-md-4">
-                                                                        <span style="margin-top:250px;margin-left:15px; ">
-                                                                        {{$floorPlan->floor_plan}}
+                                                                        @foreach ($floorPlans as $floorPlan)
+                                                                        <div class="col-md-4">
+                                                                            <span style="margin-top:250px;margin-left:15px; ">
+                                                                            {{$floorPlan->floor_plan}}
 
-                                                                        </span>
-                                                                    </div>
-                                                                    <div class="col-md-6">
-                                                                        <img src="{{ asset('kat_plani/'.$floorPlan->image_path) }}" alt="Kat Planı
-                                                                        Resmi" class="img-fluid">
-                                                                    </div>
-                                                                    @endforeach
+                                                                            </span>
+                                                                        </div>
+                                                                        <div class="col-md-5">
+                                                                            <img src="{{ asset('kat_plani/'.$floorPlan->image_path) }}" alt="Kat Planı
+                                                                            Resmi" class="img-fluid">
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <form action="{{ route('admin.delete.project.floor.plan', $floorPlan->id) }}" method="POST" class="d-inline">
+                                                                                @csrf
+                                                                                @method('DELETE')
+                                                                                <button type="submit" class="btn btn-sm btn-danger">Sil</button>
+                                                                            </form>
+                                                                        </div>
+                                                                        @endforeach
                                                                 </div>
                                                                 <form
                                                                     action="{{ route('admin.add.project.floor.plan', $project->id) }}"

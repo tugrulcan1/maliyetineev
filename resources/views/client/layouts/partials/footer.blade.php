@@ -1,43 +1,38 @@
-<footer class="footer-dark bg-dark-gray pt-0 lg-pb-35px"  style="padding-bottom: 10px !important; padding-top:10px !important;" >
-    <div
-        class="footer-top  sm-pt-35px sm-pb-35px border-bottom border-1 border-color-transparent-white-light" style="margin-top:20px; padding-bottom:10px !important; padding-top:0px !important;">
+<footer class="footer-dark pt-0 lg-pb-35px"  style="padding-bottom: 10px !important; padding-top:10px !important;background-color:#dddddd" >
+    <div class="footer-top  sm-pt-35px sm-pb-35px border-bottom border-1 border-color-transparent-white-light" style="margin-top:20px; padding-bottom:10px !important; padding-top:0px !important;">
         <div class="container">
             <div class="row align-items-center justify-content-center">
-
                 <div class="col-xl-6 text-center text-xl-start lg-mb-30px sm-mb-20px">
-                    <h3 class="text-white mb-5px fw-500 ls-minus-1px">Aklınıza takılan soru mu var?</h3>
+                    <h3 class="mb-5px fw-500 ls-minus-1px" style="color:#333 !important">Aklınıza takılan soru mu var?</h3>
                     <span class="fs-20 widget-text fw-300">Bizimle iletişime geçebilirsiniz.</span>
                 </div>
-
-
                 <div class="col-xl-6 text-center text-xl-end">
                     <a href="mailto:{{$settings['e-mail']}}"
                         style="background: #0f75bc !important; color: white !important;"
-                        class="btn btn-extra-large btn-yellow left-icon btn-box-shadow btn-rounded text-transform-none d-inline-block align-middle me-15px xs-m-10px"><i
-                            class="fa fa-envelope"></i>{{$settings['e-mail']}}</a>
+                        class="btn btn-extra-large btn-yellow left-icon btn-box-shadow btn-rounded text-transform-none d-inline-block align-middle me-15px xs-m-10px">
+                        <i class="fa fa-envelope"></i>{{$settings['e-mail']}}
+                    </a>
                     <a href="tel:12345678910" style="background-color:rgb(230, 71, 71)"
-                        class="btn btn-extra-large btn-base-color left-icon btn-box-shadow btn-rounded d-inline-block align-middle xs-m-10px"><i
-                            class="fa fa-phone"></i>{{$settings['phone']}}</a>
+                        class="btn btn-extra-large btn-base-color left-icon btn-box-shadow btn-rounded d-inline-block align-middle xs-m-10px">
+                        <i class="fa fa-phone"></i>{{$settings['phone']}}
+                    </a>
                 </div>
-
             </div>
         </div>
     </div>
     <div class="container">
         <div class="row justify-content-center fs-17 fw-300 md-mt-45px md-mb-45px xs-mt-35px xs-mb-35px" style="margin-top: 10px !important;" >
-
             <div class="col-12 col-lg-3 order-sm-1 md-mb-40px xs-mb-30px last-paragraph-no-margin">
                 <a href="demo-accounting.html" class="footer-logo mb-5px d-inline-block">
                     <img src="{{ asset('images/maliyetineevlogo.png') }}" >
                 </a>
-                <p class="w-85 xl-w-95 sm-w-100">Maliyetine Ev Sahibi Olmak Herkesin Hakkı</p>
+                <p class="w-85 xl-w-95 sm-w-100" style="color:#333">Maliyetine Ev Sahibi Olmak Herkesin Hakkı</p>
                 <div class="elements-social social-icon-style-02 mt-20px lg-mt-20px">
                     <ul class="small-icon light">
                         @foreach($socialMediaIcons as $SocialMediaIcon)
                             <li><a class="facebook" href="{{$SocialMediaIcon->url}}" target="_blank"><i
                                         class="fa-brands {{$SocialMediaIcon->icon_class}}"></i></a></li>
                         @endforeach
-
                     </ul>
                 </div>
             </div>

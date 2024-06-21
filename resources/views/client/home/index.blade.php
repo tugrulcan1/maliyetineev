@@ -180,13 +180,18 @@
                                                 <img src="{{ asset('projects_cover_image/' . $project->cover_image) }}" alt="Resim bulunamadı"
                                                     style="height: 400px; object-fit: cover;" />
                                             </a>
-                                            <figcaption
-                                                class="d-flex flex-column align-items-start justify-content-center position-absolute left-0px top-0px w-100 h-100 z-index-1 p-14 lg-p-12">
+                                            <figcaption class="d-flex flex-column align-items-start justify-content-center position-absolute left-0px top-0px w-100 h-100 z-index-1 p-14 lg-p-12">
                                                 <a href="{{route('projelerimiz.show',$project->id)}}"
                                                     target="_blank" style="cursor: pointer">
                                                     <!-- <i class="line-icon-Medal-2 text-white icon-extra-large"></i> -->
                                                 </a>
+                                                <a href="{{route('projelerimiz.show',$project->id)}}" target="_blank"
+                                                    class="circle-box bg-yellow w-50px h-50px rounded-circle" style=" position: absolute;bottom: 120px;right: 15px; z-index: 2;">
+                                                    <i class="bi bi-arrow-right-short absolute-middle-center icon-very-medium lh-0px text-dark-gray"></i>
+                                                </a>
+                                            
                                                 <div class="mt-auto d-flex w-100 align-items-center">
+                                                    
                                                     <div class="col project-tt last-paragraph-no-margin truncate-text">
                                                         <a href="{{route('projelerimiz.show',$project->id)}}"
                                                             target="_blank"
@@ -197,12 +202,7 @@
                                                             {{$project->project_sub_title}}</p>
 
                                                     </div>
-                                                    <a href="{{route('projelerimiz.show',$project->id)}}"
-                                                        target="_blank"
-                                                        class="circle-box bg-yellow w-50px h-50px rounded-circle ms-auto position-relative rounded-box">
-                                                        <i
-                                                            class="bi bi-arrow-right-short absolute-middle-center icon-very-medium lh-0px text-dark-gray"></i>
-                                                    </a>
+                                                
                                                 </div>
                                                 <div
                                                     class="position-absolute left-0px top-0px w-100 h-100 bg-gradient-gray-light-dark-transparent z-index-minus-1 opacity-9">
@@ -537,101 +537,101 @@
 
         <div class="container">
 
-        <h3 class="text-dark-gray fw-700" style="text-align: center;">{{$settings['section_8_title']}}</h3>
-            <span style="margin-left:130px " class="fw-600">{{$settings['section_8_small_title']}}</span>
-        <div class="row mt-3">
+            <h3 class="text-dark-gray fw-700" style="text-align: center;">{{$settings['section_8_title']}}</h3>
+                <span style="margin-left:130px " class="fw-600">{{$settings['section_8_small_title']}}</span>
+            <div class="row mt-3">
 
-        <div class="col-sm  mb-4" style="text-align: center;">
-            <div>
-                <img src="/images/trust.png" alt="" style="height: 100px;">
-                <p class="text-dark-gray fw-700 baslikP" style="font-size: 20px; margin: 0; padding: 0; color: #333; font-size: 16px;">{{$settings['section_8_1']}}</p>
-                <p style="font-size: 12px;font-weight: normal;line-height: 20px;color: #647589">{{$settings['section_8_1.1']}}</p>
+            <div class="col-sm  mb-4" style="text-align: center;">
+                <div>
+                    <img src="/images/trust.png" alt="" style="height: 100px;">
+                    <p class="text-dark-gray fw-700 baslikP" style="font-size: 20px; margin: 0; padding: 0; color: #333; font-size: 16px;">{{$settings['section_8_1']}}</p>
+                    <p style="font-size: 12px;font-weight: normal;line-height: 20px;color: #647589">{{$settings['section_8_1.1']}}</p>
+                </div>
             </div>
-        </div>
-        <div class="col-sm  mb-4" style="text-align: center;">
-            <div>
-                <img src="/images/budget.png" alt="" style="height: 100px; ">
-                <p class="text-dark-gray fw-700" style="font-size: 20px; margin: 0; padding: 0; color: #333; font-size: 16px;">{{$settings['section_8_2']}}
-                </p>
-                <p style="font-size: 12px;font-weight: normal;line-height: 20px;color: #647589">{{$settings['section_8_2.1']}}</p>
+            <div class="col-sm  mb-4" style="text-align: center;">
+                <div>
+                    <img src="/images/budget.png" alt="" style="height: 100px; ">
+                    <p class="text-dark-gray fw-700" style="font-size: 20px; margin: 0; padding: 0; color: #333; font-size: 16px;">{{$settings['section_8_2']}}
+                    </p>
+                    <p style="font-size: 12px;font-weight: normal;line-height: 20px;color: #647589">{{$settings['section_8_2.1']}}</p>
+                </div>
             </div>
-        </div>
-        <div class="col-sm  mb-4" style="text-align: center;">
-            <div>
-                <img src="/images/bank.png" alt="" style="height: 100px; ">
-                <p class="text-dark-gray fw-700" style="font-size: 20px; margin: 0; padding: 0; color: #333; font-size: 16px;">{{$settings['section_8_3']}}
-                </p>
-                <p style="font-size: 12px;font-weight: normal;line-height: 20px;color: #647589">{{$settings['section_8_3.1']}}</p>
+            <div class="col-sm  mb-4" style="text-align: center;">
+                <div>
+                    <img src="/images/bank.png" alt="" style="height: 100px; ">
+                    <p class="text-dark-gray fw-700" style="font-size: 20px; margin: 0; padding: 0; color: #333; font-size: 16px;">{{$settings['section_8_3']}}
+                    </p>
+                    <p style="font-size: 12px;font-weight: normal;line-height: 20px;color: #647589">{{$settings['section_8_3.1']}}</p>
+                </div>
             </div>
-        </div>
-        <div class="col-sm  mb-4" style="text-align: center;">
-            <div>
-                <img src="/images/timing.png" alt="" style="height: 100px;">
-                <p class="text-dark-gray fw-700"   style="font-size: 20px; margin: 0; padding: 0; color: #333; font-size: 16px;">{{$settings['section_8_4']}}
-                </p>
-                <p style="font-size: 12px;font-weight: normal;line-height: 20px;color: #647589">{{$settings['section_8_4.1']}}</p>
+            <div class="col-sm  mb-4" style="text-align: center;">
+                <div>
+                    <img src="/images/timing.png" alt="" style="height: 100px;">
+                    <p class="text-dark-gray fw-700"   style="font-size: 20px; margin: 0; padding: 0; color: #333; font-size: 16px;">{{$settings['section_8_4']}}
+                    </p>
+                    <p style="font-size: 12px;font-weight: normal;line-height: 20px;color: #647589">{{$settings['section_8_4.1']}}</p>
+                </div>
             </div>
-        </div>
-        <div class="col-sm  mb-4" style="text-align: center;">
-            <div>
-                <img src="/images/smartphone.png" alt="" style="height: 100px; ">
-                <p class="text-dark-gray fw-700"  style="font-size: 20px; margin: 0; padding: 0; color: #333; font-size: 16px;">{{$settings['section_8_5']}}</p>
-                <p style="font-size: 12px;font-weight: normal;line-height: 20px;color: #647589">{{$settings['section_8_5.1']}}</p>
+            <div class="col-sm  mb-4" style="text-align: center;">
+                <div>
+                    <img src="/images/smartphone.png" alt="" style="height: 100px; ">
+                    <p class="text-dark-gray fw-700"  style="font-size: 20px; margin: 0; padding: 0; color: #333; font-size: 16px;">{{$settings['section_8_5']}}</p>
+                    <p style="font-size: 12px;font-weight: normal;line-height: 20px;color: #647589">{{$settings['section_8_5.1']}}</p>
+                </div>
             </div>
-        </div>
-        </div>
-            <div class="row m-0 align-items-center justify-content-center border border-color-extra-medium-gray border-radius-100px md-border-radius-6px ps-10px pe-10px box-shadow-quadruple-large"
-                data-anime="{ &quot;scale&quot;: [1.1, 1], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 800, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
-                <div class="col-lg-10">
-                    <div class="swiper slider-one-slide testimonials-style-09"
-                        data-slider-options="{ &quot;slidesPerView&quot;: 1, &quot;loop&quot;: true, &quot;autoplay&quot;: { &quot;delay&quot;: 4000, &quot;disableOnInteraction&quot;: false }, &quot;navigation&quot;: { &quot;nextEl&quot;: &quot;.slider-one-slide-next-1&quot;, &quot;prevEl&quot;: &quot;.slider-one-slide-prev-1&quot; }, &quot;keyboard&quot;: { &quot;enabled&quot;: true, &quot;onlyInViewport&quot;: true }, &quot;effect&quot;: &quot;slide&quot; }">
-                        <div class="swiper-wrapper">
+            </div>
+                <div class="row m-0 align-items-center justify-content-center border border-color-extra-medium-gray border-radius-100px md-border-radius-6px ps-10px pe-10px box-shadow-quadruple-large"
+                    data-anime="{ &quot;scale&quot;: [1.1, 1], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 800, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
+                    <div class="col-lg-10">
+                        <div class="swiper slider-one-slide testimonials-style-09"
+                            data-slider-options="{ &quot;slidesPerView&quot;: 1, &quot;loop&quot;: true, &quot;autoplay&quot;: { &quot;delay&quot;: 4000, &quot;disableOnInteraction&quot;: false }, &quot;navigation&quot;: { &quot;nextEl&quot;: &quot;.slider-one-slide-next-1&quot;, &quot;prevEl&quot;: &quot;.slider-one-slide-prev-1&quot; }, &quot;keyboard&quot;: { &quot;enabled&quot;: true, &quot;onlyInViewport&quot;: true }, &quot;effect&quot;: &quot;slide&quot; }">
+                            <div class="swiper-wrapper">
 
-                        @foreach($comments as $comment)
+                            @foreach($comments as $comment)
 
-                            <div class="swiper-slide">
-                                <div class="row align-items-center pt-25px pb-25px">
-                                    <div class="col-lg-8 d-lg-flex align-items-center text-center text-lg-start">
-                                        <img src="uploads/{{$comment->image}}" class="rounded-circle w-100px h-100px md-mb-35px"
-                                            alt style="object-fit: cover !important;">
-                                        <span style="" class="d-block ps-40px md-ps-0 md-mx-auto position-relative"><img
-                                                src="images/demo-accounting-home-quote-img.png"
-                                                class="position-absolute left-minus-25px top-minus-15px lg-top-minus-5px md-top-minus-50px w-40px md-left-0px md-right-0px md-mx-auto"
-                                                alt>{!!$comment->content!!}</span>
-                                    </div>
-                                    <div class="col-lg-1 d-none d-lg-inline-block">
-                                        <div
-                                            class="separator-line w-1px md-w-100 h-60px md-h-1px bg-extra-medium-gray mx-auto">
+                                <div class="swiper-slide">
+                                    <div class="row align-items-center pt-25px pb-25px">
+                                        <div class="col-lg-8 d-lg-flex align-items-center text-center text-lg-start">
+                                            <img src="uploads/{{$comment->image}}" class="rounded-circle w-100px h-100px md-mb-35px"
+                                                alt style="object-fit: cover !important;">
+                                            <span style="" class="d-block ps-40px md-ps-0 md-mx-auto position-relative"><img
+                                                    src="images/demo-accounting-home-quote-img.png"
+                                                    class="position-absolute left-minus-25px top-minus-15px lg-top-minus-5px md-top-minus-50px w-40px md-left-0px md-right-0px md-mx-auto"
+                                                    alt>{!!$comment->content!!}</span>
+                                        </div>
+                                        <div class="col-lg-1 d-none d-lg-inline-block">
+                                            <div
+                                                class="separator-line w-1px md-w-100 h-60px md-h-1px bg-extra-medium-gray mx-auto">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 text-center text-lg-start md-mt-15px">
+                                            <span class="fs-19 ls-minus-05px fw-600 text-dark-gray d-block lh-28">{{$comment->title}}</span>
+                                            <div></div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-3 text-center text-lg-start md-mt-15px">
-                                        <span class="fs-19 ls-minus-05px fw-600 text-dark-gray d-block lh-28">{{$comment->title}}</span>
-                                        <div></div>
-                                    </div>
                                 </div>
+                                @endforeach
+
+
+
                             </div>
-                            @endforeach
+                        </div>
+                    </div>
+                    <div class="col-lg-2 md-mb-25px">
+                        <div class="d-flex justify-content-center">
 
-
+                            <div
+                                class="slider-one-slide-prev-1 swiper-button-prev slider-navigation-style-04 bg-very-light-gray">
+                                <i class="fa-solid fa-arrow-left icon-small text-dark-gray"></i>
+                            </div>
+                            <div
+                                class="slider-one-slide-next-1 swiper-button-next slider-navigation-style-04 bg-very-light-gray">
+                                <i class="fa-solid fa-arrow-right icon-small text-dark-gray"></i>
+                            </div>
 
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-2 md-mb-25px">
-                    <div class="d-flex justify-content-center">
-
-                        <div
-                            class="slider-one-slide-prev-1 swiper-button-prev slider-navigation-style-04 bg-very-light-gray">
-                            <i class="fa-solid fa-arrow-left icon-small text-dark-gray"></i>
-                        </div>
-                        <div
-                            class="slider-one-slide-next-1 swiper-button-next slider-navigation-style-04 bg-very-light-gray">
-                            <i class="fa-solid fa-arrow-right icon-small text-dark-gray"></i>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
         </div>
 
     <section style="padding: 0 !important; margin-bottom: 50px;margin-top:50px; ">
@@ -651,6 +651,24 @@
     text-overflow: ellipsis;
     max-height: 2.8em; /* line-height * line-clamp */
     line-height: 1.4em; /* adjust based on font-size */
+}
+
+.position-relative .circle-box {
+    position: absolute;
+    bottom: 20px; /* Div'in hemen üstünde hizalanması için uygun değeri ayarlayın */
+    right: 15px;  /* Sağ tarafta hizalanması için uygun değeri ayarlayın */
+    z-index: 2;
+}
+
+.figure-caption {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding: 14px;
+    z-index: 1;
 }
 
 </style>

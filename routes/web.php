@@ -116,7 +116,7 @@ Route::group(['prefix' => 'admin', "as" => "admin.", 'middleware' => ['admin']],
     Route::middleware(['checkPermission:GetHousingTypeForm'])->group(function () {
         Route::get('/housing_types/getForm/', [HousingTypeController::class, 'getHousingTypeForm'])->name('ht.getform');
 });
-
+    Route::delete('/admin/floor-plan/{id}', [ProjectController::class, 'deleteFloorPlan'])->name('delete.project.floor.plan');
     // Housing Type Controller İzin Kontrolleri
     Route::middleware(['checkPermission:CreateHousingType'])->group(function () {
         Route::get('/housing_types/create', [HousingTypeController::class, 'create'])->name('housing_types.create');

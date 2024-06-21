@@ -287,4 +287,21 @@ class ProjectController extends Controller
 
     }//End
 
+    public function deleteFloorPlan($id){
+        $floorPlan = FloorPlan::find($id);
+        
+        if ($floorPlan) {
+            // Kat planı dosyasını silmek için
+            $imagePath = public_path('kat_plani/' . $floorPlan->image_path);
+            if (file_exists($imagePath)) {
+                unlink($imagePath);
+            }
+
+            $floorPlan->delete();
+            return redirect()->back()->with('success', 'Kat planı başarıyla silindi.');
+        } else {
+            return redirect()->back()->with('error', 'Kat planı bulunamadı.');
+        }
+    }
+
 }
