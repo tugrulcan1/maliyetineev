@@ -118,11 +118,11 @@ class CommentController extends Controller
         // print_r($request->all());die;
 
         
-        if ($request->hasFile('file')) {
-            $file = $request->file('file');
-            $fileName = time() . '_' . $file->getClientOriginalName();
-            $file->move(public_path('kullanici_gorselleri'), $fileName);
-        }    
+        // if ($request->hasFile('file')) {
+        //     $file = $request->file('file');
+        //     $fileName = time() . '_' . $file->getClientOriginalName();
+        //     $file->move(public_path('kullanici_gorselleri'), $fileName);
+        // }    
 
 
         $comment = new Comment();
@@ -131,7 +131,7 @@ class CommentController extends Controller
         $comment->phone = $request->input('phone');
         $comment->title = $request->input('title');
         $comment->content = $request->input('comment');
-        $comment->image = $fileName ?? '';
+        // $comment->image = $fileName ?? '';
         $comment->approval_status = 0;
 
         $comment->save();

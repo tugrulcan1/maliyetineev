@@ -14,11 +14,12 @@
                         
                         <div class="row align-items-center pt-25px pb-25px commentDiv" style="">
                             <div class="col-lg-8 d-lg-flex align-items-center text-center text-lg-start">
-                                @if ($comment->image)
+                                {{-- @if ($comment->image)
                                         <img src="{{ asset('kullanici_gorselleri/' . $comment->image) }}" alt="User Image" style="width: 60px; height: 70px; border-radius: 50%; margin-right: 10px;">
                                     @else
                                     <i class="fa-solid fa-star" style="font-size:24px;margin-left:10px;"></i>
-                                    @endif
+                                    @endif --}}
+                                    <img src="{{ asset('images/yildiz.png') }}" style="max-width: 50px;">
                                 <span style="" class="d-block ps-40px md-ps-0 md-mx-auto position-relative">{{$comment->content}}</span>
                             </div>
                             <div class="col-lg-1 d-none d-lg-inline-block">
@@ -72,11 +73,11 @@
                             <span class="form-icon"><i class="fa fa-envelope"></i></span>
                             <textarea name="comment" id="comment" cols="20" rows="4"></textarea>
                         </div>
-                        <div class="mb-20px custom-file-input">
+                        {{-- <div class="mb-20px custom-file-input">
                             <label class="custom-file-label" for="fileInput">Dosya Seç</label>
                             <input type="file" id="fileInput" name="file" onchange="updateFileName(this)">
                             <div class="file-name" id="file-name">Lütfen fotoğrafınızı giriniz</div>
-                        </div>
+                        </div> --}}
                         
                         {{-- <div class="position-relative terms-condition-box text-start d-inline-block">
                                 <input type="checkbox" name="terms_condition" id="terms_condition" value="1"

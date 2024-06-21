@@ -49,10 +49,10 @@
                             <label class="custom-file-label" style="display: block" for="fileInput">Yorumu Giriniz</label>
                             <textarea name="comment" id="comment" cols="50" rows="14"></textarea>
                         </div>
-                        <div class="mb-20px custom-file-input">
+                        {{-- <div class="mb-20px custom-file-input">
                             <label class="form-label" for="fileInput">Dosya Seç</label>
                             <input type="file" id="fileInput" name="file" onchange="updateFileName(this)">
-                        </div>
+                        </div> --}}
                         <div class="position-relative mt-20px mb-5">
                             <button class="btn btn-large btn-round-edge btn-box-shadow w-100" style="background-color: #0f75bc;color:white;border-radius:12px;"
                                 type="submit">Gönder</button>

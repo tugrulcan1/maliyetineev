@@ -27,8 +27,9 @@
         <div class="row justify-content-center fs-17 fw-300 md-mt-45px md-mb-45px xs-mt-35px xs-mb-35px" style="margin-top: 10px !important;" >
 
             <div class="col-12 col-lg-3 order-sm-1 md-mb-40px xs-mb-30px last-paragraph-no-margin">
-                <a href="demo-accounting.html" class="footer-logo mb-15px d-inline-block"><img
-                        src="{{ asset('images/logomev.png') }}" alt></a>
+                <a href="demo-accounting.html" class="footer-logo mb-5px d-inline-block">
+                    <img src="{{ asset('images/maliyetineevlogo.png') }}" >
+                </a>
                 <p class="w-85 xl-w-95 sm-w-100">Maliyetine Ev Sahibi Olmak Herkesin Hakkı</p>
                 <div class="elements-social social-icon-style-02 mt-20px lg-mt-20px">
                     <ul class="small-icon light">

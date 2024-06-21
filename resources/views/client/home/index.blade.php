@@ -3,8 +3,6 @@
 
 @section('content')
 
-
-
 @foreach($sliders as $slider)
     <section class="top-space-margin p-0 full-screen md-h-600px sm-h-500px section-dark position-relative"
             data-parallax-background-ratio="0.8" style="background-image: url('images/{{$slider->image}}')">
@@ -13,89 +11,10 @@
                     <div class="row align-items-center h-100">
                         <div class="col-xl-7 col-md-9 col-sm-9 position-relative text-white"
                             data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;opacity&quot;: [0, 1], &quot;translateY&quot;: [30, 0], &quot;staggervalue&quot;: 200, &quot;easing&quot;: &quot;easeInOutSine&quot; }">
-                            <!-- <div class="fs-80 lh-75 sm-fs-65 fw-600 mb-20px text-shadow-large ls-minus-2px">Crafto expand
-                                business values.</div>
-                            <div>
-                                <span class="opacity-5 fs-20 w-70 md-w-85 mb-25px fw-300 d-inline-block">We are dedicated to
-                                    providing amazing business accounting services and client service.</span>
-                            </div> -->
-                            <!-- <div class="icon-with-text-style-08">
-                                    <div class="feature-box feature-box-left-icon-middle">
-                                        <div
-                                            class="feature-box-icon feature-box-icon-rounded w-65px h-65px rounded-circle bg-yellow me-15px rounded-box">
-                                            <i class="feather icon-feather-arrow-right text-dark-gray icon-extra-medium"></i>
-                                        </div>
-                                        <div class="feature-box-content">
-                                            <a href="#services"
-                                                class="d-inline-block fs-19 text-white text-shadow-double-large">Explore
-                                                services</a>
-                                        </div>
-                                    </div> -->
                         </div>
-
                     </div>
                 </div>
             </div>
-            {{-- <div class="row bg-very-light-gray m-0 align-items-center justify-content-center text-center text-lg-start position-absolute "
-                style="bottom: 0; width: 100%; padding: 20px 0; background-color: rgba(1, 51, 85, 0.3); align-items: center;">
-
-
-                <div class="col-12 col-md-3 jnm">
-                    <h4
-                        style="color: white; display: flex; justify-content: center; margin: 0; padding: 0; font-weight: 900;">
-                        Maliyetine Ev'de </h4>
-                </div>
-                <div class="col-6 col-md-2 jnm">
-                    <div style="">
-                        <div style="display: flex;">
-                            <div style="background-color: green; padding: 10px; border-radius: 20px 0px 0px 0px; "> <i
-                                    class="fa-solid fa-check" style="color: white;"></i>
-                            </div>
-                            <div
-                                style="background-color: white; padding: 10px; flex-grow: 1; border-radius: 0px 0px 20px 0px; color: #333;">
-                            {{$settings['section_2.1']}}</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-2 jnm">
-                    <div style=" ">
-                        <div style="display: flex;">
-                            <div style="background-color: green; padding: 10px; border-radius: 20px 0px 0px 0px;"> <i
-                                    class="fa-solid fa-check" style="color: white;"></i>
-                            </div>
-                            <div
-                                style="background-color: white; padding: 10px; flex-grow: 1; border-radius: 0px 0px 20px 0px; color: #333;">
-                                {{$settings['section_2.2']}}</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-2 jnm">
-                    <div style="">
-                        <div style="display: flex; ">
-                            <div style="background-color: green; padding: 10px; border-radius: 20px 0px 0px 0px"> <i
-                                    class="fa-solid fa-check" style="color: white;"></i>
-                            </div>
-                            <div
-                                style="background-color: white; padding: 10px; flex-grow: 1; border-radius: 0px 0px 20px 0px; color: #333;">
-                                {{$settings['section_2.3']}}</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-2 jnm">
-                    <div style=" ">
-                        <div style="display: flex;">
-                            <div style="background-color: green; padding: 10px; border-radius: 20px 0px 0px 0px"> <i
-                                    class="fa-solid fa-check" style="color: white;"></i>
-                            </div>
-                            <div
-                                style="background-color: white; padding: 10px; flex-grow: 1; border-radius: 0px 0px 20px 0px; color: #333; white-space: nowrap;">
-                                {{$settings['section_2.4']}}</div>
-                        </div>
-                    </div>
-                </div>
-            </div> --}}
-
-
                 <div class="contact-form-style-01" style="position: absolute;width:400px">
                     <div class="ps-8 pe-8 pt-8 pb-8 lg-p-8 bg-white box-shadow-quadruple-large border-radius-6px">
                         <h6 class="d-inline-block fw-600 text-dark-gray ls-minus-1px mb-35px sm-mb-25px"
@@ -271,10 +190,10 @@
                                                     <div class="col project-tt last-paragraph-no-margin truncate-text">
                                                         <a href="{{route('projelerimiz.show',$project->id)}}"
                                                             target="_blank"
-                                                            class="text-white fs-24 lh-28  xl-w-75 d-block"
-                                                            style="color: white;cursor: pointer;">{{$project->project_title}}</a>
+                                                            class="text-white lh-28  xl-w-75 d-block"
+                                                            style="color: white;cursor: pointer;font-size:15px">{{$project->project_title}}</a>
 
-                                                        <p class="" style="color: white; margin: 0; padding: 0; font-size: 14px;">
+                                                        <p class="clamp-text" style="color: white; margin: 0; padding: 0; font-size: 14px;">
                                                             {{$project->project_sub_title}}</p>
 
                                                     </div>
@@ -348,7 +267,7 @@
                                             planning</span>
                                     </div> -->
                                     <h4 class="fw-700 text-dark-gray ls-minus-1px md-mb-20px">{{$settings['section_5_1']}}</h4>
-                                    <p class="mb-35px md-mb-25px">{{$settings['section_5_1_content']}} </p>
+                                    <p class="mb-35px md-mb-25px" style="color: #647589">{{$settings['section_5_1_content']}} </p>
                                     <!-- <a href="demo-accounting-services.html"
                                         class="btn btn-large btn-rounded with-rounded btn-white btn-box-shadow fw-600">Learn
                                         more<span class="bg-base-color text-white"><i
@@ -374,7 +293,7 @@
                                                 assurance</span>
                                         </div> -->
                                     <h4 class="fw-700 text-dark-gray ls-minus-1px md-mb-20px">{{$settings['section_5_2']}}</h4>
-                                    <p class="mb-35px md-mb-25px">{{$settings['section_5_2_content']}}
+                                    <p class="mb-35px md-mb-25px" style="color: #647589">{{$settings['section_5_2_content']}}
                                     </p>
                                     <!-- <a href="demo-accounting-services.html"
                                         class="btn btn-large btn-rounded with-rounded btn-white btn-box-shadow fw-600">Learn
@@ -402,7 +321,7 @@
                                     </div> -->
                                     <h4 class="fw-700 text-dark-gray ls-minus-1px md-mb-20px">{{$settings['section_5_3']}}
                                     </h4>
-                                    <p class="mb-35px md-mb-25px">{{$settings['section_5_3_content']}}
+                                    <p class="mb-35px md-mb-25px" style="color: #647589">{{$settings['section_5_3_content']}}
                                     </p>
                                     <!-- <a href="demo-accounting-services.html"
                                         class="btn btn-large btn-rounded with-rounded btn-white btn-box-shadow fw-600">Learn
@@ -429,7 +348,7 @@
                                             planning</span>
                                     </div> -->
                                     <h4 class="fw-700 text-dark-gray ls-minus-1px md-mb-20px">{{$settings['section_5_4']}}</h4>
-                                    <p class="mb-35px md-mb-25px">{{$settings['section_5_4_content']}}</p>
+                                    <p class="mb-35px md-mb-25px" style="color: #647589">{{$settings['section_5_4_content']}}</p>
                                     <!-- <a href="demo-accounting-services.html"
                                         class="btn btn-large btn-rounded with-rounded btn-white btn-box-shadow fw-600">Learn
                                         more<span class="bg-base-color text-white"><i
@@ -455,12 +374,10 @@
                 <div class="col-xl-2 col-lg-2 d-flex justify-content-center justify-content-lg-end"
                     data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateX&quot;: [30, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 800, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
 
-                    <div
-                        class="slider-one-slide-prev-1 icon-small text-dark-gray swiper-button-prev slider-navigation-style-04 bg-white text-dark-gray box-shadow-large">
+                    <div class="slider-one-slide-prev-1 icon-small text-dark-gray swiper-button-prev slider-navigation-style-04 bg-white text-dark-gray box-shadow-large">
                         <i class="fa-solid fa-arrow-left"></i>
                     </div>
-                    <div
-                        class="slider-one-slide-next-1 icon-small text-dark-gray swiper-button-next slider-navigation-style-04 bg-white text-dark-gray box-shadow-large">
+                    <div class="slider-one-slide-next-1 icon-small text-dark-gray swiper-button-next slider-navigation-style-04 bg-white text-dark-gray box-shadow-large">
                         <i class="fa-solid fa-arrow-right"></i>
                     </div>
 
@@ -478,8 +395,10 @@
                                     <div class="swiper-slide mra" style="">
                                         <div class="interactive-banner-style-08" style="">
                                             <figure class="mb-0 hover-box box-hover position-relative" style="text-align: center;">
-                                                <img src="images/{{$blog->image}}" alt class="border-radius-6px"
-                                                    style="width: 210px; height: 270px; object-fit: cover;" />
+                                                {{-- <img src="images/{{$blog->image}}" alt class="border-radius-6px"
+                                                    style="width: 210px; height: 270px; object-fit: cover;" /> --}}
+                                                    <img src="{{ $blog->image ? asset('images/' . $blog->image) : asset('images/logomev.png') }}" alt class="border-radius-6px" style="width: 210px; height: 270px; object-fit: contain;" />
+
                                                 <figcaption class="w-100 p-30px lg-p-25px bg-white">
                                                     <div class="position-relative z-index-1 overflow-hidden lg-pb-5px ">
                                                         <span
@@ -619,14 +538,14 @@
         <div class="container">
 
         <h3 class="text-dark-gray fw-700" style="text-align: center;">{{$settings['section_8_title']}}</h3>
-            <span style="margin-left:130px ">{{$settings['section_8_small_title']}}</span>
+            <span style="margin-left:130px " class="fw-600">{{$settings['section_8_small_title']}}</span>
         <div class="row mt-3">
 
         <div class="col-sm  mb-4" style="text-align: center;">
             <div>
                 <img src="/images/trust.png" alt="" style="height: 100px;">
                 <p class="text-dark-gray fw-700 baslikP" style="font-size: 20px; margin: 0; padding: 0; color: #333; font-size: 16px;">{{$settings['section_8_1']}}</p>
-                <p style="font-size: 12px; line-height: 12px; font-weight: 400;">{{$settings['section_8_1.1']}}</p>
+                <p style="font-size: 12px;font-weight: normal;line-height: 20px;color: #647589">{{$settings['section_8_1.1']}}</p>
             </div>
         </div>
         <div class="col-sm  mb-4" style="text-align: center;">
@@ -634,7 +553,7 @@
                 <img src="/images/budget.png" alt="" style="height: 100px; ">
                 <p class="text-dark-gray fw-700" style="font-size: 20px; margin: 0; padding: 0; color: #333; font-size: 16px;">{{$settings['section_8_2']}}
                 </p>
-                <p style="font-size: 12px; line-height: 12px; font-weight: 400;">{{$settings['section_8_2.1']}}</p>
+                <p style="font-size: 12px;font-weight: normal;line-height: 20px;color: #647589">{{$settings['section_8_2.1']}}</p>
             </div>
         </div>
         <div class="col-sm  mb-4" style="text-align: center;">
@@ -642,24 +561,22 @@
                 <img src="/images/bank.png" alt="" style="height: 100px; ">
                 <p class="text-dark-gray fw-700" style="font-size: 20px; margin: 0; padding: 0; color: #333; font-size: 16px;">{{$settings['section_8_3']}}
                 </p>
-                <p style="font-size: 12px; line-height: 12px; font-weight: 400;">{{$settings['section_8_3.1']}}</p>
+                <p style="font-size: 12px;font-weight: normal;line-height: 20px;color: #647589">{{$settings['section_8_3.1']}}</p>
             </div>
         </div>
         <div class="col-sm  mb-4" style="text-align: center;">
             <div>
                 <img src="/images/timing.png" alt="" style="height: 100px;">
-                <p class="text-dark-gray fw-700"
-                    style="font-size: 20px; margin: 0; padding: 0; color: #333; font-size: 16px;">{{$settings['section_8_4']}}
+                <p class="text-dark-gray fw-700"   style="font-size: 20px; margin: 0; padding: 0; color: #333; font-size: 16px;">{{$settings['section_8_4']}}
                 </p>
-                <p style="font-size: 12px; line-height: 12px; font-weight: 400;">{{$settings['section_8_4.1']}}</p>
+                <p style="font-size: 12px;font-weight: normal;line-height: 20px;color: #647589">{{$settings['section_8_4.1']}}</p>
             </div>
         </div>
         <div class="col-sm  mb-4" style="text-align: center;">
             <div>
                 <img src="/images/smartphone.png" alt="" style="height: 100px; ">
-                <p class="text-dark-gray fw-700"
-                    style="font-size: 20px; margin: 0; padding: 0; color: #333; font-size: 16px;">{{$settings['section_8_5']}}</p>
-                <p style="font-size: 12px; line-height: 12px; font-weight: 400;">{{$settings['section_8_5.1']}}</p>
+                <p class="text-dark-gray fw-700"  style="font-size: 20px; margin: 0; padding: 0; color: #333; font-size: 16px;">{{$settings['section_8_5']}}</p>
+                <p style="font-size: 12px;font-weight: normal;line-height: 20px;color: #647589">{{$settings['section_8_5.1']}}</p>
             </div>
         </div>
         </div>
@@ -723,3 +640,17 @@
         </div>
     </section>
 @endsection 
+
+
+<style>
+    .clamp-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 2.8em; /* line-height * line-clamp */
+    line-height: 1.4em; /* adjust based on font-size */
+}
+
+</style>
