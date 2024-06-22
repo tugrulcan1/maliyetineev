@@ -278,16 +278,22 @@
         "id": "videos",
         "label": "Yönetim",
         "icon": "globe",
-        "text": "Videolar",
+        "text": "Müşterilermiz",
         "key": "videos",
         "url": "admin.create.video",
         "activePath": "admin/add/video",
         "subMenu": [
             {
-                "text": "Oluştur",
+                "text": "Müşteri Videoları Ekle",
                 "key": "CreateProject",
                 "url": "admin.create.video",
                 "activePath": "admin/add/video"
+            },
+            {
+                "text": "Tapu Alan Müşteriler Ekle",
+                "key": "CreateProject",
+                "url": "admin.tapu.alan.musteriler",
+                "activePath": "admin//tapu/alan/musteriler"
             }
         ]
     },

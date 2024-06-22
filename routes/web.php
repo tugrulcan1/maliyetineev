@@ -101,6 +101,9 @@ Route::get('/logout', [ClientLoginController::class, "logout"])->name('client.lo
 Route::group(['prefix' => 'admin', "as" => "admin.", 'middleware' => ['admin']], function () {
     Route::get('/video/yukle',[VideoController::class,'createVideo'])->name('create.video');
     Route::post('/add/video', [VideoController::class, 'addVideo'])->name('add.video');
+    
+    Route::get('/tapu/alan/musteriler',[VideoController::class,'tapuAlanMusteriler'])->name('tapu.alan.musteriler');
+    Route::post('tapu/alan/musteriler/ekle', [VideoController::class, 'addTapuAlanMusteriler'])->name('add.tapu.alan.musteriler');
 
     Route::get('/floor_plans',[FloorPlansController::class,'index'])->name('floor.plans.index');
     Route::post('/add_floor_plan',[FloorPlansController::class,'addFloorPlan'])->name('add.floor.plan');
@@ -545,5 +548,6 @@ Route::get('/comments/index',[CommentController::class,'commentGet'])->name('com
 Route::post('/yorum/ekle',[CommentController::class,'addComment'])->name('add.comment');
 
 Route::get('/maliyetine/ev/videolar',[VideoController::class,'index'])->name('videos.index');
+Route::get('/tapu/alan/musterilerimiz',[VideoController::class,'tapuAlanMusterilerimiz'])->name('tapu.alan.musterilerimiz');
 
     
