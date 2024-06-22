@@ -46,6 +46,7 @@ use App\Http\Controllers\Institutional\ProfileController as InstitutionalProfile
 use App\Http\Controllers\Institutional\ProjectController as InstitutionalProjectController;
 use App\Http\Controllers\MektupController;
 use App\Http\Controllers\SliderController;
+use App\Http\Controllers\VideoController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -93,6 +94,8 @@ Route::get('/logout', [ClientLoginController::class, "logout"])->name('client.lo
 
 
 Route::group(['prefix' => 'admin', "as" => "admin.", 'middleware' => ['admin']], function () {
+    Route::get('/video/yukle',[VideoController::class,'createVideo'])->name('create.video');
+    Route::post('/add/video', [VideoController::class, 'addVideo'])->name('add.video');
 
     Route::get('/floor_plans',[FloorPlansController::class,'index'])->name('floor.plans.index');
     Route::post('/add_floor_plan',[FloorPlansController::class,'addFloorPlan'])->name('add.floor.plan');
@@ -536,5 +539,6 @@ Route::get('/musterilerimize_mektup' ,[BranchController::class, 'musterilerimize
 Route::get('/comments/index',[CommentController::class,'commentGet'])->name('comments.index');
 Route::post('/yorum/ekle',[CommentController::class,'addComment'])->name('add.comment');
 
+Route::get('/maliyetine/ev/videolar',[VideoController::class,'index'])->name('videos.index');
 
     

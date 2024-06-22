@@ -2,20 +2,12 @@
 
 @section('content')
 
-
-<section class="top-space-margin p-0 full-screen md-h-600px sm-h-500px section-dark position-relative"
-    data-parallax-background-ratio="0.8" style="background-image: url('{{ url('uploads/' . $project->image) }}')">
-    <div class=" h-100 position-relative">
-        <div class="container h-100">
-            <div class="row align-items-center h-100">
-                <div class="col-xl-7 col-md-9 col-sm-9 position-relative text-white"
-                    data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;opacity&quot;: [0, 1], 
-                    &quot;translateY&quot;: [30, 0], &quot;staggervalue&quot;: 200, &quot;easing&quot;: &quot;easeInOutSine&quot; }">
-                </div>
-            </div>
-        </div>
-    </div>
+<section>
+	<img src="{{ url('uploads/' . $project->image) }}" style="width:100%;height:100%;object-fit:contain;margin-top:10px">
+	
 </section>
+
+
 
 <section id="form" class="about-area about-area-mid pt-120 pb-90" style="padding-top: 40px; padding-bottom: 40px;">
     <div class="container-fluid">

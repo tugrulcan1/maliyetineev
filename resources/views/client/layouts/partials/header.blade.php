@@ -133,7 +133,7 @@
                     </div>
                     <div class="col-auto col-lg-2 text-end d-none d-sm-flex" style="align-items:center">
                     
-                         <a href="https://emlaksepette.com/" class="digitalMagaza" target="_blank">Dijital Mağaza</a>
+                         <a href="https://emlaksepette.com/" class="digitalMagaza" target="_blank">Dijital Satış Ofisi</a>
                
                         <!-- <div class="header-icon">
                             <div class="header-button">
