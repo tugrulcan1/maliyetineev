@@ -60,4 +60,19 @@ class ProjectController extends Controller
         $projectHousingSetting = ProjectHouseSetting::where('house_type',$project->housing_type_id)->orderBy('order')->get();
         return view('client.projects.project_housing',compact('menu','project','housingOrder','projectHousingSetting','projectHousing'));
     }
+
+    public function bitmis_projeler(){
+        $bitmisProjeler = Project::where('project_type','Bitmiş Projeler')->get();
+        return view('client.projects.bitmis_projeler',compact('bitmisProjeler'));
+    }//End
+
+    public function devam_eden_projeler(){
+        $devamEdenProjeler = Project::where('project_type','Devam Eden Projeler')->get();
+        return view('client.projects.devam_eden_projeler',compact('devamEdenProjeler'));
+    }//End
+
+    public function topraktan_projeler(){
+        $topraktanProjeler = Project::where('project_type','Topraktan Projeler')->get();
+        return view('client.projects.topraktan_projeler',compact('topraktanProjeler'));
+    }//End
 }

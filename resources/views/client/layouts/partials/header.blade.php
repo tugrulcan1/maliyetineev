@@ -124,12 +124,26 @@
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav fw-600">
                                 @foreach ($menu as $menus)
-                                    <li class="nav-item"><a href="{{$menus->href}}" class="nav-link">{{$menus->text}}</a></li>
+                                    @if ($menus->children->isNotEmpty())
+                                        <li class="nav-item dropdown">
+                                            <a href="{{ $menus->href }}" class="nav-link dropdown-toggle" id="navbarDropdown{{ $menus->id }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                {{ $menus->text }}
+                                            </a>
+                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown{{ $menus->id }}">
+                                                @foreach ($menus->children as $child)
+                                                    <li><a class="dropdown-item" href="{{ $child->href }}">{{ $child->text }}</a></li>
+                                                @endforeach
+                                            </ul>
+                                        </li>
+                                    @else
+                                        <li class="nav-item">
+                                            <a href="{{ $menus->href }}" class="nav-link">{{ $menus->text }}</a>
+                                        </li>
+                                    @endif
                                 @endforeach
                             </ul>
-
-                         
                         </div>
+                        
                     </div>
                     <div class="col-auto col-lg-2 text-end d-none d-sm-flex" style="align-items:center">
                     
