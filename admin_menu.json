@@ -275,6 +275,23 @@
         ]
     },
     {
+        "id": "videos",
+        "label": "Yönetim",
+        "icon": "globe",
+        "text": "Videolar",
+        "key": "videos",
+        "url": "admin.create.video",
+        "activePath": "admin/add/video",
+        "subMenu": [
+            {
+                "text": "Oluştur",
+                "key": "CreateProject",
+                "url": "admin.create.video",
+                "activePath": "admin/add/video"
+            }
+        ]
+    },
+    {
         "id": "settings",
         "label": "Yönetim",
         "icon": "lock",
