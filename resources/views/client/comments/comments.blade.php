@@ -37,64 +37,52 @@
 
 
         </div>
-        
-        <div class="col-md-5">
-            <div class="contact-form-style-01" style="width:550px;height:500px;margin-left:100px;top:0px;">
-                <div class="ps-8 pe-8 pt-8 pb-8 lg-p-8 bg-white box-shadow-quadruple-large border-radius-6px">
-                    <h6 class="d-inline-block fw-600 text-dark-gray ls-minus-1px mb-35px sm-mb-25px"
-                        data-anime="{ &quot;translateY&quot;: [15, 0], &quot;translateX&quot;: [-15, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 600, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
-                        Yorumlarınızı bizimle paylaşın</h6>
-                        @if ($errors->any())
-                            <div class="alert alert-danger">
-                                <ul class="mb-0">
-                                    @foreach ($errors->all() as $error)
-                                        <li>{{ $error }}</li>
-                                    @endforeach
-                                </ul>
-                            </div>
-                        @endif
-                    <form  method="POST" action="{{ route('add.comment') }}" enctype="multipart/form-data"
-                        data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateY&quot;: [15, 0], &quot;translateX&quot;: [-15, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 600, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
-                        @csrf
-                        <div class="position-relative form-group mb-15px">
-                            <span class="form-icon"><i class="fas fa-user"></i></span>
-                            <input type="text" name="name" class="form-control required" placeholder="Ad soyad" />
+                <div class="col-md-5">
+                    <div class="contact-form-style-01" style="width:400px;height:350px;margin-left:0;right:100px;top:400px">
+                        <div class="ps-8 pe-8 pt-8 pb-8 lg-p-8 bg-white box-shadow-quadruple-large border-radius-6px">
+                            <h6 class="d-inline-block fw-600 text-dark-gray ls-minus-1px mb-35px sm-mb-25px"
+                                data-anime="{ &quot;translateY&quot;: [15, 0], &quot;translateX&quot;: [-15, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 600, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
+                                Yorumlarınızı bizimle paylaşın</h6>
+                                @if ($errors->any())
+                                    <div class="alert alert-danger">
+                                        <ul class="mb-0">
+                                            @foreach ($errors->all() as $error)
+                                                <li>{{ $error }}</li>
+                                            @endforeach
+                                        </ul>
+                                    </div>
+                                @endif
+                            <form  method="POST" action="{{ route('add.comment') }}" enctype="multipart/form-data"
+                                data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateY&quot;: [15, 0], &quot;translateX&quot;: [-15, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 600, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
+                                @csrf
+                                <div class="position-relative form-group mb-15px">
+                                    <span class="form-icon"><i class="fas fa-user"></i></span>
+                                    <input type="text" name="name" class="form-control required" placeholder="Ad soyad" />
+                                </div>
+                                <div class="position-relative form-group mb-15px">
+                                    <span class="form-icon"><i class="fa fa-envelope"></i></span>
+                                    <input type="email" name="email" class="form-control required"
+                                        placeholder="E-posta adresiniz" />
+                                </div>
+                                <div class="position-relative form-group mb-20px">
+                                    <span class="form-icon"><i class="fa fa-phone"></i></span>
+                                    <input type="tel" name="phone" class="form-control" placeholder="Telefon Numaranız" />
+                                </div>
+                                <div class="position-relative form-group mb-20px">
+                                    <span class="form-icon"><i class="fa fa-envelope"></i></span>
+                                    <textarea name="comment" id="comment" class="form-control" cols="20" rows="4" placeholder="Yorumunuz"></textarea>
+                                </div>
+                                <div class="position-relative mt-20px">
+                                    <button class="btn btn-large btn-round-edge btn-box-shadow w-100" style="background-color: #0f75bc;color:white;border-radius:12px;"
+                                        type="submit">Gönder</button>
+                                </div>
+                            </form>
                         </div>
-                        <div class="position-relative form-group mb-15px">
-                            <span class="form-icon"><i class="fa fa-envelope"></i></span>
-                            <input type="email" name="email" class="form-control required"
-                                placeholder="E-posta adresiniz" />
-                        </div>
-                        <div class="position-relative form-group mb-20px">
-                            <span class="form-icon"><i class="fa fa-phone"></i></span>
-                            <input type="tel" name="phone" class="form-control" placeholder="Telefon Numaranız" />
-                        </div>
-                        <div class="position-relative form-group mb-20px">
-                            <span class="form-icon"><i class="fa fa-envelope"></i></span>
-                            <textarea name="comment" id="comment" cols="20" rows="4"></textarea>
-                        </div>
-                        {{-- <div class="mb-20px custom-file-input">
-                            <label class="custom-file-label" for="fileInput">Dosya Seç</label>
-                            <input type="file" id="fileInput" name="file" onchange="updateFileName(this)">
-                            <div class="file-name" id="file-name">Lütfen fotoğrafınızı giriniz</div>
-                        </div> --}}
-                        
-                        {{-- <div class="position-relative terms-condition-box text-start d-inline-block">
-                                <input type="checkbox" name="terms_condition" id="terms_condition" value="1"
-                                    class="terms-condition check-box align-middle required">
-                            <label>
-                                <span class="box fs-16">Kişisel Verilerin Korunması Hakkında <a href="{{route('aydinlatma.metni')}}" target="_blank">Aydınlatma Yazısını
-                                    okudum</a> , kabul ediyorum.</span>
-                            </label>
-                        </div> --}}
-                        <div class="position-relative mt-20px">
-                            <button class="btn btn-large btn-round-edge btn-box-shadow w-100" style="background-color: #0f75bc;color:white;border-radius:12px;"
-                                type="submit">Gönder</button>
-                        </div>
-                    </form>
+                    </div>
                 </div>
-            </div>
-        </div>
+         
+      
+        
     </div>
 </div>
 
