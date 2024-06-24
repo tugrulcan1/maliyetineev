@@ -15,6 +15,11 @@ class VideoController extends Controller
         return view('client.maliyetineev_videos',compact('videos'));
     }//End
 
+    public function reklam_tanitim_filmleri(){
+        $reklam_tanitim_filmleri = DB::table('reklam_tanitim_filmleri')->get();
+        return view('client.reklam_tanitim_filmleri',compact('reklam_tanitim_filmleri'));
+    }
+
     public function createVideo(){
         return view('admin.videos.create');
     }//End
@@ -25,6 +30,23 @@ class VideoController extends Controller
         ]);
 
        DB::table('videos')->insert([
+            'url'        => $request->youtube_url,
+            'created_at' => now()
+        ]);
+
+        return redirect()->back()->with('success','Başarıyla Kaydedildi.');
+    }//End
+
+    public function createReklamTanitimFilmleri(){
+        return view('admin.videos.reklam_tanitim_filmleri');
+    }//End
+
+    public function addReklamTanitimFilmleri(Request $request){
+        $request->validate([
+            'youtube_url' => 'required|url',
+        ]);
+
+       DB::table('reklam_tanitim_filmleri')->insert([
             'url'        => $request->youtube_url,
             'created_at' => now()
         ]);

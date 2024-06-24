@@ -298,6 +298,23 @@
         ]
     },
     {
+        "id": "videos",
+        "label": "Yönetim",
+        "icon": "globe",
+        "text": "Reklam Tanıtım Filmleri",
+        "key": "advertisingPromotionalFilms",
+        "url": "admin.reklam.tanitim.filmlerimiz",
+        "activePath": "admin/reklam/tanitim/filmlerimiz",
+        "subMenu": [
+            {
+                "text": "Reklam Tanıtım Filmleri Ekle",
+                "key": "CreateAdvertPromotionalFilms",
+                "url": "admin.reklam.tanitim.filmlerimiz",
+                "activePath": "/reklam/tanitim/filmlerimiz"
+            }
+        ]
+    },
+    {
         "id": "settings",
         "label": "Yönetim",
         "icon": "lock",

@@ -100,6 +100,9 @@ Route::get('/logout', [ClientLoginController::class, "logout"])->name('client.lo
 Route::group(['prefix' => 'admin', "as" => "admin.", 'middleware' => ['admin']], function () {
     Route::get('/video/yukle',[VideoController::class,'createVideo'])->name('create.video');
     Route::post('/add/video', [VideoController::class, 'addVideo'])->name('add.video');
+
+    Route::get('/reklam/tanitim/filmlerimiz',[VideoController::class,'createReklamTanitimFilmleri'])->name('reklam.tanitim.filmlerimiz');
+    Route::post('/add/reklam/tanitim/filmleri', [VideoController::class, 'addReklamTanitimFilmleri'])->name('add.reklam.tanitim.filmleri');
     
     Route::get('/tapu/alan/musteriler',[VideoController::class,'tapuAlanMusteriler'])->name('tapu.alan.musteriler');
     Route::post('tapu/alan/musteriler/ekle', [VideoController::class, 'addTapuAlanMusteriler'])->name('add.tapu.alan.musteriler');
@@ -547,6 +550,7 @@ Route::get('/comments/index',[CommentController::class,'commentGet'])->name('com
 Route::post('/yorum/ekle',[CommentController::class,'addComment'])->name('add.comment');
 
 Route::get('/maliyetine/ev/videolar',[VideoController::class,'index'])->name('videos.index');
+Route::get('/reklam/tanitim/filmleri',[VideoController::class,'reklam_tanitim_filmleri']);
 Route::get('/tapu/alan/musterilerimiz',[VideoController::class,'tapuAlanMusterilerimiz'])->name('tapu.alan.musterilerimiz');
 
     
