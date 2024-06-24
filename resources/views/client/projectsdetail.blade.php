@@ -127,7 +127,7 @@
                         <h3 style="text-align: center; font-weight: 700; color: #333; margin-top: 100px; ">Proje Görselleri</h3>
                         <swiper-container class="mySwiper" navigation="true">
                             @foreach ($project->galleries as $galery)   
-                                <swiper-slide> <img src="{{ url('uploads/' . $galery->image) }}" alt="" style="width: 100%; height: 600px;"></swiper-slide>
+                                <swiper-slide> <img src="{{ url('uploads/' . $galery->image) }}" alt="" style="width: 100%; height: auto;"></swiper-slide>
                             @endforeach
                         </swiper-container>
                     </div>
@@ -136,7 +136,7 @@
 
                 @if (!empty($floorPlans) && count($floorPlans) > 0)
                     <div class="section p-5">
-                        <div class="container mt-5">
+                        {{-- <div class="container mt-5"> --}}
                             <h3 style="text-align: center; font-weight: 700; color: #333;">{{ $project->name }} Kat Planları</h3>
                             <div class="tab">
                                 @foreach ($floorPlans as $index => $floorPlan)
@@ -146,10 +146,10 @@
                     
                             @foreach ($floorPlans as $index => $floorPlan)
                                 <div id="tab{{ $index }}" class="tabcontent">
-                                    <img src="{{ asset('kat_plani/' . $floorPlan->image_path) }}" alt="{{ $floorPlan->floor_plan }}" style="width: 1220px; height: 470px;">
+                                    <img src="{{ asset('kat_plani/' . $floorPlan->image_path) }}" alt="{{ $floorPlan->floor_plan }}" style="width: 100%; height: auto;">
                                 </div>
                             @endforeach
-                        </div>
+                        {{-- </div> --}}
                     </div>
             @endif
 
@@ -425,7 +425,7 @@
 
         .tabcontent {
             display: none;
-            padding: 6px 12px;
+            /* padding: 6px 12px; */
             border: 1px solid #ccc;
             border-top: none;
         }

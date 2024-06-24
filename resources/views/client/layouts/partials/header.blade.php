@@ -145,16 +145,11 @@
                         </div>
                         
                     </div>
-                    <div class="col-auto col-lg-2 text-end d-none d-sm-flex" style="align-items:center">
-                    
+                    <div class="col-auto col-lg-2 text-end d-none d-sm-flex" style="align-items:center">                    
                          <a href="https://emlaksepette.com/" class="digitalMagaza" target="_blank">Dijital Satış Ofisi</a>
-               
-                        <!-- <div class="header-icon">
-                            <div class="header-button">
-                                <a href="demo-accounting-contact.html"
-                                    class="btn btn-small btn-rounded btn-base-color btn-box-shadow">Let's discuss</a>
-                            </div>
-                        </div> -->
+                         <a href="tel:4443284" class="phone-link" style="margin-left: 10px; display: flex; align-items: center;color:#000">
+                            <i class="fas fa-phone"></i>
+                        </a>
                     </div>
                 </div>
             </nav>
