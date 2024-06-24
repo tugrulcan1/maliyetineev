@@ -107,6 +107,9 @@ Route::group(['prefix' => 'admin', "as" => "admin.", 'middleware' => ['admin']],
     Route::get('/tapu/alan/musteriler',[VideoController::class,'tapuAlanMusteriler'])->name('tapu.alan.musteriler');
     Route::post('tapu/alan/musteriler/ekle', [VideoController::class, 'addTapuAlanMusteriler'])->name('add.tapu.alan.musteriler');
 
+    Route::get('/basinda/biz',[VideoController::class,'basindaBiz'])->name('basinda.biz');
+    Route::post('/basinda/biz/ekle', [VideoController::class, 'addBasindaBiz'])->name('add.basinda.biz');
+
     Route::get('/floor_plans',[FloorPlansController::class,'index'])->name('floor.plans.index');
     Route::post('/add_floor_plan',[FloorPlansController::class,'addFloorPlan'])->name('add.floor.plan');
     
@@ -552,5 +555,7 @@ Route::post('/yorum/ekle',[CommentController::class,'addComment'])->name('add.co
 Route::get('/maliyetine/ev/videolar',[VideoController::class,'index'])->name('videos.index');
 Route::get('/reklam/tanitim/filmleri',[VideoController::class,'reklam_tanitim_filmleri']);
 Route::get('/tapu/alan/musterilerimiz',[VideoController::class,'tapuAlanMusterilerimiz'])->name('tapu.alan.musterilerimiz');
+
+Route::get('/basinda/bizler',[VideoController::class,'basindaBizz'])->name('basinda.biz');
 
     

@@ -315,6 +315,23 @@
         ]
     },
     {
+        "id": "videos",
+        "label": "Yönetim",
+        "icon": "globe",
+        "text": "Basında Biz",
+        "key": "press",
+        "url": "admin.basinda.biz",
+        "activePath": "admin/basinda/biz",
+        "subMenu": [
+            {
+                "text": "Basında Biz Ekle",
+                "key": "CreatePress",
+                "url": "admin.basinda.biz",
+                "activePath": "/basinda/biz"
+            }
+        ]
+    },
+    {
         "id": "settings",
         "label": "Yönetim",
         "icon": "lock",

@@ -80,5 +80,32 @@ class VideoController extends Controller
         $tapu_alan_musterilerimiz = DB::table('tapu_alan_musteriler')->get();       
         return view('client.tapu_alan_musterilerimiz',compact('tapu_alan_musterilerimiz'));
     }//End
+
+    public function basindaBiz(){
+        $basinda_biz = DB::table('basinda_biz')->get();
+        return view('admin.basinda_biz.index',compact('basinda_biz'));
+    }//End
+
+    public function addBasindaBiz(Request $request){
+
+        if($request->hasFile('image')){
+            $file = $request->file('image');
+            $fileName = time() . '_' . $file->getClientOriginalName(); // Benzersiz dosya adı oluştur
+            $file->move(public_path('basinda_biz'), $fileName);
+        }
+
+        DB::table('basinda_biz')->insert([
+            'basinda_biz' => $fileName,
+            'info'        => $request->info
+        ]);
+
+        return redirect()->back()->with('success','Başarıyla Kaydedildi.');
+
+    }//End
+
+    public function basindaBizz(){
+        $basinda_biz = DB::table('basinda_biz')->get();       
+        return view('client.basinda_biz',compact('basinda_biz'));
+    }//End
     
 }
