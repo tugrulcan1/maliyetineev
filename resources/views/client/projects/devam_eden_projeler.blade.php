@@ -35,11 +35,12 @@
                                                     <div class="mt-auto d-flex w-100 align-items-center">
                                                         <div class="col last-paragraph-no-margin">
                                                             <a href="{{route('projelerimiz.show',$project->id)}}" target="_blank" class="text-white fs-24 lh-28  xl-w-75 d-block"
-                                                                style="color: white;">{{$project->project_title}}</a>
+                                                                style="color: white;font-size:15px">{{$project->project_title}}</a>
                                                             <p class="custom-description"  style="color: white !important;"> {{$project->project_sub_title}}</p>
                                                         </div>
-                                                        <a href="{{route('projelerimiz.show',$project->id)}}" class="circle-box bg-yellow w-50px h-50px rounded-circle ms-auto position-relative rounded-box">
-                                                            <i class="bi bi-arrow-right-short absolute-middle-center icon-very-medium lh-0px text-dark-gray" style="color: white !important;"></i>
+                                                        <a href="{{route('projelerimiz.show',$project->id)}}" target="_blank"
+                                                            class="circle-box bg-yellow w-50px h-50px rounded-circle" style=" position: absolute;bottom: 80px;right: 15px; z-index: 2;">
+                                                            <i class="bi bi-arrow-right-short absolute-middle-center icon-very-medium lh-0px text-dark-gray"></i>
                                                         </a>
                                                     </div>
                                                     <div
@@ -67,6 +68,13 @@
             margin: 0;
             padding: 0;
             font-size: 14px;
+            display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 2.8em; /* line-height * line-clamp */
+    line-height: 1.4em; /* adjust based on font-size */
         }
     </style>
 
@@ -86,4 +94,10 @@
         margin-bottom: 20px;
         margin-top: 20px;
     }
+    .position-relative .circle-box {
+    position: absolute;
+    bottom: 20px; /* Div'in hemen üstünde hizalanması için uygun değeri ayarlayın */
+    right: 15px;  /* Sağ tarafta hizalanması için uygun değeri ayarlayın */
+    z-index: 2;
+}
     </style>
