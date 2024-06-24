@@ -31,9 +31,8 @@
                             <label for="form-label" for="project__sub_title">Proje Türü</label>
                             <select name="project_type" class="form-control">
                                 <option value="">Seçiniz</option>
-                                <option value="Topraktan Projeler" {{ $project->project_type == 'Topraktan Projeler' ? 'selected' : '' }}>Topraktan Projeler</option>
-                                <option value="Devam Eden Projeler" {{ $project->project_type == 'Devam Eden Projeler' ? 'selected' : '' }}>Devam Eden Projeler</option>
-                                <option value="Bitmiş Projeler" {{ $project->project_type == 'Bitmiş Projeler' ? 'selected' : '' }}>Bitmiş Projeler</option>
+                                <option value="Satışı Devam Eden" {{ $project->project_type == 'Satışı Devam Eden' ? 'selected' : '' }}>Satışı Devam Eden</option>
+                                <option value="Satışı Tamamlanmış" {{ $project->project_type == 'Satışı Tamamlanmış' ? 'selected' : '' }}>Satışı Tamamlanmış</option>
                             </select>
                         </div>
 

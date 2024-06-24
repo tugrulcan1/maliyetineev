@@ -47,10 +47,13 @@ class ProjectController extends Controller
         $projects = $projects->get();
         $menu = Menu::getMenuItems();
 
-        $topraktanProjeler = Project::where('project_type','Topraktan Projeler')->get();
-        $devamEdenProjeler = Project::where('project_type','Devam Eden Projeler')->get();
-        $bitmisProjeler    = Project::where('project_type','Bitmiş Projeler')->get();
-        return view('client.projects',compact('menu','projects','housingTypes','housingStatus','cities','topraktanProjeler','devamEdenProjeler','bitmisProjeler'));
+        // $topraktanProjeler = Project::where('project_type','Topraktan Projeler')->get();
+        // $devamEdenProjeler = Project::where('project_type','Devam Eden Projeler')->get();
+        // $bitmisProjeler    = Project::where('project_type','Bitmiş Projeler')->get();
+
+        $satisiDevamEden    = Project::where('project_type','Satışı Devam Eden')->get();
+        $satisiTamamlanmis  = Project::where('project_type','Satışı Tamamlanmış')->get();
+        return view('client.projects',compact('menu','projects','housingTypes','housingStatus','cities','satisiDevamEden','satisiTamamlanmis'));
     }
     
     public function projectHousingDetail($projectSlug,$housingOrder){
@@ -61,18 +64,14 @@ class ProjectController extends Controller
         return view('client.projects.project_housing',compact('menu','project','housingOrder','projectHousingSetting','projectHousing'));
     }
 
-    public function bitmis_projeler(){
-        $bitmisProjeler = Project::where('project_type','Bitmiş Projeler')->get();
-        return view('client.projects.bitmis_projeler',compact('bitmisProjeler'));
+    public function satisi_devam_eden(){
+        $satisiDevamEden = Project::where('project_type','Satışı Devam Eden')->get();
+        return view('client.projects.satisi_devam_eden',compact('satisiDevamEden'));
     }//End
 
-    public function devam_eden_projeler(){
-        $devamEdenProjeler = Project::where('project_type','Devam Eden Projeler')->get();
-        return view('client.projects.devam_eden_projeler',compact('devamEdenProjeler'));
+    public function satisi_tamamlanmis(){
+        $satisiTamamlanmis = Project::where('project_type','Satışı Tamamlanmış')->get();
+        return view('client.projects.satisi_tamamlanmis',compact('satisiTamamlanmis'));
     }//End
 
-    public function topraktan_projeler(){
-        $topraktanProjeler = Project::where('project_type','Topraktan Projeler')->get();
-        return view('client.projects.topraktan_projeler',compact('topraktanProjeler'));
-    }//End
 }
