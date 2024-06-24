@@ -95,8 +95,8 @@ class VideoController extends Controller
         }
 
         DB::table('basinda_biz')->insert([
-            'basinda_biz' => $fileName,
-            'info'        => $request->info
+            'image' => $fileName,
+            'info'  => $request->info
         ]);
 
         return redirect()->back()->with('success','Başarıyla Kaydedildi.');
