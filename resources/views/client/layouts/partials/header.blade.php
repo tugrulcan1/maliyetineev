@@ -31,7 +31,7 @@
         <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css">
 
 
-        <style>
+    <style>
         html,
         body {
         position: relative;
@@ -67,23 +67,93 @@
         height: 100%;
         object-fit: cover;
         }
+        /* Logo boyutlarını küçültme */
+       /* Logo boyutlarını küçültme */
+.logo-img {
+    max-height: 50px;
+    margin-left: 10px;
+}
+
+/* Mobilde menü düğmesinin logonun yanında görünmesi */
+@media (max-width: 991px) {
+    .navbar-brand {
+        max-width: 100px; /* Logo genişliğini ayarlayabilirsiniz */
+    }
+
+    .navbar-toggler {
+        position: absolute;
+        right: 15px;
+    }
+
+    .navbar-collapse {
+        background-color: #fff;
+        padding: 15px;
+    }
+
+    .navbar-nav {
+        width: 100%;
+    }
+
+    .navbar-nav .nav-item {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .navbar-nav .nav-link {
+        display: block;
+
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .col-lg-2.text-end {
+        justify-content: space-between; /* Elemanları eşit dağıtma */
+        width: 100%;
+        padding: 10px 15px;
+    }
+
+    .digitalMagaza {
+        display: flex;
+        /* position: absolute;
+        left: 15px; */
+        justify-content: center;
+        align-items: center;
+        width:35%;
+        /* margin-top: 40px; */
+        margin-bottom: 30px;
+        margin-right: 320px !important;
+    }
+
+    .phone-link {
+        /* display: flex; */
+
+        position: absolute;
+        right: 15px;
+        top: 100px;
+    }
+}
+@media only screen and (max-width: 300px) {
+  .digital-mgz {
+display: none;
+  }
+}
+
+
+
     </style>
 
 
     @yield("css")
     </head>
 
-    <body data-mobile-nav-style="classic" class="custom-cursor">
-
-        <div class="cursor-page-inner">
+    <body data-mobile-nav-style="classic" class="custom-cursor" >
+        <div class="cursor-page-inner" >
             <div class="circle-cursor circle-cursor-inner"></div>
             <div class="circle-cursor circle-cursor-outer"></div>
         </div>
 
-
-
-        <header class="header-with-topbar">
-
+        <header class="header-with-topbar mb-5" >
             <div class="header-top-bar top-bar-dark bg-very-light-gray">
                 <div class="container-fluid">
                     <div class="row h-45px xs-h-auto align-items-center m-0 xs-pt-5px xs-pb-5px">
@@ -106,52 +176,49 @@
 
             <nav class="navbar navbar-expand-lg header-light bg-white responsive-sticky">
                 <div class="container-fluid">
-                    <div class="col-auto col-lg-2 me-lg-0 me-auto">
+                    <div class="d-flex align-items-center">
                         <a class="navbar-brand" href="{{route('index')}}">
-                            <img src="{{asset('images/logomev.png')}}" alt class="default-logo">
-                            <img src="images/logomev.png" data-at2x="images/logomev.png" alt class="alt-logo">
-                            <img src="images/logomev.png" data-at2x="images/logomev.png" alt class="mobile-logo">
+                            <img src="{{asset('images/logomev.png')}}" alt class="default-logo logo-img">
+                            <img src="images/logomev.png" data-at2x="images/logomev.png" alt class="alt-logo logo-img">
+                            <img src="images/logomev.png" data-at2x="images/logomev.png" alt class="mobile-logo logo-img">
                         </a>
-                    </div>
-                    <div class="col-auto menu-order position-static">
-                        <button class="navbar-toggler float-start" type="button" data-bs-toggle="collapse"
+                        <button class="navbar-toggler" style="float: right" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-line"></span>
-                            <span class="navbar-toggler-line"></span>
-                            <span class="navbar-toggler-line"></span>
-                            <span class="navbar-toggler-line"></span>
+                            <span class="navbar-toggler-icon"></span>
                         </button>
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav fw-600">
-                                @foreach ($menu as $menus)
-                                    @if ($menus->children->isNotEmpty())
-                                        <li class="nav-item dropdown">
-                                            <a href="{{ $menus->href }}" class="nav-link dropdown-toggle" id="navbarDropdown{{ $menus->id }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                {{ $menus->text }}
-                                            </a>
-                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown{{ $menus->id }}">
-                                                @foreach ($menus->children as $child)
-                                                    <li><a class="dropdown-item" href="{{ $child->href }}">{{ $child->text }}</a></li>
-                                                @endforeach
-                                            </ul>
-                                        </li>
-                                    @else
-                                        <li class="nav-item">
-                                            <a href="{{ $menus->href }}" class="nav-link">{{ $menus->text }}</a>
-                                        </li>
-                                    @endif
-                                @endforeach
-                            </ul>
-                        </div>
-                        
                     </div>
-                    <div class="col-auto col-lg-2 text-end d-none d-sm-flex" style="align-items:center">                    
-                         <a href="https://emlaksepette.com/" class="digitalMagaza" target="_blank">Dijital Satış Ofisi</a>
-                         <a href="tel:4443284" class="phone-link" style="margin-left: 10px; display: flex; align-items: center;color:#000">
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto fw-600">
+                            @foreach ($menu as $menus)
+                                @if ($menus->children->isNotEmpty())
+                                    <li class="nav-item dropdown">
+                                        <a href="{{ $menus->href }}" class="nav-link" id="navbarDropdown{{ $menus->id }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            {{ $menus->text }}
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown{{ $menus->id }}">
+                                            @foreach ($menus->children as $child)
+                                                <li><a class="dropdown-item" href="{{ $child->href }}">{{ $child->text }}</a></li>
+                                            @endforeach
+                                            
+                                        </ul>
+                                    </li>
+                                @else
+                                    <li class="nav-item">
+                                        <a href="{{ $menus->href }}" class="nav-link">{{ $menus->text }}</a>
+                                    </li>
+                                @endif
+                            @endforeach
+                        </ul>
+                    </div>
+                    <div class=" digital-mgz col-auto col-lg-2 text-end d-flex align-items-center justify-content-end d-lg-flex d-flex">                    
+                        <a href="https://emlaksepette.com/" class="digitalMagaza me-2" target="_blank">Dijital Satış Ofisi</a>
+                        <a href="tel:4443284" class="phone-link" style="display: flex; align-items: center; color:#000;">
                             <i class="fas fa-phone"></i>
                         </a>
                     </div>
                 </div>
             </nav>
+            
+            
 
         </header>
