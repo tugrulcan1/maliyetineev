@@ -203,7 +203,7 @@
                                          class="w-70 border-radius-6px d-flex m-auto" style="padding: 20px">
 
                                  </div>
-                                 <div class="col-xl-4 col-lg-5 offset-lg-1 col-md-6 text-center text-md-start"
+                                 <div class="col-xl-4 col-lg-5 offset-lg-1 col-md-6 text-center text-md-start" style="padding: 20px 0;"
                                      data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateX&quot;: [50, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1200, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
                                      <!-- <div class="mb-20px">
                                             <div
@@ -213,7 +213,7 @@
                                                 class="d-inline-block text-dark-gray align-middle fw-500 fs-20 ls-minus-05px">Strategic
                                                 planning</span>
                                         </div> -->
-                                     <h4 class="fw-700 text-dark-gray ls-minus-1px md-mb-20px">
+                                     <h4 class="fw-700 text-dark-gray ls-minus-1px md-mb-20px" style="font-size: 22px;margin-top:10px">
                                          {{ $settings['section_5_1'] }}</h4>
                                      <p class="mb-35px md-mb-25px" style="color: #647589">
                                          {{ $settings['section_5_1_content'] }} </p>
@@ -233,7 +233,7 @@
                                          class="w-70 border-radius-6px d-flex m-auto">
 
                                  </div>
-                                 <div class="col-xl-4 col-lg-5 offset-lg-1 col-md-6 text-center text-md-start">
+                                 <div class="col-xl-4 col-lg-5 offset-lg-1 col-md-6 text-center text-md-start" style="padding: 20px 0;">
                                      <!-- <div class="mb-20px">
                                                 <div
                                                     class="separator-line-1px w-50px bg-base-color d-inline-block align-middle me-10px opacity-2">
@@ -242,7 +242,7 @@
                                                     class="d-inline-block text-dark-gray align-middle fw-500 fs-20 ls-minus-05px">Audit
                                                     assurance</span>
                                             </div> -->
-                                     <h4 class="fw-700 text-dark-gray ls-minus-1px md-mb-20px">
+                                     <h4 class="fw-700 text-dark-gray ls-minus-1px md-mb-20px" style="font-size: 22px;margin-top:10px">
                                          {{ $settings['section_5_2'] }}</h4>
                                      <p class="mb-35px md-mb-25px" style="color: #647589">
                                          {{ $settings['section_5_2_content'] }}
@@ -263,7 +263,7 @@
                                          class="w-70 border-radius-6px d-flex m-auto">
 
                                  </div>
-                                 <div class="col-xl-4 col-lg-5 offset-lg-1 col-md-6 text-center text-md-start">
+                                 <div class="col-xl-4 col-lg-5 offset-lg-1 col-md-6 text-center text-md-start" style="padding: 20px 0;">
                                      <!-- <div class="mb-20px">
                                             <div
                                                 class="separator-line-1px w-50px bg-base-color d-inline-block align-middle me-10px opacity-2">
@@ -272,7 +272,7 @@
                                                 class="d-inline-block text-dark-gray align-middle fw-500 fs-20 ls-minus-05px">Financial
                                                 projections</span>
                                         </div> -->
-                                     <h4 class="fw-700 text-dark-gray ls-minus-1px md-mb-20px">
+                                     <h4 class="fw-700 text-dark-gray ls-minus-1px md-mb-20px" style="font-size: 22px;margin-top:10px">
                                          {{ $settings['section_5_3'] }}
                                      </h4>
                                      <p class="mb-35px md-mb-25px" style="color: #647589">
@@ -294,7 +294,7 @@
                                          class="w-70 border-radius-6px d-flex m-auto">
 
                                  </div>
-                                 <div class="col-xl-4 col-lg-5 offset-lg-1 col-md-6 text-center text-md-start">
+                                 <div class="col-xl-4 col-lg-5 offset-lg-1 col-md-6 text-center text-md-start" style="padding: 20px 0;">
                                      <!-- <div class="mb-20px">
                                             <div
                                                 class="separator-line-1px w-50px bg-base-color d-inline-block align-middle me-10px opacity-2">
@@ -303,7 +303,7 @@
                                                 class="d-inline-block text-dark-gray align-middle fw-500 fs-20 ls-minus-05px">Business
                                                 planning</span>
                                         </div> -->
-                                     <h4 class="fw-700 text-dark-gray ls-minus-1px md-mb-20px">
+                                     <h4 class="fw-700 text-dark-gray ls-minus-1px md-mb-20px" style="font-size: 22px;margin-top:10px">
                                          {{ $settings['section_5_4'] }}</h4>
                                      <p class="mb-35px md-mb-25px" style="color: #647589">
                                          {{ $settings['section_5_4_content'] }}</p>
