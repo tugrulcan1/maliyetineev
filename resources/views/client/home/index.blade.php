@@ -394,8 +394,8 @@
         </div>
     </section>
 
-    <section class="mb-0">
-        <div class="container mt-5">
+    <section class="mt-5 mb-0">
+        <div class="container">
 
 
             <div class="row m-0 align-items-center justify-content-center border border-color-extra-medium-gray border-radius-100px md-border-radius-6px ps-10px pe-10px box-shadow-quadruple-large"
