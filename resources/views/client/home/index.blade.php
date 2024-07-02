@@ -188,7 +188,7 @@
             </div>
         </div>
         <div class="container bg-very-light-gray">
-            <div class="row mb-8 sm-mb-10">
+            <div class="row">
                 <div class="col-12 tab-style-08">
                     <div class="tab-content">
 
@@ -309,8 +309,9 @@
 
     <section>
         <div class="container" style="overflow: hidden;">
-            <div class="row justify-content-center mb-6">
-                <div class="col-xl-6 col-md-8 col-sm-10 text-center"
+            <div class="row mb-6"
+            style="justify-content:space-between;display:flex;width:100%">
+                <div class="col-xl-6 col-md-8 col-sm-10 "
                 data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateY&quot;: [50, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1200, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
                 <h4 class="mb-0 text-dark-gray fw-700 ls-minus-1px w-85 xl-w-100 mx-auto"> Uzman Kadromuzla Hizmetinizdeyiz.</h4>
                 </div>
