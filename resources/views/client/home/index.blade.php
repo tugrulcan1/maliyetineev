@@ -19,7 +19,7 @@
          </section>
      @endforeach
 
-     <div class="row">
+     <section>
         <div class="container">
             <h3 class="text-dark-gray fw-700" style="text-align: center;">{{ $settings['section_8_title'] }}</h3>
             <span style="margin-left:130px " class="fw-600">{{ $settings['section_8_small_title'] }}</span>
@@ -83,7 +83,7 @@
                 </div>
             </div>
         </div>
-     </div>
+     </section>
 
 
      <section class="pt-0 mgyy  " style="display:none">
