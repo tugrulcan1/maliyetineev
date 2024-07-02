@@ -123,6 +123,8 @@ h6 {
 .navbar .navbar-nav .dropdown .dropdown-menu a {
   font-size: 13px;
   font-family: cerebri-sans-regular !important;
+  padding: 0;
+  margin: 0;
 }
 header .btn.btn-small {
   font-size: 14px;
