@@ -202,7 +202,7 @@
                                  <div class="col-md-6 sm-mb-30px position-relative overflow-hidden"
                                      data-anime="{ &quot;effect&quot;: &quot;slide&quot;, &quot;color&quot;: &quot;#005153&quot;, &quot;direction&quot;:&quot;lr&quot;, &quot;easing&quot;: &quot;easeOutQuad&quot;, &quot;delay&quot;:50}">
                                      <img src="{{ $settings['section_5_1_img'] ?? '#' }}"
-                                         class="w-100 border-radius-6px">
+                                         class="w-100 border-radius-6px" style="padding: 20px">
 
                                  </div>
                                  <div class="col-xl-4 col-lg-5 offset-lg-1 col-md-6 text-center text-md-start"
@@ -324,7 +324,7 @@
 
      </section>
 
-     <div class="container">
+     <div class="container mt-5">
 
          <h3 class="text-dark-gray fw-700" style="text-align: center;">{{ $settings['section_8_title'] }}</h3>
          <span style="margin-left:130px " class="fw-600">{{ $settings['section_8_small_title'] }}</span>
