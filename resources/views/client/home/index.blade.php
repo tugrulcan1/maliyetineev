@@ -166,8 +166,8 @@
 
 
 
-    <section class="bg-very-light-gray pb-0 mt-5" id="services"
-        style="padding-bottom: 0px !important; padding-top: 40px !important;">
+    <section class="pb-0 mt-5" id="services"
+        style="padding-bottom: 0px !important; padding-top: 0 !important;">
         <div class="tab-style-08 ">
             <div class="container border-bottom border-color-extra-medium-gray bg-white box-shadow-quadruple-large p-0">
 
@@ -187,7 +187,7 @@
 
             </div>
         </div>
-        <div class="container">
+        <div class="container bg-very-light-gray">
             <div class="row mb-8 sm-mb-10">
                 <div class="col-12 tab-style-08">
                     <div class="tab-content">
