@@ -96,7 +96,6 @@
 }
 
 .small-icon.light.list-inline li a {
-    color: #333;
     font-size: 20px;
 }
 
