@@ -7512,7 +7512,7 @@ header.sticky .navbar.disable-fixed {
 }
 .navbar .navbar-nav .dropdown .dropdown-menu {
   margin: 0;
-  padding: 60px 0 65px;
+  padding: 0;
   border: 0;
   top: 100%;
   background-color: var(--white);
@@ -7521,6 +7521,10 @@ header.sticky .navbar.disable-fixed {
   animation: hide-animation 0.5s;
   -webkit-border-radius: 0;
   border-radius: 0;
+}
+.navbar .navbar-nav .dropdown .dropdown-menu li{
+    width: 100%;
+    padding: 8px 20px;
 }
 .navbar .navbar-nav .dropdown .dropdown-menu li:last-child > a {
   padding-bottom: 0;
