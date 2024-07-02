@@ -19,7 +19,68 @@
          </section>
      @endforeach
 
+     <div class="row">
+        <div class="container">
+            <h3 class="text-dark-gray fw-700" style="text-align: center;">{{ $settings['section_8_title'] }}</h3>
+            <span style="margin-left:130px " class="fw-600">{{ $settings['section_8_small_title'] }}</span>
+            <div class="row mt-3">
 
+                <div class="col-sm  mb-4" style="text-align: center;">
+                    <div>
+                        <img src="/images/trust.png" alt="" style="height: 100px;">
+                        <p class="text-dark-gray fw-700 baslikP"
+                            style="font-size: 20px; margin: 0; padding: 0; color: #333; font-size: 16px;">
+                            {{ $settings['section_8_1'] }}</p>
+                        <p style="font-size: 12px;font-weight: normal;line-height: 20px;color: #647589">
+                            {{ $settings['section_8_1.1'] }}</p>
+                    </div>
+                </div>
+                <div class="col-sm  mb-4" style="text-align: center;">
+                    <div>
+                        <img src="/images/budget.png" alt="" style="height: 100px; ">
+                        <p class="text-dark-gray fw-700"
+                            style="font-size: 20px; margin: 0; padding: 0; color: #333; font-size: 16px;">
+                            {{ $settings['section_8_2'] }}
+                        </p>
+                        <p style="font-size: 12px;font-weight: normal;line-height: 20px;color: #647589">
+                            {{ $settings['section_8_2.1'] }}</p>
+                    </div>
+                </div>
+                <div class="col-sm  mb-4" style="text-align: center;">
+                    <div>
+                        <img src="/images/bank.png" alt="" style="height: 100px; ">
+                        <p class="text-dark-gray fw-700"
+                            style="font-size: 20px; margin: 0; padding: 0; color: #333; font-size: 16px;">
+                            {{ $settings['section_8_3'] }}
+                        </p>
+                        <p style="font-size: 12px;font-weight: normal;line-height: 20px;color: #647589">
+                            {{ $settings['section_8_3.1'] }}</p>
+                    </div>
+                </div>
+                <div class="col-sm  mb-4" style="text-align: center;">
+                    <div>
+                        <img src="/images/timing.png" alt="" style="height: 100px;">
+                        <p class="text-dark-gray fw-700"
+                            style="font-size: 20px; margin: 0; padding: 0; color: #333; font-size: 16px;">
+                            {{ $settings['section_8_4'] }}
+                        </p>
+                        <p style="font-size: 12px;font-weight: normal;line-height: 20px;color: #647589">
+                            {{ $settings['section_8_4.1'] }}</p>
+                    </div>
+                </div>
+                <div class="col-sm  mb-4" style="text-align: center;">
+                    <div>
+                        <img src="/images/smartphone.png" alt="" style="height: 100px; ">
+                        <p class="text-dark-gray fw-700"
+                            style="font-size: 20px; margin: 0; padding: 0; color: #333; font-size: 16px;">
+                            {{ $settings['section_8_5'] }}</p>
+                        <p style="font-size: 12px;font-weight: normal;line-height: 20px;color: #647589">
+                            {{ $settings['section_8_5.1'] }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
 
 
      <section class="pt-0 mgyy  " style="display:none">
@@ -97,70 +158,77 @@
     </section> --}}
 
 
-    <div class="container mt-5">
+     <section class="overflow-hidden" style="padding:0px 40px !important;">
+         <div class="container">
+             <div class="row align-items-center justify-content-center mb-3 mt-3 text-center text-lg-start column-form">
+                 <div class="col-xl-10 col-lg-10 md-mb-20px mt-2"
+                     data-anime="{ &quot;translateX&quot;: [50, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1200, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
+                     <h4 class="text-dark-gray fw-700 mb-0 ls-minus-1px">Projelerimiz
+                     </h4>
+                 </div>
+                 <div class="col-xl-2 col-lg-2 d-flex justify-content-center justify-content-lg-end"
+                     data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateX&quot;: [30, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 800, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
 
-        <h3 class="text-dark-gray fw-700" style="text-align: center;">{{ $settings['section_8_title'] }}</h3>
-        <span style="margin-left:130px " class="fw-600">{{ $settings['section_8_small_title'] }}</span>
-        <div class="row mt-3">
+                     <div
+                         class="slider-one-slide-prev-1 icon-small text-dark-gray swiper-button-prev slider-navigation-style-04 bg-white text-dark-gray box-shadow-large">
+                         <i class="fa-solid fa-arrow-left"></i>
+                     </div>
+                     <div
+                         class="slider-one-slide-next-1 icon-small text-dark-gray swiper-button-next slider-navigation-style-04 bg-white text-dark-gray box-shadow-large">
+                         <i class="fa-solid fa-arrow-right"></i>
+                     </div>
 
-            <div class="col-sm  mb-4" style="text-align: center;">
-                <div>
-                    <img src="/images/trust.png" alt="" style="height: 100px;">
-                    <p class="text-dark-gray fw-700 baslikP"
-                        style="font-size: 20px; margin: 0; padding: 0; color: #333; font-size: 16px;">
-                        {{ $settings['section_8_1'] }}</p>
-                    <p style="font-size: 12px;font-weight: normal;line-height: 20px;color: #647589">
-                        {{ $settings['section_8_1.1'] }}</p>
-                </div>
-            </div>
-            <div class="col-sm  mb-4" style="text-align: center;">
-                <div>
-                    <img src="/images/budget.png" alt="" style="height: 100px; ">
-                    <p class="text-dark-gray fw-700"
-                        style="font-size: 20px; margin: 0; padding: 0; color: #333; font-size: 16px;">
-                        {{ $settings['section_8_2'] }}
-                    </p>
-                    <p style="font-size: 12px;font-weight: normal;line-height: 20px;color: #647589">
-                        {{ $settings['section_8_2.1'] }}</p>
-                </div>
-            </div>
-            <div class="col-sm  mb-4" style="text-align: center;">
-                <div>
-                    <img src="/images/bank.png" alt="" style="height: 100px; ">
-                    <p class="text-dark-gray fw-700"
-                        style="font-size: 20px; margin: 0; padding: 0; color: #333; font-size: 16px;">
-                        {{ $settings['section_8_3'] }}
-                    </p>
-                    <p style="font-size: 12px;font-weight: normal;line-height: 20px;color: #647589">
-                        {{ $settings['section_8_3.1'] }}</p>
-                </div>
-            </div>
-            <div class="col-sm  mb-4" style="text-align: center;">
-                <div>
-                    <img src="/images/timing.png" alt="" style="height: 100px;">
-                    <p class="text-dark-gray fw-700"
-                        style="font-size: 20px; margin: 0; padding: 0; color: #333; font-size: 16px;">
-                        {{ $settings['section_8_4'] }}
-                    </p>
-                    <p style="font-size: 12px;font-weight: normal;line-height: 20px;color: #647589">
-                        {{ $settings['section_8_4.1'] }}</p>
-                </div>
-            </div>
-            <div class="col-sm  mb-4" style="text-align: center;">
-                <div>
-                    <img src="/images/smartphone.png" alt="" style="height: 100px; ">
-                    <p class="text-dark-gray fw-700"
-                        style="font-size: 20px; margin: 0; padding: 0; color: #333; font-size: 16px;">
-                        {{ $settings['section_8_5'] }}</p>
-                    <p style="font-size: 12px;font-weight: normal;line-height: 20px;color: #647589">
-                        {{ $settings['section_8_5.1'] }}</p>
-                </div>
-            </div>
-        </div>
+                 </div>
+             </div>
+             <div class="row align-items-center">
+                 <div class="col-12 position-relative p-0">
+                     <div class="outside-box-right-40 xs-outside-box-right-0"
+                         data-anime="{ &quot;translateX&quot;: [100, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1200, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
+                         <div class="swiper magic-cursor"
+                             data-slider-options="{ &quot;slidesPerView&quot;: 1, &quot;spaceBetween&quot;: 28, &quot;loop&quot;: true, &quot;autoplay&quot;: { &quot;delay&quot;: 2000, &quot;disableOnInteraction&quot;: false }, &quot;pagination&quot;: { &quot;el&quot;: &quot;.slider-four-slide-pagination-1&quot;, &quot;clickable&quot;: true }, &quot;navigation&quot;: { &quot;nextEl&quot;: &quot;.slider-one-slide-next-1&quot;, &quot;prevEl&quot;: &quot;.slider-one-slide-prev-1&quot; }, &quot;keyboard&quot;: { &quot;enabled&quot;: true, &quot;onlyInViewport&quot;: true }, &quot;breakpoints&quot;: { &quot;1200&quot;: { &quot;slidesPerView&quot;: 5 }, &quot;992&quot;: { &quot;slidesPerView&quot;: 4 }, &quot;768&quot;: { &quot;slidesPerView&quot;: 4 }, &quot;576&quot;: { &quot;slidesPerView&quot;: 2 } }, &quot;effect&quot;: &quot;slide&quot; }">
+                             <div class="swiper-wrapper">
+                                 @foreach ($projects as $project)
+                                     <div class="swiper-slide">
+                                         <div class="interactive-banner-style-08">
+                                             <figure
+                                                 class="m-0 hover-box overflow-hidden position-relative border-radius-6px">
+                                                 <a href="{{ route('projelerimiz.show', $project->id) }}" target="_blank"
+                                                     style="cursor: pointer">
+                                                     <img src="{{ asset('projects_cover_image/' . $project->cover_image) }}"
+                                                         alt="Resim bulunamadı" style="height: 250px; object-fit: cover;" />
+                                                 </a>
+                                                 <figcaption
+                                                     class="d-flex flex-column align-items-start justify-content-center position-absolute left-0px top-0px w-100 h-100 z-index-1 p-14 lg-p-12">
 
-    </div>
+                                                     <div class="mt-auto d-flex w-100 align-items-center">
 
+                                                         <div class="col project-tt last-paragraph-no-margin truncate-text">
+                                                             <a href="{{ route('projelerimiz.show', $project->id) }}"
+                                                                 target="_blank" class="text-white lh-28  xl-w-100 d-block"
+                                                                 style="color: white;cursor: pointer;font-size:12px">{{ $project->project_title }}</a>
 
+                                                             <p class="clamp-text"
+                                                                 style="color: white; margin: 0; padding: 0; font-size: 11px;">
+                                                                 {{ $project->project_sub_title }} </p>
+
+                                                         </div>
+
+                                                     </div>
+                                                     <div
+                                                         class="position-absolute left-0px top-0px w-100 h-100 bg-gradient-gray-light-dark-transparent z-index-minus-1 opacity-9">
+                                                     </div>
+                                                 </figcaption>
+                                             </figure>
+                                         </div>
+                                     </div>
+                                 @endforeach
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </section>
 
 
 
@@ -318,126 +386,59 @@
          </div>
 
      </section>
-     <section class="overflow-hidden" style="padding:0px 40px !important;">
-        <div class="container">
-            <div class="row align-items-center justify-content-center mb-3 mt-3 text-center text-lg-start column-form">
-                <div class="col-xl-10 col-lg-10 md-mb-20px mt-2"
-                    data-anime="{ &quot;translateX&quot;: [50, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1200, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
-                    <h4 class="text-dark-gray fw-700 mb-0 ls-minus-1px">Projelerimiz
-                    </h4>
-                </div>
-                <div class="col-xl-2 col-lg-2 d-flex justify-content-center justify-content-lg-end"
-                    data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateX&quot;: [30, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 800, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
 
-                    <div
-                        class="slider-one-slide-prev-1 icon-small text-dark-gray swiper-button-prev slider-navigation-style-04 bg-white text-dark-gray box-shadow-large">
-                        <i class="fa-solid fa-arrow-left"></i>
-                    </div>
-                    <div
-                        class="slider-one-slide-next-1 icon-small text-dark-gray swiper-button-next slider-navigation-style-04 bg-white text-dark-gray box-shadow-large">
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </div>
+     <div class="container mt-5">
 
-                </div>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-12 position-relative p-0">
-                    <div class="outside-box-right-40 xs-outside-box-right-0"
-                        data-anime="{ &quot;translateX&quot;: [100, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1200, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
-                        <div class="swiper magic-cursor"
-                            data-slider-options="{ &quot;slidesPerView&quot;: 1, &quot;spaceBetween&quot;: 28, &quot;loop&quot;: true, &quot;autoplay&quot;: { &quot;delay&quot;: 2000, &quot;disableOnInteraction&quot;: false }, &quot;pagination&quot;: { &quot;el&quot;: &quot;.slider-four-slide-pagination-1&quot;, &quot;clickable&quot;: true }, &quot;navigation&quot;: { &quot;nextEl&quot;: &quot;.slider-one-slide-next-1&quot;, &quot;prevEl&quot;: &quot;.slider-one-slide-prev-1&quot; }, &quot;keyboard&quot;: { &quot;enabled&quot;: true, &quot;onlyInViewport&quot;: true }, &quot;breakpoints&quot;: { &quot;1200&quot;: { &quot;slidesPerView&quot;: 5 }, &quot;992&quot;: { &quot;slidesPerView&quot;: 4 }, &quot;768&quot;: { &quot;slidesPerView&quot;: 4 }, &quot;576&quot;: { &quot;slidesPerView&quot;: 2 } }, &quot;effect&quot;: &quot;slide&quot; }">
-                            <div class="swiper-wrapper">
-                                @foreach ($projects as $project)
-                                    <div class="swiper-slide">
-                                        <div class="interactive-banner-style-08">
-                                            <figure
-                                                class="m-0 hover-box overflow-hidden position-relative border-radius-6px">
-                                                <a href="{{ route('projelerimiz.show', $project->id) }}" target="_blank"
-                                                    style="cursor: pointer">
-                                                    <img src="{{ asset('projects_cover_image/' . $project->cover_image) }}"
-                                                        alt="Resim bulunamadı" style="height: 250px; object-fit: cover;" />
-                                                </a>
-                                                <figcaption
-                                                    class="d-flex flex-column align-items-start justify-content-center position-absolute left-0px top-0px w-100 h-100 z-index-1 p-14 lg-p-12">
 
-                                                    <div class="mt-auto d-flex w-100 align-items-center">
+         <div class="row m-0 align-items-center justify-content-center border border-color-extra-medium-gray border-radius-100px md-border-radius-6px ps-10px pe-10px box-shadow-quadruple-large"
+             data-anime="{ &quot;scale&quot;: [1.1, 1], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 800, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
+             <div class="col-lg-10">
+                 <div class="swiper slider-one-slide testimonials-style-09"
+                     data-slider-options="{ &quot;slidesPerView&quot;: 1, &quot;loop&quot;: true, &quot;autoplay&quot;: { &quot;delay&quot;: 4000, &quot;disableOnInteraction&quot;: false }, &quot;navigation&quot;: { &quot;nextEl&quot;: &quot;.slider-one-slide-next-1&quot;, &quot;prevEl&quot;: &quot;.slider-one-slide-prev-1&quot; }, &quot;keyboard&quot;: { &quot;enabled&quot;: true, &quot;onlyInViewport&quot;: true }, &quot;effect&quot;: &quot;slide&quot; }">
+                     <div class="swiper-wrapper align-items-center">
 
-                                                        <div class="col project-tt last-paragraph-no-margin truncate-text">
-                                                            <a href="{{ route('projelerimiz.show', $project->id) }}"
-                                                                target="_blank" class="text-white lh-28  xl-w-100 d-block"
-                                                                style="color: white;cursor: pointer;font-size:12px">{{ $project->project_title }}</a>
-
-                                                            <p class="clamp-text"
-                                                                style="color: white; margin: 0; padding: 0; font-size: 11px;">
-                                                                {{ $project->project_sub_title }} </p>
-
-                                                        </div>
-
-                                                    </div>
-                                                    <div
-                                                        class="position-absolute left-0px top-0px w-100 h-100 bg-gradient-gray-light-dark-transparent z-index-minus-1 opacity-9">
-                                                    </div>
-                                                </figcaption>
-                                            </figure>
-                                        </div>
-                                    </div>
-                                @endforeach
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row m-0 align-items-center justify-content-center border border-color-extra-medium-gray border-radius-100px md-border-radius-6px ps-10px pe-10px box-shadow-quadruple-large"
-            data-anime="{ &quot;scale&quot;: [1.1, 1], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 800, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
-            <div class="col-lg-10">
-                <div class="swiper slider-one-slide testimonials-style-09"
-                    data-slider-options="{ &quot;slidesPerView&quot;: 1, &quot;loop&quot;: true, &quot;autoplay&quot;: { &quot;delay&quot;: 4000, &quot;disableOnInteraction&quot;: false }, &quot;navigation&quot;: { &quot;nextEl&quot;: &quot;.slider-one-slide-next-1&quot;, &quot;prevEl&quot;: &quot;.slider-one-slide-prev-1&quot; }, &quot;keyboard&quot;: { &quot;enabled&quot;: true, &quot;onlyInViewport&quot;: true }, &quot;effect&quot;: &quot;slide&quot; }">
-                    <div class="swiper-wrapper align-items-center">
-
-                        @foreach ($comments as $comment)
-                            <div class="swiper-slide">
-                                <div class="row align-items-center pt-25px pb-25px">
-                                    <div class="col-lg-8 d-lg-flex align-items-center text-center text-lg-start">
-                                        <img src="images/yildiz.png" class="rounded-circle w-100px h-100px md-mb-35px"
-                                            alt style="object-fit: cover !important;">
-                                        <span style=""
-                                            class="d-block ps-40px md-ps-0 md-mx-auto position-relative">{!! $comment->content !!}</span>
-                                    </div>
-                                    <div class="col-lg-1 d-none d-lg-inline-block">
-                                        <div
-                                            class="separator-line w-1px md-w-100 h-60px md-h-1px bg-extra-medium-gray mx-auto">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 text-center text-lg-start md-mt-15px">
-                                        <span
-                                            class="fs-19 ls-minus-05px fw-600 text-dark-gray d-block lh-28">{{ $comment->full_name }}</span>
-                                        <div></div>
-                                    </div>
-                                </div>
-                            </div>
-                        @endforeach
+                         @foreach ($comments as $comment)
+                             <div class="swiper-slide">
+                                 <div class="row align-items-center pt-25px pb-25px">
+                                     <div class="col-lg-8 d-lg-flex align-items-center text-center text-lg-start">
+                                         <img src="images/yildiz.png" class="rounded-circle w-100px h-100px md-mb-35px"
+                                             alt style="object-fit: cover !important;">
+                                         <span style=""
+                                             class="d-block ps-40px md-ps-0 md-mx-auto position-relative">{!! $comment->content !!}</span>
+                                     </div>
+                                     <div class="col-lg-1 d-none d-lg-inline-block">
+                                         <div
+                                             class="separator-line w-1px md-w-100 h-60px md-h-1px bg-extra-medium-gray mx-auto">
+                                         </div>
+                                     </div>
+                                     <div class="col-lg-3 text-center text-lg-start md-mt-15px">
+                                         <span
+                                             class="fs-19 ls-minus-05px fw-600 text-dark-gray d-block lh-28">{{ $comment->full_name }}</span>
+                                         <div></div>
+                                     </div>
+                                 </div>
+                             </div>
+                         @endforeach
 
 
 
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 md-mb-25px">
-                <div class="d-flex justify-content-center">
+                     </div>
+                 </div>
+             </div>
+             <div class="col-lg-2 md-mb-25px">
+                 <div class="d-flex justify-content-center">
 
-                    <div class="slider-one-slide-prev-1 swiper-button-prev slider-navigation-style-04 bg-very-light-gray">
-                        <i class="fa-solid fa-arrow-left icon-small text-dark-gray"></i>
-                    </div>
-                    <div class="slider-one-slide-next-1 swiper-button-next slider-navigation-style-04 bg-very-light-gray">
-                        <i class="fa-solid fa-arrow-right icon-small text-dark-gray"></i>
-                    </div>
+                     <div class="slider-one-slide-prev-1 swiper-button-prev slider-navigation-style-04 bg-very-light-gray">
+                         <i class="fa-solid fa-arrow-left icon-small text-dark-gray"></i>
+                     </div>
+                     <div class="slider-one-slide-next-1 swiper-button-next slider-navigation-style-04 bg-very-light-gray">
+                         <i class="fa-solid fa-arrow-right icon-small text-dark-gray"></i>
+                     </div>
 
-                </div>
-            </div>
-        </div>
-        </div>
-    </section>
-
+                 </div>
+             </div>
+         </div>
+     </div>
 
      <section style="padding: 0 !important; margin-bottom: 50px;margin-top:50px; ">
          <div class="container">
