@@ -200,7 +200,7 @@
                                  <div class="col-md-6 sm-mb-30px position-relative overflow-hidden"
                                      data-anime="{ &quot;effect&quot;: &quot;slide&quot;, &quot;color&quot;: &quot;#005153&quot;, &quot;direction&quot;:&quot;lr&quot;, &quot;easing&quot;: &quot;easeOutQuad&quot;, &quot;delay&quot;:50}">
                                      <img src="{{ $settings['section_5_1_img'] ?? '#' }}"
-                                         class="w-70 border-radius-6px d-flex m-auto" style="padding: 20px">
+                                         class="w-85 border-radius-6px d-flex m-auto" style="padding: 20px">
 
                                  </div>
                                  <div class="col-xl-4 col-lg-5 offset-lg-1 col-md-6 text-center text-md-start" style="padding: 20px 0;"
@@ -230,7 +230,7 @@
                              <div class="row align-items-center justify-content-center g-lg-0">
                                  <div class="col-md-6 sm-mb-30px position-relative overflow-hidden">
                                      <img src="{{ $settings['section_5_2_img'] ?? '#' }}" alt
-                                         class="w-70 border-radius-6px d-flex m-auto">
+                                         class="w-85 border-radius-6px d-flex m-auto">
 
                                  </div>
                                  <div class="col-xl-4 col-lg-5 offset-lg-1 col-md-6 text-center text-md-start" style="padding: 20px 0;">
@@ -260,7 +260,7 @@
                              <div class="row align-items-center justify-content-center g-lg-0">
                                  <div class="col-md-6 sm-mb-30px position-relative overflow-hidden">
                                      <img src="{{ $settings['section_5_3_img'] ?? '#' }}" alt
-                                         class="w-70 border-radius-6px d-flex m-auto">
+                                         class="w-85 border-radius-6px d-flex m-auto">
 
                                  </div>
                                  <div class="col-xl-4 col-lg-5 offset-lg-1 col-md-6 text-center text-md-start" style="padding: 20px 0;">
@@ -291,7 +291,7 @@
                              <div class="row align-items-center justify-content-center g-lg-0">
                                  <div class="col-md-6 sm-mb-30px position-relative overflow-hidden">
                                      <img src="{{ $settings['section_5_4_img'] ?? '#' }}" alt
-                                         class="w-70 border-radius-6px d-flex m-auto">
+                                         class="w-85 border-radius-6px d-flex m-auto">
 
                                  </div>
                                  <div class="col-xl-4 col-lg-5 offset-lg-1 col-md-6 text-center text-md-start" style="padding: 20px 0;">
