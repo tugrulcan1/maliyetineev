@@ -212,7 +212,7 @@ display: none;
                     </div>
                     <div class=" digital-mgz col-auto  text-end d-flex align-items-center justify-content-end d-lg-flex d-flex">
                         <a href="https://emlaksepette.com/" class="digitalMagaza" target="_blank" style="margin-right:10px;">Dijital Satış Ofisi</a>
-                        <a href="tel:4443284" class="phone-link" style="display: flex; align-items: center; color:#000;">
+                        <a href="tel:4443284" class="phone-link" style="display: flex; align-items: center; color:#000;margin-left:10px">
                             <i class="fas fa-phone"></i>
                         </a>
                     </div>
