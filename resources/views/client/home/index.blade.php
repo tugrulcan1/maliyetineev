@@ -92,18 +92,13 @@
     </section> --}}
 
 
-    <section class="bg-very-light-gray overflow-hidden" style="padding:0px 40px !important;">
-        <div class="container-fluid">
-            <div class="row align-items-center justify-content-center mb-6 text-center text-lg-start column-form">
-                <div class="col-xl-5 col-lg-5 md-mb-20px mt-2"
+    <section class="bg-very-light-gray overflow-hidden mt-5" style="padding:0px 40px !important;">
+        <div class="container">
+            <div class="row align-items-center justify-content-center mb-3 mt-3 text-center text-lg-start column-form">
+                <div class="col-xl-10 col-lg-10 md-mb-20px mt-2"
                     data-anime="{ &quot;translateX&quot;: [50, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1200, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
                     <h4 class="text-dark-gray fw-700 mb-0 ls-minus-1px">Projelerimiz
                     </h4>
-                </div>
-                <div class="col-xl-5 col-lg-5 last-paragraph-no-margin md-mb-30px"
-                    data-anime="{ &quot;translateX&quot;: [-50, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1200, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
-                    {{-- <p class="w-90 xl-w-100 md-w-80 sm-w-100 md-mx-auto">Maliyetine ev güvencesiyle projelerimize göz
-                        atın!</p> --}}
                 </div>
                 <div class="col-xl-2 col-lg-2 d-flex justify-content-center justify-content-lg-end"
                     data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateX&quot;: [30, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 800, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
