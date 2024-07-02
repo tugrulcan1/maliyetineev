@@ -93,7 +93,7 @@
 
 
     <section class="bg-very-light-gray overflow-hidden" style="padding:0px 40px !important;">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row align-items-center justify-content-center mb-6 text-center text-lg-start column-form">
                 <div class="col-xl-5 col-lg-5 md-mb-20px mt-2"
                     data-anime="{ &quot;translateX&quot;: [50, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1200, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
