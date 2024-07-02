@@ -67,59 +67,6 @@
 
 
 
-<style>
-    .menu-list li a {
-        color: white;
-        /* Bağlantı metin rengini beyaz yapıyoruz */
-        text-decoration: none;
-        /* Bağlantı alt çizgilerini kaldırıyoruz */
-    }
-
-    .menu-list li a:hover {
-        text-decoration: underline;
-        /* Bağlantıların üzerine gelindiğinde alt çizgi ekliyoruz */
-    }
-
-    .small-icon.light.list-inline {
-        padding: 0;
-        margin: 0;
-    }
-
-    .small-icon.light.list-inline li {
-        display: inline-block;
-        margin-right: 10px;
-    }
-
-    .small-icon.light.list-inline li:last-child {
-        margin-right: 0;
-    }
-
-    .small-icon.light.list-inline li a {
-        font-size: 20px;
-    }
-
-    .small-icon.light.list-inline li a:hover {
-        color: #007bff;
-        /* Değiştirmek istediğiniz hover rengi */
-    }
-
-    .fa-facebook-f {
-        color: #3b5998;
-        /* Facebook hover rengi */
-    }
-
-    .fa-instagram {
-        color: #e4405f;
-        /* Instagram hover rengi */
-    }
-
-    .fa-twitter {
-        color: #1da1f2;
-        /* Twitter hover rengi */
-    }
-</style>
-
-
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
     $(document).ready(function() {
