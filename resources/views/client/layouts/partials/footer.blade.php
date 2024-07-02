@@ -20,12 +20,15 @@
     </div>
 
     <div class="container">
-        <div class="row justify-content-center align-items-center">
+        <div class="row mt-2">
             <div class="col-12 col-lg-4 mb-4 mb-lg-0">
                 <a href="demo-accounting.html" class="footer-logo mb-2 d-inline-block">
                     <img src="{{ asset('images/maliyetineevlogo.png') }}" alt="Logo">
                 </a>
                 <p class="fs-14" style="color: #333;">Maliyetine Ev Sahibi Olmak Herkesin Hakkı</p>
+                <p>Cevizli, Çanakkale Cd. No:103A, 34865 Kartal/İstanbul</p>
+                <p><a href="mailto:info@emlaksepette.com">info@emlaksepette.com</a></p>
+                <p><a href="tel:444 3 284">444 3 284</a></p>
                 <div class="elements-social social-icon-style-02">
                     <ul class="small-icon light list-inline mb-0">
                         @foreach ($socialMediaIcons as $icon)
