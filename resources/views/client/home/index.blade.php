@@ -133,21 +133,16 @@
                                             </a>
                                             <figcaption class="d-flex flex-column align-items-start justify-content-center position-absolute left-0px top-0px w-100 h-100 z-index-1 p-14 lg-p-12">
 
-                                                <a href="{{route('projelerimiz.show',$project->id)}}" target="_blank"
-                                                    class="circle-box bg-yellow w-50px h-50px rounded-circle" style=" position: absolute;bottom: 120px;right: 15px; z-index: 2;">
-                                                    <i class="bi bi-arrow-right-short absolute-middle-center icon-very-medium lh-0px text-dark-gray"></i>
-                                                </a>
-
                                                 <div class="mt-auto d-flex w-100 align-items-center">
 
                                                     <div class="col project-tt last-paragraph-no-margin truncate-text">
                                                         <a href="{{route('projelerimiz.show',$project->id)}}"
                                                             target="_blank"
                                                             class="text-white lh-28  xl-w-100 d-block"
-                                                            style="color: white;cursor: pointer;font-size:14px">{{$project->project_title}}</a>
+                                                            style="color: white;cursor: pointer;font-size:12px">{{$project->project_title}}</a>
 
-                                                        <p class="clamp-text" style="color: white; margin: 0; padding: 0; font-size: 12px;">
-                                                            {{$project->project_sub_title}}</p>
+                                                        <p class="clamp-text" style="color: white; margin: 0; padding: 0; font-size: 11px;">
+                                                            {{$project->project_sub_title}}  <i class="bi bi-arrow-right-short absolute-middle-center icon-very-medium lh-0px text-white"></i></p>
 
                                                     </div>
 
