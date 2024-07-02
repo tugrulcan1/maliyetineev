@@ -46,8 +46,16 @@
     </div>
 
     <div class="second-footer bg-white-3">
-        <div class="container">
-            <p class="d-flex align-items-center" style="gap: 5px;">
+        <div style="    padding: 10 40 !important;
+    margin: 0 auto !important;
+    width: 100%;
+    text-align: center;
+    background: #274abb;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;">
+            <p class="d-flex align-items-center" style="gap: 5px;margin-bottom:0">
                 <span id="current-year">2024</span> © Copyright - Maliyetine Ev
             </p>
 
@@ -70,13 +78,6 @@
         </div>
     </div>
 
-    <div class="container mt-4">
-        <div class="row justify-content-center fs-14 fw-300">
-            <div class="col-12 col-lg-3 mb-3 mb-lg-0">
-                <p style="color: #333;">&copy; {{ date('Y') }} Maliyetine Ev. Tüm hakları saklıdır.</p>
-            </div>
-        </div>
-    </div>
 </footer>
 
 
