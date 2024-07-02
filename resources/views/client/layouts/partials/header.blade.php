@@ -174,17 +174,17 @@ display: none;
     }
 
     .fa-facebook-f {
-        color: #3b5998;
+        color: white;
         /* Facebook hover rengi */
     }
 
     .fa-instagram {
-        color: #e4405f;
+        color: white;
         /* Instagram hover rengi */
     }
 
     .fa-twitter {
-        color: #1da1f2;
+        color: white;
         /* Twitter hover rengi */
     }
 
