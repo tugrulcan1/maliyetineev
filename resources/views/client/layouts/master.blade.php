@@ -4,7 +4,7 @@
 
 @include('client.layouts.partials.footer')
 <!-- "Bilgi Al" butonu ve form -->
-<div id="infoButton" class="info-button">Bilgi Al</div>
+{{-- <div id="infoButton" class="info-button">Bilgi Al</div> --}}
 <div class="right-fixed-btn d-none d-lg-block"><span><i class="fa fa-envelope-o me-3" aria-hidden="true"></i> Başvuru
         Formu</span></div>
 <div id="formContainer" class="contact-form-style-01">
