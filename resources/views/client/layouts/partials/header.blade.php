@@ -207,7 +207,7 @@ display: none;
             <div class="circle-cursor circle-cursor-outer"></div>
         </div>
 
-        <header class="header-with-topbar mb-5" >
+        <header class="header-with-topbar" >
             {{-- <div class="header-top-bar top-bar-dark bg-very-light-gray">
                 <div class="container-fluid">
                     <div class="row h-45px xs-h-auto align-items-center m-0 xs-pt-5px xs-pb-5px">
