@@ -7524,16 +7524,13 @@ header.sticky .navbar.disable-fixed {
 }
 .navbar .navbar-nav .dropdown .dropdown-menu li{
     width: 100%;
-    padding: 8px 20px;
+    margin: 8px 20px;
 }
 .navbar .navbar-nav .dropdown .dropdown-menu li:last-child > a {
   padding-bottom: 0;
 }
 .navbar .navbar-nav .dropdown .dropdown-menu li.active > a {
   color: var(--dark-gray);
-}
-.navbar .navbar-nav .dropdown .dropdown-menu li a:hover {
-  padding-left: 3px;
 }
 .navbar .navbar-nav .dropdown .dropdown-menu a {
   color: var(--medium-gray);
