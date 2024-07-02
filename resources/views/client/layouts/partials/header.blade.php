@@ -178,6 +178,10 @@ display: none;
         /* Facebook hover rengi */
     }
 
+    .color-right-footer p{
+        color: black !important
+    }
+
     .fa-instagram {
         color: white;
         /* Instagram hover rengi */

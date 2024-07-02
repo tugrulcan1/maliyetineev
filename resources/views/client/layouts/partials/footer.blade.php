@@ -1,4 +1,4 @@
-<footer class="footer-dark pt-3 pb-0" style="background-color: #dddddd;">
+<footer class="footer-dark pt-3 pb-0" style="background-color: #274abb1f;">
     <div class="container" style="border-bottom: 1px solid #bebebe">
         <div class="row align-items-center justify-content-center">
             <div class="col-xl-6 text-center text-xl-start mb-sm-0">
@@ -38,7 +38,7 @@
                     <li><a href="/subelerimiz" style="color: #333;">Şubelerimiz</a></li>
                 </ul>
             </div> --}}
-            <div class="col-12 col-lg-4 col-sm-4 mb-4 mb-lg-0 text-end">
+            <div class="col-12 col-lg-4 col-sm-4 mb-4 mb-lg-0 text-end color-right-footer">
                 <span class="fs-16 fw-400 d-block mb-2" style="color: #333;">İletişim</span>
                 <p>Cevizli, Çanakkale Cd. No:103A, 34865 Kartal/İstanbul</p>
                 <p><a href="mailto:info@emlaksepette.com">info@emlaksepette.com</a></p>
