@@ -169,7 +169,7 @@
     <section class="bg-very-light-gray pb-0 mt-5" id="services"
         style="padding-bottom: 0px !important; padding-top: 40px !important;">
         <div class="tab-style-08 ">
-            <div class="container border-bottom border-color-extra-medium-gray bg-white box-shadow-quadruple-large">
+            <div class="container border-bottom border-color-extra-medium-gray bg-white box-shadow-quadruple-large p-0">
 
                 <ul class="nav nav-tabs border-0 fw-500 fs-19 text-center">
                     <li class="nav-item"><a data-bs-toggle="tab" href="#tab_eight1" class="nav-link active">1- {{$settings['section_5_1']}}<span class="tab-border bg-base-color"></span></a></li>
