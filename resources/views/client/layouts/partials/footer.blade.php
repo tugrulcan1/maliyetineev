@@ -1,7 +1,7 @@
 <footer class="footer-dark pt-3 pb-5" style="background-color: #dddddd;">
     <div class="container">
         <div class="row align-items-center justify-content-center">
-            <div class="col-xl-6 text-center text-xl-start mb-4 mb-sm-0">
+            <div class="col-xl-6 text-center text-xl-start mb-sm-0">
                 <h3 class="mb-2 fw-500" style="color: #333; font-size: 24px;">Aklınıza takılan soru mu var?</h3>
                 <p class="fs-15 fw-300" style="color: #333;">Bizimle iletişime geçebilirsiniz.</p>
             </div>
@@ -16,7 +16,7 @@
         </div>
     </div>
 
-    <div class="container mt-4">
+    <div class="container">
         <div class="row justify-content-center align-items-center">
             <div class="col-12 col-lg-3 mb-4 mb-lg-0">
                 <a href="demo-accounting.html" class="footer-logo mb-2 d-inline-block">
@@ -34,11 +34,9 @@
             <div class="col-12 col-lg-2 col-sm-4 mb-4 mb-lg-0" style="width: 390px;">
                 <span class="fs-16 fw-400 d-block mb-2" style="color: #333;">Hızlı Link</span>
                 <ul class="menu-list">
-                    @foreach ($menu as $item)
-                        <li><a href="{{$item->href}}" style="color: #333;">{{$item->text}}</a></li>
-                    @endforeach
                     <li><a href="/page/hakkimizda" style="color: #333;">Hakkımızda</a></li>
-                    <li><a href="/musterilerimize_mektup" style="color: #333;">Müşterilerimizden Mektup</a></li>
+                    <li><a href="/projelerimiz" style="color: #333;">Projelerimiz</a></li>
+                    <li><a href="/subelerimiz" style="color: #333;">Şubelerimiz</a></li>
                 </ul>
             </div>
             <div class="col-12 col-lg-2 col-sm-4 mb-4 mb-lg-0">
