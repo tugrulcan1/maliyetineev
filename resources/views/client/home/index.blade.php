@@ -19,7 +19,7 @@
          </section>
      @endforeach
 
-     <section>
+     <section class="pb-0">
         <div class="container">
             <h3 class="text-dark-gray fw-700" style="text-align: center;">{{ $settings['section_8_title'] }}</h3>
             <span style="margin-left:130px " class="fw-600">{{ $settings['section_8_small_title'] }}</span>
@@ -322,7 +322,7 @@
 
      </section>
 
-     <section class="overflow-hidden" style="padding:0px 40px !important;">
+     <section class="overflow-hidden mt-5" style="padding:0px 40px !important;">
         <div class="container">
             <div class="row align-items-center justify-content-center mb-3 mt-3 text-center text-lg-start column-form">
                 <div class="col-xl-10 col-lg-10 md-mb-20px mt-2"
