@@ -132,10 +132,7 @@
                                                     style="height: 250px; object-fit: cover;" />
                                             </a>
                                             <figcaption class="d-flex flex-column align-items-start justify-content-center position-absolute left-0px top-0px w-100 h-100 z-index-1 p-14 lg-p-12">
-                                                <a href="{{route('projelerimiz.show',$project->id)}}"
-                                                    target="_blank" style="cursor: pointer">
-                                                    <!-- <i class="line-icon-Medal-2 text-white icon-extra-large"></i> -->
-                                                </a>
+
                                                 <a href="{{route('projelerimiz.show',$project->id)}}" target="_blank"
                                                     class="circle-box bg-yellow w-50px h-50px rounded-circle" style=" position: absolute;bottom: 120px;right: 15px; z-index: 2;">
                                                     <i class="bi bi-arrow-right-short absolute-middle-center icon-very-medium lh-0px text-dark-gray"></i>
@@ -146,10 +143,10 @@
                                                     <div class="col project-tt last-paragraph-no-margin truncate-text">
                                                         <a href="{{route('projelerimiz.show',$project->id)}}"
                                                             target="_blank"
-                                                            class="text-white lh-28  xl-w-75 d-block"
+                                                            class="text-white lh-28  xl-w-100 d-block"
                                                             style="color: white;cursor: pointer;font-size:15px">{{$project->project_title}}</a>
 
-                                                        <p class="clamp-text" style="color: white; margin: 0; padding: 0; font-size: 14px;">
+                                                        <p class="clamp-text" style="color: white; margin: 0; padding: 0; font-size: 12px;">
                                                             {{$project->project_sub_title}}</p>
 
                                                     </div>
