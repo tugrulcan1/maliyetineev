@@ -104,7 +104,7 @@
     color: #007bff; /* Değiştirmek istediğiniz hover rengi */
 }
 
-.small-icon.light.list-inline li a.fa-facebook {
+.small-icon.light.list-inline li a.fa-facebook-f {
     color: #3b5998; /* Facebook hover rengi */
 }
 
