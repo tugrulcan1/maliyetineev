@@ -56,7 +56,7 @@
     .right-fixed-btn {
         position: fixed;
         z-index: 9;
-        right: -105px;
+        right: -88px;
         top: 50%;
         transform: rotate(90deg);
         cursor: pointer;
@@ -75,6 +75,10 @@
         color: #fff;
         font-size: 20px;
         text-decoration: 0px 0px 5px #007bff;
+        width: 100%;
+        height: 100%;
+        display: block;
+        white-space: nowrap;
     }
 
     .right-fixed-form {
