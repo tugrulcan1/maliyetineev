@@ -129,7 +129,7 @@
                                             <a href="{{route('projelerimiz.show',$project->id)}}"
                                                 target="_blank" style="cursor: pointer">
                                                 <img src="{{ asset('projects_cover_image/' . $project->cover_image) }}" alt="Resim bulunamadı"
-                                                    style="height: 300px; object-fit: cover;" />
+                                                    style="height: 250px; object-fit: cover;" />
                                             </a>
                                             <figcaption class="d-flex flex-column align-items-start justify-content-center position-absolute left-0px top-0px w-100 h-100 z-index-1 p-14 lg-p-12">
                                                 <a href="{{route('projelerimiz.show',$project->id)}}"
