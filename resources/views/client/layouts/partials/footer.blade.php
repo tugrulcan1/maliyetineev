@@ -41,8 +41,7 @@
             <div class="col-12 col-lg-4 col-sm-4 mb-lg-0 text-end color-right-footer">
                 <span class="fs-16 fw-400 d-block mb-2" style="color: #333;">İletişim</span>
                 <p>Cevizli, Çanakkale Cd. No:103A, 34865 Kartal/İstanbul
-                    <a style="margin-left: 30px;" href="javascript:;" data-pikap-popup="popup-kvkk">Kişisel Verilerin Korunması</a>
-                    <a style="margin-left: 30px;" href="javascript:;" data-pikap-popup="popup-kvkk">Kişisel Verilerin Korunması</a>
+
                 </p>
             </div>
         </div>
@@ -60,6 +59,8 @@
     justify-content: space-between;">
             <p class="d-flex align-items-center" style="gap: 5px;margin-bottom:0">
                 <span id="current-year">2024</span> © Copyright - Maliyetine Ev
+                <a style="margin-left: 30px;" href="javascript:;" data-pikap-popup="popup-kvkk">Kişisel Verilerin Korunması</a>
+                <a style="margin-left: 30px;" href="javascript:;" data-pikap-popup="popup-kvkk">Kişisel Verilerin Korunması</a>
             </p>
 
             <script>
