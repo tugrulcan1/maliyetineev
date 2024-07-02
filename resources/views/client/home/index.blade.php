@@ -15,7 +15,7 @@
                     </div>
                 </div>
             </div>
-            
+
     </section>
 	@endforeach
 
@@ -75,7 +75,7 @@
     </section>
 
 
-    <section class="p-0 bg-base-color" style="background: #b7d8ff;margin-top:30px; ">
+    {{-- <section class="p-0 bg-base-color" style="background: #b7d8ff;margin-top:30px; ">
         <div class="container">
             <div class="row align-items-center justify-content-center g-0">
                 <div class="col-auto d-flex align-items-center"
@@ -89,10 +89,11 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
+
 
     <section class="bg-very-light-gray overflow-hidden" style="padding:0px 40px !important;">
-        <div class="container-fluid">
+        <div class="container">
             <div class="row align-items-center justify-content-center mb-6 text-center text-lg-start column-form">
                 <div class="col-xl-5 col-lg-5 md-mb-20px mt-2"
                     data-anime="{ &quot;translateX&quot;: [50, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1200, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
@@ -144,9 +145,9 @@
                                                     class="circle-box bg-yellow w-50px h-50px rounded-circle" style=" position: absolute;bottom: 120px;right: 15px; z-index: 2;">
                                                     <i class="bi bi-arrow-right-short absolute-middle-center icon-very-medium lh-0px text-dark-gray"></i>
                                                 </a>
-                                            
+
                                                 <div class="mt-auto d-flex w-100 align-items-center">
-                                                    
+
                                                     <div class="col project-tt last-paragraph-no-margin truncate-text">
                                                         <a href="{{route('projelerimiz.show',$project->id)}}"
                                                             target="_blank"
@@ -157,7 +158,7 @@
                                                             {{$project->project_sub_title}}</p>
 
                                                     </div>
-                                                
+
                                                 </div>
                                                 <div
                                                     class="position-absolute left-0px top-0px w-100 h-100 bg-gradient-gray-light-dark-transparent z-index-minus-1 opacity-9">
@@ -209,7 +210,7 @@
                                 <div class="col-md-6 sm-mb-30px position-relative overflow-hidden"
                                     data-anime="{ &quot;effect&quot;: &quot;slide&quot;, &quot;color&quot;: &quot;#005153&quot;, &quot;direction&quot;:&quot;lr&quot;, &quot;easing&quot;: &quot;easeOutQuad&quot;, &quot;delay&quot;:50}">
                                     <img src="{{ $settings['section_5_1_img'] ?? '#' }}"  class="w-100 border-radius-6px">
-                                   
+
                                 </div>
                                 <div class="col-xl-4 col-lg-5 offset-lg-1 col-md-6 text-center text-md-start"
                                     data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateX&quot;: [50, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1200, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
@@ -236,7 +237,7 @@
                             <div class="row align-items-center justify-content-center g-lg-0">
                                 <div class="col-md-6 sm-mb-30px position-relative overflow-hidden">
                                     <img src="{{ $settings['section_5_2_img'] ?? '#' }}" alt class="w-100 border-radius-4px">
-                                    
+
                                 </div>
                                 <div class="col-xl-4 col-lg-5 offset-lg-1 col-md-6 text-center text-md-start">
                                     <!-- <div class="mb-20px">
@@ -263,7 +264,7 @@
                             <div class="row align-items-center justify-content-center g-lg-0">
                                 <div class="col-md-6 sm-mb-30px position-relative overflow-hidden">
                                     <img src="{{ $settings['section_5_3_img'] ?? '#' }}" alt class="w-100 border-radius-4px">
-                                   
+
                                 </div>
                                 <div class="col-xl-4 col-lg-5 offset-lg-1 col-md-6 text-center text-md-start">
                                     <!-- <div class="mb-20px">
@@ -291,7 +292,7 @@
                             <div class="row align-items-center justify-content-center g-lg-0">
                                 <div class="col-md-6 sm-mb-30px position-relative overflow-hidden">
                                     <img src="{{ $settings['section_5_4_img'] ?? '#' }}" alt class="w-100 border-radius-4px">
-                                  
+
                                 </div>
                                 <div class="col-xl-4 col-lg-5 offset-lg-1 col-md-6 text-center text-md-start">
                                     <!-- <div class="mb-20px">
@@ -369,9 +370,9 @@
                                         </div>
                                     </div>
 									@endforeach
-								
-									
-									
+
+
+
 
                                 </div>
                             </div>
@@ -582,7 +583,7 @@
             <img src="{{ asset('images/asdasd.jpg') }}" alt="" style="width: 1220px; height: 350px; object-fit: contain;">
         </div>
     </section>
-@endsection 
+@endsection
 
 
 <style>
