@@ -104,15 +104,15 @@
     color: #007bff; /* Değiştirmek istediğiniz hover rengi */
 }
 
-.small-icon.light.list-inline li a.facebook:hover {
+.small-icon.light.list-inline li a.fa-facebook {
     color: #3b5998; /* Facebook hover rengi */
 }
 
-.small-icon.light.list-inline li a.instagram:hover {
+.small-icon.light.list-inline li a.fa-instagram {
     color: #e4405f; /* Instagram hover rengi */
 }
 
-.small-icon.light.list-inline li a.twitter:hover {
+.small-icon.light.list-inline li a.fa-twitter {
     color: #1da1f2; /* Twitter hover rengi */
 }
 
