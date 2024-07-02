@@ -394,7 +394,7 @@
         </div>
     </section>
 
-    <section class="mt-5 mb-0">
+    <section class="mt-0 mb-0">
         <div class="container">
 
 
@@ -450,7 +450,7 @@
     </section>
 
 
-     <section style="padding: 0 !important; margin-bottom: 50px;margin-top:50px; ">
+     <section style="padding: 0 !important; margin-bottom: 50px; ">
          <div class="container">
              <img src="{{ asset('images/asdasd.jpg') }}" alt=""
                  style="width: 1220px; height: 350px; object-fit: contain;">
