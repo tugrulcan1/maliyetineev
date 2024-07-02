@@ -1,4 +1,4 @@
-<footer class="footer-dark pt-3 pb-5" style="background-color: #dddddd;">
+<footer class="footer-dark pt-3 pb-0" style="background-color: #dddddd;">
     <div class="container" style="border-bottom: 1px solid #bebebe">
         <div class="row align-items-center justify-content-center">
             <div class="col-xl-6 text-center text-xl-start mb-sm-0">
@@ -26,18 +26,7 @@
                 </a>
                 <p class="fs-14" style="color: #333;">Maliyetine Ev Sahibi Olmak Herkesin Hakkı</p>
 
-                <div class="elements-social social-icon-style-02">
-                    <ul class="small-icon light list-inline mb-0">
-                        @foreach ($socialMediaIcons as $icon)
-                            <li>
-                                <a class="{{ $icon->platform }}" href="{{ $icon->url }}" target="_blank">
-                                    <i class="fa-brands {{ $icon->icon_class }}"></i>
-                                </a>
-                            </li>
-                        @endforeach
-                    </ul>
 
-                </div>
             </div>
             {{-- <div class="col-12 col-lg-4 col-sm-4 mb-4 mb-lg-0" style="width: 390px;">
                 <span class="fs-16 fw-400 d-block mb-2" style="color: #333;">Hızlı Link</span>
@@ -53,6 +42,31 @@
                 <p><a href="mailto:info@emlaksepette.com">info@emlaksepette.com</a></p>
                 <p><a href="tel:444 3 284">444 3 284</a></p>
             </div>
+        </div>
+    </div>
+
+    <div class="second-footer bg-white-3">
+        <div class="container">
+            <p class="d-flex align-items-center" style="gap: 5px;">
+                <span id="current-year">2024</span> © Copyright - Maliyetine Ev
+            </p>
+
+            <script>
+                document.getElementById("current-year").textContent = new Date().getFullYear();
+            </script>
+            <div class="elements-social social-icon-style-02">
+                <ul class="small-icon light list-inline mb-0">
+                    @foreach ($socialMediaIcons as $icon)
+                        <li>
+                            <a class="{{ $icon->platform }}" href="{{ $icon->url }}" target="_blank">
+                                <i class="fa-brands {{ $icon->icon_class }}"></i>
+                            </a>
+                        </li>
+                    @endforeach
+                </ul>
+
+            </div>
+
         </div>
     </div>
 
