@@ -142,7 +142,7 @@
                                                             style="color: white;cursor: pointer;font-size:12px">{{$project->project_title}}</a>
 
                                                         <p class="clamp-text" style="color: white; margin: 0; padding: 0; font-size: 11px;">
-                                                            {{$project->project_sub_title}}  <i class="bi bi-arrow-right-short absolute-middle-center icon-very-medium lh-0px text-white"></i></p>
+                                                            {{$project->project_sub_title}}  <i class="bi bi-arrow-right-short icon-very-medium ml-2 text-white"></i></p>
 
                                                     </div>
 
