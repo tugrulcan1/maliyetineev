@@ -26,9 +26,7 @@
                     <img src="{{ asset('images/maliyetineevlogo.png') }}" alt="Logo">
                 </a>
                 <p class="fs-14" style="color: #333;">Maliyetine Ev Sahibi Olmak Herkesin Hakkı</p>
-                <p>Cevizli, Çanakkale Cd. No:103A, 34865 Kartal/İstanbul</p>
-                <p><a href="mailto:info@emlaksepette.com">info@emlaksepette.com</a></p>
-                <p><a href="tel:444 3 284">444 3 284</a></p>
+
                 <div class="elements-social social-icon-style-02">
                     <ul class="small-icon light list-inline mb-0">
                         @foreach ($socialMediaIcons as $icon)
@@ -46,10 +44,11 @@
                     <li><a href="/subelerimiz" style="color: #333;">Şubelerimiz</a></li>
                 </ul>
             </div>
-            <div class="col-12 col-lg-4 col-sm-4 mb-4 mb-lg-0">
+            <div class="col-12 col-lg-4 col-sm-4 mb-4 mb-lg-0 text-end">
                 <span class="fs-16 fw-400 d-block mb-2" style="color: #333;">İletişim</span>
-                <a href="tel:{{ $settings['phone'] }}" style="color: #333;">{{ $settings['phone'] }}</a><br>
-                <a href="mailto:{{ $settings['e-mail'] }}" style="color: #333;">{{ $settings['e-mail'] }}</a>
+                <p>Cevizli, Çanakkale Cd. No:103A, 34865 Kartal/İstanbul</p>
+                <p><a href="mailto:info@emlaksepette.com">info@emlaksepette.com</a></p>
+                <p><a href="tel:444 3 284">444 3 284</a></p>
             </div>
         </div>
     </div>
