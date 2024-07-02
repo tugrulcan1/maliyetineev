@@ -97,6 +97,7 @@
     .navbar-nav .nav-item {
         margin-left: 0;
         margin-right: 0;
+        margin: 0 10px;
     }
 
     .navbar-nav .nav-link {
