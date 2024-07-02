@@ -10269,7 +10269,8 @@ blockquote footer {
   padding: 10px 20px;
 }
 .btn.btn-rounded.btn-extra-large {
-  padding: 18px 46px;
+  padding: 10px 20px;
+  font-size: 14px;
 }
 .btn.btn-rounded.btn-large {
   padding: 14px 36px;
