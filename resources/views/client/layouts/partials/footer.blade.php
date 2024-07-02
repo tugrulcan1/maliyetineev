@@ -1,4 +1,4 @@
-<footer class="footer-dark pt-3 pb-0" style="background-color: #274abb1f;">
+<footer class="footer-dark pt-1 pb-0" style="background-color: #274abb1f;">
     <div class="container" style="border-bottom: 1px solid #bebebe">
         <div class="row align-items-center justify-content-center">
             <div class="col-xl-6 text-center text-xl-start mb-sm-0">
@@ -22,11 +22,11 @@
 
     <div class="container">
         <div class="row mt-2 justify-content-between">
-            <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+            <div class="col-12 col-lg-4 mb-lg-0">
                 <a href="demo-accounting.html" class="footer-logo mb-2 d-inline-block">
                     <img src="{{ asset('images/maliyetineevlogo.png') }}" alt="Logo">
                 </a>
-                <p class="fs-14" style="color: #333;">Maliyetine Ev Sahibi Olmak Herkesin Hakkı</p>
+                {{-- <p class="fs-14" style="color: #333;">Maliyetine Ev Sahibi Olmak Herkesin Hakkı</p> --}}
 
 
             </div>
@@ -38,11 +38,9 @@
                     <li><a href="/subelerimiz" style="color: #333;">Şubelerimiz</a></li>
                 </ul>
             </div> --}}
-            <div class="col-12 col-lg-4 col-sm-4 mb-4 mb-lg-0 text-end color-right-footer">
+            <div class="col-12 col-lg-4 col-sm-4 mb-lg-0 text-end color-right-footer">
                 <span class="fs-16 fw-400 d-block mb-2" style="color: #333;">İletişim</span>
                 <p>Cevizli, Çanakkale Cd. No:103A, 34865 Kartal/İstanbul</p>
-                <p><a href="mailto:info@emlaksepette.com">info@emlaksepette.com</a></p>
-                <p><a href="tel:444 3 284">444 3 284</a></p>
             </div>
         </div>
     </div>
