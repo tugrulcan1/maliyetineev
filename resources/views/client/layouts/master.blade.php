@@ -5,7 +5,7 @@
 @include('client.layouts.partials.footer')
 <!-- "Bilgi Al" butonu ve form -->
 {{-- <div id="infoButton" class="info-button">Bilgi Al</div> --}}
-<div class="right-fixed-btn d-none d-lg-block"><span><i class="fa fa-envelope-o me-3" aria-hidden="true"></i> Başvuru
+<div class="right-fixed-btn d-none d-lg-block"><span> Başvuru
         Formu</span></div>
 <div id="formContainer" class="contact-form-style-01">
     <div class="ps-8 pe-8 pt-8 pb-8 lg-p-8 bg-white box-shadow-quadruple-large border-radius-6px">
@@ -56,7 +56,7 @@
     .right-fixed-btn {
         position: fixed;
         z-index: 9;
-        right: -88px;
+        right: -70px;
         top: 50%;
         transform: rotate(90deg);
         cursor: pointer;
@@ -73,7 +73,7 @@
 
     .right-fixed-btn span {
         color: #fff;
-        font-size: 20px;
+        font-size: 15px;
         text-decoration: 0px 0px 5px #007bff;
         width: 100%;
         height: 100%;
