@@ -37,7 +37,8 @@
                 </div>
                 <div class="col-sm  mb-4" style="text-align: center;">
                     <div>
-                        <img src="/images/budget.png" alt="" style="height: 100px; ">
+                        <img src="/images/budget.png" alt="" style="    height: 70px;
+    margin-bottom: 10px;">
                         <p class="text-dark-gray fw-700"
                             style="font-size: 20px; margin: 0; padding: 0; color: #333; font-size: 16px;">
                             {{ $settings['section_8_2'] }}
@@ -48,7 +49,8 @@
                 </div>
                 <div class="col-sm  mb-4" style="text-align: center;">
                     <div>
-                        <img src="/images/bank.png" alt="" style="height: 100px; ">
+                        <img src="/images/bank.png" alt="" style="    height: 70px;
+    margin-bottom: 10px;">
                         <p class="text-dark-gray fw-700"
                             style="font-size: 20px; margin: 0; padding: 0; color: #333; font-size: 16px;">
                             {{ $settings['section_8_3'] }}
@@ -70,7 +72,8 @@
                 </div>
                 <div class="col-sm  mb-4" style="text-align: center;">
                     <div>
-                        <img src="/images/smartphone.png" alt="" style="height: 100px; ">
+                        <img src="/images/smartphone.png" alt="" style="    height: 70px;
+    margin-bottom: 10px;">
                         <p class="text-dark-gray fw-700"
                             style="font-size: 20px; margin: 0; padding: 0; color: #333; font-size: 16px;">
                             {{ $settings['section_8_5'] }}</p>
