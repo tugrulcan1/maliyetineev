@@ -199,7 +199,7 @@ display: none;
                                             @foreach ($menus->children as $child)
                                                 <li><a class="dropdown-item" href="{{ $child->href }}">{{ $child->text }}</a></li>
                                             @endforeach
-                                            
+
                                         </ul>
                                     </li>
                                 @else
@@ -210,7 +210,7 @@ display: none;
                             @endforeach
                         </ul>
                     </div>
-                    <div class=" digital-mgz col-auto col-lg-2 text-end d-flex align-items-center justify-content-end d-lg-flex d-flex">                    
+                    <div class=" digital-mgz col-auto  text-end d-flex align-items-center justify-content-end d-lg-flex d-flex">
                         <a href="https://emlaksepette.com/" class="digitalMagaza me-2" target="_blank" style="margin-right:10px;">Dijital Satış Ofisi</a>
                         <a href="tel:4443284" class="phone-link" style="display: flex; align-items: center; color:#000;">
                             <i class="fas fa-phone"></i>
@@ -218,7 +218,7 @@ display: none;
                     </div>
                 </div>
             </nav>
-            
-            
+
+
 
         </header>

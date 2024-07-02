@@ -108,8 +108,16 @@ h5 {
 h6 {
   line-height: 1.75rem;
 }
+.navbar-expand-lg .navbar-nav{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.navbar-expand-lg .navbar-collapse{
+    width: 100%;
+}
 .navbar .navbar-nav .nav-link {
-  font-size: 18px;
+  font-size: 15px;
   font-family: cerebri-sans-medium !important;
 }
 .navbar .navbar-nav .dropdown .dropdown-menu a {
