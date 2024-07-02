@@ -1,6 +1,5 @@
 <footer class="footer-dark pt-3 pb-5" style="background-color: #dddddd;">
-    <div class="container"
-    style="border-bottom: 1px solid #bebebe">
+    <div class="container" style="border-bottom: 1px solid #bebebe">
         <div class="row align-items-center justify-content-center">
             <div class="col-xl-6 text-center text-xl-start mb-sm-0">
                 <h3 class="mb-2 fw-500" style="color: #333; font-size: 24px;">Aklınıza takılan soru mu var?</h3>
@@ -82,39 +81,42 @@
     }
 
     .small-icon.light.list-inline {
-    padding: 0;
-    margin: 0;
-}
+        padding: 0;
+        margin: 0;
+    }
 
-.small-icon.light.list-inline li {
-    display: inline-block;
-    margin-right: 10px;
-}
+    .small-icon.light.list-inline li {
+        display: inline-block;
+        margin-right: 10px;
+    }
 
-.small-icon.light.list-inline li:last-child {
-    margin-right: 0;
-}
+    .small-icon.light.list-inline li:last-child {
+        margin-right: 0;
+    }
 
-.small-icon.light.list-inline li a {
-    font-size: 20px;
-}
+    .small-icon.light.list-inline li a {
+        font-size: 20px;
+    }
 
-.small-icon.light.list-inline li a:hover {
-    color: #007bff; /* Değiştirmek istediğiniz hover rengi */
-}
+    .small-icon.light.list-inline li a:hover {
+        color: #007bff;
+        /* Değiştirmek istediğiniz hover rengi */
+    }
 
-.small-icon.light.list-inline li a.fa-facebook-f {
-    color: #3b5998; /* Facebook hover rengi */
-}
+    .fa-facebook-f {
+        color: #3b5998;
+        /* Facebook hover rengi */
+    }
 
-.small-icon.light.list-inline li a.fa-instagram {
-    color: #e4405f; /* Instagram hover rengi */
-}
+    .fa-instagram {
+        color: #e4405f;
+        /* Instagram hover rengi */
+    }
 
-.small-icon.light.list-inline li a.fa-twitter {
-    color: #1da1f2; /* Twitter hover rengi */
-}
-
+    .fa-twitter {
+        color: #1da1f2;
+        /* Twitter hover rengi */
+    }
 </style>
 
 
