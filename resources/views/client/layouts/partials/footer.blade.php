@@ -20,7 +20,7 @@
     </div>
 
     <div class="container">
-        <div class="row mt-2">
+        <div class="row mt-2 justify-content-between">
             <div class="col-12 col-lg-4 mb-4 mb-lg-0">
                 <a href="demo-accounting.html" class="footer-logo mb-2 d-inline-block">
                     <img src="{{ asset('images/maliyetineevlogo.png') }}" alt="Logo">
@@ -30,20 +30,24 @@
                 <div class="elements-social social-icon-style-02">
                     <ul class="small-icon light list-inline mb-0">
                         @foreach ($socialMediaIcons as $icon)
-                            <li><a class="facebook" href="{{ $icon->url }}" target="_blank"><i
-                                        class="fa-brands {{ $icon->icon_class }}"></i></a></li>
+                            <li>
+                                <a class="{{ $icon->platform }}" href="{{ $icon->url }}" target="_blank">
+                                    <i class="fa-brands {{ $icon->icon_class }}"></i>
+                                </a>
+                            </li>
                         @endforeach
                     </ul>
+
                 </div>
             </div>
-            <div class="col-12 col-lg-4 col-sm-4 mb-4 mb-lg-0" style="width: 390px;">
+            {{-- <div class="col-12 col-lg-4 col-sm-4 mb-4 mb-lg-0" style="width: 390px;">
                 <span class="fs-16 fw-400 d-block mb-2" style="color: #333;">Hızlı Link</span>
                 <ul class="menu-list">
                     <li><a href="/page/hakkimizda" style="color: #333;">Hakkımızda</a></li>
                     <li><a href="/projelerimiz" style="color: #333;">Projelerimiz</a></li>
                     <li><a href="/subelerimiz" style="color: #333;">Şubelerimiz</a></li>
                 </ul>
-            </div>
+            </div> --}}
             <div class="col-12 col-lg-4 col-sm-4 mb-4 mb-lg-0 text-end">
                 <span class="fs-16 fw-400 d-block mb-2" style="color: #333;">İletişim</span>
                 <p>Cevizli, Çanakkale Cd. No:103A, 34865 Kartal/İstanbul</p>
@@ -76,6 +80,42 @@
         text-decoration: underline;
         /* Bağlantıların üzerine gelindiğinde alt çizgi ekliyoruz */
     }
+
+    .small-icon.light.list-inline {
+    padding: 0;
+    margin: 0;
+}
+
+.small-icon.light.list-inline li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.small-icon.light.list-inline li:last-child {
+    margin-right: 0;
+}
+
+.small-icon.light.list-inline li a {
+    color: #333;
+    font-size: 20px;
+}
+
+.small-icon.light.list-inline li a:hover {
+    color: #007bff; /* Değiştirmek istediğiniz hover rengi */
+}
+
+.small-icon.light.list-inline li a.facebook:hover {
+    color: #3b5998; /* Facebook hover rengi */
+}
+
+.small-icon.light.list-inline li a.instagram:hover {
+    color: #e4405f; /* Instagram hover rengi */
+}
+
+.small-icon.light.list-inline li a.twitter:hover {
+    color: #1da1f2; /* Twitter hover rengi */
+}
+
 </style>
 
 
