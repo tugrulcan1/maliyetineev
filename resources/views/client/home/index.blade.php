@@ -142,7 +142,7 @@
                                                             style="color: white;cursor: pointer;font-size:12px">{{$project->project_title}}</a>
 
                                                         <p class="clamp-text" style="color: white; margin: 0; padding: 0; font-size: 11px;">
-                                                            {{$project->project_sub_title}}  <i class="bi bi-arrow-right-short icon-very-medium ml-2 text-white"></i></p>
+                                                            {{$project->project_sub_title}} </p>
 
                                                     </div>
 
@@ -166,10 +166,10 @@
 
 
 
-    <section class="bg-very-light-gray pb-0" id="services"
+    <section class="bg-very-light-gray pb-0 mt-5" id="services"
         style="padding-bottom: 0px !important; padding-top: 40px !important;">
-        <div class="tab-style-08 border-bottom border-color-extra-medium-gray bg-white box-shadow-quadruple-large">
-            <div class="container">
+        <div class="tab-style-08 ">
+            <div class="container border-bottom border-color-extra-medium-gray bg-white box-shadow-quadruple-large">
 
                 <ul class="nav nav-tabs border-0 fw-500 fs-19 text-center">
                     <li class="nav-item"><a data-bs-toggle="tab" href="#tab_eight1" class="nav-link active">1- {{$settings['section_5_1']}}<span class="tab-border bg-base-color"></span></a></li>
