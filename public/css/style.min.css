@@ -9178,9 +9178,6 @@ header.sticky .navbar.disable-fixed {
     text-align: center;
 }
 
-.navbar .navbar-nav .dropdown .dropdown-menu li:last-child>a {
-    padding-bottom: 0;
-}
 
 .navbar .navbar-nav .dropdown .dropdown-menu li.active>a {
     color: var(--dark-gray);
