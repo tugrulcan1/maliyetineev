@@ -115,7 +115,7 @@
                 </div>
             </div>
             <div class="row align-items-center">
-                <div class="col-12 position-relative">
+                <div class="col-12 position-relative p-0">
                     <div class="outside-box-right-40 xs-outside-box-right-0"
                         data-anime="{ &quot;translateX&quot;: [100, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1200, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
                         <div class="swiper magic-cursor"
