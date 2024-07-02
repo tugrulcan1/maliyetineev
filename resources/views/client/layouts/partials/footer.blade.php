@@ -18,7 +18,7 @@
 
     <div class="container">
         <div class="row justify-content-center align-items-center">
-            <div class="col-12 col-lg-3 mb-4 mb-lg-0">
+            <div class="col-12 col-lg-4 mb-4 mb-lg-0">
                 <a href="demo-accounting.html" class="footer-logo mb-2 d-inline-block">
                     <img src="{{ asset('images/maliyetineevlogo.png') }}" alt="Logo">
                 </a>
@@ -31,7 +31,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-12 col-lg-2 col-sm-4 mb-4 mb-lg-0" style="width: 390px;">
+            <div class="col-12 col-lg-4 col-sm-4 mb-4 mb-lg-0" style="width: 390px;">
                 <span class="fs-16 fw-400 d-block mb-2" style="color: #333;">Hızlı Link</span>
                 <ul class="menu-list">
                     <li><a href="/page/hakkimizda" style="color: #333;">Hakkımızda</a></li>
@@ -39,12 +39,12 @@
                     <li><a href="/subelerimiz" style="color: #333;">Şubelerimiz</a></li>
                 </ul>
             </div>
-            <div class="col-12 col-lg-2 col-sm-4 mb-4 mb-lg-0">
+            <div class="col-12 col-lg-4 col-sm-4 mb-4 mb-lg-0">
                 <span class="fs-16 fw-400 d-block mb-2" style="color: #333;">İletişim</span>
                 <a href="tel:{{$settings['phone']}}" style="color: #333;">{{$settings['phone']}}</a><br>
                 <a href="mailto:{{$settings['e-mail']}}" style="color: #333;">{{$settings['e-mail']}}</a>
             </div>
-            <div class="col-lg-3 col-sm-12">
+            {{-- <div class="col-lg-3 col-sm-12">
                 <span class="fs-16 fw-400 d-block mb-2" style="color: #333;">Mail gönderin</span>
                 <p style="color: #333;">En kısa sürede dönüş yapacağız.</p>
                 @if ($errors->any())
@@ -61,7 +61,7 @@
                     <input class="form-control mb-2" type="email" name="email" placeholder="Email Adresiniz">
                     <button class="btn btn-primary" type="submit" aria-label="Gönder"><i class="fa fa-envelope"></i></button>
                 </form>
-            </div>
+            </div> --}}
         </div>
     </div>
 
