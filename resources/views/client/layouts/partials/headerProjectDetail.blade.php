@@ -84,7 +84,7 @@
 
     <header class="header-with-topbar">
 
-        <div class="header-top-bar top-bar-dark bg-very-light-gray">
+        {{-- <div class="header-top-bar top-bar-dark bg-very-light-gray">
             <div class="container-fluid">
                 <div class="row h-45px xs-h-auto align-items-center m-0 xs-pt-5px xs-pb-5px">
                     <div class="col-lg-6 col-md-7 text-center text-md-start xs-px-0">
@@ -101,7 +101,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
 
 
         <nav class="navbar navbar-expand-lg header-light bg-white responsive-sticky">
@@ -128,7 +128,7 @@
                             @endforeach
                         </ul>
                     </div> --}}
-                    
+
                 </div>
                 <div class="col-auto col-lg-2 text-end d-none d-sm-flex">
                   <div class="header-icon">
