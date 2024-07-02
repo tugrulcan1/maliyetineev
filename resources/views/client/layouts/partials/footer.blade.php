@@ -7,11 +7,13 @@
             </div>
             <div class="col-xl-6 text-center text-xl-end">
                 <a href="mailto:{{ $settings['e-mail'] }}"
-                    class="btn btn-extra-large btn-yellow btn-rounded text-white me-2">
+                    class="btn btn-extra-large btn-rounded text-white me-2"
+                    style="background-color: #ea2a28">
                     <i class="fa fa-envelope"></i> {{ $settings['e-mail'] }}
                 </a>
                 <a href="tel:{{ $settings['phone'] }}"
-                    class="btn btn-extra-large btn-base-color btn-rounded text-white">
+                    class="btn btn-extra-large btn-base-color btn-rounded text-white"
+                    style="background-color: #274abb">
                     <i class="fa fa-phone"></i> {{ $settings['phone'] }}
                 </a>
             </div>
