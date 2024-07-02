@@ -92,7 +92,7 @@
     </section> --}}
 
 
-    <section class="bg-very-light-gray overflow-hidden mt-5" style="padding:0px 40px !important;">
+    <section class="overflow-hidden" style="padding:0px 40px !important;">
         <div class="container">
             <div class="row align-items-center justify-content-center mb-3 mt-3 text-center text-lg-start column-form">
                 <div class="col-xl-10 col-lg-10 md-mb-20px mt-2"
