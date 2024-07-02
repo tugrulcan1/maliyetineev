@@ -21,7 +21,7 @@
     </div>
 
     <div class="container">
-        <div class="row mt-2 justify-content-between">
+        <div class="row mt-2 justify-content-between mb-2 align-items-center">
             <div class="col-12 col-lg-4 mb-lg-0">
                 <a href="demo-accounting.html" class="footer-logo mb-2 d-inline-block">
                     <img src="{{ asset('images/maliyetineevlogo.png') }}" alt="Logo">
