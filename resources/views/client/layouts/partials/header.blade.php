@@ -178,7 +178,8 @@ display: none;
         /* Facebook hover rengi */
     }
 
-    .color-right-footer p{
+    .color-right-footer p,
+    .color-right-footer p a{
         color: black !important
     }
 
