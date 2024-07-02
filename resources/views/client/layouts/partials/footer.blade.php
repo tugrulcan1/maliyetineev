@@ -1,5 +1,6 @@
 <footer class="footer-dark pt-3 pb-5" style="background-color: #dddddd;">
-    <div class="container">
+    <div class="container"
+    style="border-bottom: 1px solid #bebebe">
         <div class="row align-items-center justify-content-center">
             <div class="col-xl-6 text-center text-xl-start mb-sm-0">
                 <h3 class="mb-2 fw-500" style="color: #333; font-size: 24px;">Aklınıza takılan soru mu var?</h3>
