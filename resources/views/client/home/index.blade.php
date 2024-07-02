@@ -27,7 +27,8 @@
 
                 <div class="col-sm  mb-4" style="text-align: center;">
                     <div>
-                        <img src="/images/trust.png" alt="" style="height: 100px;">
+                        <img src="/images/trust.png" alt="" style=" height: 70px;
+    margin-bottom: 10px;">
                         <p class="text-dark-gray fw-700 baslikP"
                             style="font-size: 20px; margin: 0; padding: 0; color: #333; font-size: 16px;">
                             {{ $settings['section_8_1'] }}</p>
@@ -61,7 +62,8 @@
                 </div>
                 <div class="col-sm  mb-4" style="text-align: center;">
                     <div>
-                        <img src="/images/timing.png" alt="" style="height: 100px;">
+                        <img src="/images/timing.png" alt="" style=" height: 70px;
+    margin-bottom: 10px;">
                         <p class="text-dark-gray fw-700"
                             style="font-size: 20px; margin: 0; padding: 0; color: #333; font-size: 16px;">
                             {{ $settings['section_8_4'] }}
