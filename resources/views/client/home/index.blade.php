@@ -163,77 +163,7 @@
     </section> --}}
 
 
-     <section class="overflow-hidden" style="padding:0px 40px !important;">
-         <div class="container">
-             <div class="row align-items-center justify-content-center mb-3 mt-3 text-center text-lg-start column-form">
-                 <div class="col-xl-10 col-lg-10 md-mb-20px mt-2"
-                     data-anime="{ &quot;translateX&quot;: [50, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1200, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
-                     <h4 class="text-dark-gray fw-700 mb-0 ls-minus-1px">Projelerimiz
-                     </h4>
-                 </div>
-                 <div class="col-xl-2 col-lg-2 d-flex justify-content-center justify-content-lg-end"
-                     data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateX&quot;: [30, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 800, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
 
-                     <div
-                         class="slider-one-slide-prev-1 icon-small text-dark-gray swiper-button-prev slider-navigation-style-04 bg-white text-dark-gray box-shadow-large">
-                         <i class="fa-solid fa-arrow-left"></i>
-                     </div>
-                     <div
-                         class="slider-one-slide-next-1 icon-small text-dark-gray swiper-button-next slider-navigation-style-04 bg-white text-dark-gray box-shadow-large">
-                         <i class="fa-solid fa-arrow-right"></i>
-                     </div>
-
-                 </div>
-             </div>
-             <div class="row align-items-center">
-                 <div class="col-12 position-relative p-0">
-                     <div class="outside-box-right-40 xs-outside-box-right-0"
-                         data-anime="{ &quot;translateX&quot;: [100, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1200, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
-                         <div class="swiper magic-cursor"
-                             data-slider-options="{ &quot;slidesPerView&quot;: 1, &quot;spaceBetween&quot;: 28, &quot;loop&quot;: true, &quot;autoplay&quot;: { &quot;delay&quot;: 2000, &quot;disableOnInteraction&quot;: false }, &quot;pagination&quot;: { &quot;el&quot;: &quot;.slider-four-slide-pagination-1&quot;, &quot;clickable&quot;: true }, &quot;navigation&quot;: { &quot;nextEl&quot;: &quot;.slider-one-slide-next-1&quot;, &quot;prevEl&quot;: &quot;.slider-one-slide-prev-1&quot; }, &quot;keyboard&quot;: { &quot;enabled&quot;: true, &quot;onlyInViewport&quot;: true }, &quot;breakpoints&quot;: { &quot;1200&quot;: { &quot;slidesPerView&quot;: 5 }, &quot;992&quot;: { &quot;slidesPerView&quot;: 4 }, &quot;768&quot;: { &quot;slidesPerView&quot;: 4 }, &quot;576&quot;: { &quot;slidesPerView&quot;: 2 } }, &quot;effect&quot;: &quot;slide&quot; }">
-                             <div class="swiper-wrapper">
-                                 @foreach ($projects as $project)
-                                     <div class="swiper-slide">
-                                         <div class="interactive-banner-style-08">
-                                             <figure
-                                                 class="m-0 hover-box overflow-hidden position-relative border-radius-6px">
-                                                 <a href="{{ route('projelerimiz.show', $project->id) }}" target="_blank"
-                                                     style="cursor: pointer">
-                                                     <img src="{{ asset('projects_cover_image/' . $project->cover_image) }}"
-                                                         alt="Resim bulunamadı" style="height: 250px; object-fit: cover;" />
-                                                 </a>
-                                                 <figcaption
-                                                     class="d-flex flex-column align-items-start justify-content-center position-absolute left-0px top-0px w-100 h-100 z-index-1 p-14 lg-p-12">
-
-                                                     <div class="mt-auto d-flex w-100 align-items-center">
-
-                                                         <div class="col project-tt last-paragraph-no-margin truncate-text">
-                                                             <a href="{{ route('projelerimiz.show', $project->id) }}"
-                                                                 target="_blank" class="text-white lh-28  xl-w-100 d-block"
-                                                                 style="color: white;cursor: pointer;font-size:12px">{{ $project->project_title }}</a>
-
-                                                             <p class="clamp-text"
-                                                                 style="color: white; margin: 0; padding: 0; font-size: 11px;">
-                                                                 {{ $project->project_sub_title }} </p>
-
-                                                         </div>
-
-                                                     </div>
-                                                     <div
-                                                         class="position-absolute left-0px top-0px w-100 h-100 bg-gradient-gray-light-dark-transparent z-index-minus-1 opacity-9">
-                                                     </div>
-                                                 </figcaption>
-                                             </figure>
-                                         </div>
-                                     </div>
-                                 @endforeach
-                             </div>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-         </div>
-     </section>
 
 
 
@@ -391,6 +321,78 @@
          </div>
 
      </section>
+
+     <section class="overflow-hidden" style="padding:0px 40px !important;">
+        <div class="container">
+            <div class="row align-items-center justify-content-center mb-3 mt-3 text-center text-lg-start column-form">
+                <div class="col-xl-10 col-lg-10 md-mb-20px mt-2"
+                    data-anime="{ &quot;translateX&quot;: [50, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1200, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
+                    <h4 class="text-dark-gray fw-700 mb-0 ls-minus-1px">Projelerimiz
+                    </h4>
+                </div>
+                <div class="col-xl-2 col-lg-2 d-flex justify-content-center justify-content-lg-end"
+                    data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateX&quot;: [30, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 800, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
+
+                    <div
+                        class="slider-one-slide-prev-1 icon-small text-dark-gray swiper-button-prev slider-navigation-style-04 bg-white text-dark-gray box-shadow-large">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </div>
+                    <div
+                        class="slider-one-slide-next-1 icon-small text-dark-gray swiper-button-next slider-navigation-style-04 bg-white text-dark-gray box-shadow-large">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-12 position-relative p-0">
+                    <div class="outside-box-right-40 xs-outside-box-right-0"
+                        data-anime="{ &quot;translateX&quot;: [100, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1200, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
+                        <div class="swiper magic-cursor"
+                            data-slider-options="{ &quot;slidesPerView&quot;: 1, &quot;spaceBetween&quot;: 28, &quot;loop&quot;: true, &quot;autoplay&quot;: { &quot;delay&quot;: 2000, &quot;disableOnInteraction&quot;: false }, &quot;pagination&quot;: { &quot;el&quot;: &quot;.slider-four-slide-pagination-1&quot;, &quot;clickable&quot;: true }, &quot;navigation&quot;: { &quot;nextEl&quot;: &quot;.slider-one-slide-next-1&quot;, &quot;prevEl&quot;: &quot;.slider-one-slide-prev-1&quot; }, &quot;keyboard&quot;: { &quot;enabled&quot;: true, &quot;onlyInViewport&quot;: true }, &quot;breakpoints&quot;: { &quot;1200&quot;: { &quot;slidesPerView&quot;: 5 }, &quot;992&quot;: { &quot;slidesPerView&quot;: 4 }, &quot;768&quot;: { &quot;slidesPerView&quot;: 4 }, &quot;576&quot;: { &quot;slidesPerView&quot;: 2 } }, &quot;effect&quot;: &quot;slide&quot; }">
+                            <div class="swiper-wrapper">
+                                @foreach ($projects as $project)
+                                    <div class="swiper-slide">
+                                        <div class="interactive-banner-style-08">
+                                            <figure
+                                                class="m-0 hover-box overflow-hidden position-relative border-radius-6px">
+                                                <a href="{{ route('projelerimiz.show', $project->id) }}" target="_blank"
+                                                    style="cursor: pointer">
+                                                    <img src="{{ asset('projects_cover_image/' . $project->cover_image) }}"
+                                                        alt="Resim bulunamadı" style="height: 250px; object-fit: cover;" />
+                                                </a>
+                                                <figcaption
+                                                    class="d-flex flex-column align-items-start justify-content-center position-absolute left-0px top-0px w-100 h-100 z-index-1 p-14 lg-p-12">
+
+                                                    <div class="mt-auto d-flex w-100 align-items-center">
+
+                                                        <div class="col project-tt last-paragraph-no-margin truncate-text">
+                                                            <a href="{{ route('projelerimiz.show', $project->id) }}"
+                                                                target="_blank" class="text-white lh-28  xl-w-100 d-block"
+                                                                style="color: white;cursor: pointer;font-size:12px">{{ $project->project_title }}</a>
+
+                                                            <p class="clamp-text"
+                                                                style="color: white; margin: 0; padding: 0; font-size: 11px;">
+                                                                {{ $project->project_sub_title }} </p>
+
+                                                        </div>
+
+                                                    </div>
+                                                    <div
+                                                        class="position-absolute left-0px top-0px w-100 h-100 bg-gradient-gray-light-dark-transparent z-index-minus-1 opacity-9">
+                                                    </div>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                @endforeach
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
      <div class="container mt-5">
 
