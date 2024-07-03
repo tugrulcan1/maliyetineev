@@ -27,7 +27,7 @@
             </div>
         </div>
     </section> --}}
-    <section style="padding-top: 0px !important;">
+    <section class="mt-5">
         <div class="container">
             <div class="row">
                 <div class="col">
