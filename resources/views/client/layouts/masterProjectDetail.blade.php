@@ -6,7 +6,7 @@
 
 <!-- "Bilgi Al" butonu ve form -->
 {{-- <div id="infoButton" class="info-button">Bilgi Al</div> --}}
-<div class="right-fixed-btn d-none d-lg-block" id="right-fixed-btn"><span> Başvuru
+<div class="right-fixed-btn d-none d-lg-block" id="right-fixed-btn"><span id="right-fixed-btn-text"> Başvuru
     Formu</span></div>
 <div id="formContainer" class="contact-form-style-01">
 <div class="ps-8 pe-8 pt-8 pb-8 lg-p-8 bg-white box-shadow-quadruple-large border-radius-6px">
@@ -61,7 +61,6 @@
     top: 50%;
     transform: rotate(90deg);
     cursor: pointer;
-    animation: pulse3 1.5s infinite;
     border-radius: 0px 0px 20px 20px;
     border: 1px solid #007bff;
     background: #007bff;
@@ -95,7 +94,7 @@
     z-index: 99999;
     height: auto;
     display: table;
-    top: 50%;
+    top: 32%;
     transition: all .6s cubic-bezier(.42, 0, .07, .99);
     transform: translateY(-50%);
     box-shadow: -1px 1px 19px 6px #007bff;
@@ -195,9 +194,15 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('DOMContentLoaded', function() {
     var infoButton = document.getElementById('right-fixed-btn');
     var formContainer = document.getElementById('formContainer');
+    var infoButtonText = document.getElementById("right-fixed-btn-text");
 
     infoButton.addEventListener('click', function() {
         formContainer.classList.toggle('open');
+        if (formContainer.classList.contains('open')) {
+            infoButtonText.innerHTML = "Formu Kapat";
+        } else {
+            infoButtonText.innerHTML = "Başvuru Formu";
+        }
     });
 });
 </script>
