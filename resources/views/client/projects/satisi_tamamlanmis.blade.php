@@ -42,7 +42,8 @@
                                                         <img src="{{ asset('projects_cover_image/' . $project->cover_image) }}" alt="Resim bulunamadı" style="height: 400px; object-fit: cover;" />
                                                 </a>
                                                 <figcaption
-                                                    class="d-flex flex-column align-items-start justify-content-center position-absolute left-0px top-0px w-100 h-100 z-index-1 p-14 lg-p-12">
+                                                    class="d-flex flex-column align-items-start justify-content-center position-absolute left-0px top-0px w-100 h-100 z-index-1 p-14 lg-p-12"
+                                                    style="height:250px">
                                                     <a href="{{route('projelerimiz.show',$project->id)}}" target="_blank"></a>
                                                     <div class="mt-auto d-flex w-100 align-items-center">
                                                         <div class="col last-paragraph-no-margin">
@@ -50,10 +51,10 @@
                                                                 style="color: white;font-size:15px">{{$project->project_title}}</a>
                                                             <p class="custom-description"  style="color: white !important;"> {{$project->project_sub_title}}</p>
                                                         </div>
-                                                        <a href="{{route('projelerimiz.show',$project->id)}}" target="_blank"
+                                                        {{-- <a href="{{route('projelerimiz.show',$project->id)}}" target="_blank"
                                                             class="circle-box bg-yellow w-50px h-50px rounded-circle" style=" position: absolute;bottom: 80px;right: 15px; z-index: 2;">
                                                             <i class="bi bi-arrow-right-short absolute-middle-center icon-very-medium lh-0px text-dark-gray"></i>
-                                                        </a>
+                                                        </a> --}}
                                                     </div>
                                                     <div
                                                         class="position-absolute left-0px top-0px w-100 h-100 bg-gradient-gray-light-dark-transparent z-index-minus-1 opacity-9">
