@@ -439,28 +439,31 @@
 }
 
 .helpModal {
-  width: 110px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 10px;
-  background-color: rgb(161, 255, 20);
-  border-radius: 30px;
-  color: rgb(19, 19, 19);
-  font-weight: 600;
-  border: none;
-  position: relative;
-  cursor: pointer;
-  transition-duration: .2s;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.116);
-  padding-left: 8px;
-  transition-duration: .5s;
+width: 250px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    background-color: #eb0d0de0;
+    border-radius: 30px;
+    color: white;
+    font-weight: 600;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    transition-duration: .2s;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.116);
+    padding-left: 8px;
+    transition-duration: .5s;
+        bottom: 40px;
+    left: 40px;
 }
 
 .svgIcon {
   height: 25px;
-  transition-duration: 1.5s;
+      transition-duration: 1.5s;
+    fill: white;
 }
 
 .bell path {
