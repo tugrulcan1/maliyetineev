@@ -58,7 +58,7 @@
     position: fixed;
     z-index: 9;
     right: -70px;
-    top: 50%;
+    top: 32%;
     transform: rotate(90deg);
     cursor: pointer;
     border-radius: 0px 0px 20px 20px;
@@ -94,7 +94,7 @@
     z-index: 99999;
     height: auto;
     display: table;
-    top: 32%;
+    top: 50%;
     transition: all .6s cubic-bezier(.42, 0, .07, .99);
     transform: translateY(-50%);
     box-shadow: -1px 1px 19px 6px #007bff;
