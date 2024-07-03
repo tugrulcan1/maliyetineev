@@ -10,17 +10,17 @@
 
 
 <section id="form" class="about-area about-area-mid pt-120 pb-90" style="padding-top: 40px; padding-bottom: 40px;">
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <div class="container col-xl-7 col-lg-6 col-md-6 mb-4">
                 <div class="row card-container">
                     @foreach(json_decode($project->details) as $detail)
-                        <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="col-xl-6 col-lg-6 col-md-6 mb-4">
                             <div class="feature-box">
-                                <div class="feature-small-icon">
+                                {{-- <div class="feature-small-icon">
                                     <i class="fas fa-star"></i> <!-- İkonu buraya yerleştirebilirsiniz -->
-                                </div>
-                                <div class="feature-small-content mt-5">
+                                </div> --}}
+                                <div class="feature-small-content">
                                     <h3>{{ $detail->title }}</h3>
                                     <h5>{{ $detail->sub_title ?? '' }}</h5>
                                     <p class="card-text">{!! \Illuminate\Support\Str::limit(strip_tags($detail->description), 250, '...') !!}</p>
