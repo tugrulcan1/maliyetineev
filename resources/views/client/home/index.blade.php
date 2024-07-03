@@ -342,8 +342,7 @@
                     data-anime="{ &quot;translateX&quot;: [50, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1200, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
                     {{-- <h4 class="text-dark-gray fw-700 mb-0 ls-minus-1px">Projelerimiz
                     </h4> --}}
-                    <span class="text-highlight">Projelerimiz<span class="bg-base-color opacity-3 h-10px bottom-10px"></span></span>
-                </div>
+                    <h2 class="fw-700 alt-font text-dark-gray ls-minus-1px"> <span class="text-highlight">Projelerimiz<span class="bg-base-color opacity-3 h-10px bottom-10px"></span></span> </h2>                </div>
                 <div class="col-xl-2 col-lg-2 d-flex justify-content-center justify-content-lg-end"
                     data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateX&quot;: [30, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 800, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
 
