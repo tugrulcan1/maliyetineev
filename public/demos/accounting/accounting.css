@@ -121,10 +121,16 @@ h6 {
   font-family: cerebri-sans-medium !important;
 }
 .navbar .navbar-nav .dropdown .dropdown-menu a {
-  font-size: 13px;
-  font-family: cerebri-sans-regular !important;
-  padding: 10px;
-  margin: 0;
+    font-size: 13px !important;
+    font-family: cerebri-sans-regular !important;
+    padding: 10px;
+    text-align: start;
+    margin: 0;
+    color: black;
+    font-weight: normal;
+    /* font-size: 14px; */
+    line-height: 20px;
+    letter-spacing: 0px;
 }
 header .btn.btn-small {
   font-size: 14px;

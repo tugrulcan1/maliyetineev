@@ -9127,7 +9127,7 @@ header.sticky .navbar.disable-fixed {
 .navbar .navbar-nav .nav-item .nav-link.active,
 .navbar .navbar-nav .nav-item.active .nav-link,
 .navbar .navbar-nav .nav-item:hover .nav-link {
-    opacity: 0.6;
+   color: #ea2a28 !important
 }
 
 .navbar .navbar-nav .nav-link {
@@ -9159,7 +9159,9 @@ header.sticky .navbar.disable-fixed {
 .navbar .navbar-nav .dropdown .dropdown-menu {
     margin: 0;
     padding: 0;
+    border-top: 2px solid #ea2a28;
     border: 0;
+    top: 60px;
     top: 100%;
     background-color: var(--white);
     box-shadow: 0 45px 45px 0 rgba(0, 0, 0, 0.05);
