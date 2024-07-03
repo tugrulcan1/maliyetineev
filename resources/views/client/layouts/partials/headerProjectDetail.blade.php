@@ -51,6 +51,10 @@
       width: 100%;
       height: 100%;
     }
+ .color-right-footer p,
+    .color-right-footer p a{
+        color: black !important
+    }
 
     swiper-slide {
       text-align: center;

@@ -17,7 +17,7 @@
                     @foreach(json_decode($project->details) as $detail)
                         <div class="col-xl-6 col-lg-6 col-md-6 mb-4">
                             <div class="feature-box">
-                                <div class="feature-small-icon mb-5">
+                                <div class="feature-small-icon">
                                     <i class="fas fa-star"></i> <!-- İkonu buraya yerleştirebilirsiniz -->
                                 </div>
                                 <div class="feature-small-content mt-5">
@@ -246,7 +246,7 @@
 </div>
 
 
-<section style="padding: 0 !important; position: sticky; bottom: 0; z-index: 999;">
+{{-- <section style="padding: 0 !important; position: sticky; bottom: 0; z-index: 999;">
     <div style="background-color: #0f75bc; position: sticky; bottom: 0; padding: 20px 0px;">
         <div class="container">
             <a href="#form"
@@ -257,7 +257,7 @@
 
         </div>
     </div>
-</section>
+</section> --}}
 
 @endsection
 
@@ -355,18 +355,18 @@
         padding: 30px;
     }
     .feature-box {
-            background: #fff;
-            border-radius: 15px;
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-            transition: transform 0.3s, box-shadow 0.3s;
-            text-align: center;
-            padding: 30px;
-            margin-right: 50px;
-            height: 315px;
-            width: 95%;
-            display: flex;
-            flex-direction: column;
-            overflow: hidden; 
+              background: #fff;
+    border-radius: 25px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    /* padding: 38px; */
+    /* margin-right: 50px; */
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
         }
     .feature-box:hover {
         transform: translateY(-10px);
@@ -390,8 +390,9 @@
         /* margin-bottom: 10px; */
     }
     .feature-small-content p {
-        font-size: 16px;
-        color: #666;
+      font-size: 14px;
+    color: #666;
+    line-height: 22px;
     }
 </style>    
 
