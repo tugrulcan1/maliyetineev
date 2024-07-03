@@ -15,7 +15,7 @@
             <div class="container col-xl-7 col-lg-6 col-md-6 mb-4">
                 <div class="row card-container">
                     @foreach(json_decode($project->details) as $detail)
-                        <div class="col-xl-6 col-lg-6 col-md-6 mb-4">
+                        <div class="col-xl-6 col-lg-6 col-md-6">
                             <div class="feature-box">
                                 <div class="feature-small-icon">
                                     <i class="fas fa-star"></i> <!-- İkonu buraya yerleştirebilirsiniz -->
