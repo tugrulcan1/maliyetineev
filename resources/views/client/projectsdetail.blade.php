@@ -439,6 +439,8 @@
         .answerP {
                border: 1px solid #eee;
     border-top: none;
+                display: none;
+
         }
         .icon {
             transition: transform 0.3s ease;

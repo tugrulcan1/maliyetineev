@@ -93,6 +93,7 @@
             const icon = header.querySelector('.icon');
             const answer = header.nextElementSibling;
             icon.classList.toggle('rotate');
+            header.addClass("active");
             answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
         });
     });
