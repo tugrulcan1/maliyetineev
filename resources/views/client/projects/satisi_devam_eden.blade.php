@@ -24,7 +24,8 @@
                                 @foreach($satisiDevamEden as $project)
                                     <div class="col-md-3 mt-5">                                
                                         <div class="interactive-banner-style-08">
-                                            <figure class="m-0 hover-box overflow-hidden position-relative border-radius-6px">
+                                            <figure class="m-0 hover-box overflow-hidden position-relative border-radius-6px"
+                                            style="height:250px !important">
                                                 <a href="{{route('projelerimiz.show',$project->id)}}" target="_blank">
                                                         <img src="{{ asset('projects_cover_image/' . $project->cover_image) }}" alt="Resim bulunamadı" style="height: 400px; object-fit: cover;" />
                                                 </a>
@@ -37,10 +38,10 @@
                                                                 style="color: white;font-size:15px">{{$project->project_title}}</a>
                                                             <p class="custom-description"  style="color: white !important; font-size: 14px;"> {{$project->project_sub_title}}</p>
                                                         </div>
-                                                        <a href="{{route('projelerimiz.show',$project->id)}}" target="_blank"
+                                                        {{-- <a href="{{route('projelerimiz.show',$project->id)}}" target="_blank"
                                                             class="circle-box bg-yellow w-50px h-50px rounded-circle" style=" position: absolute;bottom: 80px;right: 15px; z-index: 2;">
                                                             <i class="bi bi-arrow-right-short absolute-middle-center icon-very-medium lh-0px text-dark-gray"></i>
-                                                        </a>
+                                                        </a> --}}
                                                     </div>
                                                     <div class="position-absolute left-0px top-0px w-100 h-100 bg-gradient-gray-light-dark-transparent z-index-minus-1 opacity-9">
                                                     </div>
