@@ -269,7 +269,10 @@
                 @if (!empty($floorPlans) && count($floorPlans) > 0)
                     <div class="section mt-5">
                         <div class="container ">
-                            <h3 style="text-align: center; font-weight: 700; color: #333;">{{ $project->name }} Kat Planları</h3>
+                            <h3 style="    text-align: center;
+    font-weight: 700;
+    color: #0f75bc;
+    font-size: 29px;">{{ $project->name }} Kat Planları</h3>
                             <div class="tab">
                                 @foreach ($floorPlans as $index => $floorPlan)
                                     <button class="tablinks" data-tab="tab{{ $index }}">{{ $floorPlan->floor_plan }}</button>
@@ -285,19 +288,21 @@
                     </div>
             @endif
 
-            <div class="container mt-4">
+            {{-- <div class="container mt-4">
                 <div class="row">
                     <div class="col-md-12">
-                        <h4 class="baslikh4">Sizi Maliyetine Ev Sahibi Yapan Projeler </h4>
-                        <h4 class="baslikh6">Maliyetine Ev’de </h4>
+                        <h4 class="baslikh4">Sizi Maliyetine Ev Sahibi Yapan Projeler <br> Maliyetine Ev’de </h4>
                     </div>
                 </div>   
-            </div>
+            </div> --}}
 
-<section style=" padding-bottom: 80px; ">
+<section>
       <!-- Konum -->
       <div class="container">
-        <h3 style="text-align: center; font-weight: 700; color: #333;">Konum</h3>
+        <h3 style="    text-align: center;
+    font-weight: 700;
+    color: #0f75bc;
+    font-size: 29px;">Konum</h3>
         <iframe src="{{$project->konum}}" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 </section>
@@ -308,8 +313,9 @@
             <h4 class="baslikh4">Sıkça Sorulan Sorular</h4>
         </div>  
     </div>
-</div>
-<div class="sorularDiv">
+    <div clas="row">
+    <div class="col-md-12">
+    <div class="sorularDiv">
     <div>
         <i class="fa-solid fa-chevron-right icon"></i>
         <span class="questionHeader">MALİYETİNE EV İLE NASIL MALİYETİNE EV SAHİBİ OLURUM ? </span>
@@ -376,6 +382,10 @@
         <p class="answerP">Tapunuzu istediğiniz zaman sözleşme ile birlikte başkasına devredebilirsiniz / satabilirsiniz.</p>
     </div>
 </div>
+    </div>
+    </div>
+</div>
+
 
 
 {{-- <section style="padding: 0 !important; position: sticky; bottom: 0; z-index: 999;">
