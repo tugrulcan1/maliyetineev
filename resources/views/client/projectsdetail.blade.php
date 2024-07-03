@@ -87,10 +87,12 @@
 
 <!-- Modal -->
 <div class="modal fade" id="helpModal" tabindex="-1" aria-labelledby="helpModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
+  <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="helpModalLabel">Size nasıl yardımcı olabiliriz?</h5>
+                                       <h3 class="alt-font text-dark-gray fw-700 ls-minus-2px mb-50px xs-mb-35px">Size nasıl yardımcı olabiliriz?                                     <i class="bi bi-send icon-large text-dark-gray animation-zoom"></i>
+</h3>
+
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
