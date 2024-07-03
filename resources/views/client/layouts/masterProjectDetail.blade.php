@@ -1,4 +1,4 @@
-@include('client.layouts.partials.headerProjectDetail')
+@include('client.layouts.partials.header')
 
 @yield('content')
 
