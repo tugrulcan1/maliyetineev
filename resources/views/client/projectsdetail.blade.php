@@ -318,12 +318,12 @@
     <div class="row">
         <div class="col-md-12">
             <div class="sorularDiv">
-                <div>
-                    <div class="questionHeader">
+                 <div>
+                    <div class="questionHeader active">
                         MALİYETİNE EV İLE NASIL MALİYETİNE EV SAHİBİ OLURUM ?
-                        <i class="fa-solid fa-chevron-right icon"></i>
+                        <i class="fa-solid fa-chevron-right icon rotate"></i>
                     </div>
-                    <p class="answerP">Maliyetine Ev Tarafından imarlı arsa üzerine projesi belirlenmiş mülklerimizden peşinatınızı ödeyerek arsa tapunuzu alırsınız. İnşaat başlangıcında taksitlerinizi ödemeye başlarsınız.</p>
+                    <p class="answerP" style="display: block;">Maliyetine Ev Tarafından imarlı arsa üzerine projesi belirlenmiş mülklerimizden peşinatınızı ödeyerek arsa tapunuzu alırsınız. İnşaat başlangıcında taksitlerinizi ödemeye başlarsınız.</p>
                 </div>
             </div>
 
@@ -435,9 +435,6 @@
         .questionHeader.active{
                 background: #ea2a28 ;
     color: #fff;
-        }
-        .questionHeader:hover {
-            background-color: #e2e6ea;
         }
         .answerP {
             display: none;
