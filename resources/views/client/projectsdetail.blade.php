@@ -429,6 +429,7 @@
             align-items: center;
             justify-content: space-between;
             padding: 13px;
+            font-size:13px;
             background-color: #f5f5f5;
             border-radius: 5px;
         }
@@ -442,6 +443,8 @@
             background-color: #ffffff;
             border: 1px solid #eee;
             border-top: none;
+            font-size:13px;
+
             border-radius: 0 0 5px 5px;
         }
         .icon {
