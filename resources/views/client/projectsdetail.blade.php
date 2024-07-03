@@ -81,10 +81,58 @@
       </div>
     </div>
 
-<section id="form" class="about-area about-area-mid pt-120 pb-90" style="padding-top: 40px; padding-bottom: 40px;">
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#helpModal">
+  Size nasıl yardımcı olabiliriz?
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="helpModal" tabindex="-1" aria-labelledby="helpModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="helpModalLabel">Size nasıl yardımcı olabiliriz?</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="{{ route('contact.form.show') }}" method="POST" class="row contact-form-style-02">
+          @csrf
+          <div class="col-md-6 mb-30px">
+            <input class="input-name form-control required" type="text" name="name" placeholder="Ad soyad" />
+          </div>
+          <div class="col-md-6 mb-30px">
+            <input class="form-control required" type="email" name="email" placeholder="E-mail adresiniz" />
+          </div>
+          <div class="col-md-6 mb-30px">
+            <input class="form-control" type="tel" name="phone" placeholder="Telefon" />
+          </div>
+          <div class="col-md-6 mb-30px">
+            <input class="form-control" type="text" name="job" placeholder="Mesleğiniz" />
+          </div>
+          <div class="col-md-12 mb-30px">
+            <textarea class="form-control" cols="40" rows="4" name="message" placeholder="Mesajınız"></textarea>
+          </div>
+          <div class="col-xl-7 col-md-7 last-paragraph-no-margin">
+            <p class="text-center text-md-start fs-15 lh-26">24 saat içerisinde dönüş sağlayacağız.</p>
+          </div>
+          <div class="col-xl-5 col-md-5 text-center text-md-end sm-mt-20px">
+            <input type="hidden" name="redirect" value>
+            <button class="btn btn-base-color btn-medium btn-rounded btn-box-shadow" style="background: #0f75bc !important" type="submit">Gönder</button>
+          </div>
+          <div class="col-12">
+            <div class="form-results mt-20px d-none"></div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+{{-- <section id="form" class="about-area about-area-mid pt-120 pb-90" style="padding-top: 40px; padding-bottom: 40px;">
     <div class="container">
         <div class="row">
-            {{-- <div class="container col-xl-12 col-lg-12 col-md-12 mb-4">
+            <div class="container col-xl-12 col-lg-12 col-md-12 mb-4">
                 <div class="row card-container">
                     @foreach(json_decode($project->details) as $detail)
                         <div class="col-xl-6 col-lg-6 col-md-6 col-12 mb-4">
@@ -103,7 +151,7 @@
                         </div>
                     @endforeach
                 </div>
-            </div> --}}
+            </div>
             
             <div class="col-xl-12 col-lg-12 col-md-11">
                 <div class="row row-cols-md-1 justify-content-center">
@@ -156,7 +204,7 @@
 
                         </div>
                     </div>
-                    {{-- <div class="row align-items-center justify-content-center mt-8">
+                    <div class="row align-items-center justify-content-center mt-8">
                         <div class="col-md-auto text-center text-md-end sm-mb-20px">
                             <h6 class="text-dark-gray fw-600 mb-0 ls-minus-1px">Sosyal medya hesaplarımız </h6>
                         </div>
@@ -176,13 +224,13 @@
                             </ul>
                         </div>
 
-                    </div> --}}
+                    </div> 
                 </div>
             </div>
         </div>
     </div>
 
-</section>
+</section> --}}
 
         <div class="container">
             <div class="row">
