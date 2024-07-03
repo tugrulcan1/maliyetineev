@@ -63,7 +63,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, "index"])->name('index');
 Route::get('/admin', [AdminHomeController::class, "index"]);
-Route::get('/contact', [ContactController::class, "index"]);
+Route::get('/iletisim', [ContactController::class, "index"]);
 Route::get('/housing/{id}', [ClientHousingController::class, "show"])->name('housing.show');
 Route::get('/admin', [AdminHomeController::class, "index"]);
 Route::get('/project/{slug}', [ClientProjectController::class, "index"])->name('project.detail');

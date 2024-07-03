@@ -145,6 +145,19 @@
          </div>
      </section>
 
+<section class="p-0 bg-base-color">
+<div class="container">
+<div class="row align-items-center justify-content-center g-0">
+<div class="col-auto d-flex align-items-center appear anime-complete" data-anime="{ &quot;translateY&quot;: [0, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1200, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }" style="">
+<img src="/satisi-devam-eden" alt="" data-no-retina="">
+<div class="fs-19 lh-28 last-paragraph-no-margin text-white pt-15px pb-15px">
+<p>MALİYETİNE EV SİZLERE %100 GÜVEN VE
+                            GARANTİ SUNUYOR! <a href="/iletisim" class="text-decoration-line-bottom fw-500 text-white">Başvuru Yap</a></p>
+</div>
+</div>
+</div>
+</div>
+</section>
 
      {{-- <section class="p-0 bg-base-color" style="background: #b7d8ff;margin-top:30px; ">
         <div class="container">
