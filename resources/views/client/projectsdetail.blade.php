@@ -272,7 +272,7 @@
                             <h3 style="    text-align: center;
     font-weight: 700;
     color: #0f75bc;
-    font-size: 29px;">{{ $project->project_title }} Kat Planları</h3>
+    font-size: 29px;text-transform: uppercase">{{ $project->project_title }} Kat Planları</h3>
                             <div class="tab">
                                 @foreach ($floorPlans as $index => $floorPlan)
                                     <button class="tablinks" data-tab="tab{{ $index }}">{{ $floorPlan->floor_plan }}</button>
@@ -302,7 +302,7 @@
         <h3 style="    text-align: center;
     font-weight: 700;
     color: #0f75bc;
-    font-size: 29px;">Konum</h3>
+    font-size: 29px;text-transform: uppercase">Konum</h3>
         <iframe src="{{$project->konum}}" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 </section>
