@@ -11272,6 +11272,10 @@ button:focus {
     margin-top: 136px;
 }
 
+.header-with-topbar{
+    height: 80px !important;
+}
+
 .header-with-topbar+.top-space-padding {
     padding-top: 136px;
 }
