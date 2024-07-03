@@ -16,7 +16,7 @@
             </div>
         </div>
     </section>
-<section class="py-0 mt-5" style="margin-top: 240px !important;">
+{{-- <section class="py-0 mt-5" >
         <div class="container">
             <div class="row justify-content-center mb-3">
                 <div class="col-lg-6 col-md-7 col-sm-8 text-center"
@@ -25,7 +25,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <section style="padding-top: 0px !important;">
         <div class="container">
             <div class="row">
