@@ -87,7 +87,7 @@
 <div class="floating_btn">
     <a target="_blank" href="https://wa.me/905496716212">
       <div class="contact_icon">
-        <i class="fas fa-whatsapp my-float"></i>
+        <i class="fa fa-whatsapp my-float"></i>
       </div>
     </a>
   </div>

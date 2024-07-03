@@ -297,6 +297,9 @@ display: none;
                                     <li class="nav-item dropdown">
                                         <a href="{{ $menus->href }}" class="nav-link" id="navbarDropdown{{ $menus->id }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             {{ $menus->text }}
+                                            @if(count($menus->children) > 0) 
+                                              <i class="fa fa-angle-down"></i>
+                                            @endif
                                         </a>
                                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown{{ $menus->id }}">
                                             @foreach ($menus->children as $child)
