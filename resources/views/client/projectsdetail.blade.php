@@ -457,8 +457,8 @@ width: 250px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.116);
     padding-left: 8px;
     transition-duration: .5s;
-        bottom: 40px;
-    left: 40px;
+        bottom: 25px;
+    left: 25px;
 }
 
 .svgIcon {
