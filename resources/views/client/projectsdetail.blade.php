@@ -254,9 +254,9 @@
         </div>
     
             @if(count($project->galleries) > 0)
-                <div class="section">
-                    <div class="container-fluid" style="padding: 0px 50px">
-                        <h3 style="text-align: center; font-weight: 700; color: #333; margin-top: 100px; ">Proje Görselleri</h3>
+                <div class="section mt-5">
+                    <div class="container" >
+                        {{-- <h3 style="text-align: center; font-weight: 700; color: #333; margin-top: 100px; ">Proje Görselleri</h3> --}}
                         <swiper-container class="mySwiper" navigation="true">
                             @foreach ($project->galleries as $galery)   
                                 <swiper-slide> <img src="{{ url('uploads/' . $galery->image) }}" alt="" style="width: 100%; height: auto;"></swiper-slide>
@@ -267,8 +267,8 @@
                 @endif
 
                 @if (!empty($floorPlans) && count($floorPlans) > 0)
-                    <div class="section p-5">
-                        {{-- <div class="container mt-5"> --}}
+                    <div class="section mt-5">
+                        <div class="container ">
                             <h3 style="text-align: center; font-weight: 700; color: #333;">{{ $project->name }} Kat Planları</h3>
                             <div class="tab">
                                 @foreach ($floorPlans as $index => $floorPlan)
@@ -281,7 +281,7 @@
                                     <img src="{{ asset('kat_plani/' . $floorPlan->image_path) }}" alt="{{ $floorPlan->floor_plan }}" style="width: 100%; height: auto;">
                                 </div>
                             @endforeach
-                        {{-- </div> --}}
+                        </div>
                     </div>
             @endif
 
