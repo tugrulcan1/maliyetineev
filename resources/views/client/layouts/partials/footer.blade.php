@@ -88,13 +88,13 @@
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
-   document.querySelectorAll('.questionHeader').forEach(header => {
-        header.addEventListener('click', () => {
-            const icon = header.querySelector('.icon');
-            const answer = header.nextElementSibling;
-            icon.classList.toggle('rotate');
-            header.addClass("active");
-            answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+    $(document).ready(function() {
+        $('.questionHeader').on('click', function() {
+            const icon = $(this).find('.icon');
+            const answer = $(this).next('.answerP');
+            $(this).addClass("active");
+            icon.toggleClass('rotate');
+            answer.slideToggle();
         });
     });
     $(document).ready(function() {
