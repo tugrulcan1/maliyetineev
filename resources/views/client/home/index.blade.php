@@ -149,8 +149,8 @@
 <div class="container bg-base-color" style="background-color:#ea2a28 !important">
 <div class="row align-items-center justify-content-center g-0">
 <div class="col-auto d-flex align-items-center appear anime-complete" data-anime="{ &quot;translateY&quot;: [0, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1200, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }" style="">
-<img src="{{asset('favicon-c9c0de2311390de484c5d988188059cd56ed9317.png')}}" alt="" data-no-retina="">
-<div class="fs-19 lh-28 last-paragraph-no-margin text-white pt-15px pb-15px">
+<img src="{{asset('favicon-c9c0de2311390de484c5d988188059cd56ed9317.png')}}" alt="" data-no-retina="" >
+<div class="fs-19 lh-28 last-paragraph-no-margin text-white pt-15px pb-15px" style="margin-left:10px">
 <p>MALİYETİNE EV SİZLERE %100 GÜVEN VE
                             GARANTİ SUNUYOR! <a href="/iletisim" class="text-decoration-line-bottom fw-500 text-white">Başvuru Yap</a></p>
 </div>
