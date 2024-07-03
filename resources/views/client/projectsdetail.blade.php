@@ -272,7 +272,7 @@
                             <h3 style="    text-align: center;
     font-weight: 700;
     color: #0f75bc;
-    font-size: 29px;">{{ $project->name }} Kat Planları</h3>
+    font-size: 29px;">{{ $project->project_title }} Kat Planları</h3>
                             <div class="tab">
                                 @foreach ($floorPlans as $index => $floorPlan)
                                     <button class="tablinks" data-tab="tab{{ $index }}">{{ $floorPlan->floor_plan }}</button>
@@ -428,8 +428,7 @@
     }
 
     .sorularDiv{
-        margin: 5px 90px;
-        padding: 26px 40px;
+        marign-bottom:20px;
     }
 .road-map-main {
   margin: 50px 0 51px;
