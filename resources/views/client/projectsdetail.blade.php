@@ -92,8 +92,15 @@
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
-                                       <h3 class="alt-font text-dark-gray fw-700 ls-minus-2px mb-50px xs-mb-35px">Size nasıl yardımcı olabiliriz?                                     <i class="bi bi-send icon-large text-dark-gray animation-zoom"></i>
-</h3>
+ <div class="row">
+                                <div class="col-9">
+                                    <h5 class="alt-font text-dark-gray fw-700 ls-minus-2px mb-50px xs-mb-35px">Size nasıl yardımcı olabiliriz?</h5>
+                                </div>
+                                <div class="col-3 text-end"
+                                    data-anime="{ &quot;translateY&quot;: [30, 0], &quot;translateX&quot;: [-30, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 600, &quot;delay&quot;: 300, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
+                                    <i class="bi bi-send icon-large text-dark-gray animation-zoom ml-3"></i>
+                                </div>
+                            </div></h3>
 
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
