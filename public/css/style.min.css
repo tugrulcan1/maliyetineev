@@ -3075,7 +3075,7 @@ textarea:focus {
 }
 
 .magic-cursor {
-    cursor: none;
+    cursor: initial !important;
 }
 
 /* #ball-cursor {

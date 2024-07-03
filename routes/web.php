@@ -70,13 +70,13 @@ Route::get('/project/{slug}', [ClientProjectController::class, "index"])->name('
 Route::get('/marka_projeleri/{id}', [ClientProjectController::class, "brandProjects"])->name('brand.projects');
 Route::get('/projelerimiz', [ClientProjectController::class, "projectList"])->name('client.projects.list');
 
-Route::get('/satisi/devam/eden', [ClientProjectController::class, "satisi_devam_eden"])->name('client.satisi.devam.eden.list');
-Route::get('/satisi/tamamlanmis', [ClientProjectController::class, "satisi_tamamlanmis"])->name('client.satisi.tamamlanmis.list');
+Route::get('/satisi-devam-eden', [ClientProjectController::class, "satisi_devam_eden"])->name('client.satisi.devam.eden.list');
+Route::get('/satisi-tamamlanmis', [ClientProjectController::class, "satisi_tamamlanmis"])->name('client.satisi.tamamlanmis.list');
 
 Route::get('/projelerimiz/{project}', [ProjectController::class, "show"])->name('projelerimiz.show');
 Route::get('/proje_konut_detayi/{projectSlug}/{id}', [ClientProjectController::class, "projectHousingDetail"])->name('project.housings.detail');
 Route::get('/konutlar', [ClientHousingController::class, "list"])->name('housing.list');
-Route::get('page/{slug}', [ClientPageController::class, 'index'])->name('page.show');
+Route::get('maliyetine-ev/{slug}', [ClientPageController::class, 'index'])->name('page.show');
 Route::post('add_to_cart', [CartController::class, 'addProjectToCart'])->name('add.to.cart');
 Route::get('cart', [CartController::class, 'index'])->name('cart');
 Route::post('/home-form', [FormController::class, 'submitForm'])->name('home.form.show');
