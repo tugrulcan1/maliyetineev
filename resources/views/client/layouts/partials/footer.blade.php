@@ -92,6 +92,7 @@
         $('.questionHeader').on('click', function() {
             const icon = $(this).find('.icon');
             const answer = $(this).next('.answerP');
+            $('.questionHeader').removeClass("active");
             $(this).addClass("active");
             icon.toggleClass('rotate');
             answer.slideToggle();
