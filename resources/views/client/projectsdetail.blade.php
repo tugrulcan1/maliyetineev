@@ -450,7 +450,7 @@ width: 250px;
     color: white;
     font-weight: 600;
     border: none;
-    position: relative;
+    position: fixed;
     cursor: pointer;
     transition-duration: .2s;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.116);
