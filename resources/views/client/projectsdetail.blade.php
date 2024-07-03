@@ -529,6 +529,7 @@
         font-size: 50px;
         font-family: 'Roboto', sans-serif;
         font-weight: bold;
+            text-transform: uppercase;
     }
     .baslikh6{
         color: #56adcf;
