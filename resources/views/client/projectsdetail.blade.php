@@ -425,6 +425,8 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
 <script>
+console.log("asas");
+
     document.querySelectorAll('.questionHeader').forEach(header => {
         header.addEventListener('click', () => {
             const icon = header.querySelector('.icon');
