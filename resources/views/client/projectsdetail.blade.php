@@ -431,10 +431,9 @@
             padding: 13px;
             background-color: #f5f5f5;
             border-radius: 5px;
-                font-size: 13px;
         }
         .questionHeader.active{
-                background: #ea2a28 !important;
+                background: #ea2a28 ;
     color: #fff;
         }
         .questionHeader:hover {
@@ -447,7 +446,6 @@
             border: 1px solid #eee;
             border-top: none;
             border-radius: 0 0 5px 5px;
-            font-size: 13px
         }
         .icon {
             transition: transform 0.3s ease;
@@ -827,3 +825,7 @@ width: 250px;
             height: 100%;
             object-fit: cover;
         }
+    </style>
+
+
+@endsection
