@@ -307,84 +307,100 @@
     </div>
 </section>
 
-<div class="container">
+
+<section>
+
+<div class="container mt-4">
     <div class="row">
         <div class="col-md-12">
-            <h4 class="baslikh4">Sıkça Sorulan Sorular</h4>
+            <h4 class="baslikh4 mb-4">Sıkça Sorulan Sorular</h4>
         </div>  
     </div>
-    <div clas="row">
-    <div class="col-md-12">
-    <div class="sorularDiv">
-    <div>
-        <i class="fa-solid fa-chevron-right icon"></i>
-        <span class="questionHeader">MALİYETİNE EV İLE NASIL MALİYETİNE EV SAHİBİ OLURUM ? </span>
-        <p class="answerP">Maliyetine Ev Tarafından imarlı arsa üzerine projesi belirlenmiş mülklerimizden peşinatınızı ödeyerek arsa tapunuzu alırsınız. İnşaat başlangıcında taksitlerinizi ödemeye başlarsınız.
-        </p>
-    </div>
-</div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="sorularDiv">
+                <div>
+                    <div class="questionHeader">
+                        MALİYETİNE EV İLE NASIL MALİYETİNE EV SAHİBİ OLURUM ?
+                        <i class="fa-solid fa-chevron-right icon"></i>
+                    </div>
+                    <p class="answerP">Maliyetine Ev Tarafından imarlı arsa üzerine projesi belirlenmiş mülklerimizden peşinatınızı ödeyerek arsa tapunuzu alırsınız. İnşaat başlangıcında taksitlerinizi ödemeye başlarsınız.</p>
+                </div>
+            </div>
 
-<div class="sorularDiv">
-    <div>
-        <i class="fa-solid fa-chevron-right icon"></i>
-        <span class="questionHeader">PEŞİNATIMI ÖDEDİKTEN SONRA SÜREÇ NASIL İŞLİYOR ?</span>
-        <p class="answerP">Arsa tapunuzu alır peşinatınızı ödersiniz. Noter onaylı sözleşme imzalarsınız. Sözleşme içerisinde yer alan ödeme planına göre ödemelerinizi yaparsınız. İnşaatınız teslim edildikten sonra da ödemeleriniz devam eder.
-        </p>
-    </div>
-</div>
+            <div class="sorularDiv">
+                <div>
+                    <div class="questionHeader">
+                        PEŞİNATIMI ÖDEDİKTEN SONRA SÜREÇ NASIL İŞLİYOR ?
+                        <i class="fa-solid fa-chevron-right icon"></i>
+                    </div>
+                    <p class="answerP">Arsa tapunuzu alır peşinatınızı ödersiniz. Noter onaylı sözleşme imzalarsınız. Sözleşme içerisinde yer alan ödeme planına göre ödemelerinizi yaparsınız. İnşaatınız teslim edildikten sonra da ödemeleriniz devam eder.</p>
+                </div>
+            </div>
 
+            <div class="sorularDiv">
+                <div>
+                    <div class="questionHeader">
+                        İNŞAAT BAŞLANGICI NE ZAMAN ?
+                        <i class="fa-solid fa-chevron-right icon"></i>
+                    </div>
+                    <p class="answerP">Projelerimizin her birinde inşaat başlangıç ve bitiş tarihleri bellidir. Noter onaylı sözleşme içerisinde belirlenen tarihler arasında yapılmaktadır.</p>
+                </div>
+            </div>
 
-<div class="sorularDiv">
-    <div>
-        <i class="fa-solid fa-chevron-right icon"></i>
-        <span class="questionHeader">İNŞAAT BAŞLANGICI NE ZAMAN ? </span>
-        <p class="answerP">Projelerimizin her birinde inşaat başlangıç ve bitiş tarihleri bellidir. Noter onaylı sözleşme içerisinde belirlenen tarihler arasında yapılmaktadır. </p>
-    </div>
-</div>
+            <div class="sorularDiv">
+                <div>
+                    <div class="questionHeader">
+                        ÖDEME PLANIMDA BELİRTİLEN TAKSİTLERİMİ NE ZAMAN ÖDEMEYE BAŞLAYACAĞIM ?
+                        <i class="fa-solid fa-chevron-right icon"></i>
+                    </div>
+                    <p class="answerP">İnşaat başlangıcıyla birlikte taksit ödemeleriniz başlayacaktır.</p>
+                </div>
+            </div>
 
-<div class="sorularDiv">
-    <div>
-        <i class="fa-solid fa-chevron-right icon"></i>
-        <span class="questionHeader">ÖDEME PLANIMDA BELİRTİLEN TAKSİTLERİMİ NE ZAMAN ÖDEMEYE BAŞLAYACAĞIM ? </span>
-        <p class="answerP">İnşaat başlangıcıyla birlikte taksit ödemeleriniz başlayacaktır.</p>
-    </div>
-</div>
+            <div class="sorularDiv">
+                <div>
+                    <div class="questionHeader">
+                        TOPLAM EV MALİYETİ NASIL HESAPLANIR ?
+                        <i class="fa-solid fa-chevron-right icon"></i>
+                    </div>
+                    <p class="answerP">Evinizin maliyeti m2 birim fiyatına göre hesaplanır ve maksimum maliyet noter sözleşmenizde yazılmaktadır.</p>
+                </div>
+            </div>
 
-<div class="sorularDiv">
-    <div>
-        <i class="fa-solid fa-chevron-right icon"></i>
-        <span class="questionHeader">TOPLAM EV MALİYETİ NASIL HESAPLANIR ?</span>
-        <p class="answerP">Evinizin maliyeti m2 birim fiyatına göre hesaplanır ve maksimum maliyet noter sözleşmenizde yazılmaktadır. </p>
-    </div>
-</div>
+            <div class="sorularDiv">
+                <div>
+                    <div class="questionHeader">
+                        MALİYETİNE EV İLE ALDIĞIM MÜLKÜMDEN NE ZAMAN KAR ETMEYE BAŞLAYACAĞIM ?
+                        <i class="fa-solid fa-chevron-right icon"></i>
+                    </div>
+                    <p class="answerP">Maliyetine Ev ile ilk müşterilerimiz hemen kazanır. Maliyetine Ev ile alırken kazanırsınız. Her projemiz aynı zamanda yatırım projesidir. Maliyetine satışlarımızda maliyetine mülk sahibi olursunuz.</p>
+                </div>
+            </div>
 
-<div class="sorularDiv">
-    <div>
-        <i class="fa-solid fa-chevron-right icon"></i>
-        <span class="questionHeader">MALİYETİNE EV İLE ALDIĞIM MÜLKÜMDEN NE ZAMAN KAR ETMEYE BAŞLAYACAĞIM ? </span>
-        <p class="answerP">Maliyetine Ev ile ilk müşterilerimiz hemen kazanır. Maliyetine Ev ile alırken kazanırsınız. Her projemiz aynı zamanda yatırım projesidir. Maliyetine satışlarımızda maliyetine mülk sahibi olursunuz. 
-        </p>
-    </div>
-</div>
+            <div class="sorularDiv">
+                <div>
+                    <div class="questionHeader">
+                        ENFLASYONDAN ETKİLENİR MİYİM? BAŞTA BELİRLENEN FİYAT DEĞİŞİKLİK GÖSTERİR Mİ ?
+                        <i class="fa-solid fa-chevron-right icon"></i>
+                    </div>
+                    <p class="answerP">Noter onaylı sözleşmenizde ödemeniz belirtilir. Belirtilen ödeme haricinde bir ödeme yapmazsınız.</p>
+                </div>
+            </div>
 
-<div class="sorularDiv">
-    <div>
-        <i class="fa-solid fa-chevron-right icon"></i>
-        <span class="questionHeader">ENFLASYONDAN ETKİLENİR MİYİM? BAŞTA BELİRLENEN FİYAT DEĞİŞİKLİK GÖSTERİR Mİ ? </span>
-        <p class="answerP">Noter onaylı sözleşmenizde ödemeniz belirtilir. Belirtilen ödeme haricinde bir ödeme yapmazsınız.</p>
+            <div class="sorularDiv" style="margin-bottom: 30px;">
+                <div>
+                    <div class="questionHeader">
+                        TAPUMU DEVİR ETME HAKKINA SAHİP MİYİM ?
+                        <i class="fa-solid fa-chevron-right icon"></i>
+                    </div>
+                    <p class="answerP">Tapunuzu istediğiniz zaman sözleşme ile birlikte başkasına devredebilirsiniz / satabilirsiniz.</p>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
-
-<div class="sorularDiv" style="margin-bottom: 30px;">
-    <div>
-        <i class="fa-solid fa-chevron-right icon"></i>
-        <span class="questionHeader">TAPUMU DEVİR ETME HAKKINA SAHİP MİYİM ?</span>
-        <p class="answerP">Tapunuzu istediğiniz zaman sözleşme ile birlikte başkasına devredebilirsiniz / satabilirsiniz.</p>
-    </div>
-</div>
-    </div>
-    </div>
-</div>
+</section>
 
 
 
@@ -407,29 +423,34 @@
 @section("css")
 
 <style>
-    .answerP{
-        color: #333;
-        font-size: 18px;
-        font-weight: bold;
-        font-family: cerebri-sans-semibold;
-        line-height: 1.5;
-        margin: 5px 34px;
-    }
-    .questionHeader{
-        color: #043a74;
-        font-family: 'Roboto', sans-serif;
-        font-weight: bold;
-        font-size: 24px;
-    }
-
-    .icon{
-        font-size: 24px;
-        margin-right: 15px;
-    }
-
-    .sorularDiv{
-        marign-bottom:20px;
-    }
+   .questionHeader {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 5px;
+        }
+        .questionHeader:hover {
+            background-color: #e2e6ea;
+        }
+        .answerP {
+            display: none;
+            padding: 10px;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-top: none;
+            border-radius: 0 0 5px 5px;
+        }
+        .icon {
+            transition: transform 0.3s ease;
+        }
+        .icon.rotate {
+            transform: rotate(90deg);
+        }
 .road-map-main {
   margin: 50px 0 51px;
 }
@@ -805,5 +826,16 @@ width: 250px;
     </style>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+<script>
+    document.querySelectorAll('.questionHeader').forEach(header => {
+        header.addEventListener('click', () => {
+            const icon = header.querySelector('.icon');
+            const answer = header.nextElementSibling;
+            icon.classList.toggle('rotate');
+            answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+        });
+    });
+</script>
 
 @endsection
