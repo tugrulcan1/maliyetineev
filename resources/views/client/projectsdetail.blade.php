@@ -255,12 +255,31 @@
             @if(count($project->galleries) > 0)
                 <div class="section mt-5">
                     <div class="container" >
+
+                    <div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+                              @foreach ($project->galleries as $index => $galery)   
+
+    <div class="carousel-item  @if($index == 0) active @endif">
+      <img src="{{ url('uploads/' . $galery->image) }}" class="d-block w-100" alt="{{ url('uploads/' . $galery->image) }}">
+    </div>
+    @endforeach
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
                         {{-- <h3 style="text-align: center; font-weight: 700; color: #333; margin-top: 100px; ">Proje Görselleri</h3> --}}
-                        <swiper-container class="mySwiper" navigation="true">
+                        {{-- <swiper-container class="mySwiper" navigation="true">
                             @foreach ($project->galleries as $galery)   
                                 <swiper-slide> <img src="{{ url('uploads/' . $galery->image) }}" alt="" style="width: 100%; height: auto;"></swiper-slide>
                             @endforeach
-                        </swiper-container>
+                        </swiper-container> --}}
                     </div>
                 </div>
                 @endif
@@ -269,9 +288,9 @@
                     <div class="section mt-5">
                         <div class="container ">
                             <h3 style="    text-align: center;
-    font-weight: 700;
-    color: #0f75bc;
-    font-size: 29px;text-transform: uppercase">{{ $project->project_title }} Kat Planları</h3>
+                                font-weight: 700;
+                                color: #0f75bc;
+                                font-size: 29px;text-transform: uppercase">{{ $project->project_title }} Kat Planları</h3>
                             <div class="tab">
                                 @foreach ($floorPlans as $index => $floorPlan)
                                     <button class="tablinks" data-tab="tab{{ $index }}">{{ $floorPlan->floor_plan }}</button>
