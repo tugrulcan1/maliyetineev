@@ -3078,7 +3078,7 @@ textarea:focus {
     cursor: none;
 }
 
-#ball-cursor {
+/* #ball-cursor {
     position: fixed;
     width: 70px;
     height: 70px;
@@ -3090,7 +3090,7 @@ textarea:focus {
     overflow: hidden;
     transition: opacity 0.3s ease-in-out 0.1s;
     text-align: center;
-}
+} */
 
 .magic-cursor-wrapper.sliderhover #ball-cursor,
 .page-loader,
