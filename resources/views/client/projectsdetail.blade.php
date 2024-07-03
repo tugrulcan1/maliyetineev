@@ -317,7 +317,7 @@
     </div>
     <div class="row">
         <div class="col-md-12">
-            <div class="sorularDiv">
+            <div class="sorularDiv mb-1">
                  <div>
                     <div class="questionHeader active">
                         MALİYETİNE EV İLE NASIL MALİYETİNE EV SAHİBİ OLURUM ?
@@ -327,7 +327,7 @@
                 </div>
             </div>
 
-            <div class="sorularDiv">
+            <div class="sorularDiv mb-1">
                 <div>
                     <div class="questionHeader">
                         PEŞİNATIMI ÖDEDİKTEN SONRA SÜREÇ NASIL İŞLİYOR ?
@@ -337,7 +337,7 @@
                 </div>
             </div>
 
-            <div class="sorularDiv">
+            <div class="sorularDiv mb-1">
                 <div>
                     <div class="questionHeader">
                         İNŞAAT BAŞLANGICI NE ZAMAN ?
@@ -347,7 +347,7 @@
                 </div>
             </div>
 
-            <div class="sorularDiv">
+            <div class="sorularDiv mb-1">
                 <div>
                     <div class="questionHeader">
                         ÖDEME PLANIMDA BELİRTİLEN TAKSİTLERİMİ NE ZAMAN ÖDEMEYE BAŞLAYACAĞIM ?
@@ -357,7 +357,7 @@
                 </div>
             </div>
 
-            <div class="sorularDiv">
+            <div class="sorularDiv mb-1">
                 <div>
                     <div class="questionHeader">
                         TOPLAM EV MALİYETİ NASIL HESAPLANIR ?
@@ -367,7 +367,7 @@
                 </div>
             </div>
 
-            <div class="sorularDiv">
+            <div class="sorularDiv mb-1">
                 <div>
                     <div class="questionHeader">
                         MALİYETİNE EV İLE ALDIĞIM MÜLKÜMDEN NE ZAMAN KAR ETMEYE BAŞLAYACAĞIM ?
@@ -377,7 +377,7 @@
                 </div>
             </div>
 
-            <div class="sorularDiv">
+            <div class="sorularDiv mb-1">
                 <div>
                     <div class="questionHeader">
                         ENFLASYONDAN ETKİLENİR MİYİM? BAŞTA BELİRLENEN FİYAT DEĞİŞİKLİK GÖSTERİR Mİ ?
@@ -387,7 +387,7 @@
                 </div>
             </div>
 
-            <div class="sorularDiv" style="margin-bottom: 30px;">
+            <div class="sorularDiv mb-1" style="margin-bottom: 30px;">
                 <div>
                     <div class="questionHeader">
                         TAPUMU DEVİR ETME HAKKINA SAHİP MİYİM ?
