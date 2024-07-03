@@ -472,7 +472,7 @@ width: 250px;
 }
 
 .helpModal:hover {
-  background-color: rgb(192, 255, 20);
+  background-color: #eb0d0de0;
   transition-duration: .5s;
 }
 
