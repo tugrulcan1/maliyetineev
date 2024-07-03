@@ -84,7 +84,14 @@
 
 </footer>
 
-
+<div class="floating_btn">
+    <a target="_blank" href="https://wa.me/">
+      <div class="contact_icon">
+        <i class="fa fa-whatsapp my-float"></i>
+      </div>
+    </a>
+    <p class="text_icon">Talk to us?</p>
+  </div>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
@@ -122,7 +129,6 @@
 
 <script>
     var successMessage = "{{ session('success') }}";
-    console.log(successMessage);
     if (successMessage) {
         Toastify({
             text: successMessage,
@@ -156,30 +162,9 @@
     });
 </script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-{{-- <script>
-    $(document).ready(function() {
-        $('.tablinks').click(function() {
-            console.log('asdasds')
-            var katIndex = $(this).data('kat-index');
-            var katGorselleriDiv = $('#katGorselleri');
-            katGorselleriDiv.empty(); // Her tıklamada içeriği temizle
-
-            var katGorselleri = ;
-
-            console.log('katGorselleri')
-
-            $.each(katGorselleri[katIndex], function(index, gorsel) {
-                var img = $('<img>');
-                img.attr('src', '{{ asset("storage/") }}/' + gorsel);
-                katGorselleriDiv.append(img);
-            });
-        });
-    });
-</script> --}}
 
 
 </body>
 
-<!-- Mirrored from craftohtml.themezaa.com/demo-accounting.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 May 2024 11:47:29 GMT -->
 
 </html>
