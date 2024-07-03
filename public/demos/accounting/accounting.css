@@ -229,6 +229,7 @@ header .navbar-brand img {
     rgba(32, 35, 41, 1) 10%,
     transparent 50%
   );
+cursor: initial !important;
 }
 .contact-form-style-01 .btn.btn-large {
   padding: 13px 40px;
