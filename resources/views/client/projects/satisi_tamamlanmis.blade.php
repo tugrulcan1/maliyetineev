@@ -4,7 +4,7 @@
 
 @section('content')
 
-<section class="top-space-margin page-title-big-typography cover-background magic-cursor round-cursor" style="background-image: url(&quot;images/subelerimiz.png&quot;);margin-top: 80px;">
+<section class="top-space-margin page-title-big-typography cover-background magic-cursor round-cursor" style="background-image: url(&quot;images/subelerimiz.png&quot;);margin-top: 0 !important;">
         <div class="container">
             <div class="row extra-very-small-screen align-items-center">
                 <div class="col-lg-5 col-sm-8 position-relative page-title-extra-small appear anime-child anime-complete" data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;opacity&quot;: [0, 1], &quot;translateX&quot;: [-30, 0], &quot;duration&quot;: 800, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
