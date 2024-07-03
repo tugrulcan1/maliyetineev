@@ -463,47 +463,6 @@
     </section>
   <section>
         <div class="container" style="overflow: hidden;">
-            <div class="row align-items-center">
-                <div class="row align-items-center " style="margin-bottom: 70px;">
-                    <div class="col-12 position-relative">
-                        <div class="outside-box-right-40 xs-outside-box-right-0"
-                            data-anime="{ &quot;translateX&quot;: [0, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1200, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
-                            <div class="swiper magic-cursor"
-                                data-slider-options="{ &quot;slidesPerView&quot;: 1, &quot;spaceBetween&quot;: 28, &quot;loop&quot;: true, &quot;autoplay&quot;: { &quot;delay&quot;: 2000, &quot;disableOnInteraction&quot;: false }, &quot;pagination&quot;: { &quot;el&quot;: &quot;.slider-four-slide-pagination-1&quot;, &quot;clickable&quot;: true }, &quot;navigation&quot;: { &quot;nextEl&quot;: &quot;.slider-one-slide-next-1&quot;, &quot;prevEl&quot;: &quot;.slider-one-slide-prev-1&quot; }, &quot;keyboard&quot;: { &quot;enabled&quot;: true, &quot;onlyInViewport&quot;: true }, &quot;breakpoints&quot;: { &quot;1200&quot;: { &quot;slidesPerView&quot;: 5 }, &quot;992&quot;: { &quot;slidesPerView&quot;: 4 }, &quot;768&quot;: { &quot;slidesPerView&quot;: 4 }, &quot;576&quot;: { &quot;slidesPerView&quot;: 2 } }, &quot;effect&quot;: &quot;slide&quot; }">
-                                <div class="swiper-wrapper">
-									@foreach($blogs as $blog)
-                                    <div class="swiper-slide mra" style="">
-                                        <div class="interactive-banner-style-08" style="">
-                                            <figure class="mb-0 hover-box box-hover position-relative" style="text-align: center;">
-                                                {{-- <img src="images/{{$blog->image}}" alt class="border-radius-6px"
-                                                    style="width: 210px; height: 270px; object-fit: cover;" /> --}}
-                                                    <img src="{{ $blog->image ? asset('images/' . $blog->image) : asset('images/logomev.png') }}" alt class="border-radius-6px" style="width: 210px; height: 270px; object-fit: contain;" />
-
-                                                <figcaption class="w-100 p-30px lg-p-25px bg-white">
-                                                    <div class="position-relative z-index-1 overflow-hidden lg-pb-5px ">
-                                                        <span
-                                                            class="fs-19 d-block fw-600 text-dark-gray lh-26 ls-minus-05px">{{$blog->title}}</span>
-                                                        <p class="m-0" style="font-size: 13px;">{{$blog->short_content}}</p>
-
-                                                    </div>
-                                                    <div
-                                                        class="box-overlay bg-white box-shadow-quadruple-large border-radius-6px">
-                                                    </div>
-                                                </figcaption>
-                                            </figure>
-                                        </div>
-                                    </div>
-									@endforeach
-								
-									
-									
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div class="row position-relative clients-style-08 mb-6 sm-mb-40px" style="height: 60px !important;"
                 data-anime="{ &quot;translateX&quot;: [0, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1200, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
                 <div class="col swiper text-center feather-shadow"
