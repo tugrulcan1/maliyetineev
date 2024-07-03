@@ -196,8 +196,8 @@ display: none;
 
 .floating_btn {
   position: fixed;
-  bottom: 30px;
-  right: 30px;
+  bottom: 25px;
+  right: 25px;
   width: 100px;
   height: 100px;
   display: flex;
