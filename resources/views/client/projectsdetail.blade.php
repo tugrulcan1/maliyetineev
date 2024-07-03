@@ -425,26 +425,20 @@
 
 <style>
    .questionHeader {
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 10px;
-            background-color: #f8f9fa;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            margin-bottom: 5px;
+            background: #f5f5f5;
+    padding: 13px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
         }
         .questionHeader:hover {
             background-color: #e2e6ea;
         }
         .answerP {
-            display: none;
-            padding: 10px;
-            background-color: #ffffff;
-            border: 1px solid #ddd;
-            border-top: none;
-            border-radius: 0 0 5px 5px;
+               border: 1px solid #eee;
+    border-top: none;
         }
         .icon {
             transition: transform 0.3s ease;
