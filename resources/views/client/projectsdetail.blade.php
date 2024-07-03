@@ -247,7 +247,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <h4 class="baslikh4">Maliyetine Ev sahibi olma sistemi</h4>
-                    <h5 class="baslikh5">Bu gün projeden tapunuzu alın yarın <br> maliyetine eviniz olsun</h5>
+                    <h5 class="baslikh5">Bu gün projeden tapunuzu alın yarın maliyetine eviniz olsun</h5>
                     <p class="ptag">Maliyetine Ev,Türkiye’de ilk hemen tapu teslim %100 güvenli ve garantili maliyetine ev sahibi olmanızı sağlayan tek şirkettir.</p>
                 </div>
             </div>   
@@ -633,15 +633,15 @@ width: 250px;
   }
 }
     .baslikh4{
-        color: #043a74;
-        text-align: center;
-        font-size: 35px;
-        font-family: 'Roboto', sans-serif;
-        font-weight: bold;
-            text-transform: uppercase;
+          color: #eb0d0de0;
+    text-align: center;
+        font-size: 37px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
     }
     .baslikh6{
-        color: #56adcf;
+        color: #0f75bc;
         text-align: center;
         font-size: 50px;
         font-family: 'Roboto', sans-serif;
@@ -649,13 +649,12 @@ width: 250px;
     }
 
     .baslikh5{
-        color: #56adcf;
-        text-align: center;
-        font-size: 65px;
-        font-family: 'Roboto', sans-serif;
-        letter-spacing: 1px;
-        font-weight: bold;
-        line-height: 4.7rem;
+         color:#0f75bc;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Roboto', sans-serif;
+    /* letter-spacing: 1px; */
+    font-weight: bold;
     }
     .ptag{
         text-align: center;
@@ -798,4 +797,4 @@ width: 250px;
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 
-@endsection
+@endsect
