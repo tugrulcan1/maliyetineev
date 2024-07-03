@@ -452,6 +452,7 @@ width: 250px;
     border: none;
     position: fixed;
     cursor: pointer;
+    z-index: 99999;
     transition-duration: .2s;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.116);
     padding-left: 8px;
