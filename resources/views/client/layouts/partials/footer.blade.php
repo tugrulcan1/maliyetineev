@@ -88,10 +88,17 @@
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
+   document.querySelectorAll('.questionHeader').forEach(header => {
+        header.addEventListener('click', () => {
+            const icon = header.querySelector('.icon');
+            const answer = header.nextElementSibling;
+            icon.classList.toggle('rotate');
+            answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+        });
+    });
     $(document).ready(function() {
         $(".tablinks").click(function() {
             var tabId = $(this).data("tab");
-            console.log('adfsa' + tabId)
             $(".tabcontent").hide();
             $("#" + tabId).show();
             $(".tablinks").removeClass("active");
