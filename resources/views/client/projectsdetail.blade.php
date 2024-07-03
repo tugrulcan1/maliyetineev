@@ -326,8 +326,6 @@
 </section>
 
 
-<section>
-
 <div class="container mt-4">
     <div class="row">
         <div class="col-md-12">
@@ -338,8 +336,8 @@
         <div class="col-md-12">
             <div class="sorularDiv mb-1">
                  <div>
-                    <div class="questionHeader active">
-                        MALİYETİNE EV İLE NASIL MALİYETİNE EV SAHİBİ OLURUM ?
+                    <div class="questionHeader active"> 
+                        MALİYETİNE EV İLE NASIL MALİYETİNE EV SAHİBİ OLURUM ? dsd
                         <i class="fa-solid fa-chevron-right icon rotate"></i>
                     </div>
                     <p class="answerP" style="display: block;">Maliyetine Ev Tarafından imarlı arsa üzerine projesi belirlenmiş mülklerimizden peşinatınızı ödeyerek arsa tapunuzu alırsınız. İnşaat başlangıcında taksitlerinizi ödemeye başlarsınız.</p>
@@ -418,7 +416,6 @@
         </div>
     </div>
 </div>
-</section>
 
 
 
