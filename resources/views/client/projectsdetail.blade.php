@@ -12,10 +12,10 @@
 <section id="form" class="about-area about-area-mid pt-120 pb-90" style="padding-top: 40px; padding-bottom: 40px;">
     <div class="container">
         <div class="row">
-            <div class="container col-xl-7 col-lg-6 col-md-6 mb-4">
+            <div class="container col-xl-12 col-lg-12 col-md-12 mb-4">
                 <div class="row card-container">
                     @foreach(json_decode($project->details) as $detail)
-                        <div class="col-xl-6 col-lg-6 col-md-6 mb-4">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-12 mb-4">
                             <div class="feature-box">
                                 {{-- <div class="feature-small-icon">
                                     <i class="fas fa-star"></i> <!-- İkonu buraya yerleştirebilirsiniz -->
@@ -379,7 +379,7 @@
     .feature-small-content h3 {
         font-size: 24px;
         font-weight: 700;
-        color: #333;
+        color: #0f75bc !important;
         /* margin-bottom: 10px; */
     }
     .feature-small-content h5 {
