@@ -84,27 +84,28 @@
 <section id="form" class="about-area about-area-mid pt-120 pb-90" style="padding-top: 40px; padding-bottom: 40px;">
     <div class="container">
         <div class="row">
-            <div class="container col-xl-12 col-lg-12 col-md-12 mb-4">
+            {{-- <div class="container col-xl-12 col-lg-12 col-md-12 mb-4">
                 <div class="row card-container">
                     @foreach(json_decode($project->details) as $detail)
                         <div class="col-xl-6 col-lg-6 col-md-6 col-12 mb-4">
                             <div class="feature-box">
-                                {{-- <div class="feature-small-icon">
+                                <div class="feature-small-icon">
                                     <i class="fas fa-star"></i> <!-- İkonu buraya yerleştirebilirsiniz -->
-                                </div> --}}
+                                </div> 
+
+                            
                                 <div class="feature-small-content">
                                     <h3>{{ $detail->title }}</h3>
                                     <h5>{{ $detail->sub_title ?? '' }}</h5>
                                     <p class="card-text">{!! \Illuminate\Support\Str::limit(strip_tags($detail->description), 250, '...') !!}</p>
-                                    {{-- <p style="overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;">{!! $detail->description !!}</p> --}}
                                 </div>
                             </div>
                         </div>
                     @endforeach
                 </div>
-            </div>
+            </div> --}}
             
-            <div class="col-xl-5 col-lg-12 col-md-11">
+            <div class="col-xl-12 col-lg-12 col-md-11">
                 <div class="row row-cols-md-1 justify-content-center">
                     <div class="col-xl-10">
                         <div class="bg-white p-8 border-radius-6px box-shadow-double-large">
