@@ -326,7 +326,7 @@
 </section>
 
 
-<div class="container">
+<div class="container mb-4">
     <div class="row">
         <div class="col-md-12">
             <h4 class="baslikh4 mb-4">Sıkça Sorulan Sorular</h4>
