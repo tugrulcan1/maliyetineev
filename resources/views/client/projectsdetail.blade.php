@@ -243,11 +243,11 @@
 
 </section> --}}
 
-        <div class="container">
+        <div class="container mt-5">
             <div class="row">
                 <div class="col-md-12">
                     <h4 class="baslikh4">Maliyetine Ev sahibi olma sistemi</h4>
-                    <h5 class="baslikh5">Bu gün projeden tapunuzu alın yarın maliyetine eviniz olsun</h5>
+                    <h5 class="baslikh5">Bu gün projeden tapunuzu alın yarın <br> maliyetine eviniz olsun</h5>
                     <p class="ptag">Maliyetine Ev,Türkiye’de ilk hemen tapu teslim %100 güvenli ve garantili maliyetine ev sahibi olmanızı sağlayan tek şirkettir.</p>
                 </div>
             </div>   
@@ -635,7 +635,7 @@ width: 250px;
     .baslikh4{
         color: #043a74;
         text-align: center;
-        font-size: 50px;
+        font-size: 35px;
         font-family: 'Roboto', sans-serif;
         font-weight: bold;
             text-transform: uppercase;
