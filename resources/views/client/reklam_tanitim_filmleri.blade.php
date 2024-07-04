@@ -7,7 +7,7 @@
         style="background-image: url({{asset('demo-conference-page-bg.jpg')}});        padding-top: 30px;
         padding-bottom: 30px;">
         <div class="container">
-            <div class="row align-items-center justify-content-center extra-small-screen" style="top:10px !important">
+            <div class="row align-items-center justify-content-center extra-small-screen" >
                 <div class="col-lg-8 text-center page-title-extra-large">
                     <h1 class="mb-0 text-white alt-font fw-600 ls-minus-5px">
                         <span class="d-block text-outline text-outline-width-2px text-outline-color-white"
