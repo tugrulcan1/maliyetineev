@@ -66,7 +66,7 @@
             <script>
                 document.getElementById("current-year").textContent = new Date().getFullYear();
             </script>
-            <div class="elements-social social-icon-style-02">
+            {{-- <div class="elements-social social-icon-style-02">
                 <ul class="small-icon light list-inline mb-0">
                     @foreach ($socialMediaIcons as $icon)
                         <li>
@@ -77,7 +77,7 @@
                     @endforeach
                 </ul>
 
-            </div>
+            </div> --}}
 
         </div>
     </div>
