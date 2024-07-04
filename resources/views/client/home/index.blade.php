@@ -425,8 +425,7 @@
              <div class="row align-items-center justify-content-center mb-3 mt-3 text-center text-lg-start column-form">
                  <div class="col-xl-10 col-lg-10 md-mb-20px mt-2"
                      data-anime="{ &quot;translateX&quot;: [50, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1200, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
-                     <h4 class="text-dark-gray fw-700 mb-0 ls-minus-1px">Projelerimiz
-                     </h4>
+                     <h6 class="text-dark-gray fw-600 mb-0 ls-minus-1px">Projelerimiz</h6>
                  </div>
                  <div class="col-xl-2 col-lg-2 d-flex justify-content-center justify-content-lg-end"
                      data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateX&quot;: [30, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 800, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
