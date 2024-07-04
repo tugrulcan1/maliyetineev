@@ -8,7 +8,7 @@
         <div class="container">
             <div class="row align-items-center justify-content-center extra-small-screen">
                 <div class="col-lg-6 col-md-8 position-relative text-center page-title-extra-small appear anime-child anime-complete" data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateY&quot;: [-15, 0], &quot;perspective&quot;: [1200,1200], &quot;scale&quot;: [1.1, 1], &quot;rotateX&quot;: [50, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 800, &quot;delay&quot;: 200, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
-                    <h1 class="alt-font text-white mb-0" style=""
+                    <h1 class="alt-font text-white mb-0"
                     style="font-size: 45px">İletişim</h1>
                     </div>
             </div>
