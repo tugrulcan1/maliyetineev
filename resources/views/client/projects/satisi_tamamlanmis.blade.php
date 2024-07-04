@@ -43,7 +43,7 @@
             </div>
         </div>
     </section> --}}
-    <section class="mt-3">
+    <section class="mt-0">
         <div class="container">
             <div class="row">
                 <div class="col">
