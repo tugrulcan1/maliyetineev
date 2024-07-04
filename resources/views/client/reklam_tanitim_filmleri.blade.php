@@ -33,7 +33,9 @@
                 <div class="col-md-9">
                     <h3 class="fw-700 text-dark-gray ls-minus-1px fancy-text-style-4 mb-0" style="font-size:25px">Maliyetine
                         Ev </h1>
-                        <span class="fs-15 text-uppercase text-base-color fw-600 d-block">Maliyetine ev sistemi Türkiye'nin
+                        <span class="fs-15 text-uppercase text-base-color fw-600 d-block"
+                        style="    top: -12px;
+    position: relative;">Maliyetine ev sistemi Türkiye'nin
                             en güvenli, en garantili inşaat yapım yatırım sistemidir.</span>
 
                 </div>
