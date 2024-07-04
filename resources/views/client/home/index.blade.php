@@ -352,14 +352,6 @@
      <section class=" mt-5  ">
          <div class="container pb-50px sm-pt-20px xs-pb-30px background-repeat background-position-center sm-background-image-none"
              style="background-image: url('https://craftohtml.themezaa.com/images/vertical-center-line-bg-dark.svg');background-color:#F4F1ED">
-             <div class="row overlap-section" style="margin-top: -175.5px;">
-                 <div class="col-12 text-center">
-                     <img class="rounded-circle"
-                         src="https://craftohtml.themezaa.com/images/demo-hotel-and-resort-15.png" alt=""
-                         data-no-retina="">
-                 </div>
-             </div>
-
              <div class="row justify-content-center mb-4">
                  <div class="col-xl-6 col-lg-8 col-md-10 text-center">
                      <h3 class="text-dark-gray alt-font ls-minus-2px fw-400 mb-40px xs-mb-30px w-80 xs-w-100 mx-auto">
