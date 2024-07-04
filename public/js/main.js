@@ -257,9 +257,9 @@
       $(".header-cart").removeClass("show");
       $(".header-cart").children(".dropdown-menu").removeClass("show");
     }
-    // if (!$(e.target).closest(".left-modern-header").length) {
-    //   $(".left-modern-header").collapse("hide");
-    // }
+    if (!$(e.target).closest(".left-modern-header").length) {
+      $(".left-modern-header").collapse("hide");
+    }
   });
   $(document).on("keydown", function (e) {
     if (e.keyCode === 27) {
