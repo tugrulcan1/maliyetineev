@@ -556,6 +556,6 @@ Route::get('/maliyetine/ev/videolar',[VideoController::class,'index'])->name('vi
 Route::get('/reklam/tanitim/filmleri',[VideoController::class,'reklam_tanitim_filmleri']);
 Route::get('/tapu/alan/musterilerimiz',[VideoController::class,'tapuAlanMusterilerimiz'])->name('tapu.alan.musterilerimiz');
 
-Route::get('/basinda/bizler',[VideoController::class,'basindaBizz'])->name('basinda.biz');
+Route::get('/basinda-biz',[VideoController::class,'basindaBizz'])->name('basinda.biz');
 
     
