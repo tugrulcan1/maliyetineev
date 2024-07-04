@@ -34,7 +34,6 @@
         </div>
     </section>
 
-    <section>
 
         <section>
             <div class="container">
