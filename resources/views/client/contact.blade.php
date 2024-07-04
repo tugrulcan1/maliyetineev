@@ -30,42 +30,30 @@
                     data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateY&quot;: [30, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 600, &quot;delay&quot;: 100, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
                     <span
                         class="fs-16 text-uppercase text-gradient-san-blue-new-york-red fw-700 mb-10px ls-1px d-inline-block"
-                        style="">Book your appointment</span>
+                        style="">Dilediğiniz zaman tanışabiliriz.
+                    </span>
                     <h2 class="alt-font fw-400 text-dark-gray ls-minus-1px w-80 lg-w-100 mb-40px sm-mb-30px" style="">
-                        We would love to hear from you.</h2>
+                        Sizinle tanışmak için sabırsızlanıyoruz!
+                    </h2>
                     <div class="row row-cols-1 row-cols-sm-2 mb-30px xs-mb-25px" style="">
-                        <div class="col last-paragraph-no-margin xs-mb-25px">
-                            <span class="fs-18 fw-600 text-dark-gray">Visit beauty salon</span>
-                            <div class="h-1px w-80 sm-w-100 bg-dark-gray mt-10px mb-10px"></div>
-                            <p class="w-75 lg-w-90">401 Broadway, 24th Floor New York, NY 10013</p>
-                        </div>
                         <div class="col">
-                            <span class="fs-18 fw-600 text-dark-gray">Book appointment</span>
+                            <span class="fs-18 fw-600 text-dark-gray">Aklına takılan soru mu var?
+                            </span>
                             <div class="h-1px w-80 sm-w-100 bg-dark-gray mt-10px mb-10px"></div>
                             <div class="w-100 d-block">
-                                <a href="mailto:info@yourdomain.com">info@yourdomain.com</a><br><a
-                                    href="mailto:booking@yourdomain.com">booking@yourdomain.com</a>
+                                <a href="mailto:info@maliyetineev.com">info@maliyetineev.com</a>
                             </div>
                         </div>
                     </div>
                     <div class="row row-cols-1 row-cols-sm-2" style="">
                         <div class="col last-paragraph-no-margin xs-mb-25px">
-                            <span class="fs-18 fw-600 text-dark-gray">Let's talk with us</span>
+                            <span class="fs-18 fw-600 text-dark-gray">Bize her zaman ulaşabilirsiniz</span>
                             <div class="h-1px w-80 sm-w-100 bg-dark-gray mt-10px mb-10px"></div>
                             <div class="w-100 d-block">
-                                <span class="d-block"><span class="fw-600 text-dark-gray">Phone:</span> <a
-                                        href="tel:1800222000" class="text-medium-gray">1-800-222-000</a></span>
-                                <span class="d-block"><span class="fw-600 text-dark-gray">Fax:</span> 1-800-222-002</span>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <span class="fs-18 fw-600 text-dark-gray">Opening hours</span>
-                            <div class="h-1px w-80 sm-w-100 bg-dark-gray mt-10px mb-10px"></div>
-                            <div class="w-100 d-block">
-                                <span class="d-block"><span class="fw-600 text-dark-gray">Mon - Fri:</span> 09 am to 08
-                                    pm</span>
-                                <span class="d-block"><span class="fw-600 text-dark-gray">Sat - Sun:</span> 09 am to 06
-                                    pm</span>
+                                <span class="d-block"><span class="fw-600 text-dark-gray">Telefon:</span> <a
+                                        href="tel:4443284
+                " class="text-medium-gray"> 444 3 284
+                                    </a></span>
                             </div>
                         </div>
                     </div>
