@@ -24,6 +24,13 @@
 
 
 <div class="container">
+    <div class="row">
+        <div class="col-md-2">
+            <img alt="" 
+            class="youtubeVideo" 
+            src="{{asset('channels4_profile.jpg')}}">
+        </div>
+    </div>
     <div id="aboutus" class="row align-items-xl-center pt-2 mt-2">
         <div class="col-md-12">
             <div id="playlist">
@@ -69,5 +76,16 @@
 
 @endsection
 
+
+@section("css")
+
+<style>
+    .youtubeVideo{
+        border-radius: 50%;
+        width:100px;
+        height:100px;
+    }
+    </style>
+@endsection
 
 
