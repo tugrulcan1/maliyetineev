@@ -70,9 +70,8 @@ Route::get('/project/{slug}', [ClientProjectController::class, "index"])->name('
 Route::get('/marka_projeleri/{id}', [ClientProjectController::class, "brandProjects"])->name('brand.projects');
 Route::get('/projelerimiz', [ClientProjectController::class, "projectList"])->name('client.projects.list');
 
-Route::get('/satisi-devam-eden', [ClientProjectController::class, "satisi_devam_eden"])->name('client.satisi.devam.eden.list');
-Route::get('/satisi-tamamlanmis', [ClientProjectController::class, "satisi_tamamlanmis"])->name('client.satisi.tamamlanmis.list');
-Route::get('/satisi-devam-eden-projelerimiz', [ClientProjectController::class, "satisi_devam_eden_projelerimiz"])->name('client.satisi.devam.eden.projects.list');
+Route::get('/satisi-devam-eden-projelerimiz', [ClientProjectController::class, "satisi_devam_eden"])->name('client.satisi.devam.eden.list');
+Route::get('/satisi-tamamlanmis-projelerimiz', [ClientProjectController::class, "satisi_tamamlanmis"])->name('client.satisi.tamamlanmis.list');
 
 Route::get('/projelerimiz/{project}', [ProjectController::class, "show"])->name('projelerimiz.show');
 Route::get('/proje_konut_detayi/{projectSlug}/{id}', [ClientProjectController::class, "projectHousingDetail"])->name('project.housings.detail');
@@ -104,7 +103,7 @@ Route::group(['prefix' => 'admin', "as" => "admin.", 'middleware' => ['admin']],
 
     Route::get('/reklam/tanitim/filmlerimiz',[VideoController::class,'createReklamTanitimFilmleri'])->name('reklam.tanitim.filmlerimiz');
     Route::post('/add/reklam/tanitim/filmleri', [VideoController::class, 'addReklamTanitimFilmleri'])->name('add.reklam.tanitim.filmleri');
-    
+
     Route::get('/tapu/alan/musteriler',[VideoController::class,'tapuAlanMusteriler'])->name('tapu.alan.musteriler');
     Route::post('tapu/alan/musteriler/ekle', [VideoController::class, 'addTapuAlanMusteriler'])->name('add.tapu.alan.musteriler');
 
@@ -113,7 +112,7 @@ Route::group(['prefix' => 'admin', "as" => "admin.", 'middleware' => ['admin']],
 
     Route::get('/floor_plans',[FloorPlansController::class,'index'])->name('floor.plans.index');
     Route::post('/add_floor_plan',[FloorPlansController::class,'addFloorPlan'])->name('add.floor.plan');
-    
+
     Route::delete('/blogs/{blog}', [BlogController::class, 'destroy'])->name('blogs.destroy');
     Route::delete('/delete-gallery/{id}', [ProjectController::class, 'deleteGallery'])->name('gallery.delete');
     Route::post('/ckeditor/upload', [CKEditorController::class, "upload"])->name('ckeditor.upload');
@@ -124,7 +123,7 @@ Route::group(['prefix' => 'admin', "as" => "admin.", 'middleware' => ['admin']],
         Route::get('/blogs/{blog}/edit', [BlogController::class, 'edit'])->name('blogs.edit');
 
         Route::put('/blogs/{blog}', [BlogController::class, 'update'])->name('blogs.update');
-       
+
         Route::get('/blogs', [BlogController::class, 'index'])->name('blogs.index');
 
     Route::get('info/contact', [InfoController::class, 'contact'])->name('info.contact.index');
@@ -559,4 +558,3 @@ Route::get('/tapu/alan/musterilerimiz',[VideoController::class,'tapuAlanMusteril
 
 Route::get('/basinda-biz',[VideoController::class,'basindaBizz'])->name('basinda.biz');
 
-    
