@@ -355,7 +355,7 @@
              <div class="row overlap-section" style="margin-top: -175.5px;">
                  <div class="col-12 text-center">
                      <img class="rounded-circle"
-                         src="{{ asset('favicon-c9c0de2311390de484c5d988188059cd56ed9317.png') }}" alt=""
+                         src="https://craftohtml.themezaa.com/images/demo-hotel-and-resort-15.png" alt=""
                          data-no-retina="">
                  </div>
              </div>
