@@ -21,6 +21,7 @@
 <section>
 
 
+<div class="container">
     <div id="aboutus" class="row align-items-xl-center pt-2 mt-2">
         <div class="col-lg-12 mt-2">
             <h3 class="text-5 line-height-3 text-transform-none font-weight-semibold mb-4 mb-lg-3 mb-xl-4 appear-animation animated fadeInUpShorter appear-animation-visible"
@@ -98,8 +99,6 @@
         </div>
     </div>
 </div>
-
-<div class="container">
     <h3 class="text-center fw-700" style="color:#282828 !important">Reklam Tanıtım Filmleri</h3>
 <div class="video-gallery-container">
     <div class="video-gallery">
