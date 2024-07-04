@@ -548,7 +548,7 @@
              <div class="row align-items-center justify-content-center">
                  <div class="col-lg-12 text-lg-start appear anime-complete"
                      data-anime="{ &quot;translateX&quot;: [50, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1200, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }"
-                     style="">
+                     style="display:flex">
                      <div class="review-star-icon fs-22 d-inline-block align-middle me-15px">
                          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                              class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
