@@ -419,7 +419,7 @@
      </section> --}}
 
 
-     <section class=" overflow-hidden position-relative ps-3 xs-ps-0">
+     {{-- <section class=" overflow-hidden position-relative ps-3 xs-ps-0">
          <div class="container">
              <div class="row align-items-center">
                  <div class="col-lg-3 ps-5 pe-5 xl-pe-0 lg-ps-0 text-center text-lg-start md-mb-40px">
@@ -477,8 +477,8 @@
                  </div>
              </div>
          </div>
-     </section>
-     {{-- <section class="overflow-hidden mt-5" style="padding:0px 40px !important;">
+     </section> --}}
+     <section class="overflow-hidden mt-5" style="padding:0px 40px !important;">
          <div class="container">
              <div class="row align-items-center justify-content-center mb-3 mt-3 text-center text-lg-start column-form">
                  <div class="col-xl-10 col-lg-10 md-mb-20px mt-2"
@@ -550,7 +550,7 @@
                  </div>
              </div>
          </div>
-     </section> --}}
+     </section>
 
 
      {{-- <section class="pt-0 overflow-hidden position-relative overlap-height">
