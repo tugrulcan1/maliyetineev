@@ -472,10 +472,7 @@ display: none;
                 <div class="container-fluid">
                     <div class="d-flex align-items-center">
                         <a class="navbar-brand" href="{{route('index')}}">
-                            <img src="{{asset('images/logomev.png')}}" alt class="default-logo logo-img">
-                            <img src="images/logomev.png" data-at2x="images/logomev.png" alt class="alt-logo logo-img">
-                            <img src="images/logomev.png" data-at2x="images/logomev.png" alt class="mobile-logo logo-img">
-                        </a>
+                            <img src="{{asset('images/logomev.png')}}" alt class=" logo-img">
                         <button class="navbar-toggler" style="float: right" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>

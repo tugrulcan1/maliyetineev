@@ -9110,6 +9110,7 @@ header .disable-fixed {
 header.sticky .responsive-sticky {
     -webkit-transform: translateY(0);
     transform: translateY(0);
+    height: 80px !important
 }
 
 header.sticky .navbar.disable-fixed {
