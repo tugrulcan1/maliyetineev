@@ -226,22 +226,22 @@
                                      style="padding: 20px 0;"
                                      data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateX&quot;: [50, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1200, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
                                      <!-- <div class="mb-20px">
-                                                                <div
-                                                                    class="separator-line-1px w-50px bg-base-color d-inline-block align-middle me-10px opacity-2">
-                                                                </div>
-                                                                <span
-                                                                    class="d-inline-block text-dark-gray align-middle fw-500 fs-20 ls-minus-05px">Strategic
-                                                                    planning</span>
-                                                            </div> -->
+                                                                    <div
+                                                                        class="separator-line-1px w-50px bg-base-color d-inline-block align-middle me-10px opacity-2">
+                                                                    </div>
+                                                                    <span
+                                                                        class="d-inline-block text-dark-gray align-middle fw-500 fs-20 ls-minus-05px">Strategic
+                                                                        planning</span>
+                                                                </div> -->
                                      <h4 class="fw-700 text-dark-gray ls-minus-1px md-mb-20px"
                                          style="font-size: 22px;margin-top:10px">
                                          {{ $settings['section_5_1'] }}</h4>
                                      <p class="mb-35px md-mb-25px" style="color: #647589">
                                          {{ $settings['section_5_1_content'] }} </p>
                                      <!-- <a href="demo-accounting-services.html"
-                                                                class="btn btn-large btn-rounded with-rounded btn-white btn-box-shadow fw-600">Learn
-                                                                more<span class="bg-base-color text-white"><i
-                                                                        class="bi bi-arrow-right-short icon-extra-medium"></i></span></a> -->
+                                                                    class="btn btn-large btn-rounded with-rounded btn-white btn-box-shadow fw-600">Learn
+                                                                    more<span class="bg-base-color text-white"><i
+                                                                            class="bi bi-arrow-right-short icon-extra-medium"></i></span></a> -->
                                  </div>
                              </div>
                          </div>
@@ -257,13 +257,13 @@
                                  <div class="col-xl-4 col-lg-5 offset-lg-1 col-md-6 text-center text-md-start"
                                      style="padding: 20px 0;">
                                      <!-- <div class="mb-20px">
-                                                                    <div
-                                                                        class="separator-line-1px w-50px bg-base-color d-inline-block align-middle me-10px opacity-2">
-                                                                    </div>
-                                                                    <span
-                                                                        class="d-inline-block text-dark-gray align-middle fw-500 fs-20 ls-minus-05px">Audit
-                                                                        assurance</span>
-                                                                </div> -->
+                                                                        <div
+                                                                            class="separator-line-1px w-50px bg-base-color d-inline-block align-middle me-10px opacity-2">
+                                                                        </div>
+                                                                        <span
+                                                                            class="d-inline-block text-dark-gray align-middle fw-500 fs-20 ls-minus-05px">Audit
+                                                                            assurance</span>
+                                                                    </div> -->
                                      <h4 class="fw-700 text-dark-gray ls-minus-1px md-mb-20px"
                                          style="font-size: 22px;margin-top:10px">
                                          {{ $settings['section_5_2'] }}</h4>
@@ -271,9 +271,9 @@
                                          {{ $settings['section_5_2_content'] }}
                                      </p>
                                      <!-- <a href="demo-accounting-services.html"
-                                                                class="btn btn-large btn-rounded with-rounded btn-white btn-box-shadow fw-600">Learn
-                                                                more<span class="bg-base-color text-white"><i
-                                                                        class="bi bi-arrow-right-short icon-extra-medium"></i></span></a> -->
+                                                                    class="btn btn-large btn-rounded with-rounded btn-white btn-box-shadow fw-600">Learn
+                                                                    more<span class="bg-base-color text-white"><i
+                                                                            class="bi bi-arrow-right-short icon-extra-medium"></i></span></a> -->
                                  </div>
                              </div>
                          </div>
@@ -289,13 +289,13 @@
                                  <div class="col-xl-4 col-lg-5 offset-lg-1 col-md-6 text-center text-md-start"
                                      style="padding: 20px 0;">
                                      <!-- <div class="mb-20px">
-                                                                <div
-                                                                    class="separator-line-1px w-50px bg-base-color d-inline-block align-middle me-10px opacity-2">
-                                                                </div>
-                                                                <span
-                                                                    class="d-inline-block text-dark-gray align-middle fw-500 fs-20 ls-minus-05px">Financial
-                                                                    projections</span>
-                                                            </div> -->
+                                                                    <div
+                                                                        class="separator-line-1px w-50px bg-base-color d-inline-block align-middle me-10px opacity-2">
+                                                                    </div>
+                                                                    <span
+                                                                        class="d-inline-block text-dark-gray align-middle fw-500 fs-20 ls-minus-05px">Financial
+                                                                        projections</span>
+                                                                </div> -->
                                      <h4 class="fw-700 text-dark-gray ls-minus-1px md-mb-20px"
                                          style="font-size: 22px;margin-top:10px">
                                          {{ $settings['section_5_3'] }}
@@ -304,9 +304,9 @@
                                          {{ $settings['section_5_3_content'] }}
                                      </p>
                                      <!-- <a href="demo-accounting-services.html"
-                                                                class="btn btn-large btn-rounded with-rounded btn-white btn-box-shadow fw-600">Learn
-                                                                more<span class="bg-base-color text-white"><i
-                                                                        class="bi bi-arrow-right-short icon-extra-medium"></i></span></a> -->
+                                                                    class="btn btn-large btn-rounded with-rounded btn-white btn-box-shadow fw-600">Learn
+                                                                    more<span class="bg-base-color text-white"><i
+                                                                            class="bi bi-arrow-right-short icon-extra-medium"></i></span></a> -->
                                  </div>
                              </div>
                          </div>
@@ -322,22 +322,22 @@
                                  <div class="col-xl-4 col-lg-5 offset-lg-1 col-md-6 text-center text-md-start"
                                      style="padding: 20px 0;">
                                      <!-- <div class="mb-20px">
-                                                                <div
-                                                                    class="separator-line-1px w-50px bg-base-color d-inline-block align-middle me-10px opacity-2">
-                                                                </div>
-                                                                <span
-                                                                    class="d-inline-block text-dark-gray align-middle fw-500 fs-20 ls-minus-05px">Business
-                                                                    planning</span>
-                                                            </div> -->
+                                                                    <div
+                                                                        class="separator-line-1px w-50px bg-base-color d-inline-block align-middle me-10px opacity-2">
+                                                                    </div>
+                                                                    <span
+                                                                        class="d-inline-block text-dark-gray align-middle fw-500 fs-20 ls-minus-05px">Business
+                                                                        planning</span>
+                                                                </div> -->
                                      <h4 class="fw-700 text-dark-gray ls-minus-1px md-mb-20px"
                                          style="font-size: 22px;margin-top:10px">
                                          {{ $settings['section_5_4'] }}</h4>
                                      <p class="mb-35px md-mb-25px" style="color: #647589">
                                          {{ $settings['section_5_4_content'] }}</p>
                                      <!-- <a href="demo-accounting-services.html"
-                                                                class="btn btn-large btn-rounded with-rounded btn-white btn-box-shadow fw-600">Learn
-                                                                more<span class="bg-base-color text-white"><i
-                                                                        class="bi bi-arrow-right-short icon-extra-medium"></i></span></a> -->
+                                                                    class="btn btn-large btn-rounded with-rounded btn-white btn-box-shadow fw-600">Learn
+                                                                    more<span class="bg-base-color text-white"><i
+                                                                            class="bi bi-arrow-right-short icon-extra-medium"></i></span></a> -->
                                  </div>
                              </div>
                          </div>
@@ -543,32 +543,22 @@
         </div>
     </section> --}}
 
-     <section class="pt-0 pb-2 sm-pb-6 overflow-hidden">
+     <section class="pt-0 pb-2 sm-pb-6 overflow-hidden mt-5">
          <div class="container">
              <div class="row align-items-center justify-content-center">
-                <div class="col-lg-2 text-center md-mb-25px appear anime-complete"
-                data-anime="{ &quot;translateX&quot;: [0, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1200, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }"
-                style="">
-                <img src="{{asset('demo-marketing-home-icon-03.jpg')}}" alt="" data-no-retina="">
-            </div>
-                 <div class="col-lg-5 text-center text-lg-end md-mb-30px appear anime-complete"
-                     data-anime="{ &quot;translateX&quot;: [-50, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1200, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }"
-                     style="">
-                     <h6 class="text-dark-gray fw-600 mb-0 ls-minus-1px">Müşteri Yorumları</h6>
-                 </div>
-
-                 <div class="col-lg-5 text-center text-lg-start appear anime-complete"
+                 <div class="col-lg-12 text-lg-start appear anime-complete"
                      data-anime="{ &quot;translateX&quot;: [50, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1200, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }"
                      style="">
                      <div class="review-star-icon fs-22 d-inline-block align-middle me-15px">
                          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                              class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                      </div>
+                     <h6 class="text-dark-gray fw-600 mb-0 ls-minus-1px">Müşteri Yorumları</h6>
                  </div>
              </div>
          </div>
      </section>
-     <section class="mt-0 mb-0 pb-0">
+     <section class="m-0 p-0">
          <div class="container p-0">
 
 
@@ -718,8 +708,8 @@
                  data-anime="{ &quot;translateY&quot;: [50, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1200, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
                  <div class="col-12 text-center">
                      <!-- <div
-                                            class="d-inline-block align-middle bg-yellow fw-600 text-white text-uppercase border-radius-30px ps-20px pe-20px fs-12 me-10px lh-30 sm-m-5px">
-                                            Trust</div> -->
+                                                class="d-inline-block align-middle bg-yellow fw-600 text-white text-uppercase border-radius-30px ps-20px pe-20px fs-12 me-10px lh-30 sm-m-5px">
+                                                Trust</div> -->
                      <div class="d-inline-block align-middle text-dark-gray fs-19 fw-600 ls-minus-05px">Türkiye genelinde
                          <span class="text-decoration-line-bottom text-dark-gray">22 şubemizle</span> hizmetinizdeyiz.
                      </div>
