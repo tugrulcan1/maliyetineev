@@ -349,7 +349,7 @@
 
      </section>
 
-     <section class=" mt-5  ">
+     {{-- <section class=" mt-5  ">
          <div class="container pb-50px sm-pt-20px xs-pb-30px background-repeat background-position-center sm-background-image-none"
              style="background-image: url('https://craftohtml.themezaa.com/images/vertical-center-line-bg-dark.svg');background-color:#F4F1ED">
              <div class="row justify-content-center mb-4">
@@ -416,7 +416,7 @@
              </div>
 
          </div>
-     </section>
+     </section> --}}
 
      <section class="overflow-hidden mt-5" style="padding:0px 40px !important;">
          <div class="container">
