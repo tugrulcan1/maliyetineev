@@ -24,15 +24,20 @@
 
 
 <div class="container">
-    <div class="row" style="align-items:center">
-        <div class="col-md-2">
+    <div class="row" style="align-items:center;align-items:center;background-color: whitesmoke;padding: 10px;">
+        <div class="col-md-2"
+        style="    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;">
             <img alt="" 
             class="youtubeVideo" 
-            src="{{asset('channels4_profile.jpg')}}">
+            src="{{asset('channels4_profile.jpg')}}"
+            style="width:70%">
         </div>
         <div class="col-md-10">
             <h3 class="fw-700 text-dark-gray ls-minus-1px fancy-text-style-4 mb-0">Maliyetine Ev</h1> 
-            <span class="fs-15 text-uppercase text-base-color fw-600  mb-15px d-block">Maliyetine ev sistemi Türkiye'nin en güvenli, en garantili inşaat yapım yatırım sistemidir.</span>
+            <span class="fs-15 text-uppercase text-base-color fw-600 d-block">Maliyetine ev sistemi Türkiye'nin en güvenli, en garantili inşaat yapım yatırım sistemidir.</span>
         </div>
     </div>
     <div id="aboutus" class="row align-items-xl-center pt-2 mt-2">
