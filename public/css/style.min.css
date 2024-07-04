@@ -5359,7 +5359,9 @@ header .left-nav .navbar-nav:before {
 }
 
 .extra-small-screen {
-    height: 300px !important;
+    top: 40px;
+    position: relative;
+    height: 150px !important;
 }
 
 .small-screen {
@@ -11269,7 +11271,7 @@ button:focus {
 }
 
 .header-with-topbar+.top-space-margin {
-    margin-top: 0 !important; 
+    margin-top: 0 !important;
 }
 
 .header-with-topbar{
@@ -11364,8 +11366,8 @@ button:focus {
 }
 
 .page-title-extra-large h1 {
-    font-size: 3.3rem;
-    line-height: 3.3rem;
+    font-size: 4.3rem;
+    line-height: 4.3rem;
 }
 
 .page-title-extra-large h2 {
