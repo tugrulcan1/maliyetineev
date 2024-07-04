@@ -48,7 +48,7 @@
     </div>
 
     <div class="second-footer bg-white-3">
-        <div style="    padding: 10 40 !important;
+        <div style="    padding: 10px 40px !important;
     margin: 0 auto !important;
     width: 100%;
     text-align: center;
