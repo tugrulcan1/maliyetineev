@@ -8,7 +8,8 @@
             <div class="row align-items-center justify-content-center extra-small-screen">
                 <div class="col-lg-6 col-md-8 position-relative text-center page-title-extra-small appear anime-child anime-complete"
                     data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateY&quot;: [-15, 0], &quot;perspective&quot;: [1200,1200], &quot;scale&quot;: [1.1, 1], &quot;rotateX&quot;: [50, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 800, &quot;delay&quot;: 200, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
-                    <h1 class="alt-font text-white mb-0" style="font-size: 45px">İLETİŞİM</h1>
+                    <span class="d-block text-outline text-outline-width-2px text-outline-color-white"
+                            data-fancy-text="{ &quot;string&quot;: [&quot;İLETİŞİM&quot;], &quot;duration&quot;: 500, &quot;delay&quot;: 0, &quot;speed&quot;: 50, &quot;clipPath&quot;: [&quot;inset(0 500px 0 0)&quot;, &quot;inset(0px -5px 0px 0px)&quot;], &quot;easing&quot;: &quot;easeOutCubic&quot; }"></span>
                 </div>
             </div>
         </div>
@@ -19,7 +20,7 @@
             <a href="#map-section" class="section-link absolute-middle-center top-0">
                 <div
                     class="d-flex justify-content-center align-items-center mx-auto rounded-circle h-70px w-70px fs-22 text-dark-gray bg-white box-shadow-bottom">
-                    <i class="fa fa-mouse"></i>
+                    Yol Tarifi Al
                 </div>
             </a>
         </div>
@@ -165,4 +166,16 @@
             </div>
         </div>
     </section>
+@endsection
+
+
+@section("scripts")
+<script>
+    document.getElementById('scroll-to-map').addEventListener('click', function(event) {
+        event.preventDefault();
+        document.querySelector('#map-section').scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+</script>
 @endsection
