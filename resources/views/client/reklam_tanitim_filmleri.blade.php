@@ -2,10 +2,10 @@
 
 @section('content')
 
-{{-- <section class="page-title-big-typography bg-dark-gray ipad-top-space-margin" data-parallax-background-ratio="0.5"
+<section class="page-title-big-typography bg-dark-gray ipad-top-space-margin" data-parallax-background-ratio="0.5"
         style="background-image: url({{asset('demo-conference-page-bg.jpg')}})">
         <div class="container">
-            <div class="row align-items-center justify-content-center extra-small-screen">
+            <div class="row align-items-center justify-content-center extra-small-screen" style="top:25px !important">
                 <div class="col-lg-8 text-center page-title-extra-large">
                     <h1 class="mb-0 text-white alt-font fw-600 ls-minus-5px">
                         <span class="d-block text-outline text-outline-width-2px text-outline-color-white"
@@ -16,7 +16,7 @@
                 </div>
             </div>
         </div>
-    </section> --}}
+    </section>
 
 <section>
 
