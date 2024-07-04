@@ -71,17 +71,6 @@
         </div>
     </div>
 </div>
-    <h3 class="text-center fw-700" style="color:#282828 !important">Reklam Tanıtım Filmleri</h3>
-<div class="video-gallery-container">
-    <div class="video-gallery">
-        @foreach ($reklam_tanitim_filmleri as $video)
-            <div class="video-item">
-                <iframe style="width: 100%;height:550px" src="{{ convertToEmbedUrl($video->url) }}" frameborder="0" allowfullscreen></iframe>
-            </div>
-        @endforeach
-    </div>
-</div>
-</div>
 </section>
 
 @endsection
