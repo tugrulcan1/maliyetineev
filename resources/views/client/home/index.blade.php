@@ -481,8 +481,8 @@
      </section>
      <section
      class=" mt-5 bg-very-light-gray pb-50px sm-pt-20px xs-pb-30px background-repeat background-position-center sm-background-image-none"
-     style="background-image: url('https://craftohtml.themezaa.com/images/vertical-center-line-bg-dark.svg');background-color:#F4F1ED">
-     <div class="container">
+>
+     <div class="container"      style="background-image: url('https://craftohtml.themezaa.com/images/vertical-center-line-bg-dark.svg');background-color:#F4F1ED">
          <div class="row overlap-section" style="margin-top: -175.5px;">
              <div class="col-12 text-center">
                  <img class="rounded-circle" src="{{ asset('favicon-c9c0de2311390de484c5d988188059cd56ed9317.png') }}"
@@ -500,7 +500,7 @@
 
 
          <div
-             class="row row-cols-3 row-cols-lg-5 row-cols-sm-3 align-items-center justify-content-center mb-4 md-mb-50px xs-mb-40px instagram-follow-api position-relative">
+             class="row row-cols-3 row-cols-lg-3 row-cols-sm-3 align-items-center justify-content-center mb-4 md-mb-50px xs-mb-40px instagram-follow-api position-relative">
              <div class="col instafeed-grid md-mb-30px xs-mb-15px">
                  <figure class="border-radius-0px"><a href="https://www.instagram.com/maliyetineev" target="_blank"><img
                              src="{{asset('449186508_398056306615713_6952573876415675072_n.jpeg')}}" class="insta-image" alt=""
