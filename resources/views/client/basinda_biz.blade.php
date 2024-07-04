@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <section class="bg-midnight-blue pt-0 sm-pt-50px">
+    <section class="bg-midnight-blue pt-5">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -10,20 +10,20 @@
                         data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateY&quot;: [50, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1200, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
                         <li class="grid-sizer"></li>
                         @foreach ($basinda_biz as $item)
-                        <li class="grid-item transition-inner-all">
-                            <div class="gallery-box overflow-hidden">
-                                <a href="{{ asset('basinda_biz/' . $item->image) }}" data-group="lightbox-group-gallery-item-3"
-                                    title="Lightbox gallery image title">
-                                    <div class="position-relative gallery-image bg-base-color">
-                                        <img src="{{ asset('basinda_biz/' . $item->image) }}" alt />
-                                        <div
-                                            class="d-flex align-items-center justify-content-center position-absolute top-0px left-0px w-100 h-100 gallery-hover move-bottom-top">
-                                            <i class="feather icon-feather-plus icon-medium text-white"></i>
+                            <li class="grid-item transition-inner-all">
+                                <div class="gallery-box overflow-hidden">
+                                    <a href="{{ asset('basinda_biz/' . $item->image) }}"
+                                        data-group="lightbox-group-gallery-item-3" title="Lightbox gallery image title">
+                                        <div class="position-relative gallery-image bg-base-color">
+                                            <img src="{{ asset('basinda_biz/' . $item->image) }}" alt />
+                                            <div
+                                                class="d-flex align-items-center justify-content-center position-absolute top-0px left-0px w-100 h-100 gallery-hover move-bottom-top">
+                                                <i class="feather icon-feather-plus icon-medium text-white"></i>
+                                            </div>
                                         </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
+                                    </a>
+                                </div>
+                            </li>
                         @endforeach
 
 
