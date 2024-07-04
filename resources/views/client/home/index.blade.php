@@ -572,7 +572,7 @@
         <div class="container">
         <div class="row overlap-section" style="margin-top: -175.5px;">
         <div class="col-12 text-center">
-        <img class="rounded-circle" src="https://craftohtml.themezaa.com/images/vertical-center-line-bg-dark.svg" alt="" data-no-retina="">
+        <img class="rounded-circle" src="https://craftohtml.themezaa.com/images/demo-hotel-and-resort-15.png" alt="" data-no-retina="">
         </div>
         </div>
 
