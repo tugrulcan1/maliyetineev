@@ -15006,10 +15006,6 @@ blockquote footer {
     visibility: hidden;
 }
 
-.image-gallery-style-03 .gallery-box img {
-    -webkit-transform: scale(1.13) translateZ(0);
-    transform: scale(1.13) translateZ(0);
-}
 
 .image-gallery-style-03 .gallery-box:hover i {
     opacity: 1;
