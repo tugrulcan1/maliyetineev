@@ -33,7 +33,7 @@
             <img alt=""
             class="youtubeVideo"
             src="{{asset('channels4_profile.jpg')}}"
-            style="width:50%">
+            style="width:100%">
         </div>
         <div class="col-md-11">
             <h3 class="fw-700 text-dark-gray ls-minus-1px fancy-text-style-4 mb-0"
