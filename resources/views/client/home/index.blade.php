@@ -480,9 +480,9 @@
          </div>
      </section>
      <section
-     class=" mt-5 pb-50px sm-pt-20px xs-pb-30px background-repeat background-position-center sm-background-image-none"
+     class=" mt-5  "
 >
-     <div class="container"      style="background-image: url('https://craftohtml.themezaa.com/images/vertical-center-line-bg-dark.svg');background-color:#F4F1ED">
+     <div class="container pb-50px sm-pt-20px xs-pb-30px background-repeat background-position-center sm-background-image-none"      style="background-image: url('https://craftohtml.themezaa.com/images/vertical-center-line-bg-dark.svg');background-color:#F4F1ED">
          <div class="row overlap-section" style="margin-top: -175.5px;">
              <div class="col-12 text-center">
                  <img class="rounded-circle" src="{{ asset('favicon-c9c0de2311390de484c5d988188059cd56ed9317.png') }}"
