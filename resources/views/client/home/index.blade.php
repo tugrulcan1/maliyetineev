@@ -480,7 +480,7 @@
          </div>
      </section>
      <section
-     class=" mt-5 bg-very-light-gray pb-50px sm-pt-20px xs-pb-30px background-repeat background-position-center sm-background-image-none"
+     class=" mt-5 pb-50px sm-pt-20px xs-pb-30px background-repeat background-position-center sm-background-image-none"
 >
      <div class="container"      style="background-image: url('https://craftohtml.themezaa.com/images/vertical-center-line-bg-dark.svg');background-color:#F4F1ED">
          <div class="row overlap-section" style="margin-top: -175.5px;">
