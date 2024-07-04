@@ -168,15 +168,3 @@
     </section>
 @endsection
 
-
-@section('scripts')
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        $('#scroll-to-map').on('click', function(event) {
-            event.preventDefault();
-            $('html, body').animate({
-                scrollTop: $('#map-section').offset().top
-            }, 800);
-        });
-    </script>
-@endsection

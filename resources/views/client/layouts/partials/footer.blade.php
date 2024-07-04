@@ -125,7 +125,14 @@
 <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 
 
-
+<script>
+    $('#scroll-to-map').on('click', function(event) {
+        event.preventDefault();
+        $('html, body').animate({
+            scrollTop: $('#map-section').offset().top
+        }, 800);
+    });
+</script>
 <script>
     var successMessage = "{{ session('success') }}";
     if (successMessage) {
