@@ -125,7 +125,9 @@
         margin-bottom: 30px;
         margin-right: 320px !important;
     }
-
+    .elements-social .dark li a {
+    color: black;
+}
     .phone-link {
         /* display: flex; */
 
@@ -252,55 +254,55 @@ display: none;
         margin: 80px auto; /* Sayfayı yatayda ortala */
         overflow: hidden; /* İçeriklerin dışarı taşmasını engelle */
     }
-    
+
     .video-gallery {
         display: flex;
         flex-direction: column; /* Videoları dikey olarak sırala */
         justify-content: center; /* Dikeyde ortala */
         align-items: center; /* Yatayda ortala */
     }
-    
+
     .video-item {
         width: 100%; /* Tam genişlik */
         margin-bottom: 20px; /* Videolar arasına boşluk ekle */
     }
-    
+
     /* Küçük ekranlarda */
     @media screen and (max-width: 768px) {
         .video-gallery-container {
             max-width: 80%; /* Maksimum genişlik belirleme */
         }
     }
-    
+
     /* Ekstra küçük ekranlarda */
     @media screen and (max-width: 480px) {
         .video-gallery-container {
             max-width: 90%; /* Maksimum genişlik belirleme */
         }
     }
-    
+
     .icon-active {
                 filter: sepia(100%) hue-rotate(150deg) saturate(400%);
             }
-    
+
             #playlist {
                 display: flex;
                 position: relative;
                 transition: all ease 0.3s;
                 margin-bottom: 20px;
             }
-    
+
             #video-dis {
                 flex: 6.5;
                 margin-right: 20px;
                 background: black;
             }
-    
+
             #video-dis iframe {
                 width: 100%;
                 height: 100%;
             }
-    
+
             .video-li {
                 flex: 3.5;
                 display: flex;
@@ -309,24 +311,24 @@ display: none;
                 border-radius: 3px;
                 flex-direction: column;
             }
-    
+
             .li-collapsed {
                 overflow: hidden;
                 height: 40px;
             }
-    
+
             #upper-info {
                 display: flex;
             }
-    
+
             #li-titles {
                 flex: 9;
             }
-    
+
             #li-titles div {
                 padding-bottom: 5px;
             }
-    
+
             #drop-icon {
                 flex: 1;
                 display: none;
@@ -334,30 +336,30 @@ display: none;
                 background: url(https://user-images.githubusercontent.com/50569315/118832584-92350500-b8e2-11eb-8398-9a90a4615b98.png) no-repeat center;
                 background-size: 50%;
             }
-    
+
             #lower-info {
                 display: flex;
                 padding-top: var(--b-pad);
             }
-    
+
             #lower-info div {
                 width: 40px;
                 height: 40px;
                 cursor: pointer;
             }
-    
+
             #btn-repeat {
                 margin-right: var(--b-pad);
                 background: url(https://user-images.githubusercontent.com/50569315/118832591-93663200-b8e2-11eb-8b98-3b177304b555.png) no-repeat left;
                 background-size: 50%;
             }
-    
+
             #btn-suffle {
                 margin-right: var(--b-pad);
                 background: url(https://user-images.githubusercontent.com/50569315/118832597-93fec880-b8e2-11eb-9146-f978064eddb1.png) no-repeat left;
                 background-size: 45%;
             }
-    
+
             #btn-save {
                 margin-left: auto;
                 order: 2;
@@ -366,13 +368,13 @@ display: none;
                 background: url(https://user-images.githubusercontent.com/50569315/118832594-93fec880-b8e2-11eb-8201-12cb52be231f.png) no-repeat right;
                 background-size: 60%;
             }
-    
+
             #vli-videos {
                 flex: 7;
                 overflow: auto;
                 margin-top: 5px;
             }
-    
+
             .video-con {
                 display: flex;
                 align-items: center;
@@ -380,46 +382,46 @@ display: none;
                 padding: 6px;
                 cursor: pointer;
             }
-    
+
             .video-con:hover,
             .active-con {
                 background: var(--active);
             }
-    
+
             .index {
                 min-width: 15px;
                 align-self: center;
             }
-    
+
             .thumb {
                 width: 100px;
                 height: 60px;
                 background: #1c5fa8;
             }
-    
+
             .thumb img {
                 width: 100%;
             }
-    
+
             .v-titles {
                 flex: 6;
             }
-    
+
             .v-titles .title {
                 padding-left: 10px;
             }
-    
+
             .v-titles div:nth-child(2) {
                 margin-top: var(--s-pad);
             }
-    
+
             @media  only screen and (max-width: 1150px) {
                 #playlist {
                     width: 100%;
                     height: 100%;
                 }
             }
-    
+
             @media  only screen and (max-width: 950px) {
                 #playlist {
                     width: 100%;
@@ -427,27 +429,27 @@ display: none;
                     display: block;
                     align-items: center;
                 }
-    
+
                 #video-dis {
                     margin-bottom: var(--b-pad);
                     width: 100%;
                     height: 300px;
                 }
             }
-    
+
             @media  only screen and (max-width: 800px) {
                 #playlist {
                     width: 100%;
                 }
             }
-    
+
             @media  only screen and (max-width: 650px) {
                 #playlist {
                     width: 100%;
                 }
             }
-    
-    
+
+
     </style>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
@@ -501,7 +503,7 @@ display: none;
                                     <li class="nav-item dropdown">
                                         <a href="{{ $menus->href }}" class="nav-link" id="navbarDropdown{{ $menus->id }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             {{ $menus->text }}
-                                            @if(count($menus->children) > 0) 
+                                            @if(count($menus->children) > 0)
                                               <i class="fa fa-angle-down"></i>
                                             @endif
                                         </a>

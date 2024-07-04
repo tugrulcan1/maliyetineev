@@ -1,7 +1,6 @@
 @extends('client.layouts.master')
 
 @section('content')
-
     <section class="page-title-big-typography bg-dark-gray ipad-top-space-margin" data-parallax-background-ratio="0.5"
         style="background-image: url({{ asset('demo-conference-page-bg.jpg') }});        padding-top: 30px;
         padding-bottom: 30px;">
@@ -18,18 +17,20 @@
     <section class="position-relative z-index-1 pb-0">
         <div class="d-none d-md-flex mb-1">
             <a href="#map-section" class="section-link absolute-middle-center top-0">
-            <div class="d-flex justify-content-center align-items-center mx-auto rounded-circle h-70px w-70px fs-22 text-dark-gray bg-white box-shadow-bottom">
-            <i class="fa fa-mouse"></i>
-            </div>
+                <div
+                    class="d-flex justify-content-center align-items-center mx-auto rounded-circle h-70px w-70px fs-22 text-dark-gray bg-white box-shadow-bottom">
+                    <i class="fa fa-mouse"></i>
+                </div>
             </a>
-            </div>
+        </div>
         <div class="container">
             <div class="row justify-content-center align-items-center mb-9 sm-mb-45px">
                 <div class="col-xxl-5 col-lg-6 md-mb-50px appear anime-child anime-complete"
                     data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateX&quot;: [-50, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1200, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
                     <span class="fs-15 text-uppercase text-base-color fw-600 mb-15px d-block ls-1px" style="">Bizimle
                         iletişime geçin</span>
-                    <h3 class="fw-700 text-dark-gray ls-minus-1px mb-50px sm-mb-35px" style="font-size:28px;width:100%">Sizinle tanışmak için sabırsızlanıyoruz!
+                    <h3 class="fw-700 text-dark-gray ls-minus-1px mb-50px sm-mb-35px" style="font-size:28px;width:100%">
+                        Sizinle tanışmak için sabırsızlanıyoruz!
                     </h3>
 
                     <div class="icon-with-text-style-01 mb-10 md-mb-35px" style="">
@@ -39,7 +40,8 @@
                                     data-no-retina="">
                             </div>
                             <div class="feature-box-content last-paragraph-no-margin">
-                                <span class="d-block text-dark-gray fw-600 fs-18 ls-minus-05px mb-5px">Tanışmak için ofisimize
+                                <span class="d-block text-dark-gray fw-600 fs-18 ls-minus-05px mb-5px">Tanışmak için
+                                    ofisimize
                                     bekleriz</span>
                                 <p class="w-60 md-w-100">Cevizli, Çanakkale Cd. No:103A, 34865 Kartal/İstanbul</p>
                             </div>
@@ -53,7 +55,8 @@
                                     data-no-retina="">
                             </div>
                             <div class="feature-box-content">
-                                <span class="d-block text-dark-gray fw-600 fs-18 ls-minus-05px mb-5px">Bizimle iletişime geçmekten
+                                <span class="d-block text-dark-gray fw-600 fs-18 ls-minus-05px mb-5px">Bizimle iletişime
+                                    geçmekten
                                     çekinmeyin</span>
                                 <div class="w-100 d-block">
                                     <span class="d-block">Telefon: <a href="tel:4443284"> 444 3 284
@@ -84,7 +87,8 @@
                     data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateX&quot;: [50, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1200, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
                     <div class="contact-form-style-03 position-relative border-radius-10px bg-white p-14 lg-p-10 box-shadow-double-large overflow-hidden last-paragraph-no-margin"
                         style="">
-                        <h2 class="fw-700 text-dark-gray mb-30px sm-mb-20px fancy-text-style-4 ls-minus-2px" style="font-size: 30px">
+                        <h2 class="fw-700 text-dark-gray mb-30px sm-mb-20px fancy-text-style-4 ls-minus-2px"
+                            style="font-size: 30px">
                             Size nasıl yardımcı olabiliriz?
 
 
@@ -96,7 +100,8 @@
                                     placeholder="Ad soyad" />
                             </div>
                             <div class="col-md-12 mb-30px">
-                                <input class="form-control required" type="email" name="email" placeholder="E-mail adresiniz" />
+                                <input class="form-control required" type="email" name="email"
+                                    placeholder="E-mail adresiniz" />
                             </div>
                             <div class="col-md-12 mb-30px">
                                 <input class="form-control" type="tel" name="phone" placeholder="Telefon" />
@@ -124,8 +129,29 @@
                     </div>
                 </div>
             </div>
+            <div class="row align-items-center justify-content-center mt-8">
+                <div class="col-md-auto text-center text-md-end sm-mb-20px">
+                    <h6 class="text-dark-gray fw-600 mb-0 ls-minus-1px">Sosyal medya hesaplarımız </h6>
+                </div>
+                <div class="col-2 d-none d-lg-inline-block">
+                    <span class="w-100 h-1px bg-dark-gray opacity-2 d-flex mx-auto"></span>
+                </div>
+
+                <div class="col-md-auto elements-social social-icon-style-04 text-center text-md-start ps-lg-0">
+                    <ul class="large-icon dark">
+                        @foreach ($socialMediaIcons as $socialMediaIcon)
+                            <li class="m-0"><a class="facebook" href="https://www.facebook.com/" target="_blank"><i
+                                        class="fa-brands {{ $socialMediaIcon->icon_class }}"></i><span></span></a></li>
+                        @endforeach
+
+                    </ul>
+                </div>
+
+            </div>
         </div>
+
     </section>
+
 
     <section class="p-0" id="map-section">
         <div class="container-fluid">
