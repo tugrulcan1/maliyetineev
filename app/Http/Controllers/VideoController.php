@@ -44,7 +44,7 @@ class VideoController extends Controller
     public function addReklamTanitimFilmleri(Request $request){
         $request->validate([
             'youtube_url' => 'required|url',
-            "image" => "string|required",
+            "image" => "required",
             "title" => "string|required"
         ]);
         
