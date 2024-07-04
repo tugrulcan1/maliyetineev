@@ -41,6 +41,7 @@
                 </div>
                 <div class="col-md-2">
                     <a href="https://www.youtube.com/@MaliyetineEv"
+                    target="_blank"
                     class="btn btn-extra-large btn-rounded text-white me-2" style="background-color: #ea2a28">
                     <i class="fa fa-link"></i> ABONE OL
                 </a>
