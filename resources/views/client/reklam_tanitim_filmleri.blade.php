@@ -56,11 +56,11 @@
                                                         <div class="video-con active-con" video="{{ convertToEmbedUrl($video->url) }}">
                                 <div class="index title">{{$key}}</div>
                                 <div class="thumb">
-                                    <img src="http://freizy.com/storage/videos/6CspVDyJz5Q0HZqlNKdj2XjS9PVR4r50H9yQ9PuV.jpg"
-                                        alt="What is Freizy?">
+                                    <img src="{{asset('storage/reklam_tanitim_filmleri/'. $video->image)}}"
+                                        alt="{{$video->title}}">
                                 </div>
                                 <div class="v-titles">
-                                    <div class="title">What is Freizy?</div>
+                                    <div class="title">{{$video->title}}</div>
                                 </div>
                             </div>
                             @endforeach
