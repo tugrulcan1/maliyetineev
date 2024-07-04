@@ -52,8 +52,9 @@
                     </div>
 
                     <div id="vli-videos">
-                                                        <div class="video-con active-con" video="https://www.youtube.com/embed/HoY2jcMH9kQ">
-                                <div class="index title">0</div>
+                        @foreach ($reklam_tanitim_filmleri as $key => $video)
+                                                        <div class="video-con active-con" video="{{ convertToEmbedUrl($video->url) }}">
+                                <div class="index title">{{$key}}</div>
                                 <div class="thumb">
                                     <img src="http://freizy.com/storage/videos/6CspVDyJz5Q0HZqlNKdj2XjS9PVR4r50H9yQ9PuV.jpg"
                                         alt="What is Freizy?">
@@ -62,36 +63,7 @@
                                     <div class="title">What is Freizy?</div>
                                 </div>
                             </div>
-                                                        <div class="video-con active-con" video="https://www.youtube.com/embed/-iYUiEWw9Ng?si=Zo8MbBWwYocAANPl">
-                                <div class="index title">1</div>
-                                <div class="thumb">
-                                    <img src="http://freizy.com/storage/videos/RAa7QdPPF9ArOKT10NQaX8f7m8MNz9vBRcJotoSk.png"
-                                        alt="What is Freizy ?">
-                                </div>
-                                <div class="v-titles">
-                                    <div class="title">What is Freizy ?</div>
-                                </div>
-                            </div>
-                                                        <div class="video-con active-con" video="https://www.youtube.com/embed/UJ1radUjito?si">
-                                <div class="index title">2</div>
-                                <div class="thumb">
-                                    <img src="http://freizy.com/storage/videos/jZiSDFRa3RdHJIZmX1KDqnPeX7VY89hNjPdESL2G.png"
-                                        alt="Freizy user manuel">
-                                </div>
-                                <div class="v-titles">
-                                    <div class="title">Freizy user manuel</div>
-                                </div>
-                            </div>
-                                                        <div class="video-con active-con" video="https://www.youtube.com/embed/obCP9Kg5bIQ?si">
-                                <div class="index title">3</div>
-                                <div class="thumb">
-                                    <img src="http://freizy.com/storage/videos/eM9uD1RKt5PJdot6Wbye9JMYkWfLr4vEdLdXUsNV.png"
-                                        alt="Freizy Global Full Use in English">
-                                </div>
-                                <div class="v-titles">
-                                    <div class="title">Freizy Global Full Use in English</div>
-                                </div>
-                            </div>
+                            @endforeach
                                                 </div>
 
                 </div>

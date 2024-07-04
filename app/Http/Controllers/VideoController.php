@@ -44,10 +44,22 @@ class VideoController extends Controller
     public function addReklamTanitimFilmleri(Request $request){
         $request->validate([
             'youtube_url' => 'required|url',
+            "image" => "string|required",
+            "title" => "string|required"
         ]);
+        
+        if($request->hasFile('image')){
+            $file = $request->file('image');
+            $fileName = time() . '_' . $file->getClientOriginalName(); 
+            $file->move(public_path('reklam_tanitim_filmleri'), $fileName);
+        }
+
 
        DB::table('reklam_tanitim_filmleri')->insert([
             'url'        => $request->youtube_url,
+            'image'           => $fileName,
+            "title" => $request->title,
+
             'created_at' => now()
         ]);
 

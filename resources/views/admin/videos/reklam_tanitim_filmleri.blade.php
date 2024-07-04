@@ -34,9 +34,13 @@
                     @endif
                     <div class="p-4 code-to-copy">
                      
-                        <form action="{{ route('admin.add.reklam.tanitim.filmleri') }}" method="POST">
+                        <form action="{{ route('admin.add.reklam.tanitim.filmleri') }}" method="POST" enctype="multipart/form-data">
                             @csrf
                             <div class="col-md-5">
+                                <input class="form-control mb-3" type="text" name="title" placeholder="Video Başlığını Giriniz" required>
+                                <input class="form-control mb-3" type="file" name="image" placeholder="Video Kapak Görseli Giriniz" required>
+
+
                                 <input class="form-control mb-3" type="text" name="youtube_url" placeholder="YouTube URL Giriniz" required>
                                 <button class="btn btn-primary btn-sm" type="submit">Yükle</button>
                             </div>
