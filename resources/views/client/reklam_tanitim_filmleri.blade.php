@@ -31,7 +31,10 @@
                     <img alt="" class="youtubeVideo" src="{{ asset('channels4_profile.jpg') }}" style="width:100%">
                 </div>
                 <div class="col-md-9">
-                    <h3 class="fw-700 text-dark-gray ls-minus-1px fancy-text-style-4 mb-0" style="font-size:25px">Maliyetine
+                    <h3 class="fw-700 text-dark-gray ls-minus-1px fancy-text-style-4 mb-0" style="    font-size: 25px;
+    top: 10px;
+    position: relative;
+    margin-bottom: 10px !important;">Maliyetine
                         Ev </h1>
                         <span class="fs-15 text-uppercase text-base-color fw-600 d-block"
                         style="    top: -12px;
