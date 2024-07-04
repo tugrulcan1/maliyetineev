@@ -9,9 +9,9 @@
 
         <div class="col-md-7">
                          <h4>Kullanıcı Yorumları</h4>
-                
+
                    @foreach ($comments as $comment)
-                        
+
                         <div class="row align-items-center pt-25px pb-25px commentDiv" style="">
                             <div class="col-lg-8 d-lg-flex align-items-center text-center text-lg-start">
                                 {{-- @if ($comment->image)
@@ -80,9 +80,9 @@
                         </div>
                     </div>
                 </div>
-         
-      
-        
+
+
+
     </div>
 </div>
 
