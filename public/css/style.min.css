@@ -5359,7 +5359,7 @@ header .left-nav .navbar-nav:before {
 }
 
 .extra-small-screen {
-    top: 40px;
+    top: 5px;
     position: relative;
     height: 150px !important;
 }
