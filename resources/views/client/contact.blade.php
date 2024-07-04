@@ -154,7 +154,7 @@
     </section>
 
 
-    <section class="p-0" id="map-section">
+    <section class="p-0 mt-5" id="map-section">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 p-0">
@@ -170,12 +170,13 @@
 
 
 @section('scripts')
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-        document.getElementById('scroll-to-map').addEventListener('click', function(event) {
+        $('#scroll-to-map').on('click', function(event) {
             event.preventDefault();
-            document.querySelector('#map-section').scrollIntoView({
-                behavior: 'smooth'
-            });
+            $('html, body').animate({
+                scrollTop: $('#map-section').offset().top
+            }, 800);
         });
     </script>
 @endsection
