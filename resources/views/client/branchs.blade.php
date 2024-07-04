@@ -35,7 +35,7 @@
     </section>
 
 
-        <section>
+        <section class="p-0 m-0">
             <div class="container">
 
                 <div data-anime="{ &quot;opacity&quot;: [0, 1], &quot;translateY&quot;: [50, 0], &quot;easing&quot;: &quot;easeOutQuad&quot;, &quot;duration&quot;: 500, &quot;delay&quot;: 300 }"
