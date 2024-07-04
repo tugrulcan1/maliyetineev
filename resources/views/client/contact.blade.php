@@ -22,7 +22,7 @@
                     data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateX&quot;: [-50, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1200, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
                     <span class="fs-15 text-uppercase text-base-color fw-600 mb-15px d-block ls-1px" style="">Bizimle
                         iletişime geçin</span>
-                    <h3 class="fw-700 text-dark-gray ls-minus-1px mb-50px sm-mb-35px" style="">Sizinle tanışmak için sabırsızlanıyoruz!
+                    <h3 class="fw-700 text-dark-gray ls-minus-1px mb-50px sm-mb-35px" style="font-size:28px;width:100%">Sizinle tanışmak için sabırsızlanıyoruz!
                     </h3>
 
                     <div class="icon-with-text-style-01 mb-10 md-mb-35px" style="">
