@@ -226,22 +226,22 @@
                                      style="padding: 20px 0;"
                                      data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateX&quot;: [50, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1200, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
                                      <!-- <div class="mb-20px">
-                                                        <div
-                                                            class="separator-line-1px w-50px bg-base-color d-inline-block align-middle me-10px opacity-2">
-                                                        </div>
-                                                        <span
-                                                            class="d-inline-block text-dark-gray align-middle fw-500 fs-20 ls-minus-05px">Strategic
-                                                            planning</span>
-                                                    </div> -->
+                                                            <div
+                                                                class="separator-line-1px w-50px bg-base-color d-inline-block align-middle me-10px opacity-2">
+                                                            </div>
+                                                            <span
+                                                                class="d-inline-block text-dark-gray align-middle fw-500 fs-20 ls-minus-05px">Strategic
+                                                                planning</span>
+                                                        </div> -->
                                      <h4 class="fw-700 text-dark-gray ls-minus-1px md-mb-20px"
                                          style="font-size: 22px;margin-top:10px">
                                          {{ $settings['section_5_1'] }}</h4>
                                      <p class="mb-35px md-mb-25px" style="color: #647589">
                                          {{ $settings['section_5_1_content'] }} </p>
                                      <!-- <a href="demo-accounting-services.html"
-                                                        class="btn btn-large btn-rounded with-rounded btn-white btn-box-shadow fw-600">Learn
-                                                        more<span class="bg-base-color text-white"><i
-                                                                class="bi bi-arrow-right-short icon-extra-medium"></i></span></a> -->
+                                                            class="btn btn-large btn-rounded with-rounded btn-white btn-box-shadow fw-600">Learn
+                                                            more<span class="bg-base-color text-white"><i
+                                                                    class="bi bi-arrow-right-short icon-extra-medium"></i></span></a> -->
                                  </div>
                              </div>
                          </div>
@@ -257,13 +257,13 @@
                                  <div class="col-xl-4 col-lg-5 offset-lg-1 col-md-6 text-center text-md-start"
                                      style="padding: 20px 0;">
                                      <!-- <div class="mb-20px">
-                                                            <div
-                                                                class="separator-line-1px w-50px bg-base-color d-inline-block align-middle me-10px opacity-2">
-                                                            </div>
-                                                            <span
-                                                                class="d-inline-block text-dark-gray align-middle fw-500 fs-20 ls-minus-05px">Audit
-                                                                assurance</span>
-                                                        </div> -->
+                                                                <div
+                                                                    class="separator-line-1px w-50px bg-base-color d-inline-block align-middle me-10px opacity-2">
+                                                                </div>
+                                                                <span
+                                                                    class="d-inline-block text-dark-gray align-middle fw-500 fs-20 ls-minus-05px">Audit
+                                                                    assurance</span>
+                                                            </div> -->
                                      <h4 class="fw-700 text-dark-gray ls-minus-1px md-mb-20px"
                                          style="font-size: 22px;margin-top:10px">
                                          {{ $settings['section_5_2'] }}</h4>
@@ -271,9 +271,9 @@
                                          {{ $settings['section_5_2_content'] }}
                                      </p>
                                      <!-- <a href="demo-accounting-services.html"
-                                                        class="btn btn-large btn-rounded with-rounded btn-white btn-box-shadow fw-600">Learn
-                                                        more<span class="bg-base-color text-white"><i
-                                                                class="bi bi-arrow-right-short icon-extra-medium"></i></span></a> -->
+                                                            class="btn btn-large btn-rounded with-rounded btn-white btn-box-shadow fw-600">Learn
+                                                            more<span class="bg-base-color text-white"><i
+                                                                    class="bi bi-arrow-right-short icon-extra-medium"></i></span></a> -->
                                  </div>
                              </div>
                          </div>
@@ -289,13 +289,13 @@
                                  <div class="col-xl-4 col-lg-5 offset-lg-1 col-md-6 text-center text-md-start"
                                      style="padding: 20px 0;">
                                      <!-- <div class="mb-20px">
-                                                        <div
-                                                            class="separator-line-1px w-50px bg-base-color d-inline-block align-middle me-10px opacity-2">
-                                                        </div>
-                                                        <span
-                                                            class="d-inline-block text-dark-gray align-middle fw-500 fs-20 ls-minus-05px">Financial
-                                                            projections</span>
-                                                    </div> -->
+                                                            <div
+                                                                class="separator-line-1px w-50px bg-base-color d-inline-block align-middle me-10px opacity-2">
+                                                            </div>
+                                                            <span
+                                                                class="d-inline-block text-dark-gray align-middle fw-500 fs-20 ls-minus-05px">Financial
+                                                                projections</span>
+                                                        </div> -->
                                      <h4 class="fw-700 text-dark-gray ls-minus-1px md-mb-20px"
                                          style="font-size: 22px;margin-top:10px">
                                          {{ $settings['section_5_3'] }}
@@ -304,9 +304,9 @@
                                          {{ $settings['section_5_3_content'] }}
                                      </p>
                                      <!-- <a href="demo-accounting-services.html"
-                                                        class="btn btn-large btn-rounded with-rounded btn-white btn-box-shadow fw-600">Learn
-                                                        more<span class="bg-base-color text-white"><i
-                                                                class="bi bi-arrow-right-short icon-extra-medium"></i></span></a> -->
+                                                            class="btn btn-large btn-rounded with-rounded btn-white btn-box-shadow fw-600">Learn
+                                                            more<span class="bg-base-color text-white"><i
+                                                                    class="bi bi-arrow-right-short icon-extra-medium"></i></span></a> -->
                                  </div>
                              </div>
                          </div>
@@ -322,22 +322,22 @@
                                  <div class="col-xl-4 col-lg-5 offset-lg-1 col-md-6 text-center text-md-start"
                                      style="padding: 20px 0;">
                                      <!-- <div class="mb-20px">
-                                                        <div
-                                                            class="separator-line-1px w-50px bg-base-color d-inline-block align-middle me-10px opacity-2">
-                                                        </div>
-                                                        <span
-                                                            class="d-inline-block text-dark-gray align-middle fw-500 fs-20 ls-minus-05px">Business
-                                                            planning</span>
-                                                    </div> -->
+                                                            <div
+                                                                class="separator-line-1px w-50px bg-base-color d-inline-block align-middle me-10px opacity-2">
+                                                            </div>
+                                                            <span
+                                                                class="d-inline-block text-dark-gray align-middle fw-500 fs-20 ls-minus-05px">Business
+                                                                planning</span>
+                                                        </div> -->
                                      <h4 class="fw-700 text-dark-gray ls-minus-1px md-mb-20px"
                                          style="font-size: 22px;margin-top:10px">
                                          {{ $settings['section_5_4'] }}</h4>
                                      <p class="mb-35px md-mb-25px" style="color: #647589">
                                          {{ $settings['section_5_4_content'] }}</p>
                                      <!-- <a href="demo-accounting-services.html"
-                                                        class="btn btn-large btn-rounded with-rounded btn-white btn-box-shadow fw-600">Learn
-                                                        more<span class="bg-base-color text-white"><i
-                                                                class="bi bi-arrow-right-short icon-extra-medium"></i></span></a> -->
+                                                            class="btn btn-large btn-rounded with-rounded btn-white btn-box-shadow fw-600">Learn
+                                                            more<span class="bg-base-color text-white"><i
+                                                                    class="bi bi-arrow-right-short icon-extra-medium"></i></span></a> -->
                                  </div>
                              </div>
                          </div>
@@ -418,6 +418,8 @@
          </div>
      </section> --}}
 
+
+
      <section class="overflow-hidden mt-5" style="padding:0px 40px !important;">
          <div class="container">
              <div class="row align-items-center justify-content-center mb-3 mt-3 text-center text-lg-start column-form">
@@ -494,6 +496,52 @@
      </section>
 
 
+     <section class="pt-0 overflow-hidden position-relative overlap-height">
+        <div class="container-fluid overlap-gap-section">
+            <div class="row mb-2 md-mb-4">
+                <div class="col-12 position-relative">
+                    <div class="outside-box-right-15 outside-box-left-15 md-outside-box-right-0 md-outside-box-left-0">
+                        <div class="swiper magic-cursor slider-shadow-left-right md-slider-shadow-none"
+                            data-slider-options="{ &quot;slidesPerView&quot;: 1, &quot;spaceBetween&quot;: 30, &quot;loop&quot;: true, &quot;autoplay&quot;: { &quot;delay&quot;: 3000, &quot;disableOnInteraction&quot;: false },  &quot;pagination&quot;: { &quot;el&quot;: &quot;.slider-four-slide-pagination-1&quot;, &quot;clickable&quot;: true, &quot;dynamicBullets&quot;: false }, &quot;keyboard&quot;: { &quot;enabled&quot;: true, &quot;onlyInViewport&quot;: true }, &quot;breakpoints&quot;: { &quot;1300&quot;: { &quot;slidesPerView&quot;: 4 }, &quot;992&quot;: { &quot;slidesPerView&quot;: 3 }, &quot;768&quot;: { &quot;slidesPerView&quot;: 2 } }, &quot;effect&quot;: &quot;slide&quot; }"
+                            data-anime="{ &quot;translateX&quot;: [0, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1200, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
+                            <div class="swiper-wrapper pt-20px pb-20px">
+                                @foreach ($comments as $comment)
+                                <div class="swiper-slide">
+                                    <div class="review-style-05">
+                                        <div
+                                            class="border-radius-4px last-paragraph-no-margin border border-color-extra-medium-gray">
+                                            <div
+                                                class="d-flex align-items-center ps-45px pe-45px pt-35px pb-35px xl-p-25px">
+                                                <img class="rounded-circle w-110px md-w-75px h-110px md-h-75px me-25px"
+                                                    src="{{ asset('favicon-c9c0de2311390de484c5d988188059cd56ed9317.png') }}" alt />
+                                                <p>{!! $comment->content !!}</p>
+                                            </div>
+                                            <div
+                                                class="border-top border-color-extra-medium-gray pt-15px pb-15px ps-45px pe-45px xl-ps-25px xl-pe-25px">
+                                                <span class="fw-600 text-dark-gray d-inline-block xs-fs-15">{{ $comment->full_name }}</span>
+                                                <div class="review-star-icon float-end fs-18 xs-fs-15">
+                                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                        class="bi bi-star-fill"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                @endforeach
+
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
      {{-- <section class="mt-0 mb-0 pb-0">
          <div class="container">
 
@@ -641,8 +689,8 @@
                  data-anime="{ &quot;translateY&quot;: [50, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1200, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
                  <div class="col-12 text-center">
                      <!-- <div
-                                    class="d-inline-block align-middle bg-yellow fw-600 text-white text-uppercase border-radius-30px ps-20px pe-20px fs-12 me-10px lh-30 sm-m-5px">
-                                    Trust</div> -->
+                                        class="d-inline-block align-middle bg-yellow fw-600 text-white text-uppercase border-radius-30px ps-20px pe-20px fs-12 me-10px lh-30 sm-m-5px">
+                                        Trust</div> -->
                      <div class="d-inline-block align-middle text-dark-gray fs-19 fw-600 ls-minus-05px">Türkiye genelinde
                          <span class="text-decoration-line-bottom text-dark-gray">22 şubemizle</span> hizmetinizdeyiz.
                      </div>
