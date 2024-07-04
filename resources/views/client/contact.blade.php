@@ -17,7 +17,7 @@
 
     <section class="position-relative z-index-1 pb-0">
         <div class="d-none d-md-flex mb-1">
-            <a href="#down-section" class="section-link absolute-middle-center top-0">
+            <a href="#map-section" class="section-link absolute-middle-center top-0">
                 <div
                     class="d-flex justify-content-center align-items-center mx-auto rounded-circle h-70px w-70px fs-22 text-dark-gray bg-white box-shadow-bottom">
                     <i class="fa fa-mouse"></i>
@@ -73,54 +73,43 @@
                 <div class="col-lg-5 offset-lg-1 align-self-end contact-form-style-03 sm-mb-50px">
                     <div
                         class="bg-dark-gray box-shadow-double-large p-13 lg-p-10 border-radius-10px position-relative overflow-hidden">
-                        <h2 class="alt-font text-white xs-mb-15px fancy-text-style-4 ls-minus-1px">Say
-                            <span
-                                data-fancy-text="{ &quot;effect&quot;: &quot;rotate&quot;, &quot;string&quot;: [&quot;hello!&quot;, &quot;hallå!&quot;, &quot;salve!&quot;] }"
-                                class="appear"><span class="anime-text words chars splitting" data-splitting="true"
-                                    style="--word-total: 1; --char-total: 6;"><span class="word" data-word="hello!"
-                                        style="--word-index: 0;"><span class="char" data-char="h"
-                                            style="--char-index: 0; opacity: 1; transform: rotateX(0deg);">h</span><span
-                                            class="char" data-char="e"
-                                            style="--char-index: 1; opacity: 1; transform: rotateX(0deg);">e</span><span
-                                            class="char" data-char="l"
-                                            style="--char-index: 2; opacity: 1; transform: rotateX(0deg);">l</span><span
-                                            class="char" data-char="l"
-                                            style="--char-index: 3; opacity: 1; transform: rotateX(0deg);">l</span><span
-                                            class="char" data-char="o"
-                                            style="--char-index: 4; opacity: 1; transform: rotateX(0deg);">o</span><span
-                                            class="char" data-char="!"
-                                            style="--char-index: 5; opacity: 1; transform: rotateX(0deg);">!</span></span></span></span>
+                        <h2 class="alt-font text-white xs-mb-15px fancy-text-style-4 ls-minus-1px">
+                            Size nasıl yardımcı olabiliriz?
+
                         </h2>
-                        <form action="email-templates/contact-form.php" method="post">
-                            <div class="position-relative form-group mb-20px">
-                                <span class="form-icon"><i class="bi bi-person icon-extra-medium"></i></span>
-                                <input
-                                    class="ps-0 border-radius-0px fs-17 bg-transparent border-color-transparent-white-light placeholder-medium-gray form-control required"
-                                    type="text" name="name" placeholder="Enter your name*">
+                        <form action="{{ route('contact.form.show') }}" method="POST" class="row contact-form-style-02">
+                            @csrf
+                            <div class="col-md-12 mb-30px">
+                                <input class="input-name form-control required" type="text" name="name"
+                                    placeholder="Ad soyad" />
                             </div>
-                            <div class="position-relative form-group mb-20px">
-                                <span class="form-icon"><i class="bi bi-envelope icon-extra-medium"></i></span>
-                                <input
-                                    class="ps-0 border-radius-0px fs-17 bg-transparent border-color-transparent-white-light placeholder-medium-gray form-control required"
-                                    type="email" name="email" placeholder="Enter your email address*">
+                            <div class="col-md-12 mb-30px">
+                                <input class="form-control required" type="email" name="email"
+                                    placeholder="E-mail adresiniz" />
                             </div>
-                            <div class="position-relative form-group form-textarea mt-15px mb-12">
-                                <textarea
-                                    class="ps-0 border-radius-0px fs-17 bg-transparent border-color-transparent-white-light placeholder-medium-gray form-control"
-                                    name="comment" placeholder="Enter your message" rows="4"></textarea>
-                                <span class="form-icon"><i class="bi bi-chat-square-dots icon-extra-medium"></i></span>
-                                <input type="hidden" name="redirect" value="">
+                            <div class="col-md-12 mb-30px">
+                                <input class="form-control" type="tel" name="phone" placeholder="Telefon" />
+                            </div>
+                            <div class="col-md-12 mb-30px">
+                                <input class="form-control" type="text" name="job" placeholder="Mesleğiniz" />
+                            </div>
+                            <div class="col-md-12 mb-30px">
+                                <textarea class="form-control" cols="40" rows="4" name="message" placeholder="Mesajınız"></textarea>
+                            </div>
+                            <div class="col-xl-7 col-md-7 last-paragraph-no-margin">
+                                <p class="text-center text-md-start fs-15 lh-26">24 saat içerisinde dönüş sağlayacağız.
+                                </p>
+                            </div>
+                            <div class="col-xl-5 col-md-5 text-center text-md-end sm-mt-20px">
+                                <input type="hidden" name="redirect" value>
                                 <button
-                                    class="btn btn-medium btn-white btn-box-shadow mt-30px fw-700 submit btn-round-edge"
-                                    type="submit">Send message</button>
+                                    class="btn btn-base-color btn-medium btn-rounded btn-box-shadow"style="background: #0f75bc !important"
+                                    type="submit">Gönder</button>
+                            </div>
+                            <div class="col-12">
                                 <div class="form-results mt-20px d-none"></div>
                             </div>
                         </form>
-                        <div
-                            class="w-200px h-200px xs-w-150px xs-h-150px border-radius-100 bg-gradient-solitude-blue-fair-pink d-flex align-items-center justify-content-center position-absolute right-minus-30px xs-right-minus-20px bottom-minus-60px xs-bottom-minus-40px">
-                            <img src="images/demo-beauty-salon-contact-01.png" class="h-85px" alt=""
-                                data-no-retina="">
-                        </div>
                     </div>
                 </div>
             </div>
@@ -217,18 +206,18 @@
                         @endif
                         <form action="{{ route('contact.form.show') }}" method="POST" class="row contact-form-style-02">
                             @csrf
-                            <div class="col-md-6 mb-30px">
+                            <div class="col-md-12 mb-30px">
                                 <input class="input-name form-control required" type="text" name="name"
                                     placeholder="Ad soyad" />
                             </div>
-                            <div class="col-md-6 mb-30px">
+                            <div class="col-md-12 mb-30px">
                                 <input class="form-control required" type="email" name="email"
                                     placeholder="E-mail adresiniz" />
                             </div>
-                            <div class="col-md-6 mb-30px">
+                            <div class="col-md-12 mb-30px">
                                 <input class="form-control" type="tel" name="phone" placeholder="Telefon" />
                             </div>
-                            <div class="col-md-6 mb-30px">
+                            <div class="col-md-12 mb-30px">
                                 <input class="form-control" type="text" name="job" placeholder="Mesleğiniz" />
                             </div>
                             <div class="col-md-12 mb-30px">
@@ -276,7 +265,7 @@
     </section>
 
 
-    <section class="p-0" id="down-section">
+    <section class="p-0" id="map-section">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 p-0">
