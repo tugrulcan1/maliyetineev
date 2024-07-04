@@ -42,7 +42,9 @@
                             en güvenli, en garantili inşaat yapım yatırım sistemidir.</span>
 
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-2"
+                style="    display: flex;
+    justify-content: end;">
                     <a href="https://www.youtube.com/@MaliyetineEv"
                     target="_blank"
                     class="btn btn-extra-large btn-rounded text-white me-2" style="background-color: #ea2a28">
