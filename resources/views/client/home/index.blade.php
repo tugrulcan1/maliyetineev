@@ -549,6 +549,9 @@
 
 
              <div class="row m-0 align-items-center justify-content-center border border-color-extra-medium-gray  p-0  m-0 md-border-radius-6px ps-10px pe-10px box-shadow-quadruple-large"
+             style="    padding: 0 !important;
+    margin: 0 !important;
+    border-radius: 10px;"
                  data-anime="{ &quot;scale&quot;: [1.1, 1], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 800, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
                  <div class="col-lg-10">
                      <div class="swiper slider-one-slide testimonials-style-09"
