@@ -74,13 +74,15 @@
 }
 
 .right-fixed-btn span {
-    color: #fff;
-    font-size: 15px;
-    text-decoration: 0px 0px 5px #007bff;
-    width: 100%;
-    height: 100%;
-    display: block;
-    white-space: nowrap;
+   /* background-color: #ea2a28; */
+   color: white;
+    /* border: #ea2a28; */
+    border-radius: 10px;
+    padding: 5px 11px;
+    margin-left: auto;
+    font-weight: 700;
+    cursor: pointer;
+    margin-right: 15px;
 }
 
 .right-fixed-form {

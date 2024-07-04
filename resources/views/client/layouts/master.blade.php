@@ -60,14 +60,14 @@
     z-index: 9;
     /* transform-origin: 100% 0 0; */
     /* margin-right: -1px; */
-    right: -36px;
+    right: -66px;
     bottom: 250px;
     transform: rotate(90deg);
     cursor: pointer;
     border-radius: 0px 0px 20px 20px;
     border: 1px solid #007bff;
     background: #007bff;
-    padding: 10px 40px;
+    padding: 10px 30px;
 }
 
 .right-fixed-btn:hover {
@@ -77,13 +77,15 @@
 }
 
 .right-fixed-btn span {
-    color: #fff;
-    font-size: 15px;
-    text-decoration: 0px 0px 5px #007bff;
-    width: 100%;
-    height: 100%;
-    display: block;
-    white-space: nowrap;
+       /* background-color: #ea2a28; */
+       color: white;
+    /* border: #ea2a28; */
+    border-radius: 10px;
+    padding: 5px 11px;
+    margin-left: auto;
+    font-weight: 700;
+    cursor: pointer;
+    margin-right: 15px;
 }
 
 .right-fixed-form {
