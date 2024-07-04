@@ -515,7 +515,7 @@
              </div>
              <div class="col instafeed-grid">
                  <figure class="border-radius-0px"><a href="https://www.instagram.com/maliyetineev" target="_blank"><img
-                             src="https://instagram.fsaw6-1.fna.fbcdn.net/v/t51.29350-15/449712635_487286733681308_951781729281049969_n.heic?stp=dst-jpg_e35_s1080x1080&_nc_ht=instagram.fsaw6-1.fna.fbcdn.net&_nc_cat=108&_nc_ohc=OLoc0gpniOkQ7kNvgEhioY-&edm=ANTKIIoBAAAA&ccb=7-5&oh=00_AYCvo6u764uQq-O2D46b9B1mURABoT1bEfSzKhETc8_G1g&oe=668C3289&_nc_sid=d885a2" class="insta-image" alt=""
+                             src="{{asset('449186508_398056306615713_6952573876415675072_n.jpeg')}}" class="insta-image" alt=""
                              data-no-retina=""><span class="insta-icon"><i
                                  class="fa-brands fa-instagram"></i></span></a></figure>
              </div>
