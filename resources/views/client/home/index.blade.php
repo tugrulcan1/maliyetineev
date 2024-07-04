@@ -523,8 +523,8 @@
                  <a href="https://www.instagram.com/maliyetineev" target="_blank"
                      class="btn btn-large btn-switch-text btn-white btn-rounded left-icon btn-box-shadow instagram-button">
                      <span>
-                         <span><i class="fa-brands fa-instagram text-base-color"></i></span>
-                         <span class="btn-double-text" data-text="Follow crafto">Bizi Takip Et </span>
+                         <span><i class="fa-brands fa-instagram text-base-color" style="color:#ea2a28"></i></span>
+                         <span class="btn-double-text" data-text="Maliyetine Ev">Bizi Takip Et </span>
                      </span>
                  </a>
              </div>
