@@ -374,7 +374,7 @@
                              <input type="hidden" name="redirect" value="">
                              <button class="btn btn-large text-dark-gray ls-0px left-icon submit text-uppercase fw-700"
                                  aria-label="submit"><i
-                                     class="icon feather icon-feather-mail icon-small text-base-color"></i><span>Abone Ol</span></button>
+                                     class="fa fa-envelope icon-small text-base-color"></i><span>Abone Ol</span></button>
                              <div
                                  class="form-results border-radius-100px pt-10px pb-10px ps-15px pe-15px fs-16 mt-10px w-100 text-center position-absolute d-none">
                              </div>
