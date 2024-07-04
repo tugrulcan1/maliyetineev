@@ -58,14 +58,16 @@
 .right-fixed-btn {
     position: fixed;
     z-index: 9;
-    right: -70px;
-    top: 32%;
+    /* transform-origin: 100% 0 0; */
+    /* margin-right: -1px; */
+    right: -36px;
+    bottom: 250px;
     transform: rotate(90deg);
     cursor: pointer;
     border-radius: 0px 0px 20px 20px;
     border: 1px solid #007bff;
     background: #007bff;
-    padding: 10px 35px;
+    padding: 10px 40px;
 }
 
 .right-fixed-btn:hover {
