@@ -545,7 +545,7 @@
 
 
      <section class="mt-0 mb-0 pb-0">
-         <div class="container">
+         <div class="container p-0">
 
 
              <div class="row m-0 align-items-center justify-content-center border border-color-extra-medium-gray  p-0  m-0 md-border-radius-6px ps-10px pe-10px box-shadow-quadruple-large"
