@@ -69,6 +69,12 @@ class ProjectController extends Controller
         return view('client.projects.satisi_devam_eden',compact('satisiDevamEden'));
     }//End
 
+    
+    public function satisi_devam_eden_projelerimiz(){
+        $satisiDevamEden = Project::where('project_type','Satışı Devam Eden')->get();
+        return view('client.projects.satisi_devam_eden_projelerimiz',compact('satisiDevamEden'));
+    }//End
+
     public function satisi_tamamlanmis(){
         $satisiTamamlanmis = Project::where('project_type','Satışı Tamamlanmış')->get();
         return view('client.projects.satisi_tamamlanmis',compact('satisiTamamlanmis'));
