@@ -226,22 +226,22 @@
                                      style="padding: 20px 0;"
                                      data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateX&quot;: [50, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1200, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
                                      <!-- <div class="mb-20px">
-                                                    <div
-                                                        class="separator-line-1px w-50px bg-base-color d-inline-block align-middle me-10px opacity-2">
-                                                    </div>
-                                                    <span
-                                                        class="d-inline-block text-dark-gray align-middle fw-500 fs-20 ls-minus-05px">Strategic
-                                                        planning</span>
-                                                </div> -->
+                                                        <div
+                                                            class="separator-line-1px w-50px bg-base-color d-inline-block align-middle me-10px opacity-2">
+                                                        </div>
+                                                        <span
+                                                            class="d-inline-block text-dark-gray align-middle fw-500 fs-20 ls-minus-05px">Strategic
+                                                            planning</span>
+                                                    </div> -->
                                      <h4 class="fw-700 text-dark-gray ls-minus-1px md-mb-20px"
                                          style="font-size: 22px;margin-top:10px">
                                          {{ $settings['section_5_1'] }}</h4>
                                      <p class="mb-35px md-mb-25px" style="color: #647589">
                                          {{ $settings['section_5_1_content'] }} </p>
                                      <!-- <a href="demo-accounting-services.html"
-                                                    class="btn btn-large btn-rounded with-rounded btn-white btn-box-shadow fw-600">Learn
-                                                    more<span class="bg-base-color text-white"><i
-                                                            class="bi bi-arrow-right-short icon-extra-medium"></i></span></a> -->
+                                                        class="btn btn-large btn-rounded with-rounded btn-white btn-box-shadow fw-600">Learn
+                                                        more<span class="bg-base-color text-white"><i
+                                                                class="bi bi-arrow-right-short icon-extra-medium"></i></span></a> -->
                                  </div>
                              </div>
                          </div>
@@ -257,13 +257,13 @@
                                  <div class="col-xl-4 col-lg-5 offset-lg-1 col-md-6 text-center text-md-start"
                                      style="padding: 20px 0;">
                                      <!-- <div class="mb-20px">
-                                                        <div
-                                                            class="separator-line-1px w-50px bg-base-color d-inline-block align-middle me-10px opacity-2">
-                                                        </div>
-                                                        <span
-                                                            class="d-inline-block text-dark-gray align-middle fw-500 fs-20 ls-minus-05px">Audit
-                                                            assurance</span>
-                                                    </div> -->
+                                                            <div
+                                                                class="separator-line-1px w-50px bg-base-color d-inline-block align-middle me-10px opacity-2">
+                                                            </div>
+                                                            <span
+                                                                class="d-inline-block text-dark-gray align-middle fw-500 fs-20 ls-minus-05px">Audit
+                                                                assurance</span>
+                                                        </div> -->
                                      <h4 class="fw-700 text-dark-gray ls-minus-1px md-mb-20px"
                                          style="font-size: 22px;margin-top:10px">
                                          {{ $settings['section_5_2'] }}</h4>
@@ -271,9 +271,9 @@
                                          {{ $settings['section_5_2_content'] }}
                                      </p>
                                      <!-- <a href="demo-accounting-services.html"
-                                                    class="btn btn-large btn-rounded with-rounded btn-white btn-box-shadow fw-600">Learn
-                                                    more<span class="bg-base-color text-white"><i
-                                                            class="bi bi-arrow-right-short icon-extra-medium"></i></span></a> -->
+                                                        class="btn btn-large btn-rounded with-rounded btn-white btn-box-shadow fw-600">Learn
+                                                        more<span class="bg-base-color text-white"><i
+                                                                class="bi bi-arrow-right-short icon-extra-medium"></i></span></a> -->
                                  </div>
                              </div>
                          </div>
@@ -289,13 +289,13 @@
                                  <div class="col-xl-4 col-lg-5 offset-lg-1 col-md-6 text-center text-md-start"
                                      style="padding: 20px 0;">
                                      <!-- <div class="mb-20px">
-                                                    <div
-                                                        class="separator-line-1px w-50px bg-base-color d-inline-block align-middle me-10px opacity-2">
-                                                    </div>
-                                                    <span
-                                                        class="d-inline-block text-dark-gray align-middle fw-500 fs-20 ls-minus-05px">Financial
-                                                        projections</span>
-                                                </div> -->
+                                                        <div
+                                                            class="separator-line-1px w-50px bg-base-color d-inline-block align-middle me-10px opacity-2">
+                                                        </div>
+                                                        <span
+                                                            class="d-inline-block text-dark-gray align-middle fw-500 fs-20 ls-minus-05px">Financial
+                                                            projections</span>
+                                                    </div> -->
                                      <h4 class="fw-700 text-dark-gray ls-minus-1px md-mb-20px"
                                          style="font-size: 22px;margin-top:10px">
                                          {{ $settings['section_5_3'] }}
@@ -304,9 +304,9 @@
                                          {{ $settings['section_5_3_content'] }}
                                      </p>
                                      <!-- <a href="demo-accounting-services.html"
-                                                    class="btn btn-large btn-rounded with-rounded btn-white btn-box-shadow fw-600">Learn
-                                                    more<span class="bg-base-color text-white"><i
-                                                            class="bi bi-arrow-right-short icon-extra-medium"></i></span></a> -->
+                                                        class="btn btn-large btn-rounded with-rounded btn-white btn-box-shadow fw-600">Learn
+                                                        more<span class="bg-base-color text-white"><i
+                                                                class="bi bi-arrow-right-short icon-extra-medium"></i></span></a> -->
                                  </div>
                              </div>
                          </div>
@@ -322,22 +322,22 @@
                                  <div class="col-xl-4 col-lg-5 offset-lg-1 col-md-6 text-center text-md-start"
                                      style="padding: 20px 0;">
                                      <!-- <div class="mb-20px">
-                                                    <div
-                                                        class="separator-line-1px w-50px bg-base-color d-inline-block align-middle me-10px opacity-2">
-                                                    </div>
-                                                    <span
-                                                        class="d-inline-block text-dark-gray align-middle fw-500 fs-20 ls-minus-05px">Business
-                                                        planning</span>
-                                                </div> -->
+                                                        <div
+                                                            class="separator-line-1px w-50px bg-base-color d-inline-block align-middle me-10px opacity-2">
+                                                        </div>
+                                                        <span
+                                                            class="d-inline-block text-dark-gray align-middle fw-500 fs-20 ls-minus-05px">Business
+                                                            planning</span>
+                                                    </div> -->
                                      <h4 class="fw-700 text-dark-gray ls-minus-1px md-mb-20px"
                                          style="font-size: 22px;margin-top:10px">
                                          {{ $settings['section_5_4'] }}</h4>
                                      <p class="mb-35px md-mb-25px" style="color: #647589">
                                          {{ $settings['section_5_4_content'] }}</p>
                                      <!-- <a href="demo-accounting-services.html"
-                                                    class="btn btn-large btn-rounded with-rounded btn-white btn-box-shadow fw-600">Learn
-                                                    more<span class="bg-base-color text-white"><i
-                                                            class="bi bi-arrow-right-short icon-extra-medium"></i></span></a> -->
+                                                        class="btn btn-large btn-rounded with-rounded btn-white btn-box-shadow fw-600">Learn
+                                                        more<span class="bg-base-color text-white"><i
+                                                                class="bi bi-arrow-right-short icon-extra-medium"></i></span></a> -->
                                  </div>
                              </div>
                          </div>
@@ -350,61 +350,81 @@
      </section>
 
      <section class=" mt-5  ">
-        <div class="container pb-50px sm-pt-20px xs-pb-30px background-repeat background-position-center sm-background-image-none"
-            style="background-image: url('https://craftohtml.themezaa.com/images/vertical-center-line-bg-dark.svg');background-color:#F4F1ED">
-            <div class="row overlap-section" style="margin-top: -175.5px;">
-                <div class="col-12 text-center">
-                    <img class="rounded-circle"
-                        src="{{ asset('favicon-c9c0de2311390de484c5d988188059cd56ed9317.png') }}" alt=""
-                        data-no-retina="">
-                </div>
-            </div>
+         <div class="container pb-50px sm-pt-20px xs-pb-30px background-repeat background-position-center sm-background-image-none"
+             style="background-image: url('https://craftohtml.themezaa.com/images/vertical-center-line-bg-dark.svg');background-color:#F4F1ED">
+             <div class="row overlap-section" style="margin-top: -175.5px;">
+                 <div class="col-12 text-center">
+                     <img class="rounded-circle"
+                         src="{{ asset('favicon-c9c0de2311390de484c5d988188059cd56ed9317.png') }}" alt=""
+                         data-no-retina="">
+                 </div>
+             </div>
 
-            <div class="row justify-content-center mb-4">
-                <div class="col-xl-6 col-lg-8 col-md-10 text-center">
+             <div class="row justify-content-center mb-4">
+                 <div class="col-xl-6 col-lg-8 col-md-10 text-center">
+                     <h3 class="text-dark-gray alt-font ls-minus-2px fw-400 mb-40px xs-mb-30px w-80 xs-w-100 mx-auto">
+                        Harika Teklifleri Kaçırmayın, Abone Olun!
+                     </h3>
+                     <div class="d-inline-block w-100 newsletter-style-03 position-relative mb-20px">
+                         <form action="email-templates/subscribe-newsletter.php" method="post"
+                             class="position-relative w-100">
+                             <input
+                                 class="input-large bg-white border-color-transparent w-100 border-radius-100px box-shadow-extra-large form-control required is-invalid"
+                                 type="email" name="email" placeholder="E-Posta">
+                             <input type="hidden" name="redirect" value="">
+                             <button class="btn btn-large text-dark-gray ls-0px left-icon submit text-uppercase fw-700"
+                                 aria-label="submit"><i
+                                     class="icon feather icon-feather-mail icon-small text-base-color"></i><span>Abone Ol</span></button>
+                             <div
+                                 class="form-results border-radius-100px pt-10px pb-10px ps-15px pe-15px fs-16 mt-10px w-100 text-center position-absolute d-none">
+                             </div>
+                         </form>
+                     </div>
+                     <p class="fs-16">Verilerinize saygı duyacağımızı lütfen unutmayın, bununla ilgili daha fazla ayrıntı
+                         için
+                         <a href="#" class="text-decoration-line-bottom text-dark-gray">Gizlilik Politikamızı </a>
+                         kontrol edebilirsiniz.
+                     </p>
+                 </div>
+             </div>
 
-                    <p class="fs-16">İlk Peşinatla Hemen Tapu Teslim <a href="#"
-                            class="text-decoration-line-bottom text-dark-gray">maliyetine ev.</a></p>
-                </div>
-            </div>
 
+             <div
+                 class="row row-cols-3 row-cols-lg-5 row-cols-sm-3 align-items-center justify-content-center mb-4 md-mb-50px xs-mb-40px instagram-follow-api position-relative">
+                 <div class="col instafeed-grid md-mb-30px xs-mb-15px">
+                     <figure class="border-radius-0px"><a href="https://www.instagram.com/maliyetineev"
+                             target="_blank"><img
+                                 src="{{ asset('449186508_398056306615713_6952573876415675072_n.jpeg') }}"
+                                 class="insta-image" alt="" data-no-retina=""><span class="insta-icon"><i
+                                     class="fa-brands fa-instagram"></i></span></a></figure>
+                 </div>
+                 <div class="col instafeed-grid md-mb-30px xs-mb-15px">
+                     <figure class="border-radius-0px"><a href="https://www.instagram.com/maliyetineev"
+                             target="_blank"><img
+                                 src="{{ asset('449801506_838510514418984_6593685392320693629_n.jpeg') }}"
+                                 class="insta-image" alt="" data-no-retina=""><span class="insta-icon"><i
+                                     class="fa-brands fa-instagram"></i></span></a></figure>
+                 </div>
+                 <div class="col instafeed-grid">
+                     <figure class="border-radius-0px"><a href="https://www.instagram.com/maliyetineev"
+                             target="_blank"><img
+                                 src="{{ asset('449712635_487286733681308_951781729281049969_n.jpeg') }}"
+                                 class="insta-image" alt="" data-no-retina=""><span class="insta-icon"><i
+                                     class="fa-brands fa-instagram"></i></span></a></figure>
+                 </div>
+                 <div class="absolute-middle-center z-index-1 w-auto">
+                     <a href="https://www.instagram.com/maliyetineev" target="_blank"
+                         class="btn btn-large btn-switch-text btn-white btn-rounded left-icon btn-box-shadow instagram-button">
+                         <span>
+                             <span><i class="fa-brands fa-instagram text-base-color" style="color:#ea2a28"></i></span>
+                             <span class="btn-double-text" data-text="Maliyetine Ev">Bizi Takip Et </span>
+                         </span>
+                     </a>
+                 </div>
+             </div>
 
-            <div
-                class="row row-cols-3 row-cols-lg-5 row-cols-sm-3 align-items-center justify-content-center mb-4 md-mb-50px xs-mb-40px instagram-follow-api position-relative">
-                <div class="col instafeed-grid md-mb-30px xs-mb-15px">
-                    <figure class="border-radius-0px"><a href="https://www.instagram.com/maliyetineev"
-                            target="_blank"><img
-                                src="{{ asset('449186508_398056306615713_6952573876415675072_n.jpeg') }}"
-                                class="insta-image" alt="" data-no-retina=""><span class="insta-icon"><i
-                                    class="fa-brands fa-instagram"></i></span></a></figure>
-                </div>
-                <div class="col instafeed-grid md-mb-30px xs-mb-15px">
-                    <figure class="border-radius-0px"><a href="https://www.instagram.com/maliyetineev"
-                            target="_blank"><img
-                                src="{{ asset('449801506_838510514418984_6593685392320693629_n.jpeg') }}"
-                                class="insta-image" alt="" data-no-retina=""><span class="insta-icon"><i
-                                    class="fa-brands fa-instagram"></i></span></a></figure>
-                </div>
-                <div class="col instafeed-grid">
-                    <figure class="border-radius-0px"><a href="https://www.instagram.com/maliyetineev"
-                            target="_blank"><img
-                                src="{{ asset('449712635_487286733681308_951781729281049969_n.jpeg') }}"
-                                class="insta-image" alt="" data-no-retina=""><span class="insta-icon"><i
-                                    class="fa-brands fa-instagram"></i></span></a></figure>
-                </div>
-                <div class="absolute-middle-center z-index-1 w-auto">
-                    <a href="https://www.instagram.com/maliyetineev" target="_blank"
-                        class="btn btn-large btn-switch-text btn-white btn-rounded left-icon btn-box-shadow instagram-button">
-                        <span>
-                            <span><i class="fa-brands fa-instagram text-base-color" style="color:#ea2a28"></i></span>
-                            <span class="btn-double-text" data-text="Maliyetine Ev">Bizi Takip Et </span>
-                        </span>
-                    </a>
-                </div>
-            </div>
-
-        </div>
-    </section>
+         </div>
+     </section>
 
      <section class="overflow-hidden mt-5" style="padding:0px 40px !important;">
          <div class="container">
@@ -629,8 +649,8 @@
                  data-anime="{ &quot;translateY&quot;: [50, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1200, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
                  <div class="col-12 text-center">
                      <!-- <div
-                                class="d-inline-block align-middle bg-yellow fw-600 text-white text-uppercase border-radius-30px ps-20px pe-20px fs-12 me-10px lh-30 sm-m-5px">
-                                Trust</div> -->
+                                    class="d-inline-block align-middle bg-yellow fw-600 text-white text-uppercase border-radius-30px ps-20px pe-20px fs-12 me-10px lh-30 sm-m-5px">
+                                    Trust</div> -->
                      <div class="d-inline-block align-middle text-dark-gray fs-19 fw-600 ls-minus-05px">Türkiye genelinde
                          <span class="text-decoration-line-bottom text-dark-gray">22 şubemizle</span> hizmetinizdeyiz.
                      </div>
