@@ -56,7 +56,7 @@
                                                         <div class="video-con active-con" video="{{ convertToEmbedUrl($video->url) }}">
                                 <div class="index title">{{$key}}</div>
                                 <div class="thumb">
-                                    <img src="{{asset('storage/reklam_tanitim_filmleri/'. $video->image)}}"
+                                    <img src="{{asset('reklam_tanitim_filmleri/'. $video->image)}}"
                                         alt="{{$video->title}}">
                                 </div>
                                 <div class="v-titles">
