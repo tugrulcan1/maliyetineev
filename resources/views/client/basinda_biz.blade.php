@@ -3,7 +3,8 @@
 @section('content')
 
     <section class="page-title-big-typography bg-dark-gray ipad-top-space-margin" data-parallax-background-ratio="0.5"
-        style="background-image: url({{asset('demo-conference-page-bg.jpg')}})">
+        style="background-image: url({{asset('demo-conference-page-bg.jpg')}}) ;padding-top: 30px;
+        padding-bottom: 30px;">
         <div class="container">
             <div class="row align-items-center justify-content-center extra-small-screen">
                 <div class="col-lg-8 text-center page-title-extra-large">
@@ -67,6 +68,10 @@
         </div>
     </section> --}}
 
+   
+    @endsection
+
+    @section("css")
     <style>
         .card-body {
             padding: 0;
@@ -86,3 +91,4 @@
             }
         }
     </style>
+    @endsection
