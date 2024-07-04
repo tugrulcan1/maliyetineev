@@ -92,6 +92,8 @@
         </div>
     </section>
 
+    @endsection
+    @section("css")
     <style>
         .custom-description {
             /* color: #ffffff !important; */
@@ -131,3 +133,5 @@
     z-index: 2;
 }
     </style>
+
+    @endsection
