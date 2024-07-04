@@ -48,7 +48,6 @@
             <div class="row">
                 <div class="col">
                         <div class="row mb-3">
-                            <span class="baslikSpan">Satışı Tamamlanmış Projeler</span>
                             @if(count($satisiTamamlanmis) > 0 )
                                 @foreach($satisiTamamlanmis as $project)
                                     <div class="col-md-3 mt-5">
