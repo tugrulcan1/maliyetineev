@@ -30,15 +30,18 @@
     justify-content: center;">
                     <img alt="" class="youtubeVideo" src="{{ asset('channels4_profile.jpg') }}" style="width:100%">
                 </div>
-                <div class="col-md-11">
+                <div class="col-md-9">
                     <h3 class="fw-700 text-dark-gray ls-minus-1px fancy-text-style-4 mb-0" style="font-size:25px">Maliyetine
                         Ev </h1>
                         <span class="fs-15 text-uppercase text-base-color fw-600 d-block">Maliyetine ev sistemi Türkiye'nin
                             en güvenli, en garantili inşaat yapım yatırım sistemidir.</span>
-                        <a href="https://www.youtube.com/@MaliyetineEv"
-                            class="btn btn-extra-large btn-rounded text-white me-2" style="background-color: #ea2a28">
-                            <i class="fa fa-link"></i> ABONE OL
-                        </a>
+
+                </div>
+                <div class="col-md-2">
+                    <a href="https://www.youtube.com/@MaliyetineEv"
+                    class="btn btn-extra-large btn-rounded text-white me-2" style="background-color: #ea2a28">
+                    <i class="fa fa-link"></i> ABONE OL
+                </a>
                 </div>
             </div>
             <div id="aboutus" class="row align-items-xl-center pt-2 mt-2">
