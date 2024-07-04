@@ -7,10 +7,10 @@
         padding-bottom: 30px;">
         <div class="container">
             <div class="row align-items-center justify-content-center extra-small-screen">
-                <div class="col-lg-6 col-md-8 position-relative text-center page-title-extra-small appear anime-child anime-complete" data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateY&quot;: [-15, 0], &quot;perspective&quot;: [1200,1200], &quot;scale&quot;: [1.1, 1], &quot;rotateX&quot;: [50, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 800, &quot;delay&quot;: 200, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
-                    <h1 class="alt-font text-white mb-0"
-                    style="font-size: 45px">İletişim</h1>
-                    </div>
+                <div class="col-lg-6 col-md-8 position-relative text-center page-title-extra-small appear anime-child anime-complete"
+                    data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateY&quot;: [-15, 0], &quot;perspective&quot;: [1200,1200], &quot;scale&quot;: [1.1, 1], &quot;rotateX&quot;: [50, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 800, &quot;delay&quot;: 200, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
+                    <h1 class="alt-font text-white mb-0" style="font-size: 45px">İletişim</h1>
+                </div>
             </div>
         </div>
     </section>
@@ -131,12 +131,12 @@
         <div class="container">
             <div class="row extra-very-small-screen align-items-center">
                 <!-- <div class="col-lg-5 col-sm-8 position-relative page-title-extra-small"
-                        data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;opacity&quot;: [0, 1], &quot;translateX&quot;: [-30, 0], &quot;duration&quot;: 800, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
-                        <h1 class="mb-20px xs-mb-20px text-white text-shadow-medium"><span
-                                class="w-30px h-2px bg-yellow d-inline-block align-middle position-relative top-minus-2px me-10px"></span>Contact
-                            us</h1>
-                        <h2 class="text-white text-shadow-medium fw-500 ls-minus-2px mb-0">Clients relationships</h2>
-                    </div> -->
+                            data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;opacity&quot;: [0, 1], &quot;translateX&quot;: [-30, 0], &quot;duration&quot;: 800, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
+                            <h1 class="mb-20px xs-mb-20px text-white text-shadow-medium"><span
+                                    class="w-30px h-2px bg-yellow d-inline-block align-middle position-relative top-minus-2px me-10px"></span>Contact
+                                us</h1>
+                            <h2 class="text-white text-shadow-medium fw-500 ls-minus-2px mb-0">Clients relationships</h2>
+                        </div> -->
             </div>
         </div>
     </section>
@@ -187,18 +187,6 @@
         </div>
     </section>
 
-
-    <section class="p-0 h-200px sm-h-50px overlap-height" id="location">
-        <div class="container-fluid h-100 overlap-gap-section">
-            <div class="row justify-content-center h-100">
-                <div class="col-12 p-0">
-                    <div id="map" class="map h-500px md-h-400px sm-h-350px"
-                        data-map-options="{ &quot;lat&quot;: -37.805688, &quot;lng&quot;: 144.962312, &quot;style&quot;: &quot;Silver&quot;, &quot;marker&quot;: { &quot;type&quot;: &quot;HTML&quot;, &quot;color&quot;: &quot;#005153&quot; }, &quot;popup&quot;: { &quot;defaultOpen&quot;: true, &quot;html&quot;: &quot;<div class=infowindow><strong class=\&quot;mb-3 d-inline-block alt-font\&quot;>Crafto Accounting</strong><p class=\&quot;alt-font\&quot;>16122 Collins street, Melbourne, Australia</p></div><div class=\&quot;google-maps-link alt-font\&quot;> <a aria-label=\&quot;View larger map\&quot; target=\&quot;_blank\&quot; jstcache=\&quot;31\&quot; href=_https_/maps.google.com/mapse283.html?ll=-37.805688,144.962312&amp;z=17&amp;t=m&amp;hl=en-US&amp;gl=IN&amp;mapclient=embed&amp;cid=13153204942596594449\%22 jsaction=\&quot;mouseup:placeCard.largerMap\&quot;>VIEW LARGER MAP</a></div>&quot; } }">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
 
     <section>
@@ -288,13 +276,16 @@
     </section>
 
 
-<section class="p-0" id="down-section">
-    <div class="container-fluid">
-    <div class="row">
-    <div class="col-12 p-0">
-    <div id="map" class="map h-550px sm-h-350px" data-map-options="{ &quot;lat&quot;: -37.805688, &quot;lng&quot;: 144.962312, &quot;style&quot;: &quot;Silver&quot;, &quot;marker&quot;: { &quot;type&quot;: &quot;image&quot;, &quot;class&quot;: &quot;marker01&quot;, &quot;src&quot;: &quot;images/demo-beauty-salon-map-icon.png&quot; }, &quot;popup&quot;: { &quot;defaultOpen&quot;: false, &quot;html&quot;: &quot;<div class=infowindow><strong class=\&quot;mb-3 d-inline-block alt-font\&quot;>Crafto Beauty Salon</strong><p class=\&quot;alt-font\&quot;>16122 Collins street, Melbourne, Australia</p></div><div class=\&quot;google-maps-link alt-font\&quot;> <a aria-label=\&quot;View larger map\&quot; target=\&quot;_blank\&quot; jstcache=\&quot;31\&quot; href=\&quot;https://maps.google.com/maps?ll=-37.805688,144.962312&amp;z=17&amp;t=m&amp;hl=en-US&amp;gl=IN&amp;mapclient=embed&amp;cid=13153204942596594449\&quot; jsaction=\&quot;mouseup:placeCard.largerMap\&quot;>VIEW LARGER MAP</a></div>&quot; } }"></div>
-    </div>
-    </div>
-    </div>
+    <section class="p-0" id="down-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 p-0">
+                    <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3015.305234018318!2d29.177666876446345!3d40.909052825528114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac554b56486c5%3A0x19df79713477599e!2sMaliyetine%20Ev!5e0!3m2!1str!2str!4v1714997097498!5m2!1str!2str"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
     </section>
 @endsection
