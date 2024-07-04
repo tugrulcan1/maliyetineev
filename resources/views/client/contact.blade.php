@@ -22,8 +22,8 @@
                     data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateX&quot;: [-50, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1200, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
                     <span class="fs-15 text-uppercase text-base-color fw-600 mb-15px d-block ls-1px" style="">Bizimle
                         iletişime geçin</span>
-                    <h3 class="fw-700 text-dark-gray ls-minus-1px mb-50px sm-mb-35px" style="">Yardıma mı ihtiyacınız var?
-                        Şimdi bizimle iletişime geçin!</h3>
+                    <h3 class="fw-700 text-dark-gray ls-minus-1px mb-50px sm-mb-35px" style="">Sizinle tanışmak için sabırsızlanıyoruz!
+                    </h3>
 
                     <div class="icon-with-text-style-01 mb-10 md-mb-35px" style="">
                         <div class="feature-box feature-box-left-icon last-paragraph-no-margin">
@@ -77,23 +77,10 @@
                     data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateX&quot;: [50, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1200, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
                     <div class="contact-form-style-03 position-relative border-radius-10px bg-white p-14 lg-p-10 box-shadow-double-large overflow-hidden last-paragraph-no-margin"
                         style="">
-                        <h2 class="fw-700 text-dark-gray mb-30px sm-mb-20px fancy-text-style-4 ls-minus-2px">Say
-                            <span
-                                data-fancy-text="{ &quot;effect&quot;: &quot;rotate&quot;, &quot;string&quot;: [&quot;hello!&quot;, &quot;hallå!&quot;, &quot;salve!&quot;] }"
-                                class="appear"><span class="anime-text words chars splitting" data-splitting="true"
-                                    style="--word-total: 1; --char-total: 6;"><span class="word" data-word="salve!"
-                                        style="--word-index: 0;"><span class="char" data-char="s"
-                                            style="--char-index: 0; opacity: 1; transform: rotateX(0deg);">s</span><span
-                                            class="char" data-char="a"
-                                            style="--char-index: 1; opacity: 1; transform: rotateX(0deg);">a</span><span
-                                            class="char" data-char="l"
-                                            style="--char-index: 2; opacity: 1; transform: rotateX(0deg);">l</span><span
-                                            class="char" data-char="v"
-                                            style="--char-index: 3; opacity: 1; transform: rotateX(0deg);">v</span><span
-                                            class="char" data-char="e"
-                                            style="--char-index: 4; opacity: 1; transform: rotateX(0deg);">e</span><span
-                                            class="char" data-char="!"
-                                            style="--char-index: 5; opacity: 1; transform: rotateX(0deg);">!</span></span></span></span>
+                        <h2 class="fw-700 text-dark-gray mb-30px sm-mb-20px fancy-text-style-4 ls-minus-2px" style="font-size: 45px">
+                            Size nasıl yardımcı olabiliriz?
+
+
                         </h2>
                         <form action="{{ route('contact.form.show') }}" method="POST" class="row contact-form-style-02">
                             @csrf
