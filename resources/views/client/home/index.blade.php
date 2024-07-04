@@ -496,7 +496,7 @@
      </section>
 
 
-     <section class="pt-0 overflow-hidden position-relative overlap-height">
+     {{-- <section class="pt-0 overflow-hidden position-relative overlap-height">
         <div class="container-fluid overlap-gap-section">
             <div class="row mb-2 md-mb-4">
                 <div class="col-12 position-relative">
@@ -541,8 +541,10 @@
                 </div>
             </div>
         </div>
-    </section>
-     {{-- <section class="mt-0 mb-0 pb-0">
+    </section> --}}
+
+
+     <section class="mt-0 mb-0 pb-0">
          <div class="container">
 
 
@@ -596,7 +598,7 @@
                  </div>
              </div>
          </div>
-     </section> --}}
+     </section>
 
      <section>
          <div class="container" style="overflow: hidden;">
