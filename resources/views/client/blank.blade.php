@@ -24,8 +24,8 @@ padding-bottom: 30px;">
     <div class="row align-items-center justify-content-center extra-small-screen">
         <div class="col-lg-8 text-center page-title-extra-large">
             <h1 class="mb-0 text-white alt-font fw-600 ls-minus-5px">
-                <span class="d-block text-outline text-outline-width-2px text-outline-color-white"
-                    data-fancy-text="{ &quot;string&quot;: [&quot;Maliyetine Ev&quot;], &quot;duration&quot;: 500, &quot;delay&quot;: 0, &quot;speed&quot;: 50, &quot;clipPath&quot;: [&quot;inset(0 500px 0 0)&quot;, &quot;inset(0px -5px 0px 0px)&quot;], &quot;easing&quot;: &quot;easeOutCubic&quot; }"></span>
+                {{-- <span class="d-block text-outline text-outline-width-2px text-outline-color-white"
+                    data-fancy-text="{ &quot;string&quot;: [&quot;Maliyetine Ev&quot;], &quot;duration&quot;: 500, &quot;delay&quot;: 0, &quot;speed&quot;: 50, &quot;clipPath&quot;: [&quot;inset(0 500px 0 0)&quot;, &quot;inset(0px -5px 0px 0px)&quot;], &quot;easing&quot;: &quot;easeOutCubic&quot; }"></span> --}}
                 <span
                     data-anime="{ &quot;opacity&quot;: [0, 1], &quot;easing&quot;: &quot;easeOutQuad&quot;, &quot;duration&quot;: 1000, &quot;delay&quot;: 300 }">{{ $pageInfo->meta_title }}</span>
             </h1>
@@ -37,12 +37,12 @@ padding-bottom: 30px;">
 
     <section>
         <div class="container">
-            <div class="row justify-content-center mb-3">
+            {{-- <div class="row justify-content-center mb-3">
                 <div class="col-lg-7 col-md-8 col-sm-9 text-center"
                     data-anime="{ &quot;translateY&quot;: [50, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1200, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
                     <h3 class="text-dark-gray fw-700 ls-minus-2px">{{ $pageInfo->meta_title }}</h3>
                 </div>
-            </div>
+            </div> --}}
             <div class="row row-cols-12 row-cols-lg-12 row-cols-md-12 mb-5"
                 data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateX&quot;: [-30, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1200, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
 
