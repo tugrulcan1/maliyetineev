@@ -169,7 +169,7 @@
 /* Form container stili */
 .contact-form-style-01 {
     position: fixed;
-    top: 57%;
+    top: 56%;
     right: -400px;
     transform: translateY(-50%);
     width: 400px;
