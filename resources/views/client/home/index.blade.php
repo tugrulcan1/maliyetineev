@@ -419,8 +419,8 @@
      </section> --}}
 
 
-     <section class="bg-very-light-gray overflow-hidden position-relative ps-3 xs-ps-0">
-         <div class="container-fluid">
+     <section class=" overflow-hidden position-relative ps-3 xs-ps-0">
+         <div class="container">
              <div class="row align-items-center">
                  <div class="col-lg-3 ps-5 pe-5 xl-pe-0 lg-ps-0 text-center text-lg-start md-mb-40px">
                      <div class="mb-10px"><span class="text-dark-gray fw-500 text-highlight">Maliyetine Ev<span
@@ -429,7 +429,7 @@
                              class="fw-600">Projelerimiz</span></h2>
 
                  </div>
-                 <div class="col-12 col-lg-9 position-relative">
+                 <div class="col-12 col-lg-12 position-relative">
                      <div
                          class="outside-box-right-10 lg-outside-box-right-20 md-outside-box-right-25 xs-outside-box-right-0">
                          <div class="swiper slider-three-slide"
@@ -478,7 +478,7 @@
              </div>
          </div>
      </section>
-     <section class="overflow-hidden mt-5" style="padding:0px 40px !important;">
+     {{-- <section class="overflow-hidden mt-5" style="padding:0px 40px !important;">
          <div class="container">
              <div class="row align-items-center justify-content-center mb-3 mt-3 text-center text-lg-start column-form">
                  <div class="col-xl-10 col-lg-10 md-mb-20px mt-2"
@@ -550,7 +550,7 @@
                  </div>
              </div>
          </div>
-     </section>
+     </section> --}}
 
 
      {{-- <section class="pt-0 overflow-hidden position-relative overlap-height">
