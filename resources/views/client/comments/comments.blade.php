@@ -9,7 +9,7 @@
     <h2 class="alt-font fw-600 text-dark-gray ls-minus-2px" style="">Happy travellers</h2>
     </div>
     </div>
-    <div class="row row-cols-1 row-cols-xl-3 row-cols-lg-2 row-cols-md-2 justify-content-center mb-5 position-relative">
+    <div class="row row-cols-1 row-cols-xl-2 row-cols-lg-2 row-cols-md-2 justify-content-center mb-5 position-relative">
     
         @foreach ($comments as $comment)
     <div class="col transition-inner-all review-style-07 mb-30px appear anime-complete" data-anime="{ &quot;translateX&quot;: [-15, 0], &quot;translateY&quot;: [-15, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 800, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }" style="">
