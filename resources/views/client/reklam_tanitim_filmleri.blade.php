@@ -37,7 +37,9 @@
         </div>
         <div class="col-md-11">
             <h3 class="fw-700 text-dark-gray ls-minus-1px fancy-text-style-4 mb-0"
-            style="font-size:25px">Maliyetine Ev</h1>
+            style="font-size:25px">Maliyetine Ev <a href="https://www.youtube.com/@MaliyetineEv" class="btn btn-extra-large btn-rounded text-white me-2" style="background-color: #ea2a28">
+                <i class="fa fa-link"></i> ABONE OL
+            </a></h1>
             <span class="fs-15 text-uppercase text-base-color fw-600 d-block">Maliyetine ev sistemi Türkiye'nin en güvenli, en garantili inşaat yapım yatırım sistemidir.</span>
         </div>
     </div>
