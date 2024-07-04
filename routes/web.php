@@ -553,7 +553,7 @@ Route::get('/comments/index',[CommentController::class,'commentGet'])->name('com
 Route::post('/yorum/ekle',[CommentController::class,'addComment'])->name('add.comment');
 
 Route::get('/maliyetine/ev/videolar',[VideoController::class,'index'])->name('videos.index');
-Route::get('/reklam/tanitim/filmleri',[VideoController::class,'reklam_tanitim_filmleri']);
+Route::get('/reklam-tanitim-filmleri',[VideoController::class,'reklam_tanitim_filmleri']);
 Route::get('/tapu/alan/musterilerimiz',[VideoController::class,'tapuAlanMusterilerimiz'])->name('tapu.alan.musterilerimiz');
 
 Route::get('/basinda-biz',[VideoController::class,'basindaBizz'])->name('basinda.biz');
