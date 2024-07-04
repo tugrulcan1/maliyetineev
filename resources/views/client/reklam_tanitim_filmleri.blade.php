@@ -30,6 +30,10 @@
             class="youtubeVideo" 
             src="{{asset('channels4_profile.jpg')}}">
         </div>
+        <div class="col-md-12">
+            <h1>Maliyetine Ev</h1> <br>
+            <span>Maliyetine ev sistemi Türkiye'nin en güvenli, en garantili inşaat yapım yatırım sistemidir.</span>
+        </div>
     </div>
     <div id="aboutus" class="row align-items-xl-center pt-2 mt-2">
         <div class="col-md-12">
