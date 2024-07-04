@@ -23,14 +23,6 @@
 
 <div class="container">
     <div id="aboutus" class="row align-items-xl-center pt-2 mt-2">
-        <div class="col-lg-12 mt-2">
-            <h3 class="text-5 line-height-3 text-transform-none font-weight-semibold mb-4 mb-lg-3 mb-xl-4 appear-animation animated fadeInUpShorter appear-animation-visible"
-                data-appear-animation="fadeInUpShorter" data-appear-animation-delay="250"
-                style="animation-delay: 250ms;">Send, Track and Find New Customers with a Single Platform</h3>
-            <p class="text-3-5 pb-1 mb-4 mb-lg-2 mb-xl-4 appear-animation animated fadeInUpShorter appear-animation-visible"
-                data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500"
-                style="animation-delay: 500ms;">Freizy is the easiest and most practical way to track and record all international business activities. You can open a free account at freizy, identify new customers and competitors, and instantly contact whenever you need, in order to carry out worldwide commercial activities, facilitate customer relations and identify suppliers.</p>
-        </div>
         <div class="col-md-12">
             <div id="playlist">
                 <div id="video-dis">
