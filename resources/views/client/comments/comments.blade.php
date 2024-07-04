@@ -2,89 +2,49 @@
 
 
 @section('content')
-
-<div class="container" style="margin-top: 200px; margin-bottom:260px;" >
-
-    <div class="row mt-4 mb-4">
-
-        <div class="col-md-7">
-                         <h4>Kullanıcı Yorumları</h4>
-
-                   @foreach ($comments as $comment)
-
-                        <div class="row align-items-center pt-25px pb-25px commentDiv" style="">
-                            <div class="col-lg-8 d-lg-flex align-items-center text-center text-lg-start">
-                                {{-- @if ($comment->image)
-                                        <img src="{{ asset('kullanici_gorselleri/' . $comment->image) }}" alt="User Image" style="width: 60px; height: 70px; border-radius: 50%; margin-right: 10px;">
-                                    @else
-                                    <i class="fa-solid fa-star" style="font-size:24px;margin-left:10px;"></i>
-                                    @endif --}}
-                                    <img src="{{ asset('images/yildiz.png') }}" style="max-width: 50px;">
-                                <span style="" class="d-block ps-40px md-ps-0 md-mx-auto position-relative">{{$comment->content}}</span>
-                            </div>
-                            <div class="col-lg-1 d-none d-lg-inline-block">
-                                <div
-                                    class="separator-line w-1px md-w-100 h-60px md-h-1px bg-extra-medium-gray mx-auto">
-                                </div>
-                            </div>
-                            <div class="col-lg-3 text-center text-lg-start md-mt-15px">
-                                <span class="fs-19 ls-minus-05px fw-600 text-dark-gray d-block lh-28">{{$comment->full_name}}</span>
-                                <div></div>
-                            </div>
-                        </div>
-
-                   @endforeach
-
-
-        </div>
-                <div class="col-md-5">
-                    <div class="contact-form-style-01" style="width:400px;height:350px;margin-left:0;right:100px;top:400px">
-                        <div class="ps-8 pe-8 pt-8 pb-8 lg-p-8 bg-white box-shadow-quadruple-large border-radius-6px">
-                            <h6 class="d-inline-block fw-600 text-dark-gray ls-minus-1px mb-35px sm-mb-25px"
-                                data-anime="{ &quot;translateY&quot;: [15, 0], &quot;translateX&quot;: [-15, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 600, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
-                                Yorumlarınızı bizimle paylaşın</h6>
-                                @if ($errors->any())
-                                    <div class="alert alert-danger">
-                                        <ul class="mb-0">
-                                            @foreach ($errors->all() as $error)
-                                                <li>{{ $error }}</li>
-                                            @endforeach
-                                        </ul>
-                                    </div>
-                                @endif
-                            <form  method="POST" action="{{ route('add.comment') }}" enctype="multipart/form-data"
-                                data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateY&quot;: [15, 0], &quot;translateX&quot;: [-15, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 600, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
-                                @csrf
-                                <div class="position-relative form-group mb-15px">
-                                    <span class="form-icon"><i class="fas fa-user"></i></span>
-                                    <input type="text" name="name" class="form-control required" placeholder="Ad soyad" />
-                                </div>
-                                <div class="position-relative form-group mb-15px">
-                                    <span class="form-icon"><i class="fa fa-envelope"></i></span>
-                                    <input type="email" name="email" class="form-control required"
-                                        placeholder="E-posta adresiniz" />
-                                </div>
-                                <div class="position-relative form-group mb-20px">
-                                    <span class="form-icon"><i class="fa fa-phone"></i></span>
-                                    <input type="tel" name="phone" class="form-control" placeholder="Telefon Numaranız" />
-                                </div>
-                                <div class="position-relative form-group mb-20px">
-                                    <span class="form-icon"><i class="fa fa-envelope"></i></span>
-                                    <textarea name="comment" id="comment" class="form-control" cols="20" rows="4" placeholder="Yorumunuz"></textarea>
-                                </div>
-                                <div class="position-relative mt-20px">
-                                    <button class="btn btn-large btn-round-edge btn-box-shadow w-100" style="background-color: #0f75bc;color:white;border-radius:12px;"
-                                        type="submit">Gönder</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-
-
-
+<div class="container">
+    <div class="row justify-content-center mb-3">
+    <div class="col-lg-6 text-center appear anime-child anime-complete" data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateY&quot;: [30, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 600, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
+    <span class="fw-500 text-base-color text-uppercase d-inline-block" style="">Our testimonials</span>
+    <h2 class="alt-font fw-600 text-dark-gray ls-minus-2px" style="">Happy travellers</h2>
     </div>
-</div>
+    </div>
+    <div class="row row-cols-1 row-cols-xl-3 row-cols-lg-2 row-cols-md-2 justify-content-center mb-5 position-relative">
+    
+        @foreach ($comments as $comment)
+    <div class="col transition-inner-all review-style-07 mb-30px appear anime-complete" data-anime="{ &quot;translateX&quot;: [-15, 0], &quot;translateY&quot;: [-15, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 800, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }" style="">
+    <div class="d-flex h-100 flex-column border-radius-6px p-11 bg-white box-shadow-quadruple-large">
+    <div class="mb-20px">
+    <img src="images/avtar-24.jpg" class="rounded-circle w-90px me-15px" alt="" data-no-retina="">
+    <div class="d-inline-block align-middle">
+    <div class="text-dark-gray fw-600 fs-18">{{$comment->full_name}}</div>
+    </div>
+    </div>
+    <p class="mb-15px">{{$comment->content}}</p>
+    <div class="d-flex align-items-center">
+    <div class="d-inline-block me-auto">
+    <div class="text-dark-gray float-start me-10px fw-600">5.0</div>
+    <div class="review-star-icon float-start">
+    <i class="fa fa-star-fill"></i><i class="fa fa-star-fill"></i><i class="fa fa-star-fill"></i><i class="fa fa-star-fill"></i><i class="fa fa-star-fill"></i>
+    </div>
+    </div>
+    <div class="d-inline-block bg-dark-gray fw-600 text-uppercase border-radius-3px ps-15px pe-15px fs-12 lh-26 text-white">20 Feb</div>
+    </div>
+    </div>
+    </div>
+    @endforeach
+    
+    
+    
+    </div>
+    <div class="row justify-content-center mb-5 md-mb-12 sm-mb-0 appear anime-complete" data-anime="{ &quot;translateY&quot;: [0, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1200, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }" style="">
+    <div class="col-auto text-center last-paragraph-no-margin">
+    <div class="d-inline-block align-middle me-10px xs-m-10px"><img src="images/tripadvisor-icon.svg" class="w-50px" alt="" data-no-retina=""></div>
+    <div class="d-inline-block align-middle"><h4 class="text-dark-gray alt-font ls-minus-1px mb-0">3,583 exclusive visitor reviews on <a href="https://www.tripadvisor.in/" target="_blank" class="text-decoration-line-bottom fw-600 text-dark-gray">tripadvisor.</a></h4></div>
+    </div>
+    </div>
+    </div>
+
 
 @endsection
 
