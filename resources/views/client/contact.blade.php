@@ -114,7 +114,6 @@
                                 <div class="form-results mt-20px d-none"></div>
                             </div>
                         </form>
-                        <div class="position-absolute bottom-0px right-minus-30px fs-350 lh-100 fw-900 text-yellow">&lt;</div>
                     </div>
                 </div>
             </div>
