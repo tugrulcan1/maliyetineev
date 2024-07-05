@@ -15,7 +15,7 @@
     <div class="col transition-inner-all review-style-07 mb-30px appear anime-complete" data-anime="{ &quot;translateX&quot;: [-15, 0], &quot;translateY&quot;: [-15, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 800, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }" style="">
     <div class="d-flex h-100 flex-column border-radius-6px p-11 bg-white box-shadow-quadruple-large">
     <div class="mb-20px">
-    <img src="{{ asset('favicon-c9c0de2311390de484c5d988188059cd56ed9317.png') }}" class="rounded-circle w-90px me-15px" alt="" data-no-retina="">
+    <img src="{{ asset('favicon-c9c0de2311390de484c5d988188059cd56ed9317.png') }}" class="rounded-circle w-50px me-15px" alt="" data-no-retina="">
     <div class="d-inline-block align-middle">
     <div class="text-dark-gray fw-600 fs-18">{{$comment->full_name}}</div>
     </div>
