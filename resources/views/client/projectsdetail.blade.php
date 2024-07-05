@@ -8,7 +8,11 @@
     </section>
 
     <section class="position-relative pt-4 half-section overflow-hidden">
-
+        <img src="{{ asset('images/demo-data-analysis-bg-06.png') }}" class="position-absolute top-0px left-0px"
+            data-bottom-top="transform: translateY(150px)" data-top-bottom="transform: translateY(-150px)" alt />
+        <img src="{{ asset('images/demo-data-analysis-bg-07.png') }}" class="position-absolute top-10 right-0px"
+            data-bottom-top="transform: translateY(150px)" data-top-bottom="transform: translateY(-150px)" alt />
+        <div class="container position-relative z-index-1">
             <div class="row row-cols-1 row-cols-lg-2 row-cols-md-2 justify-content-center mb-3"
                 data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateX&quot;: [30, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 600, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
                 @foreach (json_decode($project->details) as $key => $detail)
