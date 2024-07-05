@@ -54,11 +54,13 @@
                                             <label for="form-label" for="project__sub_title">Proje Türü</label>
                                             <select name="project_type" class="form-control">
                                                 <option value="">Seçiniz</option>
-                                                <option value="Satışı Devam Eden">Satışı Devam Eden</option>
-                                                <option value="Satışı Tamamlanmış">Satışı Tamamlanmış</option>
+                                                <option value="Devam Eden Projeler">Devam Eden Projeler</option>
+                                                <option value="Tamamlanan Projeler">Tamamlanan Projeler</option>
+                                                <option value="Topraktan Projeler">Topraktan Projeler</option>
+
                                             </select>
                                         </div>
-                                        
+
                                         <div class="col-md-12">
                                             <label class="form-label" for="description">Proje Açıklaması</label>
                                             <textarea class="form-control" id="editor" name="description" rows="3"> </textarea>
@@ -115,18 +117,18 @@
                                                multiple />
                                         </div>
 
-                                      
 
-                                      
+
+
                                         <div class="col-12 mt-5">
                                         <button class="btn btn-primary" id="saveFormsButton" type="submit">Kaydet</button>
                                      </div>
-                                     
+
 
 
                                     </form>
-                                 
-                                 
+
+
 
                                 </div>
                             </div>

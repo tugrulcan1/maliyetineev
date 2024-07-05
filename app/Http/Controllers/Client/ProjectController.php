@@ -56,8 +56,10 @@ class ProjectController extends Controller
         // $devamEdenProjeler = Project::where('project_type','Devam Eden Projeler')->get();
         // $bitmisProjeler    = Project::where('project_type','Bitmiş Projeler')->get();
 
-        $satisiDevamEden    = Project::where('project_type','Satışı Devam Eden')->get();
-        $satisiTamamlanmis  = Project::where('project_type','Satışı Tamamlanmış')->get();
+        $satisiDevamEden    = Project::where('project_type','Devam Eden Projeler')->get();
+        $satisiTamamlanmis  = Project::where('project_type','Tamamlanan Projeler')->get();
+        $topraktan    = Project::where('project_type','Topraktan Projeler')->get();
+
         return view('client.projects',compact('menu','projects','housingTypes','housingStatus','cities','satisiDevamEden','satisiTamamlanmis'));
     }
 
@@ -70,19 +72,25 @@ class ProjectController extends Controller
     }
 
     public function satisi_devam_eden(){
-        $satisiDevamEden = Project::where('project_type','Satışı Devam Eden')->get();
+        $satisiDevamEden = Project::where('project_type','Devam Eden Projeler')->get();
         return view('client.projects.satisi_devam_eden',compact('satisiDevamEden'));
     }//End
 
 
     public function satisi_devam_eden_projelerimiz(){
-        $satisiDevamEden = Project::where('project_type','Satışı Devam Eden')->get();
+        $satisiDevamEden = Project::where('project_type','Devam Eden Projeler')->get();
         return view('client.projects.satisi_devam_eden_projelerimiz',compact('satisiDevamEden'));
     }//End
 
     public function satisi_tamamlanmis(){
-        $satisiTamamlanmis = Project::where('project_type','Satışı Tamamlanmış')->get();
+        $satisiTamamlanmis = Project::where('project_type','Tamamlanan Projeler')->get();
         return view('client.projects.satisi_tamamlanmis',compact('satisiTamamlanmis'));
+    }//End
+
+
+    public function topraktan(){
+        $topraktan = Project::where('project_type','Topraktan Projeler')->get();
+        return view('client.projects.topraktan',compact('topraktan'));
     }//End
 
 }

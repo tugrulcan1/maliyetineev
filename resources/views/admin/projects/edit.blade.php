@@ -31,8 +31,10 @@
                             <label for="form-label" for="project__sub_title">Proje Türü</label>
                             <select name="project_type" class="form-control">
                                 <option value="">Seçiniz</option>
-                                <option value="Satışı Devam Eden" {{ $project->project_type == 'Satışı Devam Eden' ? 'selected' : '' }}>Satışı Devam Eden</option>
-                                <option value="Satışı Tamamlanmış" {{ $project->project_type == 'Satışı Tamamlanmış' ? 'selected' : '' }}>Satışı Tamamlanmış</option>
+                                <option value="Devam Eden Projeler" {{ $project->project_type == 'Devam Eden Projeler' ? 'selected' : '' }}>Devam Eden Projeler</option>
+                                <option value="Tamamlanan Projeler" {{ $project->project_type == 'Tamamlanan Projeler' ? 'selected' : '' }}>Tamamlanan Projeler</option>
+                                <option value="Topraktan Projeler" {{ $project->project_type == 'Topraktan Projeler' ? 'selected' : '' }}>Topraktan Projeler</option>
+
                             </select>
                         </div>
 
@@ -51,8 +53,8 @@
                             <textarea id="editor" name="description">{{ $project->description }}</textarea>
                         </div>
                             <?php
-                                $details = json_decode($project->details, true); 
-                            ?>  
+                                $details = json_decode($project->details, true);
+                            ?>
 
                         <div class="col-md-12 mb-3">
                             <label class="form-label" for="project_title">Proje 1.Detay Başlığı</label>
@@ -89,16 +91,16 @@
                             <textarea class="form-control"  name="konum" rows="3">{{ $project->konum ?? '' }} </textarea>
                         </div>
 
-                        @php 
+                        @php
                             $floorPlans = DB::table('floor_plans')->where('project_id',$project->id)->get();
                         @endphp
-                        
+
                         @if($floorPlans->count() > 0)
                             <div class="col-md-2 mb-3">
-                                <label class="form-label" for="image">Kat Planları</label>   
+                                <label class="form-label" for="image">Kat Planları</label>
                                     @foreach($floorPlans as $floorPlan)
                                             <input type="text" class="form-control mb-2" name="floor_plans[{{ $floorPlan->id }}]" value="{{ $floorPlan->floor_plan ?? '' }}">
-                                    @endforeach            
+                                    @endforeach
                             </div>
                         @endif
                         <div class="mb-3">
@@ -149,7 +151,7 @@
                                         });
                                     });
                                 });
-                            </script>   
+                            </script>
 
 
                             <br>
