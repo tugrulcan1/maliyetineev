@@ -17,12 +17,12 @@
 
     <section class="position-relative z-index-1 pb-0">
         <div class="d-none d-md-flex mb-1">
-            <a href="#map-section" class="section-link absolute-middle-center top-0" id="scroll-to-map">
+            <div class="section-link absolute-middle-center top-0 scroll-to-map">
                 <div
                     class="d-flex justify-content-center align-items-center mx-auto rounded-circle h-70px w-70px fs-22 text-dark-gray bg-white box-shadow-bottom">
                     <i class="fa fa-map-pin"></i>
                 </div>
-            </a>
+            </div>
         </div>
         <div class="container">
             <div class="row justify-content-center align-items-center mb-9 sm-mb-45px">

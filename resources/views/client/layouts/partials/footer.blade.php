@@ -126,7 +126,7 @@
 
 <script>
       console.log("sdsa");
-        $("#scroll-to-map").click(function() {
+        $(".scroll-to-map").click(function() {
             console.log("clicked");
 
         });
