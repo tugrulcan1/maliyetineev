@@ -286,7 +286,7 @@
     @endif
 
     @if (!empty($floorPlans) && count($floorPlans) > 0)
-    <section class="pt-0">
+    <section class="pt-0 mt-5">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
@@ -553,7 +553,9 @@
                 display: block;
             }
         }
-
+        .portfolio-filter li {
+    padding: 0 35px;
+}
         .helpModal {
             width: 250px;
             height: 40px;
