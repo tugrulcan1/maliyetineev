@@ -41,7 +41,7 @@
                         <div class="swiper-slide">
                             <div class="fs-120 lh-120 alt-font text-outline text-outline-color-extra-medium-gray fw-700">
                                 <span
-                                    class="w-20px h-20px border border-radius-100 border-color-extra-medium-gray d-inline-block align-middle ms-50px me-50px sm-ms-30px sm-me-30px"></span>predictive
+                                    class="w-20px h-20px border border-radius-100 border-color-extra-medium-gray d-inline-block align-middle ms-50px me-50px sm-ms-30px sm-me-30px"></span>
                                 {{ $project->project_title }}
                             </div>
                         </div>
@@ -50,7 +50,7 @@
                         <div class="swiper-slide">
                             <div class="fs-120 lh-120 alt-font text-outline text-outline-color-extra-medium-gray fw-700">
                                 <span
-                                    class="w-20px h-20px border border-radius-100 border-color-extra-medium-gray d-inline-block align-middle ms-50px me-50px sm-ms-30px sm-me-30px"></span>data
+                                    class="w-20px h-20px border border-radius-100 border-color-extra-medium-gray d-inline-block align-middle ms-50px me-50px sm-ms-30px sm-me-30px"></span>
                                     {{ $project->project_title }}
                             </div>
                         </div>
@@ -59,7 +59,7 @@
                         <div class="swiper-slide">
                             <div class="fs-120 lh-120 alt-font text-outline text-outline-color-extra-medium-gray fw-700">
                                 <span
-                                    class="w-20px h-20px border border-radius-100 border-color-extra-medium-gray d-inline-block align-middle ms-50px me-50px sm-ms-30px sm-me-30px"></span>statistical
+                                    class="w-20px h-20px border border-radius-100 border-color-extra-medium-gray d-inline-block align-middle ms-50px me-50px sm-ms-30px sm-me-30px"></span>
                                     {{ $project->project_title }}
                             </div>
                         </div>
@@ -68,7 +68,7 @@
                         <div class="swiper-slide">
                             <div class="fs-120 lh-120 alt-font text-outline text-outline-color-extra-medium-gray fw-700">
                                 <span
-                                    class="w-20px h-20px border border-radius-100 border-color-extra-medium-gray d-inline-block align-middle ms-50px me-50px sm-ms-30px sm-me-30px"></span>predictive
+                                    class="w-20px h-20px border border-radius-100 border-color-extra-medium-gray d-inline-block align-middle ms-50px me-50px sm-ms-30px sm-me-30px"></span>
                                     {{ $project->project_title }}
                             </div>
                         </div>
@@ -77,7 +77,7 @@
                         <div class="swiper-slide">
                             <div class="fs-120 lh-120 alt-font text-outline text-outline-color-extra-medium-gray fw-700">
                                 <span
-                                    class="w-20px h-20px border border-radius-100 border-color-extra-medium-gray d-inline-block align-middle ms-50px me-50px sm-ms-30px sm-me-30px"></span>data
+                                    class="w-20px h-20px border border-radius-100 border-color-extra-medium-gray d-inline-block align-middle ms-50px me-50px sm-ms-30px sm-me-30px"></span>
                                     {{ $project->project_title }}
                             </div>
                         </div>
@@ -86,7 +86,7 @@
                         <div class="swiper-slide">
                             <div class="fs-120 lh-120 alt-font text-outline text-outline-color-extra-medium-gray fw-700">
                                 <span
-                                    class="w-20px h-20px border border-radius-100 border-color-extra-medium-gray d-inline-block align-middle ms-50px me-50px sm-ms-30px sm-me-30px"></span>statistical
+                                    class="w-20px h-20px border border-radius-100 border-color-extra-medium-gray d-inline-block align-middle ms-50px me-50px sm-ms-30px sm-me-30px"></span>
                                     {{ $project->project_title }}
                             </div>
                         </div>
@@ -95,7 +95,7 @@
                         <div class="swiper-slide">
                             <div class="fs-120 lh-120 alt-font text-outline text-outline-color-extra-medium-gray fw-700">
                                 <span
-                                    class="w-20px h-20px border border-radius-100 border-color-extra-medium-gray d-inline-block align-middle ms-50px me-50px sm-ms-30px sm-me-30px"></span>data
+                                    class="w-20px h-20px border border-radius-100 border-color-extra-medium-gray d-inline-block align-middle ms-50px me-50px sm-ms-30px sm-me-30px"></span>
                                     {{ $project->project_title }}
                             </div>
                         </div>
