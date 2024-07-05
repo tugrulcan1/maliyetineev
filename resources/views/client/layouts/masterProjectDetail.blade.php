@@ -69,10 +69,11 @@
     padding: 10px 30px;
 }
 
-
-.right-fixed-btn.active-open{
-    right: -66px;
-}
+.right-fixed-btn.active-open {
+        right: -66px;
+        background: #ef0003;
+        border: 1px solid #ef0003;
+    }
 
 .right-fixed-btn:hover {
     background: #ef0003;

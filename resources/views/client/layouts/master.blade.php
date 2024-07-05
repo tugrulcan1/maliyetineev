@@ -72,6 +72,8 @@
 
     .right-fixed-btn.active-open {
         right: -66px;
+        background: #ef0003;
+        border: 1px solid #ef0003;
     }
 
     .right-fixed-btn:hover {
