@@ -52,13 +52,14 @@
                                 <div class="col-md-3 mt-5">
 
                                     <div class="interactive-banner-style-08">
-                                        <figure class="m-0 hover-box overflow-hidden position-relative border-radius-6px">
-                                            <img src="{{ asset('projects_cover_image/' . $project->cover_image) }}"
+                                        <figure class="m-0 hover-box overflow-hidden position-relative border-radius-6px"
+                                        style="height:250px !important;cursor: pointer;"
+                                        data-url="{{ route('projelerimiz.show', $project->id) }}">                                            <img src="{{ asset('projects_cover_image/' . $project->cover_image) }}"
                                                 alt="Resim bulunamadı" style="height: 400px; object-fit: cover;" />
 
-                                                <figure class="m-0 hover-box overflow-hidden position-relative border-radius-6px"
-                                                style="height:250px !important;cursor: pointer;"
-                                                data-url="{{ route('projelerimiz.show', $project->id) }}">
+                                            <figcaption
+                                                class="d-flex flex-column align-items-start justify-content-center position-absolute left-0px top-0px w-100 h-100 z-index-1 p-14 lg-p-12"
+                                                style="height:250px">
                                                 <div class="mt-auto d-flex w-100 align-items-center">
                                                     <div class="col last-paragraph-no-margin">
                                                         <a href="{{ route('projelerimiz.show', $project->id) }}"
