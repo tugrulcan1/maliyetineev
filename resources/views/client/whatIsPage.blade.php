@@ -22,7 +22,7 @@
             <div class="row">
                 <div class="col-lg-3">
                     <div class="bg-solitude-blue border-radius-6px p-45px lg-p-30px mb-25px">
-                        <span class="fs-19 alt-font text-dark-gray fw-700 mb-20px d-inline-block">Corporate services</span>
+                        <span class="fs-19 alt-font text-dark-gray fw-700 mb-20px d-inline-block">Maliyetine Ev</span>
                         <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                             <a class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Business planning</a>
                             <a class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Market research</a>
