@@ -48,12 +48,12 @@ padding-bottom: 30px;">
                         aria-labelledby="v-pills-home-tab">...
                     </div>
                     <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-                        ...</div>
+                      asd</div>
                     <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-                        ...
+               desc
                     </div>
                     <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
-                        ...
+                   fgtg
                     </div>
                 </div>
             </div>
