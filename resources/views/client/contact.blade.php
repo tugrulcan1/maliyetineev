@@ -20,7 +20,7 @@
             <a href="#map-section" class="section-link absolute-middle-center top-0" id="scroll-to-map">
                 <div
                     class="d-flex justify-content-center align-items-center mx-auto rounded-circle h-70px w-70px fs-22 text-dark-gray bg-white box-shadow-bottom">
-                    <i class="fa fa-mouse"></i>
+                    <i class="fa fa-map-pin"></i>
                 </div>
             </a>
         </div>
@@ -168,3 +168,12 @@
     </section>
 @endsection
 
+
+@section('scripts')
+    <script>
+        $("#scroll-to-map").click(function() {
+            console.log("clicked");
+
+        });
+    </script>
+@endsection
