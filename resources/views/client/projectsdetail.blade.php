@@ -3,7 +3,7 @@
 @section('content')
 
     <section style="padding:0 !important">
-        <img src="{{ url('uploads/' . $project->image) }}" style="width:100%;height:100%;object-fit:contain;margin-top:10px">
+        <img src="{{ url('uploads/' . $project->image) }}" style="width:100%;height:100%;object-fit:contain">
 
     </section>
 
