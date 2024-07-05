@@ -124,6 +124,13 @@
 @stack('scripts')
 <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 
+<script>
+      console.log("sdsa");
+        $("#scroll-to-map").click(function() {
+            console.log("clicked");
+
+        });
+</script>
 
 <script>
     $('#scroll-to-map').on('click', function(event) {
