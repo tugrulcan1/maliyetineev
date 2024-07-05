@@ -291,7 +291,7 @@
             <div class="row">
                 <div class="col-12 text-center">
                     <ul class="portfolio-filter nav nav-tabs justify-content-center border-0 fw-500 pb-4">
-                        <li class="nav active"><a data-filter="*" href="#">All</a></li>
+                        <li class="nav active"><a data-filter="*" href="#">Tümü</a></li>
                         @foreach ($floorPlans as $index => $floorPlan)
                             <li class="nav">
                                 <a data-filter=".tab{{ $index }}" href="#tab{{ $index }}">{{ $floorPlan->floor_plan }}</a>
