@@ -6,8 +6,7 @@
         <div class="row justify-content-center mb-3">
             <div class="col-lg-6 text-center appear anime-child anime-complete"
                 data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateY&quot;: [30, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 600, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
-                <span class="fw-500 text-base-color text-uppercase d-inline-block" style="">Our testimonials</span>
-                <h2 class="alt-font fw-600 text-dark-gray ls-minus-2px" style="">Happy travellers</h2>
+                <h2 class="alt-font fw-600 text-dark-gray ls-minus-2px" style="">Müşteri Yorumları</h2>
             </div>
         </div>
         <div class="row row-cols-1 row-cols-xl-2 row-cols-lg-2 row-cols-md-2 justify-content-center mb-5 position-relative">
@@ -45,19 +44,6 @@
 
 
 
-        </div>
-        <div class="row justify-content-center mb-5 md-mb-12 sm-mb-0 appear anime-complete"
-            data-anime="{ &quot;translateY&quot;: [0, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1200, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }"
-            style="">
-            <div class="col-auto text-center last-paragraph-no-margin">
-                <div class="d-inline-block align-middle me-10px xs-m-10px"><img src="images/tripadvisor-icon.svg"
-                        class="w-50px" alt="" data-no-retina=""></div>
-                <div class="d-inline-block align-middle">
-                    <h4 class="text-dark-gray alt-font ls-minus-1px mb-0">3,583 exclusive visitor reviews on <a
-                            href="https://www.tripadvisor.in/" target="_blank"
-                            class="text-decoration-line-bottom fw-600 text-dark-gray">tripadvisor.</a></h4>
-                </div>
-            </div>
         </div>
     </div>
 @endsection
