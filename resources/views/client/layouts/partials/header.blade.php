@@ -506,9 +506,11 @@ display: none;
                     </div>
                     <div class=" digital-mgz col-auto text-end d-flex align-items-center justify-content-end d-lg-flex d-flex">
                         <a href="https://emlaksepette.com/magaza/maliyetine-ev/106" class="digitalMagaza" target="_blank" style="margin-right:10px;">Dijital Satış Ofisi</a>
-                        <a href="/iletisim" class="phone-link" style="display: flex; align-items: center; color:#000;margin-left:10px">
+                        <a href="https://emlaksepette.com/magaza/maliyetine-ev/106" class="digitalMagaza" target="_blank">Fiyat Listesi</a>
+
+                        {{-- <a href="/iletisim" class="phone-link" style="display: flex; align-items: center; color:#000;margin-left:10px">
                             <i class="fas fa-phone"></i>
-                        </a>
+                        </a> --}}
                     </div>
                 </div>
             </nav>
