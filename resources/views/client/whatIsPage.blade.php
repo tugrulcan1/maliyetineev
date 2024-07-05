@@ -40,8 +40,6 @@ padding-bottom: 30px;">
                             data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab"
                             aria-controls="v-pills-settings" aria-selected="false">Audience analysis</a><i
                             class="fa fa-arrow-right ms-auto"></i></li>
-                    <li><a href="demo-corporate-services-details.html">Business research</a><i
-                            class="fa fa-arrow-right ms-auto"></i></li>
                 </ul>
             </div>
             <div class="d-flex align-items-start">
