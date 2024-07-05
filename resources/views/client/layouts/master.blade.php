@@ -70,6 +70,9 @@
     padding: 10px 30px;
 }
 
+.right-fixed-btn.active-open{
+    right: -66px;
+}
 .right-fixed-btn:hover {
     background: #ef0003;
     border: 1px solid #ef0003;
@@ -203,6 +206,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     infoButton.addEventListener('click', function() {
         formContainer.classList.toggle('open');
+        infoButton.classList.toggle('active-open');
+
         if (formContainer.classList.contains('open')) {
             infoButtonText.innerHTML = "Formu Kapat";
         } else {
