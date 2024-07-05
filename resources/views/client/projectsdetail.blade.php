@@ -106,7 +106,7 @@
         </div>
     </section>
 
-
+{{--
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -125,58 +125,10 @@
                             </div>
                         </div>
                     @endforeach
-                    {{-- <div class="road-map-wrapper">
-              <div class="road-map-circle">
-                <span
-                  class="road-map-circle-text d-flex align-items-center justify-content-center"
-                  >text</span
-                >
-              </div>
-              <div class="road-map-card">
-                <h4 class="card-head">headding</h4>
-                <p class="card-text">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s
-                </p>
-              </div>
-            </div>
-             <div class="road-map-wrapper">
-              <div class="road-map-circle">
-                <span
-                  class="road-map-circle-text d-flex align-items-center justify-content-center"
-                  >text</span
-                >
-              </div>
-              <div class="road-map-card">
-                <h4 class="card-head">headding</h4>
-                <p class="card-text">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s
-                </p>
-              </div>
-            </div>
-            <div class="road-map-wrapper">
-              <div class="road-map-circle">
-                <span
-                  class="road-map-circle-text d-flex align-items-center justify-content-center"
-                  >text</span
-                >
-              </div>
-              <div class="road-map-card">
-                <h4 class="card-head">headding</h4>
-                <p class="card-text">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s
-                </p>
-              </div>
-            </div> --}}
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
 
 
     <button class="button helpModal" data-bs-toggle="modal" data-bs-target="#helpModal">
