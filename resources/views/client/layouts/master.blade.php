@@ -60,8 +60,8 @@
     z-index: 9;
     /* transform-origin: 100% 0 0; */
     /* margin-right: -1px; */
-    right: -66px;
-    bottom: 250px;
+    right: -76px;
+    bottom: 350px;
     transform: rotate(90deg);
     cursor: pointer;
     border-radius: 0px 0px 20px 20px;
