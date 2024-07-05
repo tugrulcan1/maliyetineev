@@ -69,6 +69,7 @@ Route::get('/admin', [AdminHomeController::class, "index"]);
 Route::get('/project/{slug}', [ClientProjectController::class, "index"])->name('project.detail');
 Route::get('/marka_projeleri/{id}', [ClientProjectController::class, "brandProjects"])->name('brand.projects');
 Route::get('/projelerimiz', [ClientProjectController::class, "projectList"])->name('client.projects.list');
+Route::get('/maliyetine-ev-nedir', [ClientProjectController::class, "projectList"])->name('client.projects.list');
 
 Route::get('/satisi-devam-eden-projelerimiz', [ClientProjectController::class, "satisi_devam_eden"])->name('client.satisi.devam.eden.list');
 Route::get('/satisi-tamamlanmis-projelerimiz', [ClientProjectController::class, "satisi_tamamlanmis"])->name('client.satisi.tamamlanmis.list');

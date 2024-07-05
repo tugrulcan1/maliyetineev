@@ -27,6 +27,11 @@ class ProjectController extends Controller
         return view('client.projects.brand_projects',compact('menu','brand'));
     }
 
+    public function whatIsPage() {
+        return view("client.whatIsPage");
+
+    }
+
     public function projectList(Request $request){
         $projects = Project::orderBy('id');
         if($request->input("search")){
@@ -55,7 +60,7 @@ class ProjectController extends Controller
         $satisiTamamlanmis  = Project::where('project_type','Satışı Tamamlanmış')->get();
         return view('client.projects',compact('menu','projects','housingTypes','housingStatus','cities','satisiDevamEden','satisiTamamlanmis'));
     }
-    
+
     public function projectHousingDetail($projectSlug,$housingOrder){
         $menu = Menu::getMenuItems();
         $project = Project::where('slug',$projectSlug)->firstOrFail();
@@ -69,7 +74,7 @@ class ProjectController extends Controller
         return view('client.projects.satisi_devam_eden',compact('satisiDevamEden'));
     }//End
 
-    
+
     public function satisi_devam_eden_projelerimiz(){
         $satisiDevamEden = Project::where('project_type','Satışı Devam Eden')->get();
         return view('client.projects.satisi_devam_eden_projelerimiz',compact('satisiDevamEden'));
