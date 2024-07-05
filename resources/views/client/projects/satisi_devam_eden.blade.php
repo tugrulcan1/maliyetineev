@@ -52,7 +52,8 @@
                         @if (count($satisiDevamEden) > 0)
                             @foreach ($satisiDevamEden as $project)
                                 <div class="col-md-3 mt-5">
-                                    <div class="interactive-banner-style-08">
+                                    <a href="{{ route('projelerimiz.show', $project->id) }}" target="_blank" class="interactive-banner-style-08">
+
                                         <figure class="m-0 hover-box overflow-hidden position-relative border-radius-6px"
                                             style="height:250px !important">
                                             <a href="{{ route('projelerimiz.show', $project->id) }}" target="_blank">
@@ -82,7 +83,7 @@
                                                 </div>
                                             </figcaption>
                                         </figure>
-                                    </div>
+                                    </a>
                                 </div>
                             @endforeach
                         @else
@@ -97,10 +98,9 @@
         </div>
     </section>
 
-    @endsection
+@endsection
 
-    @section("css")
-
+@section('css')
     <style>
         .custom-description {
             /* color: #ffffff !important; */
@@ -146,5 +146,4 @@
             z-index: 2;
         }
     </style>
-
-    @endsection
+@endsection
