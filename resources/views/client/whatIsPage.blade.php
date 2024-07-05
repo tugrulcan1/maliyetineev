@@ -2,8 +2,7 @@
 
 @section('content')
     <section class="page-title-big-typography bg-dark-gray ipad-top-space-margin" data-parallax-background-ratio="0.5"
-        style="background-image: url({{ asset('demo-conference-page-bg.jpg') }});        padding-top: 30px;
-padding-bottom: 30px;">
+        style="background-image: url({{ asset('demo-conference-page-bg.jpg') }}); padding-top: 30px; padding-bottom: 30px;">
         <div class="container">
             <div class="row align-items-center justify-content-center extra-small-screen">
                 <div class="col-lg-8 text-center page-title-extra-large">
@@ -20,40 +19,36 @@ padding-bottom: 30px;">
 
     <section>
         <div class="container">
-            <div class="bg-solitude-blue border-radius-6px p-45px lg-p-30px mb-25px" style="">
-                <span class="fs-19 alt-font text-dark-gray fw-700 mb-20px d-inline-block">Corporate services</span>
-                <ul class="p-0 m-0 list-style-02 fw-500">
-                    <li class="pb-10px mb-10px border-bottom border-color-transparent-dark"><a id="v-pills-home-tab"
-                            data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab"
-                            aria-controls="v-pills-home">Business planing</a><i
-                            class="fa fa-arrow-right ms-auto"></i></li>
-                    <li class="pb-10px mb-10px border-bottom border-color-transparent-dark text-dark-gray"><a
-                            id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button"
-                            role="tab" aria-controls="v-pills-profile" aria-selected="false"
-                            class="text-dark-gray text-dark-gray-hover">Market
-                            research</a><i class="fa fa-arrow-right ms-auto"></i></li>
-                    <li class="pb-10px mb-10px border-bottom border-color-transparent-dark"><a id="v-pills-messages-tab"
-                            data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab"
-                            aria-controls="v-pills-messages" aria-selected="false">Business consulting</a><i
-                            class="fa fa-arrow-right ms-auto"></i></li>
-                    <li class="pb-10px mb-10px border-bottom border-color-transparent-dark"><a id="v-pills-settings-tab"
-                            data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab"
-                            aria-controls="v-pills-settings" aria-selected="false">Audience analysis</a><i
-                            class="fa fa-arrow-right ms-auto"></i></li>
-                </ul>
-            </div>
-            <div class="d-flex align-items-start">
-                <div class="tab-content" id="v-pills-tabContent">
-                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
-                        aria-labelledby="v-pills-home-tab">...
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="bg-solitude-blue border-radius-6px p-45px lg-p-30px mb-25px">
+                        <span class="fs-19 alt-font text-dark-gray fw-700 mb-20px d-inline-block">Corporate services</span>
+                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <a class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Business planning</a>
+                            <a class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Market research</a>
+                            <a class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Business consulting</a>
+                            <a class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Audience analysis</a>
+                        </div>
                     </div>
-                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-                      asd</div>
-                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-               desc
-                    </div>
-                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
-                   fgtg
+                </div>
+                <div class="col-lg-9">
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                            <h3>Business planning</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor quis nisl tincidunt bibendum eget vel turpis.</p>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                            <h3>Market research</h3>
+                            <p>Suspendisse potenti. Sed viverra, orci ac porta luctus, turpis nisi laoreet odio, eget posuere sapien felis et erat.</p>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                            <h3>Business consulting</h3>
+                            <p>Morbi lacinia, nunc at placerat consequat, odio mauris vestibulum magna, eget lacinia arcu arcu ac est.</p>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                            <h3>Audience analysis</h3>
+                            <p>Praesent blandit, libero id faucibus fermentum, justo arcu interdum dolor, nec pharetra mi nunc at erat.</p>
+                        </div>
                     </div>
                 </div>
             </div>
