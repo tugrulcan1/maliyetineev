@@ -78,7 +78,7 @@
                                                 </div>
                                                 <div
                                                     class="position-absolute left-0px top-0px w-100 h-100 bg-gradient-gray-light-dark-transparent z-index-minus-1 opacity-9"
-                                                    style="cursor: pointer">
+                                                    style="cursor: pointer !important">
                                                 </div>
                                             </figcaption>
                                         </figure>
