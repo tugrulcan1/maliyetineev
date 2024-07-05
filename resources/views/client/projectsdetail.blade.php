@@ -328,7 +328,7 @@
                                                         data-group="portfolio-items"
                                                         class="d-flex flex-column justify-content-center text-dark-gray text-dark-gray-hover rounded-circle bg-white w-60px h-60px rounded-circle box-shadow-large move-bottom-top"
                                                         title="{{ $floorPlan->floor_plan }}">
-                                                        <i class="fa fa-search fw-600" aria-hidden="true"></i>
+                                                        <i class="fa fa-search" aria-hidden="true"></i>
                                                     </a>
                                                 </div>
                                             </div>
