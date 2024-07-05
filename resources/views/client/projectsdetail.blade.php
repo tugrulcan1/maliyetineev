@@ -286,48 +286,61 @@
     @endif
 
     @if (!empty($floorPlans) && count($floorPlans) > 0)
-    <section class="pt-0 mt-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <ul class="portfolio-filter nav nav-tabs justify-content-center border-0 fw-500 pb-4">
-                        <li class="nav active"><a data-filter="*" href="#">Tümü</a></li>
-                        @foreach ($floorPlans as $index => $floorPlan)
-                            <li class="nav">
-                                <a data-filter=".tab{{ $index }}" href="#tab{{ $index }}">{{ $floorPlan->floor_plan }}</a>
-                            </li>
-                        @endforeach
-                    </ul>
+        <section class="pt-0 mt-5">
+            <div class="container">
+                <h3
+                    style="    text-align: center;
+                        font-weight: 700;
+                        color: #0f75bc;
+                        font-size: 29px;text-transform: uppercase">
+                    {{ $project->project_title }} Kat Planları</h3>
+                <div class="row mt-3">
+                    <div class="col-12 text-center">
+                        <ul class="portfolio-filter nav nav-tabs justify-content-center border-0 fw-500 pb-4">
+                            <li class="nav active"><a data-filter="*" href="#">Tümü</a></li>
+                            @foreach ($floorPlans as $index => $floorPlan)
+                                <li class="nav">
+                                    <a data-filter=".tab{{ $index }}"
+                                        href="#tab{{ $index }}">{{ $floorPlan->floor_plan }}</a>
+                                </li>
+                            @endforeach
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-12 filter-content">
-                    <ul class="portfolio-simple portfolio-wrapper grid-loading grid grid-3col xxl-grid-3col xl-grid-3col lg-grid-3col md-grid-2col sm-grid-2col xs-grid-1col gutter-extra-large text-center">
-                        <li class="grid-sizer"></li>
-                        @foreach ($floorPlans as $index => $floorPlan)
-                            <li class="grid-item tab{{ $index }} transition-inner-all">
-                                <div class="portfolio-box">
-                                    <div class="portfolio-image bg-dark-gray border-radius-6px">
-                                        <img src="{{ asset('kat_plani/' . $floorPlan->image_path) }}" alt="{{ $floorPlan->floor_plan }}" />
-                                        <div class="portfolio-hover d-flex justify-content-center flex-column p-35px">
-                                            <div class="portfolio-icon d-flex flex-row justify-content-center align-items-center">
-                                                <a href="{{ asset('kat_plani/' . $floorPlan->image_path) }}" data-group="portfolio-items" class="d-flex flex-column justify-content-center text-dark-gray text-dark-gray-hover rounded-circle bg-white w-60px h-60px rounded-circle box-shadow-large move-bottom-top" title="{{ $floorPlan->floor_plan }}">
-                                                    <i class="fa fa-search fw-600" aria-hidden="true"></i>
-                                                </a>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 filter-content">
+                        <ul
+                            class="portfolio-simple portfolio-wrapper grid-loading grid grid-3col xxl-grid-3col xl-grid-3col lg-grid-3col md-grid-2col sm-grid-2col xs-grid-1col gutter-extra-large text-center">
+                            <li class="grid-sizer"></li>
+                            @foreach ($floorPlans as $index => $floorPlan)
+                                <li class="grid-item tab{{ $index }} transition-inner-all">
+                                    <div class="portfolio-box">
+                                        <div class="portfolio-image bg-dark-gray border-radius-6px">
+                                            <img src="{{ asset('kat_plani/' . $floorPlan->image_path) }}"
+                                                alt="{{ $floorPlan->floor_plan }}" />
+                                            <div class="portfolio-hover d-flex justify-content-center flex-column p-35px">
+                                                <div
+                                                    class="portfolio-icon d-flex flex-row justify-content-center align-items-center">
+                                                    <a href="{{ asset('kat_plani/' . $floorPlan->image_path) }}"
+                                                        data-group="portfolio-items"
+                                                        class="d-flex flex-column justify-content-center text-dark-gray text-dark-gray-hover rounded-circle bg-white w-60px h-60px rounded-circle box-shadow-large move-bottom-top"
+                                                        title="{{ $floorPlan->floor_plan }}">
+                                                        <i class="fa fa-search fw-600" aria-hidden="true"></i>
+                                                    </a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </li>
-                        @endforeach
-                    </ul>
+                                </li>
+                            @endforeach
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-@endif
+        </section>
+    @endif
 
 
     {{-- @if (!empty($floorPlans) && count($floorPlans) > 0)
@@ -553,9 +566,11 @@
                 display: block;
             }
         }
+
         .portfolio-filter li {
-    padding: 0 35px;
-}
+            padding: 0 35px;
+        }
+
         .helpModal {
             width: 250px;
             height: 40px;
