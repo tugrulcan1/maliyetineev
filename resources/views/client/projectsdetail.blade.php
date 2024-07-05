@@ -18,7 +18,7 @@
                 @foreach (json_decode($project->details) as $key => $detail)
                     <div class="col icon-with-text-style-04 transition-inner-all mb-30px">
                         <div
-                            class="feature-box bg-ghost-white text-start justify-content-start h-100 border-radius-6px p-16 lg-p-10">
+                            class="feature-box bg-ghost-white text-start justify-content-start h-100 border-radius-6px">
 
                             <div class="feature-box-content last-paragraph-no-margin">
                                 <span
