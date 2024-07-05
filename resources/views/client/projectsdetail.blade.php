@@ -376,7 +376,7 @@
                 </div>
             </div> --}}
 
-    <section>
+    <section class="p-0 m-0">
         <!-- Konum -->
         <div class="container">
             <h3
