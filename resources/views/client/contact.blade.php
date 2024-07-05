@@ -17,7 +17,8 @@
 
     <section class="position-relative z-index-1 pb-0">
         <div class="d-none d-md-flex mb-1">
-            <div class="section-link absolute-middle-center top-0 scroll-to-map">
+            <div class="section-link absolute-middle-center top-0 scroll-to-map"
+            style="cursor: pointer">
                 <div
                     class="d-flex justify-content-center align-items-center mx-auto rounded-circle h-70px w-70px fs-22 text-dark-gray bg-white box-shadow-bottom">
                     <i class="fa fa-map-pin"></i>
