@@ -284,34 +284,76 @@
             </div>
         </div>
     @endif
+
     @if (!empty($floorPlans) && count($floorPlans) > 0)
-    <div class="section mt-5">
+    <section class="pt-0">
         <div class="container">
-            <h3 style="text-align: center; font-weight: 700; color: #0f75bc; font-size: 29px; text-transform: uppercase;">
-                {{ $project->project_title }} Kat Planları
-            </h3>
-            <div class="tab">
-                @foreach ($floorPlans as $index => $floorPlan)
-                    <button class="tablinks" data-tab="tab{{ $index }}">{{ $floorPlan->floor_plan }}</button>
-                @endforeach
-            </div>
-
-            @foreach ($floorPlans as $index => $floorPlan)
-                <div id="tab{{ $index }}" class="tabcontent">
-                    <img src="{{ asset('kat_plani/' . $floorPlan->image_path) }}" alt="{{ $floorPlan->floor_plan }}"
-                         class="thumbnail" data-large="{{ asset('kat_plani/' . $floorPlan->image_path) }}">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <ul class="portfolio-filter nav nav-tabs justify-content-center border-0 fw-500 pb-4">
+                        <li class="nav active"><a data-filter="*" href="#">All</a></li>
+                        @foreach ($floorPlans as $index => $floorPlan)
+                            <li class="nav">
+                                <a data-filter=".tab{{ $index }}" href="#tab{{ $index }}">{{ $floorPlan->floor_plan }}</a>
+                            </li>
+                        @endforeach
+                    </ul>
                 </div>
-            @endforeach
+            </div>
         </div>
-    </div>
-
-    <!-- Modal for large image -->
-    <div id="modal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="modal-image">
-    </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 filter-content">
+                    <ul class="portfolio-simple portfolio-wrapper grid-loading grid grid-3col xxl-grid-3col xl-grid-3col lg-grid-3col md-grid-2col sm-grid-2col xs-grid-1col gutter-extra-large text-center">
+                        <li class="grid-sizer"></li>
+                        @foreach ($floorPlans as $index => $floorPlan)
+                            <li class="grid-item tab{{ $index }} transition-inner-all">
+                                <div class="portfolio-box">
+                                    <div class="portfolio-image bg-dark-gray border-radius-6px">
+                                        <img src="{{ asset('kat_plani/' . $floorPlan->image_path) }}" alt="{{ $floorPlan->floor_plan }}" />
+                                        <div class="portfolio-hover d-flex justify-content-center flex-column p-35px">
+                                            <div class="portfolio-icon d-flex flex-row justify-content-center align-items-center">
+                                                <a href="{{ asset('kat_plani/' . $floorPlan->image_path) }}" data-group="portfolio-items" class="d-flex flex-column justify-content-center text-dark-gray text-dark-gray-hover rounded-circle bg-white w-60px h-60px rounded-circle box-shadow-large move-bottom-top" title="{{ $floorPlan->floor_plan }}">
+                                                    <i class="feather icon-feather-search fw-600" aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        @endforeach
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 @endif
 
+
+    {{-- @if (!empty($floorPlans) && count($floorPlans) > 0)
+        <div class="section mt-5">
+            <div class="container ">
+                <h3
+                    style="    text-align: center;
+                                font-weight: 700;
+                                color: #0f75bc;
+                                font-size: 29px;text-transform: uppercase">
+                    {{ $project->project_title }} Kat Planları</h3>
+                <div class="tab">
+                    @foreach ($floorPlans as $index => $floorPlan)
+                        <button class="tablinks" data-tab="tab{{ $index }}">{{ $floorPlan->floor_plan }}</button>
+                    @endforeach
+                </div>
+
+                @foreach ($floorPlans as $index => $floorPlan)
+                    <div id="tab{{ $index }}" class="tabcontent">
+                        <img src="{{ asset('kat_plani/' . $floorPlan->image_path) }}" alt="{{ $floorPlan->floor_plan }}"
+                            style="width: 100%; height: auto;">
+                    </div>
+                @endforeach
+            </div>
+        </div>
+    @endif --}}
 
     {{-- <div class="container mt-4">
                 <div class="row">
@@ -898,73 +940,5 @@
             height: 100%;
             object-fit: cover;
         }
-
-        .tabcontent {
-    display: none;
-    text-align: center;
-}
-
-.tablinks {
-    margin-right: 10px;
-    padding: 10px 20px;
-    cursor: pointer;
-    background-color: #f1f1f1;
-    border: none;
-    outline: none;
-    transition: background-color 0.3s ease;
-}
-
-.tablinks:hover {
-    background-color: #ddd;
-}
-
-.thumbnail {
-    width: 100px;
-    height: auto;
-    cursor: pointer;
-    margin: 10px;
-    transition: transform 0.3s ease;
-}
-
-.thumbnail:hover {
-    transform: scale(1.1);
-}
-
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-.modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-}
-
-.close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #fff;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-}
-
     </style>
 @endsection
