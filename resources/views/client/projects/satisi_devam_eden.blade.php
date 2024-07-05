@@ -52,10 +52,10 @@
                         @if (count($satisiDevamEden) > 0)
                             @foreach ($satisiDevamEden as $project)
                                 <div class="col-md-3 mt-5">
-                                    <a href="{{ route('projelerimiz.show', $project->id) }}" target="_blank" class="interactive-banner-style-08">
-
+                                    <div class="interactive-banner-style-08">
                                         <figure class="m-0 hover-box overflow-hidden position-relative border-radius-6px"
-                                            style="height:250px !important">
+                                        style="height:250px !important"
+                                        data-url="{{ route('projelerimiz.show', $project->id) }}">
                                             <a href="{{ route('projelerimiz.show', $project->id) }}" target="_blank">
                                                 <img src="{{ asset('projects_cover_image/' . $project->cover_image) }}"
                                                     alt="Resim bulunamadı" style="height: 400px; object-fit: cover;" />
@@ -83,7 +83,7 @@
                                                 </div>
                                             </figcaption>
                                         </figure>
-                                    </a>
+                                    </div>
                                 </div>
                             @endforeach
                         @else

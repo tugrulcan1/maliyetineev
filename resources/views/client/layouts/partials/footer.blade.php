@@ -129,6 +129,19 @@
             scrollTop: $('#map-section').offset().top
         }, 800);
     });
+    document.addEventListener('DOMContentLoaded', function() {
+    var figures = document.querySelectorAll('.interactive-banner-style-08 figure');
+
+    figures.forEach(function(figure) {
+        figure.addEventListener('click', function() {
+            var url = figure.getAttribute('data-url');
+            if (url) {
+                window.location.href = url;
+            }
+        });
+    });
+});
+
 </script>
 <script>
     var successMessage = "{{ session('success') }}";
