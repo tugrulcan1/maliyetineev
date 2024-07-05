@@ -8,135 +8,105 @@
     </section>
 
     <section class="position-relative pt-4 half-section overflow-hidden">
-        <img src="images/demo-data-analysis-bg-06.png" class="position-absolute top-0px left-0px" data-bottom-top="transform: translateY(150px)" data-top-bottom="transform: translateY(-150px)" alt />
-        <img src="images/demo-data-analysis-bg-07.png" class="position-absolute top-10 right-0px" data-bottom-top="transform: translateY(150px)" data-top-bottom="transform: translateY(-150px)" alt />
+        <img src="{{ asset('images/demo-data-analysis-bg-06.png') }}" class="position-absolute top-0px left-0px"
+            data-bottom-top="transform: translateY(150px)" data-top-bottom="transform: translateY(-150px)" alt />
+        <img src="{{ asset('images/demo-data-analysis-bg-07.png') }}" class="position-absolute top-10 right-0px"
+            data-bottom-top="transform: translateY(150px)" data-top-bottom="transform: translateY(-150px)" alt />
         <div class="container position-relative z-index-1">
-        <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 justify-content-center mb-3" data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateX&quot;: [30, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 600, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
-
-        <div class="col icon-with-text-style-04 transition-inner-all mb-30px">
-        <div class="feature-box bg-ghost-white text-start justify-content-start h-100 border-radius-6px p-16 lg-p-10">
-        <div class="feature-box-icon mb-25px">
-        <img src="images/demo-data-analysis-icon-01.png" alt>
-        </div>
-        <div class="feature-box-content last-paragraph-no-margin">
-        <span class="d-inline-block text-dark-gray fw-600 fs-20 alt-font mb-5px">Real-time segmentation</span>
-        <p>This model is idea-driven as it involves daily engagement activities with clients.</p>
-        </div>
-        </div>
-        </div>
-
-
-        <div class="col icon-with-text-style-04 transition-inner-all mb-30px">
-        <div class="feature-box bg-cosmic-latte-white text-start justify-content-start h-100 border-radius-6px p-16 lg-p-10">
-        <div class="feature-box-icon mb-25px">
-        <img src="images/demo-data-analysis-icon-02.png" alt>
-        </div>
-        <div class="feature-box-content last-paragraph-no-margin">
-        <span class="d-inline-block text-dark-gray fw-600 fs-20 alt-font mb-5px">Exploratory data analysis</span>
-        <p>This model is idea-driven as it involves daily engagement activities with clients.</p>
-        </div>
-        <div class="bg-white fw-600 text-dark-gray text-uppercase ps-20px pe-20px fs-12 border-radius-100px d-inline-block mb-30px position-absolute right-25px top-25px box-shadow-medium-bottom">Popular</div>
-        </div>
-        </div>
+            <div class="row row-cols-1 row-cols-lg-4 row-cols-md-2 justify-content-center mb-3"
+                data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateX&quot;: [30, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 600, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
+                @foreach (json_decode($project->details) as $key => $detail)
+                    <div class="col icon-with-text-style-04 transition-inner-all mb-30px">
+                        <div
+                            class="feature-box bg-ghost-white text-start justify-content-start h-100 border-radius-6px p-16 lg-p-10">
+                            <div class="feature-box-icon mb-25px">
+                                <img src="{{ asset('images/demo-data-analysis-icon-01.png') }}" alt>
+                            </div>
+                            <div class="feature-box-content last-paragraph-no-margin">
+                                <span
+                                    class="d-inline-block text-dark-gray fw-600 fs-20 alt-font mb-5px">{{ $detail->title }}</span>
+                                <p> {!! \Illuminate\Support\Str::limit(strip_tags($detail->description), 250, '...') !!}</p>
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
 
 
-        <div class="col icon-with-text-style-04 transition-inner-all mb-30px">
-        <div class="feature-box bg-chablis-red text-start justify-content-start h-100 border-radius-6px p-16 lg-p-10">
-        <div class="feature-box-icon mb-25px">
-        <img src="images/demo-data-analysis-icon-03.png" alt>
-        </div>
-        <div class="feature-box-content last-paragraph-no-margin">
-        <span class="d-inline-block text-dark-gray fw-600 fs-20 alt-font mb-5px">Business intelligence</span>
-        <p>This model is idea-driven as it involves daily engagement activities with clients.</p>
-        </div>
-        </div>
-        </div>
-
-
-        <div class="col icon-with-text-style-04 transition-inner-all mb-30px">
-        <div class="feature-box bg-linen-white text-start justify-content-start h-100 border-radius-6px p-16 lg-p-10">
-        <div class="feature-box-icon mb-25px">
-        <img src="images/demo-data-analysis-icon-05.png" alt>
-        </div>
-        <div class="feature-box-content last-paragraph-no-margin">
-        <span class="d-inline-block text-dark-gray fw-600 fs-20 alt-font mb-5px">Data visualization</span>
-        <p>This model is idea-driven as it involves daily engagement activities with clients.</p>
-        </div>
-        </div>
-        </div>
-
-
-        <div class="col icon-with-text-style-04 transition-inner-all mb-30px">
-        <div class="feature-box bg-lavender-violet text-start justify-content-start h-100 border-radius-6px p-16 lg-p-10">
-        <div class="feature-box-icon mb-25px">
-        <img src="images/demo-data-analysis-icon-04.png" alt>
-        </div>
-        <div class="feature-box-content last-paragraph-no-margin">
-        <span class="d-inline-block text-dark-gray fw-600 fs-20 alt-font mb-5px">Prescriptive analytics</span>
-        <p>This model is idea-driven as it involves daily engagement activities with clients.</p>
-        </div>
-        </div>
-        </div>
-
-
-        <div class="col icon-with-text-style-04 transition-inner-all mb-30px">
-        <div class="feature-box bg-lavender-violet-light text-start justify-content-start h-100 border-radius-6px p-16 lg-p-10">
-        <div class="feature-box-icon mb-25px">
-        <img src="images/demo-data-analysis-icon-06.png" alt>
-        </div>
-        <div class="feature-box-content last-paragraph-no-margin">
-        <span class="d-inline-block text-dark-gray fw-600 fs-20 alt-font mb-5px">Predictive analytics</span>
-        <p>This model is idea-driven as it involves daily engagement activities with clients.</p>
-        </div>
-        </div>
-        </div>
-
-        </div>
+            </div>
         </div>
         <div class="container-fluid">
-        <div class="row position-relative">
-        <div class="col swiper text-cente" data-slider-options="{ &quot;slidesPerView&quot;: &quot;auto&quot;, &quot;spaceBetween&quot;:0, &quot;centeredSlides&quot;: true, &quot;speed&quot;: 10000, &quot;loop&quot;: true, &quot;pagination&quot;: { &quot;el&quot;: &quot;.slider-four-slide-pagination-2&quot;, &quot;clickable&quot;: false }, &quot;allowTouchMove&quot;: false, &quot;autoplay&quot;: { &quot;delay&quot;:1, &quot;disableOnInteraction&quot;: false }, &quot;navigation&quot;: { &quot;nextEl&quot;: &quot;.slider-four-slide-next-2&quot;, &quot;prevEl&quot;: &quot;.slider-four-slide-prev-2&quot; }, &quot;keyboard&quot;: { &quot;enabled&quot;: true, &quot;onlyInViewport&quot;: true }, &quot;effect&quot;: &quot;slide&quot; }">
-        <div class="swiper-wrapper swiper-width-auto pb-15px marquee-slide">
+            <div class="row position-relative">
+                <div class="col swiper text-cente"
+                    data-slider-options="{ &quot;slidesPerView&quot;: &quot;auto&quot;, &quot;spaceBetween&quot;:0, &quot;centeredSlides&quot;: true, &quot;speed&quot;: 10000, &quot;loop&quot;: true, &quot;pagination&quot;: { &quot;el&quot;: &quot;.slider-four-slide-pagination-2&quot;, &quot;clickable&quot;: false }, &quot;allowTouchMove&quot;: false, &quot;autoplay&quot;: { &quot;delay&quot;:1, &quot;disableOnInteraction&quot;: false }, &quot;navigation&quot;: { &quot;nextEl&quot;: &quot;.slider-four-slide-next-2&quot;, &quot;prevEl&quot;: &quot;.slider-four-slide-prev-2&quot; }, &quot;keyboard&quot;: { &quot;enabled&quot;: true, &quot;onlyInViewport&quot;: true }, &quot;effect&quot;: &quot;slide&quot; }">
+                    <div class="swiper-wrapper swiper-width-auto pb-15px marquee-slide">
 
-        <div class="swiper-slide">
-        <div class="fs-120 lh-120 alt-font text-outline text-outline-color-extra-medium-gray fw-700"><span class="w-20px h-20px border border-radius-100 border-color-extra-medium-gray d-inline-block align-middle ms-50px me-50px sm-ms-30px sm-me-30px"></span>predictive analytics</div>
+                        <div class="swiper-slide">
+                            <div class="fs-120 lh-120 alt-font text-outline text-outline-color-extra-medium-gray fw-700">
+                                <span
+                                    class="w-20px h-20px border border-radius-100 border-color-extra-medium-gray d-inline-block align-middle ms-50px me-50px sm-ms-30px sm-me-30px"></span>predictive
+                                {{ $project->project_title }}
+                            </div>
+                        </div>
+
+
+                        <div class="swiper-slide">
+                            <div class="fs-120 lh-120 alt-font text-outline text-outline-color-extra-medium-gray fw-700">
+                                <span
+                                    class="w-20px h-20px border border-radius-100 border-color-extra-medium-gray d-inline-block align-middle ms-50px me-50px sm-ms-30px sm-me-30px"></span>data
+                                engineers
+                            </div>
+                        </div>
+
+
+                        <div class="swiper-slide">
+                            <div class="fs-120 lh-120 alt-font text-outline text-outline-color-extra-medium-gray fw-700">
+                                <span
+                                    class="w-20px h-20px border border-radius-100 border-color-extra-medium-gray d-inline-block align-middle ms-50px me-50px sm-ms-30px sm-me-30px"></span>statistical
+                                modeling
+                            </div>
+                        </div>
+
+
+                        <div class="swiper-slide">
+                            <div class="fs-120 lh-120 alt-font text-outline text-outline-color-extra-medium-gray fw-700">
+                                <span
+                                    class="w-20px h-20px border border-radius-100 border-color-extra-medium-gray d-inline-block align-middle ms-50px me-50px sm-ms-30px sm-me-30px"></span>predictive
+                                analytics
+                            </div>
+                        </div>
+
+
+                        <div class="swiper-slide">
+                            <div class="fs-120 lh-120 alt-font text-outline text-outline-color-extra-medium-gray fw-700">
+                                <span
+                                    class="w-20px h-20px border border-radius-100 border-color-extra-medium-gray d-inline-block align-middle ms-50px me-50px sm-ms-30px sm-me-30px"></span>data
+                                engineers
+                            </div>
+                        </div>
+
+
+                        <div class="swiper-slide">
+                            <div class="fs-120 lh-120 alt-font text-outline text-outline-color-extra-medium-gray fw-700">
+                                <span
+                                    class="w-20px h-20px border border-radius-100 border-color-extra-medium-gray d-inline-block align-middle ms-50px me-50px sm-ms-30px sm-me-30px"></span>statistical
+                                modeling
+                            </div>
+                        </div>
+
+
+                        <div class="swiper-slide">
+                            <div class="fs-120 lh-120 alt-font text-outline text-outline-color-extra-medium-gray fw-700">
+                                <span
+                                    class="w-20px h-20px border border-radius-100 border-color-extra-medium-gray d-inline-block align-middle ms-50px me-50px sm-ms-30px sm-me-30px"></span>data
+                                engineers
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </div>
-
-
-        <div class="swiper-slide">
-        <div class="fs-120 lh-120 alt-font text-outline text-outline-color-extra-medium-gray fw-700"><span class="w-20px h-20px border border-radius-100 border-color-extra-medium-gray d-inline-block align-middle ms-50px me-50px sm-ms-30px sm-me-30px"></span>data engineers</div>
-        </div>
-
-
-        <div class="swiper-slide">
-        <div class="fs-120 lh-120 alt-font text-outline text-outline-color-extra-medium-gray fw-700"><span class="w-20px h-20px border border-radius-100 border-color-extra-medium-gray d-inline-block align-middle ms-50px me-50px sm-ms-30px sm-me-30px"></span>statistical modeling</div>
-        </div>
-
-
-        <div class="swiper-slide">
-        <div class="fs-120 lh-120 alt-font text-outline text-outline-color-extra-medium-gray fw-700"><span class="w-20px h-20px border border-radius-100 border-color-extra-medium-gray d-inline-block align-middle ms-50px me-50px sm-ms-30px sm-me-30px"></span>predictive analytics</div>
-        </div>
-
-
-        <div class="swiper-slide">
-        <div class="fs-120 lh-120 alt-font text-outline text-outline-color-extra-medium-gray fw-700"><span class="w-20px h-20px border border-radius-100 border-color-extra-medium-gray d-inline-block align-middle ms-50px me-50px sm-ms-30px sm-me-30px"></span>data engineers</div>
-        </div>
-
-
-        <div class="swiper-slide">
-        <div class="fs-120 lh-120 alt-font text-outline text-outline-color-extra-medium-gray fw-700"><span class="w-20px h-20px border border-radius-100 border-color-extra-medium-gray d-inline-block align-middle ms-50px me-50px sm-ms-30px sm-me-30px"></span>statistical modeling</div>
-        </div>
-
-
-        <div class="swiper-slide">
-        <div class="fs-120 lh-120 alt-font text-outline text-outline-color-extra-medium-gray fw-700"><span class="w-20px h-20px border border-radius-100 border-color-extra-medium-gray d-inline-block align-middle ms-50px me-50px sm-ms-30px sm-me-30px"></span>data engineers</div>
-        </div>
-
-        </div>
-        </div>
-        </div>
-        </div>
-        </section>
+    </section>
 
 
     <div class="container">
