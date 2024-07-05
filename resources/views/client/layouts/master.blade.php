@@ -60,7 +60,7 @@
     z-index: 9;
     /* transform-origin: 100% 0 0; */
     /* margin-right: -1px; */
-    right: -66px;
+    right: -76px;
     bottom: 350px;
     transform: rotate(90deg);
     cursor: pointer;
