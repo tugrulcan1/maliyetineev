@@ -54,7 +54,7 @@
                                 <div class="col-md-3 mt-5">
                                     <div class="interactive-banner-style-08">
                                         <figure class="m-0 hover-box overflow-hidden position-relative border-radius-6px"
-                                        style="height:250px !important"
+                                        style="height:250px !important;cursor: pointer;"
                                         data-url="{{ route('projelerimiz.show', $project->id) }}">
                                             <a href="{{ route('projelerimiz.show', $project->id) }}" target="_blank">
                                                 <img src="{{ asset('projects_cover_image/' . $project->cover_image) }}"
