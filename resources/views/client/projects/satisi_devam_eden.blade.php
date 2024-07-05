@@ -77,7 +77,8 @@
                                                         </a> --}}
                                                 </div>
                                                 <div
-                                                    class="position-absolute left-0px top-0px w-100 h-100 bg-gradient-gray-light-dark-transparent z-index-minus-1 opacity-9">
+                                                    class="position-absolute left-0px top-0px w-100 h-100 bg-gradient-gray-light-dark-transparent z-index-minus-1 opacity-9"
+                                                    style="cursor: pointer">
                                                 </div>
                                             </figcaption>
                                         </figure>
