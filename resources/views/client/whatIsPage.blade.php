@@ -39,7 +39,7 @@
                     <div class="tab-content" id="v-pills-tabContent">
                         <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
                             aria-labelledby="v-pills-home-tab">
-                            <h4>Herkes Maliyetine Ev Sahibi Olsun Diye</h4>
+                            <strong>Herkes Maliyetine Ev Sahibi Olsun Diye</strong>
                             <p>
 
                             <ol>
@@ -86,7 +86,7 @@
                         </div>
                         <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
                             aria-labelledby="v-pills-profile-tab">
-                            <h4>Değerli Maliyetine Ev’den Müşterilerine Mektup</h4>
+                            <strong>Değerli Maliyetine Ev’den Müşterilerine Mektup</strong>
                             <p> <span style="color:#0d6efd"> Değerli Maliyetine Ev sahibi adayımız,</span> 2012-2023 yılları arasında ülkemizde yapılan AR-GE
                                 çalışmaları göstermektedir ki; hazır konut fiyatlarının sürekli artması ve bankaların kredi
                                 verme politikalarındaki sıkılaşmalar, özellikle yatırımcıları ve ‘ilk evini’ almak
@@ -170,8 +170,9 @@
                         </div>
                         <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
                             aria-labelledby="v-pills-settings-tab">
+                            <strong> %100 GÜVENDE OLMAK DEMEK, PARANIZIN GÜVENDE OLMASI DEMEKTİR</strong>
+
                             <p>
-                            <h4> %100 GÜVENDE OLMAK DEMEK, PARANIZIN GÜVENDE OLMASI DEMEKTİR</h4>
                             <ul>
                                 <li>
                                     <strong>Ev sahibi olmaya karar verdiğinizde, önce evinizi hangi projemizden seçmek
