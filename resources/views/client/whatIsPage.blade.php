@@ -20,7 +20,7 @@
     <section>
         <div class="container">
             <div class="row">
-                <div class="col-lg-3">
+                <div class="col-lg-4">
                     <div class="bg-solitude-blue border-radius-6px p-45px lg-p-30px mb-25px">
                         {{-- <span class="fs-19 alt-font text-dark-gray fw-700 mb-20px d-inline-block">Maliyetine Ev</span> --}}
                         <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
@@ -31,11 +31,11 @@
                             <a class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" href="#v-pills-messages"
                                 role="tab" aria-controls="v-pills-messages" aria-selected="false">Neden Maliyetine Ev</a>
                             <a class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" href="#v-pills-settings"
-                                role="tab" aria-controls="v-pills-settings" aria-selected="false">EV ALIRKEN, %100 GÜVENDE OLMANIN YOLU</a>
+                                role="tab" aria-controls="v-pills-settings" aria-selected="false">%100 Güvende Olmanın Yolu</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-9">
+                <div class="col-lg-8">
                     <div class="tab-content" id="v-pills-tabContent">
                         <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
                             aria-labelledby="v-pills-home-tab">
@@ -170,7 +170,7 @@
                         <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
                             aria-labelledby="v-pills-settings-tab">
                             <p>
-                            <h1> %100 GÜVENDE OLMAK DEMEK, PARANIZIN GÜVENDE OLMASI DEMEKTİR</h1>
+                            <h4> %100 GÜVENDE OLMAK DEMEK, PARANIZIN GÜVENDE OLMASI DEMEKTİR</h4>
                             <ul>
                                 <li>
                                     <strong>Ev sahibi olmaya karar verdiğinizde, önce evinizi hangi projemizden seçmek
