@@ -20,7 +20,7 @@
     <section>
         <div class="container">
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-3">
                     <div class="bg-solitude-blue border-radius-6px p-45px lg-p-30px mb-25px">
                         {{-- <span class="fs-19 alt-font text-dark-gray fw-700 mb-20px d-inline-block">Maliyetine Ev</span> --}}
                         <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
@@ -35,7 +35,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-8">
+                <div class="col-lg-9">
                     <div class="tab-content" id="v-pills-tabContent">
                         <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
                             aria-labelledby="v-pills-home-tab">
