@@ -54,10 +54,10 @@
                                 <div class="col-md-3 mt-5" style="cursor: pointer;">
                                     <div class="interactive-banner-style-08">
                                         <figure class="m-0 hover-box overflow-hidden position-relative border-radius-6px"
-                                        style="height:250px !important;cursor: pointer;"
-                                        data-url="{{ route('projelerimiz.show', $project->id) }}">
-                                                <img src="{{ asset('projects_cover_image/' . $project->cover_image) }}"
-                                                    alt="Resim bulunamadı" style="height: 400px; object-fit: cover;" />
+                                            style="height:250px !important;cursor: pointer;"
+                                            data-url="{{ route('projelerimiz.show', $project->id) }}">
+                                            <img src="{{ asset('projects_cover_image/' . $project->cover_image) }}"
+                                                alt="Resim bulunamadı" style="height: 400px; object-fit: cover;" />
 
                                             <figcaption
                                                 class="d-flex flex-column align-items-start justify-content-center position-absolute left-0px top-0px w-100 h-100 z-index-1 p-14 lg-p-12">
@@ -76,8 +76,7 @@
                                                             <i class="bi bi-arrow-right-short absolute-middle-center icon-very-medium lh-0px text-dark-gray"></i>
                                                         </a> --}}
                                                 </div>
-                                                <div
-                                                    class="position-absolute left-0px top-0px w-100 h-100 bg-gradient-gray-light-dark-transparent z-index-minus-1 opacity-9"
+                                                <div class="position-absolute left-0px top-0px w-100 h-100 bg-gradient-gray-light-dark-transparent z-index-minus-1 opacity-9"
                                                     style="cursor: pointer !important">
                                                 </div>
                                             </figcaption>
