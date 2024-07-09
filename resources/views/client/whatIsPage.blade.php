@@ -21,7 +21,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-3">
-                    <div class="bg-solitude-blue border-radius-6px p-45px lg-p-30px mb-25px">
+                    <div class="bg-solitude-blue border-radius-6px p-15px lg-p-30px mb-25px">
                         {{-- <span class="fs-19 alt-font text-dark-gray fw-700 mb-20px d-inline-block">Maliyetine Ev</span> --}}
                         <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                             <a class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" href="#v-pills-home"
@@ -86,7 +86,8 @@
                         </div>
                         <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
                             aria-labelledby="v-pills-profile-tab">
-                            <p>Değerli Maliyetine Ev sahibi adayımız, 2012-2023 yılları arasında ülkemizde yapılan AR-GE
+                            <h4>Değerli Maliyetine Ev’den Müşterilerine Mektup</h4>
+                            <p> <span style="color:#0d6efd"> Değerli Maliyetine Ev sahibi adayımız,</span> 2012-2023 yılları arasında ülkemizde yapılan AR-GE
                                 çalışmaları göstermektedir ki; hazır konut fiyatlarının sürekli artması ve bankaların kredi
                                 verme politikalarındaki sıkılaşmalar, özellikle yatırımcıları ve ‘ilk evini’ almak
                                 isteyenleri etkilemektedir. Ekonomik krizlerin etkisiyle, projelendirildiği halde
@@ -99,8 +100,8 @@
                                 Maliyetine Ev, arsa ve ev alımında sık yaşanan sorunlara çözüm getirmekte, müşterilerinin
                                 haklarını korumayı öncelikli görevi saymaktadır. “Ev sahibi olmak herkesin hakkıdır”
                                 inancıyla yola çıkan, Türkiye’de bir ilki başararak “Hemen Tapu Teslimi” imkânı sunan
-                                “Maliyetine Ev”; iddiası adındanda anlaşılacağı üzere, sizleri ‘topraktan, maliyetine ev
-                                sahibi yapmak’için kurulmuştur.
+                                “Maliyetine Ev”; iddiası adındanda anlaşılacağı üzere, sizleri <strong>‘topraktan, maliyetine ev
+                                    sahibi yapmak’</strong> için kurulmuştur.
                                 Tapularını hemen alarak, maliyetine ev sahibi olmayı başaran müşterilerimizin mutluluğu,
                                 şirketimizin en büyük gururudur. Sizlere taahhüdümüz: Mülk alımında karşılaşılan
                                 olumsuzlukları sıfıra indirerek, uygun fiyatlarla ve güvenle ev sahibi (daire, villa ya da
