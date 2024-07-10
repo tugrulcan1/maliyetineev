@@ -24,21 +24,56 @@
                     <div class="bg-solitude-blue border-radius-6px p-15px lg-p-30px mb-25px">
                         {{-- <span class="fs-19 alt-font text-dark-gray fw-700 mb-20px d-inline-block">Maliyetine Ev</span> --}}
                         <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                            <a class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" href="#v-pills-home"
+                            <a class="nav-link active" id="v-about" data-bs-toggle="pill" href="#v-about" role="tab"
+                                aria-controls="v-about" aria-selected="true">Hakkımızda</a>
+                            <a class="nav-link" id="v-pills-home-tab" data-bs-toggle="pill" href="#v-pills-home"
                                 role="tab" aria-controls="v-pills-home" aria-selected="true">Nasıl Çalışır?</a>
                             <a class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" href="#v-pills-profile"
-                                role="tab" aria-controls="v-pills-profile" aria-selected="false">Müşterilerimize Mektup</a>
+                                role="tab" aria-controls="v-pills-profile" aria-selected="false">Müşterilerimize
+                                Mektup</a>
                             <a class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" href="#v-pills-messages"
-                                role="tab" aria-controls="v-pills-messages" aria-selected="false">Neden Maliyetine Ev</a>
+                                role="tab" aria-controls="v-pills-messages" aria-selected="false">Neden Maliyetine
+                                Ev</a>
                             <a class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" href="#v-pills-settings"
-                                role="tab" aria-controls="v-pills-settings" aria-selected="false">%100 Güvende Olmanın Yolu</a>
+                                role="tab" aria-controls="v-pills-settings" aria-selected="false">%100 Güvende Olmanın
+                                Yolu</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-9">
                     <div class="tab-content" id="v-pills-tabContent">
-                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                        <div class="tab-pane fade show active" id="v-about" role="tabpanel"
                             aria-labelledby="v-pills-home-tab">
+                            <strong>MASTER GİRİŞİM BİLGİ TEKNOLOJİLERİ GAYRİMENKUL YATIRIM VE PAZARLAMA ANONİM ŞİRKETİ
+
+                            </strong>
+                            <p>
+
+                                <strong>MASTER GİRİŞİM A.Ş.</strong> olarak gururla sunuyoruz. Ülkemizde inşaat,
+                                gayrimenkul, mimarlık, bilgi teknolojileri, e-ticaret, yazılım, dış ticaret ve danışmanlık
+                                sektörlerinde faaliyet gösteren yepyeni girişimler ve buluşlar yapan bir ekibiz. <br>
+                                Faaliyet alanlarımız arasında bulunan inşaat ve gayrimenkul sektöründe AR-GE'ler yaparak
+                                ülkemizdeki sıradanlaşmış inşaat, gayrimenkul ve müteahhitlik sektörünü yeniden
+                                şekillendirdik ve yeni bir sistem getirdik. <br>
+                                Maliyetine Evim markası olarak ülkemizde ev sahibi olmak isteyen herkesi %100 garantili ve
+                                %100 güvenli ev sahibi yapıyoruz. Türkiye'de ilk olarak topraktan maliyetine ev sahibi olmak
+                                isteyen müşterilerimiz peşinatlarını ödeyerek anında tapularını teslim alırlar. Kalan
+                                ödemelerini bankasız, faizsiz kendi finans sistemimizde 12 aydan 120 aya varan taksitli
+                                ödeme seçenekleri ile öderler. Müşterilerimiz bu sayede istedikleri ev, iş yeri ve arsaya
+                                sahip olurlar.
+                                <br>
+                                Dünyada ve ülkemizde her zaman en çok kazandıran yatırım aracı gayrimenkuldür. Maliyetine Ev
+                                olarak gayrimenkul yatırımlarınızda kazançlarınızı en üst seviyeye çıkaracak bir yatırım
+                                sistemi geliştirerek topraktan maliyetine tapulu yatırım sistemini sizlere sunuyoruz.
+                                Tapu teslimi en önemli vurgu noktamızdır. Müşterilerimize topraktan maliyetine ev sahibi
+                                olma imkanı sunarken en büyük avantajımız, tapu teslimini hemen gerçekleştirebilmektir.
+                                <strong>Master Girişim Bilgi Teknolojileri Gayrimenkul Yatırım ve Pazarlama Anonim Şirketi
+                                    olarak, müşteri memnuniyetini ön planda tutarak, yenilikçi çözümlerimizle sektörde öncü
+                                    olmaya devam edeceğiz.
+                                </strong>
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
                             <strong>Herkes Maliyetine Ev Sahibi Olsun Diye</strong>
                             <p>
 
@@ -87,7 +122,8 @@
                         <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
                             aria-labelledby="v-pills-profile-tab">
                             <strong>Değerli Maliyetine Ev’den Müşterilerine Mektup</strong>
-                            <p> <span style="color:#0d6efd"> Değerli Maliyetine Ev sahibi adayımız,</span> 2012-2023 yılları arasında ülkemizde yapılan AR-GE
+                            <p> <span style="color:#0d6efd"> Değerli Maliyetine Ev sahibi adayımız,</span> 2012-2023 yılları
+                                arasında ülkemizde yapılan AR-GE
                                 çalışmaları göstermektedir ki; hazır konut fiyatlarının sürekli artması ve bankaların kredi
                                 verme politikalarındaki sıkılaşmalar, özellikle yatırımcıları ve ‘ilk evini’ almak
                                 isteyenleri etkilemektedir. Ekonomik krizlerin etkisiyle, projelendirildiği halde
@@ -100,7 +136,8 @@
                                 Maliyetine Ev, arsa ve ev alımında sık yaşanan sorunlara çözüm getirmekte, müşterilerinin
                                 haklarını korumayı öncelikli görevi saymaktadır. “Ev sahibi olmak herkesin hakkıdır”
                                 inancıyla yola çıkan, Türkiye’de bir ilki başararak “Hemen Tapu Teslimi” imkânı sunan
-                                “Maliyetine Ev”; iddiası adındanda anlaşılacağı üzere, sizleri <strong>‘topraktan, maliyetine ev
+                                “Maliyetine Ev”; iddiası adındanda anlaşılacağı üzere, sizleri <strong>‘topraktan,
+                                    maliyetine ev
                                     sahibi yapmak’</strong> için kurulmuştur.
                                 Tapularını hemen alarak, maliyetine ev sahibi olmayı başaran müşterilerimizin mutluluğu,
                                 şirketimizin en büyük gururudur. Sizlere taahhüdümüz: Mülk alımında karşılaşılan
