@@ -72,6 +72,9 @@
                                 sistemi geliştirerek topraktan maliyetine tapulu yatırım sistemini sizlere sunuyoruz.
                                 Tapu teslimi en önemli vurgu noktamızdır. Müşterilerimize topraktan maliyetine ev sahibi
                                 olma imkanı sunarken en büyük avantajımız, tapu teslimini hemen gerçekleştirebilmektir.
+
+                            </p>
+                            <p>
                                 <strong>Master Girişim Bilgi Teknolojileri Gayrimenkul Yatırım ve Pazarlama Anonim Şirketi
                                     olarak, müşteri memnuniyetini ön planda tutarak, yenilikçi çözümlerimizle sektörde öncü
                                     olmaya devam edeceğiz.

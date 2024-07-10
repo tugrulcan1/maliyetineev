@@ -61,6 +61,8 @@
                 <span id="current-year">2024</span> © Copyright - Maliyetine Ev
                 <a style="margin-left: 30px;" href="javascript:;" data-pikap-popup="popup-kvkk">Kişisel Verilerin Korunması</a>
                 <a style="margin-left: 30px;" href="javascript:;" data-pikap-popup="popup-kvkk">Ticari Elektronik İleti Açık Rıza Metni</a>
+                <a style="margin-left: 30px;" href="/iletisim" >İletişim</a>
+
             </p>
 
             <script>
