@@ -24,7 +24,7 @@
                     <div class="bg-solitude-blue border-radius-6px p-15px lg-p-30px mb-25px">
                         {{-- <span class="fs-19 alt-font text-dark-gray fw-700 mb-20px d-inline-block">Maliyetine Ev</span> --}}
                         <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                            <a class="nav-link active" id="v-about" data-bs-toggle="pill" href="#v-about" role="tab"
+                            <a class="nav-link active" id="v-about-tab" data-bs-toggle="pill" href="#v-about" role="tab"
                                 aria-controls="v-about" aria-selected="true">Hakkımızda</a>
                             <a class="nav-link" id="v-pills-home-tab" data-bs-toggle="pill" href="#v-pills-home"
                                 role="tab" aria-controls="v-pills-home" aria-selected="true">Nasıl Çalışır?</a>
@@ -43,7 +43,7 @@
                 <div class="col-lg-9">
                     <div class="tab-content" id="v-pills-tabContent">
                         <div class="tab-pane fade show active" id="v-about" role="tabpanel"
-                            aria-labelledby="v-about">
+                            aria-labelledby="v-about-tab">
                             <strong>MASTER GİRİŞİM BİLGİ TEKNOLOJİLERİ GAYRİMENKUL YATIRIM VE PAZARLAMA ANONİM ŞİRKETİ
 
                             </strong>
