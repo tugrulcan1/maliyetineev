@@ -6,13 +6,11 @@
                 <p class="fs-15 fw-300" style="color: #333;">Bizimle iletişime geçebilirsiniz.</p>
             </div>
             <div class="col-xl-6 text-center text-xl-end">
-                <a href="mailto:{{ $settings['e-mail'] }}"
-                    class="btn btn-extra-large btn-rounded text-white me-2"
+                <a href="mailto:{{ $settings['e-mail'] }}" class="btn btn-extra-large btn-rounded text-white me-2"
                     style="background-color: #ea2a28">
                     <i class="fa fa-envelope"></i> {{ $settings['e-mail'] }}
                 </a>
-                <a href="tel:{{ $settings['phone'] }}"
-                    class="btn btn-extra-large btn-base-color btn-rounded text-white"
+                <a href="tel:{{ $settings['phone'] }}" class="btn btn-extra-large btn-base-color btn-rounded text-white"
                     style="background-color: #274abb">
                     <i class="fa fa-phone"></i> {{ $settings['phone'] }}
                 </a>
@@ -48,7 +46,8 @@
     </div>
 
     <div class="second-footer bg-white-3">
-        <div style="    padding: 10px 40px !important;
+        <div
+            style="    padding: 10px 40px !important;
     margin: 0 auto !important;
     width: 100%;
     text-align: center;
@@ -59,9 +58,11 @@
     justify-content: space-between;">
             <p class="d-flex align-items-center" style="gap: 5px;margin-bottom:0">
                 <span id="current-year">2024</span> © Copyright - Maliyetine Ev
-                <a style="margin-left: 30px;" href="javascript:;" data-pikap-popup="popup-kvkk">Kişisel Verilerin Korunması</a>
-                <a style="margin-left: 30px;" href="javascript:;" data-pikap-popup="popup-kvkk">Ticari Elektronik İleti Açık Rıza Metni</a>
-                <a style="margin-left: 30px;" href="/iletisim" >İletişim</a>
+                <a style="margin-left: 30px;" href="javascript:;" data-pikap-popup="popup-kvkk">Kişisel Verilerin
+                    Korunması</a>
+                <a style="margin-left: 30px;" href="javascript:;" data-pikap-popup="popup-kvkk">Ticari Elektronik İleti
+                    Açık Rıza Metni</a>
+                <a style="margin-left: 30px;" href="/iletisim">İletişim</a>
 
             </p>
 
@@ -88,11 +89,11 @@
 
 <div class="floating_btn">
     <a target="_blank" href="https://wa.me/905496716212">
-      <div class="contact_icon">
-        <i class="fa fa-whatsapp my-float"></i>
-      </div>
+        <div class="contact_icon">
+            <i class="fa fa-whatsapp my-float"></i>
+        </div>
     </a>
-  </div>
+</div>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
@@ -132,18 +133,17 @@
         }, 800);
     });
     document.addEventListener('DOMContentLoaded', function() {
-    var figures = document.querySelectorAll('.interactive-banner-style-08 figure');
+        var figures = document.querySelectorAll('.interactive-banner-style-08 figure');
 
-    figures.forEach(function(figure) {
-        figure.addEventListener('click', function() {
-            var url = figure.getAttribute('data-url');
-            if (url) {
-                window.location.href = url;
-            }
+        figures.forEach(function(figure) {
+            figure.addEventListener('click', function() {
+                var url = figure.getAttribute('data-url');
+                if (url) {
+                    window.location.href = url;
+                }
+            });
         });
     });
-});
-
 </script>
 <script>
     var successMessage = "{{ session('success') }}";
@@ -194,7 +194,7 @@
 
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script id="rendered-js">
+<script id="rendered-js">
     function qSearch(val) {
         $value = val.getAttribute('value');
         $('#search').val($value);

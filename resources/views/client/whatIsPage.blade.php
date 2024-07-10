@@ -43,7 +43,7 @@
                 <div class="col-lg-9">
                     <div class="tab-content" id="v-pills-tabContent">
                         <div class="tab-pane fade show active" id="v-about" role="tabpanel"
-                            aria-labelledby="v-pills-home-tab">
+                            aria-labelledby="v-about">
                             <strong>MASTER GİRİŞİM BİLGİ TEKNOLOJİLERİ GAYRİMENKUL YATIRIM VE PAZARLAMA ANONİM ŞİRKETİ
 
                             </strong>
