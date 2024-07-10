@@ -51,17 +51,22 @@
 
                                 <strong>MASTER GİRİŞİM A.Ş.</strong> olarak gururla sunuyoruz. Ülkemizde inşaat,
                                 gayrimenkul, mimarlık, bilgi teknolojileri, e-ticaret, yazılım, dış ticaret ve danışmanlık
-                                sektörlerinde faaliyet gösteren yepyeni girişimler ve buluşlar yapan bir ekibiz. <br>
+                                sektörlerinde faaliyet gösteren yepyeni girişimler ve buluşlar yapan bir ekibiz.
+                            </p>
+                            <p>
                                 Faaliyet alanlarımız arasında bulunan inşaat ve gayrimenkul sektöründe AR-GE'ler yaparak
                                 ülkemizdeki sıradanlaşmış inşaat, gayrimenkul ve müteahhitlik sektörünü yeniden
-                                şekillendirdik ve yeni bir sistem getirdik. <br>
+                                şekillendirdik ve yeni bir sistem getirdik.
+                            </p>
+                            <p>
                                 Maliyetine Evim markası olarak ülkemizde ev sahibi olmak isteyen herkesi %100 garantili ve
                                 %100 güvenli ev sahibi yapıyoruz. Türkiye'de ilk olarak topraktan maliyetine ev sahibi olmak
                                 isteyen müşterilerimiz peşinatlarını ödeyerek anında tapularını teslim alırlar. Kalan
                                 ödemelerini bankasız, faizsiz kendi finans sistemimizde 12 aydan 120 aya varan taksitli
                                 ödeme seçenekleri ile öderler. Müşterilerimiz bu sayede istedikleri ev, iş yeri ve arsaya
                                 sahip olurlar.
-                                <br>
+                            </p>
+                            <p>
                                 Dünyada ve ülkemizde her zaman en çok kazandıran yatırım aracı gayrimenkuldür. Maliyetine Ev
                                 olarak gayrimenkul yatırımlarınızda kazançlarınızı en üst seviyeye çıkaracak bir yatırım
                                 sistemi geliştirerek topraktan maliyetine tapulu yatırım sistemini sizlere sunuyoruz.
