@@ -7,15 +7,23 @@
 
     </section>
 
-    <section class="position-relative pt-4 half-section overflow-hidden">
+    <section class="position-relative pt-2 half-section overflow-hidden">
         <img src="{{ asset('images/demo-data-analysis-bg-06.png') }}" class="position-absolute top-0px left-0px"
             data-bottom-top="transform: translateY(150px)" data-top-bottom="transform: translateY(-150px)" alt />
         <img src="{{ asset('images/demo-data-analysis-bg-07.png') }}" class="position-absolute top-10 right-0px"
             data-bottom-top="transform: translateY(150px)" data-top-bottom="transform: translateY(-150px)" alt />
+
+        {{-- <div class="container-fluid position-relative z-index-1 p-0 mb-5">
+			<img src="{{ asset('/maliyetine-ev-yeni.png')}}">
+
+        </div> --}}
+
+
         <div class="container position-relative z-index-1">
             <div class="row row-cols-1 row-cols-lg-2 row-cols-md-2 justify-content-center mb-3"
                 data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateX&quot;: [30, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 600, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
                 @foreach (json_decode($project->details) as $key => $detail)
+
                     <div class="col icon-with-text-style-04 transition-inner-all mb-30px">
                         <div
                             class="feature-box bg-ghost-white text-start justify-content-start h-100 border-radius-6px">
@@ -32,6 +40,7 @@
 
             </div>
         </div>
+
         <div class="container-fluid">
             <div class="row position-relative">
                 <div class="col swiper text-cente"
@@ -103,6 +112,58 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="text-center">
+            <h3 class="text-center h3Css">5 Adımda Maliyetine Evim Sistemi</h3>
+        </div>
+        <div class="container">
+            <div class="row mb-5" >
+                <div class="d-flex col-4">
+                    <div class="step-number">01</div>
+                    <div style="margin-left: 10px;width:265px">
+                        <span class="step-title">{{ $proje_basvuru_surecleri->title_1 }}</span>
+                        <p class="step-description" style="margin: -2px 0px 0px 0px">{{$proje_basvuru_surecleri->description_1}}</p>
+                    </div>
+                </div>
+                <div class="d-flex col-4">
+                    <div class="step-number">02</div>
+                    <div style="margin-left: 10px;width:265px">
+                        <span class="step-title">{{ $proje_basvuru_surecleri->title_2 }}</span>
+                        <p class="step-description" style="margin:-2px 0px 0px 0px">{{$proje_basvuru_surecleri->description_2}}</p>
+                    </div>
+                </div>
+                <div class="d-flex col-4">
+                    <div class="step-number">03</div>
+                    <div style="margin-left: 10px;width:265px">
+                        <span class="step-title">{{ $proje_basvuru_surecleri->title_3 }}</span>
+                        <p class="step-description" style="margin: -2px 0px 0px 0px">{{$proje_basvuru_surecleri->description_3}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="d-flex col-2"></div>
+                <div class="d-flex col-4">
+                    <div class="step-number">04</div>
+                    <div style="margin-left: 10px;width:265px">
+                        <span class="step-title">{{ $proje_basvuru_surecleri->title_4 }}</span>
+                        <p class="step-description" style="margin: -2px 0px 0px 0px">{{$proje_basvuru_surecleri->description_4}}</p>
+                    </div>
+                </div>
+                <div class="d-flex col-4">
+                    <div class="step-number">05</div>
+                    <div style="margin-left: 10px;width:265px">
+                        <span class="step-title">{{ $proje_basvuru_surecleri->title_5 }}</span>
+                        <p class="step-description" style="margin:-2px 0px 0px 0px">{{$proje_basvuru_surecleri->description_5}}</p>
+                    </div>
+                </div>
+                <div class="col-2"></div>
+
+
+        </div>
+    </div>
         </div>
     </section>
 
@@ -295,7 +356,6 @@
     <div class="container mt-5">
         <div class="row">
             <div class="col-md-12">
-                <h4 class="baslikh4">Maliyetine Ev sahibi olma sistemi</h4>
                 <h5 class="baslikh5">Bu gün projeden tapunuzu alın yarın maliyetine eviniz olsun</h5>
                 <p class="ptag">Maliyetine Ev,Türkiye’de ilk hemen tapu teslim %100 güvenli ve garantili maliyetine ev
                     sahibi olmanızı sağlayan tek şirkettir.</p>
@@ -565,6 +625,61 @@
 
 
 @section('css')
+<style>
+
+    .step-container {
+        display: flex;
+    }
+
+    .step-content {
+        display: flex;
+        align-items: center;
+        gap: 10px; /* Adjust the gap as needed */
+    }
+
+    .step-number {
+        background-color: #FFCDCF;
+        padding: 10px;
+        border-radius: 60%;
+        width: 50px;
+        height: 50px;
+        text-align: center !important;
+        color: rgb(255, 55, 55);
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    .step-title {
+        font-size: 16px; /* Adjust the font size as needed */
+        font-weight: bold;
+    }
+
+    .step-description {
+        margin-top: 5px; /* Adjust the margin as needed */
+        font-size: 14px; /* Adjust the font size as needed */
+    }
+
+    .h3Css{
+        font-weight: 600;
+        color: #000000;
+        font-size: 40px;
+        line-height: 48px;
+        position: relative;
+        display: inline-block;
+        padding-bottom: 10px;
+        letter-spacing: 1px;
+        margin-bottom: 50px;
+    }
+
+    .h3Css::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        border-bottom: 3px solid red; /* You can change the color and thickness as needed */
+        }
+</style>
     <style>
         .questionHeader {
             cursor: pointer;

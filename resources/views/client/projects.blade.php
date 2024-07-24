@@ -30,7 +30,11 @@
                                     <div class="interactive-banner-style-08">
                                         <figure class="m-0 hover-box overflow-hidden position-relative border-radius-6px">
                                             <a href="{{route('projelerimiz.show',$project->id)}}" target="_blank">
+<<<<<<< HEAD
+                                                    <img src="{{ asset('projects_cover_image/' . $project->image) }}" alt="Resim bulunamadı" style="height: 400px; object-fit: cover;" />
+=======
                                                     <img src="{{ asset('projects_cover_image/' . $project->cover_image) }}" alt="Resim bulunamadı" style="height: 400px; object-fit: cover;" />
+>>>>>>> 66d902f2a452636301406292cf34532d66e1e6eb
                                             </a>
                                             <figcaption
                                                 class="d-flex flex-column align-items-start justify-content-center position-absolute left-0px top-0px w-100 h-100 z-index-1 p-14 lg-p-12">
@@ -70,7 +74,11 @@
                                     <div class="interactive-banner-style-08">
                                         <figure class="m-0 hover-box overflow-hidden position-relative border-radius-6px">
                                             <a href="{{route('projelerimiz.show',$project->id)}}" target="_blank">
+<<<<<<< HEAD
+                                                    <img src="{{ asset('projects_cover_image/' . $project->image) }}" alt="Resim bulunamadı" style="height: 400px; object-fit: cover;" />
+=======
                                                     <img src="{{ asset('projects_cover_image/' . $project->cover_image) }}" alt="Resim bulunamadı" style="height: 400px; object-fit: cover;" />
+>>>>>>> 66d902f2a452636301406292cf34532d66e1e6eb
                                             </a>
                                             <figcaption
                                                 class="d-flex flex-column align-items-start justify-content-center position-absolute left-0px top-0px w-100 h-100 z-index-1 p-14 lg-p-12">
@@ -110,7 +118,11 @@
                                     <div class="interactive-banner-style-08">
                                         <figure class="m-0 hover-box overflow-hidden position-relative border-radius-6px">
                                             <a href="{{route('projelerimiz.show',$project->id)}}" target="_blank">
+<<<<<<< HEAD
+                                                    <img src="{{ asset('projects_cover_image/' . $project->image) }}" alt="Resim bulunamadı" style="height: 400px; object-fit: cover;" />
+=======
                                                     <img src="{{ asset('projects_cover_image/' . $project->cover_image) }}" alt="Resim bulunamadı" style="height: 400px; object-fit: cover;" />
+>>>>>>> 66d902f2a452636301406292cf34532d66e1e6eb
                                             </a>
                                             <figcaption
                                                 class="d-flex flex-column align-items-start justify-content-center position-absolute left-0px top-0px w-100 h-100 z-index-1 p-14 lg-p-12">

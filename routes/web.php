@@ -100,6 +100,12 @@ Route::get('/logout', [ClientLoginController::class, "logout"])->name('client.lo
 
 
 Route::group(['prefix' => 'admin', "as" => "admin.", 'middleware' => ['admin']], function () {
+
+    // proje başvuru süreçleriü
+
+    Route::get('/proje/basvuru/surecleri',[PageController::class,'projeBasvuruSurecleri'])->name('proje.basvuru.surecleri');
+    Route::post('/proje/basvuru/surecleri/ekle',[PageController::class,'projecBasvuruSurecleriEkle'])->name('add.proje.basvuru.surecleri');
+
     Route::get('/video/yukle',[VideoController::class,'createVideo'])->name('create.video');
     Route::post('/add/video', [VideoController::class, 'addVideo'])->name('add.video');
 

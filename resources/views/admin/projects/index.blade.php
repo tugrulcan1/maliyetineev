@@ -48,9 +48,6 @@
                                             <th class="sort white-space-nowrap align-middle ps-0" scope="col"
                                             data-sort="projectName" style="width:20%;">PROJE RESİM</th>
                                         <th>İŞLEMLER</th>
-                                     
-                                            
-                                         
                                     </tr>
                                 </thead>
                                 <tbody class="" id="project-list-table-body">
@@ -58,14 +55,19 @@
                                         <tr class="position-static">
                                             <td>{{ $key + 1 }}</td>
                                             <td>{{ $project->project_title }}</td>
-                                            <td>{{ $project->description }}</td>
+                                            <td>{{ \Illuminate\Support\Str::limit(strip_tags($project->description), 150, '...') }}</td>
                                             <td>{{ $project->project_type }}</td>
                                             <td>{{ $project->slug }}</td>
                                             <td><img src="{{ url('uploads/' . $project->image) }}" alt="" style="" width="200px" height="100px"></td>
                                             <td>
+                                                <div class="d-flex gap-2">
+                                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#basvuruSureciModal{{$project->id}}">
+                                                        Başvuru Süreçleri
+                                                    </button>
+
                                                     <a href="{{ route('admin.projects.edit', $project->id) }}"
-                                                        class="btn btn-sm btn-primary">Güncelle</a>
-                                              
+                                                        class="btn btn-sm btn-primary " style="display: flex; justify-content: center; align-items: center;">Güncelle</a>
+
                                                     <button type="button" class="btn btn-sm btn-danger"
                                                         data-bs-toggle="modal"
                                                         data-bs-target="#deleteModal{{ $project->id }}">
@@ -73,12 +75,11 @@
                                                     </button>
 
                                                     <button type="button" class="btn btn-sm btn-info"
-                                                    data-bs-toggle="modal"
-                                                    data-bs-target="#floorPlanModal{{ $project->id }}">
-                                                    Kat Planı Ekle
-                                                </button>
-
-
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#floorPlanModal{{ $project->id }}">
+                                                        Kat Planı Ekle
+                                                    </button>
+                                                </div>
                                                 <!-- Silme işlemi için modal -->
                                                 <div class="modal fade" id="deleteModal{{ $project->id }}" tabindex="-1"
                                                     aria-labelledby="deleteModalLabel{{ $project->id }}"
@@ -132,7 +133,7 @@
                                                             </div>
                                                             <div class="modal-body">
                                                                 <div class="row">
-                                                                    @php 
+                                                                    @php
                                                                         $floorPlans = DB::table('floor_plans')->where('project_id',$project->id)->get();
                                                                     @endphp
                                                                         @foreach ($floorPlans as $floorPlan)
@@ -170,19 +171,91 @@
                                                                     </div>
                                                                 <div class="modal-footer">
                                                                     <button type="submit" class="btn btn-sm btn-success">Ekle</button>
-                                                                
                                                                     <button type="button" class="btn btn-sm btn-secondary"
                                                                         data-bs-dismiss="modal">İptal</button>
                                                                 </div>
                                                                 </form>
 
 
-                                                               
+
                                                             </div>
-                                                            
+
                                                         </div>
                                                     </div>
                                                 </div>
+                                                {{-- Proje Başvuru Süreçleri Modal --}}
+                                                <div class="modal fade" id="basvuruSureciModal{{$project->id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog modal-lg d-flex justify-content-center align-items-center">
+                                                      <div class="modal-content">
+                                                        <div class="modal-header">
+                                                          <h4 class="modal-title fs-5" id="exampleModalLabel">Başvuru Süreçleri</h4>
+                                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            @php
+                                                               $data = DB::table('proje_basvuru_surecleri')->where('project_id',$project->id)->first();
+                                                            @endphp
+                                                             <form action="{{ route('admin.add.proje.basvuru.surecleri') }}" method="POST">
+                                                                        @csrf
+                                                                        <input type="hidden" name="project_id" id="project_id" value="{{$project->id}}">
+
+                                                                            <div class="row mb-3 justify-content-center" >
+                                                                                <div class="col-md-10 " style="margin-right: 10px;border: 1px solid rgb(185, 183, 183);border-radius:10px;padding:11px;">
+                                                                                    <label for="">Başlık 1</label>
+                                                                                    <input class="form-control mb-3" type="text" name="title_1" value="{{ $data->title_1 ?? '' }}">
+                                                                                    <label for="">Açıklama 1</label>
+                                                                                    <input class="form-control mb-3" type="text" name="description_1" value="{{ $data->description_1 ?? '' }}">
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div class="row mb-3 justify-content-center" >
+                                                                                <div class="col-md-10" style="border: 1px solid rgb(185, 183, 183);border-radius:10px;padding:11px;">
+                                                                                    <label for="">Başlık 2</label>
+                                                                                    <input class="form-control mb-3" type="text" name="title_2" value="{{ $data->title_2 ?? '' }}">
+                                                                                    <label for="">Açıklama 2</label>
+                                                                                    <input class="form-control mb-3" type="text" name="description_2" value="{{ $data->description_2 ?? '' }}">
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div class="row mb-3 justify-content-center">
+                                                                                <div class="col-md-10"  style="margin-right: 10px;border: 1px solid rgb(185, 183, 183);border-radius:10px;padding:11px;">
+                                                                                    <label for="">Başlık 3</label>
+                                                                                    <input class="form-control mb-3" type="text" name="title_3" value="{{ $data->title_3 ?? '' }}">
+                                                                                    <label for="">Açıklama 3</label>
+                                                                                    <input class="form-control mb-3" type="text" name="description_3" value="{{ $data->description_3 ?? '' }}">
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div class="row mb-3 justify-content-center" >
+                                                                                <div class="col-md-10"  style="border: 1px solid rgb(185, 183, 183);border-radius:10px;padding:11px;">
+                                                                                    <label for="">Başlık 4</label>
+                                                                                    <input class="form-control mb-3" type="text" name="title_4" value="{{ $data->title_4 ?? '' }}">
+                                                                                    <label for="">Açıklama 4</label>
+                                                                                    <input class="form-control mb-3" type="text" name="description_4" value="{{ $data->description_4 ?? '' }}">
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div class="row mb-3 justify-content-center">
+                                                                                <div class="col-md-10" style="border: 1px solid rgb(185, 183, 183);border-radius:10px;padding:11px;">
+                                                                                    <label for="">Başlık 5</label>
+                                                                                    <input class="form-control mb-3" type="text" name="title_5" value="{{ $data->title_5 ?? '' }}">
+                                                                                    <label for="">Açıklama 5</label>
+                                                                                    <input class="form-control mb-3" type="text" name="description_5" value="{{ $data->description_5 ?? '' }}">
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div class="modal-footer" style="justify-content: space-between">
+                                                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+                                                                                <button type="submit" class="btn btn-primary">Kaydet</button>
+                                                                            </div>
+
+                                                                    </form>
+                                                        </div>
+
+                                                      </div>
+                                                    </div>
+                                                  </div>
+
                                             </td>
                                         </tr>
                                     @endforeach

@@ -88,7 +88,6 @@ class ProjectController extends Controller
                 'description' => $detailDescription
             ];
         }
-        
         $detailsJson = json_encode($details);
 
         if($request->hasFile('cover_image')){
@@ -123,7 +122,6 @@ class ProjectController extends Controller
             }
         }
 
-
         return redirect()->route('admin.projects.index')
             ->with('success', 'Proje başarıyla oluşturuldu.');
     }
@@ -133,11 +131,11 @@ class ProjectController extends Controller
      */
     public function show(Project $project)
     {
-        $project=Project::with('galleries')->where('id',$project->id)->first(); 
-        $floorPlans = DB::table('floor_plans')
-            ->where('project_id', $project->id)
-            ->get();    
-        return view('client.projectsdetail', compact('project','floorPlans'));
+        $project=Project::with('galleries')->where('id',$project->id)->first();
+        $floorPlans = DB::table('floor_plans')->where('project_id', $project->id)->get();
+        $proje_basvuru_surecleri = DB::table('proje_basvuru_surecleri')->where('project_id',$project->id)->first();
+
+        return view('client.projectsdetail', compact('project','floorPlans','proje_basvuru_surecleri'));
     }
 
     /**
@@ -176,7 +174,8 @@ class ProjectController extends Controller
         }
 
         $kapak_gorseli = $request->file('cover_image');
-        
+		$kapak_gorseliAdi = $request->file('cover_image');
+
         if($kapak_gorseli){
             $kapak_gorseliAdi = $kapak_gorseli->getClientOriginalName();
             $kapak_gorseli->move(public_path('projects_cover_image'), $kapak_gorseliAdi);
@@ -278,7 +277,7 @@ class ProjectController extends Controller
             $file = $request->file('file');
             $fileName = time() . '_' . $file->getClientOriginalName();
             $file->move(public_path('kat_plani'), $fileName);
-        }    
+        }
 
         $addedProjectFloorPlan = DB::table('floor_plans')->insert([
             'project_id' => $request->input('project_id'),
@@ -297,7 +296,6 @@ class ProjectController extends Controller
 
     public function deleteFloorPlan($id){
         $floorPlan = FloorPlan::find($id);
-        
         if ($floorPlan) {
             // Kat planı dosyasını silmek için
             $imagePath = public_path('kat_plani/' . $floorPlan->image_path);
