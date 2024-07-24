@@ -18,11 +18,7 @@
 
          </section>
      @endforeach
-<<<<<<< HEAD
 {{--
-=======
-
->>>>>>> 66d902f2a452636301406292cf34532d66e1e6eb
      <section class="pb-0">
          <div class="container">
              <h3 class="text-dark-gray fw-700" style="text-align: center;">{{ $settings['section_8_title'] }}</h3>
@@ -31,12 +27,7 @@
 
                  <div class="col-sm  mb-4" style="text-align: center;">
                      <div>
-<<<<<<< HEAD
                          <img src="/images/trust.png" alt="" style=" height: 70px;    margin-bottom: 10px;">
-=======
-                         <img src="/images/trust.png" alt="" style=" height: 70px;
-    margin-bottom: 10px;">
->>>>>>> 66d902f2a452636301406292cf34532d66e1e6eb
                          <p class="text-dark-gray fw-700 baslikP"
                              style="font-size: 20px; margin: 0; padding: 0; color: #333; font-size: 16px;">
                              {{ $settings['section_8_1'] }}</p>
@@ -46,12 +37,7 @@
                  </div>
                  <div class="col-sm  mb-4" style="text-align: center;">
                      <div>
-<<<<<<< HEAD
                          <img src="/images/budget.png" alt="" style="    height: 70px;    margin-bottom: 10px;">
-=======
-                         <img src="/images/budget.png" alt="" style="    height: 70px;
-    margin-bottom: 10px;">
->>>>>>> 66d902f2a452636301406292cf34532d66e1e6eb
                          <p class="text-dark-gray fw-700"
                              style="font-size: 20px; margin: 0; padding: 0; color: #333; font-size: 16px;">
                              {{ $settings['section_8_2'] }}
@@ -62,12 +48,7 @@
                  </div>
                  <div class="col-sm  mb-4" style="text-align: center;">
                      <div>
-<<<<<<< HEAD
                          <img src="/images/bank.png" alt="" style="    height: 70px;    margin-bottom: 10px;">
-=======
-                         <img src="/images/bank.png" alt="" style="    height: 70px;
-    margin-bottom: 10px;">
->>>>>>> 66d902f2a452636301406292cf34532d66e1e6eb
                          <p class="text-dark-gray fw-700"
                              style="font-size: 20px; margin: 0; padding: 0; color: #333; font-size: 16px;">
                              {{ $settings['section_8_3'] }}
@@ -78,12 +59,7 @@
                  </div>
                  <div class="col-sm  mb-4" style="text-align: center;">
                      <div>
-<<<<<<< HEAD
                          <img src="/images/timing.png" alt="" style=" height: 70px;    margin-bottom: 10px;">
-=======
-                         <img src="/images/timing.png" alt="" style=" height: 70px;
-    margin-bottom: 10px;">
->>>>>>> 66d902f2a452636301406292cf34532d66e1e6eb
                          <p class="text-dark-gray fw-700"
                              style="font-size: 20px; margin: 0; padding: 0; color: #333; font-size: 16px;">
                              {{ $settings['section_8_4'] }}
@@ -95,12 +71,7 @@
                  <div class="col-sm  mb-4" style="text-align: center;">
                      <div>
                          <img src="/images/smartphone.png" alt=""
-<<<<<<< HEAD
                              style="    height: 70px;    margin-bottom: 10px;">
-=======
-                             style="    height: 70px;
-    margin-bottom: 10px;">
->>>>>>> 66d902f2a452636301406292cf34532d66e1e6eb
                          <p class="text-dark-gray fw-700"
                              style="font-size: 20px; margin: 0; padding: 0; color: #333; font-size: 16px;">
                              {{ $settings['section_8_5'] }}</p>
@@ -110,11 +81,7 @@
                  </div>
              </div>
          </div>
-<<<<<<< HEAD
      </section> --}}
-=======
-     </section>
->>>>>>> 66d902f2a452636301406292cf34532d66e1e6eb
 
 
      <section class="pt-0 mgyy  " style="display:none">
@@ -174,11 +141,7 @@
          </div>
      </section>
 
-<<<<<<< HEAD
      {{-- <section class="p-0 ">
-=======
-     <section class="p-0 ">
->>>>>>> 66d902f2a452636301406292cf34532d66e1e6eb
          <div class="container bg-base-color" style="background-color:#ea2a28 !important">
              <div class="row align-items-center justify-content-center g-0">
                  <div class="col-auto d-flex align-items-center appear anime-complete"
@@ -195,11 +158,7 @@
                  </div>
              </div>
          </div>
-<<<<<<< HEAD
      </section> --}}
-=======
-     </section>
->>>>>>> 66d902f2a452636301406292cf34532d66e1e6eb
 
      {{-- <section class="p-0 bg-base-color" style="background: #b7d8ff;margin-top:30px; ">
         <div class="container">
@@ -224,11 +183,7 @@
 
 
      <section class="pb-0 mt-5" id="services" style="padding-bottom: 0px !important; padding-top: 0 !important;">
-<<<<<<< HEAD
          {{-- <div class="tab-style-08 ">
-=======
-         <div class="tab-style-08 ">
->>>>>>> 66d902f2a452636301406292cf34532d66e1e6eb
              <div class="container border-bottom border-color-extra-medium-gray bg-white box-shadow-quadruple-large p-0">
 
                  <ul class="nav nav-tabs border-0 fw-500 fs-19 text-center">
@@ -385,13 +340,9 @@
                      </div>
                  </div>
              </div>
-<<<<<<< HEAD
          </div> --}}
          <img src="{{ asset('homeImage.png') }}" class="w-95 border-radius-6px d-flex m-auto" >
 
-=======
-         </div>
->>>>>>> 66d902f2a452636301406292cf34532d66e1e6eb
 
      </section>
 
