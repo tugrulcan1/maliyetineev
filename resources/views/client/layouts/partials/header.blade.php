@@ -479,8 +479,9 @@ display: none;
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
+
                     <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ms-auto fw-600">
+                        <ul class="navbar-nav fw-600">
                             @foreach ($menu as $menus)
                                 @if ($menus->children->isNotEmpty())
                                     <li class="nav-item dropdown">
@@ -542,13 +543,9 @@ display: none;
 
 
 @media (max-width: 991px) {
-    .navbar-collapse {
-        display: block;
-        height: 85px !important;
-    }
 
     .navbar-collapse.collapse.show {
-        display: block; /* Menü açıldığında tüm menüleri göstermek için */
+        display: block;
     }
 
     .navbar-nav {
@@ -597,7 +594,15 @@ display: none;
 
 
 </style>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 <script>
+$(document).ready(function() {
+    $('.navbar-toggler').on('click', function() {
+        console.log('Navbar toggle button clicked!');
+    });
+});
+
 
 </script>
 
