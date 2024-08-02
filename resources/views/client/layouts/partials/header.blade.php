@@ -288,6 +288,11 @@ display: none;
                 height: 100%;
             }
 
+            .scroll-to-top {
+                display:  none !important
+            }
+
+
             .video-li {
                 flex: 3.5;
                 display: flex;
