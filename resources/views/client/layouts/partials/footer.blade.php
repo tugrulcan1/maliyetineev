@@ -1,5 +1,5 @@
 <footer class="footer-dark pt-1 pb-0" style="background-color: #274abb1f;">
-    <div class="container" style="border-bottom: 1px solid #bebebe">
+    <div class="container" style="border-bottom: 1px solid #bebebe" id="mobileContainer">
         <div class="row align-items-center justify-content-center">
             <div class="col-xl-6 text-center text-xl-start mb-sm-0">
                 <h3 class="mb-2 fw-500" style="color: #333; font-size: 24px;">Aklınıza takılan soru mu var?</h3>
@@ -18,34 +18,22 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="container" id="pembeBolge">
         <div class="row mt-2 justify-content-between mb-2 align-items-center">
-            <div class="col-12 col-lg-4 mb-lg-0">
+            <div class="col-12 col-lg-4 mb-lg-0" id="maliyetineEv">
                 <a href="demo-accounting.html" class="footer-logo mb-2 d-inline-block">
-                    <img src="{{ asset('images/maliyetineevlogo.png') }}" alt="Logo">
+                    <img src="{{ asset('images/maliyetineevlogo.png') }}" alt="Logo" id="imageID">
                 </a>
-                {{-- <p class="fs-14" style="color: #333;">Maliyetine Ev Sahibi Olmak Herkesin Hakkı</p> --}}
-
-
             </div>
-            {{-- <div class="col-12 col-lg-4 col-sm-4 mb-4 mb-lg-0" style="width: 390px;">
-                <span class="fs-16 fw-400 d-block mb-2" style="color: #333;">Hızlı Link</span>
-                <ul class="menu-list">
-                    <li><a href="/page/hakkimizda" style="color: #333;">Hakkımızda</a></li>
-                    <li><a href="/projelerimiz" style="color: #333;">Projelerimiz</a></li>
-                    <li><a href="/subelerimiz" style="color: #333;">Şubelerimiz</a></li>
-                </ul>
-            </div> --}}
-            <div class="col-12 col-lg-4 col-sm-4 mb-lg-0 text-end color-right-footer">
-                <span class="fs-16 fw-400 d-block mb-2" style="color: #333;">İletişim</span>
-                <p>Cevizli, Çanakkale Cd. No:103A, 34865 Kartal/İstanbul
 
-                </p>
+            <div class="col-12 col-lg-4 col-sm-4 mb-lg-0 text-end color-right-footer" id="location">
+                <span class=" fw-400 d-block mb-2" style="color: #333;">İletişim</span>
+                <p id="location_p">Cevizli, Çanakkale Cd. No:103A, 34865 Kartal/İstanbul</p>
             </div>
         </div>
     </div>
 
-    <div class="second-footer bg-white-3">
+    <div class="second-footer bg-white-3 d-flex justify-content-between" id="secondFooter">
         <div
             style="    padding: 10px 40px !important;
     margin: 0 auto !important;
@@ -55,9 +43,14 @@
     color: white;
     display: flex;
     align-items: center;
-    justify-content: space-between;">
-            <p class="d-flex align-items-center" style="gap: 5px;margin-bottom:0">
-                <span id="current-year">2024</span> © Copyright - Maliyetine Ev
+    justify-content: center;">
+            <p class="d-flex align-items-center" style="gap: 5px;margin-bottom:0" id="secondFooterP">
+                <span>
+                    <span id="current-year">2024</span>
+                    <span style="display: inline-block;">© Copyright - Maliyetine
+                        Ev</span>
+                </span>
+
                 <a style="margin-left: 30px;" href="javascript:;" data-pikap-popup="popup-kvkk">Kişisel Verilerin
                     Korunması</a>
                 <a style="margin-left: 30px;" href="javascript:;" data-pikap-popup="popup-kvkk">Ticari Elektronik İleti
@@ -69,23 +62,19 @@
             <script>
                 document.getElementById("current-year").textContent = new Date().getFullYear();
             </script>
-            {{-- <div class="elements-social social-icon-style-02">
-                <ul class="small-icon light list-inline mb-0">
-                    @foreach ($socialMediaIcons as $icon)
-                        <li>
-                            <a class="{{ $icon->platform }}" href="{{ $icon->url }}" target="_blank">
-                                <i class="fa-brands {{ $icon->icon_class }}"></i>
-                            </a>
-                        </li>
-                    @endforeach
-                </ul>
 
-            </div> --}}
 
         </div>
     </div>
 
+
 </footer>
+<style>
+    .small-screenP {
+        flex-direction: column;
+        align-items: center;
+    }
+</style>
 
 <div class="floating_btn">
     <a target="_blank" href="https://wa.me/905496716212">
@@ -94,6 +83,7 @@
         </div>
     </a>
 </div>
+
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
@@ -118,6 +108,43 @@
         // Automatically click the first tab button on page load
         $(".tab button:first").click();
     });
+</script>
+
+<script>
+
+    function checkScreen() {
+        const mobileContainer = document.getElementById('mobileContainer');
+        const secondFooter = document.getElementById('secondFooter');
+        const secondFooterP = document.getElementById('secondFooterP');
+        const buttons = document.querySelectorAll('.btn-extra-large')
+        const pembeBolge = document.getElementById('pembeBolge');
+        const locationElement = document.getElementById('location');
+        const maliyetineEv = document.getElementById('maliyetineEv');
+        const aEtiket = pembeBolge.querySelector('a');
+        const locationP = document.getElementById('location_p');
+        const imageID = document.getElementById('imageID');
+        const image = aEtiket.querySelector('img');
+        const screenWidth = window.innerWidth;
+
+        if (window.innerWidth < 768) {
+            buttons.forEach(button => {
+                button.classList.remove('btn-extra-large');
+                button.classList.add('mb-2');
+            });
+            locationElement.classList.remove('text-end');
+            locationElement.classList.add('text-center');
+            pembeBolge.classList.add('flex-column');
+            maliyetineEv.classList.add('d-flex', 'align-items-center', 'justify-content-center');
+            pembeBolge.classList.remove('row');
+            locationP.style.fontSize = '12px';
+            imageID.style.maxHeight = '70px';
+            secondFooterP.classList.add('flex-column', 'small-screenP', 'align-items-center',
+                'justify-content-center');
+            secondFooter.classList.add('align-items-center', 'justify-content-center');
+        } 
+    }
+    window.addEventListener('load', checkScreen);
+    window.addEventListener('resize', checkScreen);
 </script>
 
 
@@ -331,6 +358,5 @@
 <script type="text/javascript" src="{{ URL::to('/') }}/js/vendors.min.js"></script>
 <script type="text/javascript" src="{{ URL::to('/') }}/js/main.js"></script>
 </body>
-
 
 </html>
