@@ -111,14 +111,6 @@
 </script>
 
 <script>
-    window.onload = function() {
-
-
-        if (screenWidth <= 768) {
-            
-        }
-
-    };
 
     function checkScreen() {
         const mobileContainer = document.getElementById('mobileContainer');
