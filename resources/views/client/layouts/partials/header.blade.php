@@ -22,7 +22,6 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 
         <link rel="stylesheet" href="{{ URL::to('/') }}/css/vendors.min.css" />
-        <link rel="stylesheet" href="{{ URL::to('/') }}/css/icon.min.css" />
         <link rel="stylesheet" href="{{ URL::to('/') }}/css/style.min.css" />
         <link rel="stylesheet" href="{{ URL::to('/') }}/css/responsive.min.css" />
         <link rel="stylesheet" href="{{ URL::to('/') }}/demos/accounting/accounting.css" />
@@ -519,8 +518,30 @@ display: none;
 
 
 <style>
-    /* Mobil görünümde menü toggle tıklandığında tüm menülerin görünmesini sağlar */
-@media (max-width: 791px) {
+
+/* Navbar Collapse CSS */
+.navbar-collapse {
+    max-height: calc(100vh - 56px); /* Adjust height as needed */
+    overflow-y: auto; /* Enable vertical scrolling if necessary */
+}
+
+/* Ensure dropdown menus are visible */
+.dropdown-menu {
+    max-height: 300px; /* Set a max height if needed */
+    overflow-y: auto; /* Enable vertical scrolling if necessary */
+}
+
+/* Adjust padding and margins to fit within the screen */
+.navbar-nav {
+    padding: 0;
+}
+
+.nav-item {
+    margin: 0;
+}
+
+
+@media (max-width: 991px) {
     .navbar-collapse {
         display: block;
         height: 85px !important;
@@ -559,7 +580,7 @@ display: none;
     }
 
     .digital-mgz-mobile {
-        display: none; /* Mobil görünümde dijital ofis linklerini gösterir */
+        display: none;
         margin-left: 10px;
     }
 
@@ -577,18 +598,7 @@ display: none;
 
 </style>
 <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        var toggler = document.querySelector('.navbar-toggler');
-        var navbarCollapse = document.querySelector('.navbar-collapse');
 
-        toggler.addEventListener('click', function () {
-            if (navbarCollapse.classList.contains('show')) {
-                navbarCollapse.classList.remove('show');
-            } else {
-                navbarCollapse.classList.add('show');
-            }
-        });
-    });
 </script>
 
 
