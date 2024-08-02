@@ -385,6 +385,7 @@
              const musteriYorum = document.getElementById('musteriYorum');
              const musteriH6 = document.getElementById('musteriH6');
              const anaResim = document.getElementById('anaResim');
+             const screenWidth = window.innerWidth;
 
              if (window.innerWidth < 768) {
                  services.style.display = "none";

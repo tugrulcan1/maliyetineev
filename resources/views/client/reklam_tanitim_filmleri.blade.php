@@ -28,28 +28,27 @@
     display: flex;
     align-items: center;
     justify-content: center;">
-                    <img alt="" class="youtubeVideo" src="{{ asset('channels4_profile.jpg') }}" style="width:100%">
+                    <img alt="" class="youtubeVideo" src="{{ asset('channels4_profile.jpg') }}">
                 </div>
                 <div class="col-md-9">
-                    <h3 class="fw-700 text-dark-gray ls-minus-1px fancy-text-style-4 mb-0" style="    font-size: 25px;
+                    <h3 class="fw-700 text-dark-gray ls-minus-1px fancy-text-style-4 mb-0" id="baslik"
+                        style="    font-size: 25px;
     top: 10px;
     position: relative;
-    margin-bottom: 10px !important;">Maliyetine
+    margin-bottom: 10px !important;">
+                        Maliyetine
                         Ev </h1>
-                        <span class="fs-15 text-uppercase text-base-color fw-600 d-block"
-                        style="    top: -12px;
-    position: relative;">Maliyetine ev sistemi Türkiye'nin
+                        <span class="fs-15  text-base-color fw-600 d-block" id="baslikSpan"
+                            style="top: -12px; position: relative;">Maliyetine ev sistemi Türkiye'nin
                             en güvenli, en garantili inşaat yapım yatırım sistemidir.</span>
 
                 </div>
-                <div class="col-md-2"
-                style="    display: flex;
+                <div class="col-md-2" style="    display: flex;
     justify-content: end;">
-                    <a href="https://www.youtube.com/@MaliyetineEv"
-                    target="_blank"
-                    class="btn btn-extra-large btn-rounded text-white me-2" style="background-color: #ea2a28">
-                    <i class="fa fa-link"></i> ABONE OL
-                </a>
+                    <a href="https://www.youtube.com/@MaliyetineEv" target="_blank"
+                        class="btn btn-extra-large btn-rounded text-white me-2" style="background-color: #ea2a28">
+                        <i class="fa fa-link"></i> ABONE OL
+                    </a>
                 </div>
             </div>
             <div id="aboutus" class="row align-items-xl-center pt-2 mt-2">
@@ -96,6 +95,31 @@
     </section>
 @endsection
 
+<script>
+    function checkScreenSize() {
+        const baslik = document.getElementById('baslik');
+        const baslikSpan = document.getElementById('baslikSpan');
+        const screenWidth = window.innerWidth;
+
+        if (window.innerWidth < 768) {
+            baslik.style.fontSize = '20px';
+            baslik.classList.add('mb-5');
+            baslik.classList.add('pb-2');
+            baslikSpan.classList.remove('fs-15');
+            baslikSpan.style.fontSize = '14px';
+
+        } else {
+            baslik.style.fontSize = '25px';
+            baslik.style.marginBottom = '10px';
+            baslikSpan.classList.add('fs-15');
+            baslik.classList.remove('mb-5');
+            baslik.classList.remove('pb-2');
+        }
+    }
+
+    window.addEventListener('load', checkScreenSize);
+    window.addEventListener('resize', checkScreenSize);
+</script>
 
 @section('css')
     <style>
