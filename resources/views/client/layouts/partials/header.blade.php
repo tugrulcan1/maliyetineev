@@ -548,18 +548,18 @@ display: none;
 }
 
     /* Mobil görünümde logo ve menü toggle butonunun hizalanması */
-@media (max-width: 991px) {
+@media (max-width: 791px) {
     .navbar-brand {
         margin-right: auto; /* Logo ve toggle butonu arasında boşluk bırakır */
     }
 
     .navbar-toggler {
         margin-left: auto;
-        margin-top: -120px !important;
+        margin-top: -10px !important;
     }
 
     .digital-mgz-mobile {
-        display: block; /* Mobil görünümde dijital ofis linklerini gösterir */
+        display: none; /* Mobil görünümde dijital ofis linklerini gösterir */
         margin-left: 10px;
     }
 
