@@ -472,17 +472,14 @@ display: none;
                 </div>
             </div> --}}
 
-
             <nav class="navbar navbar-expand-lg header-light bg-white responsive-sticky">
                 <div class="container-fluid">
-                    <div class="d-flex align-items-center">
-                        <a class="navbar-brand" href="{{route('index')}}">
-                            <img src="{{asset('images/logomev.png')}}" alt class=" logo-img">
-                        <button class="navbar-toggler" style="float: right" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                    </div>
+                    <a class="navbar-brand" href="{{ route('index') }}">
+                        <img src="{{ asset('images/logomev.png') }}" alt="Logo" class="logo-img">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ms-auto fw-600">
                             @foreach ($menu as $menus)
@@ -491,14 +488,13 @@ display: none;
                                         <a href="{{ $menus->href }}" class="nav-link" id="navbarDropdown{{ $menus->id }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             {{ $menus->text }}
                                             @if(count($menus->children) > 0)
-                                              <i class="fa fa-angle-down"></i>
+                                                <i class="fa fa-angle-down"></i>
                                             @endif
                                         </a>
                                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown{{ $menus->id }}">
                                             @foreach ($menus->children as $child)
                                                 <li><a class="dropdown-item" href="{{ $child->href }}">{{ $child->text }}</a></li>
                                             @endforeach
-
                                         </ul>
                                     </li>
                                 @else
@@ -509,17 +505,91 @@ display: none;
                             @endforeach
                         </ul>
                     </div>
-                    <div class=" digital-mgz col-auto text-end d-flex align-items-center justify-content-end d-lg-flex d-flex">
+                    <div class="digital-mgz col-auto d-none d-lg-flex align-items-center justify-content-end">
                         <a href="https://emlaksepette.com/magaza/maliyetine-ev/106" class="digitalMagaza" target="_blank" style="margin-right:10px;">Dijital Satış Ofisi</a>
                         <a href="https://emlaksepette.com/magaza/maliyetine-ev/106" class="digitalMagaza" target="_blank">Fiyat Listesi</a>
-
-                        {{-- <a href="/iletisim" class="phone-link" style="display: flex; align-items: center; color:#000;margin-left:10px">
-                            <i class="fas fa-phone"></i>
-                        </a> --}}
+                    </div>
+                    <div class="d-lg-none digital-mgz-mobile text-center mt-3">
+                        <a href="https://emlaksepette.com/magaza/maliyetine-ev/106" class="digitalMagaza" target="_blank" style="display: block; margin-bottom: 10px;">Dijital Satış Ofisi</a>
+                        <a href="https://emlaksepette.com/magaza/maliyetine-ev/106" class="digitalMagaza" target="_blank">Fiyat Listesi</a>
                     </div>
                 </div>
             </nav>
 
+
+
+<style>
+    /* Mobil görünümde menü toggle tıklandığında tüm menülerin görünmesini sağlar */
+@media (max-width: 791px) {
+    .navbar-collapse {
+        display: block;
+        height: 85px !important;
+    }
+
+    .navbar-collapse.collapse.show {
+        display: block; /* Menü açıldığında tüm menüleri göstermek için */
+    }
+
+    .navbar-nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 10px;
+    }
+
+    /* Menüyü scroll olmadan göstermek için */
+    .navbar-nav .dropdown-menu {
+        position: static; /* Menü genişliği tamamen genişletilir */
+        display: block; /* Menü tüm öğeleri göstermesi için */
+        width: 100%; /* Menü genişliğini %100 yapar */
+    }
+}
+
+    /* Mobil görünümde logo ve menü toggle butonunun hizalanması */
+@media (max-width: 991px) {
+    .navbar-brand {
+        margin-right: auto; /* Logo ve toggle butonu arasında boşluk bırakır */
+    }
+
+    .navbar-toggler {
+        margin-left: auto;
+        margin-top: -120px !important;
+    }
+
+    .digital-mgz-mobile {
+        display: block; /* Mobil görünümde dijital ofis linklerini gösterir */
+        margin-left: 10px;
+    }
+
+    .digital-mgz {
+        display: none; /* Desktop görünümde dijital ofis linklerini gizler */
+    }
+}
+
+/* Üst üste gelmemesi için mobil görünümde menü ve dijital ofis linklerini ayır */
+.digital-mgz-mobile a {
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+</style>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var toggler = document.querySelector('.navbar-toggler');
+        var navbarCollapse = document.querySelector('.navbar-collapse');
+
+        toggler.addEventListener('click', function () {
+            if (navbarCollapse.classList.contains('show')) {
+                navbarCollapse.classList.remove('show');
+            } else {
+                navbarCollapse.classList.add('show');
+            }
+        });
+    });
+</script>
 
 
         </header>
