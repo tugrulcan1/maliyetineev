@@ -308,16 +308,16 @@
                  <div class="col-lg-6 text-end md-mb-50px"
                      data-anime="{ &quot;effect&quot;: &quot;slide&quot;, &quot;color&quot;: &quot;#262b35&quot;, &quot;direction&quot;:&quot;lr&quot;, &quot;easing&quot;: &quot;easeOutQuad&quot;, &quot;delay&quot;:50}">
                      <figure class="position-relative m-0">
-                         <img src="ihttps://maliyetineevpanel.emlaksepette.com/uploads/28-1_Photo%20-%206.jpg" class="w-90 border-radius-6px" alt>
+                         <img src="https://maliyetineevpanel.emlaksepette.com/uploads/28-1_Photo%20-%206.jpg"
+                             class="w-90 border-radius-6px" alt>
                          <figcaption
                              class="position-absolute bg-dark-gray border-radius-10px box-shadow-quadruple-large bottom-100px xs-bottom-minus-20px left-minus-30px md-left-0px w-230px xs-w-210px text-center last-paragraph-no-margin animation-float">
                              <div
                                  class="bg-white pt-35px pb-35px border-radius-8px mb-15px position-relative top-minus-1px">
                                  <h1 class="fw-700 ls-minus-3px text-dark-gray mb-0 alt-font">4.9</h1>
                                  <div class="text-golden-yellow fs-18 ls-1px">
-                                     <i class="fa fa-star-fill"></i><i class="fa fa-star-fill"></i><i
-                                         class="fa fa-star-fill"></i><i class="fa fa-star-fill"></i><i
-                                         class="fa fa-star-fill"></i>
+                                     <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                         class="fa fa-star"></i><i class="fa fa-star"></i>
                                  </div>
                                  <span class="text-dark-gray d-block alt-font fw-600">{{ count($comments) }}
                                      Değerlendirme</span>
@@ -332,29 +332,29 @@
                      data-anime="{ &quot;translateY&quot;: [0, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1200, &quot;delay&quot;: 100, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
                      <span class="fs-20 d-inline-block mb-15px text-base-color">Değerlendirmeler</span>
                      <h2 class="alt-font fw-500 text-dark-gray ls-minus-1px shadow-none" data-shadow-animation="true"
-                         data-animation-delay="700">Bizim için<span
-                             class="fw-700 text-highlight d-inline-block"> müşterilerimizin <span
-                                 class="bg-base-color h-10px bottom-4px opacity-3 separator-animation"></span></span>neler söylüyor ?</h2>
+                         data-animation-delay="700">Bizim için<span class="fw-700 text-highlight d-inline-block">
+                             müşterilerimiz <span
+                                 class="bg-base-color h-10px bottom-4px opacity-3 separator-animation"></span></span>neler
+                         söylüyor ?</h2>
                      <div class="swiper position-relative"
                          data-slider-options="{ &quot;autoHeight&quot;: true, &quot;loop&quot;: true, &quot;allowTouchMove&quot;: true, &quot;autoplay&quot;: { &quot;delay&quot;: 4000, &quot;disableOnInteraction&quot;: false }, &quot;navigation&quot;: { &quot;nextEl&quot;: &quot;.swiper-button-next&quot;, &quot;prevEl&quot;: &quot;.swiper-button-prev&quot; }, &quot;effect&quot;: &quot;fade&quot; }">
                          <div class="swiper-wrapper mb-40px">
-                            @foreach ($comments as $comment)
-
-                             <div class="swiper-slide review-style-08">
-                                 <p class="w-80 xl-w-90 lg-w-100">{!! $comment->content !!}</p>
-                                 <div class="mt-20px">
-                                     <img class="rounded-circle w-95px h-95px me-15px" src="images/avtar-24.jpg" alt>
-                                     <div class="d-inline-block align-middle text-start">
-                                         <div class="text-dark-gray alt-font fs-20"><span class="fw-700">{{ $comment->full_name }}</span>
-                                             harvard</div>
-                                         <div class="review-star-icon fs-18">
-                                             <i class="fa fa-star-fill"></i><i class="fa fa-star-fill"></i><i
-                                                 class="fa fa-star-fill"></i><i class="fa fa-star-fill"></i><i
-                                                 class="fa fa-star-fill"></i>
+                             @foreach ($comments as $comment)
+                                 <div class="swiper-slide review-style-08">
+                                     <p class="w-80 xl-w-90 lg-w-100">{!! $comment->content !!}</p>
+                                     <div class="mt-20px">
+                                         <div class="d-inline-block align-middle text-start">
+                                             <div class="text-dark-gray alt-font fs-20"><span
+                                                     class="fw-700">{{ $comment->full_name }}</span>
+                                             </div>
+                                             <div class="review-star-icon fs-18">
+                                                 <i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                                     class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                                     class="fa fa-star"></i>
+                                             </div>
                                          </div>
                                      </div>
                                  </div>
-                             </div>
                              @endforeach
 
 
