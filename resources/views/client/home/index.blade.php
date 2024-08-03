@@ -50,11 +50,6 @@
                                      width="100" data-no-retina="">
                              </div>
                          </div>
-                         <div class="bg-dark-gray ps-50px pe-50px pt-20px pb-20px sm-ps-30px sm-pe-30px">
-                             <a href="demo-logistics-contact-us.html"
-                                 class="fs-19 fw-500 text-white d-flex w-100 align-items-center">Maliyetine ev sahibi ol<i
-                                     class="fa fa-plus ms-auto icon-extra-medium"></i></a>
-                         </div>
                      </div>
                  </div>
              </div>
