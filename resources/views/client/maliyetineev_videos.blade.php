@@ -20,7 +20,7 @@ padding-bottom: 30px;">
     <section>
 
         <div class="container">
-            <div class="video-gallery-container">
+            <div class="video-gallery-container p-0 m-0">
                 <div class="video-gallery">
                     @foreach ($videos as $video)
                         <div class="video-item">
