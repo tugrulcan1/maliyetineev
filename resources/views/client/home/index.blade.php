@@ -151,7 +151,199 @@
              </div>
          </div>
      </section>
-     <section class="overflow-hidden bg-blue-whale position-relative" style="background-color: #152833">
+     <section class="background-position-left-top position-relative"
+         style="background-image: url('images/demo-charity-home-bg-01.jpg')">
+         <div class="position-absolute left-0px top-minus-50px md-top-minus-40px sm-top-minus-30px xs-top-minus-15px background-position-left-top w-100 h-100px xs-h-50px background-size-100 background-no-repeat"
+             style="background-image: url('images/demo-charity-home-bg-02.jpg')"></div>
+         <div class="container">
+             <div class="row g-0 border-radius-4px mb-7 overflow-hidden overlap-section sm-mb-60px xs-mb-40px">
+                 <div class="col-lg-6 col-md-7 p-8 lg-p-4 sm-p-25px background-position-left-top position-relative text-center text-md-start"
+                     style="background-image: url('images/demo-charity-home-bg-06.jpg')">
+                     <div class="position-absolute right-minus-100px top-0px cover-background w-100px h-100 z-index-9 d-none d-md-block"
+                         style="background-image: url('images/demo-charity-home-bg-07.png')"></div>
+                     <h3 class="alt-font text-dark-gray w-95 xl-w-100 mb-20px">Why volunteer with foundation?</h3>
+                     <p class="text-dark-gray opacity-8 w-95 lg-w-100 mb-30px md-mb-25px">Your volunteering experience will
+                         help you develop invaluable professional skills and build your leadership capabilities.</p>
+                     <a href="demo-charity-volunteer.html"
+                         class="btn btn-large btn-round-edge with-rounded btn-gradient-green-goldenrod-yellow">Become a
+                         volunteer<span class="bg-white"><i
+                                 class="fa-solid fa-arrow-right text-dark-golden-yellow"></i></span></a>
+                 </div>
+                 <div class="col-lg-6 col-md-5 cover-background position-relative sm-h-350px"
+                     style="background-image: url('images/demo-charity-home-img-08.jpg')">
+                     <div
+                         class="blur-box bg-white-transparent ps-30px pe-30px pt-25px pb-25px border-radius-4px d-inline-block position-absolute right-50px bottom-50px sm-right-20px sm-bottom-25px animation-float text-center">
+                         <h1 class="mb-0 text-dark-gray fw-400 alt-font">2K</h1>
+                         <span class="fs-14 fw-700 text-uppercase text-dark-gray">Volunteers</span>
+                     </div>
+                 </div>
+             </div>
+             <div class="row justify-content-center mb-3 sm-mb-30px xs-mb-15px">
+                 <div class="col-xxl-6 col-xl-7 col-lg-8 col-md-9 col-sm-10 text-center last-paragraph-no-margin"
+                     data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateY&quot;: [30, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 600, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 200, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
+                     <h3 class="alt-font text-dark-gray mb-10px">Success stories</h3>
+                     <p class="w-70 sm-w-100 mx-auto">Positive stories of change that will make your day, you've come to
+                         the right place!</p>
+                 </div>
+             </div>
+         </div>
+         <div class="container">
+             <div class="row mb-4">
+                 <div class="col-12 position-relative"
+                     data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateX&quot;: [150, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1500, &quot;delay&quot;: 100, &quot;staggervalue&quot;: 200, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
+                     <div class="outside-box-right-35 sm-outside-box-right-0">
+                         <div class="swiper"
+                             data-slider-options="{ &quot;slidesPerView&quot;: 1, &quot;spaceBetween&quot;: 30, &quot;loop&quot;: true, &quot;autoplay&quot;: { &quot;delay&quot;: 400000, &quot;disableOnInteraction&quot;: false },  &quot;pagination&quot;: { &quot;el&quot;: &quot;.slider-three-slide-pagination&quot;, &quot;clickable&quot;: true, &quot;dynamicBullets&quot;: false }, &quot;keyboard&quot;: { &quot;enabled&quot;: true, &quot;onlyInViewport&quot;: true }, &quot;breakpoints&quot;: { &quot;1200&quot;: { &quot;slidesPerView&quot;: 3 }, &quot;992&quot;: { &quot;slidesPerView&quot;: 2 }, &quot;768&quot;: { &quot;slidesPerView&quot;: 2 }, &quot;320&quot;: { &quot;slidesPerView&quot;: 1 } }, &quot;effect&quot;: &quot;slide&quot; }">
+                             <div class="swiper-wrapper pt-20px pb-20px">
+
+                                 <div class="swiper-slide blog-side-image">
+
+                                     <div
+                                         class="blog-box d-sm-flex d-block flex-row h-100 border-radius-6px overflow-hidden box-shadow-extra-large">
+                                         <div class="blog-image w-50 xs-w-100 cover-background"
+                                             style="background-image: url('images/demo-charity-blog-01.jpg')">
+                                             <a href="demo-charity-blog-single-simple.html"
+                                                 class="blog-post-image-overlay"></a>
+                                         </div>
+                                         <div
+                                             class="blog-content w-50 xs-w-100 pt-50px pb-40px ps-40px pe-40px xl-p-20px md-p-20px bg-white d-flex flex-column justify-content-center align-items-start last-paragraph-no-margin">
+                                             <a href="demo-charity-stories.html"
+                                                 class="btn btn-very-small btn-rounded btn-gradient-green-goldenrod-yellow ls-0px mb-65px xs-mb-40px">Education</a>
+                                             <a href="demo-charity-blog-single-simple.html"
+                                                 class="card-title text-dark-gray text-dark-gray-hover fw-500 mb-10px fs-19 md-fs-18 alt-font ws-minus-3px">We
+                                                 providing urgent aid after cyclone.</a>
+                                             <p>Lorem ipsum simply text of the ipsum printing...</p>
+                                         </div>
+                                     </div>
+
+                                 </div>
+
+
+                                 <div class="swiper-slide blog-side-image">
+
+                                     <div
+                                         class="blog-box d-sm-flex d-block flex-row h-100 border-radius-6px overflow-hidden box-shadow-extra-large">
+                                         <div class="blog-image w-50 xs-w-100 cover-background"
+                                             style="background-image: url('images/demo-charity-blog-02.jpg')">
+                                             <a href="demo-charity-blog-single-simple.html"
+                                                 class="blog-post-image-overlay"></a>
+                                         </div>
+                                         <div
+                                             class="blog-content w-50 xs-w-100 pt-50px pb-40px ps-40px pe-40px xl-p-20px md-p-20px bg-white d-flex flex-column justify-content-center align-items-start last-paragraph-no-margin">
+                                             <a href="demo-charity-stories.html"
+                                                 class="btn btn-very-small btn-rounded btn-gradient-green-goldenrod-yellow ls-0px mb-65px xs-mb-40px">Health</a>
+                                             <a href="demo-charity-blog-single-simple.html"
+                                                 class="card-title text-dark-gray text-dark-gray-hover fw-500 mb-10px fs-19 md-fs-18 alt-font ws-minus-3px">Protect
+                                                 families from heavy disasters.</a>
+                                             <p>Lorem ipsum simply text of the ipsum printing...</p>
+                                         </div>
+                                     </div>
+
+                                 </div>
+
+
+                                 <div class="swiper-slide blog-side-image">
+
+                                     <div
+                                         class="blog-box d-sm-flex d-block flex-row h-100 border-radius-6px overflow-hidden box-shadow-extra-large">
+                                         <div class="blog-image w-50 xs-w-100 cover-background"
+                                             style="background-image: url('images/demo-charity-blog-03.jpg')">
+                                             <a href="demo-charity-blog-single-simple.html"
+                                                 class="blog-post-image-overlay"></a>
+                                         </div>
+                                         <div
+                                             class="blog-content w-50 xs-w-100 pt-50px pb-40px ps-40px pe-40px xl-p-20px md-p-20px bg-white d-flex flex-column justify-content-center align-items-start last-paragraph-no-margin">
+                                             <a href="demo-charity-stories.html"
+                                                 class="btn btn-very-small btn-rounded btn-gradient-green-goldenrod-yellow ls-0px mb-65px xs-mb-40px">Environment</a>
+                                             <a href="demo-charity-blog-single-simple.html"
+                                                 class="card-title text-dark-gray text-dark-gray-hover fw-500 mb-10px fs-19 md-fs-18 alt-font ws-minus-3px">This
+                                                 world day against child labour.</a>
+                                             <p>Lorem ipsum simply text of the ipsum printing...</p>
+                                         </div>
+                                     </div>
+
+                                 </div>
+
+
+                                 <div class="swiper-slide blog-side-image">
+
+                                     <div
+                                         class="blog-box d-sm-flex d-block flex-row h-100 border-radius-6px overflow-hidden box-shadow-extra-large">
+                                         <div class="blog-image w-50 xs-w-100 cover-background"
+                                             style="background-image: url('images/demo-charity-blog-04.jpg')">
+                                             <a href="demo-charity-blog-single-simple.html"
+                                                 class="blog-post-image-overlay"></a>
+                                         </div>
+                                         <div
+                                             class="blog-content w-50 xs-w-100 pt-50px pb-40px ps-40px pe-40px xl-p-20px md-p-20px bg-white d-flex flex-column justify-content-center align-items-start last-paragraph-no-margin">
+                                             <a href="demo-charity-stories.html"
+                                                 class="btn btn-very-small btn-rounded btn-gradient-green-goldenrod-yellow ls-0px mb-65px xs-mb-40px">Education</a>
+                                             <a href="demo-charity-blog-single-simple.html"
+                                                 class="card-title text-dark-gray text-dark-gray-hover fw-500 mb-10px fs-19 md-fs-18 alt-font ws-minus-3px">Help
+                                                 children's survive of COVID-19.</a>
+                                             <p>Lorem ipsum simply text of the ipsum printing...</p>
+                                         </div>
+                                     </div>
+
+                                 </div>
+
+
+                                 <div class="swiper-slide blog-side-image">
+
+                                     <div
+                                         class="blog-box d-sm-flex d-block flex-row h-100 border-radius-6px overflow-hidden box-shadow-extra-large">
+                                         <div class="blog-image w-50 xs-w-100 cover-background"
+                                             style="background-image: url('images/demo-charity-blog-01.jpg')">
+                                             <a href="demo-charity-blog-single-simple.html"
+                                                 class="blog-post-image-overlay"></a>
+                                         </div>
+                                         <div
+                                             class="blog-content w-50 xs-w-100 pt-50px pb-40px ps-40px pe-40px xl-p-20px md-p-20px bg-white d-flex flex-column justify-content-center align-items-start last-paragraph-no-margin">
+                                             <a href="demo-charity-stories.html"
+                                                 class="btn btn-very-small btn-rounded btn-gradient-green-goldenrod-yellow ls-0px mb-65px xs-mb-40px">Education</a>
+                                             <a href="demo-charity-blog-single-simple.html"
+                                                 class="card-title text-dark-gray text-dark-gray-hover fw-500 mb-10px fs-19 md-fs-18 alt-font ws-minus-3px">We
+                                                 providing urgent aid after cyclone.</a>
+                                             <p>Lorem ipsum simply text of the ipsum printing...</p>
+                                         </div>
+                                     </div>
+
+                                 </div>
+
+
+                                 <div class="swiper-slide blog-side-image">
+
+                                     <div
+                                         class="blog-box d-sm-flex d-block flex-row h-100 border-radius-6px overflow-hidden box-shadow-extra-large">
+                                         <div class="blog-image w-50 xs-w-100 cover-background"
+                                             style="background-image: url('images/demo-charity-blog-02.jpg')">
+                                             <a href="demo-charity-blog-single-simple.html"
+                                                 class="blog-post-image-overlay"></a>
+                                         </div>
+                                         <div
+                                             class="blog-content w-50 xs-w-100 pt-50px pb-40px ps-40px pe-40px xl-p-20px md-p-20px bg-white d-flex flex-column justify-content-center align-items-start last-paragraph-no-margin">
+                                             <a href="demo-charity-stories.html"
+                                                 class="btn btn-very-small btn-rounded btn-gradient-green-goldenrod-yellow ls-0px mb-65px xs-mb-40px">Health</a>
+                                             <a href="demo-charity-blog-single-simple.html"
+                                                 class="card-title text-dark-gray text-dark-gray-hover fw-500 mb-10px fs-19 md-fs-18 alt-font ws-minus-3px">Protect
+                                                 families from heavy disasters.</a>
+                                             <p>Lorem ipsum simply text of the ipsum printing...</p>
+                                         </div>
+                                     </div>
+
+                                 </div>
+
+                             </div>
+                         </div>
+                     </div>
+
+
+
+                 </div>
+             </div>
+         </div>
+     </section>
+     <section class="overflow-hidden bg-blue-whale position-relative" style="background-color: #EC2E2D">
          <div class="container">
              <div class="row align-items-center">
                  <div class="col-lg-4 md-mb-40px text-center text-lg-start"
