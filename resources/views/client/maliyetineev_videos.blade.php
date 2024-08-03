@@ -24,7 +24,7 @@ padding-bottom: 30px;">
                 <div class="video-gallery">
                     @foreach ($videos as $video)
                         <div class="video-item">
-                            <iframe style="width: 100%;height:550px" src="{{ convertToEmbedUrl($video->url) }}"
+                            <iframe style="width: 100%;" src="{{ convertToEmbedUrl($video->url) }}"
                                 frameborder="0" allowfullscreen></iframe>
                         </div>
                     @endforeach
@@ -38,7 +38,7 @@ padding-bottom: 30px;">
     .video-gallery-container {
         max-width: 1040px;
         /* Maksimum genişlik belirleme */
-        margin: 80px auto;
+        margin: 0 auto;
         /* Sayfayı yatayda ortala */
         overflow: hidden;
         /* İçeriklerin dışarı taşmasını engelle */
@@ -64,7 +64,7 @@ padding-bottom: 30px;">
     /* Küçük ekranlarda */
     @media screen and (max-width: 768px) {
         .video-gallery-container {
-            max-width: 80%;
+            max-width: 100%;
             /* Maksimum genişlik belirleme */
         }
     }
@@ -72,7 +72,7 @@ padding-bottom: 30px;">
     /* Ekstra küçük ekranlarda */
     @media screen and (max-width: 480px) {
         .video-gallery-container {
-            max-width: 90%;
+            max-width: 100%;
             /* Maksimum genişlik belirleme */
         }
     }
