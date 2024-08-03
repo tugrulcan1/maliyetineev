@@ -151,54 +151,87 @@
              </div>
          </div>
      </section>
-     <section class="p-0 top-space-margin overflow-hidden pb-25px">
-         <div class="container">
-             <div class="row justify-content-center mb-2 appear anime-child anime-complete"
-                 data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateY&quot;: [30, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 600, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
-                 <div class="col-xxl-6 col-xl-7 col-lg-8 col-md-9 text-center" style="">
 
-                     <h2 class="fw-700 alt-font text-dark-gray ls-minus-1px">Projelerimiz</h2>
-                 </div>
-             </div>
-             <div class="row align-items-center">
-                 <div class="col-12 col-md-12">
-                     <div class="outside-box-right-30 sm-outside-box-right-0"
-                         data-anime="{ &quot;translateX&quot;: [40, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 800, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
-                         <div class="swiper magic-cursor base-color"
-                             data-slider-options="{ &quot;slidesPerView&quot;: 1, &quot;spaceBetween&quot;: 25, &quot;loop&quot;: true, &quot;autoplay&quot;: { &quot;delay&quot;: 300000, &quot;disableOnInteraction&quot;: false }, &quot;keyboard&quot;: { &quot;enabled&quot;: true, &quot;onlyInViewport&quot;: true }, &quot;breakpoints&quot;: { &quot;992&quot;: { &quot;slidesPerView&quot;: 3 }, &quot;768&quot;: { &quot;slidesPerView&quot;: 2 }, &quot;320&quot;: { &quot;slidesPerView&quot;: 1 } }, &quot;effect&quot;: &quot;slide&quot; }">
-
-                             <div class="swiper-wrapper">
-                                 @foreach ($projects as $project)
-                                     <div class="swiper-slide">
-                                         <div class="interactive-banner-style-09 position-relative overflow-hidden">
-                                             <img class="w-100"
-                                                 src="{{ asset('projects_cover_image/' . $project->cover_image) }}" alt />
-                                             <div class="opacity-full-dark bg-gradient-bottom-dark-transparent"></div>
-                                             <div
-                                                 class="image-content h-100 w-100 p-10 xl-p-30px sm-pe-15px sm-ps-15px text-center d-flex justify-content-end align-items-end flex-column">
-                                                 <div class="w-100">
-                                                     <a href="{{ route('projelerimiz.show', $project->id) }}"
-                                                         class="btn btn-medium btn-rounded btn-box-shadow btn-white text-uppercase fw-700 ps-15px pe-15px pt-5px pb-5px lh-16 mb-20px">{{ $project->project_sub_title }}</a>
-                                                     <div
-                                                         class="alt-font fw-700 sliding-box-title mb-10px w-80 xl-w-100 md-w-90 sm-w-70 xs-w-100 mx-auto">
-                                                         <a href="demo-magazine-blog-single-creative.html"
-                                                             class="text-white alt-font fw-600 fs-40 lg-fs-24 ls-minus-1px lg-ls-0px">{{ $project->project_title }}</a>
-                                                     </div>
-
-                                                 </div>
-                                             </div>
-                                         </div>
-                                     </div>
-                                 @endforeach
-
-                             </div>
+     <section class="bg-very-light-gray overlap-gap-section-bottom">
+         <div class="container overlap-section">
+             <div class="row mb-9">
+                 <div class="col-12">
+                     <div class="box-shadow-large border-radius-6px position-relative overflow-hidden"
+                         data-anime="{&quot;scale&quot;: [0.9, 1], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 600, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
+                         <img src="images/demo-lawyer-about-01.jpg" class="border-radius-5px w-100" alt>
+                         <a href="https://www.youtube.com/watch?v=cfXHhfNy7tU"
+                             class="absolute-middle-center text-center rounded-circle video-icon-box video-icon-extra-large popup-vimeo">
+                             <span>
+                                 <span class="video-icon bg-white">
+                                     <i class="fa-solid fa-play text-dark-gray"></i>
+                                     <span class="video-icon-sonar">
+                                         <span class="video-icon-sonar-bfr border border-2 border-color-white"></span>
+                                     </span>
+                                 </span>
+                             </span>
+                         </a>
+                         <div class="position-absolute bottom-minus-35px md-bottom-minus-15px left-0px w-100 text-center d-none d-sm-block"
+                             data-bottom-top="transform:scale(1.3, 1.3) translateY(0px);"
+                             data-top-bottom="transform:scale(1, 1) translateY(-25px);">
+                             <div
+                                 class="fs-130 lg-fs-120 md-fs-100 sm-fs-85 fw-600 alt-font font-style-italic text-very-light-gray ls-minus-1px">
+                                 company history</div>
                          </div>
                      </div>
                  </div>
              </div>
-         </div>
-     </section>
-     {{-- <section class="overflow-hidden bg-blue-whale position-relative" style="background-color: #EC2E2D">
+
+             <section class="p-0 top-space-margin overflow-hidden pb-25px">
+                 <div class="container">
+                     <div class="row justify-content-center mb-2 appear anime-child anime-complete"
+                         data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateY&quot;: [30, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 600, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
+                         <div class="col-xxl-6 col-xl-7 col-lg-8 col-md-9 text-center" style="">
+
+                             <h2 class="fw-700 alt-font text-dark-gray ls-minus-1px">Projelerimiz</h2>
+                         </div>
+                     </div>
+                     <div class="row align-items-center">
+                         <div class="col-12 col-md-12">
+                             <div class="outside-box-right-30 sm-outside-box-right-0"
+                                 data-anime="{ &quot;translateX&quot;: [40, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 800, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
+                                 <div class="swiper magic-cursor base-color"
+                                     data-slider-options="{ &quot;slidesPerView&quot;: 1, &quot;spaceBetween&quot;: 25, &quot;loop&quot;: true, &quot;autoplay&quot;: { &quot;delay&quot;: 300000, &quot;disableOnInteraction&quot;: false }, &quot;keyboard&quot;: { &quot;enabled&quot;: true, &quot;onlyInViewport&quot;: true }, &quot;breakpoints&quot;: { &quot;992&quot;: { &quot;slidesPerView&quot;: 3 }, &quot;768&quot;: { &quot;slidesPerView&quot;: 2 }, &quot;320&quot;: { &quot;slidesPerView&quot;: 1 } }, &quot;effect&quot;: &quot;slide&quot; }">
+
+                                     <div class="swiper-wrapper">
+                                         @foreach ($projects as $project)
+                                             <div class="swiper-slide">
+                                                 <div
+                                                     class="interactive-banner-style-09 position-relative overflow-hidden">
+                                                     <img class="w-100"
+                                                         src="{{ asset('projects_cover_image/' . $project->cover_image) }}"
+                                                         alt />
+                                                     <div class="opacity-full-dark bg-gradient-bottom-dark-transparent">
+                                                     </div>
+                                                     <div
+                                                         class="image-content h-100 w-100 p-10 xl-p-30px sm-pe-15px sm-ps-15px text-center d-flex justify-content-end align-items-end flex-column">
+                                                         <div class="w-100">
+                                                             <a href="{{ route('projelerimiz.show', $project->id) }}"
+                                                                 class="btn btn-medium btn-rounded btn-box-shadow btn-white text-uppercase fw-700 ps-15px pe-15px pt-5px pb-5px lh-16 mb-20px">{{ $project->project_sub_title }}</a>
+                                                             <div
+                                                                 class="alt-font fw-700 sliding-box-title mb-10px w-80 xl-w-100 md-w-90 sm-w-70 xs-w-100 mx-auto">
+                                                                 <a href="demo-magazine-blog-single-creative.html"
+                                                                     class="text-white alt-font fw-600 fs-40 lg-fs-24 ls-minus-1px lg-ls-0px">{{ $project->project_title }}</a>
+                                                             </div>
+
+                                                         </div>
+                                                     </div>
+                                                 </div>
+                                             </div>
+                                         @endforeach
+
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </section>
+             {{-- <section class="overflow-hidden bg-blue-whale position-relative" style="background-color: #EC2E2D">
          <div class="container">
              <div class="row align-items-center">
                  <div class="col-lg-4 md-mb-40px text-center text-lg-start"
@@ -280,62 +313,64 @@
      </section> --}}
 
 
-     <section class="pt-0 mgyy  " style="display:none">
-         <div class="container">
-             <div class="row align-items-center justify-content-center">
+             <section class="pt-0 mgyy  " style="display:none">
+                 <div class="container">
+                     <div class="row align-items-center justify-content-center">
 
-                 <div class="col-lg-5 offset-lg-1 col-md-11 contact-form-style-01 position-relative" style="">
-                     <div class="ps-8 pe-8 pt-8 pb-8 lg-p-8 bg-white box-shadow-quadruple-large border-radius-6px">
-                         <h6 class="d-inline-block fw-600 text-dark-gray ls-minus-1px mb-35px sm-mb-25px"
-                             data-anime="{ &quot;translateY&quot;: [15, 0], &quot;translateX&quot;: [-15, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 600, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
-                             Formu doldurun sizi arayalım</h6>
-                         @if ($errors->any())
-                             <div class="alert alert-danger">
-                                 <ul class="mb-0">
-                                     @foreach ($errors->all() as $error)
-                                         <li>{{ $error }}</li>
-                                     @endforeach
-                                 </ul>
-                             </div>
-                         @endif
-                         <form method="POST" action="{{ route('home.form.show') }}"
-                             data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateY&quot;: [15, 0], &quot;translateX&quot;: [-15, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 600, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
-                             @csrf
-                             <div class="position-relative form-group mb-15px">
-                                 <span class="form-icon"><i class="fas fa-user"></i></span>
-                                 <input type="text" name="name" class="form-control required"
-                                     placeholder="Ad soyad" />
-                             </div>
-                             <div class="position-relative form-group mb-15px">
-                                 <span class="form-icon"><i class="fa fa-envelope"></i></span>
-                                 <input type="email" name="email" class="form-control required"
-                                     placeholder="E-posta adresiniz" />
-                             </div>
-                             <div class="position-relative form-group mb-20px">
-                                 <span class="form-icon"><i class="fa fa-phone"></i></span>
-                                 <input type="tel" name="phone" class="form-control"
-                                     placeholder="Telefon Numaranız" />
-                             </div>
-                             <div class="position-relative terms-condition-box text-start d-inline-block">
-                                 <input type="checkbox" name="terms_condition" id="terms_condition"
-                                     class="terms-condition check-box align-middle ">
-                                 <label>
+                         <div class="col-lg-5 offset-lg-1 col-md-11 contact-form-style-01 position-relative"
+                             style="">
+                             <div class="ps-8 pe-8 pt-8 pb-8 lg-p-8 bg-white box-shadow-quadruple-large border-radius-6px">
+                                 <h6 class="d-inline-block fw-600 text-dark-gray ls-minus-1px mb-35px sm-mb-25px"
+                                     data-anime="{ &quot;translateY&quot;: [15, 0], &quot;translateX&quot;: [-15, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 600, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
+                                     Formu doldurun sizi arayalım</h6>
+                                 @if ($errors->any())
+                                     <div class="alert alert-danger">
+                                         <ul class="mb-0">
+                                             @foreach ($errors->all() as $error)
+                                                 <li>{{ $error }}</li>
+                                             @endforeach
+                                         </ul>
+                                     </div>
+                                 @endif
+                                 <form method="POST" action="{{ route('home.form.show') }}"
+                                     data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateY&quot;: [15, 0], &quot;translateX&quot;: [-15, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 600, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
+                                     @csrf
+                                     <div class="position-relative form-group mb-15px">
+                                         <span class="form-icon"><i class="fas fa-user"></i></span>
+                                         <input type="text" name="name" class="form-control required"
+                                             placeholder="Ad soyad" />
+                                     </div>
+                                     <div class="position-relative form-group mb-15px">
+                                         <span class="form-icon"><i class="fa fa-envelope"></i></span>
+                                         <input type="email" name="email" class="form-control required"
+                                             placeholder="E-posta adresiniz" />
+                                     </div>
+                                     <div class="position-relative form-group mb-20px">
+                                         <span class="form-icon"><i class="fa fa-phone"></i></span>
+                                         <input type="tel" name="phone" class="form-control"
+                                             placeholder="Telefon Numaranız" />
+                                     </div>
+                                     <div class="position-relative terms-condition-box text-start d-inline-block">
+                                         <input type="checkbox" name="terms_condition" id="terms_condition"
+                                             class="terms-condition check-box align-middle ">
+                                         <label>
 
-                                     <span class="box fs-16">Kişisel Verilerin Korunması Hakkında <a
-                                             href="{{ route('aydinlatma.metni') }}" target="_blank">Aydınlatma Yazısını
-                                             okudum</a>, kabul ediyorum.</span>
-                                 </label>
+                                             <span class="box fs-16">Kişisel Verilerin Korunması Hakkında <a
+                                                     href="{{ route('aydinlatma.metni') }}" target="_blank">Aydınlatma
+                                                     Yazısını
+                                                     okudum</a>, kabul ediyorum.</span>
+                                         </label>
+                                     </div>
+                                     <div class="position-relative mt-20px">
+                                         <button class="btn btn-large btn-round-edge btn-base-color btn-box-shadow w-100"
+                                             type="submit">Gönder</button>
+                                     </div>
+                                 </form>
                              </div>
-                             <div class="position-relative mt-20px">
-                                 <button class="btn btn-large btn-round-edge btn-base-color btn-box-shadow w-100"
-                                     type="submit">Gönder</button>
-                             </div>
-                         </form>
+                         </div>
                      </div>
                  </div>
-             </div>
-         </div>
-     </section>
+             </section>
 
 
 
@@ -343,323 +378,332 @@
 
 
 
-     <section class="position-relative overflow-hidden">
-         <img src="images/demo-real-estate-07.png" alt class="position-absolute left-100px top-50px z-index-minus-1"
-             data-bottom-top="transform: translate3d(80px, 0px, 0px);"
-             data-top-bottom="transform: translate3d(-180px, 0px, 0px);" />
-         <img src="images/demo-real-estate-08.png" alt class="position-absolute right-100px top-100px z-index-minus-1"
-             data-bottom-top="transform:scale(1.4, 1.4) translate3d(0px, 0px, 0px);"
-             data-top-bottom="transform:scale(1, 1) translate3d(-400px, 0px, 0px);" />
-         <div class="container">
-             <div class="row align-items-center justify-content-center">
-                 <div class="col-lg-6 text-end md-mb-50px"
-                     data-anime="{ &quot;effect&quot;: &quot;slide&quot;, &quot;color&quot;: &quot;#262b35&quot;, &quot;direction&quot;:&quot;lr&quot;, &quot;easing&quot;: &quot;easeOutQuad&quot;, &quot;delay&quot;:50}">
-                     <figure class="position-relative m-0">
-                         <img src="https://maliyetineevpanel.emlaksepette.com/uploads/28-1_Photo%20-%206.jpg"
-                             class="w-90 border-radius-6px" alt>
-                         <figcaption
-                             class="position-absolute bg-dark-gray border-radius-10px box-shadow-quadruple-large bottom-100px xs-bottom-minus-20px left-minus-30px md-left-0px w-230px xs-w-210px text-center last-paragraph-no-margin animation-float">
-                             <div
-                                 class="bg-white pt-35px pb-35px border-radius-8px mb-15px position-relative top-minus-1px">
-                                 <h1 class="fw-700 ls-minus-3px text-dark-gray mb-0 alt-font">4.9</h1>
-                                 <div class="text-golden-yellow fs-18 ls-1px">
-                                     <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
-                                         class="fa fa-star"></i><i class="fa fa-star"></i>
-                                 </div>
-                                 <span class="text-dark-gray d-block alt-font fw-600">{{ count($comments) }}
-                                     Değerlendirme</span>
-                                 <div
-                                     class="d-inline-block fs-12 text-uppercase bg-base-color ps-20px pe-20px lh-30 text-white border-radius-100px box-shadow-large">
-                                     Maliyetine Ev</div>
-                             </div>
-                         </figcaption>
-                     </figure>
-                 </div>
-                 <div class="col-lg-5 offset-lg-1 col-md-10 text-center text-lg-start"
-                     data-anime="{ &quot;translateY&quot;: [0, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1200, &quot;delay&quot;: 100, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
-                     <span class="fs-20 d-inline-block mb-15px text-base-color">Değerlendirmeler</span>
-                     <h2 class="alt-font fw-500 text-dark-gray ls-minus-1px shadow-none" data-shadow-animation="true"
-                         data-animation-delay="700">Bizim için<span class="fw-700 text-highlight d-inline-block">
-                             müşterilerimiz <span
-                                 class="bg-base-color h-10px bottom-4px opacity-3 separator-animation"></span></span>neler
-                         söylüyor ?</h2>
-                     <div class="swiper position-relative"
-                         data-slider-options="{ &quot;autoHeight&quot;: true, &quot;loop&quot;: true, &quot;allowTouchMove&quot;: true, &quot;autoplay&quot;: { &quot;delay&quot;: 4000, &quot;disableOnInteraction&quot;: false }, &quot;navigation&quot;: { &quot;nextEl&quot;: &quot;.swiper-button-next&quot;, &quot;prevEl&quot;: &quot;.swiper-button-prev&quot; }, &quot;effect&quot;: &quot;fade&quot; }">
-                         <div class="swiper-wrapper mb-40px">
-                             @foreach ($comments as $comment)
-                                 <div class="swiper-slide review-style-08">
-                                     <p class="w-80 xl-w-90 lg-w-100">{!! $comment->content !!}</p>
-                                     <div class="mt-20px">
-                                         <div class="d-inline-block align-middle text-start">
-                                             <div class="text-dark-gray alt-font fs-20"><span
-                                                     class="fw-700">{{ $comment->full_name }}</span>
-                                             </div>
-                                             <div class="review-star-icon fs-18">
-                                                 <i class="fa fa-star"></i><i class="fa fa-star"></i><i
-                                                     class="fa fa-star"></i><i class="fa fa-star"></i><i
-                                                     class="fa fa-star"></i>
+             <section class="position-relative overflow-hidden">
+                 <img src="images/demo-real-estate-07.png" alt
+                     class="position-absolute left-100px top-50px z-index-minus-1"
+                     data-bottom-top="transform: translate3d(80px, 0px, 0px);"
+                     data-top-bottom="transform: translate3d(-180px, 0px, 0px);" />
+                 <img src="images/demo-real-estate-08.png" alt
+                     class="position-absolute right-100px top-100px z-index-minus-1"
+                     data-bottom-top="transform:scale(1.4, 1.4) translate3d(0px, 0px, 0px);"
+                     data-top-bottom="transform:scale(1, 1) translate3d(-400px, 0px, 0px);" />
+                 <div class="container">
+                     <div class="row align-items-center justify-content-center">
+                         <div class="col-lg-6 text-end md-mb-50px"
+                             data-anime="{ &quot;effect&quot;: &quot;slide&quot;, &quot;color&quot;: &quot;#262b35&quot;, &quot;direction&quot;:&quot;lr&quot;, &quot;easing&quot;: &quot;easeOutQuad&quot;, &quot;delay&quot;:50}">
+                             <figure class="position-relative m-0">
+                                 <img src="https://maliyetineevpanel.emlaksepette.com/uploads/28-1_Photo%20-%206.jpg"
+                                     class="w-90 border-radius-6px" alt>
+                                 <figcaption
+                                     class="position-absolute bg-dark-gray border-radius-10px box-shadow-quadruple-large bottom-100px xs-bottom-minus-20px left-minus-30px md-left-0px w-230px xs-w-210px text-center last-paragraph-no-margin animation-float">
+                                     <div
+                                         class="bg-white pt-35px pb-35px border-radius-8px mb-15px position-relative top-minus-1px">
+                                         <h1 class="fw-700 ls-minus-3px text-dark-gray mb-0 alt-font">4.9</h1>
+                                         <div class="text-golden-yellow fs-18 ls-1px">
+                                             <i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                                 class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                                 class="fa fa-star"></i>
+                                         </div>
+                                         <span class="text-dark-gray d-block alt-font fw-600">{{ count($comments) }}
+                                             Değerlendirme</span>
+                                         <div
+                                             class="d-inline-block fs-12 text-uppercase bg-base-color ps-20px pe-20px lh-30 text-white border-radius-100px box-shadow-large">
+                                             Maliyetine Ev</div>
+                                     </div>
+                                 </figcaption>
+                             </figure>
+                         </div>
+                         <div class="col-lg-5 offset-lg-1 col-md-10 text-center text-lg-start"
+                             data-anime="{ &quot;translateY&quot;: [0, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1200, &quot;delay&quot;: 100, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
+                             <span class="fs-20 d-inline-block mb-15px text-base-color">Değerlendirmeler</span>
+                             <h2 class="alt-font fw-500 text-dark-gray ls-minus-1px shadow-none"
+                                 data-shadow-animation="true" data-animation-delay="700">Bizim için<span
+                                     class="fw-700 text-highlight d-inline-block">
+                                     müşterilerimiz <span
+                                         class="bg-base-color h-10px bottom-4px opacity-3 separator-animation"></span></span>neler
+                                 söylüyor ?</h2>
+                             <div class="swiper position-relative"
+                                 data-slider-options="{ &quot;autoHeight&quot;: true, &quot;loop&quot;: true, &quot;allowTouchMove&quot;: true, &quot;autoplay&quot;: { &quot;delay&quot;: 4000, &quot;disableOnInteraction&quot;: false }, &quot;navigation&quot;: { &quot;nextEl&quot;: &quot;.swiper-button-next&quot;, &quot;prevEl&quot;: &quot;.swiper-button-prev&quot; }, &quot;effect&quot;: &quot;fade&quot; }">
+                                 <div class="swiper-wrapper mb-40px">
+                                     @foreach ($comments as $comment)
+                                         <div class="swiper-slide review-style-08">
+                                             <p class="w-80 xl-w-90 lg-w-100">{!! $comment->content !!}</p>
+                                             <div class="mt-20px">
+                                                 <div class="d-inline-block align-middle text-start">
+                                                     <div class="text-dark-gray alt-font fs-20"><span
+                                                             class="fw-700">{{ $comment->full_name }}</span>
+                                                     </div>
+                                                     <div class="review-star-icon fs-18">
+                                                         <i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                                             class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                                             class="fa fa-star"></i>
+                                                     </div>
+                                                 </div>
                                              </div>
                                          </div>
-                                     </div>
+                                     @endforeach
+
+
+
                                  </div>
-                             @endforeach
+                                 <div class="d-flex justify-content-center justify-content-lg-start">
 
+                                     <div
+                                         class="slider-one-slide-prev-1 swiper-button-prev slider-navigation-style-04 border border-color-extra-medium-gray">
+                                         <i class="fa-solid fa-arrow-left icon-small text-dark-gray"></i>
+                                     </div>
+                                     <div
+                                         class="slider-one-slide-next-1 swiper-button-next slider-navigation-style-04 border border-color-extra-medium-gray">
+                                         <i class="fa-solid fa-arrow-right icon-small text-dark-gray"></i>
+                                     </div>
 
-
-                         </div>
-                         <div class="d-flex justify-content-center justify-content-lg-start">
-
-                             <div
-                                 class="slider-one-slide-prev-1 swiper-button-prev slider-navigation-style-04 border border-color-extra-medium-gray">
-                                 <i class="fa-solid fa-arrow-left icon-small text-dark-gray"></i>
+                                 </div>
                              </div>
-                             <div
-                                 class="slider-one-slide-next-1 swiper-button-next slider-navigation-style-04 border border-color-extra-medium-gray">
-                                 <i class="fa-solid fa-arrow-right icon-small text-dark-gray"></i>
+                         </div>
+                     </div>
+                 </div>
+             </section>
+
+
+
+             <section class="mt-0 pt-0 mb-5">
+                 <div class="container" style="overflow: hidden;">
+                     <div class="row position-relative clients-style-08 mb-6 sm-mb-40px" style="height: 60px !important;"
+                         data-anime="{ &quot;translateX&quot;: [0, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1200, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
+                         <div class="col swiper text-center feather-shadow"
+                             data-slider-options="{ &quot;slidesPerView&quot;: 2, &quot;spaceBetween&quot;:0, &quot;speed&quot;: 6000, &quot;loop&quot;: true, &quot;pagination&quot;: { &quot;el&quot;: &quot;.slider-four-slide-pagination-2&quot;, &quot;clickable&quot;: false }, &quot;allowTouchMove&quot;: false, &quot;autoplay&quot;: { &quot;delay&quot;:0, &quot;disableOnInteraction&quot;: false }, &quot;navigation&quot;: { &quot;nextEl&quot;: &quot;.slider-four-slide-next-2&quot;, &quot;prevEl&quot;: &quot;.slider-four-slide-prev-2&quot; }, &quot;keyboard&quot;: { &quot;enabled&quot;: true, &quot;onlyInViewport&quot;: true }, &quot;breakpoints&quot;: { &quot;1200&quot;: { &quot;slidesPerView&quot;: 4 }, &quot;992&quot;: { &quot;slidesPerView&quot;: 4 }, &quot;768&quot;: { &quot;slidesPerView&quot;: 3 } }, &quot;effect&quot;: &quot;slide&quot; }">
+                             <div class="swiper-wrapper marquee-slide" style="height: 100px !important">
+
+                                 <div class="swiper-slide">
+                                     <a href="#"><img src="images/sb1.png" class="" alt /></a>
+                                 </div>
+
+                                 <div class="swiper-slide">
+                                     <a href="#"><img src="images/sb2.png" class="" alt /></a>
+                                 </div>
+
+                                 <div class="swiper-slide">
+                                     <a href="#"><img src="images/sb3.png" class="" alt /></a>
+                                 </div>
+
+                                 <div class="swiper-slide">
+                                     <a href="#"><img src="images/sb4.png" class="" alt /></a>
+                                 </div>
+
+                                 <div class="swiper-slide">
+                                     <a href="#"><img src="images/sb5.png" class="" alt /></a>
+                                 </div>
+
+                                 <div class="swiper-slide">
+                                     <a href="#"><img src="images/sb6.png" class="" alt /></a>
+                                 </div>
+
+                                 <div class="swiper-slide">
+                                     <a href="#"><img src="images/sb7.png" class="" alt /></a>
+                                 </div>
+
+                                 <div class="swiper-slide">
+                                     <a href="#"><img src="images/sb8.png" class="" alt /></a>
+                                 </div>
+
+                                 <div class="swiper-slide">
+                                     <a href="#"><img src="images/sb9.png" class="" alt /></a>
+                                 </div>
+
+                                 <div class="swiper-slide">
+                                     <a href="#"><img src="images/sb10.png" class="" alt /></a>
+                                 </div>
+                                 <div class="swiper-slide">
+                                     <a href="#"><img src="images/sb11.png" class="" alt /></a>
+                                 </div>
+                                 <div class="swiper-slide">
+                                     <a href="#"><img src="images/sb12.png" class="" alt /></a>
+                                 </div>
+                                 <div class="swiper-slide">
+                                     <a href="#"><img src="images/sb13.png" class="" alt /></a>
+                                 </div>
+                                 <div class="swiper-slide">
+                                     <a href="#"><img src="images/sb14.png" class="" alt /></a>
+                                 </div>
+                                 <div class="swiper-slide">
+                                     <a href="#"><img src="images/sb15.png" class="" alt /></a>
+                                 </div>
+                                 <div class="swiper-slide">
+                                     <a href="#"><img src="images/sb16.png" class="" alt /></a>
+                                 </div>
+                                 <div class="swiper-slide">
+                                     <a href="#"><img src="images/sb17.png" class="" alt /></a>
+                                 </div>
+                                 <div class="swiper-slide">
+                                     <a href="#"><img src="images/sb18.png" class="" alt /></a>
+                                 </div>
+                                 <div class="swiper-slide">
+                                     <a href="#"><img src="images/sb19.png" class="" alt /></a>
+                                 </div>
+                                 <div class="swiper-slide">
+                                     <a href="#"><img src="images/sb20.png" class="" alt /></a>
+                                 </div>
+                                 <div class="swiper-slide">
+                                     <a href="#"><img src="images/sb21.png" class="" alt /></a>
+                                 </div>
+                                 <div class="swiper-slide">
+                                     <a href="#"><img src="images/sb22.png" class="" alt /></a>
+                                 </div>
+
                              </div>
-
                          </div>
                      </div>
-                 </div>
-             </div>
-         </div>
-     </section>
-
-
-
-     <section class="mt-0 pt-0 mb-5">
-         <div class="container" style="overflow: hidden;">
-             <div class="row position-relative clients-style-08 mb-6 sm-mb-40px" style="height: 60px !important;"
-                 data-anime="{ &quot;translateX&quot;: [0, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1200, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
-                 <div class="col swiper text-center feather-shadow"
-                     data-slider-options="{ &quot;slidesPerView&quot;: 2, &quot;spaceBetween&quot;:0, &quot;speed&quot;: 6000, &quot;loop&quot;: true, &quot;pagination&quot;: { &quot;el&quot;: &quot;.slider-four-slide-pagination-2&quot;, &quot;clickable&quot;: false }, &quot;allowTouchMove&quot;: false, &quot;autoplay&quot;: { &quot;delay&quot;:0, &quot;disableOnInteraction&quot;: false }, &quot;navigation&quot;: { &quot;nextEl&quot;: &quot;.slider-four-slide-next-2&quot;, &quot;prevEl&quot;: &quot;.slider-four-slide-prev-2&quot; }, &quot;keyboard&quot;: { &quot;enabled&quot;: true, &quot;onlyInViewport&quot;: true }, &quot;breakpoints&quot;: { &quot;1200&quot;: { &quot;slidesPerView&quot;: 4 }, &quot;992&quot;: { &quot;slidesPerView&quot;: 4 }, &quot;768&quot;: { &quot;slidesPerView&quot;: 3 } }, &quot;effect&quot;: &quot;slide&quot; }">
-                     <div class="swiper-wrapper marquee-slide" style="height: 100px !important">
-
-                         <div class="swiper-slide">
-                             <a href="#"><img src="images/sb1.png" class="" alt /></a>
-                         </div>
-
-                         <div class="swiper-slide">
-                             <a href="#"><img src="images/sb2.png" class="" alt /></a>
-                         </div>
-
-                         <div class="swiper-slide">
-                             <a href="#"><img src="images/sb3.png" class="" alt /></a>
-                         </div>
-
-                         <div class="swiper-slide">
-                             <a href="#"><img src="images/sb4.png" class="" alt /></a>
-                         </div>
-
-                         <div class="swiper-slide">
-                             <a href="#"><img src="images/sb5.png" class="" alt /></a>
-                         </div>
-
-                         <div class="swiper-slide">
-                             <a href="#"><img src="images/sb6.png" class="" alt /></a>
-                         </div>
-
-                         <div class="swiper-slide">
-                             <a href="#"><img src="images/sb7.png" class="" alt /></a>
-                         </div>
-
-                         <div class="swiper-slide">
-                             <a href="#"><img src="images/sb8.png" class="" alt /></a>
-                         </div>
-
-                         <div class="swiper-slide">
-                             <a href="#"><img src="images/sb9.png" class="" alt /></a>
-                         </div>
-
-                         <div class="swiper-slide">
-                             <a href="#"><img src="images/sb10.png" class="" alt /></a>
-                         </div>
-                         <div class="swiper-slide">
-                             <a href="#"><img src="images/sb11.png" class="" alt /></a>
-                         </div>
-                         <div class="swiper-slide">
-                             <a href="#"><img src="images/sb12.png" class="" alt /></a>
-                         </div>
-                         <div class="swiper-slide">
-                             <a href="#"><img src="images/sb13.png" class="" alt /></a>
-                         </div>
-                         <div class="swiper-slide">
-                             <a href="#"><img src="images/sb14.png" class="" alt /></a>
-                         </div>
-                         <div class="swiper-slide">
-                             <a href="#"><img src="images/sb15.png" class="" alt /></a>
-                         </div>
-                         <div class="swiper-slide">
-                             <a href="#"><img src="images/sb16.png" class="" alt /></a>
-                         </div>
-                         <div class="swiper-slide">
-                             <a href="#"><img src="images/sb17.png" class="" alt /></a>
-                         </div>
-                         <div class="swiper-slide">
-                             <a href="#"><img src="images/sb18.png" class="" alt /></a>
-                         </div>
-                         <div class="swiper-slide">
-                             <a href="#"><img src="images/sb19.png" class="" alt /></a>
-                         </div>
-                         <div class="swiper-slide">
-                             <a href="#"><img src="images/sb20.png" class="" alt /></a>
-                         </div>
-                         <div class="swiper-slide">
-                             <a href="#"><img src="images/sb21.png" class="" alt /></a>
-                         </div>
-                         <div class="swiper-slide">
-                             <a href="#"><img src="images/sb22.png" class="" alt /></a>
-                         </div>
-
-                     </div>
-                 </div>
-             </div>
-             <div class="row justify-content-center align-items-center"
-                 data-anime="{ &quot;translateY&quot;: [50, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1200, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
-                 <div class="col-12 text-center">
-                     <div class="d-inline-block align-middle text-dark-gray fs-19 fw-600 ls-minus-05px">Türkiye genelinde
-                         <span class="text-decoration-line-bottom text-dark-gray">22 şubemizle</span> hizmetinizdeyiz.
-                     </div>
-                 </div>
-             </div>
-         </div>
-     </section>
-     <section id="subscribe" class="bg-very-light-gray">
-         <div class="container position-relative">
-             <div class="position-absolute left-0px top-minus-150px md-top-minus-110px background-no-repeat h-300px w-100 d-none d-xl-inline-block skrollable skrollable-between"
-                 style="background-image: url(&quot;images/demo-magazine-footer-icon.png&quot;); transform: translateY(-8.83212px);"
-                 data-bottom-top="transform: translateY(-50px)" data-top-bottom="transform: translateY(50px)"></div>
-             <div class="row justify-content-center">
-                 <div class="col-12 col-xxl-6 col-xl-7 col-lg-8 text-center mb-50px sm-mb-30px">
-                    <h2 class="alt-font fw-800 ls-minus-1px text-dark-gray">Bilgi ve Tekliflerden İlk Siz Haberdar Olun!</h2>
-                    <p class="text-dark-gray">E-posta adresinizi paylaşarak en son haberler, fırsatlar ve yenilikler hakkında bilgi alın. Size özel içerikler için hemen abone olun!</p>
-                                         <div class="d-inline-block w-100 newsletter-style-04 position-relative">
-                         <form action="email-templates/subscribe-newsletter.php" method="post"
-                             class="position-relative w-100">
-                             <input
-                                 class="bg-transparent w-100 border-0 border-bottom border-1 border-color-dark-gray form-control required"
-                                 type="email" name="email" placeholder="E-Postanız">
-                             <input type="hidden" name="redirect" value="">
-                             <button type="submit" class="btn text-dark-gray fw-600 submit text-transform-none"
-                                 aria-label="subscribe">Gönder</button>
-                             <div
-                                 class="form-results border-radius-0px p-15px fs-16 lh-24 w-100 text-center position-absolute d-none">
+                     <div class="row justify-content-center align-items-center"
+                         data-anime="{ &quot;translateY&quot;: [50, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1200, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
+                         <div class="col-12 text-center">
+                             <div class="d-inline-block align-middle text-dark-gray fs-19 fw-600 ls-minus-05px">Türkiye
+                                 genelinde
+                                 <span class="text-decoration-line-bottom text-dark-gray">22 şubemizle</span>
+                                 hizmetinizdeyiz.
                              </div>
-                         </form>
+                         </div>
                      </div>
                  </div>
-             </div>
-         </div>
-     </section>
-     <script>
-         function checkScreenSize() {
-             const services = document.getElementById("services");
-             const servicesMobile = document.getElementById("servicesMobile");
-             const musteri = document.getElementById('musteri');
-             const projects = document.getElementById('projects');
-             const musteriSection = document.getElementById('musteriSection');
-             const carouselExampleIndicators = document.getElementById('carouselExampleIndicators');
-             const webButton = document.getElementById('webButton');
-             const mobilButton = document.getElementById('mobilButton');
-             const musteriYorum = document.getElementById('musteriYorum');
-             const musteriH6 = document.getElementById('musteriH6');
-             const anaResim = document.getElementById('anaResim');
-             const screenWidth = window.innerWidth;
+             </section>
+             <section id="subscribe" class="bg-very-light-gray">
+                 <div class="container position-relative">
+                     <div class="position-absolute left-0px top-minus-150px md-top-minus-110px background-no-repeat h-300px w-100 d-none d-xl-inline-block skrollable skrollable-between"
+                         style="background-image: url(&quot;images/demo-magazine-footer-icon.png&quot;); transform: translateY(-8.83212px);"
+                         data-bottom-top="transform: translateY(-50px)" data-top-bottom="transform: translateY(50px)">
+                     </div>
+                     <div class="row justify-content-center">
+                         <div class="col-12 col-xxl-6 col-xl-7 col-lg-8 text-center mb-50px sm-mb-30px">
+                             <h2 class="alt-font fw-800 ls-minus-1px text-dark-gray">Bilgi ve Tekliflerden İlk Siz Haberdar
+                                 Olun!</h2>
+                             <p class="text-dark-gray">E-posta adresinizi paylaşarak en son haberler, fırsatlar ve
+                                 yenilikler hakkında bilgi alın. Size özel içerikler için hemen abone olun!</p>
+                             <div class="d-inline-block w-100 newsletter-style-04 position-relative">
+                                 <form action="email-templates/subscribe-newsletter.php" method="post"
+                                     class="position-relative w-100">
+                                     <input
+                                         class="bg-transparent w-100 border-0 border-bottom border-1 border-color-dark-gray form-control required"
+                                         type="email" name="email" placeholder="E-Postanız">
+                                     <input type="hidden" name="redirect" value="">
+                                     <button type="submit" class="btn text-dark-gray fw-600 submit text-transform-none"
+                                         aria-label="subscribe">Gönder</button>
+                                     <div
+                                         class="form-results border-radius-0px p-15px fs-16 lh-24 w-100 text-center position-absolute d-none">
+                                     </div>
+                                 </form>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </section>
+             <script>
+                 function checkScreenSize() {
+                     const services = document.getElementById("services");
+                     const servicesMobile = document.getElementById("servicesMobile");
+                     const musteri = document.getElementById('musteri');
+                     const projects = document.getElementById('projects');
+                     const musteriSection = document.getElementById('musteriSection');
+                     const carouselExampleIndicators = document.getElementById('carouselExampleIndicators');
+                     const webButton = document.getElementById('webButton');
+                     const mobilButton = document.getElementById('mobilButton');
+                     const musteriYorum = document.getElementById('musteriYorum');
+                     const musteriH6 = document.getElementById('musteriH6');
+                     const anaResim = document.getElementById('anaResim');
+                     const screenWidth = window.innerWidth;
 
-             if (window.innerWidth < 768) {
-                 services.style.display = "none";
-                 servicesMobile.style.display = "block";
-                 musteri.classList.add('pt-5');
-                 musteriSection.classList.add('pt-2', 'pb-5');
-                 musteriSection.classList.remove('pb-2', 'pt-0', 'sm-pb-6', 'mt-5');
-                 carouselExampleIndicators.style.maxHeight = '';
-                 webButton.classList.add('d-none');
-                 mobilButton.classList.remove('d-none');
-                 musteriYorum.classList.remove('text-lg-start');
-                 musteriYorum.classList.add('text-lg-center');
-                 musteriH6.classList.add('m-auto');
-                 anaResim.style.height = '40%';
-                 anaResim.style.marginTop = '100px';
+                     if (window.innerWidth < 768) {
+                         services.style.display = "none";
+                         servicesMobile.style.display = "block";
+                         musteri.classList.add('pt-5');
+                         musteriSection.classList.add('pt-2', 'pb-5');
+                         musteriSection.classList.remove('pb-2', 'pt-0', 'sm-pb-6', 'mt-5');
+                         carouselExampleIndicators.style.maxHeight = '';
+                         webButton.classList.add('d-none');
+                         mobilButton.classList.remove('d-none');
+                         musteriYorum.classList.remove('text-lg-start');
+                         musteriYorum.classList.add('text-lg-center');
+                         musteriH6.classList.add('m-auto');
+                         anaResim.style.height = '40%';
+                         anaResim.style.marginTop = '100px';
 
-             } else {
-                 services.style.display = "block";
-                 servicesMobile.style.display = "none";
-                 musteri.classList.remove('pt-5');
-                 musteriSection.classList.remove('pt-2', 'pb-5');
-                 musteriSection.classList.add('pb-2', 'pt-0', 'sm-pb-6', 'mt-5');
-                 carouselExampleIndicators.style.maxHeight = 'calc(100vh - 80px)';
-                 webButton.classList.remove('d-none');
-                 mobilButton.classList.add('d-none');
-                 musteriYorum.classList.add('text-lg-start');
-                 musteriYorum.classList.remove('text-lg-center');
-                 musteriH6.classList.remove('m-auto');
-                 anaResim.style.height = '100%';
-                 anaResim.style.marginTop = '0px';
-             }
-         }
+                     } else {
+                         services.style.display = "block";
+                         servicesMobile.style.display = "none";
+                         musteri.classList.remove('pt-5');
+                         musteriSection.classList.remove('pt-2', 'pb-5');
+                         musteriSection.classList.add('pb-2', 'pt-0', 'sm-pb-6', 'mt-5');
+                         carouselExampleIndicators.style.maxHeight = 'calc(100vh - 80px)';
+                         webButton.classList.remove('d-none');
+                         mobilButton.classList.add('d-none');
+                         musteriYorum.classList.add('text-lg-start');
+                         musteriYorum.classList.remove('text-lg-center');
+                         musteriH6.classList.remove('m-auto');
+                         anaResim.style.height = '100%';
+                         anaResim.style.marginTop = '0px';
+                     }
+                 }
 
-         window.addEventListener('load', checkScreenSize);
-         window.addEventListener('resize', checkScreenSize);
-     </script>
+                 window.addEventListener('load', checkScreenSize);
+                 window.addEventListener('resize', checkScreenSize);
+             </script>
 
- @endsection
+         @endsection
 
 
- @section('css')
-     <style>
-         .outside-box-top-205px {
-             margin-top: -140px
-         }
+         @section('css')
+             <style>
+                 .outside-box-top-205px {
+                     margin-top: -140px
+                 }
 
-         .bg-gradient-gray-light-dark-transparent {
-             background-image: linear-gradient(to top, #f7f7f7 0%, transparent 100%)
-         }
+                 .bg-gradient-gray-light-dark-transparent {
+                     background-image: linear-gradient(to top, #f7f7f7 0%, transparent 100%)
+                 }
 
-         @media(max-width: 1399px) {
-             .xl-h-180px {
-                 height: 180px
-             }
+                 @media(max-width: 1399px) {
+                     .xl-h-180px {
+                         height: 180px
+                     }
 
-             .xl-w-180px {
-                 width: 180px
-             }
-         }
+                     .xl-w-180px {
+                         width: 180px
+                     }
+                 }
 
-         @media(max-width: 1199px) {
-             .outside-box-top-200px {
-                 margin-top: -150px
-             }
-         }
+                 @media(max-width: 1199px) {
+                     .outside-box-top-200px {
+                         margin-top: -150px
+                     }
+                 }
 
-         @media(max-width: 991px) {
-             .outside-box-top-200px {
-                 margin-top: 0
-             }
+                 @media(max-width: 991px) {
+                     .outside-box-top-200px {
+                         margin-top: 0
+                     }
 
-             .navbar .navbar-nav .dropdown.open .dropdown-menu {
-                 padding-bottom: 15px
-             }
-         }
+                     .navbar .navbar-nav .dropdown.open .dropdown-menu {
+                         padding-bottom: 15px
+                     }
+                 }
 
-         .clamp-text {
-             display: -webkit-box;
-             -webkit-line-clamp: 2;
-             -webkit-box-orient: vertical;
-             overflow: hidden;
-             text-overflow: ellipsis;
-             max-height: 2.8em;
-             /* line-height * line-clamp */
-             line-height: 1.4em;
-             /* adjust based on font-size */
-         }
+                 .clamp-text {
+                     display: -webkit-box;
+                     -webkit-line-clamp: 2;
+                     -webkit-box-orient: vertical;
+                     overflow: hidden;
+                     text-overflow: ellipsis;
+                     max-height: 2.8em;
+                     /* line-height * line-clamp */
+                     line-height: 1.4em;
+                     /* adjust based on font-size */
+                 }
 
-         .position-relative .circle-box {
-             position: absolute;
-             bottom: 20px;
-             /* Div'in hemen üstünde hizalanması için uygun değeri ayarlayın */
-             right: 15px;
-             /* Sağ tarafta hizalanması için uygun değeri ayarlayın */
-             z-index: 2;
-         }
-     </style>
- @endsection
+                 .position-relative .circle-box {
+                     position: absolute;
+                     bottom: 20px;
+                     /* Div'in hemen üstünde hizalanması için uygun değeri ayarlayın */
+                     right: 15px;
+                     /* Sağ tarafta hizalanması için uygun değeri ayarlayın */
+                     z-index: 2;
+                 }
+             </style>
+         @endsection
