@@ -152,8 +152,8 @@
          </div>
      </section>
 
-     <section class="bg-very-light-gray overlap-gap-section-bottom">
-         <div class="container overlap-section">
+     <section >
+         <div class="container">
              <div class="row mb-9">
                  <div class="col-12">
                      <div class="box-shadow-large border-radius-6px position-relative overflow-hidden"
