@@ -183,20 +183,7 @@
                                                          <a href="demo-magazine-blog-single-creative.html"
                                                              class="text-white alt-font fw-600 fs-40 lg-fs-24 ls-minus-1px lg-ls-0px">{{ $project->project_title }}</a>
                                                      </div>
-                                                     <div
-                                                         class="d-flex justify-content-center align-items-center xs-lh-22">
-                                                         <div class="ms-10px me-10px">
-                                                             <a href="{{ route('projelerimiz.show', $project->id) }}"><i
-                                                                     class="feather icon-feather-message-circle text-white d-inline-block me-5px fs-15"></i><span
-                                                                     class="fs-13 text-uppercase text-white opacity-7">Maliyetine
-                                                                     Ev</span></a>
-                                                         </div>
-                                                         <div class="ms-10px me-10px">
-                                                             <a href="{{ route('projelerimiz.show', $project->id) }}"><i
-                                                                     class="feather icon-feather-calendar text-white d-inline-block me-5px fs-15"></i><span
-                                                                     class="fs-13 text-uppercase text-white opacity-7">{{ $project->created_at }}</span></a>
-                                                         </div>
-                                                     </div>
+
                                                  </div>
                                              </div>
                                          </div>
