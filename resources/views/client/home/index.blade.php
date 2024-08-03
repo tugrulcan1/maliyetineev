@@ -153,6 +153,7 @@
      </section>
      <section class="p-0 top-space-margin overflow-hidden pb-25px">
          <div class="container">
+            <h2 class="fw-700 alt-font text-dark-gray ls-minus-1px">Projelerimiz</h2>
              <div class="row align-items-center">
                  <div class="col-12 col-md-12">
                      <div class="outside-box-right-30 sm-outside-box-right-0"
