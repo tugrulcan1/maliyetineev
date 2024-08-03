@@ -158,7 +158,7 @@
                  <div class="col-12">
                      <div class="box-shadow-large border-radius-6px position-relative overflow-hidden"
                          data-anime="{&quot;scale&quot;: [0.9, 1], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 600, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
-                         <img src="https://emlaksepette.com/storage/project_images/temp_order_image171061811610646.jpg" class="border-radius-5px w-100" alt>
+                         <img src="{{ asset('ekip.JPG') }}" class="border-radius-5px w-100" alt>
                          <a href="https://www.youtube.com/watch?v=7zMh-EF4Ll8"
                              class="absolute-middle-center text-center rounded-circle video-icon-box video-icon-extra-large popup-vimeo">
                              <span>
