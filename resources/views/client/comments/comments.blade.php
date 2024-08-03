@@ -2,13 +2,24 @@
 
 
 @section('content')
-    <div class="container">
-        <div class="row justify-content-center mb-3">
-            <div class="col-lg-6 text-center appear anime-child anime-complete"
-                data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateY&quot;: [30, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 600, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
-                <h2 class="alt-font fw-600 text-dark-gray ls-minus-2px" style="">Müşteri Yorumları</h2>
-            </div>
+<section class="page-title-big-typography bg-dark-gray ipad-top-space-margin" data-parallax-background-ratio="0.5"
+style="background-image: url({{asset('demo-conference-page-bg.jpg')}}) ;padding-top: 30px;
+padding-bottom: 30px;">
+<div class="container">
+    <div class="row align-items-center justify-content-center extra-small-screen">
+        <div class="col-lg-8 text-center page-title-extra-large">
+            <h1 class="mb-0 text-white alt-font fw-600 ls-minus-5px">
+                <span class="d-block text-outline text-outline-width-2px text-outline-color-white"
+                    data-fancy-text="{ &quot;string&quot;: [&quot;Müşterilerimizin&quot;], &quot;duration&quot;: 500, &quot;delay&quot;: 0, &quot;speed&quot;: 50, &quot;clipPath&quot;: [&quot;inset(0 500px 0 0)&quot;, &quot;inset(0px -5px 0px 0px)&quot;], &quot;easing&quot;: &quot;easeOutCubic&quot; }"></span>
+                <span
+                    data-anime="{ &quot;opacity&quot;: [0, 1], &quot;easing&quot;: &quot;easeOutQuad&quot;, &quot;duration&quot;: 1000, &quot;delay&quot;: 300 }">DEĞERLENDİRMELERİ</span>
+            </h1>
         </div>
+    </div>
+</div>
+</section>
+<section class="bg-midnight-blue pt-5">
+    <div class="container">
         <div class="row row-cols-1 row-cols-xl-2 row-cols-lg-2 row-cols-md-2 justify-content-center mb-5 position-relative">
 
             @foreach ($comments as $comment)
@@ -46,6 +57,7 @@
 
         </div>
     </div>
+</section>
 @endsection
 
 

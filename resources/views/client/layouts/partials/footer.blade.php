@@ -1,73 +1,102 @@
-<footer class="footer-dark pt-1 pb-0" style="background-color: #274abb1f;">
-    <div class="container" style="border-bottom: 1px solid #bebebe" id="mobileContainer">
-        <div class="row align-items-center justify-content-center">
-            <div class="col-xl-6 text-center text-xl-start mb-sm-0">
-                <h3 class="mb-2 fw-500" style="color: #333; font-size: 24px;">Aklınıza takılan soru mu var?</h3>
-                <p class="fs-15 fw-300" style="color: #333;">Bizimle iletişime geçebilirsiniz.</p>
+<footer class="footer-dark bg-blue-whale py-0" style="background-color: #152833;">
+    <div class="container footer-top pt-50px pb-50px md-pt-35px md-pb-35px">
+        <div class="row justify-content-center">
+
+            <div class="col-12 position-relative justify-content-center align-items-center text-center">
+
+                <h5 class="alt-font d-inline-block align-middle text-white mb-0 me-35px md-me-0 position-relative">
+                    Maliyetine evim ile <span
+                        class="text-decoration-line-bottom-medium fw-600 font-style-italic" style="font-weight: 'Playfair Display', serif !important" >ev sahibi olmak ister misiniz?</span>
+                </h5>
+                <a href="{{url('/iletisim')}}"
+                    class="btn btn-large btn-rounded with-rounded btn-white btn-box-shadow fw-600 md-mt-40px sm-mt-30px">Başvur<span class="bg-dark-gray text-white"><i
+                            class="fa fa-arrow-right"></i></span></a>
             </div>
-            <div class="col-xl-6 text-center text-xl-end">
-                <a href="mailto:{{ $settings['e-mail'] }}" class="btn btn-extra-large btn-rounded text-white me-2"
-                    style="background-color: #ea2a28">
-                    <i class="fa fa-envelope"></i> {{ $settings['e-mail'] }}
-                </a>
-                <a href="tel:{{ $settings['phone'] }}" class="btn btn-extra-large btn-base-color btn-rounded text-white"
-                    style="background-color: #274abb">
-                    <i class="fa fa-phone"></i> {{ $settings['phone'] }}
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <div class="container" id="pembeBolge">
-        <div class="row mt-2 justify-content-between mb-2 align-items-center">
-            <div class="col-12 col-lg-4 mb-lg-0" id="maliyetineEv">
-                <a href="demo-accounting.html" class="footer-logo mb-2 d-inline-block">
-                    <img src="{{ asset('images/maliyetineevlogo.png') }}" alt="Logo" id="imageID">
-                </a>
-            </div>
-
-            <div class="col-12 col-lg-4 col-sm-4 mb-lg-0 text-end color-right-footer" id="location">
-                <span class=" fw-400 d-block mb-2" style="color: #333;">İletişim</span>
-                <p id="location_p">Cevizli, Çanakkale Cd. No:103A, 34865 Kartal/İstanbul</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="second-footer bg-white-3 d-flex justify-content-between" id="secondFooter">
-        <div
-            style="    padding: 10px 40px !important;
-    margin: 0 auto !important;
-    width: 100%;
-    text-align: center;
-    background: #274abb;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;">
-            <p class="d-flex align-items-center" style="gap: 5px;margin-bottom:0" id="secondFooterP">
-                <span>
-                    <span id="current-year">2024</span>
-                    <span style="display: inline-block;">© Copyright - Maliyetine
-                        Ev</span>
-                </span>
-
-                <a style="margin-left: 30px;" href="javascript:;" data-pikap-popup="popup-kvkk">Kişisel Verilerin
-                    Korunması</a>
-                <a style="margin-left: 30px;" href="javascript:;" data-pikap-popup="popup-kvkk">Ticari Elektronik İleti
-                    Açık Rıza Metni</a>
-                <a style="margin-left: 30px;" href="/iletisim">İletişim</a>
-
-            </p>
-
-            <script>
-                document.getElementById("current-year").textContent = new Date().getFullYear();
-            </script>
-
 
         </div>
     </div>
 
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="divider-style-03 divider-style-03-01 border-color-transparent-white-light"></div>
+            </div>
+        </div>
+    </div>
 
+    <div class="container">
+        <div class="row pt-50px pb-50px md-pt-35px md-pb-35px">
+
+            <div class="col-lg-2 text-center text-lg-start last-paragraph-no-margin md-mb-15px">
+                <a href="demo-lawyer.html" class="footer-logo d-inline-block">
+                    <img src="{{ asset('images/maliyetineevlogo.png') }}" data-at2x="{{ asset('images/maliyetineevlogo.png') }}"
+                        alt="" width="138" height="36">
+                </a>
+            </div>
+
+
+            <div class="col-lg-4 last-paragraph-no-margin text-center text-lg-start md-mb-40px sm-mb-30px">
+                <span class="fs-22 alt-font md-w-80 xs-w-100 m-auto d-inline-block">Aklınıza takılan soru mu var?
+                    <br>
+                    <span
+                        class="text-white font-style-italic fw-500 text-decoration-line-bottom">Bizimle iletişime geçebilirsiniz.
+
+                    </span></span>
+            </div>
+
+
+            <div class="col-lg-3 offset-xl-1 col-sm-6 text-center text-lg-start last-paragraph-no-margin xs-mb-30px">
+                <span class="alt-font d-inline-block text-white mb-5px fs-18"><i
+                        class="bi bi-geo-alt me-10px"></i>Adres</span>
+                <p class="w-80 xs-w-100 d-inline-block">Cevizli, Çanakkale Cd. No:103A, 34865 Kartal/İstanbul
+
+                </p>
+            </div>
+
+
+            <div class="col-xl-2 col-lg-3 col-sm-6 text-center text-lg-start last-paragraph-no-margin">
+                <span class="alt-font d-inline-block text-white mb-5px fs-18"><i
+                        class="bi bi-telephone-outbound me-10px"></i>İletişim</span>
+                <p><a href="tel:444 3 284">444 3 284</a></p>
+                <a href="mailto:info@domain.com" class="text-white text-decoration-line-bottom">info@maliyetineev.com</a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="divider-style-03 divider-style-03-01 border-color-transparent-white-light"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container footer-bottom pt-25px pb-25px">
+        <div class="row align-items-center">
+
+            <div class="col-lg-9 text-center text-lg-start sm-pb-10px">
+                <ul class="footer-navbar md-lh-normal">
+                    <li class="nav-item"><a href="demo-lawyer.html" class="nav-link">Kişisel Verilerin
+                        Korunması</a></li>
+                    <li class="nav-item"><a href="demo-lawyer-about.html" class="nav-link">Ticari Elektronik
+                        İleti
+                        Açık Rıza Metni</a></li>
+                    <li class="nav-item"><a href="demo-lawyer-practice-areas.html" class="nav-link">Ticari Elektronik
+                        İleti
+                        Açık Rıza Metni</a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="col-lg-3 text-center text-lg-end last-paragraph-no-margin">
+                <p>© 2024 Copyright  <a href="#" target="_blank"
+                        class="text-decoration-line-bottom text-white">Maliyetine Ev</a></p>
+            </div>
+
+        </div>
+    </div>
 </footer>
 <style>
     .small-screenP {
@@ -111,7 +140,6 @@
 </script>
 
 <script>
-
     function checkScreen() {
         const mobileContainer = document.getElementById('mobileContainer');
         const secondFooter = document.getElementById('secondFooter');
@@ -141,7 +169,7 @@
             secondFooterP.classList.add('flex-column', 'small-screenP', 'align-items-center',
                 'justify-content-center');
             secondFooter.classList.add('align-items-center', 'justify-content-center');
-        } 
+        }
     }
     window.addEventListener('load', checkScreen);
     window.addEventListener('resize', checkScreen);
