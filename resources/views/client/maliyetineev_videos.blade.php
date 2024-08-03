@@ -36,9 +36,8 @@ padding-bottom: 30px;">
 
 <style>
     .video-gallery-container {
-        max-width: 1040px;
         /* Maksimum genişlik belirleme */
-        margin: 0 auto;
+        margin: 0 auto; !important
         /* Sayfayı yatayda ortala */
         overflow: hidden;
         /* İçeriklerin dışarı taşmasını engelle */
