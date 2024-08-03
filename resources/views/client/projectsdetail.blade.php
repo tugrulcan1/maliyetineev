@@ -50,21 +50,24 @@
                         <div class="step-number">01</div>
                         <div style="margin-left: 10px;width:265px">
                             <span class="step-title">{{ $proje_basvuru_surecleri->title_1 ?: 'Boş' }}</span>
-                            <p class="step-description" style="margin: -2px 0px 0px 0px">{{ $proje_basvuru_surecleri->description_1 ?: 'Boş' }}</p>
+                            <p class="step-description" style="margin: -2px 0px 0px 0px">
+                                {{ $proje_basvuru_surecleri->description_1 ?: 'Boş' }}</p>
                         </div>
                     </div>
                     <div class="d-flex col-md-4 col-12" style="justify-content: center">
                         <div class="step-number">02</div>
                         <div style="margin-left: 10px;width:265px">
                             <span class="step-title">{{ $proje_basvuru_surecleri->title_2 ?: 'Boş' }}</span>
-                            <p class="step-description" style="margin: -2px 0px 0px 0px">{{ $proje_basvuru_surecleri->description_2 ?: 'Boş' }}</p>
+                            <p class="step-description" style="margin: -2px 0px 0px 0px">
+                                {{ $proje_basvuru_surecleri->description_2 ?: 'Boş' }}</p>
                         </div>
                     </div>
                     <div class="d-flex col-md-4 col-12" style="justify-content: center">
                         <div class="step-number">03</div>
                         <div style="margin-left: 10px;width:265px">
                             <span class="step-title">{{ $proje_basvuru_surecleri->title_3 ?: 'Boş' }}</span>
-                            <p class="step-description" style="margin: -2px 0px 0px 0px">{{ $proje_basvuru_surecleri->description_3 ?: 'Boş' }}</p>
+                            <p class="step-description" style="margin: -2px 0px 0px 0px">
+                                {{ $proje_basvuru_surecleri->description_3 ?: 'Boş' }}</p>
                         </div>
                     </div>
                 </div>
@@ -73,20 +76,22 @@
                         <div class="step-number">04</div>
                         <div style="margin-left: 10px;width:265px">
                             <span class="step-title">{{ $proje_basvuru_surecleri->title_4 ?: 'Boş' }}</span>
-                            <p class="step-description" style="margin: -2px 0px 0px 0px">{{ $proje_basvuru_surecleri->description_4 ?: 'Boş' }}</p>
+                            <p class="step-description" style="margin: -2px 0px 0px 0px">
+                                {{ $proje_basvuru_surecleri->description_4 ?: 'Boş' }}</p>
                         </div>
                     </div>
                     <div class="d-flex col-md-6 col-12" style="justify-content: center">
                         <div class="step-number">05</div>
                         <div style="margin-left: 10px;width:265px">
                             <span class="step-title">{{ $proje_basvuru_surecleri->title_5 ?: 'Boş' }}</span>
-                            <p class="step-description" style="margin: -2px 0px 0px 0px">{{ $proje_basvuru_surecleri->description_5 ?: 'Boş' }}</p>
+                            <p class="step-description" style="margin: -2px 0px 0px 0px">
+                                {{ $proje_basvuru_surecleri->description_5 ?: 'Boş' }}</p>
                         </div>
                     </div>
                 </div>
 
-                    </div>
-                    <div class="col-2"></div>
+            </div>
+            <div class="col-2"></div>
 
 
             </div>
@@ -112,7 +117,7 @@
                             <div class="fs-120 lh-120 alt-font text-outline text-outline-color-extra-medium-gray fw-700">
                                 <span
                                     class="w-20px h-20px border border-radius-100 border-color-extra-medium-gray d-inline-block align-middle ms-50px me-50px sm-ms-30px sm-me-30px"></span>
-                                    {{ $project->project_title }}
+                                {{ $project->project_title }}
                             </div>
                         </div>
 
@@ -121,7 +126,7 @@
                             <div class="fs-120 lh-120 alt-font text-outline text-outline-color-extra-medium-gray fw-700">
                                 <span
                                     class="w-20px h-20px border border-radius-100 border-color-extra-medium-gray d-inline-block align-middle ms-50px me-50px sm-ms-30px sm-me-30px"></span>
-                                    {{ $project->project_title }}
+                                {{ $project->project_title }}
                             </div>
                         </div>
 
@@ -130,7 +135,7 @@
                             <div class="fs-120 lh-120 alt-font text-outline text-outline-color-extra-medium-gray fw-700">
                                 <span
                                     class="w-20px h-20px border border-radius-100 border-color-extra-medium-gray d-inline-block align-middle ms-50px me-50px sm-ms-30px sm-me-30px"></span>
-                                    {{ $project->project_title }}
+                                {{ $project->project_title }}
                             </div>
                         </div>
 
@@ -139,7 +144,7 @@
                             <div class="fs-120 lh-120 alt-font text-outline text-outline-color-extra-medium-gray fw-700">
                                 <span
                                     class="w-20px h-20px border border-radius-100 border-color-extra-medium-gray d-inline-block align-middle ms-50px me-50px sm-ms-30px sm-me-30px"></span>
-                                    {{ $project->project_title }}
+                                {{ $project->project_title }}
                             </div>
                         </div>
 
@@ -148,7 +153,7 @@
                             <div class="fs-120 lh-120 alt-font text-outline text-outline-color-extra-medium-gray fw-700">
                                 <span
                                     class="w-20px h-20px border border-radius-100 border-color-extra-medium-gray d-inline-block align-middle ms-50px me-50px sm-ms-30px sm-me-30px"></span>
-                                    {{ $project->project_title }}
+                                {{ $project->project_title }}
                             </div>
                         </div>
 
@@ -157,7 +162,7 @@
                             <div class="fs-120 lh-120 alt-font text-outline text-outline-color-extra-medium-gray fw-700">
                                 <span
                                     class="w-20px h-20px border border-radius-100 border-color-extra-medium-gray d-inline-block align-middle ms-50px me-50px sm-ms-30px sm-me-30px"></span>
-                                    {{ $project->project_title }}
+                                {{ $project->project_title }}
                             </div>
                         </div>
 
@@ -169,7 +174,7 @@
 
 
 
-{{--
+    {{--
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -627,61 +632,65 @@
 
 
 @section('css')
-<style>
-
-    .step-container {
-        display: flex;
-    }
-
-    .step-content {
-        display: flex;
-        align-items: center;
-        gap: 10px; /* Adjust the gap as needed */
-    }
-
-    .step-number {
-        background-color: #FFCDCF;
-        padding: 10px;
-        border-radius: 60%;
-        width: 50px;
-        height: 50px;
-        text-align: center !important;
-        color: rgb(255, 55, 55);
-        font-weight: 600;
-        font-size: 20px;
-    }
-
-    .step-title {
-        font-size: 16px; /* Adjust the font size as needed */
-        font-weight: bold;
-    }
-
-    .step-description {
-        margin-top: 5px; /* Adjust the margin as needed */
-        font-size: 14px; /* Adjust the font size as needed */
-    }
-
-    .h3Css{
-        font-weight: 600;
-        color: #000000;
-        font-size: 40px;
-        line-height: 48px;
-        position: relative;
-        display: inline-block;
-        padding-bottom: 10px;
-        letter-spacing: 1px;
-        margin-bottom: 50px;
-    }
-
-    .h3Css::after {
-        content: '';
-        position: absolute;
-        width: 100%;
-        left: 0;
-        bottom: 0;
-        border-bottom: 3px solid red; /* You can change the color and thickness as needed */
+    <style>
+        .step-container {
+            display: flex;
         }
-</style>
+
+        .step-content {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            /* Adjust the gap as needed */
+        }
+
+        .step-number {
+            background-color: #FFCDCF;
+            padding: 10px;
+            border-radius: 60%;
+            width: 50px;
+            height: 50px;
+            text-align: center !important;
+            color: rgb(255, 55, 55);
+            font-weight: 600;
+            font-size: 20px;
+        }
+
+        .step-title {
+            font-size: 16px;
+            /* Adjust the font size as needed */
+            font-weight: bold;
+        }
+
+        .step-description {
+            margin-top: 5px;
+            /* Adjust the margin as needed */
+            font-size: 14px;
+            /* Adjust the font size as needed */
+        }
+
+        .h3Css {
+            font-weight: 600;
+            color: #000000;
+            font-size: 40px;
+            line-height: 48px;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 10px;
+            letter-spacing: 1px;
+            margin-bottom: 50px;
+        }
+
+        .h3Css::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            left: 0;
+            bottom: 0;
+            border-bottom: 3px solid red;
+            /* You can change the color and thickness as needed */
+        }
+    </style>
     <style>
         .questionHeader {
             cursor: pointer;
@@ -993,14 +1002,10 @@
         }
 
         @media (max-width: 768px) {
-            .sorularDiv {
-                margin: 22px;
-                padding: 30px;
-            }
+
 
             .sorularDiv div {
-                flex-direction: column;
-                align-items: flex-start;
+                font-size: 11px;
             }
 
             .answerP {
