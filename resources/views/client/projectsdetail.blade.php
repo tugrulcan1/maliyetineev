@@ -69,14 +69,14 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="d-flex col-md-6 col-12">
+                    <div class="d-flex col-md-6 col-12" style="justify-content: center">
                         <div class="step-number">04</div>
                         <div style="margin-left: 10px;width:265px">
                             <span class="step-title">{{ $proje_basvuru_surecleri->title_4 ?: 'Boş' }}</span>
                             <p class="step-description" style="margin: -2px 0px 0px 0px">{{ $proje_basvuru_surecleri->description_4 ?: 'Boş' }}</p>
                         </div>
                     </div>
-                    <div class="d-flex col-md-6 col-12">
+                    <div class="d-flex col-md-6 col-12" style="justify-content: center">
                         <div class="step-number">05</div>
                         <div style="margin-left: 10px;width:265px">
                             <span class="step-title">{{ $proje_basvuru_surecleri->title_5 ?: 'Boş' }}</span>
