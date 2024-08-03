@@ -531,45 +531,21 @@
                  data-bottom-top="transform: translateY(-50px)" data-top-bottom="transform: translateY(50px)"></div>
              <div class="row justify-content-center">
                  <div class="col-12 col-xxl-6 col-xl-7 col-lg-8 text-center mb-50px sm-mb-30px">
-                     <h2 class="alt-font fw-800 ls-minus-1px text-dark-gray">Stay tuned with weekly newsletters.</h2>
-                     <div class="d-inline-block w-100 newsletter-style-04 position-relative">
+                    <h2 class="alt-font fw-800 ls-minus-1px text-dark-gray">Bilgi ve Tekliflerden İlk Siz Haberdar Olun!</h2>
+                    <p class="text-dark-gray">E-posta adresinizi paylaşarak en son haberler, fırsatlar ve yenilikler hakkında bilgi alın. Size özel içerikler için hemen abone olun!</p>
+                                         <div class="d-inline-block w-100 newsletter-style-04 position-relative">
                          <form action="email-templates/subscribe-newsletter.php" method="post"
                              class="position-relative w-100">
                              <input
                                  class="bg-transparent w-100 border-0 border-bottom border-1 border-color-dark-gray form-control required"
-                                 type="email" name="email" placeholder="Enter your email address">
+                                 type="email" name="email" placeholder="E-Postanız">
                              <input type="hidden" name="redirect" value="">
                              <button type="submit" class="btn text-dark-gray fw-600 submit text-transform-none"
-                                 aria-label="subscribe">Subscribe</button>
+                                 aria-label="subscribe">Gönder</button>
                              <div
                                  class="form-results border-radius-0px p-15px fs-16 lh-24 w-100 text-center position-absolute d-none">
                              </div>
                          </form>
-                     </div>
-                 </div>
-             </div>
-             <div class="footer-bottom">
-                 <div class="row justify-content-center">
-                     <div class="col-12 last-paragraph-no-margin text-center mb-50px sm-mb-30px">
-                         <p class="fs-15 text-dark-gray">© 2024 Crafto is Proudly Powered by <a
-                                 href="https://www.themezaa.com/" target="_blank" class="text-dark-gray">ThemeZaa.</a>
-                         </p>
-                         <a href="mailto:info@domain.com"
-                             class="fs-18 text-dark-gray text-dark-gray-hover fw-600 text-decoration-line-bottom">info@domain.com</a>
-                     </div>
-                     <div class="col-12 text-center">
-                         <div class="elements-social social-icon-style-02">
-                             <ul class="large-icon dark">
-                                 <li><a class="facebook" href="https://www.facebook.com/" target="_blank"><i
-                                             class="fa-brands fa-facebook-f"></i></a></li>
-                                 <li><a class="dribbble" href="http://www.dribbble.com" target="_blank"><i
-                                             class="fa-brands fa-dribbble"></i></a></li>
-                                 <li><a class="twitter" href="https://www.twitter.com" target="_blank"><i
-                                             class="fa-brands fa-twitter"></i></a></li>
-                                 <li><a class="instagram" href="https://www.instagram.com" target="_blank"><i
-                                             class="fa-brands fa-instagram"></i></a></li>
-                             </ul>
-                         </div>
                      </div>
                  </div>
              </div>
