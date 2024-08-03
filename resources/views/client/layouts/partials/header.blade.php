@@ -510,18 +510,18 @@
                 width: 100%;
             }
         }
+
         /* Genel stil */
-.sticky-header nav{
-    position: inherit !important;
-}
+        .sticky-header nav {
+            position: inherit !important;
+        }
 
-/* Sadece mobilde sticky-header sınıfını devre dışı bırak */
-@media (max-width: 991px) {
-    .sticky-header  nav{
-        position: static !important;
-    }
-}
-
+        /* Sadece mobilde sticky-header sınıfını devre dışı bırak */
+        @media (max-width: 991px) {
+            .sticky-header nav {
+                position: relative !important;
+            }
+        }
     </style>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
@@ -599,7 +599,8 @@
 
 
     <header class="{{ request()->routeIs('index') ? '' : 'sticky-header' }}">
-        <nav class="navbar navbar-expand-lg header-transparent bg-white disable-fixed border-bottom border-color-transparent-white-light">
+        <nav
+            class="navbar navbar-expand-lg header-transparent bg-white disable-fixed border-bottom border-color-transparent-white-light">
             <div class="container-fluid">
                 <div class="col-auto">
                     <a class="navbar-brand" href="{{ url('/') }}">
