@@ -180,6 +180,8 @@
                      </div>
                  </div>
              </div>
+         </div>
+     </section>
 
              <section class="p-0 top-space-margin overflow-hidden pb-25px">
                  <div class="container">
