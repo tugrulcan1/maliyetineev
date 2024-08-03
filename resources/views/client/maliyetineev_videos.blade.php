@@ -34,6 +34,8 @@ padding-bottom: 30px;">
     </section>
 @endsection
 
+
+@section('css')
 <style>
     .video-gallery-container {
         /* Maksimum genişlik belirleme */
@@ -76,3 +78,6 @@ padding-bottom: 30px;">
         }
     }
 </style>
+
+@endsection
+
