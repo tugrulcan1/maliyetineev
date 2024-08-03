@@ -30,7 +30,7 @@ padding-bottom: 30px;">
                                     <a href="{{ asset('basinda_biz/' . $item->image) }}"
                                         data-group="lightbox-group-gallery-item-3" title="{{ $item->musteri_bilgisi }}">
                                         <div class="position-relative gallery-image bg-base-color">
-                                            <img src="{{ asset('basinda_biz/' . $item->image) }}" alt />
+                                            <img src="{{ asset('tapu_alan_musteriler/' . $item->image) }}" alt />
                                             <div
                                                 class="d-flex align-items-center justify-content-center position-absolute top-0px left-0px w-100 h-100 gallery-hover move-bottom-top">
                                                 <i class="fa fa-plus icon-medium text-white"></i>
