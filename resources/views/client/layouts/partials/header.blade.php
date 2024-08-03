@@ -659,7 +659,7 @@
                                     class="widget-text text-black text-black-hover">444 3 284</a></div>
                         </div>
                         <div class="header-button"><a href="https://emlaksepette.com/magaza/maliyetine-ev/106"
-                                target="_blank" style="border-color: #EC2F2E !important;color: #EC2F2E !important"
+                                target="_blank" style="border-color: #EC2F2E !important;background-color: #EC2F2E !important;color:White"
                                 class="btn btn-medium btn-transparent-white text-black border-1 border-color-black btn-rounded left-icon">Dijital
                                 Satış Ofisi</a></div>
                     </div>
