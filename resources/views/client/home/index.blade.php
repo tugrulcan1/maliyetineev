@@ -153,7 +153,13 @@
      </section>
      <section class="p-0 top-space-margin overflow-hidden pb-25px">
          <div class="container">
-            <h2 class="fw-700 alt-font text-dark-gray ls-minus-1px">Projelerimiz</h2>
+             <div class="row justify-content-center mb-2 appear anime-child anime-complete"
+                 data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateY&quot;: [30, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 600, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
+                 <div class="col-xxl-6 col-xl-7 col-lg-8 col-md-9 text-center" style="">
+
+                     <h2 class="fw-700 alt-font text-dark-gray ls-minus-1px">Projelerimiz</h2>
+                 </div>
+             </div>
              <div class="row align-items-center">
                  <div class="col-12 col-md-12">
                      <div class="outside-box-right-30 sm-outside-box-right-0"
