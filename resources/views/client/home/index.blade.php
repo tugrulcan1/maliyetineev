@@ -427,7 +427,7 @@
 
 
 
-     <section>
+     <section class="mt-0 pt-0 mb-5">
          <div class="container" style="overflow: hidden;">
              <div class="row position-relative clients-style-08 mb-6 sm-mb-40px" style="height: 60px !important;"
                  data-anime="{ &quot;translateX&quot;: [0, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1200, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
