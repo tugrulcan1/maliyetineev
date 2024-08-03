@@ -152,57 +152,52 @@
          </div>
      </section>
      <section class="p-0 top-space-margin overflow-hidden pb-25px">
-        <div class="container">
-            <div class="row justify-content-center mb-2 appear anime-child anime-complete"
+         <div class="container">
+             <div class="row justify-content-center mb-2 appear anime-child anime-complete"
                  data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateY&quot;: [30, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 600, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
-                <div class="col-xxl-6 col-xl-7 col-lg-8 col-md-9 text-center">
-                    <h2 class="fw-700 alt-font text-dark-gray ls-minus-1px">Projelerimiz</h2>
-                </div>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-12 col-md-12">
-                    <div class="outside-box-right-30 sm-outside-box-right-0"
-                         data-anime="{ &quot;translateX&quot;: [40, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 800, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
-                        <div class="swiper magic-cursor base-color"
-                             data-slider-options="{ &quot;slidesPerView&quot;: 1, &quot;spaceBetween&quot;: 25, &quot;loop&quot;: true, &quot;autoplay&quot;: { &quot;delay&quot;: 300000, &quot;disableOnInteraction&quot;: false }, &quot;keyboard&quot;: { &quot;enabled&quot;: true, &quot;onlyInViewport&quot;: true }, &quot;breakpoints&quot;: { &quot;992&quot;: { &quot;slidesPerView&quot;: 3 }, &quot;768&quot;: { &quot;slidesPerView&quot;: 2 }, &quot;320&quot;: { &quot;slidesPerView&quot;: 1 } }, &quot;effect&quot;: &quot;slide&quot; }">
-                            <div class="d-flex justify-content-center justify-content-lg-start">
-                                <div class="swiper-button-prev slider-navigation-style-04 bg-blue-licorice" tabindex="0" role="button" aria-label="Previous slide">
-                                    <i class="bi bi-arrow-left-short icon-very-medium text-white"></i>
-                                </div>
-                                <div class="swiper-button-next slider-navigation-style-04 bg-blue-licorice" tabindex="0" role="button" aria-label="Next slide">
-                                    <i class="bi bi-arrow-right-short icon-very-medium text-white"></i>
-                                </div>
-                            </div>
-                            <div class="swiper-wrapper">
-                                @foreach ($projects as $project)
-                                    <div class="swiper-slide">
-                                        <div class="interactive-banner-style-09 position-relative overflow-hidden">
-                                            <img class="w-100"
-                                                 src="{{ asset('projects_cover_image/' . $project->cover_image) }}" alt />
-                                            <div class="opacity-full-dark bg-gradient-bottom-dark-transparent"></div>
-                                            <div
-                                                class="image-content h-100 w-100 p-10 xl-p-30px sm-pe-15px sm-ps-15px text-center d-flex justify-content-end align-items-end flex-column">
-                                                <div class="w-100">
-                                                    <a href="{{ route('projelerimiz.show', $project->id) }}"
-                                                       class="btn btn-medium btn-rounded btn-box-shadow btn-white text-uppercase fw-700 ps-15px pe-15px pt-5px pb-5px lh-16 mb-20px">{{ $project->project_sub_title }}</a>
-                                                    <div
-                                                        class="alt-font fw-700 sliding-box-title mb-10px w-80 xl-w-100 md-w-90 sm-w-70 xs-w-100 mx-auto">
-                                                        <a href="{{ route('projelerimiz.show', $project->id) }}"
-                                                           class="text-white alt-font fw-600 fs-40 lg-fs-24 ls-minus-1px lg-ls-0px">{{ $project->project_title }}</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                @endforeach
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                 <div class="col-xxl-6 col-xl-7 col-lg-8 col-md-9 text-center" style="">
 
+                     <h2 class="fw-700 alt-font text-dark-gray ls-minus-1px">Projelerimiz</h2>
+                 </div>
+             </div>
+             <div class="row align-items-center">
+                 <div class="col-12 col-md-12">
+                     <div class="outside-box-right-30 sm-outside-box-right-0"
+                         data-anime="{ &quot;translateX&quot;: [40, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 800, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
+                         <div class="swiper magic-cursor base-color"
+                             data-slider-options="{ &quot;slidesPerView&quot;: 1, &quot;spaceBetween&quot;: 25, &quot;loop&quot;: true, &quot;autoplay&quot;: { &quot;delay&quot;: 300000, &quot;disableOnInteraction&quot;: false }, &quot;keyboard&quot;: { &quot;enabled&quot;: true, &quot;onlyInViewport&quot;: true }, &quot;breakpoints&quot;: { &quot;992&quot;: { &quot;slidesPerView&quot;: 3 }, &quot;768&quot;: { &quot;slidesPerView&quot;: 2 }, &quot;320&quot;: { &quot;slidesPerView&quot;: 1 } }, &quot;effect&quot;: &quot;slide&quot; }">
+
+                             <div class="swiper-wrapper">
+                                 @foreach ($projects as $project)
+                                     <div class="swiper-slide">
+                                         <div class="interactive-banner-style-09 position-relative overflow-hidden">
+                                             <img class="w-100"
+                                                 src="{{ asset('projects_cover_image/' . $project->cover_image) }}" alt />
+                                             <div class="opacity-full-dark bg-gradient-bottom-dark-transparent"></div>
+                                             <div
+                                                 class="image-content h-100 w-100 p-10 xl-p-30px sm-pe-15px sm-ps-15px text-center d-flex justify-content-end align-items-end flex-column">
+                                                 <div class="w-100">
+                                                     <a href="{{ route('projelerimiz.show', $project->id) }}"
+                                                         class="btn btn-medium btn-rounded btn-box-shadow btn-white text-uppercase fw-700 ps-15px pe-15px pt-5px pb-5px lh-16 mb-20px">{{ $project->project_sub_title }}</a>
+                                                     <div
+                                                         class="alt-font fw-700 sliding-box-title mb-10px w-80 xl-w-100 md-w-90 sm-w-70 xs-w-100 mx-auto">
+                                                         <a href="demo-magazine-blog-single-creative.html"
+                                                             class="text-white alt-font fw-600 fs-40 lg-fs-24 ls-minus-1px lg-ls-0px">{{ $project->project_title }}</a>
+                                                     </div>
+
+                                                 </div>
+                                             </div>
+                                         </div>
+                                     </div>
+                                 @endforeach
+
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </section>
      {{-- <section class="overflow-hidden bg-blue-whale position-relative" style="background-color: #EC2E2D">
          <div class="container">
              <div class="row align-items-center">
