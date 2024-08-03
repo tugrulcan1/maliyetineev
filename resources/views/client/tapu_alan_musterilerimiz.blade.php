@@ -17,22 +17,33 @@ padding-bottom: 30px;">
             </div>
         </div>
     </section>
-    <section class="py-0 mt-5 mb-5">
-        <div class="container mb-5 mt-5">
-            <div class="row mb-5">
-                @foreach ($tapu_alan_musterilerimiz as $item)
-                    <div class="col-lg-4 col-md-6 mb-4 mt-4 col-sm-12">
-                        <div class="card custom-card h-100">
-                            <div class="card-body p-0 d-flex align-items-center justify-content-center">
-                                <img src="{{ asset('tapu_alan_musteriler/' . $item->image) }}" alt=""
-                                    class="img-fluid w-100 h-100 object-fit-contain">
-                            </div>
-                            <div class="card-footer text-center">
-                                <span class="card-title">{{ $item->musteri_bilgisi }}</span>
-                            </div>
-                        </div>
-                    </div>
-                @endforeach
+    <section class="bg-midnight-blue pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <ul class="image-gallery-style-03 gallery-wrapper grid-loading grid grid-3col xxl-grid-3col xl-grid-3col lg-grid-3col md-grid-2col sm-grid-2col xs-grid-1col gutter-extra-large text-center"
+                        data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateY&quot;: [50, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1200, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
+                        <li class="grid-sizer"></li>
+                        @foreach ($tapu_alan_musterilerimiz as $item)
+                            <li class="grid-item transition-inner-all">
+                                <div class="gallery-box overflow-hidden">
+                                    <a href="{{ asset('basinda_biz/' . $item->image) }}"
+                                        data-group="lightbox-group-gallery-item-3" title="{{ $item->musteri_bilgisi }}">
+                                        <div class="position-relative gallery-image bg-base-color">
+                                            <img src="{{ asset('basinda_biz/' . $item->image) }}" alt />
+                                            <div
+                                                class="d-flex align-items-center justify-content-center position-absolute top-0px left-0px w-100 h-100 gallery-hover move-bottom-top">
+                                                <i class="fa fa-plus icon-medium text-white"></i>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                        @endforeach
+
+
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
