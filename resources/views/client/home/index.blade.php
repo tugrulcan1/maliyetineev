@@ -382,7 +382,7 @@
                  <div class="col-lg-6 text-end md-mb-50px"
                      data-anime="{ &quot;effect&quot;: &quot;slide&quot;, &quot;color&quot;: &quot;#262b35&quot;, &quot;direction&quot;:&quot;lr&quot;, &quot;easing&quot;: &quot;easeOutQuad&quot;, &quot;delay&quot;:50}">
                      <figure class="position-relative m-0">
-                         <img src="https://img.freepik.com/free-vector/isometric-feedback-concept-with-people-giving-stars_52683-62300.jpg?t=st=1722717155~exp=1722720755~hmac=f562b7b5e40f237dac82f40852519c67d3fa98f8058dfc590749b055b4d95905&w=1060
+                         <img src="https://img.freepik.com/free-vector/isometric-feedback-concept-with-people-giving-stars_52683-62300.jpg?t=st=1722717155~exp=1722720755~hmac=f562b7b5e40f237dac82f40852519c67d3fa98f8058dfc590749b055b4d95905&w=1060"
                              class="w-90 border-radius-6px" alt>
                          <figcaption
                              class="position-absolute bg-dark-gray border-radius-10px box-shadow-quadruple-large bottom-100px xs-bottom-minus-20px left-minus-30px md-left-0px w-230px xs-w-210px text-center last-paragraph-no-margin animation-float">
