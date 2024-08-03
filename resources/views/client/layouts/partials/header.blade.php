@@ -81,15 +81,19 @@
                 /* Logo genişliğini ayarlayabilirsiniz */
             }
 
-            section{
+            .extra-small-screen {
+                height: 150px !important;
+            }
+
+            section {
                 margin-top: 0 !important;
-        padding-top: 0 !important;
-        padding-bottom: 0 !important;
-        margin-bottom: 0 !important;
+                padding-top: 0 !important;
+                padding-bottom: 0 !important;
+                margin-bottom: 0 !important;
 
             }
 
-            .navbar .navbar-nav .dropdown .dropdown-menu{
+            .navbar .navbar-nav .dropdown .dropdown-menu {
                 border: none;
                 padding: 0;
             }
