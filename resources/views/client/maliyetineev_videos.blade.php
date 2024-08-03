@@ -38,7 +38,7 @@ padding-bottom: 30px;">
 @section('css')
     <style>
         .video-gallery-container {
-            /* Maksimum genişlik belirleme */
+            width: 100%;
             margin: 0 auto;
             !important
             /* Sayfayı yatayda ortala */
