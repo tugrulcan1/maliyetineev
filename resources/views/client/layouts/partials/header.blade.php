@@ -511,13 +511,13 @@
             }
         }
         /* Genel stil */
-.sticky-header {
+.sticky-header nav{
     position: inherit !important;
 }
 
 /* Sadece mobilde sticky-header sınıfını devre dışı bırak */
 @media (max-width: 991px) {
-    .sticky-header {
+    .sticky-header  nav{
         position: static !important;
     }
 }
