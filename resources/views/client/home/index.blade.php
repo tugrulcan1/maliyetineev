@@ -38,25 +38,28 @@
          </div>
      </section>
      <section class="p-0 lg-pt-8 xs-pt-50px">
-        <div class="container">
-        <div class="row justify-content-end">
-        <div class="col-xl-5 outside-box-top-205px lg-mt-0 position-relative z-index-1">
-        <div class="border-radius-10px overflow-hidden">
-        <div class="bg-base-color p-50px xs-p-30px position-relative">
-        <span class="text-dark-gray opacity-8 fw-500 d-block mb-5px">Trusted logistic agency</span>
-        <h5 class="mb-0 fw-700 text-dark-gray">Secure courier for small and big packages.</h5>
-        <div class="position-absolute top-0 end-0">
-        <img src="images/demo-logistics-diagonal-line-01.svg" alt="" height="100" width="100" data-no-retina="">
-        </div>
-        </div>
-        <div class="bg-dark-gray ps-50px pe-50px pt-20px pb-20px sm-ps-30px sm-pe-30px">
-        <a href="demo-logistics-contact-us.html" class="fs-19 fw-500 text-white d-flex w-100 align-items-center">Get a free quote now<i class="feather icon-feather-plus ms-auto icon-extra-medium"></i></a>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </section>
+         <div class="container">
+             <div class="row justify-content-end">
+                 <div class="col-xl-5 outside-box-top-205px lg-mt-0 position-relative z-index-1">
+                     <div class="border-radius-10px overflow-hidden">
+                         <div class="bg-base-color p-50px xs-p-30px position-relative">
+                             <span class="text-dark-gray opacity-8 fw-500 d-block mb-5px">Trusted logistic agency</span>
+                             <h5 class="mb-0 fw-700 text-dark-gray">Secure courier for small and big packages.</h5>
+                             <div class="position-absolute top-0 end-0">
+                                 <img src="images/demo-logistics-diagonal-line-01.svg" alt="" height="100"
+                                     width="100" data-no-retina="">
+                             </div>
+                         </div>
+                         <div class="bg-dark-gray ps-50px pe-50px pt-20px pb-20px sm-ps-30px sm-pe-30px">
+                             <a href="demo-logistics-contact-us.html"
+                                 class="fs-19 fw-500 text-white d-flex w-100 align-items-center">Get a free quote now<i
+                                     class="feather icon-feather-plus ms-auto icon-extra-medium"></i></a>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </section>
      <section class="pt-5 position-relative">
          <img src="images/demo-data-analysis-bg-06.png"
              class="position-absolute top-20 left-0px skrollable skrollable-before"
@@ -528,6 +531,40 @@
 
  @section('css')
      <style>
+         .outside-box-top-205px {
+             margin-top: -205px
+         }
+
+         .bg-gradient-gray-light-dark-transparent {
+             background-image: linear-gradient(to top, #f7f7f7 0%, transparent 100%)
+         }
+
+         @media(max-width: 1399px) {
+             .xl-h-180px {
+                 height: 180px
+             }
+
+             .xl-w-180px {
+                 width: 180px
+             }
+         }
+
+         @media(max-width: 1199px) {
+             .outside-box-top-200px {
+                 margin-top: -150px
+             }
+         }
+
+         @media(max-width: 991px) {
+             .outside-box-top-200px {
+                 margin-top: 0
+             }
+
+             .navbar .navbar-nav .dropdown.open .dropdown-menu {
+                 padding-bottom: 15px
+             }
+         }
+
          .clamp-text {
              display: -webkit-box;
              -webkit-line-clamp: 2;
