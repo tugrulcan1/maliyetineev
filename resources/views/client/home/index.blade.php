@@ -160,209 +160,41 @@
                          <div class="swiper magic-cursor base-color"
                              data-slider-options="{ &quot;slidesPerView&quot;: 1, &quot;spaceBetween&quot;: 25, &quot;loop&quot;: true, &quot;autoplay&quot;: { &quot;delay&quot;: 300000, &quot;disableOnInteraction&quot;: false }, &quot;keyboard&quot;: { &quot;enabled&quot;: true, &quot;onlyInViewport&quot;: true }, &quot;breakpoints&quot;: { &quot;992&quot;: { &quot;slidesPerView&quot;: 3 }, &quot;768&quot;: { &quot;slidesPerView&quot;: 2 }, &quot;320&quot;: { &quot;slidesPerView&quot;: 1 } }, &quot;effect&quot;: &quot;slide&quot; }">
                              <div class="swiper-wrapper">
-
-                                 <div class="swiper-slide">
-                                     <div class="interactive-banner-style-09 position-relative overflow-hidden">
-                                         <img class="w-100" src="images/demo-magazine-home-01.jpg" alt />
-                                         <div class="opacity-full-dark bg-gradient-bottom-dark-transparent"></div>
-                                         <div
-                                             class="image-content h-100 w-100 p-10 xl-p-30px sm-pe-15px sm-ps-15px text-center d-flex justify-content-end align-items-end flex-column">
-                                             <div class="w-100">
-                                                 <a href="demo-magazine-travel.html"
-                                                     class="btn btn-medium btn-rounded btn-box-shadow btn-white text-uppercase fw-700 ps-15px pe-15px pt-5px pb-5px lh-16 mb-20px">Travel</a>
-                                                 <div
-                                                     class="alt-font fw-700 sliding-box-title mb-10px w-80 xl-w-100 md-w-90 sm-w-70 xs-w-100 mx-auto">
-                                                     <a href="demo-magazine-blog-single-creative.html"
-                                                         class="text-white alt-font fw-600 fs-40 lg-fs-24 ls-minus-1px lg-ls-0px">Travel
-                                                         is the only thing you buy that makes richer</a></div>
-                                                 <div class="d-flex justify-content-center align-items-center xs-lh-22">
-                                                     <div class="ms-10px me-10px">
-                                                         <a href="demo-magazine-travel.html"><i
-                                                                 class="feather icon-feather-message-circle text-white d-inline-block me-5px fs-15"></i><span
-                                                                 class="fs-13 text-uppercase text-white opacity-7">By
-                                                                 Sandra jones</span></a>
+                                 @foreach ($projects as $project)
+                                     <div class="swiper-slide">
+                                         <div class="interactive-banner-style-09 position-relative overflow-hidden">
+                                             <img class="w-100"
+                                                 src="{{ asset('projects_cover_image/' . $project->cover_image) }}" alt />
+                                             <div class="opacity-full-dark bg-gradient-bottom-dark-transparent"></div>
+                                             <div
+                                                 class="image-content h-100 w-100 p-10 xl-p-30px sm-pe-15px sm-ps-15px text-center d-flex justify-content-end align-items-end flex-column">
+                                                 <div class="w-100">
+                                                     <a href="{{ route('projelerimiz.show', $project->id) }}"
+                                                         class="btn btn-medium btn-rounded btn-box-shadow btn-white text-uppercase fw-700 ps-15px pe-15px pt-5px pb-5px lh-16 mb-20px">{{ $project->project_sub_title }}</a>
+                                                     <div
+                                                         class="alt-font fw-700 sliding-box-title mb-10px w-80 xl-w-100 md-w-90 sm-w-70 xs-w-100 mx-auto">
+                                                         <a href="demo-magazine-blog-single-creative.html"
+                                                             class="text-white alt-font fw-600 fs-40 lg-fs-24 ls-minus-1px lg-ls-0px">{{ $project->project_title }}</a>
                                                      </div>
-                                                     <div class="ms-10px me-10px">
-                                                         <a href="demo-magazine-travel.html"><i
-                                                                 class="feather icon-feather-calendar text-white d-inline-block me-5px fs-15"></i><span
-                                                                 class="fs-13 text-uppercase text-white opacity-7">20 Jan
-                                                                 2023</span></a>
-                                                     </div>
-                                                 </div>
-                                             </div>
-                                         </div>
-                                     </div>
-                                 </div>
-
-
-                                 <div class="swiper-slide">
-                                     <div class="interactive-banner-style-09 position-relative overflow-hidden">
-                                         <img class="w-100" src="images/demo-magazine-home-02.jpg" alt />
-                                         <div class="opacity-full-dark bg-gradient-bottom-dark-transparent"></div>
-                                         <div
-                                             class="image-content h-100 w-100 p-10 xl-p-30px sm-pe-15px sm-ps-15px text-center d-flex justify-content-end align-items-end flex-column">
-                                             <div class="w-100">
-                                                 <a href="demo-magazine-travel.html"
-                                                     class="btn btn-medium btn-rounded btn-box-shadow btn-white text-uppercase fw-700 ps-15px pe-15px pt-5px pb-5px lh-16 mb-20px">Lifestyle</a>
-                                                 <div
-                                                     class="alt-font fw-700 sliding-box-title mb-10px w-80 xl-w-100 md-w-90 sm-w-70 xs-w-100 mx-auto">
-                                                     <a href="demo-magazine-blog-single-creative.html"
-                                                         class="text-white alt-font fw-600 fs-40 lg-fs-24 ls-minus-1px lg-ls-0px">Life
-                                                         is a flower of which love is the honey</a></div>
-                                                 <div class="d-flex justify-content-center align-items-center xs-lh-22">
-                                                     <div class="ms-10px me-10px">
-                                                         <a href="demo-magazine-travel.html"><i
-                                                                 class="feather icon-feather-message-circle text-white d-inline-block me-5px fs-15"></i><span
-                                                                 class="fs-13 text-uppercase text-white opacity-7">By
-                                                                 Walton smith</span></a>
-                                                     </div>
-                                                     <div class="ms-10px me-10px">
-                                                         <a href="demo-magazine-travel.html"><i
-                                                                 class="feather icon-feather-calendar text-white d-inline-block me-5px fs-15"></i><span
-                                                                 class="fs-13 text-uppercase text-white opacity-7">10 Jan
-                                                                 2023</span></a>
+                                                     <div
+                                                         class="d-flex justify-content-center align-items-center xs-lh-22">
+                                                         <div class="ms-10px me-10px">
+                                                             <a href="{{ route('projelerimiz.show', $project->id) }}"><i
+                                                                     class="feather icon-feather-message-circle text-white d-inline-block me-5px fs-15"></i><span
+                                                                     class="fs-13 text-uppercase text-white opacity-7">Maliyetine
+                                                                     Ev</span></a>
+                                                         </div>
+                                                         <div class="ms-10px me-10px">
+                                                             <a href="{{ route('projelerimiz.show', $project->id) }}"><i
+                                                                     class="feather icon-feather-calendar text-white d-inline-block me-5px fs-15"></i><span
+                                                                     class="fs-13 text-uppercase text-white opacity-7">{{ $project->created_at }}</span></a>
+                                                         </div>
                                                      </div>
                                                  </div>
                                              </div>
                                          </div>
                                      </div>
-                                 </div>
-
-
-                                 <div class="swiper-slide">
-                                     <div class="interactive-banner-style-09 position-relative overflow-hidden">
-                                         <img class="w-100" src="images/demo-magazine-home-03.jpg" alt />
-                                         <div class="opacity-full-dark bg-gradient-bottom-dark-transparent"></div>
-                                         <div
-                                             class="image-content h-100 w-100 p-10 xl-p-30px sm-pe-15px sm-ps-15px text-center d-flex justify-content-end align-items-end flex-column">
-                                             <div class="w-100">
-                                                 <a href="demo-magazine-travel.html"
-                                                     class="btn btn-medium btn-rounded btn-box-shadow btn-white text-uppercase fw-700 ps-15px pe-15px pt-5px pb-5px lh-16 mb-20px">Magazine</a>
-                                                 <div
-                                                     class="alt-font fw-700 sliding-box-title mb-10px w-80 xl-w-100 md-w-90 sm-w-70 xs-w-100 mx-auto">
-                                                     <a href="demo-magazine-blog-single-creative.html"
-                                                         class="text-white alt-font fw-600 fs-40 lg-fs-24 ls-minus-1px lg-ls-0px">Once
-                                                         you learn to read you will be forever free</a></div>
-                                                 <div class="d-flex justify-content-center align-items-center xs-lh-22">
-                                                     <div class="ms-10px me-10px">
-                                                         <a href="demo-magazine-travel.html"><i
-                                                                 class="feather icon-feather-message-circle text-white d-inline-block me-5px fs-15"></i><span
-                                                                 class="fs-13 text-uppercase text-white opacity-7">By
-                                                                 Sandra jones</span></a>
-                                                     </div>
-                                                     <div class="ms-10px me-10px">
-                                                         <a href="demo-magazine-travel.html"><i
-                                                                 class="feather icon-feather-calendar text-white d-inline-block me-5px fs-15"></i><span
-                                                                 class="fs-13 text-uppercase text-white opacity-7">08 Jan
-                                                                 2023</span></a>
-                                                     </div>
-                                                 </div>
-                                             </div>
-                                         </div>
-                                     </div>
-                                 </div>
-
-
-                                 <div class="swiper-slide">
-                                     <div class="interactive-banner-style-09 position-relative overflow-hidden">
-                                         <img class="w-100" src="images/demo-magazine-home-01.jpg" alt />
-                                         <div class="opacity-full-dark bg-gradient-bottom-dark-transparent"></div>
-                                         <div
-                                             class="image-content h-100 w-100 p-10 xl-p-30px sm-pe-15px sm-ps-15px text-center d-flex justify-content-end align-items-end flex-column">
-                                             <div class="w-100">
-                                                 <a href="demo-magazine-travel.html"
-                                                     class="btn btn-medium btn-rounded btn-box-shadow btn-white text-uppercase fw-700 ps-15px pe-15px pt-5px pb-5px lh-16 mb-20px">Travel</a>
-                                                 <div
-                                                     class="alt-font fw-700 sliding-box-title mb-10px w-80 xl-w-100 md-w-90 sm-w-70 xs-w-100 mx-auto">
-                                                     <a href="demo-magazine-blog-single-creative.html"
-                                                         class="text-white alt-font fw-600 fs-40 lg-fs-24 ls-minus-1px lg-ls-0px">Travel
-                                                         is the only thing you buy that makes richer</a></div>
-                                                 <div class="d-flex justify-content-center align-items-center xs-lh-22">
-                                                     <div class="ms-10px me-10px">
-                                                         <a href="demo-magazine-travel.html"><i
-                                                                 class="feather icon-feather-message-circle text-white d-inline-block me-5px fs-15"></i><span
-                                                                 class="fs-13 text-uppercase text-white opacity-7">By
-                                                                 Sandra jones</span></a>
-                                                     </div>
-                                                     <div class="ms-10px me-10px">
-                                                         <a href="demo-magazine-travel.html"><i
-                                                                 class="feather icon-feather-calendar text-white d-inline-block me-5px fs-15"></i><span
-                                                                 class="fs-13 text-uppercase text-white opacity-7">20 Jan
-                                                                 2023</span></a>
-                                                     </div>
-                                                 </div>
-                                             </div>
-                                         </div>
-                                     </div>
-                                 </div>
-
-
-                                 <div class="swiper-slide">
-                                     <div class="interactive-banner-style-09 position-relative overflow-hidden">
-                                         <img class="w-100" src="images/demo-magazine-home-02.jpg" alt />
-                                         <div class="opacity-full-dark bg-gradient-bottom-dark-transparent"></div>
-                                         <div
-                                             class="image-content h-100 w-100 p-10 xl-p-30px sm-pe-15px sm-ps-15px text-center d-flex justify-content-end align-items-end flex-column">
-                                             <div class="w-100">
-                                                 <a href="demo-magazine-travel.html"
-                                                     class="btn btn-medium btn-rounded btn-box-shadow btn-white text-uppercase fw-700 ps-15px pe-15px pt-5px pb-5px lh-16 mb-20px">Lifestyle</a>
-                                                 <div
-                                                     class="alt-font fw-700 sliding-box-title mb-10px w-80 xl-w-100 md-w-90 sm-w-70 xs-w-100 mx-auto">
-                                                     <a href="demo-magazine-blog-single-creative.html"
-                                                         class="text-white alt-font fw-600 fs-40 lg-fs-24 ls-minus-1px lg-ls-0px">Life
-                                                         is a flower of which love is the honey</a></div>
-                                                 <div class="d-flex justify-content-center align-items-center xs-lh-22">
-                                                     <div class="ms-10px me-10px">
-                                                         <a href="demo-magazine-travel.html"><i
-                                                                 class="feather icon-feather-message-circle text-white d-inline-block me-5px fs-15"></i><span
-                                                                 class="fs-13 text-uppercase text-white opacity-7">By
-                                                                 Walton smith</span></a>
-                                                     </div>
-                                                     <div class="ms-10px me-10px">
-                                                         <a href="demo-magazine-travel.html"><i
-                                                                 class="feather icon-feather-calendar text-white d-inline-block me-5px fs-15"></i><span
-                                                                 class="fs-13 text-uppercase text-white opacity-7">10 Jan
-                                                                 2023</span></a>
-                                                     </div>
-                                                 </div>
-                                             </div>
-                                         </div>
-                                     </div>
-                                 </div>
-
-
-                                 <div class="swiper-slide">
-                                     <div class="interactive-banner-style-09 position-relative overflow-hidden">
-                                         <img class="w-100" src="images/demo-magazine-home-03.jpg" alt />
-                                         <div class="opacity-full-dark bg-gradient-bottom-dark-transparent"></div>
-                                         <div
-                                             class="image-content h-100 w-100 p-10 xl-p-30px sm-pe-15px sm-ps-15px text-center d-flex justify-content-end align-items-end flex-column">
-                                             <div class="w-100">
-                                                 <a href="demo-magazine-travel.html"
-                                                     class="btn btn-medium btn-rounded btn-box-shadow btn-white text-uppercase fw-700 ps-15px pe-15px pt-5px pb-5px lh-16 mb-20px">Magazine</a>
-                                                 <div
-                                                     class="alt-font fw-700 sliding-box-title mb-10px w-80 xl-w-100 md-w-90 sm-w-70 xs-w-100 mx-auto">
-                                                     <a href="demo-magazine-blog-single-creative.html"
-                                                         class="text-white alt-font fw-600 fs-40 lg-fs-24 ls-minus-1px lg-ls-0px">Once
-                                                         you learn to read you will be forever free</a></div>
-                                                 <div class="d-flex justify-content-center align-items-center xs-lh-22">
-                                                     <div class="ms-10px me-10px">
-                                                         <a href="demo-magazine-travel.html"><i
-                                                                 class="feather icon-feather-message-circle text-white d-inline-block me-5px fs-15"></i><span
-                                                                 class="fs-13 text-uppercase text-white opacity-7">By
-                                                                 Sandra jones</span></a>
-                                                     </div>
-                                                     <div class="ms-10px me-10px">
-                                                         <a href="demo-magazine-travel.html"><i
-                                                                 class="feather icon-feather-calendar text-white d-inline-block me-5px fs-15"></i><span
-                                                                 class="fs-13 text-uppercase text-white opacity-7">08 Jan
-                                                                 2023</span></a>
-                                                     </div>
-                                                 </div>
-                                             </div>
-                                         </div>
-                                     </div>
-                                 </div>
+                                 @endforeach
 
                              </div>
                          </div>
@@ -371,7 +203,7 @@
              </div>
          </div>
      </section>
-     <section class="overflow-hidden bg-blue-whale position-relative" style="background-color: #EC2E2D">
+     {{-- <section class="overflow-hidden bg-blue-whale position-relative" style="background-color: #EC2E2D">
          <div class="container">
              <div class="row align-items-center">
                  <div class="col-lg-4 md-mb-40px text-center text-lg-start"
@@ -450,7 +282,7 @@
                  </div>
              </div>
          </div>
-     </section>
+     </section> --}}
 
 
      <section class="pt-0 mgyy  " style="display:none">
