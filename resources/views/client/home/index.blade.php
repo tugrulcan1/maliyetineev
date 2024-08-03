@@ -527,7 +527,7 @@
  @section('css')
      <style>
          .outside-box-top-205px {
-             margin-top: -205px
+             margin-top: -140px
          }
 
          .bg-gradient-gray-light-dark-transparent {
