@@ -85,7 +85,7 @@
                 height: 150px !important;
             }
 
-            section {
+            .page-title-big-typography {
                 margin-top: 0 !important;
                 padding-top: 0 !important;
                 padding-bottom: 0 !important;
