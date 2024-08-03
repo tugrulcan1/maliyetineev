@@ -168,18 +168,18 @@
                                          <div class="col interactive-banner-style-08">
                                              <figure
                                                  class="m-0 hover-box overflow-hidden position-relative border-radius-6px">
-                                                 <img src="{{ asset('projects_cover_image/' . $project->cover_image) }}" alt="Demo Image" >
+                                                 <img src="{{ asset('projects_cover_image/' . $project->cover_image) }}"
+                                                     alt="Demo Image">
 
                                                  <figcaption
                                                      class="d-flex flex-column align-items-start justify-content-center position-absolute left-0 top-0 w-100 h-100 z-index-1 ">
 
                                                      <div class="d-flex w-100 align-items-center mt-auto">
                                                          <div class="col last-paragraph-no-margin">
-                                                             <h6
-                                                                 class="alt-font fw-500 font-style-italic mb-0 w-80 xl-w-95"
+                                                             <h6 class="alt-font fw-500 font-style-italic mb-0 w-80 xl-w-95"
                                                                  style="padding-left: 10px;padding-bottom:10px">
                                                                  <a href="{{ route('projelerimiz.show', $project->id) }}"
-                                                                    style="font-family:'Playfair Display', serif !important"
+                                                                     style="font-family:'Playfair Display', serif !important"
                                                                      class="text-white">{{ $project->project_title }}</a>
                                                              </h6>
                                                          </div>
