@@ -43,8 +43,8 @@
                  <div class="col-xl-5 outside-box-top-205px lg-mt-0 position-relative z-index-1">
                      <div class="border-radius-10px overflow-hidden">
                          <div class="bg-base-color p-50px xs-p-30px position-relative" style="background-color:#ffc700">
-                             <span class="text-dark-gray opacity-8 fw-500 d-block mb-5px">Trusted logistic agency</span>
-                             <h5 class="mb-0 fw-700 text-dark-gray">Secure courier for small and big packages.</h5>
+                             <span class="text-dark-gray opacity-8 fw-500 d-block mb-5px">24 Saatte Tapu Teslim</span>
+                             <h5 class="mb-0 fw-700 text-dark-gray">ÖNCE TAPUNUZU ALIN SONRA PEŞİNATINIZI ÖDEYİN</h5>
                              <div class="position-absolute top-0 end-0">
                                  <img src="{{asset('demo-logistics-diagonal-line-01.svg')}}" alt="" height="100"
                                      width="100" data-no-retina="">
@@ -52,7 +52,7 @@
                          </div>
                          <div class="bg-dark-gray ps-50px pe-50px pt-20px pb-20px sm-ps-30px sm-pe-30px">
                              <a href="demo-logistics-contact-us.html"
-                                 class="fs-19 fw-500 text-white d-flex w-100 align-items-center">Get a free quote now<i
+                                 class="fs-19 fw-500 text-white d-flex w-100 align-items-center">Maliyetine ev sahibi ol<i
                                      class="feather icon-feather-plus ms-auto icon-extra-medium"></i></a>
                          </div>
                      </div>
