@@ -24,8 +24,8 @@ padding-bottom: 30px;">
                 <div class="video-gallery">
                     @foreach ($videos as $video)
                         <div class="video-item">
-                            <iframe style="width: 100%;" src="{{ convertToEmbedUrl($video->url) }}"
-                                frameborder="0" allowfullscreen></iframe>
+                            <iframe style="width: 100%;" src="{{ convertToEmbedUrl($video->url) }}" frameborder="0"
+                                allowfullscreen></iframe>
                         </div>
                     @endforeach
                 </div>
@@ -36,48 +36,55 @@ padding-bottom: 30px;">
 
 
 @section('css')
-<style>
-    .video-gallery-container {
-        /* Maksimum genişlik belirleme */
-        margin: 0 auto; !important
-        /* Sayfayı yatayda ortala */
-        overflow: hidden;
-        /* İçeriklerin dışarı taşmasını engelle */
-    }
-
-    .video-gallery {
-        display: flex;
-        flex-direction: column;
-        /* Videoları dikey olarak sırala */
-        justify-content: center;
-        /* Dikeyde ortala */
-        align-items: center;
-        /* Yatayda ortala */
-    }
-
-    .video-item {
-        width: 100%;
-        /* Tam genişlik */
-        margin-bottom: 20px;
-        /* Videolar arasına boşluk ekle */
-    }
-
-    /* Küçük ekranlarda */
-    @media screen and (max-width: 768px) {
+    <style>
         .video-gallery-container {
-            max-width: 100%;
             /* Maksimum genişlik belirleme */
+            margin: 0 auto;
+            !important
+            /* Sayfayı yatayda ortala */
+            overflow: hidden;
+            /* İçeriklerin dışarı taşmasını engelle */
         }
-    }
 
-    /* Ekstra küçük ekranlarda */
-    @media screen and (max-width: 480px) {
-        .video-gallery-container {
-            max-width: 100%;
-            /* Maksimum genişlik belirleme */
+        .video-gallery {
+            display: flex;
+            flex-direction: column;
+            /* Videoları dikey olarak sırala */
+            justify-content: center;
+            /* Dikeyde ortala */
+            align-items: center;
+            /* Yatayda ortala */
         }
-    }
-</style>
 
+        .video-item {
+            width: 100%;
+            /* Tam genişlik */
+            margin-bottom: 20px;
+            /* Videolar arasına boşluk ekle */
+        }
+
+        .video-item iframe {
+            height: 500px
+        }
+
+        /* Küçük ekranlarda */
+        @media screen and (max-width: 768px) {
+            .video-gallery-container {
+                max-width: 100%;
+                /* Maksimum genişlik belirleme */
+            }
+
+            .video-item iframe {
+                height: auto !important
+            }
+        }
+
+        /* Ekstra küçük ekranlarda */
+        @media screen and (max-width: 480px) {
+            .video-gallery-container {
+                max-width: 100%;
+                /* Maksimum genişlik belirleme */
+            }
+        }
+    </style>
 @endsection
-

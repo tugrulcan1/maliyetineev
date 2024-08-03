@@ -1008,9 +1008,7 @@
                 font-size: 11px;
             }
 
-            .answerP {
-                padding: 10px 0 0 0;
-            }
+
 
             .baslikh4 {
                 line-height: 5rem;
