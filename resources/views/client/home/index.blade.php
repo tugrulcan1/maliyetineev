@@ -158,7 +158,7 @@
                  <div class="col-12">
                      <div class="box-shadow-large border-radius-6px position-relative overflow-hidden"
                          data-anime="{&quot;scale&quot;: [0.9, 1], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 600, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 300, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
-                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnsP_IJKOh_YTyALmDCL9_14OEdl3E1uydmw&s" class="border-radius-5px w-100" alt>
+                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyQMjfz6iwkTcId9AW1M_l1Ey7YyGkFLDsQg&s" class="border-radius-5px w-100" alt>
                          <a href="https://www.youtube.com/watch?v=7zMh-EF4Ll8&t=5s"
                              class="absolute-middle-center text-center rounded-circle video-icon-box video-icon-extra-large popup-vimeo">
                              <span>
