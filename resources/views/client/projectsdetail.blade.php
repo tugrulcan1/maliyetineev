@@ -46,21 +46,21 @@
             </div>
             <div class="container">
                 <div class="row mb-5">
-                    <div class="d-flex col-md-4 col-12">
+                    <div class="d-flex col-md-4 col-12" style="justify-content: center">
                         <div class="step-number">01</div>
                         <div style="margin-left: 10px;width:265px">
                             <span class="step-title">{{ $proje_basvuru_surecleri->title_1 ?: 'Boş' }}</span>
                             <p class="step-description" style="margin: -2px 0px 0px 0px">{{ $proje_basvuru_surecleri->description_1 ?: 'Boş' }}</p>
                         </div>
                     </div>
-                    <div class="d-flex col-md-4 col-12">
+                    <div class="d-flex col-md-4 col-12" style="justify-content: center">
                         <div class="step-number">02</div>
                         <div style="margin-left: 10px;width:265px">
                             <span class="step-title">{{ $proje_basvuru_surecleri->title_2 ?: 'Boş' }}</span>
                             <p class="step-description" style="margin: -2px 0px 0px 0px">{{ $proje_basvuru_surecleri->description_2 ?: 'Boş' }}</p>
                         </div>
                     </div>
-                    <div class="d-flex col-md-4 col-12">
+                    <div class="d-flex col-md-4 col-12" style="justify-content: center">
                         <div class="step-number">03</div>
                         <div style="margin-left: 10px;width:265px">
                             <span class="step-title">{{ $proje_basvuru_surecleri->title_3 ?: 'Boş' }}</span>
