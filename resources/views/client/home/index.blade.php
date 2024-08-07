@@ -200,7 +200,7 @@
                                                          class="btn btn-medium btn-rounded btn-box-shadow btn-white text-uppercase fw-700 ps-15px pe-15px pt-5px pb-5px lh-16 mb-20px">{{ $project->project_sub_title }}</a>
                                                      <div
                                                          class="alt-font fw-700 sliding-box-title mb-10px w-80 xl-w-100 md-w-90 sm-w-70 xs-w-100 mx-auto">
-                                                         <a href="demo-magazine-blog-single-creative.html"
+                                                         <a href="{{ route('projelerimiz.show', $project->id) }}"
                                                              class="text-white alt-font fw-600 fs-40 lg-fs-24 ls-minus-1px lg-ls-0px">{{ $project->project_title }}</a>
                                                      </div>
 
