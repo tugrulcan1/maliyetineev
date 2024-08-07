@@ -10,7 +10,7 @@
              data-number-pagination="1">
              <div class="swiper-wrapper">
                  @foreach ($sliders as $index => $slider)
-                     <div class="swiper-slide cover-background desktop_image"
+                     <div class="swiper-slide cover-background"
                          data-mobile-image="{{ asset('images/' . $slider->mobile_image) }}"
                          style="background-image:url('{{ asset('images/' . $slider->image) }}');">
                          <div class="container h-100">
