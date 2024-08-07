@@ -16,10 +16,16 @@
                         <form action="{{ route('admin.sliders.update', $slider->id) }}" method="POST">
                             @csrf
                             @method('PUT')
-                            
+
                             <div class="mb-3">
                                 <label class="form-label" for="image">İmage</label>
                                 <img src="{{ url('uploads/'.$slider->image) }}" alt="">
+                                <input type="file" name="image" id="">
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label" for="image">Mobile Image</label>
+                                <img src="{{ url('uploads/'.$slider->mobile_image) }}" alt="">
                                 <input type="file" name="image" id="">
                             </div>
 

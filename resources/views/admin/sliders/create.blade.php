@@ -29,8 +29,8 @@
                                     <form class="row g-3 needs-validation" id="sliderForm" novalidate="" method="POST"
                                         action="{{ route('admin.sliders.store') }}" enctype="multipart/form-data">
                                         @csrf
-                                       
-                                        
+
+
 
                                         <div class="col-md-12">
                                             <label class="form-label" for="image">Image</label>
@@ -38,16 +38,22 @@
                                                 />
                                         </div>
 
-                                      
+                                        <div class="col-md-12">
+                                            <label class="form-label" for="image">Mobile Image</label>
+                                            <input name="mobile_image" class="form-control" id="url" type="file"
+                                                />
+                                        </div>
+
+
                                         <div class="col-12 mt-5">
                                         <button class="btn btn-primary" id="saveFormsButton" type="submit">Kaydet</button>
                                     </div>
-                                     
+
 
 
                                     </form>
-                                 
-                                 
+
+
 
                                 </div>
                             </div>

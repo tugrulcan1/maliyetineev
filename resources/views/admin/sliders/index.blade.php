@@ -37,27 +37,29 @@
                                 <thead>
                                     <tr>
                                         <th style="width:15%;">ID</th>
-                                        
-                                            <th class="sort white-space-nowrap align-middle ps-0" scope="col"
+
+                                        <th class="sort white-space-nowrap align-middle ps-0" scope="col"
                                             data-sort="sliderName" style="width:20%;">PROJE RESİM</th>
                                         <th>İŞLEMLER</th>
-                                     
+
                                     </tr>
                                 </thead>
                                 <tbody class="list" id="slider-list-table-body">
                                     @foreach ($sliders as $key => $slider)
                                         <tr class="position-static">
                                             <td>{{ $key + 1 }}</td>
-                                            <td><img src="{{ url('images/' . $slider->image) }}" alt="" style="" width="200px" height="100px"></td>
+                                            <td><img src="{{ url('images/' . $slider->image) }}" alt=""
+                                                    style="" width="200px" height="100px"></td>
+                                                    <td><img src="{{ url('images/' . $slider->mobile_image) }}" alt=""
+                                                        style="" width="200px" height="100px"></td>
                                             <td>
-                                                    <a href="{{ route('admin.sliders.edit', $slider->id) }}"
-                                                        class="btn btn-sm btn-primary">Güncelle</a>
-                                              
-                                                    <button type="button" class="btn btn-sm btn-danger"
-                                                        data-bs-toggle="modal"
-                                                        data-bs-target="#deleteModal{{ $slider->id }}">
-                                                        Sil
-                                                    </button>
+                                                <a href="{{ route('admin.sliders.edit', $slider->id) }}"
+                                                    class="btn btn-sm btn-primary">Güncelle</a>
+
+                                                <button type="button" class="btn btn-sm btn-danger" data-bs-toggle="modal"
+                                                    data-bs-target="#deleteModal{{ $slider->id }}">
+                                                    Sil
+                                                </button>
 
 
 
