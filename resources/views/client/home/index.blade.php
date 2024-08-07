@@ -11,8 +11,16 @@
              <div class="swiper-wrapper">
 
                  @foreach ($sliders as $index => $slider)
-                     <div class="swiper-slide cover-background"
+                     <div class="swiper-slide cover-background desktop_image"
                          style="background-image:url('{{ asset('images/' . $slider->image) }}');">
+                         <div class="container h-100">
+                             <div class="row align-items-center h-100">
+
+                             </div>
+                         </div>
+                     </div>
+                     <div class="swiper-slide cover-background mobile_image"
+                         style="background-image:url('{{ asset('images/' . $slider->mobile_image) }}');">
                          <div class="container h-100">
                              <div class="row align-items-center h-100">
 
@@ -692,6 +700,25 @@
              right: 15px;
              /* Sağ tarafta hizalanması için uygun değeri ayarlayın */
              z-index: 2;
+         }
+
+         .desktop_image {
+             display: block;
+         }
+
+         .mobile_image {
+             display: none;
+         }
+
+         @media (max-width: 768px) {
+             .desktop_image {
+                 display: none;
+             }
+
+             .mobile_image {
+                 display: block;
+             }
+
          }
      </style>
  @endsection
