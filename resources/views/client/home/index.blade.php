@@ -6,45 +6,30 @@
 
      <section class="p-0 bg-dark-gray">
          <div class="swiper full-screen m-0 ipad-top-space-margin md-h-600px sm-h-500px swiper-number-pagination-style-01 magic-cursor"
-             data-slider-options="{ &quot;slidesPerView&quot;: 1, &quot;loop&quot;: true, &quot;pagination&quot;: { &quot;el&quot;: &quot;.swiper-number&quot;, &quot;clickable&quot;: true }, &quot;navigation&quot;: { &quot;nextEl&quot;: &quot;.slider-one-slide-next-1&quot;, &quot;prevEl&quot;: &quot;.slider-one-slide-prev-1&quot; }, &quot;autoplay&quot;: { &quot;delay&quot;: 5000, &quot;disableOnInteraction&quot;: false },  &quot;keyboard&quot;: { &quot;enabled&quot;: true, &quot;onlyInViewport&quot;: true }, &quot;effect&quot;: &quot;slide&quot; }"
+             data-slider-options='{ "slidesPerView": 1, "loop": true, "pagination": { "el": ".swiper-number", "clickable": true }, "navigation": { "nextEl": ".slider-one-slide-next-1", "prevEl": ".slider-one-slide-prev-1" }, "autoplay": { "delay": 5000, "disableOnInteraction": false }, "keyboard": { "enabled": true, "onlyInViewport": true }, "effect": "slide" }'
              data-number-pagination="1">
              <div class="swiper-wrapper">
-
                  @foreach ($sliders as $index => $slider)
                      <div class="swiper-slide cover-background desktop_image"
+                         data-mobile-image="{{ asset('images/' . $slider->mobile_image) }}"
                          style="background-image:url('{{ asset('images/' . $slider->image) }}');">
                          <div class="container h-100">
                              <div class="row align-items-center h-100">
-
-                             </div>
-                         </div>
-                     </div>
-                     <div class="swiper-slide cover-background mobile_image"
-                         style="background-image:url('{{ asset('images/' . $slider->mobile_image) }}');">
-                         <div class="container h-100">
-                             <div class="row align-items-center h-100">
-
                              </div>
                          </div>
                      </div>
                  @endforeach
-
-
              </div>
              <div class="container">
                  <div class="row g-0">
                      <div class="col-12 position-relative">
-
                          <div class="swiper-pagination left-0 text-start swiper-pagination-clickable swiper-number"></div>
-
                      </div>
                  </div>
              </div>
-
-
-
          </div>
      </section>
+
      <section class="p-0 lg-pt-8 xs-pt-50px">
          <div class="container">
              <div class="row justify-content-end">
@@ -642,6 +627,27 @@
          window.addEventListener('resize', checkScreenSize);
      </script>
 
+     <script>
+         document.addEventListener('DOMContentLoaded', function() {
+             function updateMobileImages() {
+                 var slides = document.querySelectorAll('.swiper-slide');
+                 var isMobile = window.innerWidth <= 767; // Mobil ekran genişliği (örneğin, 767px)
+
+                 slides.forEach(function(slide) {
+                     if (isMobile) {
+                         var mobileImage = slide.getAttribute('data-mobile-image');
+                         slide.style.backgroundImage = `url(${mobileImage})`;
+                     } else {
+                         var desktopImage = slide.style.backgroundImage;
+                         // Masaüstü görseli üzerinde bir işlem yapılacaksa burada ayarlanabilir
+                     }
+                 });
+             }
+
+             updateMobileImages(); // Sayfa yüklendiğinde çalıştır
+             window.addEventListener('resize', updateMobileImages); // Pencere boyutu değiştiğinde güncelle
+         });
+     </script>
  @endsection
 
 
