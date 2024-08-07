@@ -23,10 +23,8 @@ class SliderController extends Controller
     public function update(Request $request, Slider $slider)
     {
         $validator = Validator::make($request->all(), [
-            'title' => 'required',
-            'content' => 'required',
-            'short_content' => 'required'
-
+            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048', // 2MB sınır
+            'mobile_image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048', // 2MB sınır
         ]);
 
         if ($validator->fails()) {
@@ -35,27 +33,30 @@ class SliderController extends Controller
                 ->withInput();
         }
 
-
-        $dosya = $request->file('image');
-        $dosyaAdi = $slider->image;
-
-        // Eğer dosya seçilmediyse veya geçerli bir dosya değilse hata döndür
-        if ($dosya) {
-            // Dosyayı yükleme klasörüne kaydetme
-            $dosyaAdi = $dosya->getClientOriginalName(); // Dosya adını alın
-            $dosya->move(public_path('uploads'), $dosyaAdi); // Dosyayı uploads klasörüne kaydet
-
+        // Dosya işlemleri
+        if ($request->hasFile('image')) {
+            $imageFile = $request->file('image');
+            $imageName = time() . '-' . $imageFile->getClientOriginalName(); // Dosya adını benzersiz hale getirme
+            $imageFile->move(public_path('images'), $imageName); // Dosyayı uploads klasörüne kaydetme
+            $slider->image = $imageName; // Yeni dosya adını güncelleme
         }
 
+        if ($request->hasFile('mobile_image')) {
+            $mobileImageFile = $request->file('mobile_image');
+            $mobileImageName = time() . '-' . $mobileImageFile->getClientOriginalName(); // Dosya adını benzersiz hale getirme
+            $mobileImageFile->move(public_path('images'), $mobileImageName); // Dosyayı uploads klasörüne kaydetme
+            $slider->mobile_image = $mobileImageName; // Yeni dosya adını güncelleme
+        }
 
+        // Diğer alanları güncelleme (örneğin: title, content, vb.)
+        // Eğer başka alanlar varsa, bunları burada güncelleyebilirsiniz.
 
-        $slider->update([
-            'image' => $dosyaAdi
-        ]);
+        $slider->save(); // Dosya adlarını güncelleyip kaydediyoruz
 
         return redirect()->route('admin.sliders.index')
-            ->with('success', 'slider başarıyla güncellendi.');
+            ->with('success', 'Slider başarıyla güncellendi.');
     }
+
 
     public function index()
     {
