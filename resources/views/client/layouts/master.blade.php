@@ -37,9 +37,16 @@
                 <span class="form-icon"><i class="fa fa-phone"></i></span>
                 <input type="tel" name="phone" class="form-control" placeholder="Telefon Numaranız" />
             </div>
-            <div class="position-relative terms-condition-box text-start d-inline-block">
-                <input type="checkbox" name="terms_condition" id="terms_condition" value="1"
-                    class="terms-condition check-box align-middle required">
+            <div class="position-relative form-group mb-20px">
+                <span class="form-icon"><i class="fa fa-user"></i></span>
+                <input type="text" name="job" class="form-control" placeholder="Mesleğiniz" />
+            </div>
+            <div class="position-relative form-group mb-20px">
+                <span class="form-icon"><i class="fa fa-user"></i></span>
+                <input type="text" name="message" class="form-control" placeholder="Mesajınız" />
+            </div>
+            <div class="position-relative form-group mb-20px">
+                <input type="checkbox" name="terms_condition">
                 <label>
                     <span class="box fs-16">Kişisel Verilerin Korunması Hakkında <a
                             href="{{ route('aydinlatma.metni') }}" target="_blank">Aydınlatma Yazısını okudum</a> ,

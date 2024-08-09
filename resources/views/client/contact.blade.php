@@ -17,8 +17,7 @@
 
     <section class="position-relative z-index-1 pb-0">
         <div class="d-none d-md-flex mb-1">
-            <div class="section-link absolute-middle-center top-0 scroll-to-map"
-            style="cursor: pointer">
+            <div class="section-link absolute-middle-center top-0 scroll-to-map" style="cursor: pointer">
                 <div
                     class="d-flex justify-content-center align-items-center mx-auto rounded-circle h-70px w-70px fs-22 text-dark-gray bg-white box-shadow-bottom">
                     <i class="fa fa-map-pin"></i>
@@ -114,6 +113,15 @@
                             <div class="col-md-12 mb-30px">
                                 <textarea class="form-control" cols="40" rows="4" name="message" placeholder="Mesajınız"></textarea>
                             </div>
+                            <div class="position-relative form-group mb-20px">
+                                <input type="checkbox" name="terms_condition">
+                                <label>
+                                    <span class="box fs-16">Kişisel Verilerin Korunması Hakkında <a
+                                            href="{{ route('aydinlatma.metni') }}" target="_blank">Aydınlatma Yazısını
+                                            okudum</a> ,
+                                        kabul ediyorum.</span>
+                                </label>
+                            </div>
                             <div class="col-xl-7 col-md-7 last-paragraph-no-margin">
                                 <p class="text-center text-md-start fs-15 lh-26">24 saat içerisinde dönüş sağlayacağız.
                                 </p>
@@ -168,5 +176,3 @@
         </div>
     </section>
 @endsection
-
-

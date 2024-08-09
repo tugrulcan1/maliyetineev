@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Client;
 
 use App\Http\Controllers\Controller;
+use App\Models\Form;
 use Illuminate\Http\Request;
 use Mail;
 
@@ -14,12 +15,16 @@ class FormController extends Controller
             'name' => 'required',
             'email' => 'required|email',
             'phone' => 'required',
+            'job' => 'required',
+            'message' => 'required',
             'terms_condition' => 'required',
         ], [
             'name.required' => 'Ad alanı gereklidir.',
             'email.required' => 'E-posta alanı gereklidir.',
             'email.email' => 'Geçerli bir e-posta adresi girin.',
             'phone.required' => 'Telefon alanı gereklidir.',
+            'job.required' => 'Meslek alanı gereklidir.',
+            'message.required' => 'Mesaj alanı gereklidir.',
             'terms_condition.required' => 'Kişisel Verilerin Korunması Hakkında Aydınlatma Yazısını kabul etmelisiniz.',
         ]);
 
@@ -27,20 +32,17 @@ class FormController extends Controller
         $name = $request->input('name');
         $email = $request->input('email');
         $phone = $request->input('phone');
-
-        Mail::raw(
-            'Mesajı Gönderen: ' . $request->name . "\n" .
-            'Kullanıcı Maili: ' . $request->email . "\n" .
-            'Kullanıcı Telefonu: ' . $request->phone,
-
-            function($message) use($request) {
-                $message->from('info@maliyetineev.com', 'Maliyetine Ev');
-                $message->to('info@maliyetineev.com');
-                $message->subject('Bir Mesajınız Var');
-            }
-        );
+        $job = $request->input('job');
+        $message = $request->input('message');
 
 
+        Form::create([
+            'name' => $name,
+            'email' => $email ,
+            'phone' =>  $phone,
+            "job" => $job,
+            "message"=> $message
+        ]);
 
 
         return redirect()->back()->with('success', 'Mesajınız İletildi');
@@ -71,19 +73,14 @@ class FormController extends Controller
         $job = $request->input('job');
         $message = $request->input('message');
 
-        Mail::raw(
-            'Mesajı Gönderen: ' . $request->name . "\n" .
-            'Kullanıcı Maili: ' . $request->email . "\n" .
-            'Kullanıcı Telefonu: ' . $request->phone. "\n" .
-            'Kullanıcı Mesleği: ' . $request->job . "\n" .
-            'Kullanıcı Mesajı: ' . $request->message,
 
-            function($message) use($request) {
-                $message->from('info@maliyetineev.com', 'Maliyetine Ev');
-                $message->to('info@maliyetineev.com');
-                $message->subject('Bir Mesajınız Var');
-            }
-        );
+        Form::create([
+            'name' => $name,
+            'email' => $email ,
+            'phone' =>  $phone,
+            "job" => $job,
+            "message"=> $message
+        ]);
 
 
 
@@ -98,10 +95,10 @@ class FormController extends Controller
         $request->validate([
             'email' => 'required',
         ], [
-           'email.required' => 'E-posta alanı gereklidir.',            
+           'email.required' => 'E-posta alanı gereklidir.',
         ]);
 
-    
+
         $email = $request->input('email');
 
         Mail::raw(
