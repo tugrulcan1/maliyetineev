@@ -113,9 +113,13 @@
                             <div class="col-md-12 mb-30px">
                                 <textarea class="form-control" cols="40" rows="4" name="message" placeholder="Mesajınız"></textarea>
                             </div>
-                            <div class="position-relative form-group mb-20px">
-                                <input type="checkbox" name="terms_condition">
-                                <label>
+                            <div class="position-relative form-group mb-20px"
+                            style="    display: flex;
+    align-items: center;
+    justify-content: center;
+}">
+                <input type="checkbox" name="terms_condition" style="    width: 40px;">
+                <label style="    line-height: 16px;">
                                     <span class="box fs-16">Kişisel Verilerin Korunması Hakkında <a
                                             href="{{ route('aydinlatma.metni') }}" target="_blank">Aydınlatma Yazısını
                                             okudum</a> ,

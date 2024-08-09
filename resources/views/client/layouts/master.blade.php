@@ -45,9 +45,13 @@
                 <span class="form-icon"><i class="fa fa-user"></i></span>
                 <input type="text" name="message" class="form-control" placeholder="Mesajınız" />
             </div>
-            <div class="position-relative form-group mb-20px">
-                <input type="checkbox" name="terms_condition">
-                <label>
+            <div class="position-relative form-group mb-20px"
+            style="    display: flex;
+    align-items: center;
+    justify-content: center;
+}">
+                <input type="checkbox" name="terms_condition" style="    width: 40px;">
+                <label style="    line-height: 16px;">
                     <span class="box fs-16">Kişisel Verilerin Korunması Hakkında <a
                             href="{{ route('aydinlatma.metni') }}" target="_blank">Aydınlatma Yazısını okudum</a> ,
                         kabul ediyorum.</span>
