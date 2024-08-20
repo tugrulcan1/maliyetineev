@@ -421,13 +421,14 @@
 
                             <ul class="portfolio-filter  justify-content-center border-0 fw-500 pb-4"
                                 style="display: flex; gap: 40px; ">
-                                <li class="nav active"><a data-filter="*" href="#">Tümü</a></li>
+
                                 @foreach ($floorPlans as $index => $floorPlan)
-                                    <li class="nav">
+                                    <li class="nav {{ $loop->first ? 'active' : '' }} ">
                                         <a data-filter=".tab{{ $index }}"
                                             href="#tab{{ $index }}">{{ $floorPlan->floor_plan }}</a>
                                     </li>
                                 @endforeach
+                                <li class="nav "><a data-filter="*" href="#">Tümü</a></li>
                             </ul>
                         </div>
                     </div>
