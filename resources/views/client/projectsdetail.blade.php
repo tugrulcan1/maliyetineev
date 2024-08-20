@@ -46,7 +46,7 @@
             </div>
             <div class="container">
                 <div class="row mb-5">
-                    <div class="d-flex col-md-4 col-12" style="justify-content: center">
+                    <div class="d-flex col-md-4 col-12" style="justify-content: center; z-index: 9;">
                         <div class="step-number">01</div>
                         <div style="margin-left: 10px;width:265px">
                             <span class="step-title">{{ $proje_basvuru_surecleri->title_1 ?: 'Boş' }}</span>
@@ -54,7 +54,7 @@
                                 {{ $proje_basvuru_surecleri->description_1 ?: 'Boş' }}</p>
                         </div>
                     </div>
-                    <div class="d-flex col-md-4 col-12" style="justify-content: center">
+                    <div class="d-flex col-md-4 col-12" style="justify-content: center; z-index: 9;">
                         <div class="step-number">02</div>
                         <div style="margin-left: 10px;width:265px">
                             <span class="step-title">{{ $proje_basvuru_surecleri->title_2 ?: 'Boş' }}</span>
@@ -62,7 +62,7 @@
                                 {{ $proje_basvuru_surecleri->description_2 ?: 'Boş' }}</p>
                         </div>
                     </div>
-                    <div class="d-flex col-md-4 col-12" style="justify-content: center">
+                    <div class="d-flex col-md-4 col-12" style="justify-content: center; z-index: 9;">
                         <div class="step-number">03</div>
                         <div style="margin-left: 10px;width:265px">
                             <span class="step-title">{{ $proje_basvuru_surecleri->title_3 ?: 'Boş' }}</span>
@@ -416,15 +416,20 @@
                     {{ $project->project_title }} Kat Planları</h3>
                 <div class="row mt-3">
                     <div class="col-12 text-center">
-                        <ul class="portfolio-filter nav nav-tabs justify-content-center border-0 fw-500 pb-4">
-                            <li class="nav active"><a data-filter="*" href="#">Tümü</a></li>
-                            @foreach ($floorPlans as $index => $floorPlan)
-                                <li class="nav">
-                                    <a data-filter=".tab{{ $index }}"
-                                        href="#tab{{ $index }}">{{ $floorPlan->floor_plan }}</a>
-                                </li>
-                            @endforeach
-                        </ul>
+                        <div>
+
+
+                            <ul class="portfolio-filter  justify-content-center border-0 fw-500 pb-4"
+                                style="display: flex; gap: 40px; ">
+                                <li class="nav active"><a data-filter="*" href="#">Tümü</a></li>
+                                @foreach ($floorPlans as $index => $floorPlan)
+                                    <li class="nav">
+                                        <a data-filter=".tab{{ $index }}"
+                                            href="#tab{{ $index }}">{{ $floorPlan->floor_plan }}</a>
+                                    </li>
+                                @endforeach
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -633,6 +638,24 @@
 
 @section('css')
     <style>
+        @media (max-width: 768px) {
+            .portfolio-filter.nav-tabs {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .portfolio-filter.nav-tabs .nav {
+                margin-bottom: 10px;
+                /* İsteğe bağlı, öğeler arasına boşluk bırakır */
+            }
+
+            .portfolio-filter li {
+                padding: 0 !important;
+            }
+        }
+
+
         .step-container {
             display: flex;
         }

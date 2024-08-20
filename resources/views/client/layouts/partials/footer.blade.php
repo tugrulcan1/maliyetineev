@@ -5,12 +5,12 @@
             <div class="col-12 position-relative justify-content-center align-items-center text-center">
 
                 <h5 class="alt-font d-inline-block align-middle text-white mb-0 me-35px md-me-0 position-relative">
-                    Maliyetine evim ile <span
-                        class="text-decoration-line-bottom-medium fw-600 font-style-italic" style="font-weight: 'Playfair Display', serif !important" >ev sahibi olmak ister misiniz?</span>
+                    Maliyetine evim ile <span class="text-decoration-line-bottom-medium fw-600 font-style-italic"
+                        style="font-weight: 'Playfair Display', serif !important">ev sahibi olmak ister misiniz?</span>
                 </h5>
-                <a href="{{url('/iletisim')}}"
-                    class="btn btn-large btn-rounded with-rounded btn-white btn-box-shadow fw-600 md-mt-40px sm-mt-30px">Başvur<span class="bg-dark-gray text-white"><i
-                            class="fa fa-arrow-right"></i></span></a>
+                <a href="{{ url('/iletisim') }}"
+                    class="btn btn-large btn-rounded with-rounded btn-white btn-box-shadow fw-600 md-mt-40px sm-mt-30px">Başvur<span
+                        class="bg-dark-gray text-white"><i class="fa fa-arrow-right"></i></span></a>
             </div>
 
         </div>
@@ -29,8 +29,9 @@
 
             <div class="col-lg-2 text-center text-lg-start last-paragraph-no-margin md-mb-15px">
                 <a href="demo-lawyer.html" class="footer-logo d-inline-block">
-                    <img src="{{ asset('images/maliyetineevlogo.png') }}" data-at2x="{{ asset('images/maliyetineevlogo.png') }}"
-                        alt="" width="138" height="36">
+                    <img src="{{ asset('images/maliyetineevlogo.png') }}"
+                        data-at2x="{{ asset('images/maliyetineevlogo.png') }}" alt="" width="138"
+                        height="36">
                 </a>
             </div>
 
@@ -38,8 +39,8 @@
             <div class="col-lg-4 last-paragraph-no-margin text-center text-lg-start md-mb-40px sm-mb-30px">
                 <span class="fs-22 alt-font md-w-80 xs-w-100 m-auto d-inline-block">Aklınıza takılan soru mu var?
                     <br>
-                    <span
-                        class="text-white font-style-italic fw-500 text-decoration-line-bottom">Bizimle iletişime geçebilirsiniz.
+                    <span class="text-white font-style-italic fw-500 text-decoration-line-bottom">Bizimle iletişime
+                        geçebilirsiniz.
 
                     </span></span>
             </div>
@@ -58,7 +59,8 @@
                 <span class="alt-font d-inline-block text-white mb-5px fs-18"><i
                         class="bi bi-telephone-outbound me-10px"></i>İletişim</span>
                 <p><a href="tel:444 3 284">444 3 284</a></p>
-                <a href="mailto:info@domain.com" class="text-white text-decoration-line-bottom">info@maliyetineev.com</a>
+                <a href="mailto:info@domain.com"
+                    class="text-white text-decoration-line-bottom">info@maliyetineev.com</a>
             </div>
 
         </div>
@@ -78,20 +80,20 @@
             <div class="col-lg-9 text-center text-lg-start sm-pb-10px">
                 <ul class="footer-navbar md-lh-normal">
                     <li class="nav-item"><a href="demo-lawyer.html" class="nav-link">Kişisel Verilerin
-                        Korunması</a></li>
+                            Korunması</a></li>
                     <li class="nav-item"><a href="demo-lawyer-about.html" class="nav-link">Ticari Elektronik
-                        İleti
-                        Açık Rıza Metni</a></li>
+                            İleti
+                            Açık Rıza Metni</a></li>
                     <li class="nav-item"><a href="demo-lawyer-practice-areas.html" class="nav-link">Ticari Elektronik
-                        İleti
-                        Açık Rıza Metni</a>
+                            İleti
+                            Açık Rıza Metni</a>
                     </li>
                 </ul>
             </div>
 
 
             <div class="col-lg-3 text-center text-lg-end last-paragraph-no-margin">
-                <p>© 2024 Copyright  <a href="#" target="_blank"
+                <p>© 2024 Copyright <a href="#" target="_blank"
                         class="text-decoration-line-bottom text-white">Maliyetine Ev</a></p>
             </div>
 
@@ -125,6 +127,11 @@
             icon.toggleClass('rotate');
             answer.slideToggle();
         });
+
+        // mfp-arrow-right sınıfına sahip öğeyi seçin ve sınıfları değiştirin
+        $('.mfp-arrow-right').removeClass('mfp-arrow-right').addClass('fas fa-angle-right');
+
+
     });
     $(document).ready(function() {
         $(".tablinks").click(function() {
@@ -385,6 +392,12 @@
 <script type="text/javascript" src="{{ URL::to('/') }}/js/jquery.js"></script>
 <script type="text/javascript" src="{{ URL::to('/') }}/js/vendors.min.js"></script>
 <script type="text/javascript" src="{{ URL::to('/') }}/js/main.js"></script>
+<script src="
+https://cdn.jsdelivr.net/npm/ti-icons@0.1.2/ie7/ie7.min.js
+"></script>
+<link href="
+https://cdn.jsdelivr.net/npm/ti-icons@0.1.2/css/themify-icons.min.css
+" rel="stylesheet">
 </body>
 
 </html>

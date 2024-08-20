@@ -20,6 +20,7 @@
 
     <link rel="stylesheet" href="{{ URL::to('/') }}/css/icon.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/themify-icons/0.1.2/css/themify-icons.css">
 
     <link rel="stylesheet" href="{{ URL::to('/') }}/css/vendors.min.css" />
     <link rel="stylesheet" href="{{ URL::to('/') }}/css/style.min.css" />
@@ -65,6 +66,12 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+        }
+
+        button.mfp-arrow,
+        button.mfp-close {
+            font-size: 30px;
+            color: white
         }
 
         /* Logo boyutlarını küçültme */
@@ -659,7 +666,8 @@
                                     class="widget-text text-black text-black-hover">444 3 284</a></div>
                         </div>
                         <div class="header-button"><a href="https://emlaksepette.com/magaza/maliyetine-ev/106"
-                                target="_blank" style="border-color: #EC2F2E !important;background-color: #EC2F2E !important;color:White"
+                                target="_blank"
+                                style="border-color: #EC2F2E !important;background-color: #EC2F2E !important;color:White"
                                 class="btn btn-medium btn-transparent-white text-white border-1 border-color-black btn-rounded left-icon">Dijital
                                 Satış Ofisi</a></div>
                     </div>

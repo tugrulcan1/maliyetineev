@@ -27,7 +27,7 @@ padding-bottom: 30px;">
                         @foreach ($tapu_alan_musterilerimiz as $item)
                             <li class="grid-item transition-inner-all">
                                 <div class="gallery-box overflow-hidden">
-                                    <a href="{{ asset('basinda_biz/' . $item->image) }}"
+                                    <a href="{{ asset('tapu_alan_musteriler/' . $item->image) }}"
                                         data-group="lightbox-group-gallery-item-3" title="{{ $item->musteri_bilgisi }}">
                                         <div class="position-relative gallery-image bg-base-color">
                                             <img src="{{ asset('tapu_alan_musteriler/' . $item->image) }}" alt />
