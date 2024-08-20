@@ -15,7 +15,8 @@
     <link rel="apple-touch-icon" sizes="114x114" href="{{ URL::to('/') }}images/apple-touch-icon-114x114.png">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <link rel="shortcut icon" href="images/faviconn.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/faviconn.png" sizes="32x32" type="image/x-icon">
+    <link rel="icon" href="path/to/favicon-32x32.png" sizes="32x32" type="image/png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
@@ -638,7 +639,8 @@
                                                 <i class="fa fa-angle-down ml-2"></i>
                                             @endif
                                         </a>
-                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown{{ $menus->id }}">
+                                        <ul class="dropdown-menu"
+                                            aria-labelledby="navbarDropdown{{ $menus->id }}">
                                             @foreach ($menus->children as $child)
                                                 <li><a class="dropdown-item"
                                                         href="{{ $child->href }}">{{ $child->text }}</a></li>
