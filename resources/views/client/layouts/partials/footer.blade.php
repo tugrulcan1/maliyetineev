@@ -47,12 +47,17 @@
 
 
             <div class="col-lg-3 offset-xl-1 col-sm-6 text-center text-lg-start last-paragraph-no-margin xs-mb-30px">
-                <span class="alt-font d-inline-block text-white mb-5px fs-18"><i
-                        class="bi bi-geo-alt me-10px"></i>Adres</span>
-                <p class="w-80 xs-w-100 d-inline-block">Cevizli, Çanakkale Cd. No:103A, 34865 Kartal/İstanbul
-
+                <span class="alt-font d-inline-block text-white mb-5px fs-18">
+                    <i class="bi bi-geo-alt me-10px"></i>Adres
+                </span>
+                <p class="w-80 xs-w-100 d-inline-block">
+                    <a href="https://www.google.com/maps?q=Cevizli, Çanakkale Cd. No:103A, 34865 Kartal/İstanbul"
+                        target="_blank" class="text-white text-decoration-none">
+                        Cevizli, Çanakkale Cd. No:103A, 34865 Kartal/İstanbul
+                    </a>
                 </p>
             </div>
+
 
 
             <div class="col-xl-2 col-lg-3 col-sm-6 text-center text-lg-start last-paragraph-no-margin">
@@ -100,6 +105,7 @@
         </div>
     </div>
 </footer>
+
 <style>
     .small-screenP {
         flex-direction: column;
@@ -117,6 +123,7 @@
 
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 <script>
     $(document).ready(function() {
         $('.questionHeader').on('click', function() {
@@ -187,6 +194,7 @@
 <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 
 
+
 <script>
     $('.scroll-to-map').on('click', function(event) {
         event.preventDefault();
@@ -207,6 +215,7 @@
         });
     });
 </script>
+
 <script>
     var successMessage = "{{ session('success') }}";
     if (successMessage) {
@@ -241,6 +250,7 @@
         document.querySelector(".tablinks").click();
     });
 </script>
+
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 <script src="http://freizy.com/assets/frontend/vendor/plugins/js/plugins.min.js"></script>

@@ -68,11 +68,7 @@
             object-fit: cover;
         }
 
-        button.mfp-arrow,
-        button.mfp-close {
-            font-size: 30px;
-            color: white
-        }
+
 
         /* Logo boyutlarını küçültme */
         /* Logo boyutlarını küçültme */
